@@ -1,0 +1,151 @@
+%icon-toggle-space {
+	margin: $margin_0 $margin_2;
+}
+
+/*
+    Toggle Icons
+    
+    Many momment there are needs for toggles of icon when the parent is in the state `is-active`
+
+    .icon-toggle_plus-minus - Toggle between plus and minus square
+    .icon-toggle_chevron-double-up-down - Toggle the double chevron to point up when active
+    .icon-toggle_caret-circle-right-down - Toggle the caret to point down when active.
+	 .icon-toggle_arrow-circle - Toggle the arrow to have a circle when active.
+	 .icon-toggle_bars-times - Toggle between bars and times
+
+    markup:
+    <li class="font_bold border_solid border_secondary-5 p_3 border-width_1">
+        <div class="font_bold c_secondary-3">FA Solid {{modifier_class}}</div>
+		  <div class="p_2 font_4">
+			  <span class="br_radius m-x_2 p-x_3 p-y_2 bg_secondary-4">default: <i class="fas fa-fw {{modifier_class}}"></i></span> 
+			  <span class="m-x_4 p_4  p-y_2  br_circle  bg_black c_white">vs</span>
+            <span class="is-active br_radius m-x_2 p-x_3 p-y_2 bg_primary-4">is-active: <i class="fas {{modifier_class}}"></i></span></div>
+    </li>
+    <li class="font_bold border_solid border_secondary-5 p_3 border-width_1">
+        <div class="font_bold c_secondary-3">FA Regular {{modifier_class}}</div>
+		  <div class="p_2 font_4">
+			  <span class="br_radius m-x_2 p-x_3 p-y_2 bg_secondary-4">default: <i class="far fa-fw {{modifier_class}}"></i></span> 
+			  <span class="m-x_4 p_4  p-y_2 br_circle bg_black c_white">vs</span>
+            <span class="is-active br_radius m-x_2 p-x_3 p-y_2 bg_primary-4">is-active: <i class="far {{modifier_class}}"></i></span></div>
+    </li>
+    <li class="font_bold border_solid border_secondary-5 p_3 border-width_1">
+        <div class="font_bold c_secondary-3">FA Light {{modifier_class}}</div>
+		  <div class="p_2 font_4">
+			  <span class="br_radius m-x_2 p-x_3 p-y_2 bg_secondary-4">default: <i class="fal fa-fw {{modifier_class}}"></i></span> 
+			  <span class="m-x_4 p_4  p-y_2 br_circle bg_black c_white">vs</span>
+            <span class="is-active br_radius m-x_2 p-x_3 p-y_2 bg_primary-4">is-active: <i class="fal {{modifier_class}}"></i></span></div>
+    </li>
+
+    sg-wrapper: 
+    <ul class="no-bullet"><sg-wrapper-content/></ul>
+
+    Styleguide 20.2
+*/
+
+i.icon-toggle_bars-times:before {
+	@extend %icon-toggle-space;
+
+	content: "\f0c9";
+
+	.is-active & {
+		content: "\f2d3";
+	}
+}
+
+i.icon-toggle_plus-minus:before {
+	@extend %icon-toggle-space;
+
+	content: "\f0fe";
+
+	.is-active & {
+		content: "\f146";
+	}
+}
+i.icon-toggle_chevron-up-down:before {
+	@extend %icon-toggle-space;
+	content: "\f077";
+	.is-active & {
+		content: "\f107";
+	}
+}
+i.icon-toggle_chevron-double-up-down:before {
+	@extend %icon-toggle-space;
+	content: "\f103";
+	.is-active & {
+		content: "\f325";
+	}
+}
+
+i.icon-toggle_chevron-double-left-right:before {
+	@extend %icon-toggle-space;
+	content: "\f324";
+	.is-active & {
+		content: "\f323";
+	}
+}
+
+i.icon-toggle_caret-circle-right-down:before {
+	@extend %icon-toggle-space;
+	content: "\f330";
+	.is-active & {
+		content: "\f32d";
+	}
+}
+i.icon-toggle_arrow-circle:before {
+	@extend %icon-toggle-space;
+	content: "\f061";
+	.is-active & {
+		content: "\f0a9";
+	}
+}
+
+/*
+	Toggle Icons Complete
+
+	This variation of the icon toggle responds to `is-complete` and not is `is-active`
+
+	.icon-complete_check - Toggle a check mark to show.
+	.icon-complete_check-circle - Toggle a check mark to show.
+
+	markup:
+	<li class="font_bold border_solid border_secondary-5 p_3 border-width_1">
+		<div class="font_bold c_secondary-3">FA Solid {{modifier_class}}</div>
+		<div class="p_2 font_4">
+			<span class="br_radius m-x_2 p-x_3 p-y_2 bg_secondary-4">default: <i class="fas fa-fw {{modifier_class}}"></i></span> 
+			<span class="m-x_4 p_4  p-y_2 br_circle bg_black c_white">vs</span>
+			<span class="is-complete br_radius m-x_2 p-x_3 p-y_2 bg_primary-4">is-complete: <i class="fas {{modifier_class}}"></i></span></div>
+	</li>
+	<li class="font_bold border_solid border_secondary-5 p_3 border-width_1">
+		<div class="font_bold c_secondary-3">FA Regular {{modifier_class}}</div>
+		<div class="p_2 font_4">
+			<span class="br_radius m-x_2 p-x_3 p-y_2 bg_secondary-4">default: <i class="far fa-fw {{modifier_class}}"></i></span> 
+			<span class="m-x_4 p_4  p-y_2 br_circle bg_black c_white">vs</span>
+			<span class="is-complete br_radius m-x_2 p-x_3 p-y_2 bg_primary-4">is-complete: <i class="far {{modifier_class}}"></i></span></div>
+	</li>
+	<li class="font_bold border_solid border_secondary-5 p_3 border-width_1">
+		<div class="font_bold c_secondary-3">FA Light {{modifier_class}}</div>
+		<div class="p_2 font_4">
+			<span class="br_radius m-x_2 p-x_3 p-y_2 bg_secondary-4">default: <i class="fal fa-fw {{modifier_class}}"></i></span> 
+			<span class="m-x_4 p_4  p-y_2 br_circle bg_black c_white">vs</span>
+			<span class="is-complete br_radius m-x_2 p-x_3 p-y_2 bg_primary-4">is-complete: <i class="fal {{modifier_class}}"></i></span></div>
+	</li>
+
+	sg-wrapper: 
+	<ul class="no-bullet"><sg-wrapper-content/></ul>
+
+	Styleguide 20.1
+*/
+i.icon-complete_check:before {
+	content: "";
+	.is-complete & {
+		@extend %icon-toggle-space;
+		content: "\f00c";
+	}
+}
+i.icon-complete_check-circle:before {
+	@extend %icon-toggle-space;
+	content: "\f111";
+	.is-complete & {
+		content: "\f058";
+	}
+}

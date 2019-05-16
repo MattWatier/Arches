@@ -1,0 +1,59 @@
+/*
+    RECIPE: User Card
+
+    Member Cards Used in the CSTool give a great represendation on how complex the UI can be with a combination of UCs
+
+    markup:
+    <div class="detail-container shadow br_solid br_black-1 bg_white">
+        <div class="grid-x">
+            <div class="cell auto p_3">
+                <div class="member-name font_1 font_slab lh_2 member-name p-x_3 p-y-l_4">David
+                    Y. Wilder
+                    <a class="bg_secondary-4 float-right font_0 hover:bg_secondary p-l_3 p-r_3 p_2"><i
+                            class="fas fa-share-alt-square"></i>
+                        </a>
+                </div>
+                <div>
+                    <ul class="details no-bullet p-l_3 p-r_3 m_0 font_0 grid-x grid-margin-x">
+                        <li class="br_0 br-b_1 br_secondary-5 br_0 br_solid p_2 cell small-12">
+                            <div><i class="m-l_3 m-r_3 c_secondary-2 fal fa-user-slash"></i>NPI</div>
+                        </li>
+                        <li class="br-b_1 br_secondary-5 br_0 br_solid p_2 cell small-12"><i class="m-l_3 m-r_3 c_secondary-2 fal fa-hashtag"></i>1696062374299
+                        </li>
+                        <li class="br-b_1 br_secondary-5 br_0 br_solid p_2 cell small-12"><i class="m-l_3 m-r_3 c_secondary-2 fal fa-at"></i>Donec@quis.org
+                            <a class="link float-right p_2"><i class="fal fa-pencil"></i></a></li>
+                        <li class="br-b_1 br_secondary-5 br_0 br_solid p_2 cell small-12"><i class="m-l_3 m-r_3 c_secondary-2 fal fa-map-pin"></i>Polatlı
+                        </li>
+                        <li class="br-b_1 br_secondary-5 br_0 br_solid p_2 cell small-12"><i class="m-l_3 m-r_3 c_secondary-2 fal fa-badge-check"></i>75988
+                            <a href="" class="link float-right p_2"><i class="fal fa-exchange-alt"></i></a></li>
+                        <li class="br-b_1 br_secondary-5 br_0 br_solid p_2 cell small-12"><i class="m-l_3 m-r_3 c_secondary-2 fal fa-user-circle"></i>neque.et@neque.net
+                            <a href="#" class="link float-right p_2"><i class="fal fa-pencil"></i></a></li>
+                        <li class="br-b_1 br_secondary-5 br_0 br_solid p_2 cell small-12"><i class="m-l_3 m-r_3 c_secondary-2 fal fa-key"></i>GRW95WZD9VY
+                            <a href="#" class="link float-right p_2"><a href="#" class="link float-right p_2"><i
+                                        class="fal fa-pencil"></i></a></a></li>
+                    </ul>
+                    <div class="p_4 flex font_n1"><i class="m-l_3 c_secondary-2 fal fa-users-crown flex-shrink"></i><a
+                            class="link m-l_3 m-r_3 flex-auto">
+                            <i class="fas fa-chevron-circle-right p-r_3"></i>1 linked account(s) </a><a class="link float-right m-l_3 m-r_3 flex-1">manage
+                            &nbsp;
+                            <i class="fal fa-pencil"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="cell shrink texture_light bg_secondary-3 m-r_3 c_secondary-1 font_n2">
+                <ul class="flag no-bullet">
+                    <li class="p_3 center member"><i class="fal fa-user-md"></i></li>
+                    <li class="p_3 center accbadge active"><i class="fal fa-badge-check"></i></li>
+                    <li class="p_3 center iscience"><i class="fal fa-flask"></i></li>
+                    <li class="p_3 center bruteforce"><i class="fal fa-lock-alt"></i></li>
+                    <li class="p_3 center expobadge"><i class="fal fa-exclamation-circle"></i></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    sg-wrapper: 
+    <div class="p_5 p-t_3 p-b_3 texture_light bg_secondary-4"><sg-wrapper-content/></div>
+        
+    Styleguide 200.100
+*/

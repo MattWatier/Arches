@@ -1,0 +1,46 @@
+/*
+
+Scrollbar Mini
+
+Give a mini scroll bar to a content area. 
+
+markup:
+<div class="card shadow_2 cell small-6 large-4 max-w_3" >
+    <div class=" font_slab border-top-left-square c_white font_3 p_4 texture_dust card-divider bg_primary">
+    This is a header
+    </div>
+    <div class="card-section scrollbar-mini overflow_auto" style="max-height:300px;">
+        <h4>This is a card.</h4>
+        <p class="font_1">It has an easy to override visual style, and is appropriately subdued.</p>
+        <img src="https://picsum.photos/400/300">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi dolorem et maxime, officiis nulla vel? Numquam quas voluptatibus, voluptatem fuga saepe animi nemo voluptatum repellendus in natus libero, nobis illum!</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi dolorem et maxime, officiis nulla vel? Numquam quas voluptatibus, voluptatem fuga saepe animi nemo voluptatum repellendus in natus libero, nobis illum!</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi dolorem et maxime, officiis nulla vel? Numquam quas voluptatibus, voluptatem fuga saepe animi nemo voluptatum repellendus in natus libero, nobis illum!</p>       
+    </div>
+    <div class="card-divider br_0 br_solid br-t_1 br_primary"> <a href="#" class="button">I am so clickable</a></div>
+</div>
+
+Styleguide 112.1
+*/
+
+/* Let's get this party started */
+.scrollbar-mini::-webkit-scrollbar {
+  width: 0.5rem;
+}
+/* Track */
+.scrollbar-mini::-webkit-scrollbar-track {
+  box-shadow: make-shadow(2, "inset", #000, 0.2);
+  background-color: rgba(get-themecolor(primary, -3), 0.1);
+}
+/* Handle */
+.scrollbar-mini::-webkit-scrollbar-thumb {
+  border-radius: get-css-size(border-radius, round);
+  background: get-themecolor(primary, -1);
+  box-shadow: make-shadow(2, "inset", #000, 0.2);
+}
+.scrollbar-mini::-webkit-scrollbar-thumb:window-inactive {
+  background: rgba(get-themecolor(primary, -1), 0.1);
+}
+.scrollbar-mini::-webkit-scrollbar-track:window-inactive {
+  background: rgba(get-themecolor(primary, -3), 0.1);
+}

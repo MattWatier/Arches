@@ -1,0 +1,74 @@
+/*
+    RECIPE: Accordians
+
+    Accordions are elements that help you organize and navigate multiple documents in a single container. They can be used for switching between items in the container.
+
+    markup: 
+    <ul class="accordion" data-accordion>
+        <li class="accordion-item is-active" data-accordion-item>
+            <!-- Accordion tab title -->
+            <a href="#" class="accordion-title font_1 font_slab hover:bg_primary-4"><i class="fas icon-toggle_plus-minus fa-fw"></i> Accordion 1</a>
+            <!-- Accordion tab content: it would start in the open state due to using the `is-active` state class. -->
+            <div class="accordion-content" data-tab-content>
+                <p>Panel 1. Lorem ipsum dolor</p>
+                <a href="#">Nowhere to Go</a>
+            </div>
+        </li>
+        <li class="accordion-item" data-accordion-item>
+            <!-- Accordion tab title -->
+            <a href="#"class="accordion-title  font_1 font_slab hover:bg_primary-4"><i class="fas icon-toggle_plus-minus fa-fw"></i>Accordion 2</a>
+            <!-- Accordion tab content: it would start in the open state due to using the `is-active` state class. -->
+            <div class="accordion-content" data-tab-content>
+                <p>Panel 1. Lorem ipsum dolor</p>
+                <a href="#">Nowhere to Go</a>
+            </div>
+        </li>
+    </ul>
+
+    Styleguide 200.200
+
+*/
+
+/*
+  RECIPE: Ordered Cards
+
+  Having cards order on page to help users find there way through steps can some times be very helpful. 
+
+  markup:
+  <div class="card shadow_2 cell small-6 large-4">
+      <div class="grid-x font_slab  font_3 br-t_square c_white font_3 texture_dust bg_alert">
+          <div class="cell shrink p_3  bg_alert-n4"><span class="counter counter_increment font_5 lh_0 font_display c_whsite"></span></div>
+      <div class="cell auto p_3">First it is bad</div>
+      </div>
+      <div class="card-section">
+      <h4>This is a card.</h4>
+      <p>It has an easy to override visual style, and is appropriately subdued.</p>
+      </div>
+  </div>
+      <div class="card shadow_2 cell small-6 large-4">
+      <div class="grid-x font_slab  font_3 br-t_square c_white font_3 texture_dust bg_warning">
+          <div class="cell shrink p_3  bg_warning-n4"><span class="counter counter_increment font_5 lh_0 font_display c_whsite"></span></div>
+      <div class="cell auto p_3">Then it is not right</div>
+      </div>
+      <div class="card-section">
+      <h4>This is a card.</h4>
+      <p>It has an easy to override visual style, and is appropriately subdued.</p>
+      </div>
+  </div>
+      <div class="card shadow_2 cell small-6 large-4">
+      <div class="grid-x font_slab  font_3 br-t_square c_white font_3 texture_dust bg_success">
+          <div class="cell shrink p_3  bg_success-n4"><span class="counter counter_increment font_5 lh_0 font_display c_whsite"></span></div>
+      <div class="cell auto p_3">At last it is good</div>
+      </div>
+      <div class="card-section">
+      <h4>This is a card.</h4>
+      <p>It has an easy to override visual style, and is appropriately subdued.</p>
+      </div>
+  </div>
+
+  sg-wrapper: 
+  <div class="grid-x grid-margin-x grid-margin-y texture_medium counter_reset"><sg-wrapper-content/></div>
+
+  Styleguide 200.201
+
+    */

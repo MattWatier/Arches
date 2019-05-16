@@ -1,0 +1,174 @@
+/*
+	Margin
+
+	  <div class="p-b_3"><span class="bg_accent br_radius c_white d_inline-block font_n1 p-7_3 p-x_5 sg">Is Responsive: breakpoint modifiers</span></div>Margin classes are mobile first with postfix modifier for '-medium'and '-large'variations for responsive sizing.
+
+	.m_auto.small-6              - Margin 0 auto
+	.m_0              - All margins set to 0
+	.m_1.m-t_0:large              - All margins set to 1px
+	.m_2.m-t_0:large              - All margins set to 1/4 of global margin
+	.m_3.m-t_0:large              - All margins set to 1/2 of global margin
+	.m_4.m-t_0:large              - All margins set to global margin
+	.m_5.m-t_0:large              - All margins set to 2x of global margin 
+	.m-t_4          - Top margin set to global margin
+	.m-r_4        - Right margin set to global margin
+	.m-l_4         - Left margin set to global margin
+	.m-b_4       - Bottom margin set to global margin
+	.m-t_n4          - Top margin set to  negative global margin
+	.m-r_n4        - Right margin set to  negative global margin
+	.m-l_n4         - Left margin set to negative  global margin
+	.m-b_n4       - Bottom margin set to negative  global margin
+
+
+
+	markup:
+	<div class="{{modifier_class}} p_2  bg_primary text-center c_white cell auto opacity_5">Container With Margins</div>
+
+ 	sg-wrapper:
+	<div class="bg_warning-3 clearfix grid-x br_1 br_solid">
+	   <sg-wrapper-content/>
+	</div>
+
+	Styleguide 101.2
+
+ */
+
+.m_auto {
+	margin: 0 auto;
+}
+
+@include loop-style(margin, "", "");
+@include loop-style(margin-vertical, "", "");
+@include loop-style(margin-horizontal, "", "");
+@include loop-style(margin-top, "", "");
+@include loop-style(margin-bottom, "", "");
+@include loop-style(margin-left, "", "");
+@include loop-style(margin-right, "", "");
+
+@media #{$medium-up} {
+	@include loop-style(margin, $bp-label_medium, "");
+	@include loop-style(margin-vertical, $bp-label_medium, "");
+	@include loop-style(margin-horizontal, $bp-label_medium, "");
+	@include loop-style(margin-top, $bp-label_medium, "");
+	@include loop-style(margin-bottom, $bp-label_medium, "");
+	@include loop-style(margin-left, $bp-label_medium, "");
+	@include loop-style(margin-right, $bp-label_medium, "");
+}
+
+@media #{$large-up} {
+	@include loop-style(margin, $bp-label_large, "");
+	@include loop-style(margin-vertical, $bp-label_large, "");
+	@include loop-style(margin-horizontal, $bp-label_large, "");
+	@include loop-style(margin-top, $bp-label_large, "");
+	@include loop-style(margin-bottom, $bp-label_large, "");
+	@include loop-style(margin-left, $bp-label_large, "");
+	@include loop-style(margin-right, $bp-label_large, "");
+}
+
+/*
+	Padding CSS
+
+	  <div class="p-b_3"><span class="bg_accent br_radius c_white d_inline-block font_n1 p-7_3 p-x_5 sg">Is Responsive: breakpoint modifiers</span></div>Quickly alter the padding of an object
+
+	.p_0              - All paddings set to 0
+	.p_1              - All paddings set to 1px
+	.p_2              - All paddings set to 1/4 of global padding
+	.p_3              - All paddings set to 1/2 of global padding
+	.p_4              - All paddings set to global padding
+	.p_5              - All paddings set to 2x of global padding 
+	.p-t_4          	- Top padding set to global padding
+	.p-r_4        	- Right padding set to global padding
+	.p-l_4         - Left padding set to global padding
+	.p-b_4       - Bottom padding set to global padding
+
+	markup:
+	<div class="{{modifier_class}} br_solid br_transparent bg_alert-3  text-center"><div class="bg_primary-5 text-center">Content With Padding</div></div>
+
+	Styleguide 101.3
+
+ */
+
+@include loop-style(padding, "", "");
+@include loop-style(padding-vertical, "", "");
+@include loop-style(padding-horizontal, "", "");
+@include loop-style(padding-top, "", "");
+@include loop-style(padding-bottom, "", "");
+@include loop-style(padding-left, "", "");
+@include loop-style(padding-right, "", "");
+
+@media #{$medium-up} {
+	@include loop-style(padding, $bp-label_medium, "");
+	@include loop-style(padding-vertical, $bp-label_medium, "");
+	@include loop-style(padding-horizontal, $bp-label_medium, "");
+	@include loop-style(padding-top, $bp-label_medium, "");
+	@include loop-style(padding-bottom, $bp-label_medium, "");
+	@include loop-style(padding-left, $bp-label_medium, "");
+	@include loop-style(padding-right, $bp-label_medium, "");
+}
+
+@media #{$large-up} {
+	@include loop-style(padding, $bp-label_large, "");
+	@include loop-style(padding-vertical, $bp-label_large, "");
+	@include loop-style(padding-horizontal, $bp-label_large, "");
+	@include loop-style(padding-top, $bp-label_large, "");
+	@include loop-style(padding-bottom, $bp-label_large, "");
+	@include loop-style(padding-left, $bp-label_large, "");
+	@include loop-style(padding-right, $bp-label_large, "");
+}
+
+.absolute {
+	position: absolute;
+}
+
+.relative {
+	position: relative;
+}
+
+.fixed {
+	position: fixed;
+}
+
+.sticky {
+	position: sticky;
+}
+
+/*
+	Position
+
+	  <div class="p-b_3"><span class="bg_accent br_radius c_white d_inline-block font_n1 p-7_3 p-x_5 sg">Is Responsive: breakpoint modifiers</span></div>Quickly alter the position type and location of an object with 'absolute' and 'top'
+
+	.t_0 - modify top of an absolute positioned block 
+	.t_5 - modify top of an absolute positioned block
+	.b_0 - modify bottom of an absolute positioned block 
+	.b_5 - modify bottom of an absolute positioned block
+	.l_0 - modify left of an absolute positioned block 
+	.l_5 - modify left of an absolute positioned block
+	.r_0 - modify right of an absolute positioned block 
+	.r_5 - modify right of an absolute positioned block
+
+
+	markup:
+	<div class=" br_solid br_transparent bg_alert-3 relative p_5"><div class="bg_primary-5 text-center absolute {{modifier_class}}">Position Absolute {{modifier_class}}</div></div>
+
+	Styleguide 101.4
+
+ */
+
+@include loop-style(top, "", "");
+@include loop-style(bottom, "", "");
+@include loop-style(left, "", "");
+@include loop-style(right, "", "");
+
+@media #{$medium-up} {
+	@include loop-style(top, $bp-label_medium, "");
+	@include loop-style(bottom, $bp-label_medium, "");
+	@include loop-style(left, $bp-label_medium, "");
+	@include loop-style(right, $bp-label_medium, "");
+}
+
+@media #{$large-up} {
+	@include loop-style(top, $bp-label_large, "");
+	@include loop-style(bottom, $bp-label_large, "");
+	@include loop-style(left, $bp-label_large, "");
+	@include loop-style(right, $bp-label_large, "");
+}

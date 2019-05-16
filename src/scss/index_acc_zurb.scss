@@ -1,0 +1,38 @@
+/** 
+	Arches
+	Version 1.1
+**/
+$debug-trace: false !default;
+$name-mode: "SHORT" !default; // $name-mode: "SHORT","LONG","ALL"
+$ms-base: 1rem !default; // needs to be in rem's
+@import "helpers/helpers";
+@import "vendor/modular-scale";
+@import "config/config";
+@import "config/vars";
+@import "config/colors";
+@import "config/fonts";
+@import "config/textures";
+@import "config/logo";
+
+@import "config/utility-css-definitions";
+
+$white: #fff;
+/*Zurb Foundation Framework Setup Files.*/
+@import "../../node_modules/foundation-sites/scss/util/util";
+@import "config/foundation-settings";
+@import "../../node_modules/foundation-sites/scss/foundation.scss";
+@include foundation-everything();
+/*ACC Branding*/
+
+// ACC Design Alterations
+@import "base/base";
+// @import "components/components";
+// @import "structures/structures";
+// #override-container {
+// 	@import "utility-css/utility-css";
+// }
+@import "components/components";
+@import "utility-css/utility-css";
+@import "reciepes/reciepes";
+//StyleGuide
+@import "styleguide/styleguide";

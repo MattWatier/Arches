@@ -1,0 +1,40 @@
+/** 
+	Arches
+	Version 1.1
+**/
+$debug-trace: false !default;
+$name-mode: "SHORT" !default; // $name-mode: "SHORT","LONG","ALL"
+$ms-base: 1rem !default; // needs to be in rem's
+@import "helpers/helpers";
+@import "vendor/modular-scale";
+@import "config/config";
+@import "config/vars";
+@import "config/colors";
+@import "config/fonts";
+@import "config/textures";
+@import "config/logo";
+
+@import "config/utility-css-definitions";
+
+$white: #fff;
+/*UC Only Setup*/
+
+/*ACC Branding*/
+// ACC Design Alterations
+@import "base/base";
+@import "components/icon-toggle";
+@import "components/scrollbar";
+@import "components/loading-grid";
+@import "components/interactive-extras";
+@import "helpers/breakpoint";
+
+// @import "components/components";
+// @import "structures/structures";
+// #override-container {
+// 	@import "utility-css/utility-css";
+// }
+
+@import "utility-css/utility-css";
+@import "reciepes/reciepes";
+//StyleGuide
+//@import "styleguide/styleguide";

@@ -1,0 +1,46 @@
+/*
+Buttons
+
+Basic Buttons
+
+.primary	            - Primary Class Button (default)
+.secondary 	            - Second Class Button
+.navigation             - Button reserved for navigation elements
+.success                - Success State.
+.alert                  - Alert State.
+.warning	            - Warning State
+.hollow		            - All button states can become hollow
+.clear		            - All button states can become hollow
+.dropdown		        - All button states can become hollow
+.radius		            - Give the button softer corners
+.shadow.clear		    - Give a button a shadow
+.tiny		            - tiny buttons
+.small		            - Small buttons
+default		            - Medium buttons (default)
+.large		            - Large buttons
+.xlarge		            - Large buttons
+.disabled	            - Disabled buttons
+
+markup:
+<a class="button {{modifier_class}}">{{modifier_class}} button</a>
+
+ Styleguide 10.1
+*/
+.button {
+	white-space: nowrap;
+	&.hollow {
+		background-color: transparent;
+	}
+	&.clear {
+		background-color: transparent;
+		border-color: transparent;
+	}
+	&.shadow {
+		@extend %hover_transition !optional;
+		box-shadow: make-shadow(3, "drop", #000, 0.4);
+
+		&:hover {
+			box-shadow: make-shadow(1, "drop", #000, 0.1);
+		}
+	}
+}

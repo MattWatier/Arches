@@ -1,0 +1,93 @@
+/*
+Textures
+
+All textures in the Arches design are a subtle variation of transparent.   Allowing for colors to bleed through from behind.  Different textures have intentions or are reserved for certain usagaes.  It is easy to apply textures using the texture utlities. 
+
+.texture_light                       		- Light textures is reserved for the base of a page where it can gve a soft area for text or cards to live on top of. 
+.texture_medium            					- medium texture are used for area that are hidden away.  Collapsable navs, areas, or sidebars ususaly use the medium texture.
+.texture_dust            					- Dust is the most transparent texture allowing for the color of the background to show through the most.  This is used for the painted tops of cards, or score bars.
+.texture_dark              					- This texture predominatly used on the footer. Its rich black will alway requrie reversed text and buttons to be readable.  
+.texture_cross            					- A mostly transparent cross texture used for alternating rows of content when a little extra texture is needed.
+.texture_disabled              				- This texture is used to paint disabled buttons and ui items giving it a greyed and X'ed out appearand. 
+
+markup:
+<div class="{{modifier_class}} p_5 br_black-8 br_1 br_solid text-center">{{modifier_class}}</div>
+
+Styleguide 104.4
+
+ */
+
+.texture_light {
+	@include texture-light;
+}
+.texture_medium {
+	@include texture-medium;
+}
+.texture_dark {
+	@include texture-dark;
+}
+.texture_dust {
+	@include texture-dust;
+}
+.texture_disabled,
+.disabled,
+.disabled:hover {
+	@include texture-disabled;
+}
+.texture_cross {
+	@include texture-cross;
+}
+.texture-dynamic {
+	@include texture-dynamic;
+}
+
+/*
+	Textures Plus Background Colors
+
+	All textures are slightly transparent.  You can acheive different effects with using the combo of textures and background colors.  
+
+	.texture_light.bg_primary              	- textures are slightly transparent so they can be colored with background-color classess
+	.texture_dust.bg_primary              	- textures are slightly transparent so they can be colored with background-color classess
+	.texture_medium.bg_primary              	- textures are slightly transparent so they can be colored with background-color classess
+	.texture_dark.bg_primary              	- textures are slightly transparent so they can be colored with background-color classess
+	.texture_light.bg_alert              		- textures are slightly transparent so they can be colored with background-color classess
+	.texture_medium.bg_alert             		- textures are slightly transparent so they can be colored with background-color classess
+	.texture_dust.bg_alert             		- textures are slightly transparent so they can be colored with background-color classess
+	.texture_dark.bg_alert             		- textures are slightly transparent so they can be colored with background-color classess
+	.texture_cross.bg_alert             		- textures are slightly transparent so they can be colored with background-color classess
+	.texture_disabled.bg_alert             	- textures are slightly transparent so they can be colored with background-color classess
+
+	markup:
+	<div class="{{modifier_class}} p_5 br_black-8 br_1 br_solid text-center">{{modifier_class}}</div>
+
+	Styleguide 104.4.1
+
+ */
+
+/*
+	Textures Plus Background Shades
+
+	All textures are slightly transparent.  You can further shade the background colors to achieve even more flexablity.  
+
+	.texture_light.bg_primary              	- textures are slightly transparent so they can be colored with background-color classess
+	.texture_dust.bg_primary              	- textures are slightly transparent so they can be colored with background-color classess
+	.texture_medium.bg_primary              	- textures are slightly transparent so they can be colored with background-color classess
+	.texture_dark.bg_primary              	- textures are slightly transparent so they can be colored with background-color classess
+	.texture_light.bg_warning              		- textures are slightly transparent so they can be colored with background-color classess
+	.texture_medium.bg_warning             		- textures are slightly transparent so they can be colored with background-color classess
+	.texture_dust.bg_warning             		- textures are slightly transparent so they can be colored with background-color classess
+	.texture_dark.bg_warning             		- textures are slightly transparent so they can be colored with background-color classess
+	.texture_cross.bg_warning             		- textures are slightly transparent so they can be colored with background-color classess
+	.texture_disabled.bg_warning             	- textures are slightly transparent so they can be colored with background-color classess
+
+	markup:
+	<div class="grid-x">
+		<div class="{{modifier_class}}-n3 p_3 cell auto text-center c_white">n3</div>
+		<div class="{{modifier_class}}-n1 p_3 cell auto text-center c_white">n1</div>
+		<div class="{{modifier_class}}-1 p_3 cell auto text-center c_white">1</div>
+		<div class="{{modifier_class}}-3 p_3 cell auto text-center c_white">3</div>
+	</div>
+
+	Styleguide 104.4.2
+
+ */

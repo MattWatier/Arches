@@ -1,0 +1,126 @@
+/*
+ Styleguide Templates
+
+## This is not part of the style of Arches
+This is a collection of documentation types that can be used as templates when doecuemting the Styles of Arches.  It is all based off of the ["SC5"](https://github.com/SC5/sc5-styleguide)
+
+ Styleguide 999.0
+*/
+/* No styleguide reference. */
+
+.templateDocumentation{ .parent, .child{ padding:10px; display: block; } }
+/*
+ Container  Template
+
+
+This is how you define a container 
+
+ markup:
+ <div class="parent">parent</div>
+
+ sg-wrapper:
+ <div class="templateDocumentation">
+   <sg-wrapper-content/>
+ </div>
+
+ Styleguide 999.1
+*/
+
+.parent{background-color:red;}
+
+/*
+ Child Template
+
+ This is how templates can stack inside of other templates
+ 
+ markup:
+ <span class="child">child</span>
+
+ sg-wrapper:
+  <div  class="templateDocumentation"><div class="parent">
+   <sg-wrapper-content/>
+ </div> </div>
+
+ Styleguide 999.2
+*/
+.child{background-color:blue;}
+/*
+ Child Template Sub
+
+ This is how templates can stack inside of other templates
+ 
+ markup:
+ <span class="child sub">child</span>
+
+
+ Styleguide 999.2.1
+*/
+.child.sub{background-color:green;}
+/*
+ Item With Modifiers Template
+
+Many Objects have modifiers like psudo classes and classes applied to make them look different.
+ 
+
+default		- Default Design
+:hover       - Subtle hover highlight.
+.alert       - A highlight indicating you’ve already given a star.
+
+
+ markup:
+ <li class="{{modifier_class}}">List Item</li>
+
+ sg-wrapper:
+ <div  class="templateDocumentation"><ul>
+   <sg-wrapper-content/>
+ </ul></div>
+
+ Styleguide 999.3
+*/
+
+li{
+.templateDocumentation &{	
+background-color: yellow;
+	&.warning{background-color: orange;}
+	&.alert{background-color: red;}
+}
+}
+
+
+
+/*
+ Item With Validation Tabel
+
+Many Objects have modifiers like psudo classes and classes applied to make them look different.
+
+| Validation 			| State		 		| Message												|  
+| ---- 					| ----- 			| --- 													|  
+| required 				| warning 			| { Input Label Text } is missing.               					 |  
+| all alph characters	| alert	 			| Only alpha characters are allowed.  					|  
+| length > 3 			| alert  			| Item Name must be more then 3 Characters 					|  
+| All Validations Met 	| success 			| valid Item Name 					|
+
+
+default		- Default Design
+.success       - Success State.
+.alert       - Alert State.
+.warning	- Warning State
+
+ markup:
+ <div class="message {{modifier_class}}"> Validation Message </div>
+
+ sg-wrapper:
+ <div  class="templateDocumentation"><sg-wrapper-content/></div>
+
+ Styleguide 999.4
+*/
+
+
+.templateDocumentation .message{	
+background-color: yellow;
+	&.warning{background-color: orange;}
+	&.alert{background-color: red;}
+	&.success{background-color: green;}
+}
+
+

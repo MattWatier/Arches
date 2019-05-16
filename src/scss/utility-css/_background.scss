@@ -1,0 +1,96 @@
+/*
+  Background Colors
+ 
+  Background colors can be easily change with bg_{{color-name}}  
+ 
+  bg_primary            	- background color warning color
+  bg_secondary            	- background color warning color
+  bg_alert            	- background color alert color
+  bg_warning            	- background color warning color
+  bg_success              - background color success color
+  bg_info              - background color success color
+  bg_highlight              - background color success color
+
+
+  markup:
+  <div class="{{modifier_class}} p_3 c_white">Background Color of {{modifier_class}}</div>
+ 
+  Styleguide 104.1
+ 
+ */
+/*
+  Background Color Shades
+ 
+  Background colors can be shifted by appending a modifier bg_{{color-name}}-{{n5 to 5}}.  The negative(n) numbers mix the color with black and the positive numbers mix the color with white.   
+ 
+  bg_primary                - background color modified light to dark
+  bg_secondary              - background color modified light to dark
+  bg_accent                 - background color modified light to dark
+  bg_navigation             - background color modified light to dark
+  bg_info                   - background color modified light to dark
+  bg_highlight              - background color modified light to dark
+  bg_success                - background color modified light to dark
+  bg_warning                - background color modified light to dark
+  bg_alert                  - background color modified light to dark
+  bg_acc                    - background color modified light to dark
+
+  markup:
+  <div class="grid-x">
+    <div class="bg_white cell auto text-center p_2 p-y_5 ">white</div>
+    <div class="{{modifier_class}}-5 cell auto text-center  p_2 p-y_5">5</div>
+    <div class="{{modifier_class}}-4 cell auto text-center  p_2 p-y_5">4</div>
+    <div class="{{modifier_class}}-3 cell auto text-center  p_2 p-y_5">3</div>
+    <div class="{{modifier_class}}-2 cell auto text-center  p_2 p-y_5">2</div>
+    <div class="{{modifier_class}}-1 cell auto text-center  c_white p_2 p-y_5">1</div>
+    <div class="{{modifier_class}}-0 cell auto text-center  c_white p_2 p-y_5">0</div>
+    <div class="{{modifier_class}}-n1 cell auto text-center  c_white p_2 p-y_5">n1</div>
+    <div class="{{modifier_class}}-n2 cell auto text-center  c_white p_2 p-y_5">n2</div>
+    <div class="{{modifier_class}}-n3 cell auto text-center  c_white p_2 p-y_5">n3</div>
+    <div class="{{modifier_class}}-n4 cell auto text-center  c_white p_2 p-y_5">n4</div>
+    <div class="{{modifier_class}}-n5 cell auto text-center  c_white p_2 p-y_5">n5</div>
+    <div class="bg_black cell auto text-center  c_white p_2 p-y_5">black</div>
+  </div>
+
+ 
+  Styleguide 104.1.1
+ 
+ */
+
+@each $color-name, $color in $theme-palette {
+  @include color-loop(background-color, $color-name, $color);
+}
+
+#{ class-name-constructor(background-color, white)} {
+  background-color: $white;
+}
+#{ class-name-constructor(background-color, black)} {
+  background-color: $black;
+}
+@include loop-transparent(background-transparent, "black", "", "!important", false);
+@include loop-transparent(background-transparent, "white", "", "!important", false);
+/*
+  Background Colors Alpha
+ 
+  Background colors of white and black can be shifted by appending a modifier bg_{{color-name}}-{{0 to 9}} to shift its transparency
+ 
+  black              - background color of black modified with alphas
+  white              - background color of white modified with alphas
+
+  markup:
+  <div class="grid-x p_4 bg_primary">
+    <div class="bg_{{modifier_class}}-0 cell auto text-center c_white  p_2 p-y_5">{{modifier_class}}-0</div>
+    <div class="bg_{{modifier_class}}-1 cell auto text-center c_white  p_2 p-y_5">{{modifier_class}}-1</div>
+    <div class="bg_{{modifier_class}}-2 cell auto text-center c_white  p_2 p-y_5">{{modifier_class}}-2</div>
+    <div class="bg_{{modifier_class}}-3 cell auto text-center c_white  p_2 p-y_5">{{modifier_class}}-3</div>
+    <div class="bg_{{modifier_class}}-4 cell auto text-center c_white p_2 p-y_5">{{modifier_class}}-4</div>
+    <div class="bg_{{modifier_class}}-5 cell auto text-center c_white p_2 p-y_5">{{modifier_class}}-5</div>
+    <div class="bg_{{modifier_class}}-6 cell auto text-center c_white p_2 p-y_5">{{modifier_class}}-6</div>
+    <div class="bg_{{modifier_class}}-7 cell auto text-center c_white p_2 p-y_5">{{modifier_class}}-7</div>
+    <div class="bg_{{modifier_class}}-8 cell auto text-center c_white p_2 p-y_5">{{modifier_class}}-8</div>
+    <div class="bg_{{modifier_class}}-9 cell auto text-center c_white p_2 p-y_5">{{modifier_class}}-9</div>
+    <div class="bg_{{modifier_class}} cell auto text-center c_white p_2 p-y_5">{{modifier_class}}</div>
+  </div>
+
+  Styleguide 104.1.2
+ 
+ */

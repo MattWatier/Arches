@@ -1,0 +1,78 @@
+/*
+ Pagination
+
+ This is what pagination should look like and its modifications.
+
+ markup:
+ <nav aria-label="Pagination" class="border_solid border_primary border-top-width_3">
+  <ul class="pagination font_display font_bold">
+    <li class="pagination-previous disabled"><i class="fas fa-chevron-left"></i> <span class="show-for-sr">page</span></li>
+    <li class="current"><span class="show-for-sr">You're on page</span> 1</li>
+    <li><a href="#" aria-label="Page 2">2</a></li>
+    <li><a href="#" aria-label="Page 3">3</a></li>
+    <li><a href="#" aria-label="Page 4">4</a></li>
+    <li class="fal fa-ellipsis-h" aria-hidden="true"></li>
+    <li><a href="#" aria-label="Page 12">12</a></li>
+    <li><a href="#" aria-label="Page 13">13</a></li>
+    <li class="pagination-next"><a href="#" aria-label="Next page"><i class="fas fa-chevron-right"></i><span class="show-for-sr">page</span></a></li>
+  </ul>
+</nav>
+
+ Styleguide 200.11
+*/
+.pagination-previous,
+.pagination-next {
+	background: get-themecolor(secondary, 3);
+}
+.pagination .disabled:hover {
+	@include texture-disabled;
+}
+
+/*
+ Pagination in card
+
+ This is what pagination should look like and its modifications.
+
+ markup:
+ <nav aria-label="Pagination" class=" pagination-container">
+  <ul class="pagination font_display font_bold float-right">
+    <li class="pagination-previous disabled"><i class="fas fa-chevron-left"></i> <span class="show-for-sr">page</span></li>
+    <li class="current"><span class="show-for-sr">You're on page</span> 1</li>
+    <li class=""><a href="#" aria-label="Page 2">2</a></li>
+    <li class=""><a href="#" aria-label="Page 3">3</a></li>
+    <li class=""><a href="#" aria-label="Page 4">4</a></li>
+    <li class=" fal fa-ellipsis-h " aria-hidden="true"></li>
+    <li class=""><a href="#" aria-label="Page 12">12</a></li>
+    <li class=""><a href="#" aria-label="Page 13">13</a></li>
+    <li class="pagination-next"><a href="#" aria-label="Next page"><i class="fas fa-chevron-right"></i><span class="show-for-sr">page</span></a></li>
+  </ul>
+</nav>
+
+sg-wrapper:
+<div class="card shadow_2" >
+  <div class="card-section">
+    <h4>This is a card.</h4>
+   </div>
+  <sg-wrapper-content/>
+</div>
+
+ Styleguide 200.12
+*/
+
+.pagination-container {
+	background: get-themecolor(primary, 0);
+	padding: $padding_0 $padding_3;
+	.pagination {
+		margin-bottom: $margin_3;
+	}
+	.current {
+		background: $white;
+		color: get-themecolor(primary, 0);
+	}
+	a:not([class="pagination-previous"]):not([class="pagination-next"]) {
+		color: $white;
+		&:hover {
+			color: $black;
+		}
+	}
+}

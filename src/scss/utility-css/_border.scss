@@ -1,0 +1,241 @@
+/* Find Me */
+#{ class-name-constructor(border-radius,dotted)},
+#{ class-name-constructor(border-radius,dashed)},
+#{ class-name-constructor(border-radius,solid)} {
+	border-width: 1px;
+}
+#{ class-name-constructor(border-radius,none)} {
+	border-width: 0;
+}
+
+/*
+Border Type
+
+Depends on base border module in _borders.css
+
+br_none           - none
+br_dotted         - dotted
+br_dashed         - dashed
+br_solid          - solid
+  
+markup:
+<div class="{{modifier_class}} br_black bw_1 p_3">{{modifier_class}} border</div>
+
+Styleguide 103.1
+
+*/
+
+@include loop-style(border-style);
+@media #{$medium-only} {
+	@include loop-style(border-style, $bp-label_medium);
+}
+
+@media #{$large-up} {
+	@include loop-style(border-style, $bp-label_large);
+}
+
+/*
+Border Color
+
+
+br_primary            - border color
+br_secondary             - border color
+br_alert             - border color
+br_warning             - border color
+br_info            - border color
+br_highlight             - border color
+
+
+markup:
+<div class="{{modifier_class}} p_3 br_solid bw_3">{{modifier_class}} border</div>
+
+Styleguide 103.2
+
+*/
+
+/*
+Border Alpha Black
+
+Border black has attached alpha modifiers to allow for greater flexablity 
+
+br_black             - border black with alpha of 100%
+br_black-0             - border black with alpha of 2%
+br_black-1             - border black with alpha of 10%
+br_black-2             - border black with alpha of 20%
+br_black-3             - border black with alpha of 30%
+br_black-4             - border black with alpha of 40%
+br_black-5             - border black with alpha of 50%
+br_black-6             - border black with alpha of 60%
+br_black-7             - border black with alpha of 70%
+br_black-8             - border black with alpha of 80%
+br_black-9             - border black with alpha of 90%
+
+markup:
+<div class="{{modifier_class}} p_3 br_solid br_5 bg_primary-1 white">{{modifier_class}} border</div>
+
+Styleguide 103.2.1
+
+*/
+
+/*
+  Border Alpha White
+  
+  Border white has attached alpha modifiers to allow for greater flexablity 
+  
+  br_white             - border white with alpha of 100%
+  br_white-0             - border white with alpha of 2%
+  br_white-1             - border white with alpha of 90%
+  br_white-2             - border white with alpha of 80%
+  br_white-3             - border white with alpha of 70%
+  br_white-4             - border white with alpha of 60%
+  br_white-5             - border white with alpha of 50%
+  br_white-6             - border white with alpha of 40%
+  br_white-7             - border white with alpha of 30%
+  br_white-8             - border white with alpha of 20%
+  br_white-9             - border white with alpha of 10%
+  
+  markup:
+  <div class="{{modifier_class}} p_3 br_solid br_5 bg_primary-1 c_white">{{modifier_class}} border</div>
+  
+  Styleguide 103.2.2
+  
+  */
+
+@include loop-transparent(border-transparent, "black", "", "!important", false);
+@include loop-transparent(border-transparent, "white", "", "!important", false);
+
+.border_transparent {
+	border-color: transparent;
+}
+
+/*
+	Border Radius
+  
+	Apply border radius to objects by adding full or partial classes for border-radius
+  
+	br_square           - All square
+	br_radius        - All with $global-radus
+	br_round         - All corners with 99(px)
+	br_circle          - All corders at 100%
+	br-tl_square           - top left square
+	br-tl_radius        - top left with $global-radus
+	br-tl_round         - top left corners with 99(px)
+	br-tl_circle          - top left corders at 100%
+	br-bl_square           - bottom left square
+	br-bl_radius        - bottom left with $global-radus
+	br-bl_round         - bottom left corners with 99(px)
+	br-bl_circle          - bottom left corders at 100%
+  
+  
+	markup:
+	<div class="{{modifier_class}} p_3 br_black br_solid br_2">{{modifier_class}} border</div>
+  
+	Styleguide 103.3
+  
+  */
+
+@include loop-style(border-radius);
+@include loop-style(border-top-right-radius);
+@include loop-style(border-top-left-radius);
+@include loop-style(border-bottom-right-radius);
+@include loop-style(border-bottom-left-radius);
+
+@each $val-name, $val in map-get($value-to-unit, radius) {
+	.#{$val-name} {
+		&,
+		.switch-paddle,
+		.switch-paddle::after {
+			border-radius: $val;
+		}
+	}
+}
+
+/*
+  Border Colors
+  
+  Border black has attached alpha   
+  
+  br_primary            	  - border color primary
+  br_alert            	    - border color alert
+  br_warning            	  - border color warning
+  br_success            	  - border color success
+  br_primary-1             - border color mixed with white
+  br_primary-2             - border color mixed with white
+  br_primary-3             - border color mixed with white
+  br_primary-4             - border color mixed with white
+  br_primary-5             - border color mixed with white
+  br_primary-n1             - border color mixed with black
+  br_primary-n2             - border color mixed with black
+  br_primary-n3             - border color mixed with black
+  br_primary-n4             - border color mixed with black
+  br_primary-n5             - border color mixed with black 
+  
+  markup:
+  <div class="{{modifier_class}} p_3 br_solid br_1 c_white">{{modifier_class}} border</div>
+  
+  Styleguide 103.4
+  
+  */
+
+@each $color-name, $hex-value in $theme-palette {
+	@include color-loop(border-color, $color-name, $hex-value);
+}
+
+/*
+    Border Width
+   
+    Manipulation of borders with thisese classes either all border or with single borders   
+  
+    br_0            	- all border with no border
+    br_1            	- all borders with 1px
+    br_2            	- all borders with .125rem
+    br_3            	- all borders with .25rem
+    br_4            	- all borders with .5rem
+    br_5            	- all borders with rem
+    br-l_0.br_1            	- left border with no border
+    br-l_1.br_1            	- left borders with 1px
+    br-l_2.br_1            	- left borders with .125rem
+    br-l_3.br_1            	- left borders with .25rem
+    br-l_4.br_1            	- left borders with .5rem
+    br-l_5.br_1            	- left borders with rem
+  
+  
+    markup:
+    <div class="{{modifier_class}} p_3 br_solid br_black c_black">{{modifier_class}} border</div>
+  
+    Styleguide 103.5
+  
+   */
+
+// Reset all borders to zero if applying a single border dimension.
+.br-t_0,
+.br-t_1,
+.br-t_2,
+.br-t_3,
+.br-t_4,
+.br-t_5,
+.br-r_0,
+.br-r_1,
+.br-r_2,
+.br-r_3,
+.br-r_4,
+.br-r_5,
+.br-l_0,
+.br-l_1,
+.br-l_2,
+.br-l_3,
+.br-l_4,
+.br-l_5,
+.br-b_0,
+.br-b_1,
+.br-b_2,
+.br-b_3,
+.br-b_4,
+.br-b_5 {
+	border-width: 0;
+}
+@include loop-style(border-width);
+@include loop-style(border-top-width);
+@include loop-style(border-right-width);
+@include loop-style(border-left-width);
+@include loop-style(border-bottom-width);

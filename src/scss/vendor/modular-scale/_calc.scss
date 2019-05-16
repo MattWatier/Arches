@@ -1,0 +1,19 @@
+@function ms-calc($Value, $Base: $ms-base, $Ratio: $ms-ratio) {
+   @return ms-pow($Ratio, $Value) * $Base;
+  //!! there is some reason why pow doesn't work.
+
+  // // If pow exists use it.
+  // // It supports non-interger values!
+  // @if $MS-pow-exists {
+  //   @debug"pow exisits";
+  //   // The formula for figuring out modular scales is:
+  //   // (r^v)*b
+  //   @return pow($Ratio, $Value) * $Base;
+  // }
+
+  // // If not, use ms-pow().
+  // // Not as fast or capable of non-integer exponents.
+  // @else {
+  //   @return ms-pow($Ratio, $Value) * $Base;
+  // }
+}

@@ -1,0 +1,29 @@
+{
+  "name": "arches",
+  "version": "1.0.0",
+  "description": "Global style system with ablity to be based on utlity classes ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MattWatier/Arches.git"
+  },
+  "keywords": [
+    "Utlity",
+    "Classes",
+    "Zurb",
+    "Boodstrap"
+  ],
+  "author": "Matt Watier",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MattWatier/Arches/issues"
+  },
+  "homepage": "https://github.com/MattWatier/Arches#readme",
+  "devDependencies": {
+    "kss": "^3.0.0-beta.25",
+    "michelangelo": "^0.8.0"
+  }
+}

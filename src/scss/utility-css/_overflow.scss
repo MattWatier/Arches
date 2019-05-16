@@ -1,0 +1,29 @@
+.overflow_hidden {
+  overflow: hidden;
+}
+
+.overflow_visible {
+  overflow: visible;
+}
+
+.overflow_auto {
+  overflow: auto;
+}
+
+.overflow_scroll {
+  overflow-x: scroll;
+}
+
+.overflow_clip {
+  @extend .overflow_hidden;
+  text-overflow: clip;
+}
+
+.overflow_ellipsis {
+  @extend .overflow_hidden;
+  text-overflow: ellipsis;
+}
+
+.overflow_unset {
+  overflow: unset;
+}

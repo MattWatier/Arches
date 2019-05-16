@@ -1,0 +1,79 @@
+/*
+Anatomy
+
+<h2>Anatomy of a Utility Class Name</h2>
+The breakdown of the names for UCs follow a structured patter for easy muscle memory learning. 
+
+  markup:
+  <p class="font_2">All of the Class Names follow this ordered pattern of construction.</p>
+  <ol class="font_1 font_bold m_4 br_solid br_1 br_secondary-4 lh_4" style="list-style-position: inside;">
+        <li class="p_2 bg_success-3">State - Hover <em>(Optional)</em></li>
+        <li class="p_2 bg_primary-3">Class Name</li>
+        <li class="p_2 bg_alert-3">Class Name Modifier <em>(Optional)</em></li>
+        <li class="p_2 bg_highlight-3">Value</li>
+        <li class="p_2 bg_alert-3">Value Modifier <em>(Optional)</em></li>
+        <li class="p_2 bg_accent-3">Breakpoint <em>(Optional)</em></li>
+        <li class="p_2 bg_warning-3">*Dividers can be : _ or - depending on usage</li>
+  </ol>
+  <div class="font_2">
+      <div class="font_bold font_3">Example 1</div>
+      <div class="font_1 m-t_2">Make the background color primary modified by the shading of negative 2 when the cursor has hovered over it.</div>
+      <div class="h:bg_primary-n3 h:c_white  m-y_4 p_4 br_solid br_secondary-3 br_1">I have the class h:bg_primary-n2</div>
+      <div class="font_bold font_1">Long Name</div>
+      <div class="flex m-t_3">
+            <div class="flex_auto bg_success-3 p_3">hover</div>
+            <div class="flex_auto bg_warning-3 p_3">:</div>
+            <div class="flex_auto bg_primary-3 p_3">background-color</div>
+            <div class="flex_auto bg_warning-3 p_3">_</div>
+            <div class="flex_auto bg_highlight-3 p_3">primary</div>
+            <div class="flex_auto bg_warning-3 p_3">-</div>
+            <div class="flex_auto bg_alert-3 p_3">n2</div>
+      </div>
+      <div class="font_bold font_1">Utiltiy Class</div>
+      <div class="flex m-t_3">
+        <div class="flex_auto bg_success-3 p_3">h</div>
+        <div class="flex_auto bg_warning-3 p_3">:</div>
+        <div class="flex_auto bg_primary-3 p_3">bg</div>
+        <div class="flex_auto bg_warning-3 p_3">_</div>
+        <div class="flex_auto bg_highlight-3 p_3">primary</div>
+        <div class="flex_auto bg_warning-3 p_3">-</div>
+        <div class="flex_auto bg_alert-3 p_3">n2</div>
+      </div>
+      <ol class="font_0 font_bold c_black m_4 br_solid br_1 br_secondary-4 lh_4" style="list-style-position: inside;">
+          <li class="bg_success-3 p_3">'h' => Interaction State </li>
+          <li class="bg_warning-3 p_3">`:`=> Interaction State Divider when use state interaction</li>
+          <li class="bg_primary-3 p_3">'bg' => Class Name</li>
+          <li class="bg_warning-3 p_3">`_` => Value Divider think of this as an equal mark</li>
+          <li class="bg_highlight-3 p_3">`primary` => Value</li>
+          <li class="bg_warning-3 p_3">`-` => Modifier Divider think of this as shift from the value</li>
+          <li class="bg_alert-3 p_3">`n2` => Modifier Values most follow a [n5 , n4, n3, n2, n1, {0 is
+          default} , 1, 2, 3, 4, 5, color names, or secondary values]</li>
+          <li class="bg_warning-3 p_3">`:`=> Breakpoint Divider when rule should apply</li>
+          <li class="bg_accent-3 p_3">`lg`=> Breakpoint Value</li>
+      </ol>   
+  </div>
+  <div class="font_2">
+      <div class="font_bold font_3">Long Name Example 2</div>
+      <div class="font_1 m-t_2">Add 1 rem of padding to the top when screen is medium and up</div>
+      <div class="flex m-t_3">
+        <div class="flex_auto bg_primary-3 p_3">padding</div>
+        <div class="flex_auto bg_warning-3 p_3">-</div>
+        <div class="flex_auto bg_alert-3 p_3">top</div>
+        <div class="flex_auto bg_warning-3 p_3">_</div>
+        <div class="flex_auto bg_highlight-3 p_3">1 rem = value 4</div>
+        <div class="flex_auto bg_warning-3 p_3">:</div>
+        <div class="flex_auto bg_accent-3 p_3">medium breakpoint</div>
+      </div>
+       <div class="font_bold font_1">Utiltiy Class Example</div>
+            <div class="flex m-t_3"><div class="flex_auto bg_primary-3 p_3">p</div>
+            <div class="flex_auto bg_warning-3 p_3">-</div>
+            <div class="flex_auto bg_alert-3 p_3">t</div>
+            <div class="flex_auto bg_warning-3 p_3">_</div>
+            <div class="flex_auto bg_highlight-3 p_3">4</div>
+            <div class="flex_auto bg_warning-3 p_3">:</div
+            ><div class="flex_auto bg_accent-3 p_3">md</div>
+        </div>
+  </div>
+
+ Styleguide 100.1
+*/

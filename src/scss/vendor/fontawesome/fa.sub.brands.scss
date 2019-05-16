@@ -1,0 +1,27 @@
+/*!
+ * Font Awesome Pro 5.4.1 by @fontawesome - https://fontawesome.com
+ * License - https://fontawesome.com/license (Commercial License)
+ */
+@import 'variables';
+
+@font-face {
+  font-family: 'Font Awesome 5 Brands';
+  font-style: normal;
+  font-weight: normal;
+  src: url('#{$fa-font-path}/brandssub.eot');
+  src: url('#{$fa-font-path}/brandssub.eot?#iefix') format('embedded-opentype'),
+  url('#{$fa-font-path}/brandssub.woff2') format('woff2'),
+  url('#{$fa-font-path}/brandssub.woff') format('woff'),
+  url('#{$fa-font-path}/brandssub.ttf') format('truetype'),
+  url('#{$fa-font-path}/brandssub.svg#fontawesome') format('svg');
+}
+
+.fab {
+  font-family: 'Font Awesome 5 Brands';
+}
+
+.fa-facebook-square:before { content: '\e888'; } /* '' */
+.fa-google-plus:before { content: '\e8a6'; } /* '' */
+.fa-linkedin:before { content: '\e8d7'; } /* '' */
+.fa-twitter-square:before { content: '\e967'; } /* '' */
+.fa-youtube:before { content: '\e988'; } /* '' */

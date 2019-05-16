@@ -1,0 +1,37 @@
+/*
+	Display
+
+	quickly alter the padding of an object 
+
+	.d_block              		- the element is the a block
+	.d_inline              		- the element is now inline
+	.d_inline-block            - the element is now inline-block
+	.d_table-cell             	- the element is now table-cell
+	.d_flex-inline             - the element is now flex-inline
+	.d_none             - the element is now display none
+
+	markup:
+	<div class="br_solid br_transparent bg_alert-3  text-center"><div class="bg_primary-5 text-center {{modifier_class}}">Content</div></div>
+
+	Styleguide 110.1
+
+ */
+
+@include loop-style(display);
+
+@media #{$medium-up} {
+	@include loop-style(display, $bp-label_medium);
+}
+@media #{$large-up} {
+	@include loop-style(display, $bp-label_large);
+}
+
+.vertical-align_top {
+	vertical-align: top;
+}
+.vertical-align_middle {
+	vertical-align: middle;
+}
+.vertical-align_bottom {
+	vertical-align: bottom;
+}

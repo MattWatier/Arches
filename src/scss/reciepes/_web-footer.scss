@@ -1,0 +1,211 @@
+/*
+    Footer (Recipe)
+
+
+    This defines the web footer 
+
+    markup:
+        <div class="grid-container footer">
+            <div class="grid-y">
+                <div class="cell p-t_3 p-b_3 p_4 grid-x br_0 br-t_3  br_solid br_secondary-n1 c_secondary-1 texture_light bg_secondary-1">
+                    <sg-insert>0.5</sg-insert>
+                    <!-- Logo -->
+                </div>
+                <div class="cell grid-x texture_dark grid-p-x p_5-large p_4 p-b_3">
+                    <div class="cell medium-6 large-8">
+                        <sg-insert>200.040.4</sg-insert>
+                        <!-- Address -->
+                            <sg-insert>200.040.3</sg-insert>
+                            <!-- Social -->
+                    </div>
+                    <div class="cell medium-6 large-4">
+                        <sg-insert>200.040.2</sg-insert>
+                        <!-- Footer External Links -->
+                    </div>
+                </div>
+                <div class="cell grid-x texture_light bg_secondary-1">
+                    <div class="cell medium-12">
+                        <sg-insert>200.040.5</sg-insert>
+                        <!-- Footer Cite -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    Styleguide 200.040
+*/
+.footer {
+}
+
+/*
+	PARTIAL: Cite
+
+	Contains copy right 
+
+	markup:
+    <cite class="c_secondary-1 font_italic font_bold font_n1 p_3 lh_2">&copy;
+    2015 American College of Cardiology</cite>
+
+	sg-wrapper:
+ 	<div class="texture_light bg_secondary-1 p_4">
+ 	<sg-wrapper-content/>
+ 	</div>
+
+	Styleguide 200.040.5
+
+*/
+
+/*
+	PARTIAL: Footer External Nav
+
+	Links to acc-websites
+
+	markup:
+    <section class="acc-websites row c_white p-x_3">
+        <h4 class="font_slab">Improving Cardiovascular Care</h4>
+        <nav class="nav-list small d_block clearfix">
+            <ul class="no-bullet lh_2 font_0">
+                <li class="c_white br_solid  br_0 br-b_1  br_white-5">
+                    <a target="_blank" class="h:bg_black-2  h:c_white c_white p-x_2 p_3 block" href="http://www.acc.org">
+                    <span class="">Acc</span>
+                    <i class="float-right fas c_white h:c_white fa-external-link-square "></i>
+                    </a>
+                </li>
+                <li class="c_white br_solid br_0 br-b_1  br_white-5">
+                    <a target="_blank" class="h:bg_black-2  h:c_white c_white p-x_2 p_3 block" href="https://cvquality.acc.org/Accreditation?">
+                    <span class="">Accreditation Services</span>
+                    <i class="float-right fas c_white h:c_white fa-external-link-square "></i>
+                    </a>
+                </li>
+                <li class="c_white br_solid br_0 br-b_1  br_white-5">
+                    <a target="_blank" class="h:bg_black-2  h:c_white c_white p-x_2 p_3 block" href="http://www.ncdr.com">
+                    <span class="">NCDR</span>
+                    <i class="float-right fas c_white h:c_white fa-external-link-square "></i>
+                    </a>
+                </li>
+                <li class="c_white br_solid br_0 br-b_1  br_white-5">
+                    <a target="_blank" class="h:bg_black-2  h:c_white c_white p-x_2 p_3 block" href="http://www.cardiosmart.org">
+                    <span class="">CardioSmart</span>
+                    <i class="float-right fas c_white h:c_white fa-external-link-square "></i>
+                    </a>
+                </li>
+                <li class="c_white">
+                    <a target="_blank" class="h:bg_black-2  h:c_white c_white p-x_2 p_3 block" href="http://www.onlinejacc.org/">
+                    <span class="">JACC</span>
+                    <i class="float-right fas c_white fa-external-link-square "></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </section>	
+
+	sg-wrapper:
+ 	<div class="texture_dark">
+ 	    <sg-wrapper-content/>
+ 	</div>                   
+              
+
+	Styleguide 200.040.2
+
+*/
+
+/*
+	Social
+
+	The social networks that the acc is a part of 
+
+	markup:
+	<h4 class="font_slab c_white">Stay Connected</h4>
+	<ul class="grid-x social-bar no-bullet c_white h:c_white">
+	<li class="auto cell m-r_2"><a href="https://twitter.com/accintouch" target="_blank" class="twitter social-bar--button m-b_0 button expanded text_right h:bg_primary-n1"><i class="fab fa-twitter-square font_2 "></i></a></li>
+	<li class="auto cell m-r_2"><a href="https://www.facebook.com/AmericanCollegeofCardiology" target="_blank" class="facebook social-bar--button m-b_0 button expanded text_right h:bg_primary-n1"><i class="fab fa-facebook-square font_2 "></i></a></li>
+	<li class="auto cell m-r_2"><a href="https://www.linkedin.com/groups/732607/profile" target="_blank" class="linkedin social-bar--button m-b_0 button expanded text_right h:bg_primary-n1"><i class="fab fa-linkedin font_2 "></i></a></li>
+	<li class="auto cell m-r_2"><a href="https://plus.google.com/118164094874227618578" target="_blank" class="google-plus social-bar--button m-b_0 button expanded text_right h:bg_primary-n1"><i class="fab fa-google-plus font_2 "></i></a></li>
+	<li class="auto cell m-r_2"><a href="http://www.youtube.com/user/ACCinTouch" target="_blank" class="youtube social-bar--button m-b_0 button expanded text_right h:bg_primary-n1"><i class="fab fa-youtube font_2 "></i></a></li>
+	</ul>
+
+	Styleguide 200.040.3
+
+*/
+
+.twitter {
+	background-color: #00aced;
+}
+
+.facebook {
+	background-color: #3b5998;
+}
+
+.linkedin {
+	background-color: #007bb6;
+}
+
+.google-plus {
+	background-color: #dd4b39;
+}
+
+.youtube {
+	background-color: #bb0000;
+}
+
+/*
+	Address
+
+	Address and contact information for Heart House
+
+	markup:
+    <section class="address c_white">
+        <h3 class="font_slab font_2">American College of Cardiology</h3>
+        <address>
+            <!-- http://microformats.org/wiki/hcard -->
+            <h4 class="font_slab font_1 m-b_4">Heart House</h4>
+            <div class="grid-x">
+            <div class="cell medium-5 large-4">
+                <ul class="no-bullet">
+                    <li class="m-b_1 m-b_3:medium font_0 font_normal">
+                        <span class="street-address">2400 N. St. NW</span>
+                    </li>
+                    <li class="m-b_1 m-b_3:medium font_0 font_normal">
+                        <span class="locality ">Washington</span>,
+                        <span class="city-name ">
+                    <abbr title="District of Colombia">DC</abbr>
+                    </span>
+                        <span class="postal-code">20037</span>
+                    </li>
+                    <li class="m-b_1 m-b_3:medium font_0 font_normal">
+                        <a href="mailto:resource@acc.org" class="email c_white text_underline lh_2 h:c_white ">
+                            <strong class="p-r_2 inline block:medium inline:large">Email:</strong>
+                            <span class="inline block:medium inline:large">resource@acc.org</span></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="cell medium-7 large-8">
+            <ul class="no-bullet">
+                <li class="m-b_1 m-b_3:medium font_0 font_normal">
+                    <a tel="+12023756000" href="tel:+12023756000" class="lh_2 tel c_white h:c_white h:underline">
+                    <strong class="p-r_2 block:medium inline:large">Phone:</strong><span class=" block:medium inline:large">(202) 375-6000, ext. 5603</span></a>
+                </li>
+                <li class="m-b_1 m-b_3:medium font_0 font_normal">
+                    <a tel="+18002574737" href="tel:+18002534636.5603" class="lh_2 tel c_white h:c_white h:underline">
+                    <strong class="p-r_2 block:medium inline:large">Toll Free:</strong><span class=" block:medium inline:large">(800) 253-4636, ext. 5603</span></a>
+                </li>
+                <li class="m-b_1 m-b_3:medium font_0 font_normal">
+                    <a fax="+12023757000" href="fax:+12023757000" class="lh_2 fax c_white h:c_white h:underline">
+                    <strong class="p-r_2 block:medium inline:large">Fax:</strong>
+                    <span class="block:medium inline:large">(202) 375-7000</span>
+                    </a>
+                </li>
+            </ul>
+            </div>
+            </div>
+        </address>
+    </section>
+
+ sg-wrapper:
+ 	<div class="texture_dark p_4">
+ 	<sg-wrapper-content/>
+ 	</div>
+
+	Styleguide 200.040.4
+
+*/

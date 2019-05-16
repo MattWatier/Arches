@@ -1,0 +1,6 @@
+@charset "UTF-8";
+/*!
+ * Font Awesome Pro 5.4.1 by @fontawesome - https://fontawesome.com
+ * License - https://fontawesome.com/license (Commercial License)
+ */@font-face{font-family:Font Awesome\ 5 Brands;font-style:normal;font-weight:400;src:url(src/icons/brandssub.eot);src:url(src/icons/brandssub.eot?#iefix) format("embedded-opentype"),url(src/icons/brandssub.woff2) format("woff2"),url(src/icons/brandssub.woff) format("woff"),url(src/icons/brandssub.ttf) format("truetype"),url(src/icons/brandssub.svg#fontawesome) format("svg")}.fab{font-family:Font Awesome\ 5 Brands}.fa-facebook-square:before{content:""}.fa-google-plus:before{content:""}.fa-linkedin:before{content:""}.fa-twitter-square:before{content:""}.fa-youtube:before{content:""}
+/*# sourceMappingURL=../../maps/vendor/fontawesome/fa.sub.brands.css.map */

@@ -1,0 +1,334 @@
+/*
+
+    Question Structure
+
+    secondary - default decoration when there is no validation run on the input.
+
+    markup:
+    <div class="question required {{modifier_class}}">
+    <label for="input-x" class="label-holder grid-x c_{{modifier_class}} font_1">
+        <span class="text cell shrink">Question Text</span>
+        <span class="required-holder cell shrink">
+            <i class="fas fa-asterisk c_warning font_n3 vertical-align_t"></i>
+        </span>
+    </label>
+    <div class="input-holder grid-x c_{{modifier_class}}">
+        <div class="alert br_{{modifier_class}}-3  bg_{{modifier_class}}-4  value-space cell shrink  br_solid br-w_1 p_3 p-b_2 b_secondary-4 texture_light">
+            <span class="c_{{modifier_class}} p_2"><i class="fas fa-fw fa-exclamation-square"></i></span>
+        </div>
+        <div class="warning br_{{modifier_class}}-3  bg_{{modifier_class}}-4  value-space cell shrink  br_solid br-w_1 p_3 p-b_2 b_secondary-4 texture_light">
+            <span class="c_{{modifier_class}} p_2"><i class="fas fa-fw fa-exclamation-triangle"></i></span>
+        </div>
+        <div class="info br_{{modifier_class}}-3  bg_{{modifier_class}}-4  value-space cell shrink  br_solid br-w_1 p_3 p-b_2 b_secondary-4 texture_light">
+            <span class="c_{{modifier_class}} p_2"><i class="fas fa-fw fa-lightbulb-exclamation"></i></span>
+        </div>
+        <div class="success br_{{modifier_class}}-3  bg_{{modifier_class}}-4  value-space cell shrink  br_solid br-w_1 p_3 p-b_2 b_secondary-4 texture_light">
+            <span class="c_{{modifier_class}} p_2"><i class="fas fa-fw fa-check-square"></i></span>
+        </div>
+        <div class="input-space cell auto">
+            <input id="input-x" type="text" class="m-b_0 br_{{modifier_class}}-3 " />
+        </div>
+    </div>
+    <div class="message-holder font_n1">
+        <div class="alert p_2 bg_alert-n1 c_white">
+        <i class="fas fa-fw fa-exclamation-square m-r_3 m-l_2"></i> Error message</div>
+        <div class="warning p_2 bg_warning-n1 c_white">
+        <i class="fas fa-fw fa-exclamation-triangle m-r_3 m-l_2"></i> Warning message</div>
+        <div class="info p_2 bg_info-n1 c_white">
+        <i class="fas fa-fw fa-lightbulb-exclamation m-r_3 m-l_2"></i> Informational message about your input</div>
+    </div>
+    <div class="hint-holder m-t_2 font_n1 c_secondary p_2 p-t_0">This is some hint-holder text</div>
+    </div>
+
+    Styleguide 30.1
+*/
+
+/*
+
+    Question Structure with States applied
+
+    secondary - default decoration when there is no validation run on the input.
+    alert   - alert settings for questions
+    warning - warning decoration for when required is missing. 
+    info - sometimes inputs show extra informaiton when an item is selected or when a value is entered.
+    success - On rare occations it is needed for a success response on an input.
+
+    markup:
+    <div class="question required {{modifier_class}}">
+    <label for="input-x" class="label-holder grid-x c_{{modifier_class}} font_1">
+        <span class="text cell shrink">Question Text</span>
+        <span class="required-holder cell shrink">
+            <i class="fas fa-asterisk c_warning font_n3 vertical-align_t"></i>
+        </span>
+        </label>
+    <div class="input-holder grid-x c_{{modifier_class}}">
+        <div class="alert br_{{modifier_class}}-3  bg_{{modifier_class}}-4  value-space cell shrink  br_solid br-w_1 p_3 p-b_2 b_secondary-4 texture_light">
+            <span class="c_{{modifier_class}} p_2"><i class="fas fa-fw fa-exclamation-square"></i></span>
+        </div>
+        <div class="warning br_{{modifier_class}}-3  bg_{{modifier_class}}-4  value-space cell shrink  br_solid br-w_1 p_3 p-b_2 b_secondary-4 texture_light">
+            <span class="c_{{modifier_class}} p_2"><i class="fas fa-fw fa-exclamation-triangle"></i></span>
+        </div>
+        <div class="info br_{{modifier_class}}-3  bg_{{modifier_class}}-4  value-space cell shrink  br_solid br-w_1 p_3 p-b_2 b_secondary-4 texture_light">
+            <span class="c_{{modifier_class}} p_2"><i class="fas fa-fw fa-lightbulb-exclamation"></i></span>
+        </div>
+        <div class="success br_{{modifier_class}}-3  bg_{{modifier_class}}-4  value-space cell shrink  br_solid br-w_1 p_3 p-b_2 b_secondary-4 texture_light">
+            <span class="c_{{modifier_class}} p_2"><i class="fas fa-fw fa-check-square"></i></span>
+        </div>
+        <div class="input-space cell auto">
+            <input id="input-x" type="text" class="m-b_0 br_{{modifier_class}}-3 " />
+        </div>
+    </div>
+    <div class="message-holder font_n1 font_bold">
+            <div class="alert br_alert-n1 c_alert">
+            <i class="fas fa-fw fa-exclamation-square m-r_3 m-l_2 "></i> Error message</div>
+            <div class="warning br_warning-n1 c_warning ">
+            <i class="fas fa-fw fa-exclamation-triangle m-r_3 m-l_2"></i> Warning message</div>
+            <div class="info br_info-n1 c_info ">
+            <i class="fas fa-fw fa-lightbulb-exclamation m-r_3 m-l_2"></i> Informational message about your input</div>
+            <div class="success br_success-n1 c_success ">
+            <i class="fas fa-fw fa-lightbulb-exclamation m-r_3 m-l_2"></i> succes message are rare but sometimes needed.</div>
+        </div>
+    <div class="hint-holder m-t_2 font_n1 c_secondary p_2 p-t_0">This is some hint-holder text</div>
+    </div>
+
+    Styleguide 30.1.1
+*/
+
+.question div.alert,
+.question div.warning,
+.question div.info,
+.question div.success {
+	display: none;
+}
+.alert.question div.alert,
+.warning.question div.warning,
+.info.question div.info,
+.success.question div.success {
+	display: block;
+}
+.alert.question select {
+	border-color: get-themecolor(alert, 2);
+	color: get-themecolor(alert, -2);
+}
+.warning.question select {
+	border-color: get-themecolor(warning, 2);
+	color: get-themecolor(warning, -2);
+}
+.info.question select {
+	border-color: get-themecolor(info, 2);
+	color: get-themecolor(info, -2);
+}
+.success.question select {
+	border-color: get-themecolor(success, 2);
+	color: get-themecolor(success, -2);
+}
+
+.required .required-holder {
+	display: inline-flex;
+}
+
+select {
+	background: unset !important;
+	appearance: initial !important;
+}
+.switch {
+	margin-bottom: $margin_0;
+}
+.switch-value {
+	margin-left: $margin_3;
+}
+
+.question {
+	display: flex;
+	flex-direction: column;
+}
+.label-holder {
+	flex: 1 0 auto;
+}
+.input-holder {
+	flex: 1 0 auto;
+}
+.message-holder {
+	flex: 1 0 auto;
+}
+.message-holder div {
+	border-top-width: $border-width_3;
+	border-top-style: solid;
+	padding: $padding_2;
+}
+.hint-holder {
+	flex: 1 0 auto;
+}
+
+/*
+
+    Question Input Value Area
+
+    secondary - default decoration when there is no validation run on the input.
+    alert   - alert settings for questions
+    warning - warning decoration for when required is missing. 
+    info - sometimes inputs show extra informaiton when an item is selected or when a value is entered.
+    success - On rare occations it is needed for a success response on an input.
+
+    markup:
+    <div class="question required {{modifier_class}}">
+        <label for="input-x" class="label-holder grid-x c_{{modifier_class}} font_1">
+        <span class="text cell shrink">Question Text</span>
+        <span class="required-holder cell shrink">
+            <i class="fas fa-asterisk c_warning font_n3 vertical-align_t"></i>
+        </span>
+        </label>
+        <div class="input-holder grid-x c_{{modifier_class}}">
+            <div class="alert br_{{modifier_class}}-3  bg_{{modifier_class}}-4  value-space cell shrink  br_solid br-w_1 p_3 p-b_2 b_secondary-4 texture_light">
+                <span class="c_{{modifier_class}} p_2"><i class="fas fa-fw fa-exclamation-square"></i></span>
+            </div>
+            <div class="warning br_{{modifier_class}}-3  bg_{{modifier_class}}-4  value-space cell shrink  br_solid br-w_1 p_3 p-b_2 b_secondary-4 texture_light">
+                <span class="c_{{modifier_class}} p_2"><i class="fas fa-fw fa-exclamation-triangle"></i></span>
+            </div>
+            <div class="info br_{{modifier_class}}-3  bg_{{modifier_class}}-4  value-space cell shrink  br_solid br-w_1 p_3 p-b_2 b_secondary-4 texture_light">
+                <span class="c_{{modifier_class}} p_2"><i class="fas fa-fw fa-lightbulb-exclamation"></i></span>
+            </div>
+            <div class="success br_{{modifier_class}}-3  bg_{{modifier_class}}-4  value-space cell shrink  br_solid br-w_1 p_3 p-b_2 b_secondary-4 texture_light">
+                <span class="c_{{modifier_class}} p_2"><i class="fas fa-fw fa-check-square"></i></span>
+            </div>
+            <div class="input-space cell auto">
+                <input id="input-x" type="text" class="m-b_0 br_{{modifier_class}}-3 " />
+            </div>
+            <div class="br_{{modifier_class}}-3  bg_{{modifier_class}}-4  value-space cell shrink br_solid br-w_1 p_3 p-b_2 b_secondary-4 texture_light">
+                <span class="value">Years</span>
+            </div>
+        </div>
+        <div class="message-holder font_n1 font_bold">
+            <div class="alert br_alert-n1 c_alert">
+            <i class="fas fa-fw fa-exclamation-square m-r_3 m-l_2 "></i> Error message</div>
+            <div class="warning br_warning-n1 c_warning ">
+            <i class="fas fa-fw fa-exclamation-triangle m-r_3 m-l_2"></i> Warning message</div>
+            <div class="info br_info-n1 c_info ">
+            <i class="fas fa-fw fa-lightbulb-exclamation m-r_3 m-l_2"></i> Informational message about your input</div>
+        </div>
+        <div class="hint-holder m-t_2 font_n1 c_secondary p_2 p-t_0">This is some hint-holder text</div>
+    </div>
+
+    Styleguide 30.2
+*/
+
+/*
+
+    Question with grouped inputs
+
+    secondary - default decoration when there is no validation run on the input.
+    alert - alerts show up when errors are validated from the input.
+
+    markup:
+    <div class="question required {{modifier_class}}">
+        <label for="input-x" class="label-holder grid-x c_{{modifier_class}} font_1">
+            <span class="text cell shrink">Question Text</span>
+            <span class="required-holder cell shrink">
+                <i class="fas fa-asterisk c_warning font_n3 vertical-align_t"></i>
+            </span>
+            </label>
+        <div class="input-holder grid-x c_{{modifier_class}}">
+            <div class="alert br_{{modifier_class}}-3  bg_{{modifier_class}}-4  value-space cell shrink  br_solid br-w_1 p_3 p-b_2 b_secondary-4 texture_light">
+                <span class="c_{{modifier_class}} p_2"><i class="fas fa-fw fa-exclamation-square"></i></span>
+            </div>
+            <div class="warning br_{{modifier_class}}-3  bg_{{modifier_class}}-4  value-space cell shrink  br_solid br-w_1 p_3 p-b_2 b_secondary-4 texture_light">
+                <span class="c_{{modifier_class}} p_2"><i class="fas fa-fw fa-exclamation-triangle"></i></span>
+            </div>
+            <div class="info br_{{modifier_class}}-3  bg_{{modifier_class}}-4  value-space cell shrink  br_solid br-w_1 p_3 p-b_2 b_secondary-4 texture_light">
+                <span class="c_{{modifier_class}} p_2"><i class="fas fa-fw fa-lightbulb-exclamation"></i></span>
+            </div>
+            <div class="success br_{{modifier_class}}-3  bg_{{modifier_class}}-4  value-space cell shrink  br_solid br-w_1 p_3 p-b_2 b_secondary-4 texture_light">
+                <span class="c_{{modifier_class}} p_2"><i class="fas fa-fw fa-check-square"></i></span>
+            </div>
+            <div class="input-space cell small-2">
+                <select name="" id="" class="m-b_0">
+                    <option value="">All</option>
+                    <option value="">Group A</option>
+                    <option value="">Group B</option>
+                </select>
+            </div>       
+            <div class="input-space cell auto">
+                <input id="input-x" type="text" class="m-b_0 br_{{modifier_class}}-3 " />
+            </div>
+            <div class="br_{{modifier_class}}-3  bg_{{modifier_class}}-4 c_{{modifier_class}}-n2  value-space cell shrink  br_solid br-w_1 p_3 p-b_2 b_secondary-4 texture_light">
+                <span class="value">Years</span>
+            </div>
+        </div>
+        <div class="message-holder font_n1 font_bold">
+            <div class="alert br_alert-n1 c_alert">
+            <i class="fas fa-fw fa-exclamation-square m-r_3 m-l_2 "></i> Error message</div>
+            <div class="warning br_warning-n1 c_warning ">
+            <i class="fas fa-fw fa-exclamation-triangle m-r_3 m-l_2"></i> Warning message</div>
+            <div class="info br_info-n1 c_info ">
+            <i class="fas fa-fw fa-lightbulb-exclamation m-r_3 m-l_2"></i> Informational message about your input</div>
+        </div>
+        <div class="hint-holder m-t_2 font_n1 c_secondary p_2 p-t_0">This is some hint-holder text</div>
+    </div>
+
+    Styleguide 30.3
+*/
+
+/*
+
+    Question with Switches
+
+    secondary - default decoration when there is no validation run on the input.
+    alert - alert on the area of inputs
+    warning - warning decoration for when required is missing. 
+    info - sometimes inputs show extra informaiton when an item is selected or when a value is entered.
+
+    markup:
+    <div class="question required {{modifier_class}}">
+        <label for="tinySwitch_{{modifier_class}}" class="grid-x c_{{modifier_class}} font_1 label-holder">
+            <span class="text cell shrink">Question Text</span>
+            <span class="required-holder cell shrink">
+                <i class="fas fa-asterisk c_warning font_n3 vertical-align_t"></i>
+            </span>
+        </label>
+        <div class="input-holder grid-x c_{{modifier_class}}">
+            <div class="alert br_{{modifier_class}}-3  bg_{{modifier_class}}-4  value-space cell shrink  br_solid br-w_1 p_3 p-b_2 b_secondary-4 texture_light">
+                <span class="c_{{modifier_class}} p_2"><i class="fas fa-fw fa-exclamation-square"></i></span>
+            </div>
+            <div class="warning br_{{modifier_class}}-3  bg_{{modifier_class}}-4  value-space cell shrink  br_solid br-w_1 p_3 p-b_2 b_secondary-4 texture_light">
+                <span class="c_{{modifier_class}} p_2"><i class="fas fa-fw fa-exclamation-triangle"></i></span>
+            </div>
+            <div class="info br_{{modifier_class}}-3  bg_{{modifier_class}}-4  value-space cell shrink  br_solid br-w_1 p_3 p-b_2 b_secondary-4 texture_light">
+                <span class="c_{{modifier_class}} p_2"><i class="fas fa-fw fa-lightbulb-exclamation"></i></span>
+            </div>
+            <div class="success br_{{modifier_class}}-3  bg_{{modifier_class}}-4  value-space cell shrink  br_solid br-w_1 p_3 p-b_2 b_secondary-4 texture_light">
+                <span class="c_{{modifier_class}} p_2"><i class="fas fa-fw fa-check-square"></i></span>
+            </div>
+            <div class="input-space cell auto grid-x">
+                <div class="cell grid-x p_3 p-r_0 small-12 medium-6">
+                    <div class="switch tiny radius cell shrink">
+                        <input class="switch-input" id="tinySwitch_{{modifier_class}}" type="checkbox" name="exampleSwitch">
+                        <label class="switch-paddle" for="tinySwitch_{{modifier_class}}">
+                            <span class="show-for-sr">Tiny Sandwiches Enabled</span>
+                        </label>
+                    </div>
+                    <label class="switch-value cell auto font_bold" for="tinySwitch_{{modifier_class}}">No Question</label>
+                </div>
+                <div class="cell grid-x p_3 p-r_0 small-12 medium-6">
+                    <div class="switch tiny radius cell shrink">
+                        <input class="switch-input" id="tinySwitchNo_{{modifier_class}}" type="checkbox" name="exampleSwitch">
+                        <label class="switch-paddle" for="tinySwitchNo_{{modifier_class}}">
+                            <span class="show-for-sr">Tiny Sandwiches Enabled</span>
+                        </label>
+                    </div>
+                    <label class="switch-value cell auto font_bold" for="tinySwitchNo_{{modifier_class}}">Yes Question</label>
+                </div>
+            </div>     
+        </div>
+        <div class="message-holder font_n1 font_bold">
+            <div class="alert br_alert-n1 c_alert">
+            <i class="fas fa-fw fa-exclamation-square m-r_3 m-l_2 "></i> Error message</div>
+            <div class="warning br_warning-n1 c_warning ">
+            <i class="fas fa-fw fa-exclamation-triangle m-r_3 m-l_2"></i> Warning message</div>
+            <div class="info br_info-n1 c_info ">
+            <i class="fas fa-fw fa-lightbulb-exclamation m-r_3 m-l_2"></i> Informational message about your input</div>
+        </div>
+        <div class="hint-holder m-t_2 font_n1 c_secondary p_2 p-t_0">This is some hint-holder text</div>
+    </div>
+
+    Styleguide 30.4
+*/

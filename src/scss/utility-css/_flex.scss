@@ -1,0 +1,472 @@
+/*
+	Flex
+
+	Structure Objects quickly and change the order of the  
+
+	.flex_row              		- the element is the a block- flex_row
+	.flex_column              		- flex_column
+	.flex_row-reverse              		- flex_column-reverse
+	.flex_column-reverse              		- flex_row-reverse
+
+	markup:
+	<div class="flex {{modifier_class}} br_solid br_transparent bg_alert-3  text-center  p_3 bg_warning-3"> 
+		<div class="bg_primary-5 text-center flex_auto p_3 br_solid br_1 m_2 br_black">Auto 1</div>
+		<div class="bg_primary-5 text-center flex_shrink p_3 br_solid br_1 m_2 br_black">Shrink 2</div>
+		<div class="bg_primary-5 text-center flex_auto p_3 br_solid br_1 m_2 br_black">Auto 3</div>
+	</div>
+
+	Styleguide 110.2
+
+ */
+
+.flex {
+	display: flex;
+}
+.flex_inline {
+	display: inline-flex;
+}
+
+/* 1. Fix for Chrome 44 bug.
+ * https://code.google.com/p/chromium/issues/detail?id=506893 */
+.flex_auto {
+	flex: 1 1 auto;
+	min-width: 0; /* 1 */
+	min-height: 0; /* 1 */
+}
+
+.flex_none {
+	flex: none;
+}
+
+.flex_column {
+	flex-direction: column;
+}
+.flex_row {
+	flex-direction: row;
+}
+.flex_wrap {
+	flex-wrap: wrap;
+}
+.flex_nowrap {
+	flex-wrap: nowrap;
+}
+.flex_wrap-reverse {
+	flex-wrap: wrap-reverse;
+}
+.flex_column-reverse {
+	flex-direction: column-reverse;
+}
+.flex_row-reverse {
+	flex-direction: row-reverse;
+}
+
+.items_start {
+	align-items: flex-start;
+}
+.items_end {
+	align-items: flex-end;
+}
+.items_center {
+	align-items: center;
+}
+.items_baseline {
+	align-items: baseline;
+}
+.items_stretch {
+	align-items: stretch;
+}
+
+.self_start {
+	align-self: flex-start;
+}
+.self_end {
+	align-self: flex-end;
+}
+.self_center {
+	align-self: center;
+}
+.self_baseline {
+	align-self: baseline;
+}
+.self_stretch {
+	align-self: stretch;
+}
+
+.justify_start {
+	justify-content: flex-start;
+}
+.justify_end {
+	justify-content: flex-end;
+}
+.justify_center {
+	justify-content: center;
+}
+.justify_between {
+	justify-content: space-between;
+}
+.justify_around {
+	justify-content: space-around;
+}
+
+.content_start {
+	align-content: flex-start;
+}
+.content_end {
+	align-content: flex-end;
+}
+.content_center {
+	align-content: center;
+}
+.content_between {
+	align-content: space-between;
+}
+.content_around {
+	align-content: space-around;
+}
+.content_stretch {
+	align-content: stretch;
+}
+
+.order_0 {
+	order: 0;
+}
+.order_1 {
+	order: 1;
+}
+.order_2 {
+	order: 2;
+}
+.order_3 {
+	order: 3;
+}
+.order_4 {
+	order: 4;
+}
+.order_5 {
+	order: 5;
+}
+.order_6 {
+	order: 6;
+}
+.order_7 {
+	order: 7;
+}
+.order_8 {
+	order: 8;
+}
+.order#{$bp-label_large}ast {
+	order: 99999;
+}
+
+.flex-grow_0 {
+	flex-grow: 0;
+}
+.flex-grow_1 {
+	flex-grow: 1;
+}
+
+.flex-shrink_0 {
+	flex-shrink: 0;
+}
+.flex-shrink_1 {
+	flex-shrink: 1;
+}
+
+@media #{$medium-up} {
+	.flex#{$bp-label_medium} {
+		display: flex;
+	}
+	.flex_inline#{$bp-label_medium} {
+		display: inline-flex;
+	}
+	.flex_auto#{$bp-label_medium} {
+		flex: 1 1 auto;
+		min-width: 0; /* 1 */
+		min-height: 0; /* 1 */
+	}
+	.flex_none#{$bp-label_medium} {
+		flex: none;
+	}
+	.flex_column#{$bp-label_medium} {
+		flex-direction: column;
+	}
+	.flex_row#{$bp-label_medium} {
+		flex-direction: row;
+	}
+	.flex_wrap#{$bp-label_medium} {
+		flex-wrap: wrap;
+	}
+	.flex_nowrap#{$bp-label_medium} {
+		flex-wrap: nowrap;
+	}
+	.flex_wrap-reverse#{$bp-label_medium} {
+		flex-wrap: wrap-reverse;
+	}
+	.flex_column-reverse#{$bp-label_medium} {
+		flex-direction: column-reverse;
+	}
+	.flex_row-reverse#{$bp-label_medium} {
+		flex-direction: row-reverse;
+	}
+	.items_start#{$bp-label_medium} {
+		align-items: flex-start;
+	}
+	.items_end#{$bp-label_medium} {
+		align-items: flex-end;
+	}
+	.items_center#{$bp-label_medium} {
+		align-items: center;
+	}
+	.items_baseline#{$bp-label_medium} {
+		align-items: baseline;
+	}
+	.items_stretch#{$bp-label_medium} {
+		align-items: stretch;
+	}
+
+	.self_start#{$bp-label_medium} {
+		align-self: flex-start;
+	}
+	.self_end#{$bp-label_medium} {
+		align-self: flex-end;
+	}
+	.self_center#{$bp-label_medium} {
+		align-self: center;
+	}
+	.self_baseline#{$bp-label_medium} {
+		align-self: baseline;
+	}
+	.self_stretch#{$bp-label_medium} {
+		align-self: stretch;
+	}
+
+	.justify_start#{$bp-label_medium} {
+		justify-content: flex-start;
+	}
+	.justify_end#{$bp-label_medium} {
+		justify-content: flex-end;
+	}
+	.justify_center#{$bp-label_medium} {
+		justify-content: center;
+	}
+	.justify_between#{$bp-label_medium} {
+		justify-content: space-between;
+	}
+	.justify_around#{$bp-label_medium} {
+		justify-content: space-around;
+	}
+
+	.content_start#{$bp-label_medium} {
+		align-content: flex-start;
+	}
+	.content_end#{$bp-label_medium} {
+		align-content: flex-end;
+	}
+	.content_center#{$bp-label_medium} {
+		align-content: center;
+	}
+	.content_between#{$bp-label_medium} {
+		align-content: space-between;
+	}
+	.content_around#{$bp-label_medium} {
+		align-content: space-around;
+	}
+	.content_stretch#{$bp-label_medium} {
+		align-content: stretch;
+	}
+
+	.order_0#{$bp-label_medium} {
+		order: 0;
+	}
+	.order_1#{$bp-label_medium} {
+		order: 1;
+	}
+	.order_2#{$bp-label_medium} {
+		order: 2;
+	}
+	.order_3#{$bp-label_medium} {
+		order: 3;
+	}
+	.order_4#{$bp-label_medium} {
+		order: 4;
+	}
+	.order_5#{$bp-label_medium} {
+		order: 5;
+	}
+	.order_6#{$bp-label_medium} {
+		order: 6;
+	}
+	.order_7#{$bp-label_medium} {
+		order: 7;
+	}
+	.order_8#{$bp-label_medium} {
+		order: 8;
+	}
+	.order#{$bp-label_large}ast#{$bp-label_medium} {
+		order: 99999;
+	}
+
+	.flex-grow_0#{$bp-label_medium} {
+		flex-grow: 0;
+	}
+	.flex-grow_1#{$bp-label_medium} {
+		flex-grow: 1;
+	}
+
+	.flex_shrink-0#{$bp-label_medium} {
+		flex-shrink: 0;
+	}
+	.flex_shrink-1#{$bp-label_medium} {
+		flex-shrink: 1;
+	}
+}
+
+@media #{$large-up} {
+	.flex#{$bp-label_large} {
+		display: flex;
+	}
+	.flex_inline#{$bp-label_large} {
+		display: inline-flex;
+	}
+	.flex_auto#{$bp-label_large} {
+		flex: 1 1 auto;
+		min-width: 0; /* 1 */
+		min-height: 0; /* 1 */
+	}
+	.flex_none#{$bp-label_large} {
+		flex: none;
+	}
+	.flex_column#{$bp-label_large} {
+		flex-direction: column;
+	}
+	.flex_row#{$bp-label_large} {
+		flex-direction: row;
+	}
+	.flex_wrap#{$bp-label_large} {
+		flex-wrap: wrap;
+	}
+	.flex_nowrap#{$bp-label_large} {
+		flex-wrap: nowrap;
+	}
+	.flex_wrap-reverse#{$bp-label_large} {
+		flex-wrap: wrap-reverse;
+	}
+	.flex_column-reverse#{$bp-label_large} {
+		flex-direction: column-reverse;
+	}
+	.flex_row-reverse#{$bp-label_large} {
+		flex-direction: row-reverse;
+	}
+
+	.items_start#{$bp-label_large} {
+		align-items: flex-start;
+	}
+	.items_end#{$bp-label_large} {
+		align-items: flex-end;
+	}
+	.items_center#{$bp-label_large} {
+		align-items: center;
+	}
+	.items_baseline#{$bp-label_large} {
+		align-items: baseline;
+	}
+	.items_stretch#{$bp-label_large} {
+		align-items: stretch;
+	}
+
+	.self_start#{$bp-label_large} {
+		align-self: flex-start;
+	}
+	.self_end#{$bp-label_large} {
+		align-self: flex-end;
+	}
+	.self_center#{$bp-label_large} {
+		align-self: center;
+	}
+	.self_baseline#{$bp-label_large} {
+		align-self: baseline;
+	}
+	.self_stretch#{$bp-label_large} {
+		align-self: stretch;
+	}
+
+	.justify_start#{$bp-label_large} {
+		justify-content: flex-start;
+	}
+	.justify_end#{$bp-label_large} {
+		justify-content: flex-end;
+	}
+	.justify_center#{$bp-label_large} {
+		justify-content: center;
+	}
+	.justify_between#{$bp-label_large} {
+		justify-content: space-between;
+	}
+	.justify_around#{$bp-label_large} {
+		justify-content: space-around;
+	}
+
+	.content_start#{$bp-label_large} {
+		align-content: flex-start;
+	}
+	.content_end#{$bp-label_large} {
+		align-content: flex-end;
+	}
+	.content_center#{$bp-label_large} {
+		align-content: center;
+	}
+	.content_between#{$bp-label_large} {
+		align-content: space-between;
+	}
+	.content_around#{$bp-label_large} {
+		align-content: space-around;
+	}
+	.content_stretch#{$bp-label_large} {
+		align-content: stretch;
+	}
+
+	.order_0#{$bp-label_large} {
+		order: 0;
+	}
+	.order_1#{$bp-label_large} {
+		order: 1;
+	}
+	.order_2#{$bp-label_large} {
+		order: 2;
+	}
+	.order_3#{$bp-label_large} {
+		order: 3;
+	}
+	.order_4#{$bp-label_large} {
+		order: 4;
+	}
+	.order_5#{$bp-label_large} {
+		order: 5;
+	}
+	.order_6#{$bp-label_large} {
+		order: 6;
+	}
+	.order_7#{$bp-label_large} {
+		order: 7;
+	}
+	.order_8#{$bp-label_large} {
+		order: 8;
+	}
+	.order#{$bp-label_large}ast#{$bp-label_large} {
+		order: 99999;
+	}
+
+	.flex-grow_0#{$bp-label_large} {
+		flex-grow: 0;
+	}
+	.flex-grow_1#{$bp-label_large} {
+		flex-grow: 1;
+	}
+
+	.flex_shrink-0#{$bp-label_large} {
+		flex-shrink: 0;
+	}
+	.flex_shrink-1#{$bp-label_large} {
+		flex-shrink: 1;
+	}
+}

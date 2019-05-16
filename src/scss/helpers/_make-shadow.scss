@@ -1,0 +1,20 @@
+/// make-shadow add a show effect to a block. 
+/// @param {Number} $multiplier - expands drop effect of the shadow
+/// @param {String} $type - accepts `drop` , and `inset`
+/// @param {Hex} $color - Color of the Shadow
+/// @param {Number} $alpha -Number between 0 - 1 to set the alpha of the shadow
+/// @return {style definision}  
+@function make-shadow(
+    $multiplier: 1,
+    $type:"drop",
+    $color:#000,
+    $alpha:.1,
+    ){
+    $shadow-type: "";
+    @if $type == "drop"{ $shadow-type: '';}@else{ $shadow-type:'inset';}
+    $horizontal-shift:$multiplier * .5px;
+    $vertical-shift:$multiplier * .5px;
+    $blur:$multiplier * 2px;
+    $spread:$multiplier * .25px;
+    @return #{$shadow-type} #{$horizontal-shift} #{$vertical-shift} #{$blur} #{$spread} rgba(red($color),green($color),blue($color),$alpha);
+}

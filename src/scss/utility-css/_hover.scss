@@ -1,0 +1,195 @@
+/*
+  Hover:Backgrounds
+ 
+  hovers can easily be added to objects by adding `hover:` or `h:` in front of the background color utility like `h:bg_primary`
+
+  bg_alert              - background color modified light to dark
+  bg_primary              - background color modified light to dark
+  bg_secondary              - background color modified light to dark
+  bg_info              - background color modified light to dark
+  bg_highlight              - background color success color
+  bg_success              - background color modified light to dark
+  bg_warning              - background color modified light to dark
+
+  markup:
+  <div class="grid-x m_5">
+    <div class="h:{{modifier_class}}-5 cell auto text-center br_1 br_solid br_secondary-4 p_2">5</div>
+    <div class="h:{{modifier_class}}-4 cell auto text-center br_1 br_solid br_secondary-4 p_2">4</div>
+    <div class="h:{{modifier_class}}-3 cell auto text-center br_1 br_solid br_secondary-4 p_2">3</div>
+    <div class="h:{{modifier_class}}-2 cell auto text-center br_1 br_solid br_secondary-4 p_2">2</div>
+    <div class="h:{{modifier_class}}-1 cell auto text-center br_1 br_solid br_secondary-4 p_2">1</div>
+    <div class="h:{{modifier_class}}-0 cell auto text-center br_1 br_solid br_secondary-4 p_2">0</div>
+    <div class="h:{{modifier_class}}-n1 cell auto text-center br_1 br_solid br_secondary-4 p_2 h:c_white">n1</div>
+    <div class="h:{{modifier_class}}-n2 cell auto text-center br_1 br_solid br_secondary-4 p_2 h:c_white">n2</div>
+    <div class="h:{{modifier_class}}-n3 cell auto text-center br_1 br_solid br_secondary-4 p_2 h:c_white">n3</div>
+    <div class="h:{{modifier_class}}-n4 cell auto text-center br_1 br_solid br_secondary-4 p_2 h:c_white">n4</div>
+    <div class="h:{{modifier_class}}-n5 cell auto text-center br_1 br_solid br_secondary-4 p_2 h:c_white">n5</div>
+  </div>
+
+ 
+  Styleguide 109.1
+ 
+ */
+a:focus {
+	color: unset;
+}
+%hover_transition,
+*[class^=" hover:"],
+*[class^=" h\:"] {
+	transition: all ease-out 0.75s; // used for backgrounds
+	cursor: pointer;
+	&:focus {
+		background: inherit;
+		border: inherit;
+		color: inherit;
+	}
+}
+%hover_transition-in {
+	transition: all ease-in 0.5s; // used for text
+}
+
+*[class^="hover:c"],
+*[class^=" h:c"] {
+	@extend %hover_transition-in;
+}
+@each $color-name, $color in $theme-palette {
+	@include hover-loop("background-color", $color-name, $color);
+	@include hover-loop("color", $color-name, $color);
+}
+
+/*
+  Hover: Text 
+ 
+  hovers can easily be added to change the text color by adding `hover:` or `h:` in front of the text color utility like `h:primary`
+
+  c_primary              - text color modified light to dark
+  c_secondary              - text color modified light to dark
+  c_info              - text color modified light to dark
+  c_highlight              - text color success color
+  c_success              - text color modified light to dark
+  c_warning              - text color modified light to dark
+  c_alert              - text color modified light to dark
+
+  markup:
+  <div class="grid-x m_5">
+    <div class="h:{{modifier_class}}-5 cell auto font_bold bg_secondary-3 font_4 font_slab text-center br_1 br_solid br_secondary-4 p_1">5</div>
+    <div class="h:{{modifier_class}}-4 cell auto font_bold bg_secondary-3 font_4 font_slab text-center br_1 br_solid br_secondary-4 p_1">4</div>
+    <div class="h:{{modifier_class}}-3 cell auto font_bold bg_secondary-3 font_4 font_slab text-center br_1 br_solid br_secondary-4 p_1">3</div>
+    <div class="h:{{modifier_class}}-2 cell auto font_bold bg_secondary-3 font_4 font_slab text-center br_1 br_solid br_secondary-4 p_1">2</div>
+    <div class="h:{{modifier_class}}-1 cell auto font_bold bg_secondary-3 font_4 font_slab text-center br_1 br_solid br_secondary-4 p_1">1</div>
+    <div class="h:{{modifier_class}}-0 cell auto font_bold bg_secondary-3 font_4 font_slab text-center br_1 br_solid br_secondary-4 p_1">0</div>
+    <div class="h:{{modifier_class}}-n1 cell auto font_bold bg_secondary-3 font_4 font_slab text-center br_1 br_solid br_secondary-4 p_1 ">n1</div>
+    <div class="h:{{modifier_class}}-n2 cell auto font_bold bg_secondary-3 font_4 font_slab text-center br_1 br_solid br_secondary-4 p_1 ">n2</div>
+    <div class="h:{{modifier_class}}-n3 cell auto font_bold bg_secondary-3 font_4 font_slab text-center br_1 br_solid br_secondary-4 p_1 ">n3</div>
+    <div class="h:{{modifier_class}}-n4 cell auto font_bold bg_secondary-3 font_4 font_slab text-center br_1 br_solid br_secondary-4 p_1 ">n4</div>
+    <div class="h:{{modifier_class}}-n5 cell auto font_bold bg_secondary-3 font_4 font_slab text-center br_1 br_solid br_secondary-4 p_1 ">n5</div>
+  </div>
+
+ 
+  Styleguide 109.2
+ 
+ */
+
+#{ class-name-constructor(color, white, "", "hover")} {
+	color: $white !important;
+}
+#{ class-name-constructor(color, black, "", "hover")} {
+	color: $black !important;
+}
+
+%hover_text-decoration {
+	text-decoration: none;
+	&:hover {
+		text-decoration: underline;
+	}
+}
+.hover\:underline,
+.h\:underline {
+	@extend %hover_text-decoration;
+}
+.hover\:dashed,
+.h\:dashed {
+	@extend %hover_text-decoration;
+	&:hover {
+		text-decoration-style: dashed;
+	}
+}
+.hover\:double,
+.h\:double {
+	@extend %hover_text-decoration;
+	&:hover {
+		text-decoration-style: double;
+	}
+}
+.hover\:dotted,
+.h\:dotted {
+	@extend %hover_text-decoration;
+	&:hover {
+		text-decoration-style: dotted;
+	}
+}
+
+/*
+  Hover: Underline 
+ 
+  Sometimes is is needed to add an underline on a peice of text when it hovers adding `hover:` or `h:` infront of the type of underline you would like gives that type of underline to the text when hoverd.
+
+  underline.c_primary - classic anchor text
+  dotted.c_warning - great for popups or hint text
+  double.c_highlight - extra loud underlines for the really important links or modals
+  dashed.c_accent - extra loud dots for info and hint texts reveals.
+
+  markup:
+  <p class="font_1">
+    Lorem ipsum dolor sit amet, 
+    <span class="h:{{modifier_class}} h:c_primary-n3">consectetur</span>
+    adipisicing elit. 
+    <span class="h:{{modifier_class}} h:c_primary-n3">Tenetur, similique</span>. 
+    Sapiente facilis ipsam unde, dolorem illo ullam, tempore quos maiores quaerat quibusdam voluptatibus laboriosam. Nisi 
+    <span class="h:{{modifier_class}} h:c_primary-n3">harum magni</span>
+        adipisicing elit aut nulla et.
+  </p>
+
+ 
+  Styleguide 109.3
+  
+  */
+
+/* Transparent Loop */
+#{ class-name-constructor(background-color, white, "", "hover")} {
+	background-color: $white;
+}
+@include loop-transparent(background-transparent, white, "", "!important", true);
+
+#{ class-name-constructor(background-color, black, "", "hover")} {
+	background-color: $black;
+}
+@include loop-transparent(background-transparent, black, "", "!important", true);
+
+/*
+  Hover: Background Black and White Opacity 
+ 
+  black and white overlays can be added to hovers easily by adding `hover:` in front of black or white  with the level of opacity needed.
+
+  bg_white              - text color modified light to dark
+  bg_black              - text color modified light to dark
+
+  markup:
+  <div class="grid-x m_5 bg_primary m_5">
+    <div class="hover:{{modifier_class}}-0 cell p-y_3 p-x_4 shrink font_bold font_2 font_slab text-center br_1 br_solid br_secondary-4">0</div>
+    <div class="hover:{{modifier_class}}-1 cell p-y_3 p-x_4 shrink font_bold font_2 font_slab text-center br_1 br_solid br_secondary-4">1</div>
+    <div class="hover:{{modifier_class}}-2 cell p-y_3 p-x_4 shrink font_bold font_2 font_slab text-center br_1 br_solid br_secondary-4">2</div>
+    <div class="hover:{{modifier_class}}-3 cell p-y_3 p-x_4 shrink font_bold font_2 font_slab text-center br_1 br_solid br_secondary-4">3</div>
+    <div class="hover:{{modifier_class}}-4 cell p-y_3 p-x_4 shrink font_bold font_2 font_slab text-center br_1 br_solid br_secondary-4">4</div>
+    <div class="hover:{{modifier_class}}-5 cell p-y_3 p-x_4 shrink font_bold font_2 font_slab text-center br_1 br_solid br_secondary-4">5</div>
+    <div class="hover:{{modifier_class}}-6 cell p-y_3 p-x_4 shrink font_bold font_2 font_slab text-center br_1 br_solid br_secondary-4 ">6</div>
+    <div class="hover:{{modifier_class}}-7 cell p-y_3 p-x_4 shrink font_bold font_2 font_slab text-center br_1 br_solid br_secondary-4 ">7</div>
+    <div class="hover:{{modifier_class}}-8 cell p-y_3 p-x_4 shrink font_bold font_2 font_slab text-center br_1 br_solid br_secondary-4 ">8</div>
+    <div class="hover:{{modifier_class}}-9 cell p-y_3 p-x_4 shrink font_bold font_2 font_slab text-center br_1 br_solid br_secondary-4 ">9</div>
+    <div class="hover:{{modifier_class}} cell p-y_3 p-x_4 auto font_bold font_2 font_slab text-center br_1 br_solid br_secondary-4 ">default</div>
+  </div>
+
+ 
+  Styleguide 109.4
+ 
+ */

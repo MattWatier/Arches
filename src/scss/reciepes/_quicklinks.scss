@@ -1,0 +1,20 @@
+/*
+	Quicklinks
+
+	small list navs used in header structures of websites.
+
+
+	markup: 
+	  <li class="quicklinks__item br_solid br_0 br-r_1 br_primary-1 p-x_2"><a href="#" class="quicklinks__link h:bg_primary-5 c_black font_n1 lh_1 p-x_2">One</a></li>
+
+	sg-wrapper:
+	  <ul class="menu quicklinks">
+	    <sg-wrapper-content/>
+	    <sg-wrapper-content/>
+	    <sg-wrapper-content/>
+	    <sg-wrapper-content/>
+	    <li class="quicklinks__item"><a href="#" class="quicklinks__link  h:bg_primary-5 c_black font_n1 lh_1 p-x_2">End</a></li>
+	  </ul>
+
+	Styleguide 200.010
+ */

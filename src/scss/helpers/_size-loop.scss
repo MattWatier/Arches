@@ -1,0 +1,19 @@
+$debug-trace: true !default;
+@mixin loop-style($key, $breakpoint: "", $important: "") {
+	$styles: get-css-style($key);
+	$sizes: get-css-unit($key);
+	@if $debug-trace {
+		@debug "Loop Style Running #{$key}";
+	}
+	@each $unit, $val in $sizes {
+		$names: class-name-constructor($key, $unit, $breakpoint);
+		#{$names} {
+			@each $style in $styles {
+				#{$style}: $val #{$important};
+			}
+		}
+		@if $debug-trace {
+			@debug "My Name is  #{$name}";
+		}
+	}
+}

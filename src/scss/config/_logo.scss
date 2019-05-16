@@ -1,0 +1,20 @@
+/*
+	Logo
+
+	American College of Cardiology Logo
+
+	markup:
+    <img class="logo" src="src/img/acc-logo-mobile.svg" alt="Home">
+
+	sg-wrapper:
+ 	<div class="texture_dark p_4">
+ 	<sg-wrapper-content/>
+ 	</div>
+
+	Styleguide 0.5
+
+*/
+.footer .logo {
+	object-fit: scale-down;
+	height: 60px;
+}

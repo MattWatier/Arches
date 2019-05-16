@@ -1,0 +1,76 @@
+/// Map deep get
+/// @author Hugo Giraudel
+/// @access public
+/// @param {Map} $map - Map
+/// @param {Arglist} $keys - Key chain
+/// @return {*} - Desired value
+@function map-deep-get($map, $keys...) {
+	@each $key in $keys {
+		$map: map-get($map, $key);
+	}
+	@return $map;
+}
+
+/// css-name
+/// @author Matt Watier
+/// @access public
+/// @param {Arglist} $keys - Key chain
+/// @return {*} - Desired value
+@function get-css-name($key: "", $style-list: $style-definition) {
+	@if ($name-mode == "SHORT") {
+		@return map-get(map-get($style-list, $key), short-name);
+	} @else {
+		@return map-get(map-get($style-list, $key), long-name);
+	}
+}
+
+/// css-shortname
+/// @author Matt Watier
+/// @access public
+/// @param {Arglist} $keys - Key chain
+/// @return {*} - Desired value
+@function get-css-shortname($key, $style-list: $style-definition) {
+	// @return  #{map-style-get($style-list, $key, short-name)};
+	//@return map-get(map-get($style-list, $key), short-name);
+	@return map-deep-get($style-list, $key, short-name);
+}
+
+/// css-longname
+/// @author Matt Watier
+/// @access public
+/// @param {Arglist} $keys - Key chain
+/// @return {*} - Desired value
+@function get-css-longname($key, $style-list: $style-definition) {
+	// @return map-get(map-get($style-list, $key), long-name);
+	@return map-deep-get($style-list, $key, long-name);
+}
+
+/// css-style
+/// @author Matt Watier
+/// @access public
+/// @param {Arglist} $keys - Key chain
+/// @return {*} - Desired value
+@function get-css-style($key, $style-list: $style-definition) {
+	// @return map-get(map-get($style-list, $key), css-style);
+	@return map-deep-get($style-list, $key, css-style);
+}
+
+/// get-css-unit
+/// @author Matt Watier
+/// @access public
+/// @param {Arglist} $keys - Key chain
+/// @return {Map} - Desired value
+@function get-css-unit($key, $style-list: $style-definition) {
+	@return map-deep-get($style-list, $key, unit);
+	// @return map-get(map-get($style-list, $key), unit);
+}
+
+/// get-css-size
+/// @author Matt Watier
+/// @access public
+/// @param {Arglist} $keys - Key chain
+/// @return {Map} - Desired value
+@function get-css-size($key, $size, $style-list: $style-definition) {
+	@return map-deep-get($style-list, $key, "unit", $size);
+	//@return map-get(map-get(map-get($style-list, $key), unit), $size);
+}

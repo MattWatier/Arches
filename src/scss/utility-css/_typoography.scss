@@ -1,0 +1,295 @@
+.font_unset {
+	font-style: unset;
+	font-weight: unset;
+	font-size: unset;
+	text-decoration: unset;
+	text-align: unset;
+	text-transform: unset;
+	white-space: unset;
+}
+
+/*
+  Font Family
+
+  You can change the features of the text with some simple use classes.
+
+  .font_slab            -  Font Slab:  Used in X objects
+  .font_normal          -  Font Normal:  Used in content            
+  .font_display         -  Font Display: Used in headlines, buttons,       
+
+  markup:
+  <div class="{{modifier_class}} font_3">
+    <div class="lowercase">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
+    <div class="uppercase">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
+  </div>
+
+  Styleguide 102.1
+ */
+
+@include loop-style(font-family);
+
+/*
+  Font Style
+
+  You can change the features of the text with some simple use classes.
+
+  .font_normal            - Sets font style to normal
+  .font_italic            - Sets font style to italic      
+
+  markup:
+  <div class="{{modifier_class}} font_normal font_2">
+    <div class="lowercase">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
+    <div class="uppercase">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
+  </div>
+
+  Styleguide 102.2
+ */
+.font_normal {
+	font-style: normal !important;
+}
+
+.font_italic {
+	font-style: italic !important;
+}
+
+@include loop-style(line-height);
+
+@each $color-name, $hex-value in $theme-palette {
+	@include color-loop(color, $color-name, $hex-value);
+}
+
+/* Find ME */
+
+.c_white {
+	color: $white !important;
+}
+
+.c_black {
+	color: $black !important;
+}
+
+@include loop-transparent(color-transparent, "black", "", "!important", false);
+@include loop-transparent(color-transparent, "white", "", "!important", false);
+
+.c_inherit {
+	color: inherit;
+}
+
+/*
+  Font Weight
+
+  You can change the features of the text with some simple use classes.
+
+  .font_light            -  Light, 100
+  .font_regular          -  Regular, 400           
+  .font_bold             -  Bold, 900     
+
+  markup:
+  <div class="{{modifier_class}} font_normal font_2">
+    <div class="lowercase">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
+    <div class="uppercase">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
+  </div>
+
+  Styleguide 102.3
+ */
+.font_light {
+	font-weight: 100 !important;
+}
+
+.font_regular {
+	font-weight: 400 !important;
+}
+
+.font_bold {
+	font-weight: 700 !important;
+}
+
+.font_xbold {
+	font-weight: 900 !important;
+}
+
+/*
+  Font Size
+
+    <div class="p-b_3"><span class="bg_accent br_radius c_white d_inline-block font_n1 p-7_3 p-x_5 sg">Is Responsive: breakpoint modifiers</span></div>You can alter the size of the font with font_[x]
+
+  .font_5 - Largest
+  .font_4 - Large
+  .font_3 - Big
+  .font_2 - Big-ish
+  .font_1 - Slightly Bigger
+  .font_0 - Default Size
+  .font_n1 - Shrunk
+  .font_n2 - small
+  .font_n3 - smaller
+  .font_n4 - even smaller
+  .font_n5 - smallest
+
+  markup:
+  <div class="{{modifier_class}} font_normal">
+    <div class="lowercase pre-wrap">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
+    <div class="uppercase pre-wrap">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
+  </div>
+
+  Styleguide 102.4
+ */
+
+@include loop-style(font-size);
+
+@media #{$medium-up} {
+	@include loop-style(font-size, $bp-label_medium, "");
+}
+
+@media #{$large-up} {
+	@include loop-style(font-size, $bp-label_large, "");
+}
+
+/*
+Golden Ratio Font Size
+
+<div class="p-b_3"><span class="bg_accent br_radius c_white d_inline-block font_n1 p-7_3 p-x_5 sg">Style Is Responsive</span></div> 
+Golden Ratio Fonts can make a more impactful text for marketing areas. Unlike font size the golden ratio fonts are based on ems so in combination with the parents fonts size the modifications can create marketing focused typography solutions.
+
+
+
+.font-golden_5 - Largest
+.font-golden_4 - Large
+.font-golden_3 - Big
+.font-golden_2 - Big-ish
+.font-golden_1 - Slightly Bigger
+.font-golden_0 - Default Size
+
+
+markup:
+<div class="font_n2 font_normal">
+  <div class="{{modifier_class}}  uppercase">{{modifier_class}} with Parent of .font_n2</div>
+</div>
+
+Styleguide 102.4.1
+ */
+
+@include loop-style(golden);
+
+@media #{$medium-up} {
+	@include loop-style(golden, $bp-label_medium, "");
+}
+
+@media #{$large-up} {
+	@include loop-style(golden, $bp-label_large, "");
+}
+
+.wrap {
+	white-space: normal;
+}
+
+.pre-wrap {
+	white-space: pre-wrap;
+	letter-spacing: -0.01em;
+}
+
+.nowrap {
+	white-space: nowrap;
+}
+
+.lowercase {
+	text-transform: lowercase;
+}
+
+.uppercase {
+	text-transform: uppercase;
+}
+
+.underline {
+	text-decoration: underline;
+}
+
+.dotted {
+	text-decoration: dotted;
+}
+
+.double {
+	text-decoration: double;
+}
+
+.dashed {
+	text-decoration: dashed;
+}
+
+.text_right {
+	text-align: right !important;
+}
+
+.text_center {
+	text-align: center !important;
+}
+
+.text_left {
+	text-align: left !important;
+}
+
+/*
+Font Color
+
+You can change the color of the text with some simple use classes.
+
+
+
+.c_white - text that's white
+.c_black -  text that's black
+.c_primary -  text that's primary
+.c_alert -  text that's alert
+.c_info -  text that's info
+.c_warning -  text that's warning the user
+.c_inherit - text that inherits from its parent
+
+markup:
+<div class="{{modifier_class}} font_normal font_2 font_bold bg_secondary-4 p_3">
+  <div class="text-lowercase">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
+  <div class="text-uppercase">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
+</div>
+
+
+Styleguide 102.5
+ */
+
+/*
+	Text Shadows
+
+	Shadows can be easily added to text there is limited shadows black and white and negative black and white  
+
+	.text-shadow_white-n1			- inset white shadow
+	.text-shadow_white-1			- white shadow
+	.text-shadow_black-n1			- inset black shadow
+	.text-shadow_black-1			- black shadow
+	.text-shadow_none			- no shadow
+
+
+	markup:
+	<div class="{{modifier_class}} p_3 br_solid font_bold br_black-1 br_1 bg bg_primary c_white">text has shadow of {{modifier_class}}</div>
+
+	Styleguide 102.5.1
+
+ */
+
+@include loop-style(text-shadow);
+
+/*
+  Line Height
+
+  Change the linehieght of text with `lh_x`.
+
+  .lh_0             -  0
+  .lh_1             -  1           
+  .lh_2             -  1.25  
+  .lh_3             -  1.45  
+  .lh_4             -  1.75     
+  .lh_5             -  2.5     
+
+  markup:
+  <div class=" font_normal font_1 p_3">
+    <h3 class="font_2 font_bold c_secondary_3 p-b_3">{{modifier_class}}</h3>
+    <p class="{{modifier_class}}">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  </div>
+
+  Styleguide 102.6
+ */

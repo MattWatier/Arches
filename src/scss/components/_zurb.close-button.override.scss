@@ -1,0 +1,15 @@
+.close-button{
+    text-align: right;
+    border-top: map-get($button-palette, primary) 9px solid;
+    width:100%;
+    left:0;
+    right:0;
+	span{
+		background: map-get($button-palette, primary);
+		padding: 0 .2em;
+		vertical-align: top;
+	}
+	&:focus{
+		outline: none;
+	}
+}

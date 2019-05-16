@@ -1,0 +1,52 @@
+@function class-name-constructor($key, $unit, $breakpoint: "", $state: "") {
+	$names: "";
+	$short-name: get-css-shortname($key);
+	$long-name: get-css-longname($key);
+	$unit: "" !default;
+	$unit-seperator: "";
+	$state-long-name: "";
+	$state-short-name: "";
+	$state-psudo: "";
+
+	@if ($state == "hover") {
+		$state-long-name: get-css-longname(hover);
+		$state-short-name: get-css-shortname(hover);
+		$state-psudo: ":hover";
+	}
+	@if ($state == "visited") {
+		$state-long-name: get-css-longname(visited);
+		$state-short-name: get-css-shortname(visited);
+		$state-psudo: ":visited";
+	}
+	@if ($state == "active") {
+		$state-long-name: get-css-longname(active);
+		$state-short-name: get-css-shortname(active);
+		$state-psudo: ":active";
+	}
+	@if ($state != "") {
+		$short-name: str-insert(
+			$string: $short-name,
+			$insert: $state-short-name,
+			$index: 2
+		);
+		$long-name: str-insert(
+			$string: $long-name,
+			$insert: $state-long-name,
+			$index: 2
+		);
+	}
+	@if ($unit != "") {
+		$unit-seperator: "_";
+	}
+	@if ($name-mode == "ALL") {
+		$names: #{$long-name}#{$unit-seperator}#{$unit}#{$breakpoint}#{$state-psudo},
+			#{$short-name}#{$unit-seperator}#{$unit}#{$breakpoint}#{$state-psudo};
+	} @else if ($name-mode == "LONG") {
+		$names: #{$long-name}#{$unit-seperator}#{$unit}#{$breakpoint}#{$state-psudo};
+	} @else if ($name-mode == "SHORT") {
+		$names: #{$short-name}#{$unit-seperator}#{$unit}#{$breakpoint}#{$state-psudo};
+	} @else {
+		$names: #{$short-name}#{$unit-seperator}#{$unit}#{$breakpoint}#{$state-psudo};
+	}
+	@return $names;
+}

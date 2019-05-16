@@ -1,0 +1,51 @@
+/* 
+    Grid Button Splash
+
+    markup:
+    <div class="grid-y lh_1 " style="width:412px;height: 732px; background-image:url('https://picsum.photos/412/732/?image=857')">
+        <div class="cell small-6 grid-x">
+            <div class="small-8 cell c_white p_5 lh_1 text-left">
+                <h1 class="font_5 font_display lh_1">Annual Scientific Session</h1>
+                <h2 class="font_1 font_bold">2018 | New Orleans</h2>
+            </div>
+            <div class="small-4 cell c_white text-center">
+                <div class="grid-y grid-frame">
+                    <div class="small-6 cell p-t_5 shaddow_n2 br_solid h:bg_black-8 br_white-1 br_1 bg_black-1 "><i class="fas m_2 fa-users-class font_4"></i>
+                    <div class="font_0 m-t_3">Conference</div></div>
+                    <div class="small-6 cell p-t_5 shaddow_n2 br_solid h:bg_black-8 br_white-1 br_1 bg_black-2"><i class="fas m_2 fa-users-crown font_4"></i>
+                    <div class="font_0 m-t_3">After Party</div></div>
+                </div>
+            </div>
+        </div>
+        <div class="cell small-3 grid-x">
+            <div class="small-4 cell shadow_n1 br_white-1 br_1 br_solid h:bg_black-8 bg_black-2 c_white p-t_5 text-center"><i
+                    class="fas m_2 fa-calendar-alt font_4"></i>
+                <div class="font_0 m-t_3">Events</div>
+            </div>
+            <div class="small-4 cell shadow_n2 br_white-1 br_1 br_solid h:bg_black-8 bg_black-3 c_white p-t_5 text-center"><i
+                    class="fas m_2 fa-map-marked  font_4"></i>
+                <div class="font_0 m-t_3">Maps</div>
+            </div>
+            <div class="small-4 cell shadow_n3 br_white-1 br_1 br_solid h:bg_black-8 bg_black-4 c_white p-t_5 text-center"><i
+                    class="fas m_2 fa-cogs font_4"></i>
+                <div class="font_0 m-t_3">Options</div>
+            </div>
+        </div>
+        <div class="cell small-3 grid-x">
+            <div class="small-4 cell shadow_n2 br_white-1 br_1 br_solid h:bg_black-8 bg_black-5 c_white p-t_5 text-center"><i
+                    class="fas m_2 fa-alarm-clock font_4"></i>
+                <div class="font_0 m-t_3">Upcoming</div>
+            </div>
+            <div class="small-4 cell shadow_n3 br_white-1 br_1 br_solid h:bg_black-8 bg_black-4 c_white p-t_5 text-center"><i
+                    class="fas m_2 fa-badge-check font_4"></i>
+                <div class="font_0 m-t_3">Claim Credits</div>
+            </div>
+            <div class="small-4 cell shadow_n3 br_white-1 br_1 br_solid h:bg_black-8 bg_black-6 c_white p-t_5 text-center"><i
+                    class="fas m_2 fa-chess-rook font_4"></i>
+                <div class="font_0 m-t_3">Find a Room</div>
+            </div>
+        </div>
+    </div>  
+
+    Styleguide 200.003
+    */

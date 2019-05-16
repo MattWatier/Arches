@@ -1,0 +1,9 @@
+/// Clamp `$number` between `$min` and `$max`
+/// @param {Number} $number - Number to clamp
+/// @param {Number} $min - Minimum value
+/// @param {Number} $max - Maximum value
+/// @return {Number}
+@function clamp($number, $min, $max) {
+  @return min(max($number, $min), $max);
+}
+

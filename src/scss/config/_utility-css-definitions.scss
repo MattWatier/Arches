@@ -1,0 +1,742 @@
+$grid-column-count: 12;
+$optimal-characters: 65;
+$crushed: 1.125;
+$tight: 1.35;
+$normal: 1.5;
+$loose: 1.65;
+$airy: 1.875;
+$baseline-modifier: 1.5;
+
+$ms-base: 1em;
+$base-font-size: $ms-base;
+$baseline: ($baseline-modifier * $base-font-size) / $base-font-size * 1rem; // Unitless item * PIXEL Size / Font PIXEL Converted to REM
+// $line-height:strip-unit($baseline-modifier);
+$ms-ratio: $minor-third;
+$ms-ratio-sm: $major-second;
+$ms-ratio-md: $minor-third;
+$ms-ratio-lg: $fourth;
+$vertical-space: $baseline-modifier * $ms-base / $ms-base * 1rem;
+
+$breakpoints: (
+	xsm: 0,
+	sm: 480px,
+	md: 640px,
+	lg: 1024px,
+	xl: 1200px,
+	xxl: 1440px
+);
+
+$global-border-radius: 6px;
+$global-border-round: 25px;
+$basicSizeMultiplier: 1rem;
+
+$bp-label_small: "\\3A sm";
+$bp-label_medium: "\\3A md";
+$bp-label_large: "\\3A lg";
+
+// styleguide:ignore:start
+$value-to-unit: (
+	size: (
+		0: 0,
+		n5: -2 * $basicSizeMultiplier,
+		n4: -1 * $basicSizeMultiplier,
+		n3: -0.5 * $basicSizeMultiplier,
+		n2: -0.25 * $basicSizeMultiplier,
+		n1: -1px,
+		1: 1px,
+		2: 0.25 * $basicSizeMultiplier,
+		3: 0.5 * $basicSizeMultiplier,
+		4: 1 * $basicSizeMultiplier,
+		5: 2 * $basicSizeMultiplier
+	),
+	size-positive: (
+		0: 0,
+		1: 1px,
+		2: 0.25 * $basicSizeMultiplier,
+		3: 0.5 * $basicSizeMultiplier,
+		4: 1 * $basicSizeMultiplier,
+		5: 2 * $basicSizeMultiplier
+	),
+	unitless: (
+		0: 0,
+		n5: -5,
+		n4: -4,
+		n3: -3,
+		n2: -2,
+		n1: -1,
+		1: 1,
+		2: 2,
+		3: 3,
+		4: 4,
+		5: 5
+	),
+	unitless-positive: (
+		0: 0,
+		1: 1,
+		2: 2,
+		3: 3,
+		4: 4,
+		5: 5
+	),
+	line-height: (
+		0: 0,
+		1: 1,
+		2: 1.35,
+		3: 1.5,
+		4: 1.75,
+		5: 2.5
+	),
+	opacity: (
+		0: 0,
+		1: 0.05,
+		2: 0.12,
+		3: 0.25,
+		4: 0.38,
+		5: 0.5,
+		6: 0.62,
+		7: 0.75,
+		8: 0.88,
+		9: 0.95,
+		none: 1
+	),
+	percent-10: (
+		0: 0%,
+		1: 5%,
+		2: 12%,
+		3: 25%,
+		4: 38%,
+		5: 50%,
+		6: 62%,
+		7: 75%,
+		8: 88%,
+		9: 95%,
+		none: 100%
+	),
+	percent-positive: (
+		0: 0%,
+		1: 15%,
+		2: 37%,
+		3: 60%,
+		4: 78%,
+		5: 90%
+	),
+	percent-negative: (
+		n1: 10%,
+		n2: 25%,
+		n3: 45%,
+		n4: 60%,
+		n5: 75%
+	),
+	percent-perfect: (
+		0: 0%,
+		10: 10%,
+		20: 20%,
+		30: 30%,
+		40: 40%,
+		50: 50%,
+		60: 60%,
+		70: 70%,
+		80: 80%,
+		90: 90%,
+		100: 100%
+	),
+	percent: (
+		0: 0%,
+		1: 15%,
+		2: 37%,
+		3: 60%,
+		4: 78%,
+		5: 90%,
+		n1: -10%,
+		n2: -25%,
+		n3: -45%,
+		n4: -60%,
+		n5: -75%
+	),
+	radius: (
+		square: 0px,
+		radius: 5px,
+		round: 25px,
+		circle: 100%
+	),
+	border-style: (
+		none: none,
+		solid: solid,
+		dashed: dashed,
+		dotted: dotted
+	),
+	font-size: (
+		0: strip-unit(ms(0)) * 1rem,
+		1: strip-unit(ms(1)) * 1rem,
+		2: strip-unit(ms(2)) * 1rem,
+		3: strip-unit(ms(3)) * 1rem,
+		4: strip-unit(ms(4)) * 1rem,
+		5: strip-unit(ms(5)) * 1rem,
+		6: strip-unit(ms(6)) * 1rem,
+		7: strip-unit(ms(7)) * 1rem,
+		8: strip-unit(ms(8)) * 1rem,
+		9: strip-unit(ms(9)) * 1rem,
+		10: strip-unit(ms(10)) * 1rem,
+		n1: strip-unit(ms(-1)) * 1rem,
+		n2: strip-unit(ms(-2)) * 1rem,
+		n3: strip-unit(ms(-3)) * 1rem,
+		n4: strip-unit(ms(-4)) * 1rem,
+		n5: strip-unit(ms(-5)) * 1rem
+	),
+	font-size-golden: (
+		0: ms-calc(0, $ms-base, $golden),
+		1: ms-calc(1, $ms-base, $golden),
+		2: ms-calc(2, $ms-base, $golden),
+		3: ms-calc(3, $ms-base, $golden),
+		4: ms-calc(4, $ms-base, $golden),
+		5: ms-calc(5, $ms-base, $golden)
+	),
+	display: (
+		block: block,
+		inline: inline,
+		inline-block: inline-block,
+		none: none,
+		flex: flex,
+		flex-inline: flex-inline
+	),
+	hover: (
+		dark: -30%,
+		light: 30%
+	),
+	border-width: (
+		0: 0px,
+		1: 1px,
+		2: 3px,
+		3: 5px,
+		4: 0.5rem,
+		5: 1rem
+	),
+	font-family: (
+		slab: (
+			"Roboto Slab",
+			"Times New Roman",
+			"Lucida Bright",
+			Georgia,
+			serif
+		),
+		display: (
+			"Maven Pro",
+			"Open Sans",
+			"Helvetica Neue",
+			"Helvetica",
+			Helvetica,
+			Arial,
+			sans-serif
+		),
+		copy: (
+			"Muli",
+			"Open Sans",
+			"Helvetica Neue",
+			"Helvetica",
+			Helvetica,
+			Arial,
+			sans-serif
+		)
+	),
+	grid: (
+		1: 1/12 * 100%,
+		2: 1/6 * 100%,
+		3: 1/4 * 100%,
+		4: 1/3 * 100%,
+		5: 5/12 * 100%,
+		6: 1/2 * 100%,
+		7: 7/12 * 100%,
+		8: 2/3 * 100%,
+		9: 3/4 * 100%,
+		10: 5/6 * 100%,
+		11: 11/12 * 100%,
+		12: 1 * 100%
+	),
+	maxwidth: (
+		0: 0,
+		1: 30rem,
+		2: 40rem,
+		3: 50rem,
+		4: 64rem,
+		5: 80rem
+	),
+	text-shadow: (
+		none: 0px 0px 0px rgba(0, 0, 0, 0),
+		white-1: 2px 2px 2px rgba(255, 255, 255, 0.25),
+		black-1: 2px 2px 2px rgba(0, 0, 0, 0.25),
+		white-n1: -1px -1px 2px rgba(255, 255, 255, 0.5),
+		black-n1: -1px -1px 2px rgba(0, 0, 0, 0.5)
+	),
+	shadow: (
+		0: make-shadow(3, "drop", #000, 0.4),
+		1: make-shadow(1, "drop", #000, 0.1),
+		2: make-shadow(2, "drop", #000, 0.2),
+		3: make-shadow(3, "drop", #000, 0.3),
+		4: make-shadow(3.5, "drop", #000, 0.5),
+		5: make-shadow(4, "drop", #000, 0.65),
+		n1: make-shadow(1, "inset", #000, 0.1),
+		n2: make-shadow(2, "inset", #000, 0.2),
+		n3: make-shadow(3, "inset", #000, 0.3),
+		n4: make-shadow(3.5, "inset", #000, 0.5),
+		n5: make-shadow(4, "inset", #000, 0.65)
+	)
+);
+
+$style-definition: (
+	background-color: (
+		short-name: ".bg",
+		css-style: (
+			"background-color"
+		),
+		long-name: ".back",
+		unit: map-get($value-to-unit, "percent")
+	),
+	border-color: (
+		short-name: ".br",
+		css-style: (
+			"border-color"
+		),
+		long-name: ".border",
+		unit: map-get($value-to-unit, "percent")
+	),
+	border-style: (
+		short-name: ".br",
+		css-style: (
+			"border-style"
+		),
+		long-name: ".border",
+		unit: map-get($value-to-unit, "border-style")
+	),
+	border-width: (
+		short-name: ".br",
+		css-style: (
+			"border-width"
+		),
+		long-name: ".border-width",
+		unit: map-get($value-to-unit, border-width),
+		alt: "none"
+	),
+	border-top-width: (
+		short-name: ".br-t",
+		css-style: (
+			"border-top-width"
+		),
+		long-name: ".border-top-width",
+		unit: map-get($value-to-unit, border-width),
+		alt: "none"
+	),
+	border-right-width: (
+		short-name: ".br-r",
+		css-style: (
+			"border-right-width"
+		),
+		long-name: ".border-right-width",
+		unit: map-get($value-to-unit, border-width),
+		alt: "none"
+	),
+	border-left-width: (
+		short-name: ".br-l",
+		css-style: (
+			"border-left-width"
+		),
+		long-name: ".border-left-width",
+		unit: map-get($value-to-unit, border-width),
+		alt: "none"
+	),
+	border-bottom-width: (
+		short-name: ".br-b",
+		css-style: (
+			"border-bottom-width"
+		),
+		long-name: ".border-bottom-width",
+		unit: map-get($value-to-unit, border-width),
+		alt: "none"
+	),
+	border-radius: (
+		short-name: ".br",
+		css-style: (
+			"border-radius"
+		),
+		long-name: ".radius",
+		unit: map-get($value-to-unit, "radius")
+	),
+	border-top-right-radius: (
+		short-name: ".br-tr",
+		css-style: (
+			"border-top-right-radius"
+		),
+		long-name: ".border-top-right-radius",
+		unit: map-get($value-to-unit, "radius")
+	),
+	border-top-left-radius: (
+		short-name: ".br-tl",
+		css-style: (
+			"border-top-left-radius"
+		),
+		long-name: ".border-top-left-radius",
+		unit: map-get($value-to-unit, "radius")
+	),
+	border-bottom-right-radius: (
+		short-name: ".br-br",
+		css-style: (
+			"border-bottom-right-radius"
+		),
+		long-name: ".border-bottom-right-radius",
+		unit: map-get($value-to-unit, "radius")
+	),
+	border-bottom-left-radius: (
+		short-name: ".br-bl",
+		css-style: (
+			"border-bottom-left-radius"
+		),
+		long-name: ".border-bottom-left-radius",
+		unit: map-get($value-to-unit, "radius")
+	),
+	box-shadow: (
+		short-name: ".shadow",
+		css-style: (
+			"box-shadow"
+		),
+		long-name: ".box-shadow",
+		unit: map-get($value-to-unit, "shadow"),
+		alt: "none"
+	),
+	display: (
+		short-name: ".d",
+		css-style: (
+			"display"
+		),
+		long-name: "display",
+		unit: map-get($value-to-unit, "display"),
+		alt: "none"
+	),
+	color: (
+		short-name: ".c",
+		css-style: (
+			"color"
+		),
+		long-name: ".color",
+		unit: map-get($value-to-unit, "percent")
+	),
+	font-family: (
+		short-name: ".font",
+		css-style: (
+			"font-family"
+		),
+		long-name: ".font-family",
+		unit: map-get($value-to-unit, "font-family")
+	),
+	font-size: (
+		short-name: ".font",
+		css-style: (
+			"font-size"
+		),
+		long-name: ".font-size",
+		unit: map-get($value-to-unit, "font-size")
+	),
+	golden: (
+		short-name: ".font-golden",
+		css-style: (
+			"font-size"
+		),
+		long-name: ".font-size-golden",
+		unit: map-get($value-to-unit, "font-size-golden")
+	),
+	hover: (
+		short-name: "h\\3A ",
+		css-style: (
+			"background-color"
+		),
+		long-name: "hover\\3A ",
+		unit: map-get($value-to-unit, "hover")
+	),
+	active: (
+		short-name: "a\\3A ",
+		css-style: (
+			"background-color"
+		),
+		long-name: "active\\3A ",
+		unit: map-get($value-to-unit, "active")
+	),
+	visited: (
+		short-name: "v\\3A ",
+		css-style: (
+			"background-color"
+		),
+		long-name: "visited\\3A ",
+		unit: map-get($value-to-unit, "visited")
+	),
+	hover-bg: (
+		short-name: ".h\\3A bg",
+		css-style: (
+			"background-color"
+		),
+		long-name: ".hover\\3A back",
+		unit: map-get($value-to-unit, "hover")
+	),
+	hover-text: (
+		short-name: ".h\\3A c",
+		css-style: (
+			"color"
+		),
+		long-name: ".hover\\3A color",
+		unit: map-get($value-to-unit, "hover"),
+		alt: "none"
+	),
+	bottom: (
+		short-name: ".b",
+		css-style: (
+			"bottom"
+		),
+		long-name: ".bottom",
+		unit: map-get($value-to-unit, "size")
+	),
+	left: (
+		short-name: ".l",
+		css-style: (
+			"left"
+		),
+		long-name: ".left",
+		unit: map-get($value-to-unit, "size")
+	),
+	margin: (
+		short-name: ".m",
+		css-style: (
+			"margin"
+		),
+		long-name: ".margin",
+		unit: map-get($value-to-unit, "size")
+	),
+	margin-horizontal: (
+		short-name: ".m-x",
+		css-style: (
+			"margin-right",
+			"margin-left"
+		),
+		long-name: ".margin-x",
+		unit: map-get($value-to-unit, "size")
+	),
+	margin-vertical: (
+		short-name: ".m-y",
+		css-style: (
+			"margin-top",
+			"margin-bottom"
+		),
+		long-name: ".margin-y",
+		unit: map-get($value-to-unit, "size")
+	),
+	margin-top: (
+		short-name: ".m-t",
+		css-style: (
+			"margin-top"
+		),
+		long-name: ".margin-top",
+		unit: map-get($value-to-unit, "size")
+	),
+	margin-bottom: (
+		short-name: ".m-b",
+		css-style: (
+			"margin-bottom"
+		),
+		long-name: ".margin-bottom",
+		unit: map-get($value-to-unit, "size")
+	),
+	margin-left: (
+		short-name: ".m-l",
+		css-style: (
+			"margin-left"
+		),
+		long-name: ".margin-left",
+		unit: map-get($value-to-unit, "size")
+	),
+	margin-right: (
+		short-name: ".m-r",
+		css-style: (
+			"margin-right"
+		),
+		long-name: ".margin-right",
+		unit: map-get($value-to-unit, "size")
+	),
+	padding: (
+		short-name: ".p",
+		css-style: (
+			"padding"
+		),
+		long-name: ".padding",
+		unit: map-get($value-to-unit, "size-positive")
+	),
+	padding-horizontal: (
+		short-name: ".p-x",
+		css-style: (
+			"padding-left",
+			"padding-right"
+		),
+		long-name: ".padding-x",
+		unit: map-get($value-to-unit, "size-positive")
+	),
+	padding-vertical: (
+		short-name: ".p-y",
+		css-style: (
+			"padding-bottom",
+			"padding-top"
+		),
+		long-name: ".padding-y",
+		unit: map-get($value-to-unit, "size-positive")
+	),
+	padding-top: (
+		short-name: ".p-t",
+		css-style: (
+			"padding-top"
+		),
+		long-name: ".padding-top",
+		unit: map-get($value-to-unit, "size-positive")
+	),
+	padding-bottom: (
+		short-name: ".p-b",
+		css-style: (
+			"padding-bottom"
+		),
+		long-name: ".padding-bottom",
+		unit: map-get($value-to-unit, "size-positive")
+	),
+	padding-left: (
+		short-name: ".p-l",
+		css-style: (
+			"padding-left"
+		),
+		long-name: ".padding-left",
+		unit: map-get($value-to-unit, "size-positive")
+	),
+	padding-right: (
+		short-name: ".p-r",
+		css-style: (
+			"padding-right"
+		),
+		long-name: ".padding-right",
+		unit: map-get($value-to-unit, "size-positive")
+	),
+	line-height: (
+		short-name: ".lh",
+		css-style: (
+			"line-height"
+		),
+		long-name: ".line-height",
+		unit: map-get($value-to-unit, "line-height")
+	),
+	opacity: (
+		short-name: ".opacity",
+		css-style: (
+			"opacity"
+		),
+		long-name: ".opacity",
+		unit: map-get($value-to-unit, "opacity"),
+		alt: "none"
+	),
+	background-transparent: (
+		short-name: ".bg",
+		css-style: (
+			"background-color"
+		),
+		long-name: ".back",
+		unit: map-get($value-to-unit, "opacity"),
+		alt: "none"
+	),
+	border-transparent: (
+		short-name: ".br",
+		css-style: (
+			"border-color"
+		),
+		long-name: ".border",
+		unit: map-get($value-to-unit, "opacity"),
+		alt: "none"
+	),
+	color-transparent: (
+		short-name: ".c",
+		css-style: (
+			"color"
+		),
+		long-name: ".color",
+		unit: map-get($value-to-unit, "opacity"),
+		alt: "none"
+	),
+	right: (
+		short-name: ".r",
+		css-style: (
+			"right"
+		),
+		long-name: ".right",
+		unit: map-get($value-to-unit, "size")
+	),
+	top: (
+		short-name: ".t",
+		css-style: (
+			"top"
+		),
+		long-name: ".top",
+		unit: map-get($value-to-unit, "size")
+	),
+	text-shadow: (
+		short-name: ".text-shadow",
+		css-style: (
+			"text-shadow"
+		),
+		long-name: ".text-shadow",
+		unit: map-get($value-to-unit, "text-shadow"),
+		alt: "none"
+	),
+	grid-width: (
+		short-name: ".gw",
+		css-style: (
+			"width"
+		),
+		long-name: ".grid-width",
+		unit: map-get($value-to-unit, grid),
+		alt: "none"
+	),
+	width: (
+		short-name: ".w",
+		css-style: (
+			"width"
+		),
+		long-name: ".width",
+		unit: map-get($value-to-unit, percent-perfect),
+		alt: "none"
+	),
+	max-width: (
+		short-name: ".max-w",
+		css-style: (
+			"max-width"
+		),
+		long-name: ".max-width",
+		unit: map-get($value-to-unit, maxwidth),
+		alt: "none"
+	)
+);
+
+$margin_0: get-css-size(margin, 0);
+$margin_1: get-css-size(margin, 1);
+$margin_2: get-css-size(margin, 2);
+$margin_3: get-css-size(margin, 3);
+$margin_4: get-css-size(margin, 4);
+$margin_5: get-css-size(margin, 5);
+$margin_n1: get-css-size(margin, n1);
+$margin_n2: get-css-size(margin, n2);
+$margin_n3: get-css-size(margin, n3);
+$margin_n4: get-css-size(margin, n4);
+$margin_n5: get-css-size(margin, n5);
+$padding_0: get-css-size(padding, 0);
+$padding_1: get-css-size(padding, 1);
+$padding_2: get-css-size(padding, 2);
+$padding_3: get-css-size(padding, 3);
+$padding_4: get-css-size(padding, 4);
+$padding_5: get-css-size(padding, 5);
+$border_square: 0;
+$border_radius: get-css-size(border-radius, radius);
+$border_round: get-css-size(border-radius, round);
+$border_circle: get-css-size(border-radius, circle);
+$border-width_0: get-css-size(border-width, 0);
+$border-width_1: get-css-size(border-width, 1);
+$border-width_2: get-css-size(border-width, 2);
+$border-width_3: get-css-size(border-width, 3);
+$border-width_4: get-css-size(border-width, 4);
+$border-width_5: get-css-size(border-width, 5);

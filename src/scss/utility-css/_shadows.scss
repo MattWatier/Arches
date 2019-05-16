@@ -1,0 +1,35 @@
+/*
+	Shadows
+
+	Shadows can be easily added to container .shadow_{{modifier_class}}  
+
+	shadow_n1			- inset shadow
+	shadow_n2			- inset shadow
+	shadow_n3			- inset shadow
+	shadow_n4			- inset shadow
+	shadow_n5			- inset shadow
+	shadow_0			- no shadow
+	shadow_1			- box shadow
+	shadow_2			- box shadow
+	shadow_3			- box shadow
+	shadow_4			- box shadow
+	shadow_5			- box shadow
+
+	markup:
+	<div class="{{modifier_class}} p_3 br_solid br_black-1 br_1 c_whtie">container has shadow of {{modifier_class}}</div>
+
+	Styleguide 104.5
+ 
+ */
+@include loop-style(box-shadow);
+// .shadow{          box-shadow: make-shadow(3,"drop",#000,.4);  }
+// .shadow_1{        box-shadow: make-shadow(1,"drop",#000,.1);  }
+// .shadow_2{        box-shadow: make-shadow(2,"drop",#000,.2);  }
+// .shadow_3{        box-shadow: make-shadow(3,"drop",#000,.3);  }
+// .shadow_4{        box-shadow: make-shadow(3.5,"drop",#000,.5);  }
+// .shadow_5{        box-shadow: make-shadow(4,"drop",#000,.65);  }
+// .shadow_n1{       box-shadow: make-shadow(1,"inset",#000,.1); }
+// .shadow_n2{       box-shadow: make-shadow(2,"inset",#000,.2); }
+// .shadow_n3{       box-shadow: make-shadow(3,"inset",#000,.3); }
+// .shadow_n4{       box-shadow: make-shadow(3.5,"inset",#000,.5); }
+// .shadow_n5{       box-shadow: make-shadow(4,"inset",#000,.65); }
