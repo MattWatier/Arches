@@ -85,29 +85,46 @@ gulp.task('style', function () {
 });
 
 gulp.task("construct", function () {
-   var base = gulp.src(PATHS.SCSS + '/gulp_header/_utility_only.scss').pipe(rename("base.scss"));
+   var base = gulp.src(PATHS.SCSS + '/gulp_header/_utilityclasses.scss').pipe(rename("base.scss"));
 
    var uconly = base
       .pipe(clone())
-      .pipe(rename("UC_only.scss"))
-
+      .pipe(rename("uc_only.scss"))
       .pipe(header(fs.readFileSync(PATHS.SCSS + '/components/_uc-only.components.scss', 'utf8'), {
          pkg: pkg
       }))
       .pipe(header(fs.readFileSync(PATHS.SCSS + '/components/_components.scss', 'utf8'), {
          pkg: pkg
       }))
-      .pipe(header(fs.readFileSync(PATHS.SCSS + '/gulp_header/_base-and-brand.scss', 'utf8'), {
+      .pipe(header(fs.readFileSync(PATHS.SCSS + '/gulp_header/_default.setup.scss', 'utf8'), {
          pkg: pkg
       }))
-      .pipe(header(fs.readFileSync(PATHS.SCSS + '/gulp_header/_default-setup.scss', 'utf8'), {
+      .pipe(header(fs.readFileSync(PATHS.SCSS + '/gulp_header/_acc.brand.scss', 'utf8'), {
          pkg: pkg
       }))
       .pipe(header("/** Utility Class Only With Basic ACC Branding **/", {
          pkg: pkg
       }));
 
-   return merge(base, uconly)
+   var zurb_acc = base.pipe(clone())
+      .pipe(rename("zurb_acc.scss"))
+      .pipe(header(fs.readFileSync(PATHS.SCSS + '/components/_zurb.components.scss', 'utf8'), {
+         pkg: pkg
+      }))
+      .pipe(header(fs.readFileSync(PATHS.SCSS + '/components/_components.scss', 'utf8'), {
+         pkg: pkg
+      }))
+      .pipe(header(fs.readFileSync(PATHS.SCSS + '/gulp_header/_zurb.setup.scss', 'utf8'), {
+         pkg: pkg
+      }))
+      .pipe(header(fs.readFileSync(PATHS.SCSS + '/gulp_header/_acc.brand.scss', 'utf8'), {
+         pkg: pkg
+      }))
+      .pipe(header("/** Utility Class Only With Basic ACC Branding **/", {
+         pkg: pkg
+      }));
+
+   return merge(base, uconly, zurb_acc)
       .pipe(header(fs.readFileSync(PATHS.SCSS + '/gulp_header/_preheader.scss', 'utf8'), {
          pkg: pkg
       }))

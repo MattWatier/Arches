@@ -17,24 +17,17 @@ $ms-base: 1rem !default; // needs to be in rem's
 
 @import "config/utility-css-definitions";
 @import "helpers/breakpoint";
-/** Utility Class Only With Basic ACC Branding **//*UC Only Setup*/
+/** Utility Class Only With Basic ACC Branding **//* ACC BRAND This Should happen before Framework Setups*/
+/*UC Only Setup*/
 
 /*ACC Branding*/
 // ACC Design Alterations
 @import "base/base";
+
 @import "components/icon-toggle";
 @import "components/scrollbar";
 @import "components/loading-grid";
 @import "components/interactive-extras";
-
-
-// @import "components/components";
-// @import "structures/structures";
-// #override-container {
-// 	@import "utility-css/utility-css";
-// }
-
 @import "utility-css/utility-css";
 @import "reciepes/reciepes";
 //StyleGuide
-//@import "styleguide/styleguide";

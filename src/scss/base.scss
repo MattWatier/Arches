@@ -17,15 +17,6 @@ $ms-base: 1rem !default; // needs to be in rem's
 
 @import "config/utility-css-definitions";
 @import "helpers/breakpoint";
-
-
-// @import "components/components";
-// @import "structures/structures";
-// #override-container {
-// 	@import "utility-css/utility-css";
-// }
-
 @import "utility-css/utility-css";
 @import "reciepes/reciepes";
 //StyleGuide
-//@import "styleguide/styleguide";
