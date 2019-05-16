@@ -1,0 +1,20 @@
+{
+  "title": "Michelangelo Styleguide",
+  "mask": "UC_only.css",
+  "builder": "node_modules/michelangelo/kss_styleguide/custom-template/",
+  "source": "./dist/css/",
+  "destination": "docs/uc-only/",
+  "//": "relative to source.",
+  "homepage": "../../README.md",
+
+  "//": "relative to the generated style guide.",
+  "css": ["../src/css/index_default.css",
+    "../src/css/vendor/fontawesome/fontawesome.css",
+    "../src/css/vendor/fontawesome/solid.css",
+    "../src/css/vendor/fontawesome/regular.css",
+    "../src/css/vendor/fontawesome/brands.css",
+    "../src/css/vendor/fontawesome/light.css",
+    "../src/css/styleguide_override.css"
+  ],
+  "js": []
+}

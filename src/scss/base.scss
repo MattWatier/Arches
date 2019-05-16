@@ -1,0 +1,31 @@
+/**
+ * arches - Global style system focused on utility classes
+ * @version v1.0.0
+ * @link https://github.com/MattWatier/Arches#readme
+ */
+$debug-trace: false !default;
+$name-mode: "SHORT" !default; // $name-mode: "SHORT","LONG","ALL"
+$ms-base: 1rem !default; // needs to be in rem's
+@import "helpers/helpers";
+@import "vendor/modular-scale";
+@import "config/config";
+@import "config/vars";
+@import "config/colors";
+@import "config/fonts";
+@import "config/textures";
+@import "config/logo";
+
+@import "config/utility-css-definitions";
+@import "helpers/breakpoint";
+
+
+// @import "components/components";
+// @import "structures/structures";
+// #override-container {
+// 	@import "utility-css/utility-css";
+// }
+
+@import "utility-css/utility-css";
+@import "reciepes/reciepes";
+//StyleGuide
+//@import "styleguide/styleguide";

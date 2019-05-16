@@ -1,20 +1,21 @@
 {
-  "title"        : "Michelangelo Styleguide",
-  "mask"         : "index_default.css",
-  "builder"      : "node_modules/michelangelo/kss_styleguide/custom-template/",
-  "source"       : "./src/css/",
-  "destination"  : "docs/",
+  "title": "Michelangelo Styleguide",
+  "mask": "base.css",
+  "builder": "node_modules/michelangelo/kss_styleguide/custom-template/",
+  "source": "./dist/css/",
+  "destination": "docs/",
 
-"//": "relative to source.",
-  "homepage"     : "../../README.md",
+  "//": "relative to source.",
+  "homepage": "../../README.md",
 
-"//": "relative to the generated style guide.",
-  "css": ["../src/css/index_default.css",
+  "//": "relative to the generated style guide.",
+  "css": ["../src/css/base.css",
     "../src/css/vendor/fontawesome/fontawesome.css",
     "../src/css/vendor/fontawesome/solid.css",
     "../src/css/vendor/fontawesome/regular.css",
     "../src/css/vendor/fontawesome/brands.css",
     "../src/css/vendor/fontawesome/light.css",
-    "../src/css/styleguide_override.css"],
-  "js" : []
+    "../src/css/styleguide_override.css"
+  ],
+  "js": []
 }

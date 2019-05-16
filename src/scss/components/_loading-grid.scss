@@ -29,6 +29,7 @@ $animationTime: 1.5s;
 .lds-grid {
 	display: grid;
 	grid-template-columns: 16px 16px 16px;
+	grid-template-rows: auto auto;
 	grid-gap: 12px;
 	position: relative;
 	width: 64px;

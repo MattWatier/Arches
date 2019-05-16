@@ -1,10 +1,11 @@
 {
   "name": "arches",
   "version": "1.0.0",
-  "description": "Global style system with ablity to be based on utlity classes ",
+  "description": "Global style system focused on utility classes",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "kss": "kss --config kss-config.json",
+    "kss-uc": "kss --config kss-config_UC-Only.json"
   },
   "repository": {
     "type": "git",
@@ -21,9 +22,49 @@
   "bugs": {
     "url": "https://github.com/MattWatier/Arches/issues"
   },
+  "browserslist": [
+    "last 2 version",
+    "> 1% in US",
+    "IE 11",
+    "not dead"
+  ],
+  "cssnano": {
+    "preset": [
+      "default",
+      {
+        "discardComments": {
+          "removeAll": true
+        }
+      }
+    ]
+  },
   "homepage": "https://github.com/MattWatier/Arches#readme",
   "devDependencies": {
+    "autoprefixer": "^9.5.1",
+    "bootstrap": "^4.3.1",
+    "css-declaration-sorter": "^4.0.1",
+    "cssnano": "^4.1.10",
+    "foundation-sites": "^6.5.3",
+    "fs": "0.0.1-security",
+    "gulp": "^4.0.2",
+    "gulp-clean": "^0.4.0",
+    "gulp-clone": "^2.0.1",
+    "gulp-dart-sass": "^0.9.1",
+    "gulp-gzip": "^1.4.2",
+    "gulp-header": "^2.0.7",
+    "gulp-postcss": "^8.0.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-sourcemaps": "^2.6.5",
+    "jquery": "^3.4.1",
     "kss": "^3.0.0-beta.25",
-    "michelangelo": "^0.8.0"
+    "merge-stream": "^1.0.1",
+    "michelangelo": "^0.8.0",
+    "pixrem": "^5.0.0",
+    "popper.js": "^1.15.0",
+    "postcss-normalize": "^7.0.1",
+    "what-input": "^5.2.1"
+  },
+  "dependencies": {
+    "postcss-discard-duplicates": "^4.0.2"
   }
 }
