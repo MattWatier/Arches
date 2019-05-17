@@ -6,7 +6,8 @@
   "scripts": {
     "kss": "kss --config kss-config.json",
     "kss-uc": "kss --config kss-config_uc_only.json",
-    "kss-zurb_acc": "kss --config kss-config_zurb_acc.json"
+    "kss-zurb_acc": "kss --config kss-config_zurb_acc.json",
+    "kss-boot_acc": "kss --config kss-config_boot_acc.json"
   },
   "repository": {
     "type": "git",

@@ -20,7 +20,7 @@ $ms-base: 1rem !default; // needs to be in rem's
 /** Utility Class Only With Basic ACC Branding **//* ACC BRAND This Should happen before Framework Setups*/
 /*Zurb Foundation Framework Setup Files.*/
 @import "../../node_modules/foundation-sites/scss/util/util";
-@import "config/foundation-settings";
+@import "config/__zurb.settings";
 @import "../../node_modules/foundation-sites/scss/foundation.scss";
 @include foundation-everything();
 /*ACC Branding*/

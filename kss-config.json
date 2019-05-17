@@ -1,6 +1,6 @@
 {
   "title": "Michelangelo Styleguide",
-  "mask": "base.css",
+  "mask": "uc_base.css",
   "builder": "node_modules/michelangelo/kss_styleguide/custom-template/",
   "source": "./dist/css/",
   "destination": "docs/",
@@ -9,7 +9,7 @@
   "homepage": "../../README.md",
 
   "//": "relative to the generated style guide.",
-  "css": ["../src/css/base.css",
+  "css": ["../src/css/uc_base.css",
     "../src/css/vendor/fontawesome/fontawesome.css",
     "../src/css/vendor/fontawesome/solid.css",
     "../src/css/vendor/fontawesome/regular.css",
