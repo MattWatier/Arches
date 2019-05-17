@@ -17,6 +17,7 @@ var merge = require('merge-stream');
 var header = require('gulp-header');
 var fs = require('fs');
 var pkg = require('./package.json');
+
 var banner = ['/**',
    ' * <%= pkg.name %> - <%= pkg.description %>',
    ' * @version v<%= pkg.version %>',
@@ -89,7 +90,7 @@ gulp.task("construct", function () {
 
    var uconly = base
       .pipe(clone())
-      .pipe(rename("utilityclass_acc.scss"))
+      .pipe(rename("noframework_acc.scss"))
       .pipe(header(fs.readFileSync(PATHS.SCSS + '/components/__uc-only.components.scss', 'utf8'), {
          pkg: pkg
       }))
@@ -97,6 +98,9 @@ gulp.task("construct", function () {
          pkg: pkg
       }))
       .pipe(header(fs.readFileSync(PATHS.SCSS + '/gulp_header/__default.setup.scss', 'utf8'), {
+         pkg: pkg
+      }))
+      .pipe(header(fs.readFileSync(PATHS.SCSS + '/gulp_header/__default.brand.scss', 'utf8'), {
          pkg: pkg
       }))
       .pipe(header(fs.readFileSync(PATHS.SCSS + '/gulp_header/__acc.brand.scss', 'utf8'), {
@@ -108,6 +112,9 @@ gulp.task("construct", function () {
  
    var zurb_acc = base.pipe(clone())
       .pipe(rename("zurb_acc.scss"))
+      .pipe(header(fs.readFileSync(PATHS.SCSS + '/recipes/__zurb.recipes.scss', 'utf8'), {
+         pkg: pkg
+      }))
       .pipe(header(fs.readFileSync(PATHS.SCSS + '/components/__zurb.components.scss', 'utf8'), {
          pkg: pkg
       }))
@@ -115,6 +122,9 @@ gulp.task("construct", function () {
          pkg: pkg
       }))
       .pipe(header(fs.readFileSync(PATHS.SCSS + '/gulp_header/__zurb.setup.scss', 'utf8'), {
+         pkg: pkg
+      }))
+      .pipe(header(fs.readFileSync(PATHS.SCSS + '/gulp_header/__default.brand.scss', 'utf8'), {
          pkg: pkg
       }))
       .pipe(header(fs.readFileSync(PATHS.SCSS + '/gulp_header/__acc.brand.scss', 'utf8'), {
@@ -135,6 +145,9 @@ gulp.task("construct", function () {
       .pipe(header(fs.readFileSync(PATHS.SCSS + '/gulp_header/__boot.setup.scss', 'utf8'), {
          pkg: pkg
       }))
+      .pipe(header(fs.readFileSync(PATHS.SCSS + '/gulp_header/__default.brand.scss', 'utf8'), {
+         pkg: pkg
+      }))
       .pipe(header(fs.readFileSync(PATHS.SCSS + '/gulp_header/__acc.brand.scss', 'utf8'), {
          pkg: pkg
       }))
@@ -153,3 +166,5 @@ gulp.task("construct", function () {
       }))
       .pipe(gulp.dest(PATHS.SCSS));
 });
+
+gulp.task("build", ["construct", "style"]);

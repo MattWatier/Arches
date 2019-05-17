@@ -1,0 +1,33 @@
+/**
+ * arches - Global style system focused on utility classes
+ * @version v1.0.0
+ * @link https://github.com/MattWatier/Arches#readme
+ */
+$debug-trace: false !default;
+$name-mode: "SHORT" !default; // $name-mode: "SHORT","LONG","ALL"
+$ms-base: 1rem !default; // needs to be in rem's
+@import "helpers/helpers";
+@import "vendor/modular-scale";
+@import "config/config";
+@import "config/vars";
+@import "config/colors";
+@import "config/fonts";
+@import "config/textures";
+@import "config/logo";
+
+@import "config/utility-css-definitions";
+@import "helpers/breakpoint";
+/** Utility Class Only With Basic ACC Branding **//* ACC BRAND This Should happen before Framework Setups*/
+/*UC Only Setup*/
+
+/*ACC Branding*/
+// ACC Design Alterations
+@import "base/base";
+
+@import "components/icon-toggle";
+@import "components/scrollbar";
+@import "components/loading-grid";
+@import "components/interactive-extras";
+@import "utility-css/utility-css";
+@import "recipes/__noFramework.recipes";
+//StyleGuide

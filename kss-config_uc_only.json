@@ -1,14 +1,14 @@
 {
   "title": "Utility Only",
-  "mask": "uc_only.css",
+  "mask": "noframework_acc.css",
   "builder": "node_modules/michelangelo/kss_styleguide/custom-template/",
   "source": "./dist/css/",
-  "destination": "docs/uc-only/",
+  "destination": "docs/noframework_acc/",
   "//": "relative to source.",
   "homepage": "../../README.md",
 
   "//": "relative to the generated style guide.",
-  "css": ["../src/css/index_default.css",
+  "css": ["../src/css/noframework_acc.css",
     "../src/css/vendor/fontawesome/fontawesome.css",
     "../src/css/vendor/fontawesome/solid.css",
     "../src/css/vendor/fontawesome/regular.css",

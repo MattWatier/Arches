@@ -1,18 +1,22 @@
-$teal: #198dae;
-$green-blue: #16a385;
-$dark-grey: #676a72;
-$alt-grey: #a3988c;
-$green: #078a2e;
-$orange: #da8210;
-$red: #dd1a1a;
-$blue: #2b58c0;
-$purple: #7742bd;
-$magenta: #c34198;
-$acc-blue: #00386b;
-$white: rgb(246, 246, 246);
-$black: rgb(19, 18, 18);
+$teal: #198dae !default;
+$green-blue: #16a385 !default;
+$dark-grey: #676a72 !default;
+$alt-grey: #a3988c !default;
+$green: #078a2e !default;
+$orange: #da8210 !default;
+$red: #dd1a1a !default;
+$blue: #2b58c0 !default;
+$purple: #7742bd !default;
+$magenta: #c34198 !default;
+$acc-blue: #00386b !default;
+$white: rgb(246, 246, 246) !default;
+$black: rgb(19, 18, 18) !default;
 
-$theme-palette: (
+
+$theme-palette: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$theme-palette: map-merge(
+  (
 	primary: $teal,
 	secondary: $dark-grey,
 	success: $green,
@@ -23,6 +27,8 @@ $theme-palette: (
 	info: $alt-grey,
 	highlight: $purple,
 	acc: $acc-blue
+  ),
+  $colors
 );
 
 %hover-text-white {

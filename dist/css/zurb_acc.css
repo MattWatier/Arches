@@ -7452,7 +7452,7 @@ Styleguide 10.2.1.2
 
 /*
 
-Table Column Shading: RECIEPE
+Table Column Shading: recipe
 
 Table shading can be much more dynamic and varied if you are willing to build with utlity classes(UC's). You can see few variations of tables bellow that have been quickly been made with a basic table and background color classes applied to cells. 
 
@@ -9162,7 +9162,7 @@ Icons: Regular
 
 */
 /*
-    Tabs Inset Area :RECIEPE
+    Tabs Inset Area :recipe
 
     markup:
     <ul class="texture_light tabs br_primary bg_primary-3 shadow_n3 p-x_2 p-t_3 br-b_0" data-active-collapse="true" data-tabs id="collapsing-tabs">
@@ -9190,7 +9190,7 @@ Icons: Regular
 
 */
 /*
-    Tabs on card :RECIEPE
+    Tabs on card :recipe
 
     markup:
     <ul class="texture_light tabs br_0 bg_primary br_none texture_dust p-x_2 p-t_3 br-b_0" data-active-collapse="true" data-tabs id="collapsing-tabs">
@@ -9244,76 +9244,17 @@ Containers
 
  Structured containers to bring content and ui together.
 
- Styleguide 40.0
+ Styleguide Recipes.Containers
 */
 /*
- Styleguide Templates
+Styleguide Templates
 
-## This is not part of the style of Arches
+This is not part of the style of Arches
 This is a collection of documentation types that can be used as templates when doecuemting the Styles of Arches.  It is all based off of the ["SC5"](https://github.com/SC5/sc5-styleguide)
 
- Styleguide 999.0
+Styleguide Templates.0
 */
 /* No styleguide reference. */
-.templateDocumentation .parent, .templateDocumentation .child {
-  display: block;
-  padding: 10px;
-}
-
-/*
- Container  Template
-
-
-This is how you define a container 
-
- markup:
- <div class="parent">parent</div>
-
- sg-wrapper:
- <div class="templateDocumentation">
-   <sg-wrapper-content/>
- </div>
-
- Styleguide 999.1
-*/
-.parent {
-  background-color: red;
-}
-
-/*
- Child Template
-
- This is how templates can stack inside of other templates
-
- markup:
- <span class="child">child</span>
-
- sg-wrapper:
-  <div  class="templateDocumentation"><div class="parent">
-   <sg-wrapper-content/>
- </div> </div>
-
- Styleguide 999.2
-*/
-.child {
-  background-color: blue;
-}
-
-/*
- Child Template Sub
-
- This is how templates can stack inside of other templates
-
- markup:
- <span class="child sub">child</span>
-
-
- Styleguide 999.2.1
-*/
-.child.sub {
-  background-color: green;
-}
-
 /*
  Item With Modifiers Template
 
@@ -9333,7 +9274,7 @@ default		- Default Design
    <sg-wrapper-content/>
  </ul></div>
 
- Styleguide 999.3
+ Styleguide Templates.3
 */
 .templateDocumentation li {
   background-color: yellow;
@@ -9369,7 +9310,7 @@ default		- Default Design
  sg-wrapper:
  <div  class="templateDocumentation"><sg-wrapper-content/></div>
 
- Styleguide 999.4
+ Styleguide Templates.4
 */
 .templateDocumentation .message {
   background-color: yellow;
@@ -9390,9 +9331,90 @@ default		- Default Design
 }
 
 /*
+	Foudation recipes
+
+	Combination of UCs and Base Components from the Framework can make an infinate amount of alterations to designs and layouts. Bellow are some alteratoins to Foudations Components with the Utiltity Classes. 
+
+	Styleguide Recipes
+
+*/
+/* Styleguide recipes */
+/*
+Containers
+
+ Structured containers to bring content and ui together.
+
+ Styleguide Recipes.Containers
+*/
+/*
+Cards
+
+Build from the basicfoundation card utility classes can be added to make many variations on the theme.
+
+bg_primary			- textures are slightly transparent so they can be colored with background-color classess
+bg_secondary		- textures are slightly transparent so they can be colored with background-color classess
+bg_highlight 		- textures are slightly transparent so they can be colored with background-color classess
+bg_warning			- textures are slightly transparent so they can be colored with background-color classess
+bg_alert			- textures are slightly transparent so they can be colored with background-color classess
+
+markup:
+<div class="p_4 texture_light bg_secondary-4">
+	<div class="card shadow_2 max-w_1:md">
+		<div class="card-divider font_slab border-top-left-square c_white font_3 p_4 texture_dust {{modifier_class}}">
+			This is a header
+		</div>
+		<img src="https://picsum.photos/400/300">
+		<div class="card-section">
+			<h4>This is a card.</h4>
+			<p>It has an easy to override visual style, and is appropriately subdued.</p>
+		</div>
+	</div>
+</div>
+
+
+Styleguide Recipes.Containers.Cards
+
+ */
+/*
+Page Messages
+
+Page Messages are altered cards to bring attention to the content we are trying to convey to the user
+
+primary				- This page message is used for X
+secondary			- This page message is used for X
+highlight 		- This page message is used for X
+warning				- This page message is used for X
+alert					- This page message is used for X
+
+markup:
+<div class="p_5 texture_light bg_secondary-4">
+	<div class="card shadow_2 bg_{{modifier_class}}-5">
+		<div class=" font_slab br-tl_square c_white font_3 p_4 texture_dust bg_{{modifier_class}}">
+			This is page message
+		</div>
+		<div class="card-section">
+			<div class="grid-x">
+				<div class="cell shrink p_4 font_5 c_{{modifier_class}}-n3"><i class="fas fa-check"></i></div>
+				<div class="cell auto p_4">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam voluptate
+					consectetur ab pariatur ullam quo sit maiores corrupti voluptates neque
+					illum aperiam laudantium provident fugit, nihil labore incidunt at
+					impedit?
+				</div>
+			</div>
+		</div>
+		<div class="card-section br_0 br-t_1 br_solid br_{{modifier_class}}">
+			<a href="" class="button br_radius float-right bg_{{modifier_class}}-n1"><i class="fas fa-times"></i>&nbsp;close</a>
+		</div>
+	</div>
+</div>
+
+Styleguide Recipes.Containers.PageMessages
+*/
+/*
 UC: Introduction
 
- Utility Classes(UCs) are classes that control single styles allowing for quick manipulations of the appearance of the DOM.  When combined with other UCs and toggled with javascripts you can create complex and new UI without the need of writing styles into the system. Examples of some UC built UIs can be found here as reciepes. Learn more about UCs in the Introduction section
+ Utility Classes(UCs) are classes that control single styles allowing for quick manipulations of the appearance of the DOM.  When combined with other UCs and toggled with javascripts you can create complex and new UI without the need of writing styles into the system. Examples of some UC built UIs can be found here as recipes. Learn more about UCs in the Introduction section
 
  Styleguide 100.0
 */
@@ -17518,85 +17540,13 @@ Styleguide 103.2.1
 }
 
 /*
-	Reciepes
+	recipes
 
 	Combination of UCs can make complex and rich UI elements.  Here is a collection of curated UI that can be used in projects by just following these patterns.
 
 	Styleguide 200.0
 
 */
-/* Styleguide 40.1 */
-/*
-	Cards
-
-	Build from the basicfoundation card utility classes can be added to make many variations on the theme.
-
-	.card-divider.bg_primary				- textures are slightly transparent so they can be colored with background-color classess
-	.card-divider.bg_secondary			- textures are slightly transparent so they can be colored with background-color classess
-	.card-divider.bg_highlight 		- textures are slightly transparent so they can be colored with background-color classess
-	.card-divider.bg_warning				- textures are slightly transparent so they can be colored with background-color classess
-	.card-divider.bg_alert					- textures are slightly transparent so they can be colored with background-color classess
-
-	markup:
-	<div class="card shadow_2 cell small-6 large-4" style="width: 300px;">
-	  <div class=" font_slab border-top-left-square c_white font_3 p_4 texture_dust {{modifier_class}}">
-	    This is a header
-	  </div>
-	  <img src="https://picsum.photos/400/300">
-	  <div class="card-section">
-	    <h4>This is a card.</h4>
-	    <p>It has an easy to override visual style, and is appropriately subdued.</p>
-	  </div>
-	</div>
-
-	 sg-wrapper:
-	 <div class="grid-x grid-margin-x grid-margin-y texture_light bg_secondary-4">
-	   <sg-wrapper-content/>
-	 </div>
-
-	Styleguide 40.1
-
- */
-/*
-	Page Messages
-
-	Page Messages are altered cards to bring attention to the content we are trying to convey to the user
-
-	primary				- This page message is used for X
-	secondary			- This page message is used for X
-	highlight 		- This page message is used for X
-	warning				- This page message is used for X
-	alert					- This page message is used for X
-
-	markup:
-	<div class="card shadow_2 bg_{{modifier_class}}-5">
-		<div class=" font_slab br-tl_square c_white font_3 p_4 texture_dust bg_{{modifier_class}}">
-			This is page message
-		</div>
-		<div class="card-section">
-			<div class="grid-x">
-				<div class="cell shrink p_4 font_5 c_{{modifier_class}}-n3"><i class="fas fa-check"></i></div>
-				<div class="cell auto p_4">
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam voluptate
-					consectetur ab pariatur ullam quo sit maiores corrupti voluptates neque
-					illum aperiam laudantium provident fugit, nihil labore incidunt at
-					impedit?
-				</div>
-			</div>
-		</div>
-		<div class="card-section br_0 br-t_1 br_solid br_{{modifier_class}}">
-			<a href="" class="button br_radius float-right bg_{{modifier_class}}-n1"><i class="fas fa-times"></i>&nbsp;close</a>
-		</div>
-	</div>
-
-	 sg-wrapper:
-	 <div class="grid-x p_5 grid-margin-x grid-margin-y texture_light bg_secondary-4">
-	   <sg-wrapper-content/>
-	 </div>
-
-	Styleguide 40.2
-
- */
 /* Styleguide 200.010 */
 /*
 	Quicklinks
@@ -17636,7 +17586,7 @@ Styleguide 103.2.1
     Styleguide 200.001
 */
 /*
-    RECIEPE: Button Group
+    recipe: Button Group
 
     markup:
     <div class="button-group">

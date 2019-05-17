@@ -39,6 +39,17 @@ $ms-base: 1rem !default; // needs to be in rem's
 
 @import "styleguide/styleguide";
 @import "structures/structures";
+/*
+	Foudation recipes
+
+	Combination of UCs and Base Components from the Framework can make an infinate amount of alterations to designs and layouts. Bellow are some alteratoins to Foudations Components with the Utiltity Classes. 
+
+	Styleguide Recipes
+
+*/
+/* Styleguide recipes */
+@import "styleguide/_containers";
+@import "recipes/_zurb.cards";
 @import "utility-css/utility-css";
-@import "reciepes/reciepes";
+@import "recipes/__noFramework.recipes";
 //StyleGuide

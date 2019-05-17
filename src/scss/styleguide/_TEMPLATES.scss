@@ -1,61 +1,18 @@
 /*
- Styleguide Templates
+Styleguide Templates
 
-## This is not part of the style of Arches
+This is not part of the style of Arches
 This is a collection of documentation types that can be used as templates when doecuemting the Styles of Arches.  It is all based off of the ["SC5"](https://github.com/SC5/sc5-styleguide)
 
- Styleguide 999.0
+Styleguide Templates.0
 */
 /* No styleguide reference. */
 
-.templateDocumentation{ .parent, .child{ padding:10px; display: block; } }
-/*
- Container  Template
 
 
-This is how you define a container 
-
- markup:
- <div class="parent">parent</div>
-
- sg-wrapper:
- <div class="templateDocumentation">
-   <sg-wrapper-content/>
- </div>
-
- Styleguide 999.1
-*/
-
-.parent{background-color:red;}
-
-/*
- Child Template
-
- This is how templates can stack inside of other templates
- 
- markup:
- <span class="child">child</span>
-
- sg-wrapper:
-  <div  class="templateDocumentation"><div class="parent">
-   <sg-wrapper-content/>
- </div> </div>
-
- Styleguide 999.2
-*/
-.child{background-color:blue;}
-/*
- Child Template Sub
-
- This is how templates can stack inside of other templates
- 
- markup:
- <span class="child sub">child</span>
 
 
- Styleguide 999.2.1
-*/
-.child.sub{background-color:green;}
+
 /*
  Item With Modifiers Template
 
@@ -75,7 +32,7 @@ default		- Default Design
    <sg-wrapper-content/>
  </ul></div>
 
- Styleguide 999.3
+ Styleguide Templates.3
 */
 
 li{
@@ -112,7 +69,7 @@ default		- Default Design
  sg-wrapper:
  <div  class="templateDocumentation"><sg-wrapper-content/></div>
 
- Styleguide 999.4
+ Styleguide Templates.4
 */
 
 
