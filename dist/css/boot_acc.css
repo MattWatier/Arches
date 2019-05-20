@@ -4,6 +4,8 @@
  * @version v1.0.0
  * @link https://github.com/MattWatier/Arches#readme
  */
+/** Utility Class Only With Basic ACC Branding **/
+/* ACC BRANDs*/
 /*
 
 Colors of the Design  
@@ -123,8 +125,6 @@ div[class^=texture_] {
      object-fit: scale-down;
 }
 
-/** Utility Class Only With Basic ACC Branding **/
-/* ACC BRAND This Should happen before Framework Setups*/
 /*Bootstrap Framework Setup Files.*/
 :root {
   --blue: #2b58c0;

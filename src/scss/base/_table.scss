@@ -1,7 +1,7 @@
 /*
   Table
 
-  There is a basic styling around a table using pure well structured DOM.  This styling comes from zurb foundation.
+  There is a basic styling around the pure DOM of a table.   But to get full brand styling alter the parent tag to <table class='table'>.
 
   markup:
   <table>
@@ -35,14 +35,14 @@
     </tbody>
   </table>
 
- Styleguide 10.2
+ Styleguide HTML.Table
 */
 
 /*
 
 Table Styled
 
-<table class='table'> will style the table with the generic acc branded coloring and spacing. 
+<table class='table'> will style the table with the generic branded coloring and spacing. 
 
 markup:
 <table class="table">
@@ -78,9 +78,10 @@ markup:
   </tfoot>
 </table>
 
-Styleguide 10.2.1
+Styleguide HTML.Table.BasicStyle
 */
 .table {
+	border-spacing: 0;
 	.thead,
 	thead {
 		background-color: $white;
@@ -143,7 +144,7 @@ markup:
   </tfoot>
 </table>
 
-Styleguide 10.2.1.1
+Styleguide HTML.Table.ColumnShaded
 */
 .table.column-shaded {
 	.thead,
@@ -208,7 +209,7 @@ markup:
   </tfoot>
 </table>
 
-Styleguide 10.2.1.2
+Styleguide HTML.Table.Unshaded
 */
 .table.unshaded {
 	width: auto;
@@ -272,7 +273,7 @@ markup:
   </tfoot>
 </table>
 
-Styleguide 10.2.2
+Styleguide HTML.Table.UtilityClasses.Shading
 */
 
 /*
@@ -322,7 +323,7 @@ markup:
   </tr>
 </table>
 
-Styleguide 10.2.3
+Styleguide HTML.Table.UtilityClasses.CellStates
 */
 
 /*
@@ -396,5 +397,5 @@ markup:
   </tfoot>
 </table>
 
-Styleguide 10.2.4
+Styleguide HTML.Table.UtilityClasses.RowSeperators
 */

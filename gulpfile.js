@@ -17,6 +17,7 @@ var merge = require('merge-stream');
 var header = require('gulp-header');
 var fs = require('fs');
 var pkg = require('./package.json');
+var run = require('gulp-run-command').default;
 
 var banner = ['/**',
    ' * <%= pkg.name %> - <%= pkg.description %>',
@@ -109,7 +110,7 @@ gulp.task("construct", function () {
       .pipe(header("/** Utility Class Only With Basic ACC Branding **/", {
          pkg: pkg
       }));
- 
+
    var zurb_acc = base.pipe(clone())
       .pipe(rename("zurb_acc.scss"))
       .pipe(header(fs.readFileSync(PATHS.SCSS + '/recipes/__zurb.recipes.scss', 'utf8'), {
@@ -133,7 +134,7 @@ gulp.task("construct", function () {
       .pipe(header("/** Utility Class Only With Basic ACC Branding **/", {
          pkg: pkg
       }));
-      
+
    var boot_acc = base.pipe(clone())
       .pipe(rename("boot_acc.scss"))
       .pipe(header(fs.readFileSync(PATHS.SCSS + '/components/__boot.components.scss', 'utf8'), {
@@ -154,10 +155,10 @@ gulp.task("construct", function () {
       .pipe(header("/** Utility Class Only With Basic ACC Branding **/", {
          pkg: pkg
       }));
-  
-  
 
-   return merge(base, uconly, zurb_acc, boot_acc)
+
+
+   return merge(uconly, zurb_acc, boot_acc)
       .pipe(header(fs.readFileSync(PATHS.SCSS + '/gulp_header/__preheader.scss', 'utf8'), {
          pkg: pkg
       }))
@@ -167,4 +168,9 @@ gulp.task("construct", function () {
       .pipe(gulp.dest(PATHS.SCSS));
 });
 
-gulp.task("build", ["construct", "style"]);
+gulp.task("styleguide", gulp.parallel(
+   run('npm run uc'),
+   run('npm run zurb_acc'),
+   run('npm run boot_acc')));
+
+gulp.task("build", gulp.series("construct", "style", 'styleguide'));

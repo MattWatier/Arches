@@ -14,17 +14,17 @@ $white: rgb(246, 246, 246);
 $black: rgb(19, 18, 18);
 
 $theme-palette: map-merge(
-  (
-    primary: $teal,
-	secondary: $dark-grey,
-	success: $green,
-	warning: $orange,
-	alert: $red,
-	navigation: $blue,
-	accent: $green-blue,
-	info: $alt-grey,
-	highlight: $purple,
-	acc: $acc-blue
-  ),
-  $colors
+	(
+		primary: $teal,
+		secondary: $dark-grey,
+		success: $green,
+		warning: $orange,
+		alert: $red,
+		navigation: $blue,
+		accent: $green-blue,
+		info: $alt-grey,
+		highlight: $purple,
+		acc: $acc-blue
+	),
+	$theme-palette
 );

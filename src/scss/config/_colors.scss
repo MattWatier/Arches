@@ -8,27 +8,26 @@ $red: #dd1a1a !default;
 $blue: #2b58c0 !default;
 $purple: #7742bd !default;
 $magenta: #c34198 !default;
-$acc-blue: #00386b !default;
+$acc-blue: #004176 !default;
 $white: rgb(246, 246, 246) !default;
 $black: rgb(19, 18, 18) !default;
-
 
 $theme-palette: () !default;
 // stylelint-disable-next-line scss/dollar-variable-default
 $theme-palette: map-merge(
-  (
-	primary: $teal,
-	secondary: $dark-grey,
-	success: $green,
-	warning: $orange,
-	alert: $red,
-	navigation: $blue,
-	accent: $green-blue,
-	info: $alt-grey,
-	highlight: $purple,
-	acc: $acc-blue
-  ),
-  $colors
+	(
+		primary: $teal,
+		secondary: $dark-grey,
+		success: $green,
+		warning: $orange,
+		alert: $red,
+		navigation: $blue,
+		accent: $green-blue,
+		info: $alt-grey,
+		highlight: $purple,
+		acc: $acc-blue
+	),
+	$theme-palette
 );
 
 %hover-text-white {
@@ -62,5 +61,3 @@ $acc-blue    -      #00386b;  acc
 Styleguide 0.4.0
  
  */
-
-

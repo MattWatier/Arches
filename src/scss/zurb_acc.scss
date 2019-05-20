@@ -6,19 +6,46 @@
 $debug-trace: false !default;
 $name-mode: "SHORT" !default; // $name-mode: "SHORT","LONG","ALL"
 $ms-base: 1rem !default; // needs to be in rem's
+$colors: ();
+$theme-palette: ();
 @import "helpers/helpers";
 @import "vendor/modular-scale";
-@import "config/config";
-@import "config/vars";
+@import "config/utility-css-definitions";
+@import "helpers/breakpoint";
+/** Utility Class Only With Basic ACC Branding **//* ACC BRANDs*/
+$teal: #198dae;
+$green-blue: #16a385;
+$dark-grey: #676a72;
+$alt-grey: #a3988c;
+$green: #078a2e;
+$orange: #da8210;
+$red: #dd1a1a;
+$blue: #2b58c0;
+$purple: #7742bd;
+$magenta: #c34198;
+$acc-blue: #00386b;
+$white: rgb(246, 246, 246);
+$black: rgb(19, 18, 18);
+
+$theme-palette: map-merge(
+	(
+		primary: $teal,
+		secondary: $dark-grey,
+		success: $green,
+		warning: $orange,
+		alert: $red,
+		navigation: $blue,
+		accent: $green-blue,
+		info: $alt-grey,
+		highlight: $purple,
+		acc: $acc-blue
+	),
+	$theme-palette
+);
 @import "config/colors";
 @import "config/fonts";
 @import "config/textures";
-@import "config/logo";
-
-@import "config/utility-css-definitions";
-@import "helpers/breakpoint";
-/** Utility Class Only With Basic ACC Branding **//* ACC BRAND This Should happen before Framework Setups*/
-/*Zurb Foundation Framework Setup Files.*/
+@import "config/logo";/*Zurb Foundation Framework Setup Files.*/
 @import "../../node_modules/foundation-sites/scss/util/util";
 @import "config/__zurb.settings";
 @import "../../node_modules/foundation-sites/scss/foundation.scss";
