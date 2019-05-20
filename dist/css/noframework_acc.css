@@ -146,7 +146,7 @@ h1, h2, h3, h4, h5, h6, p, td, th {
 /*
   Table
 
-  There is a basic styling around a table using pure well structured DOM.  This styling comes from zurb foundation.
+  There is a basic styling around the pure DOM of a table.   But to get full brand styling alter the parent tag to <table class='table'>.
 
   markup:
   <table>
@@ -180,13 +180,13 @@ h1, h2, h3, h4, h5, h6, p, td, th {
     </tbody>
   </table>
 
- Styleguide 10.2
+ Styleguide HTML.Table
 */
 /*
 
 Table Styled
 
-<table class='table'> will style the table with the generic acc branded coloring and spacing. 
+<table class='table'> will style the table with the generic branded coloring and spacing. 
 
 markup:
 <table class="table">
@@ -222,8 +222,11 @@ markup:
   </tfoot>
 </table>
 
-Styleguide 10.2.1
+Styleguide HTML.Table.BasicStyle
 */
+.table {
+  border-spacing: 0;
+}
 .table .thead,
 .table thead {
   background-color: #f6f6f6;
@@ -287,7 +290,7 @@ markup:
   </tfoot>
 </table>
 
-Styleguide 10.2.1.1
+Styleguide HTML.Table.ColumnShaded
 */
 .table.column-shaded .thead th:nth-child(even),
 .table.column-shaded thead th:nth-child(even) {
@@ -342,7 +345,7 @@ markup:
   </tfoot>
 </table>
 
-Styleguide 10.2.1.2
+Styleguide HTML.Table.Unshaded
 */
 .table.unshaded {
   width: auto;
@@ -406,7 +409,7 @@ markup:
   </tfoot>
 </table>
 
-Styleguide 10.2.2
+Styleguide HTML.Table.UtilityClasses.Shading
 */
 /*
 Table Cell States: RECIPE
@@ -455,7 +458,7 @@ markup:
   </tr>
 </table>
 
-Styleguide 10.2.3
+Styleguide HTML.Table.UtilityClasses.CellStates
 */
 /*
 
@@ -528,7 +531,7 @@ markup:
   </tfoot>
 </table>
 
-Styleguide 10.2.4
+Styleguide HTML.Table.UtilityClasses.RowSeperators
 */
 i.icon-complete_check-circle:before, .is-complete i.icon-complete_check:before, i.icon-toggle_arrow-circle:before, i.icon-toggle_caret-circle-right-down:before, i.icon-toggle_chevron-double-left-right:before, i.icon-toggle_chevron-double-up-down:before, i.icon-toggle_chevron-up-down:before, i.icon-toggle_plus-minus:before, i.icon-toggle_bars-times:before {
   margin: 0 4px;
@@ -3572,18 +3575,18 @@ Styleguide 101.0
     <div class="uppercase">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
   </div>
 
-  Styleguide 102.1
+  Styleguide Font.FontFamily
  */
 .font_slab {
-  font-family: "Roboto Slab", "Times New Roman", "Lucida Bright", Georgia, serif;
+  font-family: '"Roboto Slab","Times New Roman","Lucida Bright",Georgia,serif';
 }
 
 .font_display {
-  font-family: "Maven Pro", "Open Sans", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-family: '"Maven Pro","Open Sans","Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif';
 }
 
 .font_copy {
-  font-family: "Muli", "Open Sans", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-family: '"Muli","Open Sans","Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif';
 }
 
 /*
@@ -3600,7 +3603,7 @@ Styleguide 101.0
     <div class="uppercase">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
   </div>
 
-  Styleguide 102.2
+  Styleguide Font.FontStyle
  */
 .font_normal {
   font-style: normal !important;
@@ -4114,7 +4117,6 @@ Styleguide 101.0
   color: #000e1b !important;
 }
 
-/* Find ME */
 .c_white {
   color: #f6f6f6 !important;
 }
@@ -4230,7 +4232,7 @@ Styleguide 101.0
     <div class="uppercase">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
   </div>
 
-  Styleguide 102.3
+  Styleguide Font.Weight
  */
 .font_light {
   font-weight: 100 !important;
@@ -4271,7 +4273,7 @@ Styleguide 101.0
     <div class="uppercase pre-wrap">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
   </div>
 
-  Styleguide 102.4
+  Styleguide Font.Size
  */
 .font_0 {
   font-size: 16px;
@@ -4504,7 +4506,7 @@ markup:
   <div class="{{modifier_class}}  uppercase">{{modifier_class}} with Parent of .font_n2</div>
 </div>
 
-Styleguide 102.4.1
+Styleguide Font.Size.Golden
  */
 .font-golden_0 {
   font-size: 1em;
@@ -4654,7 +4656,7 @@ markup:
 </div>
 
 
-Styleguide 102.5
+Styleguide Font.Color
  */
 /*
 	Text Shadows
@@ -4671,7 +4673,7 @@ Styleguide 102.5
 	markup:
 	<div class="{{modifier_class}} p_3 br_solid font_bold br_black-1 br_1 bg bg_primary c_white">text has shadow of {{modifier_class}}</div>
 
-	Styleguide 102.5.1
+	Styleguide Typography.TextShadow
 
  */
 .text-shadow_none {
@@ -4707,12 +4709,12 @@ Styleguide 102.5
   .lh_5             -  2.5     
 
   markup:
-  <div class=" font_normal font_1 p_3">
+  <div class="font_normal font_1 p_3">
     <h3 class="font_2 font_bold c_secondary_3 p-b_3">{{modifier_class}}</h3>
     <p class="{{modifier_class}}">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
   </div>
 
-  Styleguide 102.6
+  Styleguide Typography.LineHeight
  */
 /*
   UC: Background 

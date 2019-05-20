@@ -212,31 +212,9 @@ $value-to-unit: (
 		5: 1rem
 	),
 	font-family: (
-		slab: (
-			"Roboto Slab",
-			"Times New Roman",
-			"Lucida Bright",
-			Georgia,
-			serif
-		),
-		display: (
-			"Maven Pro",
-			"Open Sans",
-			"Helvetica Neue",
-			"Helvetica",
-			Helvetica,
-			Arial,
-			sans-serif
-		),
-		copy: (
-			"Muli",
-			"Open Sans",
-			"Helvetica Neue",
-			"Helvetica",
-			Helvetica,
-			Arial,
-			sans-serif
-		)
+		slab: '"Roboto Slab","Times New Roman","Lucida Bright",Georgia,serif',
+		display: '"Maven Pro","Open Sans","Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif',
+		copy: '"Muli","Open Sans","Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif'
 	),
 	grid: (
 		1: 1/12 * 100%,

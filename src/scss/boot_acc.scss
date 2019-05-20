@@ -92,6 +92,7 @@ $theme-palette: map-merge(
 @import "components/scrollbar";
 @import "components/loading-grid";
 @import "components/interactive-extras";
+@import "base/table.boot";
 @import "utility-css/utility-css";
 @import "recipes/__noFramework.recipes";
 //StyleGuide

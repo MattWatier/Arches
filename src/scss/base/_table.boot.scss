@@ -1,0 +1,15 @@
+.table {
+	font-family: $font-family-sans-serif;
+	td,
+	th {
+		text-align: left;
+	}
+	tbody tr:nth-of-type(odd) {
+		background-color: get-themecolor(secondary, 5);
+	}
+	&.unshaded {
+		tbody tr:nth-of-type(odd) {
+			background-color: unset;
+		}
+	}
+}
