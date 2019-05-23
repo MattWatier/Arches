@@ -212,9 +212,10 @@ $value-to-unit: (
 		5: 1rem
 	),
 	font-family: (
-		slab: '"Roboto Slab","Times New Roman","Lucida Bright",Georgia,serif',
+		slab: ("Roboto Slab","Times New Roman","Lucida Bright",Georgia,serif),
 		display: '"Maven Pro","Open Sans","Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif',
-		copy: '"Muli","Open Sans","Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif'
+		copy: '"Muli","Open Sans","Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif',
+		ui: '"Open Sans",-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif'
 	),
 	grid: (
 		1: 1/12 * 100%,
@@ -239,11 +240,11 @@ $value-to-unit: (
 		5: 80rem
 	),
 	text-shadow: (
-		none: 0px 0px 0px rgba(0, 0, 0, 0),
-		white-1: 2px 2px 2px rgba(255, 255, 255, 0.25),
-		black-1: 2px 2px 2px rgba(0, 0, 0, 0.25),
-		white-n1: -1px -1px 2px rgba(255, 255, 255, 0.5),
-		black-n1: -1px -1px 2px rgba(0, 0, 0, 0.5)
+		none: "0px 0px 0px rgba(0, 0, 0, 0)",
+		white-1: "2px 2px 2px rgba(255, 255, 255, 0.25)",
+		black-1: "2px 2px 2px rgba(0, 0, 0, 0.25)",
+		white-n1: "-1px -1px 2px rgba(255, 255, 255, 0.5)",
+		black-n1: "-1px -1px 2px rgba(0, 0, 0, 0.5)"
 	),
 	shadow: (
 		0: make-shadow(3, "drop", #000, 0.4),
@@ -256,7 +257,7 @@ $value-to-unit: (
 		n2: make-shadow(2, "inset", #000, 0.2),
 		n3: make-shadow(3, "inset", #000, 0.3),
 		n4: make-shadow(3.5, "inset", #000, 0.5),
-		n5: make-shadow(4, "inset", #000, 0.65)
+		n5: make-shadow(4, "inset", #000, 0.65)'
 	)
 );
 

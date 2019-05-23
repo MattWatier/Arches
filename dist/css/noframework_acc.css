@@ -70,6 +70,13 @@ Styleguide 0.4.0
   font-weight: 800;
   unicode-range: U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
+/* Define the "system" font family */
+@font-face {
+  src: local(".SFNSText-Light"), local(".HelveticaNeueDeskInterface-Light"), local(".LucidaGrandeUI"), local("Ubuntu Light"), local("Segoe UI Light"), local("Roboto-Light"), local("DroidSans"), local("Tahoma");
+  font-family: system;
+  font-style: normal;
+  font-weight: 300;
+}
 html {
   -webkit-font-smoothing: antialiased;
   -webkit-line-break: after-white-space;
@@ -229,7 +236,7 @@ Styleguide HTML.Table.BasicStyle
 }
 .table .thead,
 .table thead {
-  background-color: #f6f6f6;
+  background-color: white;
 }
 .table .thead th,
 .table .thead td,
@@ -3589,6 +3596,10 @@ Styleguide 101.0
   font-family: '"Muli","Open Sans","Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif';
 }
 
+.font_ui {
+  font-family: '"Open Sans",-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif';
+}
+
 /*
   Font Style
 
@@ -4118,7 +4129,7 @@ Styleguide 101.0
 }
 
 .c_white {
-  color: #f6f6f6 !important;
+  color: white !important;
 }
 
 .c_black {
@@ -4170,47 +4181,47 @@ Styleguide 101.0
 }
 
 .c_white-0 {
-  color: rgba(246, 246, 246, 0) !important;
+  color: rgba(255, 255, 255, 0) !important;
 }
 
 .c_white-1 {
-  color: rgba(246, 246, 246, 0.05) !important;
+  color: rgba(255, 255, 255, 0.05) !important;
 }
 
 .c_white-2 {
-  color: rgba(246, 246, 246, 0.12) !important;
+  color: rgba(255, 255, 255, 0.12) !important;
 }
 
 .c_white-3 {
-  color: rgba(246, 246, 246, 0.25) !important;
+  color: rgba(255, 255, 255, 0.25) !important;
 }
 
 .c_white-4 {
-  color: rgba(246, 246, 246, 0.38) !important;
+  color: rgba(255, 255, 255, 0.38) !important;
 }
 
 .c_white-5 {
-  color: rgba(246, 246, 246, 0.5) !important;
+  color: rgba(255, 255, 255, 0.5) !important;
 }
 
 .c_white-6 {
-  color: rgba(246, 246, 246, 0.62) !important;
+  color: rgba(255, 255, 255, 0.62) !important;
 }
 
 .c_white-7 {
-  color: rgba(246, 246, 246, 0.75) !important;
+  color: rgba(255, 255, 255, 0.75) !important;
 }
 
 .c_white-8 {
-  color: rgba(246, 246, 246, 0.88) !important;
+  color: rgba(255, 255, 255, 0.88) !important;
 }
 
 .c_white-9 {
-  color: rgba(246, 246, 246, 0.95) !important;
+  color: rgba(255, 255, 255, 0.95) !important;
 }
 
 .c_white-none {
-  color: #f6f6f6 !important;
+  color: white !important;
 }
 
 .c_inherit {
@@ -5262,7 +5273,7 @@ Styleguide Font.Color
 }
 
 .bg_white {
-  background-color: #f6f6f6;
+  background-color: white;
 }
 
 .bg_black {
@@ -5314,47 +5325,47 @@ Styleguide Font.Color
 }
 
 .bg_white-0 {
-  background-color: rgba(246, 246, 246, 0) !important;
+  background-color: rgba(255, 255, 255, 0) !important;
 }
 
 .bg_white-1 {
-  background-color: rgba(246, 246, 246, 0.05) !important;
+  background-color: rgba(255, 255, 255, 0.05) !important;
 }
 
 .bg_white-2 {
-  background-color: rgba(246, 246, 246, 0.12) !important;
+  background-color: rgba(255, 255, 255, 0.12) !important;
 }
 
 .bg_white-3 {
-  background-color: rgba(246, 246, 246, 0.25) !important;
+  background-color: rgba(255, 255, 255, 0.25) !important;
 }
 
 .bg_white-4 {
-  background-color: rgba(246, 246, 246, 0.38) !important;
+  background-color: rgba(255, 255, 255, 0.38) !important;
 }
 
 .bg_white-5 {
-  background-color: rgba(246, 246, 246, 0.5) !important;
+  background-color: rgba(255, 255, 255, 0.5) !important;
 }
 
 .bg_white-6 {
-  background-color: rgba(246, 246, 246, 0.62) !important;
+  background-color: rgba(255, 255, 255, 0.62) !important;
 }
 
 .bg_white-7 {
-  background-color: rgba(246, 246, 246, 0.75) !important;
+  background-color: rgba(255, 255, 255, 0.75) !important;
 }
 
 .bg_white-8 {
-  background-color: rgba(246, 246, 246, 0.88) !important;
+  background-color: rgba(255, 255, 255, 0.88) !important;
 }
 
 .bg_white-9 {
-  background-color: rgba(246, 246, 246, 0.95) !important;
+  background-color: rgba(255, 255, 255, 0.95) !important;
 }
 
 .bg_white-none {
-  background-color: #f6f6f6 !important;
+  background-color: white !important;
 }
 
 /*
@@ -5407,47 +5418,47 @@ Styleguide Font.Color
 
  */
 .shadow_0 {
-  box-shadow: 1.5px 1.5px 6px 0.75px rgba(0, 0, 0, 0.4);
+  box-shadow: 'make-shadow(3, "drop", #000, 0.4)';
 }
 
 .shadow_1 {
-  box-shadow: 0.5px 0.5px 2px 0.25px rgba(0, 0, 0, 0.1);
+  box-shadow: 'make-shadow(1, "drop", #000, 0.1)';
 }
 
 .shadow_2 {
-  box-shadow: 1px 1px 4px 0.5px rgba(0, 0, 0, 0.2);
+  box-shadow: 'make-shadow(2, "drop", #000, 0.2)';
 }
 
 .shadow_3 {
-  box-shadow: 1.5px 1.5px 6px 0.75px rgba(0, 0, 0, 0.3);
+  box-shadow: 'make-shadow(3, "drop", #000, 0.3)';
 }
 
 .shadow_4 {
-  box-shadow: 1.75px 1.75px 7px 0.875px rgba(0, 0, 0, 0.5);
+  box-shadow: 'make-shadow(3.5, "drop", #000, 0.5)';
 }
 
 .shadow_5 {
-  box-shadow: 2px 2px 8px 1px rgba(0, 0, 0, 0.65);
+  box-shadow: 'make-shadow(4, "drop", #000, 0.65)';
 }
 
 .shadow_n1 {
-  box-shadow: inset 0.5px 0.5px 2px 0.25px rgba(0, 0, 0, 0.1);
+  box-shadow: 'make-shadow(1, "inset", #000, 0.1)';
 }
 
 .shadow_n2 {
-  box-shadow: inset 1px 1px 4px 0.5px rgba(0, 0, 0, 0.2);
+  box-shadow: 'make-shadow(2, "inset", #000, 0.2)';
 }
 
 .shadow_n3 {
-  box-shadow: inset 1.5px 1.5px 6px 0.75px rgba(0, 0, 0, 0.3);
+  box-shadow: 'make-shadow(3, "inset", #000, 0.3)';
 }
 
 .shadow_n4 {
-  box-shadow: inset 1.75px 1.75px 7px 0.875px rgba(0, 0, 0, 0.5);
+  box-shadow: 'make-shadow(3.5, "inset", #000, 0.5)';
 }
 
 .shadow_n5 {
-  box-shadow: inset 2px 2px 8px 1px rgba(0, 0, 0, 0.65);
+  box-shadow: 'make-shadow(4, "inset", #000, 0.65)';
 }
 
 /*
@@ -6621,7 +6632,7 @@ a:focus {
 
  */
 .h\:c_white:hover {
-  color: #f6f6f6 !important;
+  color: white !important;
 }
 
 .h\:c_black:hover {
@@ -6688,7 +6699,7 @@ a:focus {
   */
 /* Transparent Loop */
 .h\:bg_white:hover {
-  background-color: #f6f6f6;
+  background-color: white;
 }
 
 .h\:bg_white-0:hover {
@@ -7004,47 +7015,47 @@ Styleguide 103.2.1
 }
 
 .br_white-0 {
-  border-color: rgba(246, 246, 246, 0) !important;
+  border-color: rgba(255, 255, 255, 0) !important;
 }
 
 .br_white-1 {
-  border-color: rgba(246, 246, 246, 0.05) !important;
+  border-color: rgba(255, 255, 255, 0.05) !important;
 }
 
 .br_white-2 {
-  border-color: rgba(246, 246, 246, 0.12) !important;
+  border-color: rgba(255, 255, 255, 0.12) !important;
 }
 
 .br_white-3 {
-  border-color: rgba(246, 246, 246, 0.25) !important;
+  border-color: rgba(255, 255, 255, 0.25) !important;
 }
 
 .br_white-4 {
-  border-color: rgba(246, 246, 246, 0.38) !important;
+  border-color: rgba(255, 255, 255, 0.38) !important;
 }
 
 .br_white-5 {
-  border-color: rgba(246, 246, 246, 0.5) !important;
+  border-color: rgba(255, 255, 255, 0.5) !important;
 }
 
 .br_white-6 {
-  border-color: rgba(246, 246, 246, 0.62) !important;
+  border-color: rgba(255, 255, 255, 0.62) !important;
 }
 
 .br_white-7 {
-  border-color: rgba(246, 246, 246, 0.75) !important;
+  border-color: rgba(255, 255, 255, 0.75) !important;
 }
 
 .br_white-8 {
-  border-color: rgba(246, 246, 246, 0.88) !important;
+  border-color: rgba(255, 255, 255, 0.88) !important;
 }
 
 .br_white-9 {
-  border-color: rgba(246, 246, 246, 0.95) !important;
+  border-color: rgba(255, 255, 255, 0.95) !important;
 }
 
 .br_white-none {
-  border-color: #f6f6f6 !important;
+  border-color: white !important;
 }
 
 .border_transparent {

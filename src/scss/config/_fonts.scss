@@ -52,53 +52,14 @@
 		U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
-// @mixin font-display() {
-// 	font-family: "Maven Pro", "Open Sans", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
-// 	font-weight: 300;
-// }
-
-// @mixin font-slab {
-// 	font-family: "Roboto Slab", "Times New Roman", "Lucida Bright", Georgia, serif;
-// 	font-weight: 400;
-// 	letter-spacing: 0.5px;
-// }
-// @mixin font-slab-bold {
-// 	font-family: "Roboto Slab", "Times New Roman", "Lucida Bright", Georgia, serif;
-// 	font-weight: 700;
-// 	letter-spacing: 0.75px;
-// }
-
-// @mixin font {
-// 	font-family: "Muli", "Open Sans", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
-// 	font-weight: 400;
-// 	letter-spacing: -0.25px;
-// }
-
-// @mixin font-light {
-// 	font-family: "Muli", "Open Sans", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
-// 	font-weight: 300;
-// }
-// @mixin font-medium {
-// 	font-family: "Muli", "Open Sans", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
-// 	font-weight: 600;
-// 	letter-spacing: 0px;
-// }
-
-// @mixin font-italic {
-// 	font-family: "Muli", "Open Sans", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
-// 	font-weight: 400;
-// 	font-style: italic;
-// }
-// @mixin font-bold {
-// 	font-family: "Muli", "Open Sans", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
-// 	font-weight: 700;
-// 	letter-spacing: -0.25px;
-// }
-// @mixin font-italic-bold {
-// 	font-family: "Muli", "Open Sans", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
-// 	font-weight: 700;
-// 	font-style: italic;
-// }
+/* Define the "system" font family */
+@font-face {
+	font-family: system;
+	font-style: normal;
+	font-weight: 300;
+	src: local(".SFNSText-Light"), local(".HelveticaNeueDeskInterface-Light"), local(".LucidaGrandeUI"),
+		local("Ubuntu Light"), local("Segoe UI Light"), local("Roboto-Light"), local("DroidSans"), local("Tahoma");
+}
 
 html {
 	-webkit-font-smoothing: antialiased;

@@ -79,12 +79,12 @@ $theme-colors: () !default;
 // stylelint-disable-next-line scss/dollar-variable-default
 $theme-colors: map-merge(
   (
-    "primary":    $primary,
-    "secondary":  $secondary,
-    "success":    $success,
-    "info":       $info,
-    "warning":    $warning,
-    "danger":     $danger,
+    "primary":    map-get($theme-palette, primary),
+    "secondary":  map-get($theme-palette, secondary),
+    "success":    map-get($theme-palette, success),
+    "info":       map-get($theme-palette, info),
+    "warning":    map-get($theme-palette, warning),
+    "danger":     map-get($theme-palette, alert),
     "light":      $light,
     "dark":       $dark
   ),
@@ -92,7 +92,7 @@ $theme-colors: map-merge(
 );
 
 // Set a specific jump point for requesting color jumps
-$theme-color-interval:      8% !default;
+$theme-color-interval:      10% !default;
 
 // The yiq lightness value that determines when the lightness of color changes from "dark" to "light". Acceptable values are between 0 and 255.
 $yiq-contrasted-threshold:  150 !default;
@@ -107,9 +107,9 @@ $yiq-text-light:            $white !default;
 // Quickly modify global styling by enabling or disabling optional features.
 
 $enable-caret:                                true !default;
-$enable-rounded:                              true !default;
+$enable-rounded:                              $global-radus-on;
 $enable-shadows:                              false !default;
-$enable-gradients:                            false !default;
+$enable-gradients:                            false; // No designes use gradients in the ACC brand
 $enable-transitions:                          true !default;
 $enable-prefers-reduced-motion-media-query:   true !default;
 $enable-hover-media-query:                    false !default; // Deprecated, no longer affects any compiled CSS
@@ -127,17 +127,17 @@ $enable-deprecation-messages:                 true !default;
 // variables. Mostly focused on spacing.
 // You can add more entries to the $spacers map, should you need more variation.
 
-$spacer: 1rem !default;
+$spacer: $basicSizeMultiplier;
 $spacers: () !default;
 // stylelint-disable-next-line scss/dollar-variable-default
 $spacers: map-merge(
   (
-    0: 0,
-    1: ($spacer * .25),
-    2: ($spacer * .5),
-    3: $spacer,
-    4: ($spacer * 1.5),
-    5: ($spacer * 3)
+    0:  map-deep-get($value-to-unit, "size", 0),
+    1:  map-deep-get($value-to-unit, "size", 1),
+    2:  map-deep-get($value-to-unit, "size", 2),
+    3:  map-deep-get($value-to-unit, "size", 3),
+    4:  map-deep-get($value-to-unit, "size", 4),
+    5:  map-deep-get($value-to-unit, "size", 5),
   ),
   $spacers
 );
@@ -161,26 +161,27 @@ $sizes: map-merge(
 //
 // Settings for the `<body>` element.
 
-$body-bg:                   $white !default;
-$body-color:                $gray-900 !default;
+$body-bg:                   $white;
+@debug "black #{$black}";
+$body-color:                #000;
 
 
 // Links
 //
 // Style anchor elements.
 
-$link-color:                              theme-color("primary") !default;
+$link-color:                              map-get($theme-palette, primary );
 $link-decoration:                         none !default;
-$link-hover-color:                        darken($link-color, 15%) !default;
+$link-hover-color:                        darken($link-color, map-deep-get($value-to-unit, "hover", "dark")) !default;
 $link-hover-decoration:                   underline !default;
 // Darken percentage for links with `.text-*` class (e.g. `.text-success`)
-$emphasized-link-hover-darken-percentage: 15% !default;
+$emphasized-link-hover-darken-percentage: map-deep-get($value-to-unit, "hover", "dark");
 
 // Paragraphs
 //
 // Style p element.
 
-$paragraph-margin-bottom:   1rem !default;
+$paragraph-margin-bottom:   map-deep-get($value-to-unit, "size", "3");
 
 
 // Grid breakpoints

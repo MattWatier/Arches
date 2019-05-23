@@ -1,0 +1,239 @@
+/*
+
+ Basic HTML
+
+ Arches is strongly based on semantic HTML so much of the design will come together with basic structured html and minimal classes.  The product uses zurb foundation so please read and understand its documentation to see how many of the basic items should be constructed  before you manipulate with utiltiy classes or create new css.  
+ 
+ Styleguide HTML
+
+*/
+
+/*
+
+  Switches
+
+  markup:
+  <div class="switch tiny switch_radius p_5">
+    <input class="switch-input" id="tinySwitch" type="checkbox" name="exampleSwitch">
+    <label class="switch-paddle" for="tinySwitch">
+      <span class="show-for-sr">Tiny Sandwiches Enabled</span>
+    </label>
+  </div>
+  <div class="switch small round p_5">
+    <input class="switch-input" id="smallSwitch" type="checkbox" name="exampleSwitch">
+    <label class="switch-paddle" for="smallSwitch">
+      <span class="show-for-sr">Small Portions Only</span>
+    </label>
+  </div>
+  <div class="switch large p_5">
+    <input class="switch-input" id="largeSwitch" type="checkbox" name="exampleSwitch">
+    <label class="switch-paddle" for="largeSwitch">
+      <span class="show-for-sr">Show Large Elephants</span>
+    </label>
+  </div>
+
+  Styleguide HTML.Switches
+  */
+
+/*
+
+  Progress Bars
+
+  markup:
+<div class="row">
+  <div class="primary progress" role="progressbar" tabindex="0" aria-valuenow="25" aria-valuemin="0" aria-valuetext="25 percent" aria-valuemax="100">
+    <div class="progress-meter" style="width: 25%">
+      <p class="progress-meter-text">25%</p>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="warning progress">
+    <div class="progress-meter" style="width: 50%">
+      <p class="progress-meter-text">50%</p>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="alert progress">
+    <div class="progress-meter" style="width: 75%">
+      <p class="progress-meter-text">75%</p>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="success progress" role="progressbar" tabindex="0" aria-valuenow="100" aria-valuemin="0" aria-valuetext="100 percent" aria-valuemax="100">
+    <div class="progress-meter" style="width: 100%">
+      <p class="progress-meter-text">100%</p>
+    </div>
+  </div>
+</div>
+
+  Styleguide HTML.ProgressBars
+  */
+
+/*
+
+  Call Out Example
+
+  markup:
+  <div class="callout" data-closable>
+    <button class="close-button" aria-label="Close alert" type="button" data-close>
+      <span aria-hidden="true"><i class="fas fa-times"></i></span>
+    </button>
+    <div class="p_3 p-x_4">
+    <h1>Hello User</h1>
+    <p>This is a callout with close button example.</p>
+    </div>
+  </div>
+
+  Styleguide HTML.Callout
+*/
+
+/*
+
+  Accordian
+  
+  You can see how on the third accordian how utility classes can be added to tranform the look and feel, and you can add toggle icons as well
+
+  markup:
+  <ul class="accordion" data-accordion>
+    <li class="accordion-item is-active" data-accordion-item>
+      <a href="#" class="accordion-title">Accordion 1</a>
+      <div class="accordion-content" data-tab-content >
+        <p>Panel 1. Lorem ipsum dolor</p>
+        <a href="#">Nowhere to Go</a>
+      </div>
+    </li>
+    <li class="accordion-item" data-accordion-item>
+      <a href="#" class="accordion-title"><i class="fas icon-toggle_plus-minus"></i> Accordion 2</a>
+      <div class="accordion-content" data-tab-content>
+        <textarea></textarea>
+        <button class="button">I do nothing!</button>
+      </div>
+    </li>
+    <li class="accordion-item" data-accordion-item>
+      <a href="#" class="accordion-title font_2 bg_primary-3 h:c_white h:bg_primary"><i class="fas icon-toggle_caret-circle-right-down"></i> Accordion 3</a>
+      <div class="accordion-content shadow_n1 texture_light" data-tab-content>
+        Type your name!
+        <input type="text"></input>
+      </div>
+    </li>
+  </ul>
+
+  Styleguide Components.Accordian
+*/
+
+/*
+
+  Breadcrumbs
+
+  markup:
+  <nav aria-label="You are here:" role="navigation">
+    <ul class="breadcrumbs font_1">
+      <li><a href="#0">Home</a></li>
+      <li><a href="#0">Features</a></li>
+      <li class="font-italic">Gene Splicing</li>
+      <li>
+        <span class="show-for-sr">Current: </span> Cloning
+      </li>
+    </ul>
+  </nav>
+
+  Styleguide Components.Breadcrumbs
+*/
+
+/*
+    Tabs
+
+    markup:
+    <ul class="texture_light tabs"data-active-collapse="true"data-tabs id="collapsing-tabs">
+        <li class="tabs-title is-active"><a href="#panel1c"aria-selected="true">Tab 1</a></li>
+        <li class="tabs-title"><a href="#panel2c">Tab 2</a></li>
+        <li class="tabs-title"><a href="#panel3c">Tab 3</a></li>
+        <li class="tabs-title"><a href="#panel4c">Tab 4</a></li>
+    </ul>
+    <div class="tabs-content" data-tabs-content="collapsing-tabs">
+        <div class="tabs-panel is-active" id="panel1c">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+        <div class="tabs-panel" id="panel2c">
+            <p>Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor. Suspendisse dictum feugiat nisl ut dapibus.</p>
+        </div>
+        <div class="tabs-panel" id="panel3c">
+            <img src="https://picsum.photos/400/300">
+        </div>
+        <div class="tabs-panel" id="panel4c">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+    </div>
+
+    Styleguide Navigation.Tabs
+
+*/
+
+/*
+    Tabs Inset Area :recipe
+
+    markup:
+    <ul class="texture_light tabs br_primary bg_primary-3 shadow_n3 p-x_2 p-t_3 br-b_0" data-active-collapse="true" data-tabs id="collapsing-tabs">
+        <li class="tabs-title m-x_1 is-active"><a class="br-tr_radius br-tl_radius h:bg_white br_primary"href="#panel-demo2-1c"aria-selected="true"><i class="fal icon-complete_check"></i>Tab 1</a></li>
+        <li class="tabs-title m-x_1"><a class="h:c_white br-tr_radius br-tl_radius h:bg_primary" href="#panel-demo2-2c"><i class="fal icon-complete_check"></i>Tab 2</a></li>
+        <li class="tabs-title m-x_1"><a class="h:c_white br-tr_radius br-tl_radius h:bg_primary" href="#panel-demo2-3c"><i class="fal icon-complete_check"></i>Tab 3</a></li>
+        <li class="tabs-title m-x_1"><a class="h:c_white br-tr_radius br-tl_radius h:bg_primary" href="#panel-demo2-4c"><i class="fal icon-complete_check"></i>Tab 4</a></li>
+    </ul>
+    <div class="tabs-content" data-tabs-content="collapsing-tabs">
+        <div class="tabs-panel card-section  is-active" id="panel-demo2-1c">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+        <div class="tabs-panel card-section" id="panel-demo2-2c">
+            <p>Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor. Suspendisse dictum feugiat nisl ut dapibus.</p>
+        </div>
+        <div class="tabs-panel card-section" id="panel-demo2-3c">
+            <img src="https://picsum.photos/400/300">
+        </div>
+        <div class="tabs-panel card-section" id="panel-demo2-4c">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+    </div>
+
+    Styleguide Navigation.Tabs.Inset
+
+*/
+
+/*
+    Tabs on card :recipe
+
+    markup:
+    <ul class="texture_light tabs br_0 bg_primary br_none texture_dust p-x_2 p-t_3 br-b_0" data-active-collapse="true" data-tabs id="collapsing-tabs">
+        <li class="tabs-title m-x_1 is-active"><a class="br-tr_radius br-tl_radius h:bg_white br_primary"href="#panel-demo2-1c"aria-selected="true"><i class="fal icon-complete_check"></i>Tab 1</a></li>
+        <li class="tabs-title m-x_1"><a class="h:c_white c_white-3 br-tr_radius br-tl_radius h:bg_primary-n2" href="#panel-demo2-2c"><i class="fal icon-complete_check"></i>Tab 2</a></li>
+        <li class="tabs-title m-x_1"><a class="h:c_white c_white-3 br-tr_radius br-tl_radius h:bg_primary-n2" href="#panel-demo2-3c"><i class="fal icon-complete_check"></i>Tab 3</a></li>
+        <li class="tabs-title m-x_1"><a class="h:c_white c_white-3 br-tr_radius br-tl_radius h:bg_primary-n2" href="#panel-demo2-4c"><i class="fal icon-complete_check"></i>Tab 4</a></li>
+    </ul>
+    <div class="tabs-content" data-tabs-content="collapsing-tabs">
+        <div class="tabs-panel-demo2 is-active p-x_4 p-y_3" id="panel-demo2-1c">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+        <div class="tabs-panel-demo2  p-x_4 p-y_3" id="panel-demo2-2c">
+            <p>Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor. Suspendisse dictum feugiat nisl ut dapibus.</p>
+        </div>
+        <div class="tabs-panel-demo2  p-x_4 p-y_3" id="panel-demo2-3c">
+            <img src="https://picsum.photos/400/300">
+        </div>
+        <div class="tabs-panel-demo2  p-x_4 p-y_3" id="panel-demo2-4c">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+    </div>
+
+    sg-wrapper:
+    <div class="card shadow_2 cell small-6 large-4" style="max-width: 500px;">
+      <div class="font_slab border-top-left-square c_white font_3 p_4 texture_dust bg_primary">
+      This is a header
+      </div>
+      <sg-wrapper-content/>
+    </div>
+
+    Styleguide Navigation.Tabs.OnCard
+
+*/

@@ -2,8 +2,9 @@ $debug-trace: false !default;
 $name-mode: "SHORT" !default; // $name-mode: "SHORT","LONG","ALL"
 $ms-base: 1rem !default; // needs to be in rem's
 $colors: ();
+$grays: ();
 $theme-palette: ();
 @import "helpers/helpers";
 @import "vendor/modular-scale";
-@import "config/utility-css-definitions";
+@import "config/utility-css.vars";
 @import "helpers/breakpoint";
