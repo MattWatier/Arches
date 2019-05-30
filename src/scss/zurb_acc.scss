@@ -3,6 +3,7 @@
  * @version v1.0.0
  * @link https://github.com/MattWatier/Arches#readme
  */
+/**  Pre Header - modular scale default break points utility    *********************************/
 $debug-trace: false !default;
 $name-mode: "SHORT" !default; // $name-mode: "SHORT","LONG","ALL"
 $ms-base: 1rem !default; // needs to be in rem's
@@ -13,7 +14,7 @@ $theme-palette: ();
 @import "vendor/modular-scale";
 @import "config/utility-css.vars";
 @import "helpers/breakpoint";
-/** Utility Class Only With Basic ACC Branding **//* ACC BRANDs*/
+/** Utility Class Only With Basic ACC Branding **//**  ACC Brands    *********************************/
 $teal: #198dae;
 $green-blue: #16a385;
 $dark-grey: #676a72;
@@ -122,15 +123,20 @@ $global-radus-on: false;
 $global-border-radius: 6px;
 $global-border-round: 25px;
 $basicSizeMultiplier: 1rem;
+/**  Default Brands    *********************************/
+/**  Colors  **/
 @import "config/colors";
+/**  Fonts  **/
 @import "config/fonts";
+/**  Textures  **/
 @import "config/textures";
-@import "config/logo";/*Zurb Foundation Framework Setup Files.*/
+/**  Logos  **/
+@import "config/logo";
+/**  Zurb Foundation Framework Setup Files. ***************************************/
 @import "../../node_modules/foundation-sites/scss/util/util";
 @import "config/__zurb.settings";
 @import "../../node_modules/foundation-sites/scss/foundation.scss";
 @include foundation-everything();
-/*ACC Branding*/
 // ACC Design Alterations
 @import "base/base";
 
@@ -157,6 +163,8 @@ $basicSizeMultiplier: 1rem;
 /* Styleguide recipes */
 @import "styleguide/_containers";
 @import "recipes/_zurb.cards";
+/**  Utility Classes    *********************************/
 @import "utility-css/utility-css";
+
+/**  No Framework Recipes    *********************************/
 @import "recipes/__noFramework.recipes";
-//StyleGuide

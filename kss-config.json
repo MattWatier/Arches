@@ -1,6 +1,6 @@
 {
-  "title": "Michelangelo Styleguide",
-  "mask": "uc_base.css",
+  "title": "No Framework UC Only",
+  "mask": "noframework_acc.css",
   "builder": "node_modules/michelangelo/kss_styleguide/custom-template/",
   "source": "./dist/css/",
   "destination": "docs/",
@@ -9,7 +9,7 @@
   "homepage": "../../README.md",
 
   "//": "relative to the generated style guide.",
-  "css": ["../src/css/uc_base.css",
+  "css": ["../dist/css/noframework_acc.min.css",
     "../src/css/vendor/fontawesome/fontawesome.css",
     "../src/css/vendor/fontawesome/solid.css",
     "../src/css/vendor/fontawesome/regular.css",

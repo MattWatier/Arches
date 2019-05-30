@@ -41,15 +41,15 @@ var SOURCE = {
 };
 var PATHS = {
    CSS: SOURCE.SRC + SOURCE.CSS,
-   ALLCSS: SOURCE.SRC + SOURCE.CSS + "**/*.css",
+   ALLCSS: SOURCE.SRC + SOURCE.CSS + "/**/*.css",
    SCSS: SOURCE.SRC + SOURCE.SCSS,
-   ALLSCSS: SOURCE.SRC + SOURCE.SCSS + "**/*.scss",
+   ALLSCSS: SOURCE.SRC + SOURCE.SCSS + "/**/*.scss",
    FONTS: SOURCE.SRC + SOURCE.FONTS,
-   ALLFONTS: SOURCE.SRC + SOURCE.FONTS + "**/*",
+   ALLFONTS: SOURCE.SRC + SOURCE.FONTS + "/**/*",
    JS: SOURCE.SRC + SOURCE.JS,
-   ALLJS: SOURCE.SRC + SOURCE.JS + "**/*.js",
+   ALLJS: SOURCE.SRC + SOURCE.JS + "/**/*.js",
    ICONS: SOURCE.SRC + SOURCE.ICONS,
-   ALLICONS: SOURCE.SRC + SOURCE.ICONS + "**/*.scss",
+   ALLICONS: SOURCE.SRC + SOURCE.ICONS + "/**/*.scss",
    IMAGES: SOURCE.SRC + SOURCE.IMAGES,
    ALLIMAGES: SOURCE.SRC + SOURCE.IMAGES + "*",
 };
@@ -168,9 +168,17 @@ gulp.task("construct", function () {
       .pipe(gulp.dest(PATHS.SCSS));
 });
 
+gulp.task('watch', function () {
+   console.log('Gulp Watch Tasks');
+   console.log('Gulp: I will be watching you.... even when you sleep..... creapy');
+   return gulp.watch(PATHS.ALLSCSS, gulp.series('build'));
+});
+
 gulp.task("styleguide", gulp.parallel(
+   run('npm run index'),
    run('npm run uc'),
    run('npm run zurb_acc'),
    run('npm run boot_acc')));
 
 gulp.task("build", gulp.series("construct", "style", 'styleguide'));
+gulp.task("default", gulp.series("build", "watch"));

@@ -1,35 +1,30 @@
 /*
-	Margin
+Margin
 
-	  <div class="p-b_3"><span class="bg_accent br_radius c_white d_inline-block font_n1 p-7_3 p-x_5 sg">Is Responsive: breakpoint modifiers</span></div>Margin classes are mobile first with postfix modifier for '-medium'and '-large'variations for responsive sizing.
+<div class="p-b_3"><span class="bg_accent br_radius c_white d_inline-block font_n1 p-7_3 p-x_5 sg">Is Responsive: breakpoint modifiers</span></div>Margin classes are mobile first with postfix modifier for `:md`and `:lg` variations for responsive sizing. Margins that use the short codes of all margin, auto, x margins, and y margin are overriden by specific side margins.	
 
-	.m_auto.small-6              - Margin 0 auto
-	.m_0              - All margins set to 0
-	.m_1.m-t_0:large              - All margins set to 1px
-	.m_2.m-t_0:large              - All margins set to 1/4 of global margin
-	.m_3.m-t_0:large              - All margins set to 1/2 of global margin
-	.m_4.m-t_0:large              - All margins set to global margin
-	.m_5.m-t_0:large              - All margins set to 2x of global margin 
-	.m-t_4          - Top margin set to global margin
-	.m-r_4        - Right margin set to global margin
-	.m-l_4         - Left margin set to global margin
-	.m-b_4       - Bottom margin set to global margin
-	.m-t_n4          - Top margin set to  negative global margin
-	.m-r_n4        - Right margin set to  negative global margin
-	.m-l_n4         - Left margin set to negative  global margin
-	.m-b_n4       - Bottom margin set to negative  global margin
-
-
+.m_auto.max-w_2 					 - same as `Margin:0 auto`
+.m_0    					- All margins set to 0
+.m-x_4					- Margin left and right are set to global margin
+.m-y_4					- Margin top and bottom are set to global margin
+.m_1.m-t_0:lg 		   - All margins set to 1px
+.m_2.m-t_0:lg 		   - All margins set to 1/4 of global margin
+.m_3.m-t_0:lg 		   - All margins set to 1/2 of global margin
+.m_4.m-t_0:lg 		   - All margins set to global margin
+.m_5.m-t_0:lg 		   - All margins set to 2x of global margin 
+.m-t_4 				   - Top margin set to global margin
+.m-r_4 				 - Right margin set to global margin
+.m-l_4 				  - Left margin set to global margin
+.m-b_4 				- Bottom margin set to global margin
+.m-t_n4 				   - Top margin set to  negative global margin
+.m-r_n4 				 - Right margin set to  negative global margin
+.m-l_n4 				- Left margin set to negative  global margin
+.m-b_n4 				- Bottom margin set to negative  global margin
 
 	markup:
-	<div class="{{modifier_class}} p_2  bg_primary text-center c_white cell auto opacity_5">Container With Margins</div>
+	<div class="bg_warning-3 d-block br_1 br_solid"><div class="{{modifier_class}} p_2 bg_primary text-center c_white cell auto opacity_5 d-block">Container With Margins</div></div>
 
- 	sg-wrapper:
-	<div class="bg_warning-3 clearfix grid-x br_1 br_solid">
-	   <sg-wrapper-content/>
-	</div>
-
-	Styleguide 101.2
+Styleguide Spacing.Margin
 
  */
 
@@ -66,9 +61,9 @@
 }
 
 /*
-	Padding CSS
+	Padding
 
-	  <div class="p-b_3"><span class="bg_accent br_radius c_white d_inline-block font_n1 p-7_3 p-x_5 sg">Is Responsive: breakpoint modifiers</span></div>Quickly alter the padding of an object
+	<div class="p-b_3"><span class="bg_accent br_radius c_white d_inline-block font_n1 p-7_3 p-x_5 sg">Is Responsive: breakpoint modifiers</span></div>Quickly alter the padding of an object.
 
 	.p_0              - All paddings set to 0
 	.p_1              - All paddings set to 1px
@@ -76,6 +71,8 @@
 	.p_3              - All paddings set to 1/2 of global padding
 	.p_4              - All paddings set to global padding
 	.p_5              - All paddings set to 2x of global padding 
+	.p-x_5              - left and right paddings set to 2x of global padding 
+	.p-y_5              - top and bottom paddings set to 2x of global padding 
 	.p-t_4          	- Top padding set to global padding
 	.p-r_4        	- Right padding set to global padding
 	.p-l_4         - Left padding set to global padding
@@ -84,7 +81,7 @@
 	markup:
 	<div class="{{modifier_class}} br_solid br_transparent bg_alert-3  text-center"><div class="bg_primary-5 text-center">Content With Padding</div></div>
 
-	Styleguide 101.3
+	Styleguide Spacing.Padding
 
  */
 
@@ -148,9 +145,9 @@
 
 
 	markup:
-	<div class=" br_solid br_transparent bg_alert-3 relative p_5"><div class="bg_primary-5 text-center absolute {{modifier_class}}">Position Absolute {{modifier_class}}</div></div>
+	<div class=" br_solid br_transparent bg_accent-3 relative p_5" style="height:200px;"><div class="bg_primary-5 text-center absolute {{modifier_class}}">Position Absolute {{modifier_class}}</div></div>
 
-	Styleguide 101.4
+	Styleguide Spacing.Position
 
  */
 

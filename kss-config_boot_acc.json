@@ -1,5 +1,5 @@
 {
-	"title": "ACC & Foundation",
+	"title": "ACC & Bootstrap",
 	"mask": "boot_acc.css",
 	"builder": "node_modules/michelangelo/kss_styleguide/custom-template/",
 	"source": "./dist/css/",

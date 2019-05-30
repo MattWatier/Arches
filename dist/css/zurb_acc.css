@@ -4,8 +4,11 @@
  * @version v1.0.0
  * @link https://github.com/MattWatier/Arches#readme
  */
+/**  Pre Header - modular scale default break points utility    *********************************/
 /** Utility Class Only With Basic ACC Branding **/
-/* ACC BRANDs*/
+/**  ACC Brands    *********************************/
+/**  Default Brands    *********************************/
+/**  Colors  **/
 /*
 
 Colors of the Design  
@@ -30,6 +33,7 @@ $acc-blue    -      #00386b;  acc
 Styleguide 0.4.0
 
  */
+/**  Fonts  **/
 /* Robto Slab Regular */
 @font-face {
   src: local("Roboto Slab Regular"), local("RobotoSlab-Regular"), url(https://fonts.gstatic.com/s/robotoslab/v7/BngMUXZYTXPIvIBgJJSb6ufN5qU.woff2) format("woff2");
@@ -85,6 +89,7 @@ html {
   line-break: white-space;
 }
 
+/**  Textures  **/
 div[class^=texture_] {
   background-attachment: local;
   background-origin: border-box;
@@ -110,6 +115,7 @@ div[class^=texture_] {
 	Styleguide 0.3
 
  */
+/**  Logos  **/
 /*
 	Logo
 
@@ -132,7 +138,7 @@ div[class^=texture_] {
      object-fit: scale-down;
 }
 
-/*Zurb Foundation Framework Setup Files.*/
+/**  Zurb Foundation Framework Setup Files. ***************************************/
 /**
 * Foundation for Sites Settings
  */
@@ -7220,7 +7226,6 @@ html.is-reveal-open body {
   }
 }
 
-/*ACC Branding*/
 h1, h2, h3, h4, h5, h6, p, td, th {
   /* Safari */
   transition: line-height 1s;
@@ -9010,331 +9015,37 @@ Icons: Regular
 
  Arches is strongly based on semantic HTML so much of the design will come together with basic structured html and minimal classes.  The product uses zurb foundation so please read and understand its documentation to see how many of the basic items should be constructed  before you manipulate with utiltiy classes or create new css.  
 
- Styleguide 10.0
+ Styleguide HTML
 
 */
 /*
+Navigation Components
 
-  Switches
+Most of the intranet is a collection of content you navigate in between.   Here are some useful components that allow for that type of task. 
 
-  markup:
-  <div class="switch tiny switch_radius p_5">
-    <input class="switch-input" id="tinySwitch" type="checkbox" name="exampleSwitch">
-    <label class="switch-paddle" for="tinySwitch">
-      <span class="show-for-sr">Tiny Sandwiches Enabled</span>
-    </label>
-  </div>
-  <div class="switch small round p_5">
-    <input class="switch-input" id="smallSwitch" type="checkbox" name="exampleSwitch">
-    <label class="switch-paddle" for="smallSwitch">
-      <span class="show-for-sr">Small Portions Only</span>
-    </label>
-  </div>
-  <div class="switch large p_5">
-    <input class="switch-input" id="largeSwitch" type="checkbox" name="exampleSwitch">
-    <label class="switch-paddle" for="largeSwitch">
-      <span class="show-for-sr">Show Large Elephants</span>
-    </label>
-  </div>
-
-  Styleguide 10.15
-  */
-/*
-
-  Progress Bars
-
-  markup:
-<div class="row">
-  <div class="primary progress" role="progressbar" tabindex="0" aria-valuenow="25" aria-valuemin="0" aria-valuetext="25 percent" aria-valuemax="100">
-    <div class="progress-meter" style="width: 25%">
-      <p class="progress-meter-text">25%</p>
-    </div>
-  </div>
-</div>
-<div class="row">
-  <div class="warning progress">
-    <div class="progress-meter" style="width: 50%">
-      <p class="progress-meter-text">50%</p>
-    </div>
-  </div>
-</div>
-<div class="row">
-  <div class="alert progress">
-    <div class="progress-meter" style="width: 75%">
-      <p class="progress-meter-text">75%</p>
-    </div>
-  </div>
-</div>
-<div class="row">
-  <div class="success progress" role="progressbar" tabindex="0" aria-valuenow="100" aria-valuemin="0" aria-valuetext="100 percent" aria-valuemax="100">
-    <div class="progress-meter" style="width: 100%">
-      <p class="progress-meter-text">100%</p>
-    </div>
-  </div>
-</div>
-
-  Styleguide 10.10
-  */
-/*
-
-  Call Out Example
-
-  markup:
-  <div class="callout" data-closable>
-    <button class="close-button" aria-label="Close alert" type="button" data-close>
-      <span aria-hidden="true"><i class="fas fa-times"></i></span>
-    </button>
-    <div class="p_3 p-x_4">
-    <h1>Hello User</h1>
-    <p>This is a callout with close button example.</p>
-    </div>
-  </div>
-
-  Styleguide 10.9
-*/
-/*
-
-  Accordian
-
-  You can see how on the third accordian how utility classes can be added to tranform the look and feel, and you can add toggle icons as well
-
-  markup:
-  <ul class="accordion" data-accordion>
-    <li class="accordion-item is-active" data-accordion-item>
-      <a href="#" class="accordion-title">Accordion 1</a>
-      <div class="accordion-content" data-tab-content >
-        <p>Panel 1. Lorem ipsum dolor</p>
-        <a href="#">Nowhere to Go</a>
-      </div>
-    </li>
-    <li class="accordion-item" data-accordion-item>
-      <a href="#" class="accordion-title"><i class="fas icon-toggle_plus-minus"></i> Accordion 2</a>
-      <div class="accordion-content" data-tab-content>
-        <textarea></textarea>
-        <button class="button">I do nothing!</button>
-      </div>
-    </li>
-    <li class="accordion-item" data-accordion-item>
-      <a href="#" class="accordion-title font_2 bg_primary-3 h:c_white h:bg_primary"><i class="fas icon-toggle_caret-circle-right-down"></i> Accordion 3</a>
-      <div class="accordion-content shadow_n1 texture_light" data-tab-content>
-        Type your name!
-        <input type="text"></input>
-      </div>
-    </li>
-  </ul>
-
-  Styleguide 10.8
-*/
-/*
-
-  Breadcrumbs
-
-  markup:
-  <nav aria-label="You are here:" role="navigation">
-    <ul class="breadcrumbs font_1">
-      <li><a href="#0">Home</a></li>
-      <li><a href="#0">Features</a></li>
-      <li class="font-italic">Gene Splicing</li>
-      <li>
-        <span class="show-for-sr">Current: </span> Cloning
-      </li>
-    </ul>
-  </nav>
-
-  Styleguide 10.3
-*/
-/*
-    Tabs
-
-    markup:
-    <ul class="texture_light tabs"data-active-collapse="true"data-tabs id="collapsing-tabs">
-        <li class="tabs-title is-active"><a href="#panel1c"aria-selected="true">Tab 1</a></li>
-        <li class="tabs-title"><a href="#panel2c">Tab 2</a></li>
-        <li class="tabs-title"><a href="#panel3c">Tab 3</a></li>
-        <li class="tabs-title"><a href="#panel4c">Tab 4</a></li>
-    </ul>
-    <div class="tabs-content" data-tabs-content="collapsing-tabs">
-        <div class="tabs-panel is-active" id="panel1c">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        </div>
-        <div class="tabs-panel" id="panel2c">
-            <p>Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor. Suspendisse dictum feugiat nisl ut dapibus.</p>
-        </div>
-        <div class="tabs-panel" id="panel3c">
-            <img src="https://picsum.photos/400/300">
-        </div>
-        <div class="tabs-panel" id="panel4c">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        </div>
-    </div>
-
-    Styleguide 10.5.0
-
-*/
-/*
-    Tabs Inset Area :recipe
-
-    markup:
-    <ul class="texture_light tabs br_primary bg_primary-3 shadow_n3 p-x_2 p-t_3 br-b_0" data-active-collapse="true" data-tabs id="collapsing-tabs">
-        <li class="tabs-title m-x_1 is-active"><a class="br-tr_radius br-tl_radius h:bg_white br_primary"href="#panel-demo2-1c"aria-selected="true"><i class="fal icon-complete_check"></i>Tab 1</a></li>
-        <li class="tabs-title m-x_1"><a class="h:c_white br-tr_radius br-tl_radius h:bg_primary" href="#panel-demo2-2c"><i class="fal icon-complete_check"></i>Tab 2</a></li>
-        <li class="tabs-title m-x_1"><a class="h:c_white br-tr_radius br-tl_radius h:bg_primary" href="#panel-demo2-3c"><i class="fal icon-complete_check"></i>Tab 3</a></li>
-        <li class="tabs-title m-x_1"><a class="h:c_white br-tr_radius br-tl_radius h:bg_primary" href="#panel-demo2-4c"><i class="fal icon-complete_check"></i>Tab 4</a></li>
-    </ul>
-    <div class="tabs-content" data-tabs-content="collapsing-tabs">
-        <div class="tabs-panel card-section  is-active" id="panel-demo2-1c">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        </div>
-        <div class="tabs-panel card-section" id="panel-demo2-2c">
-            <p>Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor. Suspendisse dictum feugiat nisl ut dapibus.</p>
-        </div>
-        <div class="tabs-panel card-section" id="panel-demo2-3c">
-            <img src="https://picsum.photos/400/300">
-        </div>
-        <div class="tabs-panel card-section" id="panel-demo2-4c">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        </div>
-    </div>
-
-    Styleguide 10.5.1
-
-*/
-/*
-    Tabs on card :recipe
-
-    markup:
-    <ul class="texture_light tabs br_0 bg_primary br_none texture_dust p-x_2 p-t_3 br-b_0" data-active-collapse="true" data-tabs id="collapsing-tabs">
-        <li class="tabs-title m-x_1 is-active"><a class="br-tr_radius br-tl_radius h:bg_white br_primary"href="#panel-demo2-1c"aria-selected="true"><i class="fal icon-complete_check"></i>Tab 1</a></li>
-        <li class="tabs-title m-x_1"><a class="h:c_white c_white-3 br-tr_radius br-tl_radius h:bg_primary-n2" href="#panel-demo2-2c"><i class="fal icon-complete_check"></i>Tab 2</a></li>
-        <li class="tabs-title m-x_1"><a class="h:c_white c_white-3 br-tr_radius br-tl_radius h:bg_primary-n2" href="#panel-demo2-3c"><i class="fal icon-complete_check"></i>Tab 3</a></li>
-        <li class="tabs-title m-x_1"><a class="h:c_white c_white-3 br-tr_radius br-tl_radius h:bg_primary-n2" href="#panel-demo2-4c"><i class="fal icon-complete_check"></i>Tab 4</a></li>
-    </ul>
-    <div class="tabs-content" data-tabs-content="collapsing-tabs">
-        <div class="tabs-panel-demo2 is-active p-x_4 p-y_3" id="panel-demo2-1c">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        </div>
-        <div class="tabs-panel-demo2  p-x_4 p-y_3" id="panel-demo2-2c">
-            <p>Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor. Suspendisse dictum feugiat nisl ut dapibus.</p>
-        </div>
-        <div class="tabs-panel-demo2  p-x_4 p-y_3" id="panel-demo2-3c">
-            <img src="https://picsum.photos/400/300">
-        </div>
-        <div class="tabs-panel-demo2  p-x_4 p-y_3" id="panel-demo2-4c">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        </div>
-    </div>
-
-    sg-wrapper:
-    <div class="card shadow_2 cell small-6 large-4" style="max-width: 500px;">
-      <div class="font_slab border-top-left-square c_white font_3 p_4 texture_dust bg_primary">
-      This is a header
-      </div>
-      <sg-wrapper-content/>
-    </div>
-
-    Styleguide 10.5.2
-
+ Styleguide Navigation
 */
 /*
 Interactive Extras
 
 Interactions can be enhanced with toggle icons or loading graphics to show the system is responding to user input.
 
- Styleguide 20.0
+ Styleguide InteractiveExtras
 */
 /*
  Question Block
 
 The Question has been stripped back to the basic inplementation from zurb foundation. Utility classes have been applied to the decorate the desgin and make it look more robust.
 
- Styleguide 30.0
+ Styleguide Questions
 */
 /*
 Containers
 
  Structured containers to bring content and ui together.
 
- Styleguide Recipes.Containers
+ Styleguide Containers
 */
-/*
-Styleguide Templates
-
-This is not part of the style of Arches
-This is a collection of documentation types that can be used as templates when doecuemting the Styles of Arches.  It is all based off of the ["SC5"](https://github.com/SC5/sc5-styleguide)
-
-Styleguide Templates.0
-*/
-/* No styleguide reference. */
-/*
- Item With Modifiers Template
-
-Many Objects have modifiers like psudo classes and classes applied to make them look different.
-
-
-default		- Default Design
-:hover       - Subtle hover highlight.
-.alert       - A highlight indicating you’ve already given a star.
-
-
- markup:
- <li class="{{modifier_class}}">List Item</li>
-
- sg-wrapper:
- <div  class="templateDocumentation"><ul>
-   <sg-wrapper-content/>
- </ul></div>
-
- Styleguide Templates.3
-*/
-.templateDocumentation li {
-  background-color: yellow;
-}
-.templateDocumentation li.warning {
-  background-color: orange;
-}
-.templateDocumentation li.alert {
-  background-color: red;
-}
-
-/*
- Item With Validation Tabel
-
-Many Objects have modifiers like psudo classes and classes applied to make them look different.
-
-| Validation 			| State		 		| Message												|  
-| ---- 					| ----- 			| --- 													|  
-| required 				| warning 			| { Input Label Text } is missing.               					 |  
-| all alph characters	| alert	 			| Only alpha characters are allowed.  					|  
-| length > 3 			| alert  			| Item Name must be more then 3 Characters 					|  
-| All Validations Met 	| success 			| valid Item Name 					|
-
-
-default		- Default Design
-.success       - Success State.
-.alert       - Alert State.
-.warning	- Warning State
-
- markup:
- <div class="message {{modifier_class}}"> Validation Message </div>
-
- sg-wrapper:
- <div  class="templateDocumentation"><sg-wrapper-content/></div>
-
- Styleguide Templates.4
-*/
-.templateDocumentation .message {
-  background-color: yellow;
-}
-.templateDocumentation .message.warning {
-  background-color: orange;
-}
-.templateDocumentation .message.alert {
-  background-color: red;
-}
-.templateDocumentation .message.success {
-  background-color: green;
-}
-
 .container,
 .card {
   position: relative;
@@ -9354,7 +9065,7 @@ Containers
 
  Structured containers to bring content and ui together.
 
- Styleguide Recipes.Containers
+ Styleguide Containers
 */
 /*
 Cards
@@ -9421,6 +9132,7 @@ markup:
 
 Styleguide Recipes.Containers.PageMessages
 */
+/**  Utility Classes    *********************************/
 /*
 UC: Introduction
 
@@ -9662,45 +9374,40 @@ The breakdown of the names for UCs follow a structured patter for easy muscle me
 }
 
 /*
-UC: Margin & Padding
+UC: Spacing
 
-Padding and Margins are the most common usage for Utility Classes.  Spacing UC's are responsive and can be postfixed with `-medium` and with `-large` to have finer control on the spacing of objects.
+Padding, Margins, and Positions are the most common usage for Utility Classes.  Spacing UC's are responsive and can be postfixed with `:md` and with `:lg` to have finer control on the spacing of objects.
 
-Styleguide 101.0
+Styleguide Spacing
 */
 /* No styleguide reference. */
 /*
-	Margin
+Margin
 
-	  <div class="p-b_3"><span class="bg_accent br_radius c_white d_inline-block font_n1 p-7_3 p-x_5 sg">Is Responsive: breakpoint modifiers</span></div>Margin classes are mobile first with postfix modifier for '-medium'and '-large'variations for responsive sizing.
+<div class="p-b_3"><span class="bg_accent br_radius c_white d_inline-block font_n1 p-7_3 p-x_5 sg">Is Responsive: breakpoint modifiers</span></div>Margin classes are mobile first with postfix modifier for `:md`and `:lg` variations for responsive sizing. Margins that use the short codes of all margin, auto, x margins, and y margin are overriden by specific side margins.	
 
-	.m_auto.small-6              - Margin 0 auto
-	.m_0              - All margins set to 0
-	.m_1.m-t_0:large              - All margins set to 1px
-	.m_2.m-t_0:large              - All margins set to 1/4 of global margin
-	.m_3.m-t_0:large              - All margins set to 1/2 of global margin
-	.m_4.m-t_0:large              - All margins set to global margin
-	.m_5.m-t_0:large              - All margins set to 2x of global margin 
-	.m-t_4          - Top margin set to global margin
-	.m-r_4        - Right margin set to global margin
-	.m-l_4         - Left margin set to global margin
-	.m-b_4       - Bottom margin set to global margin
-	.m-t_n4          - Top margin set to  negative global margin
-	.m-r_n4        - Right margin set to  negative global margin
-	.m-l_n4         - Left margin set to negative  global margin
-	.m-b_n4       - Bottom margin set to negative  global margin
-
-
+.m_auto.max-w_2 					 - same as `Margin:0 auto`
+.m_0    					- All margins set to 0
+.m-x_4					- Margin left and right are set to global margin
+.m-y_4					- Margin top and bottom are set to global margin
+.m_1.m-t_0:lg 		   - All margins set to 1px
+.m_2.m-t_0:lg 		   - All margins set to 1/4 of global margin
+.m_3.m-t_0:lg 		   - All margins set to 1/2 of global margin
+.m_4.m-t_0:lg 		   - All margins set to global margin
+.m_5.m-t_0:lg 		   - All margins set to 2x of global margin 
+.m-t_4 				   - Top margin set to global margin
+.m-r_4 				 - Right margin set to global margin
+.m-l_4 				  - Left margin set to global margin
+.m-b_4 				- Bottom margin set to global margin
+.m-t_n4 				   - Top margin set to  negative global margin
+.m-r_n4 				 - Right margin set to  negative global margin
+.m-l_n4 				- Left margin set to negative  global margin
+.m-b_n4 				- Bottom margin set to negative  global margin
 
 	markup:
-	<div class="{{modifier_class}} p_2  bg_primary text-center c_white cell auto opacity_5">Container With Margins</div>
+	<div class="bg_warning-3 d-block br_1 br_solid"><div class="{{modifier_class}} p_2 bg_primary text-center c_white cell auto opacity_5 d-block">Container With Margins</div></div>
 
- 	sg-wrapper:
-	<div class="bg_warning-3 clearfix grid-x br_1 br_solid">
-	   <sg-wrapper-content/>
-	</div>
-
-	Styleguide 101.2
+Styleguide Spacing.Margin
 
  */
 .m_auto {
@@ -10772,9 +10479,9 @@ Styleguide 101.0
   }
 }
 /*
-	Padding CSS
+	Padding
 
-	  <div class="p-b_3"><span class="bg_accent br_radius c_white d_inline-block font_n1 p-7_3 p-x_5 sg">Is Responsive: breakpoint modifiers</span></div>Quickly alter the padding of an object
+	<div class="p-b_3"><span class="bg_accent br_radius c_white d_inline-block font_n1 p-7_3 p-x_5 sg">Is Responsive: breakpoint modifiers</span></div>Quickly alter the padding of an object.
 
 	.p_0              - All paddings set to 0
 	.p_1              - All paddings set to 1px
@@ -10782,6 +10489,8 @@ Styleguide 101.0
 	.p_3              - All paddings set to 1/2 of global padding
 	.p_4              - All paddings set to global padding
 	.p_5              - All paddings set to 2x of global padding 
+	.p-x_5              - left and right paddings set to 2x of global padding 
+	.p-y_5              - top and bottom paddings set to 2x of global padding 
 	.p-t_4          	- Top padding set to global padding
 	.p-r_4        	- Right padding set to global padding
 	.p-l_4         - Left padding set to global padding
@@ -10790,7 +10499,7 @@ Styleguide 101.0
 	markup:
 	<div class="{{modifier_class}} br_solid br_transparent bg_alert-3  text-center"><div class="bg_primary-5 text-center">Content With Padding</div></div>
 
-	Styleguide 101.3
+	Styleguide Spacing.Padding
 
  */
 .p_0 {
@@ -11404,9 +11113,9 @@ Styleguide 101.0
 
 
 	markup:
-	<div class=" br_solid br_transparent bg_alert-3 relative p_5"><div class="bg_primary-5 text-center absolute {{modifier_class}}">Position Absolute {{modifier_class}}</div></div>
+	<div class=" br_solid br_transparent bg_accent-3 relative p_5" style="height:200px;"><div class="bg_primary-5 text-center absolute {{modifier_class}}">Position Absolute {{modifier_class}}</div></div>
 
-	Styleguide 101.4
+	Styleguide Spacing.Position
 
  */
 .t_0 {
@@ -13839,47 +13548,47 @@ Styleguide Font.Color
 
  */
 .shadow_0 {
-  box-shadow: 'make-shadow(3, "drop", #000, 0.4)';
+  box-shadow: 1.5px 1.5px 6px 0.75px rgba(0, 0, 0, 0.4);
 }
 
 .shadow_1 {
-  box-shadow: 'make-shadow(1, "drop", #000, 0.1)';
+  box-shadow: 0.5px 0.5px 2px 0.25px rgba(0, 0, 0, 0.1);
 }
 
 .shadow_2 {
-  box-shadow: 'make-shadow(2, "drop", #000, 0.2)';
+  box-shadow: 1px 1px 4px 0.5px rgba(0, 0, 0, 0.2);
 }
 
 .shadow_3 {
-  box-shadow: 'make-shadow(3, "drop", #000, 0.3)';
+  box-shadow: 1.5px 1.5px 6px 0.75px rgba(0, 0, 0, 0.3);
 }
 
 .shadow_4 {
-  box-shadow: 'make-shadow(3.5, "drop", #000, 0.5)';
+  box-shadow: 1.75px 1.75px 7px 0.875px rgba(0, 0, 0, 0.5);
 }
 
 .shadow_5 {
-  box-shadow: 'make-shadow(4, "drop", #000, 0.65)';
+  box-shadow: 2px 2px 8px 1px rgba(0, 0, 0, 0.65);
 }
 
 .shadow_n1 {
-  box-shadow: 'make-shadow(1, "inset", #000, 0.1)';
+  box-shadow: inset 0.5px 0.5px 2px 0.25px rgba(0, 0, 0, 0.1);
 }
 
 .shadow_n2 {
-  box-shadow: 'make-shadow(2, "inset", #000, 0.2)';
+  box-shadow: inset 1px 1px 4px 0.5px rgba(0, 0, 0, 0.2);
 }
 
 .shadow_n3 {
-  box-shadow: 'make-shadow(3, "inset", #000, 0.3)';
+  box-shadow: inset 1.5px 1.5px 6px 0.75px rgba(0, 0, 0, 0.3);
 }
 
 .shadow_n4 {
-  box-shadow: 'make-shadow(3.5, "inset", #000, 0.5)';
+  box-shadow: inset 1.75px 1.75px 7px 0.875px rgba(0, 0, 0, 0.5);
 }
 
 .shadow_n5 {
-  box-shadow: 'make-shadow(4, "inset", #000, 0.65)';
+  box-shadow: inset 2px 2px 8px 1px rgba(0, 0, 0, 0.65);
 }
 
 /*
@@ -17552,6 +17261,7 @@ Styleguide 103.2.1
   overflow: unset;
 }
 
+/**  No Framework Recipes    *********************************/
 /*
 	recipes
 

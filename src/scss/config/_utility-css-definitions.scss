@@ -1,15 +1,16 @@
 $grid-column-count: 12;
 $optimal-characters: 65;
-$crushed: 1.125;
-$tight: 1.35;
-$normal: 1.5;
-$loose: 1.65;
-$airy: 1.875;
+$lineheight-crushed: 1.125;
+$lineheight-tight: 1.35;
+$lineheight-normal: 1.5;
+$lineheight-loose: 1.65;
+$lineheight-airy: 2.5;
 $baseline-modifier: 1.5;
 
 $ms-base: 1em;
 $base-font-size: $ms-base;
-$baseline: ($baseline-modifier * $base-font-size) / $base-font-size * 1rem; // Unitless item * PIXEL Size / Font PIXEL Converted to REM
+$base-font-size-rem: strip-unit($ms-base) * 1rem;
+$baseline: $baseline-modifier * $base-font-size-rem; // Unitless item * PIXEL Size / Font PIXEL Converted to REM
 // $line-height:strip-unit($baseline-modifier);
 $ms-ratio: $minor-third;
 $ms-ratio-sm: $major-second;
@@ -24,6 +25,12 @@ $breakpoints: (
 	lg: 1024px,
 	xl: 1200px,
 	xxl: 1440px
+);
+$container-max-widths: (
+	sm: 540px,
+	md: 720px,
+	lg: 960px,
+	xl: 1140px
 );
 
 $global-border-radius: 6px;
@@ -79,12 +86,12 @@ $value-to-unit: (
 		5: 5
 	),
 	line-height: (
-		0: 0,
-		1: 1,
-		2: 1.35,
-		3: 1.5,
-		4: 1.75,
-		5: 2.5
+		0: 1,
+		1: $lineheight-crushed,
+		2: $lineheight-tight,
+		3: $lineheight-normal,
+		4: $lineheight-loose,
+		5: $lineheight-airy
 	),
 	opacity: (
 		0: 0,
@@ -155,8 +162,8 @@ $value-to-unit: (
 	),
 	radius: (
 		square: 0px,
-		radius: 5px,
-		round: 25px,
+		radius: $global-border-radius,
+		round: $global-border-round,
 		circle: 100%
 	),
 	border-style: (
@@ -212,10 +219,17 @@ $value-to-unit: (
 		5: 1rem
 	),
 	font-family: (
-		slab: ("Roboto Slab","Times New Roman","Lucida Bright",Georgia,serif),
+		slab: (
+			"Roboto Slab",
+			"Times New Roman",
+			"Lucida Bright",
+			Georgia,
+			serif
+		),
 		display: '"Maven Pro","Open Sans","Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif',
 		copy: '"Muli","Open Sans","Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif',
-		ui: '"Open Sans",-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif'
+		ui: '"Open Sans",-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif',
+		mono: 'SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace'
 	),
 	grid: (
 		1: 1/12 * 100%,
@@ -257,7 +271,7 @@ $value-to-unit: (
 		n2: make-shadow(2, "inset", #000, 0.2),
 		n3: make-shadow(3, "inset", #000, 0.3),
 		n4: make-shadow(3.5, "inset", #000, 0.5),
-		n5: make-shadow(4, "inset", #000, 0.65)'
+		n5: make-shadow(4, "inset", #000, 0.65)
 	)
 );
 

@@ -132,12 +132,12 @@ $spacers: () !default;
 // stylelint-disable-next-line scss/dollar-variable-default
 $spacers: map-merge(
   (
-    0:  map-deep-get($value-to-unit, "size", 0),
-    1:  map-deep-get($value-to-unit, "size", 1),
-    2:  map-deep-get($value-to-unit, "size", 2),
-    3:  map-deep-get($value-to-unit, "size", 3),
-    4:  map-deep-get($value-to-unit, "size", 4),
-    5:  map-deep-get($value-to-unit, "size", 5),
+    0:  map-deep-get($value-to-unit, size, 0),
+    1:  map-deep-get($value-to-unit, size, 1),
+    2:  map-deep-get($value-to-unit, size, 2),
+    3:  map-deep-get($value-to-unit, size, 3),
+    4:  map-deep-get($value-to-unit, size, 4),
+    5:  map-deep-get($value-to-unit, size, 5),
   ),
   $spacers
 );
@@ -172,10 +172,10 @@ $body-color:                #000;
 
 $link-color:                              map-get($theme-palette, primary );
 $link-decoration:                         none !default;
-$link-hover-color:                        darken($link-color, map-deep-get($value-to-unit, "hover", "dark")) !default;
+$link-hover-color:                        scale-color($link-color, $lightness: map-deep-get($value-to-unit, "hover", "dark"));
 $link-hover-decoration:                   underline !default;
 // Darken percentage for links with `.text-*` class (e.g. `.text-success`)
-$emphasized-link-hover-darken-percentage: map-deep-get($value-to-unit, "hover", "dark");
+$emphasized-link-hover-darken-percentage: map-deep-get($value-to-unit, "hover", "dark") * -1;
 
 // Paragraphs
 //
@@ -227,24 +227,24 @@ $grid-gutter-width:           30px !default;
 //
 // Define common padding and border radius sizes and more.
 
-$line-height-lg:              1.5 !default;
-$line-height-sm:              1.5 !default;
+$line-height-lg:              $baseline-modifier;
+$line-height-sm:              $baseline-modifier;
 
 $border-width:                1px !default;
 $border-color:                $gray-300 !default;
 
-$border-radius:               .25rem !default;
-$border-radius-lg:            .3rem !default;
-$border-radius-sm:            .2rem !default;
+$border-radius:               map-deep-get($value-to-unit, radius, radius);
+$border-radius-lg:            map-deep-get($value-to-unit, radius, radius);
+$border-radius-sm:            map-deep-get($value-to-unit, radius, radius);
 
-$rounded-pill:                50rem !default;
+$rounded-pill:               map-deep-get($value-to-unit, radius, round);
 
-$box-shadow-sm:               0 .125rem .25rem rgba($black, .075) !default;
-$box-shadow:                  0 .5rem 1rem rgba($black, .15) !default;
-$box-shadow-lg:               0 1rem 3rem rgba($black, .175) !default;
+$box-shadow-sm:               map-deep-get($value-to-unit, shadow, 1);
+$box-shadow:                   map-deep-get($value-to-unit, shadow, 0);
+$box-shadow-lg:                map-deep-get($value-to-unit, shadow, 4);
 
 $component-active-color:      $white !default;
-$component-active-bg:         theme-color("primary") !default;
+$component-active-bg:         get-themecolor("primary",0);
 
 $caret-width:                 .3em !default;
 $caret-vertical-align:        $caret-width * .85 !default;
@@ -271,12 +271,12 @@ $embed-responsive-aspect-ratios: join(
 // Font, line-height, and color for body text, headings, and more.
 
 // stylelint-disable value-keyword-case
-$font-family-sans-serif:      -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
-$font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
-$font-family-base:            $font-family-sans-serif !default;
+$font-family-sans-serif:      map-deep-get($value-to-unit, font-family, copy);
+$font-family-monospace:        map-deep-get($value-to-unit, font-family, mono);
+$font-family-base:            $font-family-sans-serif;
 // stylelint-enable value-keyword-case
 
-$font-size-base:              1rem !default; // Assumes the browser default, typically `16px`
+$font-size-base:              $base-font-size-rem; // Assumes the browser default, typically `16px`
 $font-size-lg:                $font-size-base * 1.25 !default;
 $font-size-sm:                $font-size-base * .875 !default;
 
@@ -287,22 +287,22 @@ $font-weight-bold:            700 !default;
 $font-weight-bolder:          bolder !default;
 
 $font-weight-base:            $font-weight-normal !default;
-$line-height-base:            1.5 !default;
+$line-height-base:            $baseline-modifier;
 
-$h1-font-size:                $font-size-base * 2.5 !default;
-$h2-font-size:                $font-size-base * 2 !default;
-$h3-font-size:                $font-size-base * 1.75 !default;
-$h4-font-size:                $font-size-base * 1.5 !default;
-$h5-font-size:                $font-size-base * 1.25 !default;
-$h6-font-size:                $font-size-base !default;
+$h1-font-size:                map-deep-get($value-to-unit, font-size, 5);
+$h2-font-size:                map-deep-get($value-to-unit, font-size, 4);
+$h3-font-size:                map-deep-get($value-to-unit, font-size, 3);
+$h4-font-size:                map-deep-get($value-to-unit, font-size, 2);
+$h5-font-size:                map-deep-get($value-to-unit, font-size, 1);
+$h6-font-size:                map-deep-get($value-to-unit, font-size, 0);
 
 $headings-margin-bottom:      $spacer / 2 !default;
-$headings-font-family:        null !default;
-$headings-font-weight:        500 !default;
-$headings-line-height:        1.2 !default;
+$headings-font-family:        map-deep-get($value-to-unit, font-family, display);
+$headings-font-weight:       300;
+$headings-line-height:       map-deep-get($value-to-unit, line-height, 2);
 $headings-color:              null !default;
 
-$display1-size:               6rem !default;
+$display1-size:               map-deep-get($value-to-unit, font-size, 10);
 $display2-size:               5.5rem !default;
 $display3-size:               4.5rem !default;
 $display4-size:               3.5rem !default;

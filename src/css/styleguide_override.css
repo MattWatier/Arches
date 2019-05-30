@@ -3,7 +3,11 @@ pre code.hljs {
   padding-bottom: 2.5em;
   max-height: 100%;
 }
+
 /*# sourceMappingURL=maps/styleguide_override.css.map */
 
 
-code.language-markup{display:block;overflow:scroll}
+code.language-markup {
+  display: block;
+  overflow: auto
+}

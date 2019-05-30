@@ -4,8 +4,11 @@
  * @version v1.0.0
  * @link https://github.com/MattWatier/Arches#readme
  */
+/**  Pre Header - modular scale default break points utility    *********************************/
 /** Utility Class Only With Basic ACC Branding **/
-/* ACC BRANDs*/
+/**  ACC Brands    *********************************/
+/**  Default Brands    *********************************/
+/**  Colors  **/
 /*
 
 Colors of the Design  
@@ -30,6 +33,7 @@ $acc-blue    -      #00386b;  acc
 Styleguide 0.4.0
 
  */
+/**  Fonts  **/
 /* Robto Slab Regular */
 @font-face {
   src: local("Roboto Slab Regular"), local("RobotoSlab-Regular"), url(https://fonts.gstatic.com/s/robotoslab/v7/BngMUXZYTXPIvIBgJJSb6ufN5qU.woff2) format("woff2");
@@ -85,6 +89,7 @@ html {
   line-break: white-space;
 }
 
+/**  Textures  **/
 div[class^=texture_] {
   background-attachment: local;
   background-origin: border-box;
@@ -110,6 +115,7 @@ div[class^=texture_] {
 	Styleguide 0.3
 
  */
+/**  Logos  **/
 /*
 	Logo
 
@@ -132,8 +138,8 @@ div[class^=texture_] {
      object-fit: scale-down;
 }
 
-/*UC Only Setup*/
-/*ACC Branding*/
+/**  Default Setup  Not sure what this is doing    *********************************/
+/** changing default names to be used with frameworks. **/
 h1, h2, h3, h4, h5, h6, p, td, th {
   /* Safari */
   transition: line-height 1s;
@@ -1000,6 +1006,7 @@ Styleguide 20.20
   transition-timing-function: ease;
 }
 
+/**  Utility Classes    *********************************/
 /*
 UC: Introduction
 
@@ -1241,45 +1248,40 @@ The breakdown of the names for UCs follow a structured patter for easy muscle me
 }
 
 /*
-UC: Margin & Padding
+UC: Spacing
 
-Padding and Margins are the most common usage for Utility Classes.  Spacing UC's are responsive and can be postfixed with `-medium` and with `-large` to have finer control on the spacing of objects.
+Padding, Margins, and Positions are the most common usage for Utility Classes.  Spacing UC's are responsive and can be postfixed with `:md` and with `:lg` to have finer control on the spacing of objects.
 
-Styleguide 101.0
+Styleguide Spacing
 */
 /* No styleguide reference. */
 /*
-	Margin
+Margin
 
-	  <div class="p-b_3"><span class="bg_accent br_radius c_white d_inline-block font_n1 p-7_3 p-x_5 sg">Is Responsive: breakpoint modifiers</span></div>Margin classes are mobile first with postfix modifier for '-medium'and '-large'variations for responsive sizing.
+<div class="p-b_3"><span class="bg_accent br_radius c_white d_inline-block font_n1 p-7_3 p-x_5 sg">Is Responsive: breakpoint modifiers</span></div>Margin classes are mobile first with postfix modifier for `:md`and `:lg` variations for responsive sizing. Margins that use the short codes of all margin, auto, x margins, and y margin are overriden by specific side margins.	
 
-	.m_auto.small-6              - Margin 0 auto
-	.m_0              - All margins set to 0
-	.m_1.m-t_0:large              - All margins set to 1px
-	.m_2.m-t_0:large              - All margins set to 1/4 of global margin
-	.m_3.m-t_0:large              - All margins set to 1/2 of global margin
-	.m_4.m-t_0:large              - All margins set to global margin
-	.m_5.m-t_0:large              - All margins set to 2x of global margin 
-	.m-t_4          - Top margin set to global margin
-	.m-r_4        - Right margin set to global margin
-	.m-l_4         - Left margin set to global margin
-	.m-b_4       - Bottom margin set to global margin
-	.m-t_n4          - Top margin set to  negative global margin
-	.m-r_n4        - Right margin set to  negative global margin
-	.m-l_n4         - Left margin set to negative  global margin
-	.m-b_n4       - Bottom margin set to negative  global margin
-
-
+.m_auto.max-w_2 					 - same as `Margin:0 auto`
+.m_0    					- All margins set to 0
+.m-x_4					- Margin left and right are set to global margin
+.m-y_4					- Margin top and bottom are set to global margin
+.m_1.m-t_0:lg 		   - All margins set to 1px
+.m_2.m-t_0:lg 		   - All margins set to 1/4 of global margin
+.m_3.m-t_0:lg 		   - All margins set to 1/2 of global margin
+.m_4.m-t_0:lg 		   - All margins set to global margin
+.m_5.m-t_0:lg 		   - All margins set to 2x of global margin 
+.m-t_4 				   - Top margin set to global margin
+.m-r_4 				 - Right margin set to global margin
+.m-l_4 				  - Left margin set to global margin
+.m-b_4 				- Bottom margin set to global margin
+.m-t_n4 				   - Top margin set to  negative global margin
+.m-r_n4 				 - Right margin set to  negative global margin
+.m-l_n4 				- Left margin set to negative  global margin
+.m-b_n4 				- Bottom margin set to negative  global margin
 
 	markup:
-	<div class="{{modifier_class}} p_2  bg_primary text-center c_white cell auto opacity_5">Container With Margins</div>
+	<div class="bg_warning-3 d-block br_1 br_solid"><div class="{{modifier_class}} p_2 bg_primary text-center c_white cell auto opacity_5 d-block">Container With Margins</div></div>
 
- 	sg-wrapper:
-	<div class="bg_warning-3 clearfix grid-x br_1 br_solid">
-	   <sg-wrapper-content/>
-	</div>
-
-	Styleguide 101.2
+Styleguide Spacing.Margin
 
  */
 .m_auto {
@@ -2351,9 +2353,9 @@ Styleguide 101.0
   }
 }
 /*
-	Padding CSS
+	Padding
 
-	  <div class="p-b_3"><span class="bg_accent br_radius c_white d_inline-block font_n1 p-7_3 p-x_5 sg">Is Responsive: breakpoint modifiers</span></div>Quickly alter the padding of an object
+	<div class="p-b_3"><span class="bg_accent br_radius c_white d_inline-block font_n1 p-7_3 p-x_5 sg">Is Responsive: breakpoint modifiers</span></div>Quickly alter the padding of an object.
 
 	.p_0              - All paddings set to 0
 	.p_1              - All paddings set to 1px
@@ -2361,6 +2363,8 @@ Styleguide 101.0
 	.p_3              - All paddings set to 1/2 of global padding
 	.p_4              - All paddings set to global padding
 	.p_5              - All paddings set to 2x of global padding 
+	.p-x_5              - left and right paddings set to 2x of global padding 
+	.p-y_5              - top and bottom paddings set to 2x of global padding 
 	.p-t_4          	- Top padding set to global padding
 	.p-r_4        	- Right padding set to global padding
 	.p-l_4         - Left padding set to global padding
@@ -2369,7 +2373,7 @@ Styleguide 101.0
 	markup:
 	<div class="{{modifier_class}} br_solid br_transparent bg_alert-3  text-center"><div class="bg_primary-5 text-center">Content With Padding</div></div>
 
-	Styleguide 101.3
+	Styleguide Spacing.Padding
 
  */
 .p_0 {
@@ -2983,9 +2987,9 @@ Styleguide 101.0
 
 
 	markup:
-	<div class=" br_solid br_transparent bg_alert-3 relative p_5"><div class="bg_primary-5 text-center absolute {{modifier_class}}">Position Absolute {{modifier_class}}</div></div>
+	<div class=" br_solid br_transparent bg_accent-3 relative p_5" style="height:200px;"><div class="bg_primary-5 text-center absolute {{modifier_class}}">Position Absolute {{modifier_class}}</div></div>
 
-	Styleguide 101.4
+	Styleguide Spacing.Position
 
  */
 .t_0 {
@@ -5418,47 +5422,47 @@ Styleguide Font.Color
 
  */
 .shadow_0 {
-  box-shadow: 'make-shadow(3, "drop", #000, 0.4)';
+  box-shadow: 1.5px 1.5px 6px 0.75px rgba(0, 0, 0, 0.4);
 }
 
 .shadow_1 {
-  box-shadow: 'make-shadow(1, "drop", #000, 0.1)';
+  box-shadow: 0.5px 0.5px 2px 0.25px rgba(0, 0, 0, 0.1);
 }
 
 .shadow_2 {
-  box-shadow: 'make-shadow(2, "drop", #000, 0.2)';
+  box-shadow: 1px 1px 4px 0.5px rgba(0, 0, 0, 0.2);
 }
 
 .shadow_3 {
-  box-shadow: 'make-shadow(3, "drop", #000, 0.3)';
+  box-shadow: 1.5px 1.5px 6px 0.75px rgba(0, 0, 0, 0.3);
 }
 
 .shadow_4 {
-  box-shadow: 'make-shadow(3.5, "drop", #000, 0.5)';
+  box-shadow: 1.75px 1.75px 7px 0.875px rgba(0, 0, 0, 0.5);
 }
 
 .shadow_5 {
-  box-shadow: 'make-shadow(4, "drop", #000, 0.65)';
+  box-shadow: 2px 2px 8px 1px rgba(0, 0, 0, 0.65);
 }
 
 .shadow_n1 {
-  box-shadow: 'make-shadow(1, "inset", #000, 0.1)';
+  box-shadow: inset 0.5px 0.5px 2px 0.25px rgba(0, 0, 0, 0.1);
 }
 
 .shadow_n2 {
-  box-shadow: 'make-shadow(2, "inset", #000, 0.2)';
+  box-shadow: inset 1px 1px 4px 0.5px rgba(0, 0, 0, 0.2);
 }
 
 .shadow_n3 {
-  box-shadow: 'make-shadow(3, "inset", #000, 0.3)';
+  box-shadow: inset 1.5px 1.5px 6px 0.75px rgba(0, 0, 0, 0.3);
 }
 
 .shadow_n4 {
-  box-shadow: 'make-shadow(3.5, "inset", #000, 0.5)';
+  box-shadow: inset 1.75px 1.75px 7px 0.875px rgba(0, 0, 0, 0.5);
 }
 
 .shadow_n5 {
-  box-shadow: 'make-shadow(4, "inset", #000, 0.65)';
+  box-shadow: inset 2px 2px 8px 1px rgba(0, 0, 0, 0.65);
 }
 
 /*
@@ -9129,6 +9133,7 @@ Styleguide 103.2.1
   overflow: unset;
 }
 
+/**  No Framework Recipes    *********************************/
 /*
 	recipes
 

@@ -18,11 +18,11 @@ UC: Introduction
  */
 @import "counters";
 /*
-UC: Margin & Padding
+UC: Spacing
 
-Padding and Margins are the most common usage for Utility Classes.  Spacing UC's are responsive and can be postfixed with `-medium` and with `-large` to have finer control on the spacing of objects.
+Padding, Margins, and Positions are the most common usage for Utility Classes.  Spacing UC's are responsive and can be postfixed with `:md` and with `:lg` to have finer control on the spacing of objects.
 
-Styleguide 101.0
+Styleguide Spacing
 */
 /* No styleguide reference. */
 @import "spacing";

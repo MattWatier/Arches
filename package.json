@@ -4,7 +4,7 @@
   "description": "Global style system focused on utility classes",
   "main": "index.js",
   "scripts": {
-    "base": "kss --config kss-config.json",
+    "index": "kss --config kss-config.json",
     "uc": "kss --config kss-config_uc_only.json",
     "zurb_acc": "kss --config kss-config_zurb_acc.json",
     "boot_acc": "kss --config kss-config_boot_acc.json"
@@ -70,6 +70,7 @@
     "what-input": "^5.2.1"
   },
   "dependencies": {
+    "npm": "^6.9.0",
     "postcss-discard-duplicates": "^4.0.2"
   }
 }
