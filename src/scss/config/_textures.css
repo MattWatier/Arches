@@ -1,0 +1,25 @@
+div[class^="texture_"] {
+  background-attachment: local;
+  background-repeat: repeat;
+  background-position: top right;
+  background-origin: border-box;
+}
+
+/*
+	Textures
+
+	All textures in the Arches design are a subtle variation of transparent.   Allowing for colors to bleed through from behind.  Different textures have intentions or are reserved for certain usagaes. 
+
+	.texture_light                       		- Light textures is reserved for the base of a page where it can gve a soft area for text or cards to live on top of. 
+	.texture_medium            					- medium texture are used for area that are hidden away.  Collapsable navs, areas, or sidebars ususaly use the medium texture.
+	.texture_dust            					- Dust is the most transparent texture allowing for the color of the background to show through the most.  This is used for the painted tops of cards, or score bars.
+	.texture_dark              					- This texture predominatly used on the footer. Its rich black will alway requrie reversed text and buttons to be readable.  
+	.texture_cross            					- A mostly transparent cross texture used for alternating rows of content when a little extra texture is needed.
+	.texture_disabled              				- This texture is used to paint disabled buttons and ui items giving it a greyed and X'ed out appearand. 
+
+	markup:
+	<div class="{{modifier_class}} p_5 border-c_black-8 border-width_1 border_solid text-center bg_primary-4">{{modifier_class}} with a light primary color background</div>
+
+	Styleguide DesignBase.Textures
+
+ */

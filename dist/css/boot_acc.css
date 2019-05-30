@@ -15,22 +15,18 @@ Colors of the Design
 
 Colors are based off of the ACC Scrub Colors.
 
+$teal                - #198dae; primary
+$grey-dark           - #676a72; secondary
+$green-blue  	      - #16a385; accent
+$grey-alt            - #a3988c; info
+$purple              - #7742bd; highlight
+$red                 - #dd1a1a; alert
+$orange              - #da8210; warning
+$green               - #078a2e; success
+$blue                - #2b58c0; navigation
+$acc-blue            - #00386b; acc
 
-
-$teal    -      #198dae;  primary
-$grey-dark    -      #676a72;  secondary
-$green-blue    -      #16a385;  accent
-$grey-alt    -      #a3988c;  info
-$purple    -      #7742bd;  highlight
-$red    -      #dd1a1a;  alert
-$orange    -      #da8210;  warning
-$green    -      #078a2e;  success
-$blue    -      #2b58c0;  navigation
-$acc-blue    -      #00386b;  acc
-
-
-
-Styleguide 0.4.0
+Styleguide DesignBase.Colors
 
  */
 /**  Fonts  **/
@@ -112,7 +108,7 @@ div[class^=texture_] {
 	markup:
 	<div class="{{modifier_class}} p_5 border-c_black-8 border-width_1 border_solid text-center bg_primary-4">{{modifier_class}} with a light primary color background</div>
 
-	Styleguide 0.3
+	Styleguide DesignBase.Textures
 
  */
 /**  Logos  **/
@@ -166,41 +162,42 @@ div[class^=texture_] {
   --breakpoint-md: 768px;
   --breakpoint-lg: 992px;
   --breakpoint-xl: 1200px;
-  --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  --font-family-sans-serif: '"Muli","Open Sans","system",sans-serif';
+  --font-family-monospace: 'SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace';
 }
 
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   margin-bottom: 8px;
   margin-bottom: 0.5rem;
-  font-weight: 500;
-  line-height: 1.2;
+  font-family: '"Maven Pro","Muli","Open Sans","system",sans-serif';
+  font-weight: 300;
+  line-height: 1.35;
 }
 
 h1, .h1 {
-  font-size: 40px;
-  font-size: 2.5rem;
+  font-size: 39.813px;
+  font-size: 2.48832rem;
 }
 
 h2, .h2 {
-  font-size: 32px;
-  font-size: 2rem;
+  font-size: 33.177px;
+  font-size: 2.0736rem;
 }
 
 h3, .h3 {
-  font-size: 28px;
-  font-size: 1.75rem;
+  font-size: 27.648px;
+  font-size: 1.728rem;
 }
 
 h4, .h4 {
-  font-size: 24px;
-  font-size: 1.5rem;
+  font-size: 23.04px;
+  font-size: 1.44rem;
 }
 
 h5, .h5 {
-  font-size: 20px;
-  font-size: 1.25rem;
+  font-size: 19.2px;
+  font-size: 1.2rem;
 }
 
 h6, .h6 {
@@ -215,31 +212,31 @@ h6, .h6 {
 }
 
 .display-1 {
-  font-size: 96px;
-  font-size: 6rem;
+  font-size: 99.067px;
+  font-size: 6.1917364224rem;
   font-weight: 300;
-  line-height: 1.2;
+  line-height: 1.35;
 }
 
 .display-2 {
   font-size: 88px;
   font-size: 5.5rem;
   font-weight: 300;
-  line-height: 1.2;
+  line-height: 1.35;
 }
 
 .display-3 {
   font-size: 72px;
   font-size: 4.5rem;
   font-weight: 300;
-  line-height: 1.2;
+  line-height: 1.35;
 }
 
 .display-4 {
   font-size: 56px;
   font-size: 3.5rem;
   font-weight: 300;
-  line-height: 1.2;
+  line-height: 1.35;
 }
 
 hr {
@@ -5097,7 +5094,7 @@ a.close.disabled {
   z-index: 1070;
   position: absolute;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: '"Muli","Open Sans","system",sans-serif';
   font-size: 14px;
   font-size: 0.875rem;
   font-style: normal;
@@ -5217,7 +5214,7 @@ a.close.disabled {
   border: 1px solid rgba(19, 18, 18, 0.2);
   background-clip: padding-box;
   background-color: white;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: '"Muli","Open Sans","system",sans-serif';
   font-size: 14px;
   font-size: 0.875rem;
   font-style: normal;
@@ -5241,8 +5238,7 @@ a.close.disabled {
   width: 1rem;
   height: 8px;
   height: 0.5rem;
-  margin: 0 4.8px;
-  margin: 0 0.3rem;
+  margin: 0 6px;
 }
 .popover .arrow::before, .popover .arrow::after {
   display: block;
@@ -5282,8 +5278,7 @@ a.close.disabled {
   width: 0.5rem;
   height: 16px;
   height: 1rem;
-  margin: 4.8px 0;
-  margin: 0.3rem 0;
+  margin: 6px 0;
 }
 .bs-popover-right > .arrow::before, .bs-popover-auto[x-placement^=right] > .arrow::before {
   left: 0;
@@ -5340,8 +5335,7 @@ a.close.disabled {
   width: 0.5rem;
   height: 16px;
   height: 1rem;
-  margin: 4.8px 0;
-  margin: 0.3rem 0;
+  margin: 6px 0;
 }
 .bs-popover-left > .arrow::before, .bs-popover-auto[x-placement^=left] > .arrow::before {
   right: 0;
@@ -6501,7 +6495,7 @@ Styleguide 20.20
 }
 
 .table {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: '"Muli","Open Sans","system",sans-serif';
 }
 .table td,
 .table th {
@@ -9097,7 +9091,7 @@ Styleguide Spacing.Margin
   Styleguide Font.FontFamily
  */
 .font_slab {
-  font-family: '"Roboto Slab","Times New Roman","Lucida Bright",Georgia,serif';
+  font-family: "Roboto Slab", "Times New Roman", "Lucida Bright", Georgia, serif;
 }
 
 .font_display {
@@ -9110,6 +9104,10 @@ Styleguide Spacing.Margin
 
 .font_ui {
   font-family: '"Open Sans",-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif';
+}
+
+.font_mono {
+  font-family: 'SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace';
 }
 
 /*
@@ -9137,11 +9135,11 @@ Styleguide Spacing.Margin
 }
 
 .lh_0 {
-  line-height: 0;
+  line-height: 1;
 }
 
 .lh_1 {
-  line-height: 1;
+  line-height: 1.125;
 }
 
 .lh_2 {
@@ -9153,7 +9151,7 @@ Styleguide Spacing.Margin
 }
 
 .lh_4 {
-  line-height: 1.75;
+  line-height: 1.65;
 }
 
 .lh_5 {
@@ -10200,23 +10198,23 @@ Styleguide Font.Color
 
  */
 .text-shadow_none {
-  text-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+  text-shadow: "0px 0px 0px rgba(0, 0, 0, 0)";
 }
 
 .text-shadow_white-1 {
-  text-shadow: 2px 2px 2px rgba(255, 255, 255, 0.25);
+  text-shadow: "2px 2px 2px rgba(255, 255, 255, 0.25)";
 }
 
 .text-shadow_black-1 {
-  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
+  text-shadow: "2px 2px 2px rgba(0, 0, 0, 0.25)";
 }
 
 .text-shadow_white-n1 {
-  text-shadow: -1px -1px 2px rgba(255, 255, 255, 0.5);
+  text-shadow: "-1px -1px 2px rgba(255, 255, 255, 0.5)";
 }
 
 .text-shadow_black-n1 {
-  text-shadow: -1px -1px 2px rgba(0, 0, 0, 0.5);
+  text-shadow: "-1px -1px 2px rgba(0, 0, 0, 0.5)";
 }
 
 /*
@@ -12604,7 +12602,7 @@ Styleguide 103.2.1
 }
 
 .br_radius {
-  border-radius: 5px;
+  border-radius: 6px;
 }
 
 .br_round {
@@ -12620,7 +12618,7 @@ Styleguide 103.2.1
 }
 
 .br-tr_radius {
-  border-top-right-radius: 5px;
+  border-top-right-radius: 6px;
 }
 
 .br-tr_round {
@@ -12636,7 +12634,7 @@ Styleguide 103.2.1
 }
 
 .br-tl_radius {
-  border-top-left-radius: 5px;
+  border-top-left-radius: 6px;
 }
 
 .br-tl_round {
@@ -12652,7 +12650,7 @@ Styleguide 103.2.1
 }
 
 .br-br_radius {
-  border-bottom-right-radius: 5px;
+  border-bottom-right-radius: 6px;
 }
 
 .br-br_round {
@@ -12668,7 +12666,7 @@ Styleguide 103.2.1
 }
 
 .br-bl_radius {
-  border-bottom-left-radius: 5px;
+  border-bottom-left-radius: 6px;
 }
 
 .br-bl_round {
@@ -12688,7 +12686,7 @@ Styleguide 103.2.1
 .radius,
 .radius .switch-paddle,
 .radius .switch-paddle::after {
-  border-radius: 5px;
+  border-radius: 6px;
 }
 
 .round,

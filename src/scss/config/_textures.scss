@@ -38,10 +38,7 @@ div[class^="texture_"] {
 	}
 }
 @mixin texture-medium-shaded($level: 0) {
-	background-color: scale-color(
-		map-get($theme-palette, secondary),
-		$lightness: 20% * $level
-	);
+	background-color: scale-color(map-get($theme-palette, secondary), $lightness: 20% * $level);
 	background-image: url($texture-medium);
 	.sg & {
 		background-image: url($sg-texture-mediu);
@@ -87,6 +84,6 @@ div[class^="texture_"] {
 	markup:
 	<div class="{{modifier_class}} p_5 border-c_black-8 border-width_1 border_solid text-center bg_primary-4">{{modifier_class}} with a light primary color background</div>
 
-	Styleguide 0.3
+	Styleguide DesignBase.Textures
 
  */

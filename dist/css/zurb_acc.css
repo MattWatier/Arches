@@ -15,22 +15,18 @@ Colors of the Design
 
 Colors are based off of the ACC Scrub Colors.
 
+$teal                - #198dae; primary
+$grey-dark           - #676a72; secondary
+$green-blue  	      - #16a385; accent
+$grey-alt            - #a3988c; info
+$purple              - #7742bd; highlight
+$red                 - #dd1a1a; alert
+$orange              - #da8210; warning
+$green               - #078a2e; success
+$blue                - #2b58c0; navigation
+$acc-blue            - #00386b; acc
 
-
-$teal    -      #198dae;  primary
-$grey-dark    -      #676a72;  secondary
-$green-blue    -      #16a385;  accent
-$grey-alt    -      #a3988c;  info
-$purple    -      #7742bd;  highlight
-$red    -      #dd1a1a;  alert
-$orange    -      #da8210;  warning
-$green    -      #078a2e;  success
-$blue    -      #2b58c0;  navigation
-$acc-blue    -      #00386b;  acc
-
-
-
-Styleguide 0.4.0
+Styleguide DesignBase.Colors
 
  */
 /**  Fonts  **/
@@ -112,7 +108,7 @@ div[class^=texture_] {
 	markup:
 	<div class="{{modifier_class}} p_5 border-c_black-8 border-width_1 border_solid text-center bg_primary-4">{{modifier_class}} with a light primary color background</div>
 
-	Styleguide 0.3
+	Styleguide DesignBase.Textures
 
  */
 /**  Logos  **/
@@ -8588,7 +8584,7 @@ sg-wrapper:
 
  Arches is design inspired by a pad of paper in the hand.  Subtle Textures and Layer shadows keep the readablity very high. 
 
- Styleguide 0.0
+ Styleguide DesignBase
 */
 /*
 
@@ -8596,7 +8592,7 @@ Fonts
 
 The ACC is focused on stable, conservative, clean fonts.   Roboto Slab is the standard serif fonts across all products at the ACC.  Muli is the current successor to Open Sans, and Maven is a slightly modern font to give a small level of interests which replaces Raleway, or Lato in other products.
 
- Styleguide 0.1
+ Styleguide DesignBase.Fonts
 */
 /*
 
@@ -8624,7 +8620,7 @@ Roboto Slab
 		</div>
 	</div>
 
- Styleguide 0.1.1
+ Styleguide DesignBase.Fonts.Slab
 */
 /*
 
@@ -8652,7 +8648,7 @@ Maven Pro
 		</div>
 	</div>
 
- Styleguide 0.1.2
+ Styleguide DesignBase.Fonts.Display
 */
 /*
 
@@ -8680,7 +8676,7 @@ Muli
 		</div>
 	</div>
 
- Styleguide 0.1.3
+ Styleguide DesignBase.Fonts.Copy
 */
 .font .font--example {
   background-image: url(http://basehold.it/i/24);
@@ -8753,82 +8749,9 @@ Icons: Font Icons
 	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/ellipsis-h?style=solid" class="font_5 cell small-3 text-center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-ellipsis-h" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">ellipsis-h</span> <!----></div> <!----></div></li>
 	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/ellipsis-v?style=solid" class="font_5 cell small-3 text-center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-ellipsis-v" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">ellipsis-v</span> <!----></div> <!----></div></li>
 	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/envelope?style=solid" class="font_5 cell small-3 text-center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-envelope" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">envelope</span> <!----></div> <!----></div></li>
-	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/envelope?style=regular" class="font_5 cell small-3 text-center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-envelope" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">envelope</span> <!----></div> <!----></div></li>
-	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/envelope-open?style=solid" class="font_5 cell small-3 text-center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-envelope-open" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">envelope-open</span> <!----></div> <!----></div></li>
-	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/envelope-open?style=regular" class="font_5 cell small-3 text-center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-envelope-open" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">envelope-open</span> <!----></div> <!----></div></li>
-	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/eraser?style=solid" class="font_5 cell small-3 text-center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-eraser" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">eraser</span> <!----></div> <!----></div></li>
-	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/exclamation?style=solid" class="font_5 cell small-3 text-center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-exclamation" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">exclamation</span> <!----></div> <!----></div></li>
-	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/exclamation-circle?style=solid" class="font_5 cell small-3 text-center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-exclamation-circle" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">exclamation-circle</span> <!----></div> <!----></div></li>
-	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/exclamation-triangle?style=solid" class="font_5 cell small-3 text-center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-exclamation-triangle" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">exclamation-triangle</span> <!----></div> <!----></div></li>
-	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/external-link-alt?style=solid" class="font_5 cell small-3 text-center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-external-link-alt" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">external-link-alt</span> <!----></div> <!----></div></li>
-	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/external-link-square-alt?style=solid" class="font_5 cell small-3 text-center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-external-link-square-alt" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">external-link-square-alt</span> <!----></div> <!----></div></li>
-	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/eye?style=solid" class="font_5 cell small-3 text-center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-eye" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">eye</span> <!----></div> <!----></div></li>
-	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/eye?style=regular" class="font_5 cell small-3 text-center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-eye" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">eye</span> <!----></div> <!----></div></li>
-	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/eye-slash?style=solid" class="font_5 cell small-3 text-center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-eye-slash" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">eye-slash</span> <!----></div> <!----></div></li>
-	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/eye-slash?style=regular" class="font_5 cell small-3 text-center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-eye-slash" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">eye-slash</span> <!----></div> <!----></div></li>
-	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/file?style=solid" class="font_5 cell small-3 text-center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-file" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">file</span> <!----></div> <!----></div></li>
-	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/file?style=regular" class="font_5 cell small-3 text-center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-file" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">file</span> <!----></div> <!----></div></li>
-	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/file-alt?style=solid" class="font_5 cell small-3 text-center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-file-alt" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">file-alt</span> <!----></div> <!----></div></li>
-	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/file-alt?style=regular" class="font_5 cell small-3 text-center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-file-alt" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">file-alt</span> <!----></div> <!----></div></li>
-	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/file-download?style=solid" class="font_5 cell small-3 text-center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-file-download" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">file-download</span> <!----></div> <!----></div></li>
-	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/file-export?style=solid" class="font_5 cell small-3 text-center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-file-export" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">file-export</span> <!----></div> <!----></div></li>
-	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/file-import?style=solid" class="font_5 cell small-3 text-center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-file-import" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">file-import</span> <!----></div> <!----></div></li>
-	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/file-upload?style=solid" class="font_5 cell small-3 text-center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-file-upload" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">file-upload</span> <!----></div> <!----></div></li>
-	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/filter?style=solid" class="font_5 cell small-3 text-center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-filter" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">filter</span> <!----></div> <!----></div></li>
-	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/flag?style=solid" class="font_5 cell small-3 text-center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-flag" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">flag</span> <!----></div> <!----></div></li>
-	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/flag?style=regular" class="font_5 cell small-3 text-center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-flag" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">flag</span> <!----></div> <!----></div></li>
-	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/flag-checkered?style=solid" class="font_5 cell small-3 text-center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-flag-checkered" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">flag-checkered</span> <!----></div> <!----></div></li>
-	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/folder?style=solid" class="font_5 cell small-3 text-center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-folder" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">folder</span> <!----></div> <!----></div></li>
-	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/folder?style=regular" class="font_5 cell small-3 text-center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-folder" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">folder</span> <!----></div> <!----></div></li>
-	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/folder-open?style=solid" class="font_5 cell small-3 text-center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-folder-open" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">folder-open</span> <!----></div> <!----></div></li>
-	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/folder-open?style=regular" class="font_5 cell small-3 text-center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-folder-open" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">folder-open</span> <!----></div> <!----></div></li>
-	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/grip-horizontal?style=solid" class="font_5 cell small-3 text-center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-grip-horizontal" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">grip-horizontal</span> <!----></div> <!----></div></li>
-	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/grip-vertical?style=solid" class="font_5 cell small-3 text-center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-grip-vertical" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">grip-vertical</span> <!----></div> <!----></div></li>
-	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/hashtag?style=solid" class="font_5 cell small-3 text-center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-hashtag" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">hashtag</span> <!----></div> <!----></div></li>
-	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/heart?style=solid" class="font_5 cell small-3 text-center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-heart" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">heart</span> <!----></div> <!----></div></li>
-	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/heart?style=regular" class="font_5 cell small-3 text-center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-heart" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">heart</span> <!----></div> <!----></div></li>
-	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/history?style=solid" class="font_5 cell small-3 text-center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-history" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">history</span> <!----></div> <!----></div></li>
-	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/home?style=solid" class="font_5 cell small-3 text-center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-home" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">home</span> <!----></div> <!----></div></li>
-	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/i-cursor?style=solid" class="font_5 cell small-3 text-center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-i-cursor" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">i-cursor</span> <!----></div> <!----></div></li>
-	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/info?style=solid" class="font_5 cell small-3 text-center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-info" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">info</span> <!----></div> <!----></div></li>
-	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/info-circle?style=solid" class="font_5 cell small-3 text-center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-info-circle" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">info-circle</span> <!----></div> <!----></div></li>
-	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/language?style=solid" class="font_5 cell small-3 text-center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-language" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">language</span> <!----></div> <!----></div></li>
-	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/magic?style=solid" class="font_5 cell small-3 text-center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-magic" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">magic</span> <!----></div> <!----></div></li>
-	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/medal?style=solid" class="font_5 cell small-3 text-center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-medal" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">medal</span> <!----></div> <!----></div></li>
-	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/minus?style=solid" class="font_5 cell small-3 text-center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-minus" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">minus</span> <!----></div> <!----></div></li>
-	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/minus-circle?style=solid" class="font_5 cell small-3 text-center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-minus-circle" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">minus-circle</span> <!----></div> <!----></div></li>
-	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/minus-square?style=solid" class="font_5 cell small-3 text-center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-minus-square" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">minus-square</span> <!----></div> <!----></div></li>
-	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/minus-square?style=regular" class="font_5 cell small-3 text-center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-minus-square" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">minus-square</span> <!----></div> <!----></div></li>
-	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/paste?style=solid" class="font_5 cell small-3 text-center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-paste" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">paste</span> <!----></div> <!----></div></li>
-	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/pen?style=solid" class="font_5 cell small-3 text-center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-pen" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">pen</span> <!----></div> <!----></div></li>
-	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/pen-alt?style=solid" class="font_5 cell small-3 text-center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-pen-alt" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">pen-alt</span> <!----></div> <!----></div></li>
-	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/pen-fancy?style=solid" class="font_5 cell small-3 text-center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-pen-fancy" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">pen-fancy</span> <!----></div> <!----></div></li>
-	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/pencil-alt?style=solid" class="font_5 cell small-3 text-center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-pencil-alt" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">pencil-alt</span> <!----></div> <!----></div></li>
-	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/plus?style=solid" class="font_5 cell small-3 text-center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-plus" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">plus</span> <!----></div> <!----></div></li>
-	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/plus-circle?style=solid" class="font_5 cell small-3 text-center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-plus-circle" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">plus-circle</span> <!----></div> <!----></div></li>
-	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/plus-square?style=solid" class="font_5 cell small-3 text-center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-plus-square" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">plus-square</span> <!----></div> <!----></div></li>
-	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/qrcode?style=solid" class="font_5 cell small-3 text-center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-qrcode" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">qrcode</span> <!----></div> <!----></div></li>
-	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/question?style=solid" class="font_5 cell small-3 text-center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-question" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">question</span> <!----></div> <!----></div></li>
-	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/question-circle?style=solid" class="font_5 cell small-3 text-center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-question-circle" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">question-circle</span> <!----></div> <!----></div></li>
-	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/question-circle?style=regular" class="font_5 cell small-3 text-center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-question-circle" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">question-circle</span> <!----></div> <!----></div></li>
-	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/quote-left?style=solid" class="font_5 cell small-3 text-center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-quote-left" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">quote-left</span> <!----></div> <!----></div></li>
-	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/quote-right?style=solid" class="font_5 cell small-3 text-center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-quote-right" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">quote-right</span> <!----></div> <!----></div></li>
-	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/redo?style=solid" class="font_5 cell small-3 text-center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-redo" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">redo</span> <!----></div> <!----></div></li>
-	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/redo-alt?style=solid" class="font_5 cell small-3 text-center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-redo-alt" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">redo-alt</span> <!----></div> <!----></div></li>
-	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/reply?style=solid" class="font_5 cell small-3 text-center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-reply" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">reply</span> <!----></div> <!----></div></li>
-	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/reply-all?style=solid" class="font_5 cell small-3 text-center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-reply-all" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">reply-all</span> <!----></div> <!----></div></li>
-	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/rss?style=solid" class="font_5 cell small-3 text-center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-rss" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">rss</span> <!----></div> <!----></div></li>
-	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/rss-square?style=solid" class="font_5 cell small-3 text-center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-rss-square" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">rss-square</span> <!----></div> <!----></div></li>
-	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/save?style=regular" class="font_5 cell small-3 text-center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-save" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">save</span> <!----></div> <!----></div></li>
-	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/search?style=solid" class="font_5 cell small-3 text-center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-search" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">search</span> <!----></div> <!----></div></li>
-	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/search-minus?style=solid" class="font_5 cell small-3 text-center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-search-minus" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">search-minus</span> <!----></div> <!----></div></li>
-	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/search-plus?style=solid" class="font_5 cell small-3 text-center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-search-plus" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">search-plus</span> <!----></div> <!----></div></li>
-	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/share?style=solid" class="font_5 cell small-3 text-center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-share" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">share</span> <!----></div> <!----></div></li>
-	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/share-alt?style=solid" class="font_5 cell small-3 text-center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-share-alt" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">share-alt</span> <!----></div> <!----></div></li>
-	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/share-alt-square?style=solid" class="font_5 cell small-3 text-center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-share-alt-square" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">share-alt-square</span> <!----></div> <!----></div></li>
-	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/share-square?style=solid" class="font_5 cell small-3 text-center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-share-square" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">share-square</span> <!----></div> <!----></div></li></ul>
+</ul>
 
-	Styleguide 0.2.0
+	Styleguide DesignBase.Icons.FontAwesome
 */
 /*
 
@@ -8847,7 +8770,7 @@ Icons: Solid
 	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/bell?style=regular" class="font_5 cell small-3 text-center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-bell" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">bell</span> <!----></div> <!----></div></li>
 	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/bell-slash?style=solid" class="font_5 cell small-3 text-center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-bell-slash" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">bell-slash</span> <!----></div> <!----></div></li></ul>
 
-	Styleguide 0.2.1
+	Styleguide DesignBase.Icons.Solid
 */
 /*
 
@@ -8866,7 +8789,7 @@ Icons: Light
 	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/bell?style=regular" class="font_5 cell small-3 text-center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="far fa-bell" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">bell</span> <!----></div> <!----></div></li>
 	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/bell-slash?style=solid" class="font_5 cell small-3 text-center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fal fa-bell-slash" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">bell-slash</span> <!----></div> <!----></div></li></ul>
 
-	Styleguide 0.2.2
+	Styleguide DesignBase.Icons.Light
 */
 /*
 
@@ -9007,7 +8930,7 @@ Icons: Regular
 	</ul>
 
 
-	Styleguide 0.2.3
+	Styleguide DesignBase.Icons.Regular
 */
 /*
 
@@ -11715,7 +11638,7 @@ Styleguide Spacing.Margin
   Styleguide Font.FontFamily
  */
 .font_slab {
-  font-family: '"Roboto Slab","Times New Roman","Lucida Bright",Georgia,serif';
+  font-family: "Roboto Slab", "Times New Roman", "Lucida Bright", Georgia, serif;
 }
 
 .font_display {
@@ -11728,6 +11651,10 @@ Styleguide Spacing.Margin
 
 .font_ui {
   font-family: '"Open Sans",-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif';
+}
+
+.font_mono {
+  font-family: 'SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace';
 }
 
 /*
@@ -11755,11 +11682,11 @@ Styleguide Spacing.Margin
 }
 
 .lh_0 {
-  line-height: 0;
+  line-height: 1;
 }
 
 .lh_1 {
-  line-height: 1;
+  line-height: 1.125;
 }
 
 .lh_2 {
@@ -11771,7 +11698,7 @@ Styleguide Spacing.Margin
 }
 
 .lh_4 {
-  line-height: 1.75;
+  line-height: 1.65;
 }
 
 .lh_5 {
@@ -12818,23 +12745,23 @@ Styleguide Font.Color
 
  */
 .text-shadow_none {
-  text-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+  text-shadow: "0px 0px 0px rgba(0, 0, 0, 0)";
 }
 
 .text-shadow_white-1 {
-  text-shadow: 2px 2px 2px rgba(255, 255, 255, 0.25);
+  text-shadow: "2px 2px 2px rgba(255, 255, 255, 0.25)";
 }
 
 .text-shadow_black-1 {
-  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
+  text-shadow: "2px 2px 2px rgba(0, 0, 0, 0.25)";
 }
 
 .text-shadow_white-n1 {
-  text-shadow: -1px -1px 2px rgba(255, 255, 255, 0.5);
+  text-shadow: "-1px -1px 2px rgba(255, 255, 255, 0.5)";
 }
 
 .text-shadow_black-n1 {
-  text-shadow: -1px -1px 2px rgba(0, 0, 0, 0.5);
+  text-shadow: "-1px -1px 2px rgba(0, 0, 0, 0.5)";
 }
 
 /*
@@ -15224,7 +15151,7 @@ Styleguide 103.2.1
 }
 
 .br_radius {
-  border-radius: 5px;
+  border-radius: 6px;
 }
 
 .br_round {
@@ -15240,7 +15167,7 @@ Styleguide 103.2.1
 }
 
 .br-tr_radius {
-  border-top-right-radius: 5px;
+  border-top-right-radius: 6px;
 }
 
 .br-tr_round {
@@ -15256,7 +15183,7 @@ Styleguide 103.2.1
 }
 
 .br-tl_radius {
-  border-top-left-radius: 5px;
+  border-top-left-radius: 6px;
 }
 
 .br-tl_round {
@@ -15272,7 +15199,7 @@ Styleguide 103.2.1
 }
 
 .br-br_radius {
-  border-bottom-right-radius: 5px;
+  border-bottom-right-radius: 6px;
 }
 
 .br-br_round {
@@ -15288,7 +15215,7 @@ Styleguide 103.2.1
 }
 
 .br-bl_radius {
-  border-bottom-left-radius: 5px;
+  border-bottom-left-radius: 6px;
 }
 
 .br-bl_round {
@@ -15308,7 +15235,7 @@ Styleguide 103.2.1
 .radius,
 .radius .switch-paddle,
 .radius .switch-paddle::after {
-  border-radius: 5px;
+  border-radius: 6px;
 }
 
 .round,

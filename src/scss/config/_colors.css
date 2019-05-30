@@ -1,24 +1,20 @@
 /*
- 
+
 Colors of the Design  
 
 Colors are based off of the ACC Scrub Colors.
-  
 
+$teal                - #198dae; primary
+$grey-dark           - #676a72; secondary
+$green-blue  	      - #16a385; accent
+$grey-alt            - #a3988c; info
+$purple              - #7742bd; highlight
+$red                 - #dd1a1a; alert
+$orange              - #da8210; warning
+$green               - #078a2e; success
+$blue                - #2b58c0; navigation
+$acc-blue            - #00386b; acc
 
-$teal    -      #198dae;  primary
-$grey-dark    -      #676a72;  secondary
-$green-blue    -      #16a385;  accent
-$grey-alt    -      #a3988c;  info
-$purple    -      #7742bd;  highlight
-$red    -      #dd1a1a;  alert
-$orange    -      #da8210;  warning
-$green    -      #078a2e;  success
-$blue    -      #2b58c0;  navigation
-$acc-blue    -      #00386b;  acc
+Styleguide DesignBase.Colors
 
-
-
-Styleguide 0.4.0
- 
  */

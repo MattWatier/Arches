@@ -15,22 +15,18 @@ Colors of the Design
 
 Colors are based off of the ACC Scrub Colors.
 
+$teal                - #198dae; primary
+$grey-dark           - #676a72; secondary
+$green-blue  	      - #16a385; accent
+$grey-alt            - #a3988c; info
+$purple              - #7742bd; highlight
+$red                 - #dd1a1a; alert
+$orange              - #da8210; warning
+$green               - #078a2e; success
+$blue                - #2b58c0; navigation
+$acc-blue            - #00386b; acc
 
-
-$teal    -      #198dae;  primary
-$grey-dark    -      #676a72;  secondary
-$green-blue    -      #16a385;  accent
-$grey-alt    -      #a3988c;  info
-$purple    -      #7742bd;  highlight
-$red    -      #dd1a1a;  alert
-$orange    -      #da8210;  warning
-$green    -      #078a2e;  success
-$blue    -      #2b58c0;  navigation
-$acc-blue    -      #00386b;  acc
-
-
-
-Styleguide 0.4.0
+Styleguide DesignBase.Colors
 
  */
 /**  Fonts  **/
@@ -112,7 +108,7 @@ div[class^=texture_] {
 	markup:
 	<div class="{{modifier_class}} p_5 border-c_black-8 border-width_1 border_solid text-center bg_primary-4">{{modifier_class}} with a light primary color background</div>
 
-	Styleguide 0.3
+	Styleguide DesignBase.Textures
 
  */
 /**  Logos  **/
@@ -3589,7 +3585,7 @@ Styleguide Spacing.Margin
   Styleguide Font.FontFamily
  */
 .font_slab {
-  font-family: '"Roboto Slab","Times New Roman","Lucida Bright",Georgia,serif';
+  font-family: "Roboto Slab", "Times New Roman", "Lucida Bright", Georgia, serif;
 }
 
 .font_display {
@@ -3602,6 +3598,10 @@ Styleguide Spacing.Margin
 
 .font_ui {
   font-family: '"Open Sans",-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif';
+}
+
+.font_mono {
+  font-family: 'SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace';
 }
 
 /*
@@ -3629,11 +3629,11 @@ Styleguide Spacing.Margin
 }
 
 .lh_0 {
-  line-height: 0;
+  line-height: 1;
 }
 
 .lh_1 {
-  line-height: 1;
+  line-height: 1.125;
 }
 
 .lh_2 {
@@ -3645,7 +3645,7 @@ Styleguide Spacing.Margin
 }
 
 .lh_4 {
-  line-height: 1.75;
+  line-height: 1.65;
 }
 
 .lh_5 {
@@ -4692,23 +4692,23 @@ Styleguide Font.Color
 
  */
 .text-shadow_none {
-  text-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+  text-shadow: "0px 0px 0px rgba(0, 0, 0, 0)";
 }
 
 .text-shadow_white-1 {
-  text-shadow: 2px 2px 2px rgba(255, 255, 255, 0.25);
+  text-shadow: "2px 2px 2px rgba(255, 255, 255, 0.25)";
 }
 
 .text-shadow_black-1 {
-  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
+  text-shadow: "2px 2px 2px rgba(0, 0, 0, 0.25)";
 }
 
 .text-shadow_white-n1 {
-  text-shadow: -1px -1px 2px rgba(255, 255, 255, 0.5);
+  text-shadow: "-1px -1px 2px rgba(255, 255, 255, 0.5)";
 }
 
 .text-shadow_black-n1 {
-  text-shadow: -1px -1px 2px rgba(0, 0, 0, 0.5);
+  text-shadow: "-1px -1px 2px rgba(0, 0, 0, 0.5)";
 }
 
 /*
@@ -7096,7 +7096,7 @@ Styleguide 103.2.1
 }
 
 .br_radius {
-  border-radius: 5px;
+  border-radius: 6px;
 }
 
 .br_round {
@@ -7112,7 +7112,7 @@ Styleguide 103.2.1
 }
 
 .br-tr_radius {
-  border-top-right-radius: 5px;
+  border-top-right-radius: 6px;
 }
 
 .br-tr_round {
@@ -7128,7 +7128,7 @@ Styleguide 103.2.1
 }
 
 .br-tl_radius {
-  border-top-left-radius: 5px;
+  border-top-left-radius: 6px;
 }
 
 .br-tl_round {
@@ -7144,7 +7144,7 @@ Styleguide 103.2.1
 }
 
 .br-br_radius {
-  border-bottom-right-radius: 5px;
+  border-bottom-right-radius: 6px;
 }
 
 .br-br_round {
@@ -7160,7 +7160,7 @@ Styleguide 103.2.1
 }
 
 .br-bl_radius {
-  border-bottom-left-radius: 5px;
+  border-bottom-left-radius: 6px;
 }
 
 .br-bl_round {
@@ -7180,7 +7180,7 @@ Styleguide 103.2.1
 .radius,
 .radius .switch-paddle,
 .radius .switch-paddle::after {
-  border-radius: 5px;
+  border-radius: 6px;
 }
 
 .round,
