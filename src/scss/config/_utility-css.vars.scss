@@ -9,6 +9,7 @@ $baseline-modifier: 1.5;
 
 $ms-base: 1em;
 $base-font-size: $ms-base;
+$base-font-size-rem:1rem;
 $baseline: ($baseline-modifier * $base-font-size) / $base-font-size * 1rem; // Unitless item * PIXEL Size / Font PIXEL Converted to REM
 // $line-height:strip-unit($baseline-modifier);
 $ms-ratio: $minor-third;

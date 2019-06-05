@@ -5,7 +5,7 @@
 	"source": "./dist/css/",
 	"destination": "docs/boot_acc/",
 	"//": "relative to source.",
-	"homepage": "../../README.md",
+	"homepage": "../../Boot_ACC.md",
 
 	"//": "relative to the generated style guide.",
 	"css": [

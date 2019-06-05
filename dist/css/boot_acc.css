@@ -166,7 +166,7 @@ div[class^=texture_] {
   --breakpoint-md: 768px;
   --breakpoint-lg: 992px;
   --breakpoint-xl: 1200px;
-  --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-family-sans-serif: '"Muli","Open Sans","system",sans-serif';
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
@@ -174,33 +174,34 @@ h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   margin-bottom: 8px;
   margin-bottom: 0.5rem;
-  font-weight: 500;
-  line-height: 1.2;
+  font-family: '"Maven Pro","Muli","Open Sans","system",sans-serif';
+  font-weight: 300;
+  line-height: 1.35;
 }
 
 h1, .h1 {
-  font-size: 40px;
-  font-size: 2.5rem;
+  font-size: 39.813px;
+  font-size: 2.48832rem;
 }
 
 h2, .h2 {
-  font-size: 32px;
-  font-size: 2rem;
+  font-size: 33.177px;
+  font-size: 2.0736rem;
 }
 
 h3, .h3 {
-  font-size: 28px;
-  font-size: 1.75rem;
+  font-size: 27.648px;
+  font-size: 1.728rem;
 }
 
 h4, .h4 {
-  font-size: 24px;
-  font-size: 1.5rem;
+  font-size: 23.04px;
+  font-size: 1.44rem;
 }
 
 h5, .h5 {
-  font-size: 20px;
-  font-size: 1.25rem;
+  font-size: 19.2px;
+  font-size: 1.2rem;
 }
 
 h6, .h6 {
@@ -215,31 +216,31 @@ h6, .h6 {
 }
 
 .display-1 {
-  font-size: 96px;
-  font-size: 6rem;
+  font-size: 99.067px;
+  font-size: 6.1917364224rem;
   font-weight: 300;
-  line-height: 1.2;
+  line-height: 1.35;
 }
 
 .display-2 {
   font-size: 88px;
   font-size: 5.5rem;
   font-weight: 300;
-  line-height: 1.2;
+  line-height: 1.35;
 }
 
 .display-3 {
   font-size: 72px;
   font-size: 4.5rem;
   font-weight: 300;
-  line-height: 1.2;
+  line-height: 1.35;
 }
 
 .display-4 {
   font-size: 56px;
   font-size: 3.5rem;
   font-weight: 300;
-  line-height: 1.2;
+  line-height: 1.35;
 }
 
 hr {
@@ -5097,7 +5098,7 @@ a.close.disabled {
   z-index: 1070;
   position: absolute;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: '"Muli","Open Sans","system",sans-serif';
   font-size: 14px;
   font-size: 0.875rem;
   font-style: normal;
@@ -5217,7 +5218,7 @@ a.close.disabled {
   border: 1px solid rgba(19, 18, 18, 0.2);
   background-clip: padding-box;
   background-color: white;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: '"Muli","Open Sans","system",sans-serif';
   font-size: 14px;
   font-size: 0.875rem;
   font-style: normal;
@@ -5241,8 +5242,7 @@ a.close.disabled {
   width: 1rem;
   height: 8px;
   height: 0.5rem;
-  margin: 0 4.8px;
-  margin: 0 0.3rem;
+  margin: 0 5px;
 }
 .popover .arrow::before, .popover .arrow::after {
   display: block;
@@ -5282,8 +5282,7 @@ a.close.disabled {
   width: 0.5rem;
   height: 16px;
   height: 1rem;
-  margin: 4.8px 0;
-  margin: 0.3rem 0;
+  margin: 5px 0;
 }
 .bs-popover-right > .arrow::before, .bs-popover-auto[x-placement^=right] > .arrow::before {
   left: 0;
@@ -5340,8 +5339,7 @@ a.close.disabled {
   width: 0.5rem;
   height: 16px;
   height: 1rem;
-  margin: 4.8px 0;
-  margin: 0.3rem 0;
+  margin: 5px 0;
 }
 .bs-popover-left > .arrow::before, .bs-popover-auto[x-placement^=left] > .arrow::before {
   right: 0;
@@ -6501,7 +6499,7 @@ Styleguide 20.20
 }
 
 .table {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: '"Muli","Open Sans","system",sans-serif';
 }
 .table td,
 .table th {

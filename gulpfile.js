@@ -174,11 +174,11 @@ gulp.task('watch', function () {
    return gulp.watch(PATHS.ALLSCSS, gulp.series('build'));
 });
 
-gulp.task("styleguide", gulp.parallel(
+gulp.task("styleguide", gulp.series(
    run('npm run index'),
    run('npm run uc'),
    run('npm run zurb_acc'),
    run('npm run boot_acc')));
 
-gulp.task("build", gulp.series("construct", "style", 'styleguide'));
+gulp.task("build", gulp.series("construct", "style" ));
 gulp.task("default", gulp.series("build", "watch"));
