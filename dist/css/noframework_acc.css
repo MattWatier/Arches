@@ -11,7 +11,15 @@
 /**  Colors  **/
 /*
 
-Colors of the Design  
+ACC's Blue
+
+$acc-blue            - #00386b; acc
+
+Styleguide DesignBase.Colors.ACC
+*/
+/*
+
+Theme Colors 
 
 Colors are based off of the ACC Scrub Colors.
 
@@ -20,13 +28,49 @@ $grey-dark           - #676a72; secondary
 $green-blue  	      - #16a385; accent
 $grey-alt            - #a3988c; info
 $purple              - #7742bd; highlight
+
+Styleguide DesignBase.Colors
+ */
+/*
+
+Action Colors  
+
+Colors are based off of the ACC Scrub Colors.
+
 $red                 - #dd1a1a; alert
 $orange              - #da8210; warning
 $green               - #078a2e; success
 $blue                - #2b58c0; navigation
-$acc-blue            - #00386b; acc
 
-Styleguide DesignBase.Colors
+Styleguide DesignBase.Colors.Alternate
+
+ */
+/*
+
+COR Colors  
+
+(COR) Class of Recomendation is a color collect used in Guideline recomendations.
+
+$cor-green                 - #6fc284; I
+$cor-yellow              - #6fc284; II
+$cor-orange               - #6fc284; III-NoHarm
+$cor-red                - #6fc284; III-harm
+
+Styleguide DesignBase.Colors.Alternate.COR
+
+ */
+/*
+
+LOE Colors  
+
+(LOE) level of Evedence is a color collect used in Guideline recomendations.
+
+$loe-dark-blue                 - #3e6fb7; A
+$loe-mid-blue              - #659cd3; B
+$loe-light-blue                - #a1c1e6;B
+$loe-pale-blue                - #b5d5e5; C
+
+Styleguide DesignBase.Colors.Alternate.LOE
 
  */
 /**  Fonts  **/

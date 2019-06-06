@@ -1,12 +1,12 @@
 $teal: #198dae !default;
-$green-blue: #16a385 !default;
+$green-blue: #24ccae !default;
 $dark-grey: #676a72 !default;
 $alt-grey: #a3988c !default;
 $green: #078a2e !default;
 $orange: #da8210 !default;
 $red: #dd1a1a !default;
 $blue: #2b58c0 !default;
-$purple: #7742bd !default;
+$purple: #976ad2 !default;
 $magenta: #c34198 !default;
 $acc-blue: #004176 !default;
 $white: rgb(255, 255, 255) !default;
@@ -37,9 +37,54 @@ $theme-palette: map-merge(
 %hover-text-black {
 	color: $black !important;
 }
+
+// Other Color Collections from the college
+$cor-green: rgb(111, 194, 132);
+$cor-yellow: rgb(111, 194, 132);
+$cor-orange: rgb(111, 194, 132);
+$cor-red: rgb(111, 194, 132);
+
+$loe-dark-blue: rgb(62, 111, 183);
+$loe-mid-blue: rgb(101, 156, 211);
+$loe-light-blue: rgb(161, 193, 230);
+$loe-pale-blue: rgb(181, 213, 229);
+
+$COR: () !default;
+
+$COR: map-merge(
+	(
+		I: $cor-green,
+		II: $cor-yellow,
+		III: $cor-orange,
+		III-NOBENIFIT: $cor-orange,
+		III-HARM: $cor-red
+	),
+	$COR
+);
+$LOE: () !default;
+$LOE: map-merge(
+	(
+		A: $loe-dark-blue,
+		B-NR: $loe-mid-blue,
+		B-BR: $loe-light-blue,
+		C-LD: $loe-pale-blue,
+		C-EO: $loe-pale-blue
+	),
+	$LOE
+);
+
 /*
 
-Colors of the Design  
+ACC's Blue
+
+$acc-blue            - #00386b; acc
+
+Styleguide DesignBase.Colors.ACC
+*/
+
+/*
+
+Theme Colors 
 
 Colors are based off of the ACC Scrub Colors.
 
@@ -48,12 +93,49 @@ $grey-dark           - #676a72; secondary
 $green-blue  	      - #16a385; accent
 $grey-alt            - #a3988c; info
 $purple              - #7742bd; highlight
+
+Styleguide DesignBase.Colors
+ */
+
+/*
+
+Action Colors  
+
+Colors are based off of the ACC Scrub Colors.
+
 $red                 - #dd1a1a; alert
 $orange              - #da8210; warning
 $green               - #078a2e; success
 $blue                - #2b58c0; navigation
-$acc-blue            - #00386b; acc
 
-Styleguide DesignBase.Colors
+Styleguide DesignBase.Colors.Alternate
+
+ */
+/*
+
+COR Colors  
+
+(COR) Class of Recomendation is a color collect used in Guideline recomendations.
+
+$cor-green                 - #{$cor-green}; I
+$cor-yellow              - #{$cor-yellow}; II
+$cor-orange               - #{$cor-orange}; III-NoHarm
+$cor-red                - #{$cor-red}; III-harm
+
+Styleguide DesignBase.Colors.Alternate.COR
+
+ */
+/*
+
+LOE Colors  
+
+(LOE) level of Evedence is a color collect used in Guideline recomendations.
+
+$loe-dark-blue                 - #{$loe-dark-blue}; A
+$loe-mid-blue              - #{$loe-mid-blue }; B
+$loe-light-blue                - #{$loe-light-blue };B
+$loe-pale-blue                - #{$loe-pale-blue }; C
+
+Styleguide DesignBase.Colors.Alternate.LOE
 
  */
