@@ -207,7 +207,11 @@ div[class^=texture_] {
   --breakpoint-lg: 992px;
   --breakpoint-xl: 1200px;
   --font-family-sans-serif: '"Muli","Open Sans","system",sans-serif';
+<<<<<<< HEAD
   --font-family-monospace: 'SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace';
+=======
+  --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+>>>>>>> master
 }
 
 h1, h2, h3, h4, h5, h6,
@@ -5282,7 +5286,11 @@ a.close.disabled {
   width: 1rem;
   height: 8px;
   height: 0.5rem;
+<<<<<<< HEAD
   margin: 0 6px;
+=======
+  margin: 0 5px;
+>>>>>>> master
 }
 .popover .arrow::before, .popover .arrow::after {
   display: block;
@@ -5322,7 +5330,11 @@ a.close.disabled {
   width: 0.5rem;
   height: 16px;
   height: 1rem;
+<<<<<<< HEAD
   margin: 6px 0;
+=======
+  margin: 5px 0;
+>>>>>>> master
 }
 .bs-popover-right > .arrow::before, .bs-popover-auto[x-placement^=right] > .arrow::before {
   left: 0;
@@ -5379,7 +5391,11 @@ a.close.disabled {
   width: 0.5rem;
   height: 16px;
   height: 1rem;
+<<<<<<< HEAD
   margin: 6px 0;
+=======
+  margin: 5px 0;
+>>>>>>> master
 }
 .bs-popover-left > .arrow::before, .bs-popover-auto[x-placement^=left] > .arrow::before {
   right: 0;
