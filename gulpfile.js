@@ -180,5 +180,5 @@ gulp.task("styleguide", gulp.series(
    run('npm run zurb_acc'),
    run('npm run boot_acc')));
 
-gulp.task("build", gulp.series("construct", "style" ));
+gulp.task("build", gulp.series("construct", "style", 'styleguide'));
 gulp.task("default", gulp.series("build", "watch"));
