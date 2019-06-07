@@ -86,6 +86,32 @@ gulp.task('style', function () {
       .pipe(gulp.dest(SOURCE.DIST + SOURCE.CSS));
 });
 
+gulp.task('fontawesome', function () {
+   console.log('Gulp Font Awesome Tasks');
+   console.log('Gulp: Going to the store node_modules to pick up some fonts.');
+   return gulp.src([
+      "css/*",
+      "webfonts/*"
+   ],{cwd:"./node_modules/@fortawesome/fontawesome-pro/",cwdbase:true}).pipe( gulp.dest(SOURCE.DIST + "/icons"));
+});
+
+gulp.task("dist",function(){
+   console.log("Gulp Dist Package");
+   console.log(
+		"Gulp: Gosh my back is tired. Moving boxes from Assets to the styleguide"
+   );
+   return gulp.src([
+      PATHS.ALLFONTS,
+      PATHS.ALLICONS,
+      PATHS.ALLJS,
+      PATHS.ALLIMAGES
+   ]
+      ,{
+         base:""
+      }
+   )
+   .pipe(gulp.dest(SOURCE.DIST));
+})
 gulp.task("construct", function () {
    var base = gulp.src(PATHS.SCSS + '/gulp_header/__utilityclasses.scss').pipe(rename("uc_base.scss"));
 
@@ -175,10 +201,8 @@ gulp.task('watch', function () {
 });
 
 gulp.task("styleguide", gulp.series(
-   run('npm run index'),
-   run('npm run uc'),
-   run('npm run zurb_acc'),
-   run('npm run boot_acc')));
+   run('npm run index && npm run uc && npm run zurb_acc &&  npm run boot_acc'),
+   ));
 
-gulp.task("build", gulp.series("construct", "style", 'styleguide'));
+gulp.task("build", gulp.series("construct", "style","dist"));
 gulp.task("default", gulp.series("build", "watch"));

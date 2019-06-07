@@ -5,15 +5,15 @@
   "source": "./dist/css/",
   "destination": "docs/zurb_acc/",
   "//": "relative to source.",
-  "homepage": "../../README.md",
+  "homepage": "../../Zurb_ACC.md",
 
   "//": "relative to the generated style guide.",
   "css": ["../../dist/css/zurb_acc.css",
-    "../../src/css/vendor/fontawesome/fontawesome.css",
-    "../../src/css/vendor/fontawesome/solid.css",
-    "../../src/css/vendor/fontawesome/regular.css",
-    "../../src/css/vendor/fontawesome/brands.css",
-    "../../src/css/vendor/fontawesome/light.css",
+    "../../dist/icons/css/fontawesome.css",
+    "../../dist/icons/css/solid.css",
+    "../../dist/icons/css/regular.css",
+    "../../dist/icons/css/brands.css",
+    "../../dist/icons/css/light.css",
     "../../src/css/styleguide_override.css"
   ],
   "js": []
