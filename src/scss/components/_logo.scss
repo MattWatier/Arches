@@ -58,12 +58,12 @@ Seals
 Seals in the design come in 3 variations the default, small, and tiny.  All Seals will maintain their aspect ratios and will respond to the container, but seals have a max width.  For 508 compliance, please place the brand name in the seal.
 
 .seal_normal	            - Full size seal great for desktop displays best used for when the seal can be taller then 100px.
-.seal_small	            - Condensed size seal great for Tablet displays best used for when the seal is between 100px to 60px.
-.seal_tiny	            - Smallest of the seals best used for icons when seal is 60px and bellow
+.seal_small	            - Condensed size seal great for Tablet displays best used for when the seal is between 100px to 40px.
+.seal_tiny	            - Smallest of the seals best used for icons when seal is 40px and bellow
 
 
 markup:
-   <div class="bg_secondary-2 max-w_1"><div class="{{modifier_class}}"><span class="alt">{{modifier_class}}</span></div></div>
+   <div class="bg_secondary-2 max-w_1"><div class="{{modifier_class}} m_auto"><span class="alt">{{modifier_class}}</span></div></div>
 
 Styleguide DesignBase.Seals
 
@@ -90,7 +90,7 @@ Styleguide DesignBase.Seals
 }
 .seal_tiny {
 	background-image: url(map-deep-get($seal, tiny, url));
-	max-width: 60px;
+	max-width: 40px;
 	&:before {
 		padding-top: map-deep-get($seal, tiny, aspectratio) * 100%;
 	}
