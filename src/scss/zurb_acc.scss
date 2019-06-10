@@ -141,9 +141,10 @@ $basicSizeMultiplier: 1rem;
 @import "base/base";
 
 @import "components/icon-toggle";
-@import "components/scrollbar";
-@import "components/loading-grid";
 @import "components/interactive-extras";
+@import "components/loading-grid";
+@import "components/logo";
+@import "components/scrollbar";
 @import "components/zurb.buttons";
 @import "components/zurb.close-button.override";
 @import "components/zurb.tabs.override";

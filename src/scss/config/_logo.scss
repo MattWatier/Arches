@@ -1,20 +1,63 @@
-/*
-	Logo
-
-	American College of Cardiology Logo
-
-	markup:
-    <img class="logo" src="src/img/acc-logo-mobile.svg" alt="Home">
-
-	sg-wrapper:
- 	<div class="texture_dark p_4">
- 	<sg-wrapper-content/>
- 	</div>
-
-	Styleguide 0.5
-
-*/
-.footer .logo {
-	object-fit: scale-down;
-	height: 60px;
+$logo: (
+	primary: (
+		url: "../img/ACC_primaryLogo.svg",
+		alt: "Logo of the American College Of Cardiology",
+		aspectratio: 1/3
+	),
+	primary_alt: (
+		url: "../img/ACC_primaryLogo-alt.svg",
+		alt: "Logo of the American College Of Cardiology",
+		aspectratio: 1/3
+	),
+	condensed: (
+		url: "../img/ACC_mobileLogo.svg",
+		alt: "Logo of the American College Of Cardiology",
+		aspectratio: 1/3
+	),
+	condensed_alt: (
+		url: "../img/ACC_mobileLogo-alt.svg",
+		alt: "Logo of the American College Of Cardiology",
+		aspectratio: 1/3
+	)
+);
+$seal: (
+	normal: (
+		url: "../img/ACC_seal.svg",
+		alt: "Seal of the American College Of Cardiology",
+		aspectratio: 1/1
+	),
+	small: (
+		url: "../img/ACC_sealCondensed.svg",
+		alt: "Seal of the American College Of Cardiology",
+		aspectratio: 1/1
+	),
+	tiny: (
+		url: "../img/ACC_sealCondensed-alt.svg",
+		alt: "Seal of the American College Of Cardiology",
+		aspectratio: 1/1
+	)
+);
+[class^="logo_"],
+[class^="seal_"] {
+	background-color: transparent;
+	background-size: contain;
+	background-position: center center;
+	background-repeat: none;
+	text-indent: -9999px;
+	overflow: hidden;
+	&:before {
+		content: "";
+		width: 1px;
+		margin-left: -1px;
+		float: left;
+		height: 0;
+	}
+	&:after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+	> .alt-text:before {
+		display: none;
+	}
 }

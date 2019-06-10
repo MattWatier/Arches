@@ -3,20 +3,20 @@
 
 	Control the width either with 12 x grid messurments or by 10% increments
 
-	.w_10 - modify top of an absolute positioned block 
-	.w_50 - modify top of an absolute positioned block
-	.w_70 - modify bottom of an absolute positioned block 
-	.w_90 - modify bottom of an absolute positioned block
-	.gw_2 - modify left of an absolute positioned block 
-	.gw_6 - modify left of an absolute positioned block
-	.gw_8 - modify right of an absolute positioned block 
-	.gw_9 - modify right of an absolute positioned block
+	.w_10 - Grid Width of 10% out of 100% 
+	.w_50 - Grid Width of 50% out of 100%
+	.w_70 - Grid Width of 70% out of 100% 
+	.w_90 - Grid Width of 90% out of 100%
+	.gw_2 - Grid Width of 2 columns of 12 columns  
+	.gw_6 - Grid Width of 6 columns of 12 columns 
+	.gw_8 - Grid Width of 8 columns of 12 columns  
+	.gw_9 - Grid Width of 9 columns of 12 columns 
 
 
 	markup:
 	<div class=" br_solid br_transparent bg_alert-3 p_5"><div class="bg_white text-left {{modifier_class}}">{{modifier_class}} </div></div>
 
-	Styleguide 111.1
+	Styleguide Width.Width
 
  */
 @include loop-style(max-width, "", "!important");
@@ -50,6 +50,6 @@
 	markup:
 	<div class=" br_solid br_transparent bg_alert-3 p_5"><div class="bg_white text-left {{modifier_class}}"><strong>{{modifier_class}}</strong> Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam nec ante. Sed lacinia, urna non tincidunt mattis, tortor neque adipiscing diam, a cursus ipsum ante quis turpis. Nulla facilisi. Ut fringilla. Suspendisse potenti. Nunc feugiat mi a tellus consequat imperdiet. Vestibulum sapien. Proin quam. Etiam ultrices. Suspendisse in justo eu magna luctus suscipit. Sed lectus. Integer euismod lacus luctus magna. Quisque cursus, metus vitae pharetra auctor, sem massa mattis sem, at interdum magna augue eget diam. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Morbi lacinia molestie dui. Praesent blandit dolor. Sed non quam. In vel mi sit amet augue congue elementum. Morbi in ipsum sit amet pede facilisis laoreet. Donec lacus nunc, viverra nec.</div></div>
 
-	Styleguide 111.2
+	Styleguide Width.MaxWidth
 
  */

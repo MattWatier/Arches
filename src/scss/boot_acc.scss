@@ -176,9 +176,10 @@ $basicSizeMultiplier: 1rem;
 @import "base/base";
 
 @import "components/icon-toggle";
-@import "components/scrollbar";
-@import "components/loading-grid";
 @import "components/interactive-extras";
+@import "components/loading-grid";
+@import "components/logo";
+@import "components/scrollbar";
 @import "base/table.boot";
 /**  Utility Classes    *********************************/
 @import "utility-css/utility-css";

@@ -1,0 +1,30 @@
+[class^="logo_"],
+[class^="seal_"] {
+  background-color: transparent;
+  background-size: contain;
+  background-position: center center;
+  background-repeat: none;
+  text-indent: -9999px;
+  overflow: hidden;
+}
+
+[class^="logo_"]:before,
+[class^="seal_"]:before {
+  content: "";
+  width: 1px;
+  margin-left: -1px;
+  float: left;
+  height: 0;
+}
+
+[class^="logo_"]:after,
+[class^="seal_"]:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+[class^="logo_"] > .alt-text:before,
+[class^="seal_"] > .alt-text:before {
+  display: none;
+}

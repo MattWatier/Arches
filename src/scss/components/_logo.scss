@@ -1,0 +1,100 @@
+/*
+Logos
+
+Logos in the design come in 4 variations the primary logo, the condensed logo, and alte version which are the reverse of primary and reversed.  All logos are controled by the width and will maintain there aspect ratios to respond to the container they are in.  For 508 compliance please place the brand name in the logo.
+
+.logo_primary	            - Primary Logo great for desktop displays best used for when the logo can be taller then 80px.
+.logo_primary-alt 	            - Primary Logo reversed for dark background situations.
+.logo_condensed             - Smaller Mobile Friendly Logo these logos and be readable between 40px to 80px in height. 
+.logo_condensed-alt                - Smaller Logo Reversed.
+
+markup:
+   <div class="bg_secondary-2 max-w_4"><div class="{{modifier_class}}"><span class="alt">{{modifier_class}}</span></div></div>
+
+Styleguide DesignBase.Logos
+
+*/
+
+.logo_primary {
+	background-image: url(map-deep-get($logo, primary, url));
+	&:before {
+		padding-top: map-deep-get($logo, primary, aspectratio) * 100%;
+	}
+	> span.alt-text:before {
+		content: map-deep-get($logo, primary, alt);
+	}
+}
+.logo_primary-alt {
+	background-image: url(map-deep-get($logo, primary_alt, url));
+	&:before {
+		padding-top: map-deep-get($logo, primary_alt, aspectratio) * 100%;
+	}
+	> span.alt-text:before {
+		content: map-deep-get($logo, primary_alt, alt);
+	}
+}
+.logo_condensed {
+	background-image: url(map-deep-get($logo, condensed, url));
+	&:before {
+		padding-top: map-deep-get($logo, condensed, aspectratio) * 100%;
+	}
+	> span.alt-text:before {
+		content: map-deep-get($logo, condensed, alt);
+	}
+}
+.logo_condensed-alt {
+	background-image: url(map-deep-get($logo, condensed_alt, url));
+	&:before {
+		padding-top: map-deep-get($logo, condensed_alt, aspectratio) * 100%;
+	}
+	> span.alt-text:before {
+		content: map-deep-get($logo, condensed_alt, alt);
+	}
+}
+
+/*
+Seals
+
+Seals in the design come in 3 variations the default, small, and tiny.  All Seals will maintain their aspect ratios and will respond to the container, but seals have a max width.  For 508 compliance, please place the brand name in the seal.
+
+.seal_normal	            - Full size seal great for desktop displays best used for when the seal can be taller then 100px.
+.seal_small	            - Condensed size seal great for Tablet displays best used for when the seal is between 100px to 60px.
+.seal_tiny	            - Smallest of the seals best used for icons when seal is 60px and bellow
+
+
+markup:
+   <div class="bg_secondary-2 max-w_1"><div class="{{modifier_class}}"><span class="alt">{{modifier_class}}</span></div></div>
+
+Styleguide DesignBase.Seals
+
+*/
+
+.seal_normal {
+	background-image: url(map-deep-get($seal, normal, url));
+	&:before {
+		padding-top: map-deep-get($seal, normal, aspectratio) * 100%;
+	}
+	> span.alt-text:before {
+		content: map-deep-get($seal, normal, alt);
+	}
+}
+.seal_small {
+	background-image: url(map-deep-get($seal, small, url));
+	max-width: 100px;
+	&:before {
+		padding-top: map-deep-get($seal, small, aspectratio) * 100%;
+	}
+	> span.alt-text:before {
+		content: map-deep-get($seal, small, alt);
+	}
+}
+.seal_tiny {
+	background-image: url(map-deep-get($seal, tiny, url));
+	max-width: 60px;
+	&:before {
+		padding-top: map-deep-get($seal, tiny, aspectratio) * 100%;
+	}
+	> span.alt-text:before {
+		content: map-deep-get($seal, tiny, alt);
+	}
+}

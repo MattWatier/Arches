@@ -39,7 +39,7 @@ Colors are based off of the ACC Scrub Colors.
 
 $red                 - #dd1a1a; alert
 $orange              - #da8210; warning
-$green               - #078a2e; success
+$green               - #06a022; success
 $blue                - #2b58c0; navigation
 
 Styleguide DesignBase.Colors.Alternate
@@ -156,26 +156,32 @@ div[class^=texture_] {
 
  */
 /**  Logos  **/
-/*
-	Logo
-
-	American College of Cardiology Logo
-
-	markup:
-    <img class="logo" src="src/img/acc-logo-mobile.svg" alt="Home">
-
-	sg-wrapper:
- 	<div class="texture_dark p_4">
- 	<sg-wrapper-content/>
- 	</div>
-
-	Styleguide 0.5
-
-*/
-.footer .logo {
-  height: 60px;
-  -o-object-fit: scale-down;
-     object-fit: scale-down;
+[class^=logo_],
+[class^=seal_] {
+  overflow: hidden;
+  background-color: transparent;
+  background-position: center center;
+  background-repeat: none;
+  background-size: contain;
+  text-indent: -9999px;
+}
+[class^=logo_]:before,
+[class^=seal_]:before {
+  width: 1px;
+  height: 0;
+  margin-left: -1px;
+  float: left;
+  content: "";
+}
+[class^=logo_]:after,
+[class^=seal_]:after {
+  display: table;
+  clear: both;
+  content: "";
+}
+[class^=logo_] > .alt-text:before,
+[class^=seal_] > .alt-text:before {
+  display: none;
 }
 
 /**  Zurb Foundation Framework Setup Files. ***************************************/
@@ -7817,53 +7823,128 @@ i.icon-complete_check-circle:before {
 
 /*
 
-Scrollbar Mini
+Lorem Text Loader
 
-Give a mini scroll bar to a content area. 
+It is often we need to have space held for a return of details or text.  
+
+markup:
+<div class="max-w_3">
+   <div class="m-y_2 lorem-loader  lorem-text lorem-headline">&nbsp;</div>
+   <div class="m-y_2 lorem-loader  lorem-text w-70">&nbsp;</div>
+   <div class="m-y_2 lorem-loader  lorem-text w-80">&nbsp;</div>
+   <div class="m-y_2 lorem-loader  lorem-text w-70">&nbsp;</div>
+</div>
+
+Styleguide 20.5
+*/
+/*
+
+Lorem Image Loader
+
+It is often we need to have space held for a return of details or text.  
+
+markup:
+<div class="">
+   <div class="m-y_2 lorem-loader lorem-image">&nbsp;</div>
+</div>
+
+Styleguide 20.6
+*/
+/*
+
+Lorem Thumbnail Loader
+
+It is often we need to have space held for a return of details or text.  
+
+markup:
+<div class="">
+   <div class="m-y_2 lorem-loader lorem-thumb">&nbsp;</div>
+</div>
+
+Styleguide 20.7
+*/
+.lorem-text {
+  height: 1.4em;
+}
+
+.lorem-image {
+  width: 300px;
+  height: 200px;
+}
+
+.lorem-thumb {
+  width: 100px;
+  height: 200px;
+}
+
+.lorem-loader {
+  -webkit-animation: Gradient 8s ease infinite;
+  -moz-animation: Gradient 8s ease infinite;
+  background: linear-gradient(-45deg, #92dbef, #c1c3c7, #dad6d1, #8cf0da);
+  background-size: 400% 400%;
+  color: #fff;
+  animation: Gradient 8s ease infinite;
+}
+
+@-webkit-keyframes Gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes Gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+/*
+
+Expanded Click Area
+
+allows for a relative container to be clickable by the link. 
 
 markup:
 <div class="card shadow_2 cell small-6 large-4 max-w_3" >
-    <div class=" font_slab border-top-left-square c_white font_3 p_4 texture_dust card-divider bg_primary">
+  <div class=" font_slab border-top-left-square c_white font_3 p_4 texture_dust card-divider bg_primary">
     This is a header
-    </div>
-    <div class="card-section scrollbar-mini overflow_auto" style="max-height:300px;">
-        <h4>This is a card.</h4>
-        <p class="font_1">It has an easy to override visual style, and is appropriately subdued.</p>
-        <img src="https://picsum.photos/400/300">
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi dolorem et maxime, officiis nulla vel? Numquam quas voluptatibus, voluptatem fuga saepe animi nemo voluptatum repellendus in natus libero, nobis illum!</p>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi dolorem et maxime, officiis nulla vel? Numquam quas voluptatibus, voluptatem fuga saepe animi nemo voluptatum repellendus in natus libero, nobis illum!</p>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi dolorem et maxime, officiis nulla vel? Numquam quas voluptatibus, voluptatem fuga saepe animi nemo voluptatum repellendus in natus libero, nobis illum!</p>       
-    </div>
-    <div class="card-divider br_0 br_solid br-t_1 br_primary"> <a href="#" class="button">I am so clickable</a></div>
+  </div>
+  <img src="https://picsum.photos/400/300">
+  <div class="card-section">
+    <h4>This is a card.</h4>
+	 <p>It has an easy to override visual style, and is appropriately subdued.</p>
+	 <a href="#" class="exapnded-click-area button">I am so clickable</a>
+  </div>
 </div>
 
-Styleguide 112.1
+Styleguide 20.20
 */
-/* Let's get this party started */
-.scrollbar-mini::-webkit-scrollbar {
-  width: 8px;
-  width: 0.5rem;
+.exapnded-click-area::after {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #0000;
+  content: "";
+  pointer-events: auto;
 }
 
-/* Track */
-.scrollbar-mini::-webkit-scrollbar-track {
-  background-color: rgba(10, 56, 70, 0.1);
-  box-shadow: inset 1px 1px 4px 0.5px rgba(0, 0, 0, 0.2);
-}
-
-/* Handle */
-.scrollbar-mini::-webkit-scrollbar-thumb {
-  border-radius: 25px;
-  background: #157894;
-  box-shadow: inset 1px 1px 4px 0.5px rgba(0, 0, 0, 0.2);
-}
-
-.scrollbar-mini::-webkit-scrollbar-thumb:window-inactive {
-  background: rgba(21, 120, 148, 0.1);
-}
-
-.scrollbar-mini::-webkit-scrollbar-track:window-inactive {
-  background: rgba(10, 56, 70, 0.1);
+.transition-all_1s {
+  transition-duration: 1s;
+  transition-property: all;
+  transition-timing-function: ease;
 }
 
 /*
@@ -8007,129 +8088,158 @@ Styleguide 112.1
   }
 }
 /*
+Logos
 
-Lorem Text Loader
+Logos in the design come in 4 variations the primary logo, the condensed logo, and alte version which are the reverse of primary and reversed.  All logos are controled by the width and will maintain there aspect ratios to respond to the container they are in.  For 508 compliance please place the brand name in the logo.
 
-It is often we need to have space held for a return of details or text.  
-
-markup:
-<div class="max-w_3">
-   <div class="m-y_2 lorem-loader  lorem-text lorem-headline">&nbsp;</div>
-   <div class="m-y_2 lorem-loader  lorem-text w-70">&nbsp;</div>
-   <div class="m-y_2 lorem-loader  lorem-text w-80">&nbsp;</div>
-   <div class="m-y_2 lorem-loader  lorem-text w-70">&nbsp;</div>
-</div>
-
-Styleguide 20.5
-*/
-/*
-
-Lorem Image Loader
-
-It is often we need to have space held for a return of details or text.  
+.logo_primary	            - Primary Logo great for desktop displays best used for when the logo can be taller then 80px.
+.logo_primary-alt 	            - Primary Logo reversed for dark background situations.
+.logo_condensed             - Smaller Mobile Friendly Logo these logos and be readable between 40px to 80px in height. 
+.logo_condensed-alt                - Smaller Logo Reversed.
 
 markup:
-<div class="">
-   <div class="m-y_2 lorem-loader lorem-image">&nbsp;</div>
-</div>
+   <div class="bg_secondary-2 max-w_4"><div class="{{modifier_class}}"><span class="alt">{{modifier_class}}</span></div></div>
 
-Styleguide 20.6
+Styleguide DesignBase.Logos
+
 */
+.logo_primary {
+  background-image: url("../img/ACC_primaryLogo.svg");
+}
+.logo_primary:before {
+  padding-top: 33.3333333333%;
+}
+.logo_primary > span.alt-text:before {
+  content: "Logo of the American College Of Cardiology";
+}
+
+.logo_primary-alt {
+  background-image: url("../img/ACC_primaryLogo-alt.svg");
+}
+.logo_primary-alt:before {
+  padding-top: 33.3333333333%;
+}
+.logo_primary-alt > span.alt-text:before {
+  content: "Logo of the American College Of Cardiology";
+}
+
+.logo_condensed {
+  background-image: url("../img/ACC_mobileLogo.svg");
+}
+.logo_condensed:before {
+  padding-top: 33.3333333333%;
+}
+.logo_condensed > span.alt-text:before {
+  content: "Logo of the American College Of Cardiology";
+}
+
+.logo_condensed-alt {
+  background-image: url("../img/ACC_mobileLogo-alt.svg");
+}
+.logo_condensed-alt:before {
+  padding-top: 33.3333333333%;
+}
+.logo_condensed-alt > span.alt-text:before {
+  content: "Logo of the American College Of Cardiology";
+}
+
 /*
+Seals
 
-Lorem Thumbnail Loader
+Seals in the design come in 3 variations the default, small, and tiny.  All Seals will maintain their aspect ratios and will respond to the container, but seals have a max width.  For 508 compliance, please place the brand name in the seal.
 
-It is often we need to have space held for a return of details or text.  
+.seal_normal	            - Full size seal great for desktop displays best used for when the seal can be taller then 100px.
+.seal_small	            - Condensed size seal great for Tablet displays best used for when the seal is between 100px to 60px.
+.seal_tiny	            - Smallest of the seals best used for icons when seal is 60px and bellow
+
 
 markup:
-<div class="">
-   <div class="m-y_2 lorem-loader lorem-thumb">&nbsp;</div>
-</div>
+   <div class="bg_secondary-2 max-w_1"><div class="{{modifier_class}}"><span class="alt">{{modifier_class}}</span></div></div>
 
-Styleguide 20.7
+Styleguide DesignBase.Seals
+
 */
-.lorem-text {
-  height: 1.4em;
+.seal_normal {
+  background-image: url("../img/ACC_seal.svg");
+}
+.seal_normal:before {
+  padding-top: 100%;
+}
+.seal_normal > span.alt-text:before {
+  content: "Seal of the American College Of Cardiology";
 }
 
-.lorem-image {
-  width: 300px;
-  height: 200px;
+.seal_small {
+  max-width: 100px;
+  background-image: url("../img/ACC_sealCondensed.svg");
+}
+.seal_small:before {
+  padding-top: 100%;
+}
+.seal_small > span.alt-text:before {
+  content: "Seal of the American College Of Cardiology";
 }
 
-.lorem-thumb {
-  width: 100px;
-  height: 200px;
+.seal_tiny {
+  max-width: 60px;
+  background-image: url("../img/ACC_sealCondensed-alt.svg");
+}
+.seal_tiny:before {
+  padding-top: 100%;
+}
+.seal_tiny > span.alt-text:before {
+  content: "Seal of the American College Of Cardiology";
 }
 
-.lorem-loader {
-  -webkit-animation: Gradient 8s ease infinite;
-  -moz-animation: Gradient 8s ease infinite;
-  background: linear-gradient(-45deg, #92dbef, #c1c3c7, #dad6d1, #8cf0da);
-  background-size: 400% 400%;
-  color: #fff;
-  animation: Gradient 8s ease infinite;
-}
-
-@-webkit-keyframes Gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-@keyframes Gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
 /*
 
-Expanded Click Area
+Scrollbar Mini
 
-allows for a relative container to be clickable by the link. 
+Give a mini scroll bar to a content area. 
 
 markup:
 <div class="card shadow_2 cell small-6 large-4 max-w_3" >
-  <div class=" font_slab border-top-left-square c_white font_3 p_4 texture_dust card-divider bg_primary">
+    <div class=" font_slab border-top-left-square c_white font_3 p_4 texture_dust card-divider bg_primary">
     This is a header
-  </div>
-  <img src="https://picsum.photos/400/300">
-  <div class="card-section">
-    <h4>This is a card.</h4>
-	 <p>It has an easy to override visual style, and is appropriately subdued.</p>
-	 <a href="#" class="exapnded-click-area button">I am so clickable</a>
-  </div>
+    </div>
+    <div class="card-section scrollbar-mini overflow_auto" style="max-height:300px;">
+        <h4>This is a card.</h4>
+        <p class="font_1">It has an easy to override visual style, and is appropriately subdued.</p>
+        <img src="https://picsum.photos/400/300">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi dolorem et maxime, officiis nulla vel? Numquam quas voluptatibus, voluptatem fuga saepe animi nemo voluptatum repellendus in natus libero, nobis illum!</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi dolorem et maxime, officiis nulla vel? Numquam quas voluptatibus, voluptatem fuga saepe animi nemo voluptatum repellendus in natus libero, nobis illum!</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi dolorem et maxime, officiis nulla vel? Numquam quas voluptatibus, voluptatem fuga saepe animi nemo voluptatum repellendus in natus libero, nobis illum!</p>       
+    </div>
+    <div class="card-divider br_0 br_solid br-t_1 br_primary"> <a href="#" class="button">I am so clickable</a></div>
 </div>
 
-Styleguide 20.20
+Styleguide 112.1
 */
-.exapnded-click-area::after {
-  z-index: 1;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-color: #0000;
-  content: "";
-  pointer-events: auto;
+/* Let's get this party started */
+.scrollbar-mini::-webkit-scrollbar {
+  width: 8px;
+  width: 0.5rem;
 }
 
-.transition-all_1s {
-  transition-duration: 1s;
-  transition-property: all;
-  transition-timing-function: ease;
+/* Track */
+.scrollbar-mini::-webkit-scrollbar-track {
+  background-color: rgba(10, 56, 70, 0.1);
+  box-shadow: inset 1px 1px 4px 0.5px rgba(0, 0, 0, 0.2);
+}
+
+/* Handle */
+.scrollbar-mini::-webkit-scrollbar-thumb {
+  border-radius: 25px;
+  background: #157894;
+  box-shadow: inset 1px 1px 4px 0.5px rgba(0, 0, 0, 0.2);
+}
+
+.scrollbar-mini::-webkit-scrollbar-thumb:window-inactive {
+  background: rgba(21, 120, 148, 0.1);
+}
+
+.scrollbar-mini::-webkit-scrollbar-track:window-inactive {
+  background: rgba(10, 56, 70, 0.1);
 }
 
 /*
@@ -16807,20 +16917,20 @@ Styleguide 103.2.1
 
 	Control the width either with 12 x grid messurments or by 10% increments
 
-	.w_10 - modify top of an absolute positioned block 
-	.w_50 - modify top of an absolute positioned block
-	.w_70 - modify bottom of an absolute positioned block 
-	.w_90 - modify bottom of an absolute positioned block
-	.gw_2 - modify left of an absolute positioned block 
-	.gw_6 - modify left of an absolute positioned block
-	.gw_8 - modify right of an absolute positioned block 
-	.gw_9 - modify right of an absolute positioned block
+	.w_10 - Grid Width of 10% out of 100% 
+	.w_50 - Grid Width of 50% out of 100%
+	.w_70 - Grid Width of 70% out of 100% 
+	.w_90 - Grid Width of 90% out of 100%
+	.gw_2 - Grid Width of 2 columns of 12 columns  
+	.gw_6 - Grid Width of 6 columns of 12 columns 
+	.gw_8 - Grid Width of 8 columns of 12 columns  
+	.gw_9 - Grid Width of 9 columns of 12 columns 
 
 
 	markup:
 	<div class=" br_solid br_transparent bg_alert-3 p_5"><div class="bg_white text-left {{modifier_class}}">{{modifier_class}} </div></div>
 
-	Styleguide 111.1
+	Styleguide Width.Width
 
  */
 .max-w_0 {
@@ -17193,7 +17303,7 @@ Styleguide 103.2.1
 	markup:
 	<div class=" br_solid br_transparent bg_alert-3 p_5"><div class="bg_white text-left {{modifier_class}}"><strong>{{modifier_class}}</strong> Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam nec ante. Sed lacinia, urna non tincidunt mattis, tortor neque adipiscing diam, a cursus ipsum ante quis turpis. Nulla facilisi. Ut fringilla. Suspendisse potenti. Nunc feugiat mi a tellus consequat imperdiet. Vestibulum sapien. Proin quam. Etiam ultrices. Suspendisse in justo eu magna luctus suscipit. Sed lectus. Integer euismod lacus luctus magna. Quisque cursus, metus vitae pharetra auctor, sem massa mattis sem, at interdum magna augue eget diam. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Morbi lacinia molestie dui. Praesent blandit dolor. Sed non quam. In vel mi sit amet augue congue elementum. Morbi in ipsum sit amet pede facilisis laoreet. Donec lacus nunc, viverra nec.</div></div>
 
-	Styleguide 111.2
+	Styleguide Width.MaxWidth
 
  */
 /*
