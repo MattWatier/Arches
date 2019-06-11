@@ -36,19 +36,19 @@ bg_acc                    - background color modified light to dark
 
 markup:
 <div class="flex">
-  <div class="bg_white flex_auto text-center p_2 p-y_5 ">white</div>
-  <div class="{{modifier_class}}-5 flex_auto text-center  p_2 p-y_5">5</div>
-  <div class="{{modifier_class}}-4 flex_auto text-center  p_2 p-y_5">4</div>
-  <div class="{{modifier_class}}-3 flex_auto text-center  p_2 p-y_5">3</div>
-  <div class="{{modifier_class}}-2 flex_auto text-center  p_2 p-y_5">2</div>
-  <div class="{{modifier_class}}-1 flex_auto text-center  c_white p_2 p-y_5">1</div>
-  <div class="{{modifier_class}}-0 flex_auto text-center  c_white p_2 p-y_5">0</div>
-  <div class="{{modifier_class}}-n1 flex_auto text-center  c_white p_2 p-y_5">n1</div>
-  <div class="{{modifier_class}}-n2 flex_auto text-center  c_white p_2 p-y_5">n2</div>
-  <div class="{{modifier_class}}-n3 flex_auto text-center  c_white p_2 p-y_5">n3</div>
-  <div class="{{modifier_class}}-n4 flex_auto text-center  c_white p_2 p-y_5">n4</div>
-  <div class="{{modifier_class}}-n5 flex_auto text-center  c_white p_2 p-y_5">n5</div>
-  <div class="bg_black flex_auto text-center  c_white p_2 p-y_5">black</div>
+  <div class="bg_white flex_auto text_center p_2 p-y_5 ">white</div>
+  <div class="{{modifier_class}}-5 flex_auto text_center  p_2 p-y_5">5</div>
+  <div class="{{modifier_class}}-4 flex_auto text_center  p_2 p-y_5">4</div>
+  <div class="{{modifier_class}}-3 flex_auto text_center  p_2 p-y_5">3</div>
+  <div class="{{modifier_class}}-2 flex_auto text_center  p_2 p-y_5">2</div>
+  <div class="{{modifier_class}}-1 flex_auto text_center  c_white p_2 p-y_5">1</div>
+  <div class="{{modifier_class}}-0 flex_auto text_center  c_white p_2 p-y_5">0</div>
+  <div class="{{modifier_class}}-n1 flex_auto text_center  c_white p_2 p-y_5">n1</div>
+  <div class="{{modifier_class}}-n2 flex_auto text_center  c_white p_2 p-y_5">n2</div>
+  <div class="{{modifier_class}}-n3 flex_auto text_center  c_white p_2 p-y_5">n3</div>
+  <div class="{{modifier_class}}-n4 flex_auto text_center  c_white p_2 p-y_5">n4</div>
+  <div class="{{modifier_class}}-n5 flex_auto text_center  c_white p_2 p-y_5">n5</div>
+  <div class="bg_black flex_auto text_center  c_white p_2 p-y_5">black</div>
 </div>
 
 
@@ -78,17 +78,17 @@ Styleguide Background.ColorShades
 
   markup:
   <div class="flex p_4 bg_primary">
-    <div class="bg_{{modifier_class}}-0 flex_auto text-center c_white  p_2 p-y_5">{{modifier_class}}-0</div>
-    <div class="bg_{{modifier_class}}-1 flex_auto text-center c_white  p_2 p-y_5">{{modifier_class}}-1</div>
-    <div class="bg_{{modifier_class}}-2 flex_auto text-center c_white  p_2 p-y_5">{{modifier_class}}-2</div>
-    <div class="bg_{{modifier_class}}-3 flex_auto text-center c_white  p_2 p-y_5">{{modifier_class}}-3</div>
-    <div class="bg_{{modifier_class}}-4 flex_auto text-center c_white p_2 p-y_5">{{modifier_class}}-4</div>
-    <div class="bg_{{modifier_class}}-5 flex_auto text-center c_white p_2 p-y_5">{{modifier_class}}-5</div>
-    <div class="bg_{{modifier_class}}-6 flex_auto text-center c_white p_2 p-y_5">{{modifier_class}}-6</div>
-    <div class="bg_{{modifier_class}}-7 flex_auto text-center c_white p_2 p-y_5">{{modifier_class}}-7</div>
-    <div class="bg_{{modifier_class}}-8 flex_auto text-center c_white p_2 p-y_5">{{modifier_class}}-8</div>
-    <div class="bg_{{modifier_class}}-9 flex_auto text-center c_white p_2 p-y_5">{{modifier_class}}-9</div>
-    <div class="bg_{{modifier_class}} flex_auto text-center c_white p_2 p-y_5">{{modifier_class}}</div>
+    <div class="bg_{{modifier_class}}-0 flex_auto text_center c_white  p_2 p-y_5">{{modifier_class}}-0</div>
+    <div class="bg_{{modifier_class}}-1 flex_auto text_center c_white  p_2 p-y_5">{{modifier_class}}-1</div>
+    <div class="bg_{{modifier_class}}-2 flex_auto text_center c_white  p_2 p-y_5">{{modifier_class}}-2</div>
+    <div class="bg_{{modifier_class}}-3 flex_auto text_center c_white  p_2 p-y_5">{{modifier_class}}-3</div>
+    <div class="bg_{{modifier_class}}-4 flex_auto text_center c_white p_2 p-y_5">{{modifier_class}}-4</div>
+    <div class="bg_{{modifier_class}}-5 flex_auto text_center c_white p_2 p-y_5">{{modifier_class}}-5</div>
+    <div class="bg_{{modifier_class}}-6 flex_auto text_center c_white p_2 p-y_5">{{modifier_class}}-6</div>
+    <div class="bg_{{modifier_class}}-7 flex_auto text_center c_white p_2 p-y_5">{{modifier_class}}-7</div>
+    <div class="bg_{{modifier_class}}-8 flex_auto text_center c_white p_2 p-y_5">{{modifier_class}}-8</div>
+    <div class="bg_{{modifier_class}}-9 flex_auto text_center c_white p_2 p-y_5">{{modifier_class}}-9</div>
+    <div class="bg_{{modifier_class}} flex_auto text_center c_white p_2 p-y_5">{{modifier_class}}</div>
   </div>
 
   Styleguide Background.Colors with Alphas

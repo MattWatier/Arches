@@ -11,7 +11,7 @@ All textures in the Arches design are a subtle variation of transparent.   Allow
 .texture_disabled              				- This texture is used to paint disabled buttons and ui items giving it a greyed and X'ed out appearand. 
 
 markup:
-<div class="{{modifier_class}} p_5 br_black-8 br_1 br_solid text-center">{{modifier_class}}</div>
+<div class="{{modifier_class}} p_5 br_black-8 br_1 br_solid text_center">{{modifier_class}}</div>
 
 Styleguide Background.Textures
 
@@ -58,7 +58,7 @@ Styleguide Background.Textures
 	.texture_disabled.bg_alert             	- textures are slightly transparent so they can be colored with background-color classess
 
 	markup:
-	<div class="{{modifier_class}} p_5 br_black-8 br_1 br_solid text-center">{{modifier_class}}</div>
+	<div class="{{modifier_class}} p_5 br_black-8 br_1 br_solid text_center">{{modifier_class}}</div>
 
 	Styleguide Background.Textures.BackgroundColor
 
@@ -82,10 +82,10 @@ Styleguide Background.Textures
 
 	markup:
 	<div class="flex">
-		<div class="{{modifier_class}}-n3 p_3 flex_auto text-center c_white">n3</div>
-		<div class="{{modifier_class}}-n1 p_3 flex_auto text-center c_white">n1</div>
-		<div class="{{modifier_class}}-1 p_3 flex_auto text-center c_white">1</div>
-		<div class="{{modifier_class}}-3 p_3 flex_auto text-center c_white">3</div>
+		<div class="{{modifier_class}}-n3 p_3 flex_auto text_center c_white">n3</div>
+		<div class="{{modifier_class}}-n1 p_3 flex_auto text_center c_white">n1</div>
+		<div class="{{modifier_class}}-1 p_3 flex_auto text_center c_white">1</div>
+		<div class="{{modifier_class}}-3 p_3 flex_auto text_center c_white">3</div>
 	</div>
 
 	Styleguide Background.Textures.Shaded

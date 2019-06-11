@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Utility Only</title>
+    <title>No Framework UC Only</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="mobile-web-app-capable" content="yes">
@@ -10,13 +10,13 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700,300">
     <link rel="stylesheet" href="kss-assets/vendor/prism.css">
     <link rel="stylesheet" href="kss-assets/css/kss.css">
-    <link rel="stylesheet" href="../css/noframework_acc.css">
-<link rel="stylesheet" href="../icons/css/fontawesome.css">
-<link rel="stylesheet" href="../icons/css/solid.css">
-<link rel="stylesheet" href="../icons/css/regular.css">
-<link rel="stylesheet" href="../icons/css/brands.css">
-<link rel="stylesheet" href="../icons/css/light.css">
-<link rel="stylesheet" href="../../src/css/styleguide_override.css">
+    <link rel="stylesheet" href="css/noframework_acc.min.css">
+<link rel="stylesheet" href="icons/css/fontawesome.css">
+<link rel="stylesheet" href="icons/css/solid.css">
+<link rel="stylesheet" href="icons/css/regular.css">
+<link rel="stylesheet" href="icons/css/brands.css">
+<link rel="stylesheet" href="icons/css/light.css">
+<link rel="stylesheet" href="css/styleguide_override.css">
 
   </head>
 
@@ -28,7 +28,7 @@
         <a class="kss-header__hamburger-trigger">
           <div class="kss-header__hamburger"></div>
         </a>
-        <h1 class="kss-header__title kss-title">Utility Only</h1>
+        <h1 class="kss-header__title kss-title">No Framework UC Only</h1>
       </section>
     </header>
     <!-- /header. -->
@@ -36,7 +36,7 @@
 
     <!-- navigation. -->
     <section class="kss-navigation">
-      <h1 class="kss-navigation__title kss-title">Utility Only</h1>
+      <h1 class="kss-navigation__title kss-title">No Framework UC Only</h1>
       <ul class="kss-nav">
         <li class="kss-nav__item">
           <a href="index.html">
@@ -183,19 +183,19 @@
           the "root" element comes first in this loop, and can be detected using
           the "#if @first" block as seen below.
         -->
-            <header class="kss-section kss-section--depth-2" id="kssref-background-color">
+            <header class="kss-section kss-section--depth-3" id="kssref-background-textures-backgroundcolor">
 
             <article class="kss-section__content">
-                <p class="kss-section__source">Source: <span>noframework_acc.css</span>, line <span>5333</span></p>
+                <p class="kss-section__source">Source: <span>noframework_acc.css</span>, line <span>6127</span></p>
 
-              <a class="kss-section__permalink" href="#kssref-background-color">
-                <h2 class="kss-section__item kss-section__item--depth-2">
-                  <span class="kss-section__ref">11.1</span>
-                  <span class="kss-section__name">Background Colors</span>
-                </h2>
+              <a class="kss-section__permalink" href="#kssref-background-textures-backgroundcolor">
+                <h3 class="kss-section__item kss-section__item--depth-3">
+                  <span class="kss-section__ref">11.5.1</span>
+                  <span class="kss-section__name">Textures Plus Background Colors</span>
+                </h3>
               </a>
 
-                <div class="kss-section__description"><p>Background colors can be easily change with bg_<code>color-name</code></p>
+                <div class="kss-section__description"><p>All textures are slightly transparent.  You can acheive different effects with using the combo of textures and background colors.</p>
 </div>
 
             </article>
@@ -205,47 +205,62 @@
 
                   <h2 class="kss-modifiers__name">Default styling</h2>
 
-                <div class="kss-modifiers__example"><div class="[modifier class] p_3 c_white">Background Color of [modifier class]</div></div>
+                <div class="kss-modifiers__example"><div class="[modifier class] p_5 br_black-8 br_1 br_solid text-center">[modifier class]</div></div>
 
                   <article class="kss-modifiers__modifier">
-                    <h2 class="kss-modifiers__name">bg_primary</h2>
-                    <p class="kss-modifiers__description">background color warning color</p>
-                    <div class="kss-modifiers__example"><div class="bg_primary p_3 c_white">Background Color of bg_primary</div></div>
+                    <h2 class="kss-modifiers__name">.texture_light.bg_primary</h2>
+                    <p class="kss-modifiers__description">textures are slightly transparent so they can be colored with background-color classess</p>
+                    <div class="kss-modifiers__example"><div class="texture_light bg_primary p_5 br_black-8 br_1 br_solid text-center">texture_light bg_primary</div></div>
                   </article>
                   <article class="kss-modifiers__modifier">
-                    <h2 class="kss-modifiers__name">bg_secondary</h2>
-                    <p class="kss-modifiers__description">background color warning color</p>
-                    <div class="kss-modifiers__example"><div class="bg_secondary p_3 c_white">Background Color of bg_secondary</div></div>
+                    <h2 class="kss-modifiers__name">.texture_dust.bg_primary</h2>
+                    <p class="kss-modifiers__description">textures are slightly transparent so they can be colored with background-color classess</p>
+                    <div class="kss-modifiers__example"><div class="texture_dust bg_primary p_5 br_black-8 br_1 br_solid text-center">texture_dust bg_primary</div></div>
                   </article>
                   <article class="kss-modifiers__modifier">
-                    <h2 class="kss-modifiers__name">bg_alert</h2>
-                    <p class="kss-modifiers__description">background color alert color</p>
-                    <div class="kss-modifiers__example"><div class="bg_alert p_3 c_white">Background Color of bg_alert</div></div>
+                    <h2 class="kss-modifiers__name">.texture_medium.bg_primary</h2>
+                    <p class="kss-modifiers__description">textures are slightly transparent so they can be colored with background-color classess</p>
+                    <div class="kss-modifiers__example"><div class="texture_medium bg_primary p_5 br_black-8 br_1 br_solid text-center">texture_medium bg_primary</div></div>
                   </article>
                   <article class="kss-modifiers__modifier">
-                    <h2 class="kss-modifiers__name">bg_warning</h2>
-                    <p class="kss-modifiers__description">background color warning color</p>
-                    <div class="kss-modifiers__example"><div class="bg_warning p_3 c_white">Background Color of bg_warning</div></div>
+                    <h2 class="kss-modifiers__name">.texture_dark.bg_primary</h2>
+                    <p class="kss-modifiers__description">textures are slightly transparent so they can be colored with background-color classess</p>
+                    <div class="kss-modifiers__example"><div class="texture_dark bg_primary p_5 br_black-8 br_1 br_solid text-center">texture_dark bg_primary</div></div>
                   </article>
                   <article class="kss-modifiers__modifier">
-                    <h2 class="kss-modifiers__name">bg_success</h2>
-                    <p class="kss-modifiers__description">background color success color</p>
-                    <div class="kss-modifiers__example"><div class="bg_success p_3 c_white">Background Color of bg_success</div></div>
+                    <h2 class="kss-modifiers__name">.texture_light.bg_alert</h2>
+                    <p class="kss-modifiers__description">textures are slightly transparent so they can be colored with background-color classess</p>
+                    <div class="kss-modifiers__example"><div class="texture_light bg_alert p_5 br_black-8 br_1 br_solid text-center">texture_light bg_alert</div></div>
                   </article>
                   <article class="kss-modifiers__modifier">
-                    <h2 class="kss-modifiers__name">bg_info</h2>
-                    <p class="kss-modifiers__description">background color success color</p>
-                    <div class="kss-modifiers__example"><div class="bg_info p_3 c_white">Background Color of bg_info</div></div>
+                    <h2 class="kss-modifiers__name">.texture_medium.bg_alert</h2>
+                    <p class="kss-modifiers__description">textures are slightly transparent so they can be colored with background-color classess</p>
+                    <div class="kss-modifiers__example"><div class="texture_medium bg_alert p_5 br_black-8 br_1 br_solid text-center">texture_medium bg_alert</div></div>
                   </article>
                   <article class="kss-modifiers__modifier">
-                    <h2 class="kss-modifiers__name">bg_highlight</h2>
-                    <p class="kss-modifiers__description">background color success color</p>
-                    <div class="kss-modifiers__example"><div class="bg_highlight p_3 c_white">Background Color of bg_highlight</div></div>
+                    <h2 class="kss-modifiers__name">.texture_dust.bg_alert</h2>
+                    <p class="kss-modifiers__description">textures are slightly transparent so they can be colored with background-color classess</p>
+                    <div class="kss-modifiers__example"><div class="texture_dust bg_alert p_5 br_black-8 br_1 br_solid text-center">texture_dust bg_alert</div></div>
+                  </article>
+                  <article class="kss-modifiers__modifier">
+                    <h2 class="kss-modifiers__name">.texture_dark.bg_alert</h2>
+                    <p class="kss-modifiers__description">textures are slightly transparent so they can be colored with background-color classess</p>
+                    <div class="kss-modifiers__example"><div class="texture_dark bg_alert p_5 br_black-8 br_1 br_solid text-center">texture_dark bg_alert</div></div>
+                  </article>
+                  <article class="kss-modifiers__modifier">
+                    <h2 class="kss-modifiers__name">.texture_cross.bg_alert</h2>
+                    <p class="kss-modifiers__description">textures are slightly transparent so they can be colored with background-color classess</p>
+                    <div class="kss-modifiers__example"><div class="texture_cross bg_alert p_5 br_black-8 br_1 br_solid text-center">texture_cross bg_alert</div></div>
+                  </article>
+                  <article class="kss-modifiers__modifier">
+                    <h2 class="kss-modifiers__name">.texture_disabled.bg_alert</h2>
+                    <p class="kss-modifiers__description">textures are slightly transparent so they can be colored with background-color classess</p>
+                    <div class="kss-modifiers__example"><div class="texture_disabled bg_alert p_5 br_black-8 br_1 br_solid text-center">texture_disabled bg_alert</div></div>
                   </article>
               </article>
 
                 <article class="kss-section__markup">
-                  <pre><code class="language-markup">&lt;div class&#x3D;&quot;[modifier class] p_3 c_white&quot;&gt;Background Color of [modifier class]&lt;/div&gt;</code></pre>
+                  <pre><code class="language-markup">&lt;div class&#x3D;&quot;[modifier class] p_5 br_black-8 br_1 br_solid text-center&quot;&gt;[modifier class]&lt;/div&gt;</code></pre>
                 </article>
 
             </header>

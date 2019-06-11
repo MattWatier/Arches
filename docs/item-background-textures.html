@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Utility Only</title>
+    <title>No Framework UC Only</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="mobile-web-app-capable" content="yes">
@@ -10,13 +10,13 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700,300">
     <link rel="stylesheet" href="kss-assets/vendor/prism.css">
     <link rel="stylesheet" href="kss-assets/css/kss.css">
-    <link rel="stylesheet" href="../css/noframework_acc.css">
-<link rel="stylesheet" href="../icons/css/fontawesome.css">
-<link rel="stylesheet" href="../icons/css/solid.css">
-<link rel="stylesheet" href="../icons/css/regular.css">
-<link rel="stylesheet" href="../icons/css/brands.css">
-<link rel="stylesheet" href="../icons/css/light.css">
-<link rel="stylesheet" href="../../src/css/styleguide_override.css">
+    <link rel="stylesheet" href="css/noframework_acc.min.css">
+<link rel="stylesheet" href="icons/css/fontawesome.css">
+<link rel="stylesheet" href="icons/css/solid.css">
+<link rel="stylesheet" href="icons/css/regular.css">
+<link rel="stylesheet" href="icons/css/brands.css">
+<link rel="stylesheet" href="icons/css/light.css">
+<link rel="stylesheet" href="css/styleguide_override.css">
 
   </head>
 
@@ -28,7 +28,7 @@
         <a class="kss-header__hamburger-trigger">
           <div class="kss-header__hamburger"></div>
         </a>
-        <h1 class="kss-header__title kss-title">Utility Only</h1>
+        <h1 class="kss-header__title kss-title">No Framework UC Only</h1>
       </section>
     </header>
     <!-- /header. -->
@@ -36,7 +36,7 @@
 
     <!-- navigation. -->
     <section class="kss-navigation">
-      <h1 class="kss-navigation__title kss-title">Utility Only</h1>
+      <h1 class="kss-navigation__title kss-title">No Framework UC Only</h1>
       <ul class="kss-nav">
         <li class="kss-nav__item">
           <a href="index.html">
@@ -183,19 +183,19 @@
           the "root" element comes first in this loop, and can be detected using
           the "#if @first" block as seen below.
         -->
-            <header class="kss-section kss-section--depth-2" id="kssref-background-color">
+            <header class="kss-section kss-section--depth-2" id="kssref-background-textures">
 
             <article class="kss-section__content">
-                <p class="kss-section__source">Source: <span>noframework_acc.css</span>, line <span>5333</span></p>
+                <p class="kss-section__source">Source: <span>noframework_acc.css</span>, line <span>6059</span></p>
 
-              <a class="kss-section__permalink" href="#kssref-background-color">
+              <a class="kss-section__permalink" href="#kssref-background-textures">
                 <h2 class="kss-section__item kss-section__item--depth-2">
-                  <span class="kss-section__ref">11.1</span>
-                  <span class="kss-section__name">Background Colors</span>
+                  <span class="kss-section__ref">11.5</span>
+                  <span class="kss-section__name">Textures</span>
                 </h2>
               </a>
 
-                <div class="kss-section__description"><p>Background colors can be easily change with bg_<code>color-name</code></p>
+                <div class="kss-section__description"><p>All textures in the Arches design are a subtle variation of transparent.   Allowing for colors to bleed through from behind.  Different textures have intentions or are reserved for certain usagaes.  It is easy to apply textures using the texture utlities.</p>
 </div>
 
             </article>
@@ -205,47 +205,42 @@
 
                   <h2 class="kss-modifiers__name">Default styling</h2>
 
-                <div class="kss-modifiers__example"><div class="[modifier class] p_3 c_white">Background Color of [modifier class]</div></div>
+                <div class="kss-modifiers__example"><div class="[modifier class] p_5 br_black-8 br_1 br_solid text-center">[modifier class]</div></div>
 
                   <article class="kss-modifiers__modifier">
-                    <h2 class="kss-modifiers__name">bg_primary</h2>
-                    <p class="kss-modifiers__description">background color warning color</p>
-                    <div class="kss-modifiers__example"><div class="bg_primary p_3 c_white">Background Color of bg_primary</div></div>
+                    <h2 class="kss-modifiers__name">.texture_light</h2>
+                    <p class="kss-modifiers__description">Light textures is reserved for the base of a page where it can gve a soft area for text or cards to live on top of.</p>
+                    <div class="kss-modifiers__example"><div class="texture_light p_5 br_black-8 br_1 br_solid text-center">texture_light</div></div>
                   </article>
                   <article class="kss-modifiers__modifier">
-                    <h2 class="kss-modifiers__name">bg_secondary</h2>
-                    <p class="kss-modifiers__description">background color warning color</p>
-                    <div class="kss-modifiers__example"><div class="bg_secondary p_3 c_white">Background Color of bg_secondary</div></div>
+                    <h2 class="kss-modifiers__name">.texture_medium</h2>
+                    <p class="kss-modifiers__description">medium texture are used for area that are hidden away.  Collapsable navs, areas, or sidebars ususaly use the medium texture.</p>
+                    <div class="kss-modifiers__example"><div class="texture_medium p_5 br_black-8 br_1 br_solid text-center">texture_medium</div></div>
                   </article>
                   <article class="kss-modifiers__modifier">
-                    <h2 class="kss-modifiers__name">bg_alert</h2>
-                    <p class="kss-modifiers__description">background color alert color</p>
-                    <div class="kss-modifiers__example"><div class="bg_alert p_3 c_white">Background Color of bg_alert</div></div>
+                    <h2 class="kss-modifiers__name">.texture_dust</h2>
+                    <p class="kss-modifiers__description">Dust is the most transparent texture allowing for the color of the background to show through the most.  This is used for the painted tops of cards, or score bars.</p>
+                    <div class="kss-modifiers__example"><div class="texture_dust p_5 br_black-8 br_1 br_solid text-center">texture_dust</div></div>
                   </article>
                   <article class="kss-modifiers__modifier">
-                    <h2 class="kss-modifiers__name">bg_warning</h2>
-                    <p class="kss-modifiers__description">background color warning color</p>
-                    <div class="kss-modifiers__example"><div class="bg_warning p_3 c_white">Background Color of bg_warning</div></div>
+                    <h2 class="kss-modifiers__name">.texture_dark</h2>
+                    <p class="kss-modifiers__description">This texture predominatly used on the footer. Its rich black will alway requrie reversed text and buttons to be readable.</p>
+                    <div class="kss-modifiers__example"><div class="texture_dark p_5 br_black-8 br_1 br_solid text-center">texture_dark</div></div>
                   </article>
                   <article class="kss-modifiers__modifier">
-                    <h2 class="kss-modifiers__name">bg_success</h2>
-                    <p class="kss-modifiers__description">background color success color</p>
-                    <div class="kss-modifiers__example"><div class="bg_success p_3 c_white">Background Color of bg_success</div></div>
+                    <h2 class="kss-modifiers__name">.texture_cross</h2>
+                    <p class="kss-modifiers__description">A mostly transparent cross texture used for alternating rows of content when a little extra texture is needed.</p>
+                    <div class="kss-modifiers__example"><div class="texture_cross p_5 br_black-8 br_1 br_solid text-center">texture_cross</div></div>
                   </article>
                   <article class="kss-modifiers__modifier">
-                    <h2 class="kss-modifiers__name">bg_info</h2>
-                    <p class="kss-modifiers__description">background color success color</p>
-                    <div class="kss-modifiers__example"><div class="bg_info p_3 c_white">Background Color of bg_info</div></div>
-                  </article>
-                  <article class="kss-modifiers__modifier">
-                    <h2 class="kss-modifiers__name">bg_highlight</h2>
-                    <p class="kss-modifiers__description">background color success color</p>
-                    <div class="kss-modifiers__example"><div class="bg_highlight p_3 c_white">Background Color of bg_highlight</div></div>
+                    <h2 class="kss-modifiers__name">.texture_disabled</h2>
+                    <p class="kss-modifiers__description">This texture is used to paint disabled buttons and ui items giving it a greyed and X'ed out appearand.</p>
+                    <div class="kss-modifiers__example"><div class="texture_disabled p_5 br_black-8 br_1 br_solid text-center">texture_disabled</div></div>
                   </article>
               </article>
 
                 <article class="kss-section__markup">
-                  <pre><code class="language-markup">&lt;div class&#x3D;&quot;[modifier class] p_3 c_white&quot;&gt;Background Color of [modifier class]&lt;/div&gt;</code></pre>
+                  <pre><code class="language-markup">&lt;div class&#x3D;&quot;[modifier class] p_5 br_black-8 br_1 br_solid text-center&quot;&gt;[modifier class]&lt;/div&gt;</code></pre>
                 </article>
 
             </header>
