@@ -13836,9 +13836,8 @@ Styleguide Background.Textures
 
   Decorate containers and text to show user intereaction with simple hover, and focus effects. 
 
-  Styleguide 109.0
+  Styleguide hover
 */
-/* No styleguide reference. */
 /*
   Hover:Background Color
 
@@ -15059,17 +15058,17 @@ bg_black              - text color modified light to dark
 
 markup:
 <div class="flex m_5 bg_primary m_5">
-  <div class="hover:{{modifier_class}}-0  p-y_3 p-x_4 flex_shrink font_bold font_2 font_slab text_center br_1 br_solid br_secondary-4">0</div>
-  <div class="hover:{{modifier_class}}-1  p-y_3 p-x_4 flex_shrink font_bold font_2 font_slab text_center br_1 br_solid br_secondary-4">1</div>
-  <div class="hover:{{modifier_class}}-2  p-y_3 p-x_4 flex_shrink font_bold font_2 font_slab text_center br_1 br_solid br_secondary-4">2</div>
-  <div class="hover:{{modifier_class}}-3  p-y_3 p-x_4 flex_shrink font_bold font_2 font_slab text_center br_1 br_solid br_secondary-4">3</div>
-  <div class="hover:{{modifier_class}}-4  p-y_3 p-x_4 flex_shrink font_bold font_2 font_slab text_center br_1 br_solid br_secondary-4">4</div>
-  <div class="hover:{{modifier_class}}-5  p-y_3 p-x_4 flex_shrink font_bold font_2 font_slab text_center br_1 br_solid br_secondary-4">5</div>
-  <div class="hover:{{modifier_class}}-6  p-y_3 p-x_4 flex_shrink font_bold font_2 font_slab text_center br_1 br_solid br_secondary-4 ">6</div>
-  <div class="hover:{{modifier_class}}-7  p-y_3 p-x_4 flex_shrink font_bold font_2 font_slab text_center br_1 br_solid br_secondary-4 ">7</div>
-  <div class="hover:{{modifier_class}}-8  p-y_3 p-x_4 flex_shrink font_bold font_2 font_slab text_center br_1 br_solid br_secondary-4 ">8</div>
-  <div class="hover:{{modifier_class}}-9  p-y_3 p-x_4 flex_shrink font_bold font_2 font_slab text_center br_1 br_solid br_secondary-4 ">9</div>
-  <div class="hover:{{modifier_class}}  p-y_3 p-x_4 flex_auto font_bold font_2 font_slab text_center br_1 br_solid br_secondary-4 ">default</div>
+  <div class="h:{{modifier_class}}-0  p-y_3 p-x_4 flex_shrink font_bold font_2 font_slab text_center br_1 br_solid br_secondary-4">0</div>
+  <div class="h:{{modifier_class}}-1  p-y_3 p-x_4 flex_shrink font_bold font_2 font_slab text_center br_1 br_solid br_secondary-4">1</div>
+  <div class="h:{{modifier_class}}-2  p-y_3 p-x_4 flex_shrink font_bold font_2 font_slab text_center br_1 br_solid br_secondary-4">2</div>
+  <div class="h:{{modifier_class}}-3  p-y_3 p-x_4 flex_shrink font_bold font_2 font_slab text_center br_1 br_solid br_secondary-4">3</div>
+  <div class="h:{{modifier_class}}-4  p-y_3 p-x_4 flex_shrink font_bold font_2 font_slab text_center br_1 br_solid br_secondary-4">4</div>
+  <div class="h:{{modifier_class}}-5  p-y_3 p-x_4 flex_shrink font_bold font_2 font_slab text_center br_1 br_solid br_secondary-4">5</div>
+  <div class="h:{{modifier_class}}-6  p-y_3 p-x_4 flex_shrink font_bold font_2 font_slab text_center br_1 br_solid br_secondary-4 ">6</div>
+  <div class="h:{{modifier_class}}-7  p-y_3 p-x_4 flex_shrink font_bold font_2 font_slab text_center br_1 br_solid br_secondary-4 ">7</div>
+  <div class="h:{{modifier_class}}-8  p-y_3 p-x_4 flex_shrink font_bold font_2 font_slab text_center br_1 br_solid br_secondary-4 ">8</div>
+  <div class="h:{{modifier_class}}-9  p-y_3 p-x_4 flex_shrink font_bold font_2 font_slab text_center br_1 br_solid br_secondary-4 ">9</div>
+  <div class="h:{{modifier_class}}  p-y_3 p-x_4 flex_auto font_bold font_2 font_slab text_center br_1 br_solid br_secondary-4 ">default</div>
 </div>
 
 
@@ -15081,7 +15080,7 @@ Styleguide hover.opacity
 
   Borders a complex utility that demands a combo UCs to acheive their effect. The three UCs that must be used in combo are 'br_X' where x is the value need for style color and width.  So to make an object with single black pixel border that is solid you would have to add '.br_solid.br_1.br_black' 
 
-  Styleguide 103.0
+  Styleguide border
 
  */
 /* Find Me */
