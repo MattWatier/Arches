@@ -134,25 +134,26 @@ $basicSizeMultiplier: 1rem;
 @import "config/logo";
 /**  Zurb Foundation Framework Setup Files. ***************************************/
 @import "../../node_modules/foundation-sites/scss/util/util";
-@import "config/__zurb.settings";
+@import "config/__config.zurb";
 @import "../../node_modules/foundation-sites/scss/foundation.scss";
 @include foundation-everything();
 // ACC Design Alterations
 @import "base/base";
-
-@import "components/icon-toggle";
-@import "components/interactive-extras";
-@import "components/loading-grid";
 @import "components/logo";
+
+@import "components/interactive-extras";
+@import "components/lorem-placeholders";
+@import "components/icon-toggle";
+@import "components/loading-grid";
 @import "components/scrollbar";
-@import "components/zurb.buttons";
-@import "components/zurb.close-button.override";
-@import "components/zurb.tabs.override";
-@import "components/zurb.questions";
-@import "components/zurb.pagination.override";
 
 @import "styleguide/styleguide";
 @import "structures/structures";
+@import "components/zurb/zurb.buttons";
+@import "components/zurb/zurb.close-button.override";
+@import "components/zurb/zurb.tabs.override";
+@import "components/zurb/zurb.questions";
+@import "components/zurb/zurb.pagination.override";
 /*
 	Foudation recipes
 
@@ -168,4 +169,4 @@ $basicSizeMultiplier: 1rem;
 @import "utility-css/utility-css";
 
 /**  No Framework Recipes    *********************************/
-@import "recipes/__noFramework.recipes";
+@import "recipes/__recipes.base";

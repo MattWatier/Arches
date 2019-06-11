@@ -228,6 +228,13 @@ Styleguide Font.Size.Golden
 	text-align: left !important;
 }
 
+.no-bullet {
+	list-style-type: none;
+}
+
+.bullet {
+	list-style-type: disc;
+}
 /*
 Font Color
 

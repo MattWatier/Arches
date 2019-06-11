@@ -8,12 +8,12 @@
   "homepage": "../../None_ACC.md",
 
   "//": "relative to the generated style guide.",
-  "css": ["../../dist/css/noframework_acc.css",
-    "../../dist/icons/css/fontawesome.css",
-    "../../dist/icons/css/solid.css",
-    "../../dist/icons/css/regular.css",
-    "../../dist/icons/css/brands.css",
-    "../../dist/icons/css/light.css",
+  "css": ["../css/noframework_acc.css",
+    "../icons/css/fontawesome.css",
+    "../icons/css/solid.css",
+    "../icons/css/regular.css",
+    "../icons/css/brands.css",
+    "../icons/css/light.css",
     "../../src/css/styleguide_override.css"
   ],
   "js": []

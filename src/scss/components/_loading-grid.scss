@@ -1,28 +1,27 @@
 /*
-  Loading Grid Dots
- 
-  Animated Loading Dots
+Loading Grid Dots
 
-  white              - text color modified light to dark
-  black              - text color modified light to dark
+Animated Loading Dots
 
-  markup:
-    <div class="lds-grid">
-        <div class="dot bg_{{modifier_class}}-6 br_solid br_2 br_{{modifier_class}} br_circle"></div>
-        <div class="dot bg_{{modifier_class}}-6 br_solid br_2 br_{{modifier_class}} br_circle"></div>
-        <div class="dot bg_{{modifier_class}}-6 br_solid br_2 br_{{modifier_class}} br_circle"></div>
-        <div class="dot bg_{{modifier_class}}-6 br_solid br_2 br_{{modifier_class}} br_circle"></div>
-        <div class="dot bg_{{modifier_class}}-6 br_solid br_2 br_{{modifier_class}} br_circle"></div>
-        <div class="dot bg_{{modifier_class}}-6 br_solid br_2 br_{{modifier_class}} br_circle"></div>
-        <div class="dot bg_{{modifier_class}}-6 br_solid br_2 br_{{modifier_class}} br_circle"></div>
-        <div class="dot bg_{{modifier_class}}-6 br_solid br_2 br_{{modifier_class}} br_circle"></div>
-        <div class="dot bg_{{modifier_class}}-6 br_solid br_2 br_{{modifier_class}} br_circle"></div>
-    </div>
+white              - text color modified light to dark
+black              - text color modified light to dark
 
-    sg-wrapper:
-    <div class="p_5 bg_primary texture_medium"><sg-wrapper-content/></div>
- 
-  Styleguide 20.3
+markup:
+<div class="p_5 bg_primary texture_medium clearboth"> 
+<div class="lds-grid">
+		<div class="dot bg_{{modifier_class}}-6 br_solid br_2 br_{{modifier_class}} br_circle"></div>
+		<div class="dot bg_{{modifier_class}}-6 br_solid br_2 br_{{modifier_class}} br_circle"></div>
+		<div class="dot bg_{{modifier_class}}-6 br_solid br_2 br_{{modifier_class}} br_circle"></div>
+		<div class="dot bg_{{modifier_class}}-6 br_solid br_2 br_{{modifier_class}} br_circle"></div>
+		<div class="dot bg_{{modifier_class}}-6 br_solid br_2 br_{{modifier_class}} br_circle"></div>
+		<div class="dot bg_{{modifier_class}}-6 br_solid br_2 br_{{modifier_class}} br_circle"></div>
+		<div class="dot bg_{{modifier_class}}-6 br_solid br_2 br_{{modifier_class}} br_circle"></div>
+		<div class="dot bg_{{modifier_class}}-6 br_solid br_2 br_{{modifier_class}} br_circle"></div>
+		<div class="dot bg_{{modifier_class}}-6 br_solid br_2 br_{{modifier_class}} br_circle"></div>
+	</div>
+	</div>
+
+Styleguide InteractiveExtras.Loading Grid
   
   */
 $animationTime: 1.5s;

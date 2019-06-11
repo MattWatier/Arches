@@ -135,7 +135,7 @@ $basicSizeMultiplier: 1rem;
 /*Bootstrap Framework Setup Files.*/
 
 @import "../../node_modules/bootstrap/scss/functions";
-@import "config/__boot.settings";
+@import "config/__config.boot";
 @import "../../node_modules/bootstrap/scss/variables";
 @import "../../node_modules/bootstrap/scss/mixins";
 @import "../../node_modules/bootstrap/scss/root";
@@ -174,15 +174,19 @@ $basicSizeMultiplier: 1rem;
 // @import "../../node_modules/bootstrap/scss/print";
 // ACC Design Alterations
 @import "base/base";
-
-@import "components/icon-toggle";
-@import "components/interactive-extras";
-@import "components/loading-grid";
 @import "components/logo";
+
+@import "components/interactive-extras";
+@import "components/lorem-placeholders";
+@import "components/icon-toggle";
+@import "components/loading-grid";
 @import "components/scrollbar";
+
+@import "styleguide/styleguide";
+@import "structures/structures";
 @import "base/table.boot";
 /**  Utility Classes    *********************************/
 @import "utility-css/utility-css";
 
 /**  No Framework Recipes    *********************************/
-@import "recipes/__noFramework.recipes";
+@import "recipes/__recipes.base";

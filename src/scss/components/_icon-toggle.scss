@@ -3,43 +3,43 @@
 }
 
 /*
-    Toggle Icons
-    
-    Many momment there are needs for toggles of icon when the parent is in the state `is-active`
+Is Active Toggle 
 
-    .icon-toggle_plus-minus - Toggle between plus and minus square
-    .icon-toggle_chevron-double-up-down - Toggle the double chevron to point up when active
-    .icon-toggle_caret-circle-right-down - Toggle the caret to point down when active.
-	 .icon-toggle_arrow-circle - Toggle the arrow to have a circle when active.
-	 .icon-toggle_bars-times - Toggle between bars and times
+Many momment there are needs for toggles of icon when the parent is in the state of `is-active`.  Used in tree navs, dropdowns, and collapsing areas. 
 
-    markup:
-    <li class="font_bold border_solid border_secondary-5 p_3 border-width_1">
-        <div class="font_bold c_secondary-3">FA Solid {{modifier_class}}</div>
-		  <div class="p_2 font_4">
-			  <span class="br_radius m-x_2 p-x_3 p-y_2 bg_secondary-4">default: <i class="fas fa-fw {{modifier_class}}"></i></span> 
-			  <span class="m-x_4 p_4  p-y_2  br_circle  bg_black c_white">vs</span>
-            <span class="is-active br_radius m-x_2 p-x_3 p-y_2 bg_primary-4">is-active: <i class="fas {{modifier_class}}"></i></span></div>
-    </li>
-    <li class="font_bold border_solid border_secondary-5 p_3 border-width_1">
-        <div class="font_bold c_secondary-3">FA Regular {{modifier_class}}</div>
-		  <div class="p_2 font_4">
-			  <span class="br_radius m-x_2 p-x_3 p-y_2 bg_secondary-4">default: <i class="far fa-fw {{modifier_class}}"></i></span> 
-			  <span class="m-x_4 p_4  p-y_2 br_circle bg_black c_white">vs</span>
-            <span class="is-active br_radius m-x_2 p-x_3 p-y_2 bg_primary-4">is-active: <i class="far {{modifier_class}}"></i></span></div>
-    </li>
-    <li class="font_bold border_solid border_secondary-5 p_3 border-width_1">
-        <div class="font_bold c_secondary-3">FA Light {{modifier_class}}</div>
-		  <div class="p_2 font_4">
-			  <span class="br_radius m-x_2 p-x_3 p-y_2 bg_secondary-4">default: <i class="fal fa-fw {{modifier_class}}"></i></span> 
-			  <span class="m-x_4 p_4  p-y_2 br_circle bg_black c_white">vs</span>
-            <span class="is-active br_radius m-x_2 p-x_3 p-y_2 bg_primary-4">is-active: <i class="fal {{modifier_class}}"></i></span></div>
-    </li>
+.icon-toggle_plus-minus 					-  Toggle between plus and minus square
+.icon-toggle_chevron-double-up-down 					-  Toggle the double chevron to point up when active
+.icon-toggle_caret-circle-right-down 					-  Toggle the caret to point down when active.
+.icon-toggle_arrow-circle 					-  Toggle the arrow to have a circle when active.
+.icon-toggle_bars-times 					-  Toggle between bars and times
 
-    sg-wrapper: 
-    <ul class="no-bullet"><sg-wrapper-content/></ul>
+markup:
+<ul class="no-bullet">
+<li class="font_bold border_solid border_secondary-5 p_3 border-width_1">
+	<div class="font_bold c_secondary-3">FA Solid {{modifier_class}}</div>
+	<div class="p_2 font_4">
+		<span class="br_radius m-x_2 p-x_3 p-y_2 bg_secondary-4">default: <i class="fas fa-fw {{modifier_class}}"></i></span> 
+		<span class="m-x_4 p_4  p-y_2  br_circle  bg_black c_white">vs</span>
+		<span class="is-active br_radius m-x_2 p-x_3 p-y_2 bg_primary-4">is-active: <i class="fas {{modifier_class}}"></i></span></div>
+</li>
+<li class="font_bold border_solid border_secondary-5 p_3 border-width_1">
+	<div class="font_bold c_secondary-3">FA Regular {{modifier_class}}</div>
+	<div class="p_2 font_4">
+		<span class="br_radius m-x_2 p-x_3 p-y_2 bg_secondary-4">default: <i class="far fa-fw {{modifier_class}}"></i></span> 
+		<span class="m-x_4 p_4  p-y_2 br_circle bg_black c_white">vs</span>
+		<span class="is-active br_radius m-x_2 p-x_3 p-y_2 bg_primary-4">is-active: <i class="far {{modifier_class}}"></i></span></div>
+</li>
+<li class="font_bold border_solid border_secondary-5 p_3 border-width_1">
+	<div class="font_bold c_secondary-3">FA Light {{modifier_class}}</div>
+	<div class="p_2 font_4">
+		<span class="br_radius m-x_2 p-x_3 p-y_2 bg_secondary-4">default: <i class="fal fa-fw {{modifier_class}}"></i></span> 
+		<span class="m-x_4 p_4  p-y_2 br_circle bg_black c_white">vs</span>
+		<span class="is-active br_radius m-x_2 p-x_3 p-y_2 bg_primary-4">is-active: <i class="fal {{modifier_class}}"></i></span></div>
+</li>
+</ul>
 
-    Styleguide 20.2
+
+Styleguide InteractiveExtras.ToggleIcons
 */
 
 i.icon-toggle_bars-times:before {
@@ -100,40 +100,39 @@ i.icon-toggle_arrow-circle:before {
 }
 
 /*
-	Toggle Icons Complete
+Complete Toggle 
 
-	This variation of the icon toggle responds to `is-complete` and not is `is-active`
+This variation of the icon toggle responds to `is-complete` and not is `is-active`
 
-	.icon-complete_check - Toggle a check mark to show.
-	.icon-complete_check-circle - Toggle a check mark to show.
+.icon-complete_check					- Toggle a check mark to show.
+.icon-complete_check-circle		- Toggle a check mark to show.
 
-	markup:
-	<li class="font_bold border_solid border_secondary-5 p_3 border-width_1">
-		<div class="font_bold c_secondary-3">FA Solid {{modifier_class}}</div>
-		<div class="p_2 font_4">
-			<span class="br_radius m-x_2 p-x_3 p-y_2 bg_secondary-4">default: <i class="fas fa-fw {{modifier_class}}"></i></span> 
-			<span class="m-x_4 p_4  p-y_2 br_circle bg_black c_white">vs</span>
-			<span class="is-complete br_radius m-x_2 p-x_3 p-y_2 bg_primary-4">is-complete: <i class="fas {{modifier_class}}"></i></span></div>
-	</li>
-	<li class="font_bold border_solid border_secondary-5 p_3 border-width_1">
-		<div class="font_bold c_secondary-3">FA Regular {{modifier_class}}</div>
-		<div class="p_2 font_4">
-			<span class="br_radius m-x_2 p-x_3 p-y_2 bg_secondary-4">default: <i class="far fa-fw {{modifier_class}}"></i></span> 
-			<span class="m-x_4 p_4  p-y_2 br_circle bg_black c_white">vs</span>
-			<span class="is-complete br_radius m-x_2 p-x_3 p-y_2 bg_primary-4">is-complete: <i class="far {{modifier_class}}"></i></span></div>
-	</li>
-	<li class="font_bold border_solid border_secondary-5 p_3 border-width_1">
-		<div class="font_bold c_secondary-3">FA Light {{modifier_class}}</div>
-		<div class="p_2 font_4">
-			<span class="br_radius m-x_2 p-x_3 p-y_2 bg_secondary-4">default: <i class="fal fa-fw {{modifier_class}}"></i></span> 
-			<span class="m-x_4 p_4  p-y_2 br_circle bg_black c_white">vs</span>
-			<span class="is-complete br_radius m-x_2 p-x_3 p-y_2 bg_primary-4">is-complete: <i class="fal {{modifier_class}}"></i></span></div>
-	</li>
+markup:
+<ul class="no-bullet">
+<li class="font_bold border_solid border_secondary-5 p_3 border-width_1">
+	<div class="font_bold c_secondary-3">FA Solid {{modifier_class}}</div>
+	<div class="p_2 font_4">
+		<span class="br_radius m-x_2 p-x_3 p-y_2 bg_secondary-4">default: <i class="fas fa-fw {{modifier_class}}"></i></span> 
+		<span class="m-x_4 p_4  p-y_2 br_circle bg_black c_white">vs</span>
+		<span class="is-complete br_radius m-x_2 p-x_3 p-y_2 bg_primary-4">is-complete: <i class="fas {{modifier_class}}"></i></span></div>
+</li>
+<li class="font_bold border_solid border_secondary-5 p_3 border-width_1">
+	<div class="font_bold c_secondary-3">FA Regular {{modifier_class}}</div>
+	<div class="p_2 font_4">
+		<span class="br_radius m-x_2 p-x_3 p-y_2 bg_secondary-4">default: <i class="far fa-fw {{modifier_class}}"></i></span> 
+		<span class="m-x_4 p_4  p-y_2 br_circle bg_black c_white">vs</span>
+		<span class="is-complete br_radius m-x_2 p-x_3 p-y_2 bg_primary-4">is-complete: <i class="far {{modifier_class}}"></i></span></div>
+</li>
+<li class="font_bold border_solid border_secondary-5 p_3 border-width_1">
+	<div class="font_bold c_secondary-3">FA Light {{modifier_class}}</div>
+	<div class="p_2 font_4">
+		<span class="br_radius m-x_2 p-x_3 p-y_2 bg_secondary-4">default: <i class="fal fa-fw {{modifier_class}}"></i></span> 
+		<span class="m-x_4 p_4  p-y_2 br_circle bg_black c_white">vs</span>
+		<span class="is-complete br_radius m-x_2 p-x_3 p-y_2 bg_primary-4">is-complete: <i class="fal {{modifier_class}}"></i></span></div>
+</li>
+</ul>
 
-	sg-wrapper: 
-	<ul class="no-bullet"><sg-wrapper-content/></ul>
-
-	Styleguide 20.1
+Styleguide InteractiveExtras.CompleteIcons
 */
 i.icon-complete_check:before {
 	content: "";
