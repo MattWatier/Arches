@@ -13,7 +13,7 @@ All textures in the Arches design are a subtle variation of transparent.   Allow
 markup:
 <div class="{{modifier_class}} p_5 br_black-8 br_1 br_solid text-center">{{modifier_class}}</div>
 
-Styleguide 104.4
+Styleguide Background.Textures
 
  */
 
@@ -60,7 +60,7 @@ Styleguide 104.4
 	markup:
 	<div class="{{modifier_class}} p_5 br_black-8 br_1 br_solid text-center">{{modifier_class}}</div>
 
-	Styleguide 104.4.1
+	Styleguide Background.Textures.BackgroundColor
 
  */
 
@@ -81,13 +81,13 @@ Styleguide 104.4
 	.texture_disabled.bg_warning             	- textures are slightly transparent so they can be colored with background-color classess
 
 	markup:
-	<div class="grid-x">
-		<div class="{{modifier_class}}-n3 p_3 cell auto text-center c_white">n3</div>
-		<div class="{{modifier_class}}-n1 p_3 cell auto text-center c_white">n1</div>
-		<div class="{{modifier_class}}-1 p_3 cell auto text-center c_white">1</div>
-		<div class="{{modifier_class}}-3 p_3 cell auto text-center c_white">3</div>
+	<div class="flex">
+		<div class="{{modifier_class}}-n3 p_3 flex_auto text-center c_white">n3</div>
+		<div class="{{modifier_class}}-n1 p_3 flex_auto text-center c_white">n1</div>
+		<div class="{{modifier_class}}-1 p_3 flex_auto text-center c_white">1</div>
+		<div class="{{modifier_class}}-3 p_3 flex_auto text-center c_white">3</div>
 	</div>
 
-	Styleguide 104.4.2
+	Styleguide Background.Textures.Shaded
 
  */

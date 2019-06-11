@@ -21,8 +21,10 @@ Margin
 .m-l_n4 				- Left margin set to negative  global margin
 .m-b_n4 				- Bottom margin set to negative  global margin
 
-	markup:
-	<div class="bg_warning-3 d-block br_1 br_solid"><div class="{{modifier_class}} p_2 bg_primary text-center c_white cell auto opacity_5 d-block">Container With Margins</div></div>
+markup:
+<div class="bg_warning-3 d-block br_1 br_solid">
+	<div class="{{modifier_class}} p_2 bg_primary text-center c_white cell auto opacity_5 d-block">Container With Margins</div>
+</div>
 
 Styleguide Spacing.Margin
 
@@ -61,27 +63,29 @@ Styleguide Spacing.Margin
 }
 
 /*
-	Padding
+Padding
 
-	<div class="p-b_3"><span class="bg_accent br_radius c_white d_inline-block font_n1 p-7_3 p-x_5 sg">Is Responsive: breakpoint modifiers</span></div>Quickly alter the padding of an object.
+<div class="p-b_3"><span class="bg_accent br_radius c_white d_inline-block font_n1 p-7_3 p-x_5 sg">Is Responsive: breakpoint modifiers</span></div>Quickly alter the padding of an object.
 
-	.p_0              - All paddings set to 0
-	.p_1              - All paddings set to 1px
-	.p_2              - All paddings set to 1/4 of global padding
-	.p_3              - All paddings set to 1/2 of global padding
-	.p_4              - All paddings set to global padding
-	.p_5              - All paddings set to 2x of global padding 
-	.p-x_5              - left and right paddings set to 2x of global padding 
-	.p-y_5              - top and bottom paddings set to 2x of global padding 
-	.p-t_4          	- Top padding set to global padding
-	.p-r_4        	- Right padding set to global padding
-	.p-l_4         - Left padding set to global padding
-	.p-b_4       - Bottom padding set to global padding
+.p_0              - All paddings set to 0
+.p_1              - All paddings set to 1px
+.p_2              - All paddings set to 1/4 of global padding
+.p_3              - All paddings set to 1/2 of global padding
+.p_4              - All paddings set to global padding
+.p_5              - All paddings set to 2x of global padding 
+.p-x_5              - left and right paddings set to 2x of global padding 
+.p-y_5              - top and bottom paddings set to 2x of global padding 
+.p-t_4          	- Top padding set to global padding
+.p-r_4        	- Right padding set to global padding
+.p-l_4         - Left padding set to global padding
+.p-b_4       - Bottom padding set to global padding
 
-	markup:
-	<div class="{{modifier_class}} br_solid br_transparent bg_alert-3  text-center"><div class="bg_primary-5 text-center">Content With Padding</div></div>
+markup:
+<div class="{{modifier_class}} br_solid br_transparent bg_alert-3  text-center">
+	<div class="bg_primary-5 text-center">Content With Padding</div>
+</div>
 
-	Styleguide Spacing.Padding
+Styleguide Spacing.Padding
 
  */
 
@@ -130,24 +134,24 @@ Styleguide Spacing.Margin
 }
 
 /*
-	Position
+Position
 
-	  <div class="p-b_3"><span class="bg_accent br_radius c_white d_inline-block font_n1 p-7_3 p-x_5 sg">Is Responsive: breakpoint modifiers</span></div>Quickly alter the position type and location of an object with 'absolute' and 'top'
+	<div class="p-b_3"><span class="bg_accent br_radius c_white d_inline-block font_n1 p-7_3 p-x_5 sg">Is Responsive: breakpoint modifiers</span></div>Quickly alter the position type and location of an object with 'absolute' and 'top'
 
-	.t_0 - modify top of an absolute positioned block 
-	.t_5 - modify top of an absolute positioned block
-	.b_0 - modify bottom of an absolute positioned block 
-	.b_5 - modify bottom of an absolute positioned block
-	.l_0 - modify left of an absolute positioned block 
-	.l_5 - modify left of an absolute positioned block
-	.r_0 - modify right of an absolute positioned block 
-	.r_5 - modify right of an absolute positioned block
+#{class-name-constructor(top,1)} - modify top of an absolute positioned block 
+#{class-name-constructor(top,5)} - modify top of an absolute positioned block
+#{class-name-constructor(bottom,1)} - modify bottom of an absolute positioned block 
+#{class-name-constructor(bottom,5)} - modify bottom of an absolute positioned block
+#{class-name-constructor(right,5)} - modify left of an absolute positioned block 
+#{class-name-constructor(left,5)} - modify right of an absolute positioned block 
 
 
-	markup:
-	<div class=" br_solid br_transparent bg_accent-3 relative p_5" style="height:200px;"><div class="bg_primary-5 text-center absolute {{modifier_class}}">Position Absolute {{modifier_class}}</div></div>
+markup:
+<div class=" br_solid br_transparent bg_accent-3 relative p_5" style="height:200px;">
+	<div class="bg_primary-5 text-center absolute {{modifier_class}}">Position Absolute {{modifier_class}}</div>
+</div>
 
-	Styleguide Spacing.Position
+Styleguide Spacing.Position
 
  */
 
