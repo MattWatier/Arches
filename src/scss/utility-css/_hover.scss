@@ -1,5 +1,5 @@
 /*
-  Hover:Backgrounds
+  Hover:Background Color
  
   hovers can easily be added to objects by adding `hover:` or `h:` in front of the background color utility like `h:bg_primary`
 
@@ -12,22 +12,22 @@
   bg_warning              - background color modified light to dark
 
   markup:
-  <div class="grid-x m_5">
-    <div class="h:{{modifier_class}}-5 cell auto text-center br_1 br_solid br_secondary-4 p_2">5</div>
-    <div class="h:{{modifier_class}}-4 cell auto text-center br_1 br_solid br_secondary-4 p_2">4</div>
-    <div class="h:{{modifier_class}}-3 cell auto text-center br_1 br_solid br_secondary-4 p_2">3</div>
-    <div class="h:{{modifier_class}}-2 cell auto text-center br_1 br_solid br_secondary-4 p_2">2</div>
-    <div class="h:{{modifier_class}}-1 cell auto text-center br_1 br_solid br_secondary-4 p_2">1</div>
-    <div class="h:{{modifier_class}}-0 cell auto text-center br_1 br_solid br_secondary-4 p_2">0</div>
-    <div class="h:{{modifier_class}}-n1 cell auto text-center br_1 br_solid br_secondary-4 p_2 h:c_white">n1</div>
-    <div class="h:{{modifier_class}}-n2 cell auto text-center br_1 br_solid br_secondary-4 p_2 h:c_white">n2</div>
-    <div class="h:{{modifier_class}}-n3 cell auto text-center br_1 br_solid br_secondary-4 p_2 h:c_white">n3</div>
-    <div class="h:{{modifier_class}}-n4 cell auto text-center br_1 br_solid br_secondary-4 p_2 h:c_white">n4</div>
-    <div class="h:{{modifier_class}}-n5 cell auto text-center br_1 br_solid br_secondary-4 p_2 h:c_white">n5</div>
+  <div class="flex m_5">
+    <div class="h:{{modifier_class}}-5 flex_auto text_center br_1 br_solid br_secondary-4 p_2">5</div>
+    <div class="h:{{modifier_class}}-4 flex_auto text_center br_1 br_solid br_secondary-4 p_2">4</div>
+    <div class="h:{{modifier_class}}-3 flex_auto text_center br_1 br_solid br_secondary-4 p_2">3</div>
+    <div class="h:{{modifier_class}}-2 flex_auto text_center br_1 br_solid br_secondary-4 p_2">2</div>
+    <div class="h:{{modifier_class}}-1 flex_auto text_center br_1 br_solid br_secondary-4 p_2">1</div>
+    <div class="h:{{modifier_class}}-0 flex_auto text_center br_1 br_solid br_secondary-4 p_2">0</div>
+    <div class="h:{{modifier_class}}-n1 flex_auto text_center br_1 br_solid br_secondary-4 p_2 h:c_white">n1</div>
+    <div class="h:{{modifier_class}}-n2 flex_auto text_center br_1 br_solid br_secondary-4 p_2 h:c_white">n2</div>
+    <div class="h:{{modifier_class}}-n3 flex_auto text_center br_1 br_solid br_secondary-4 p_2 h:c_white">n3</div>
+    <div class="h:{{modifier_class}}-n4 flex_auto text_center br_1 br_solid br_secondary-4 p_2 h:c_white">n4</div>
+    <div class="h:{{modifier_class}}-n5 flex_auto text_center br_1 br_solid br_secondary-4 p_2 h:c_white">n5</div>
   </div>
 
  
-  Styleguide 109.1
+  Styleguide hover.background
  
  */
 a:focus {
@@ -58,7 +58,7 @@ a:focus {
 }
 
 /*
-  Hover: Text 
+  Hover: Text Color
  
   hovers can easily be added to change the text color by adding `hover:` or `h:` in front of the text color utility like `h:primary`
 
@@ -71,22 +71,22 @@ a:focus {
   c_alert              - text color modified light to dark
 
   markup:
-  <div class="grid-x m_5">
-    <div class="h:{{modifier_class}}-5 cell auto font_bold bg_secondary-3 font_4 font_slab text-center br_1 br_solid br_secondary-4 p_1">5</div>
-    <div class="h:{{modifier_class}}-4 cell auto font_bold bg_secondary-3 font_4 font_slab text-center br_1 br_solid br_secondary-4 p_1">4</div>
-    <div class="h:{{modifier_class}}-3 cell auto font_bold bg_secondary-3 font_4 font_slab text-center br_1 br_solid br_secondary-4 p_1">3</div>
-    <div class="h:{{modifier_class}}-2 cell auto font_bold bg_secondary-3 font_4 font_slab text-center br_1 br_solid br_secondary-4 p_1">2</div>
-    <div class="h:{{modifier_class}}-1 cell auto font_bold bg_secondary-3 font_4 font_slab text-center br_1 br_solid br_secondary-4 p_1">1</div>
-    <div class="h:{{modifier_class}}-0 cell auto font_bold bg_secondary-3 font_4 font_slab text-center br_1 br_solid br_secondary-4 p_1">0</div>
-    <div class="h:{{modifier_class}}-n1 cell auto font_bold bg_secondary-3 font_4 font_slab text-center br_1 br_solid br_secondary-4 p_1 ">n1</div>
-    <div class="h:{{modifier_class}}-n2 cell auto font_bold bg_secondary-3 font_4 font_slab text-center br_1 br_solid br_secondary-4 p_1 ">n2</div>
-    <div class="h:{{modifier_class}}-n3 cell auto font_bold bg_secondary-3 font_4 font_slab text-center br_1 br_solid br_secondary-4 p_1 ">n3</div>
-    <div class="h:{{modifier_class}}-n4 cell auto font_bold bg_secondary-3 font_4 font_slab text-center br_1 br_solid br_secondary-4 p_1 ">n4</div>
-    <div class="h:{{modifier_class}}-n5 cell auto font_bold bg_secondary-3 font_4 font_slab text-center br_1 br_solid br_secondary-4 p_1 ">n5</div>
+  <div class="flex m_5">
+    <div class="h:{{modifier_class}}-5 flex_auto font_bold bg_secondary-3 font_4 font_slab text_center br_1 br_solid br_secondary-4 p_1">5</div>
+    <div class="h:{{modifier_class}}-4 flex_auto font_bold bg_secondary-3 font_4 font_slab text_center br_1 br_solid br_secondary-4 p_1">4</div>
+    <div class="h:{{modifier_class}}-3 flex_auto font_bold bg_secondary-3 font_4 font_slab text_center br_1 br_solid br_secondary-4 p_1">3</div>
+    <div class="h:{{modifier_class}}-2 flex_auto font_bold bg_secondary-3 font_4 font_slab text_center br_1 br_solid br_secondary-4 p_1">2</div>
+    <div class="h:{{modifier_class}}-1 flex_auto font_bold bg_secondary-3 font_4 font_slab text_center br_1 br_solid br_secondary-4 p_1">1</div>
+    <div class="h:{{modifier_class}}-0 flex_auto font_bold bg_secondary-3 font_4 font_slab text_center br_1 br_solid br_secondary-4 p_1">0</div>
+    <div class="h:{{modifier_class}}-n1 flex_auto font_bold bg_secondary-3 font_4 font_slab text_center br_1 br_solid br_secondary-4 p_1 ">n1</div>
+    <div class="h:{{modifier_class}}-n2 flex_auto font_bold bg_secondary-3 font_4 font_slab text_center br_1 br_solid br_secondary-4 p_1 ">n2</div>
+    <div class="h:{{modifier_class}}-n3 flex_auto font_bold bg_secondary-3 font_4 font_slab text_center br_1 br_solid br_secondary-4 p_1 ">n3</div>
+    <div class="h:{{modifier_class}}-n4 flex_auto font_bold bg_secondary-3 font_4 font_slab text_center br_1 br_solid br_secondary-4 p_1 ">n4</div>
+    <div class="h:{{modifier_class}}-n5 flex_auto font_bold bg_secondary-3 font_4 font_slab text_center br_1 br_solid br_secondary-4 p_1 ">n5</div>
   </div>
 
  
-  Styleguide 109.2
+  Styleguide hover.text
  
  */
 
@@ -151,7 +151,7 @@ a:focus {
   </p>
 
  
-  Styleguide 109.3
+  Styleguide hover.underlines
   
   */
 
@@ -167,29 +167,29 @@ a:focus {
 @include loop-transparent(background-transparent, black, "", "!important", true);
 
 /*
-  Hover: Background Black and White Opacity 
- 
-  black and white overlays can be added to hovers easily by adding `hover:` in front of black or white  with the level of opacity needed.
+Hover: Background Black and White Opacity 
 
-  bg_white              - text color modified light to dark
-  bg_black              - text color modified light to dark
+black and white overlays can be added to hovers easily by adding `hover:` in front of black or white  with the level of opacity needed.
 
-  markup:
-  <div class="grid-x m_5 bg_primary m_5">
-    <div class="hover:{{modifier_class}}-0 cell p-y_3 p-x_4 shrink font_bold font_2 font_slab text-center br_1 br_solid br_secondary-4">0</div>
-    <div class="hover:{{modifier_class}}-1 cell p-y_3 p-x_4 shrink font_bold font_2 font_slab text-center br_1 br_solid br_secondary-4">1</div>
-    <div class="hover:{{modifier_class}}-2 cell p-y_3 p-x_4 shrink font_bold font_2 font_slab text-center br_1 br_solid br_secondary-4">2</div>
-    <div class="hover:{{modifier_class}}-3 cell p-y_3 p-x_4 shrink font_bold font_2 font_slab text-center br_1 br_solid br_secondary-4">3</div>
-    <div class="hover:{{modifier_class}}-4 cell p-y_3 p-x_4 shrink font_bold font_2 font_slab text-center br_1 br_solid br_secondary-4">4</div>
-    <div class="hover:{{modifier_class}}-5 cell p-y_3 p-x_4 shrink font_bold font_2 font_slab text-center br_1 br_solid br_secondary-4">5</div>
-    <div class="hover:{{modifier_class}}-6 cell p-y_3 p-x_4 shrink font_bold font_2 font_slab text-center br_1 br_solid br_secondary-4 ">6</div>
-    <div class="hover:{{modifier_class}}-7 cell p-y_3 p-x_4 shrink font_bold font_2 font_slab text-center br_1 br_solid br_secondary-4 ">7</div>
-    <div class="hover:{{modifier_class}}-8 cell p-y_3 p-x_4 shrink font_bold font_2 font_slab text-center br_1 br_solid br_secondary-4 ">8</div>
-    <div class="hover:{{modifier_class}}-9 cell p-y_3 p-x_4 shrink font_bold font_2 font_slab text-center br_1 br_solid br_secondary-4 ">9</div>
-    <div class="hover:{{modifier_class}} cell p-y_3 p-x_4 auto font_bold font_2 font_slab text-center br_1 br_solid br_secondary-4 ">default</div>
-  </div>
+bg_white              - text color modified light to dark
+bg_black              - text color modified light to dark
 
- 
-  Styleguide 109.4
+markup:
+<div class="flex m_5 bg_primary m_5">
+  <div class="h:{{modifier_class}}-0  p-y_3 p-x_4 flex_shrink font_bold font_2 font_slab text_center br_1 br_solid br_secondary-4">0</div>
+  <div class="h:{{modifier_class}}-1  p-y_3 p-x_4 flex_shrink font_bold font_2 font_slab text_center br_1 br_solid br_secondary-4">1</div>
+  <div class="h:{{modifier_class}}-2  p-y_3 p-x_4 flex_shrink font_bold font_2 font_slab text_center br_1 br_solid br_secondary-4">2</div>
+  <div class="h:{{modifier_class}}-3  p-y_3 p-x_4 flex_shrink font_bold font_2 font_slab text_center br_1 br_solid br_secondary-4">3</div>
+  <div class="h:{{modifier_class}}-4  p-y_3 p-x_4 flex_shrink font_bold font_2 font_slab text_center br_1 br_solid br_secondary-4">4</div>
+  <div class="h:{{modifier_class}}-5  p-y_3 p-x_4 flex_shrink font_bold font_2 font_slab text_center br_1 br_solid br_secondary-4">5</div>
+  <div class="h:{{modifier_class}}-6  p-y_3 p-x_4 flex_shrink font_bold font_2 font_slab text_center br_1 br_solid br_secondary-4 ">6</div>
+  <div class="h:{{modifier_class}}-7  p-y_3 p-x_4 flex_shrink font_bold font_2 font_slab text_center br_1 br_solid br_secondary-4 ">7</div>
+  <div class="h:{{modifier_class}}-8  p-y_3 p-x_4 flex_shrink font_bold font_2 font_slab text_center br_1 br_solid br_secondary-4 ">8</div>
+  <div class="h:{{modifier_class}}-9  p-y_3 p-x_4 flex_shrink font_bold font_2 font_slab text_center br_1 br_solid br_secondary-4 ">9</div>
+  <div class="h:{{modifier_class}}  p-y_3 p-x_4 flex_auto font_bold font_2 font_slab text_center br_1 br_solid br_secondary-4 ">default</div>
+</div>
+
+
+Styleguide hover.opacity
  
  */

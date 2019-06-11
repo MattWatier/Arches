@@ -23,7 +23,7 @@ Margin
 
 markup:
 <div class="bg_warning-3 d-block br_1 br_solid">
-	<div class="{{modifier_class}} p_2 bg_primary text-center c_white cell auto opacity_5 d-block">Container With Margins</div>
+	<div class="{{modifier_class}} p_2 bg_primary text_center c_white cell auto opacity_5 d-block">Container With Margins</div>
 </div>
 
 Styleguide Spacing.Margin
@@ -81,8 +81,8 @@ Padding
 .p-b_4       - Bottom padding set to global padding
 
 markup:
-<div class="{{modifier_class}} br_solid br_transparent bg_alert-3  text-center">
-	<div class="bg_primary-5 text-center">Content With Padding</div>
+<div class="{{modifier_class}} br_solid br_transparent bg_alert-3  text_center">
+	<div class="bg_primary-5 text_center">Content With Padding</div>
 </div>
 
 Styleguide Spacing.Padding
@@ -148,7 +148,7 @@ Position
 
 markup:
 <div class=" br_solid br_transparent bg_accent-3 relative p_5" style="height:200px;">
-	<div class="bg_primary-5 text-center absolute {{modifier_class}}">Position Absolute {{modifier_class}}</div>
+	<div class="bg_primary-5 text_center absolute {{modifier_class}}">Position Absolute {{modifier_class}}</div>
 </div>
 
 Styleguide Spacing.Position

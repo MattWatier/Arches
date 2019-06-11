@@ -54,7 +54,7 @@ Styleguide Spacing
 
   Decorate containers and text to show user intereaction with simple hover, and focus effects. 
 
-  Styleguide 109.0
+  Styleguide hover
 */
 /* No styleguide reference. */
 @import "hover";
@@ -63,7 +63,7 @@ Styleguide Spacing
 
   Borders a complex utility that demands a combo UCs to acheive their effect. The three UCs that must be used in combo are 'br_X' where x is the value need for style color and width.  So to make an object with single black pixel border that is solid you would have to add '.br_solid.br_1.br_black' 
 
-  Styleguide 103.0
+  Styleguide border
  
  */
 @import "border";

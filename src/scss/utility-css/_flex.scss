@@ -9,10 +9,10 @@
 	.flex_column-reverse              		- flex_row-reverse
 
 	markup:
-	<div class="flex {{modifier_class}} br_solid br_transparent bg_alert-3  text-center  p_3 bg_warning-3"> 
-		<div class="bg_primary-5 text-center flex_auto p_3 br_solid br_1 m_2 br_black">Auto 1</div>
-		<div class="bg_primary-5 text-center flex_shrink p_3 br_solid br_1 m_2 br_black">Shrink 2</div>
-		<div class="bg_primary-5 text-center flex_auto p_3 br_solid br_1 m_2 br_black">Auto 3</div>
+	<div class="flex {{modifier_class}} br_solid br_transparent bg_alert-3  text_center  p_3 bg_warning-3"> 
+		<div class="bg_primary-5 text_center flex_auto p_3 br_solid br_1 m_2 br_black">Auto 1</div>
+		<div class="bg_primary-5 text_center flex_shrink p_3 br_solid br_1 m_2 br_black">Shrink 2</div>
+		<div class="bg_primary-5 text_center flex_auto p_3 br_solid br_1 m_2 br_black">Auto 3</div>
 	</div>
 
 	Styleguide 110.2

@@ -150,7 +150,7 @@ div[class^=texture_] {
 	.texture_disabled              				- This texture is used to paint disabled buttons and ui items giving it a greyed and X'ed out appearand. 
 
 	markup:
-	<div class="{{modifier_class}} p_5 border-c_black-8 border-width_1 border_solid text-center bg_primary-4">{{modifier_class}} with a light primary color background</div>
+	<div class="{{modifier_class}} p_5 border-c_black-8 border-width_1 border_solid text_center bg_primary-4">{{modifier_class}} with a light primary color background</div>
 
 	Styleguide DesignBase.Textures
 
@@ -5971,7 +5971,7 @@ States can be easily applied to the tables using UC's
 markup:
 <table class="table">
   <tr>
-    <td class="bg_alert-4 border_solid border-width_1 border_alert font-weight_bold text-center">
+    <td class="bg_alert-4 border_solid border-width_1 border_alert font-weight_bold text_center">
       <i class="fas fa-times-circle"></i>
     </td>
     <td class="">
@@ -5983,7 +5983,7 @@ markup:
   <tr>
     <td class="">
     </td>
-    <td class="bg_info-4 border_solid border-width_1 border_info font-weight_bold text-center">
+    <td class="bg_info-4 border_solid border-width_1 border_info font-weight_bold text_center">
       <i class="fas fa-lightbulb-exclamation"></i>
     </td>
     <td class="">Text</td>
@@ -6796,59 +6796,59 @@ Icons: Font Icons
 
  markup:
 <ul class="no-bullet list m_0 p_0 grid-x  justify-start items-start">
-	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/award?style=solid" class="font_5 cell small-3 text-center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-award" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">award</span> <!----></div> <!----></div></li>
-	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/ban?style=solid" class="font_5 cell small-3 text-center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-ban" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">ban</span> <!----></div> <!----></div></li>
-	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/barcode?style=solid" class="font_5 cell small-3 text-center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-barcode" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">barcode</span> <!----></div> <!----></div></li>
-	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/bars?style=solid" class="font_5 cell small-3 text-center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-bars" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">bars</span> <!----></div> <!----></div></li>
-	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/beer?style=solid" class="font_5 cell small-3 text-center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-beer" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">beer</span> <!----></div> <!----></div></li>
-	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/bell?style=solid" class="font_5 cell small-3 text-center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-bell" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">bell</span> <!----></div> <!----></div></li>
-	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/bell?style=regular" class="font_5 cell small-3 text-center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-bell" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">bell</span> <!----></div> <!----></div></li>
-	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/bell-slash?style=solid" class="font_5 cell small-3 text-center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-bell-slash" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">bell-slash</span> <!----></div> <!----></div></li>
-	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/bell-slash?style=regular" class="font_5 cell small-3 text-center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-bell-slash" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">bell-slash</span> <!----></div> <!----></div></li>
-	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/bug?style=solid" class="font_5 cell small-3 text-center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-bug" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">bug</span> <!----></div> <!----></div></li>
-	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/bullhorn?style=solid" class="font_5 cell small-3 text-center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-bullhorn" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">bullhorn</span> <!----></div> <!----></div></li>
-	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/bullseye?style=solid" class="font_5 cell small-3 text-center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-bullseye" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">bullseye</span> <!----></div> <!----></div></li>
-	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/calculator?style=solid" class="font_5 cell small-3 text-center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-calculator" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">calculator</span> <!----></div> <!----></div></li>
-	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/calendar?style=solid" class="font_5 cell small-3 text-center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-calendar" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">calendar</span> <!----></div> <!----></div></li>
-	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/calendar?style=regular" class="font_5 cell small-3 text-center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-calendar" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">calendar</span> <!----></div> <!----></div></li>
-	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/calendar-alt?style=solid" class="font_5 cell small-3 text-center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-calendar-alt" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">calendar-alt</span> <!----></div> <!----></div></li>
-	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/calendar-alt?style=regular" class="font_5 cell small-3 text-center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-calendar-alt" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">calendar-alt</span> <!----></div> <!----></div></li>
-	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/calendar-check?style=solid" class="font_5 cell small-3 text-center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-calendar-check" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">calendar-check</span> <!----></div> <!----></div></li>
-	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/calendar-check?style=regular" class="font_5 cell small-3 text-center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-calendar-check" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">calendar-check</span> <!----></div> <!----></div></li>
-	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/calendar-minus?style=solid" class="font_5 cell small-3 text-center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-calendar-minus" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">calendar-minus</span> <!----></div> <!----></div></li>
-	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/calendar-minus?style=regular" class="font_5 cell small-3 text-center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-calendar-minus" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">calendar-minus</span> <!----></div> <!----></div></li>
-	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/calendar-plus?style=solid" class="font_5 cell small-3 text-center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-calendar-plus" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">calendar-plus</span> <!----></div> <!----></div></li>
-	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/calendar-plus?style=regular" class="font_5 cell small-3 text-center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-calendar-plus" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">calendar-plus</span> <!----></div> <!----></div></li>
-	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/calendar-times?style=solid" class="font_5 cell small-3 text-center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-calendar-times" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">calendar-times</span> <!----></div> <!----></div></li>
-	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/calendar-times?style=regular" class="font_5 cell small-3 text-center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-calendar-times" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">calendar-times</span> <!----></div> <!----></div></li>
-	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/certificate?style=solid" class="font_5 cell small-3 text-center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-certificate" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">certificate</span> <!----></div> <!----></div></li>
-	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/check?style=solid" class="font_5 cell small-3 text-center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-check" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">check</span> <!----></div> <!----></div></li>
-	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/check-circle?style=solid" class="font_5 cell small-3 text-center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-check-circle" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">check-circle</span> <!----></div> <!----></div></li>
-	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/check-circle?style=regular" class="font_5 cell small-3 text-center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-check-circle" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">check-circle</span> <!----></div> <!----></div></li>
-	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/check-double?style=solid" class="font_5 cell small-3 text-center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-check-double" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">check-double</span> <!----></div> <!----></div></li>
-	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/check-square?style=solid" class="font_5 cell small-3 text-center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-check-square" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">check-square</span> <!----></div> <!----></div></li>
-	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/check-square?style=regular" class="font_5 cell small-3 text-center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-check-square" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">check-square</span> <!----></div> <!----></div></li>
-	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/circle?style=solid" class="font_5 cell small-3 text-center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-circle" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">circle</span> <!----></div> <!----></div></li>
-	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/clipboard?style=solid" class="font_5 cell small-3 text-center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-clipboard" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">clipboard</span> <!----></div> <!----></div></li>
-	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/clone?style=solid" class="font_5 cell small-3 text-center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-clone" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">clone</span> <!----></div> <!----></div></li>
-	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/cloud?style=solid" class="font_5 cell small-3 text-center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-cloud" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">cloud</span> <!----></div> <!----></div></li>
-	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/cloud-download-alt?style=solid" class="font_5 cell small-3 text-center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-cloud-download-alt" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">cloud-download-alt</span> <!----></div> <!----></div></li>
-	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/cloud-upload-alt?style=solid" class="font_5 cell small-3 text-center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-cloud-upload-alt" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">cloud-upload-alt</span> <!----></div> <!----></div></li>
-	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/coffee?style=solid" class="font_5 cell small-3 text-center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-coffee" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">coffee</span> <!----></div> <!----></div></li>
-	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/cog?style=solid" class="font_5 cell small-3 text-center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-cog" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">cog</span> <!----></div> <!----></div></li>
-	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/cogs?style=solid" class="font_5 cell small-3 text-center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-cogs" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">cogs</span> <!----></div> <!----></div></li>
-	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/copy?style=solid" class="font_5 cell small-3 text-center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-copy" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">copy</span> <!----></div> <!----></div></li>
-	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/copy?style=regular" class="font_5 cell small-3 text-center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-copy" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">copy</span> <!----></div> <!----></div></li>
-	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/cut?style=solid" class="font_5 cell small-3 text-center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-cut" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">cut</span> <!----></div> <!----></div></li>
-	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/database?style=solid" class="font_5 cell small-3 text-center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-database" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">database</span> <!----></div> <!----></div></li>
-	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/dot-circle?style=solid" class="font_5 cell small-3 text-center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-dot-circle" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">dot-circle</span> <!----></div> <!----></div></li>
-	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/dot-circle?style=regular" class="font_5 cell small-3 text-center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-dot-circle" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">dot-circle</span> <!----></div> <!----></div></li>
-	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/download?style=solid" class="font_5 cell small-3 text-center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-download" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">download</span> <!----></div> <!----></div></li>
-	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/edit?style=solid" class="font_5 cell small-3 text-center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-edit" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">edit</span> <!----></div> <!----></div></li>
-	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/edit?style=regular" class="font_5 cell small-3 text-center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-edit" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">edit</span> <!----></div> <!----></div></li>
-	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/ellipsis-h?style=solid" class="font_5 cell small-3 text-center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-ellipsis-h" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">ellipsis-h</span> <!----></div> <!----></div></li>
-	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/ellipsis-v?style=solid" class="font_5 cell small-3 text-center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-ellipsis-v" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">ellipsis-v</span> <!----></div> <!----></div></li>
-	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/envelope?style=solid" class="font_5 cell small-3 text-center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-envelope" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">envelope</span> <!----></div> <!----></div></li>
+	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/award?style=solid" class="font_5 cell small-3 text_center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-award" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">award</span> <!----></div> <!----></div></li>
+	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/ban?style=solid" class="font_5 cell small-3 text_center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-ban" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">ban</span> <!----></div> <!----></div></li>
+	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/barcode?style=solid" class="font_5 cell small-3 text_center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-barcode" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">barcode</span> <!----></div> <!----></div></li>
+	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/bars?style=solid" class="font_5 cell small-3 text_center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-bars" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">bars</span> <!----></div> <!----></div></li>
+	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/beer?style=solid" class="font_5 cell small-3 text_center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-beer" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">beer</span> <!----></div> <!----></div></li>
+	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/bell?style=solid" class="font_5 cell small-3 text_center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-bell" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">bell</span> <!----></div> <!----></div></li>
+	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/bell?style=regular" class="font_5 cell small-3 text_center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-bell" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">bell</span> <!----></div> <!----></div></li>
+	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/bell-slash?style=solid" class="font_5 cell small-3 text_center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-bell-slash" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">bell-slash</span> <!----></div> <!----></div></li>
+	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/bell-slash?style=regular" class="font_5 cell small-3 text_center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-bell-slash" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">bell-slash</span> <!----></div> <!----></div></li>
+	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/bug?style=solid" class="font_5 cell small-3 text_center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-bug" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">bug</span> <!----></div> <!----></div></li>
+	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/bullhorn?style=solid" class="font_5 cell small-3 text_center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-bullhorn" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">bullhorn</span> <!----></div> <!----></div></li>
+	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/bullseye?style=solid" class="font_5 cell small-3 text_center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-bullseye" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">bullseye</span> <!----></div> <!----></div></li>
+	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/calculator?style=solid" class="font_5 cell small-3 text_center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-calculator" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">calculator</span> <!----></div> <!----></div></li>
+	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/calendar?style=solid" class="font_5 cell small-3 text_center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-calendar" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">calendar</span> <!----></div> <!----></div></li>
+	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/calendar?style=regular" class="font_5 cell small-3 text_center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-calendar" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">calendar</span> <!----></div> <!----></div></li>
+	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/calendar-alt?style=solid" class="font_5 cell small-3 text_center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-calendar-alt" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">calendar-alt</span> <!----></div> <!----></div></li>
+	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/calendar-alt?style=regular" class="font_5 cell small-3 text_center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-calendar-alt" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">calendar-alt</span> <!----></div> <!----></div></li>
+	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/calendar-check?style=solid" class="font_5 cell small-3 text_center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-calendar-check" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">calendar-check</span> <!----></div> <!----></div></li>
+	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/calendar-check?style=regular" class="font_5 cell small-3 text_center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-calendar-check" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">calendar-check</span> <!----></div> <!----></div></li>
+	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/calendar-minus?style=solid" class="font_5 cell small-3 text_center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-calendar-minus" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">calendar-minus</span> <!----></div> <!----></div></li>
+	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/calendar-minus?style=regular" class="font_5 cell small-3 text_center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-calendar-minus" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">calendar-minus</span> <!----></div> <!----></div></li>
+	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/calendar-plus?style=solid" class="font_5 cell small-3 text_center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-calendar-plus" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">calendar-plus</span> <!----></div> <!----></div></li>
+	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/calendar-plus?style=regular" class="font_5 cell small-3 text_center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-calendar-plus" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">calendar-plus</span> <!----></div> <!----></div></li>
+	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/calendar-times?style=solid" class="font_5 cell small-3 text_center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-calendar-times" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">calendar-times</span> <!----></div> <!----></div></li>
+	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/calendar-times?style=regular" class="font_5 cell small-3 text_center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-calendar-times" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">calendar-times</span> <!----></div> <!----></div></li>
+	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/certificate?style=solid" class="font_5 cell small-3 text_center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-certificate" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">certificate</span> <!----></div> <!----></div></li>
+	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/check?style=solid" class="font_5 cell small-3 text_center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-check" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">check</span> <!----></div> <!----></div></li>
+	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/check-circle?style=solid" class="font_5 cell small-3 text_center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-check-circle" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">check-circle</span> <!----></div> <!----></div></li>
+	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/check-circle?style=regular" class="font_5 cell small-3 text_center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-check-circle" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">check-circle</span> <!----></div> <!----></div></li>
+	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/check-double?style=solid" class="font_5 cell small-3 text_center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-check-double" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">check-double</span> <!----></div> <!----></div></li>
+	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/check-square?style=solid" class="font_5 cell small-3 text_center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-check-square" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">check-square</span> <!----></div> <!----></div></li>
+	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/check-square?style=regular" class="font_5 cell small-3 text_center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-check-square" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">check-square</span> <!----></div> <!----></div></li>
+	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/circle?style=solid" class="font_5 cell small-3 text_center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-circle" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">circle</span> <!----></div> <!----></div></li>
+	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/clipboard?style=solid" class="font_5 cell small-3 text_center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-clipboard" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">clipboard</span> <!----></div> <!----></div></li>
+	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/clone?style=solid" class="font_5 cell small-3 text_center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-clone" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">clone</span> <!----></div> <!----></div></li>
+	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/cloud?style=solid" class="font_5 cell small-3 text_center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-cloud" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">cloud</span> <!----></div> <!----></div></li>
+	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/cloud-download-alt?style=solid" class="font_5 cell small-3 text_center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-cloud-download-alt" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">cloud-download-alt</span> <!----></div> <!----></div></li>
+	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/cloud-upload-alt?style=solid" class="font_5 cell small-3 text_center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-cloud-upload-alt" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">cloud-upload-alt</span> <!----></div> <!----></div></li>
+	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/coffee?style=solid" class="font_5 cell small-3 text_center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-coffee" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">coffee</span> <!----></div> <!----></div></li>
+	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/cog?style=solid" class="font_5 cell small-3 text_center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-cog" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">cog</span> <!----></div> <!----></div></li>
+	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/cogs?style=solid" class="font_5 cell small-3 text_center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-cogs" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">cogs</span> <!----></div> <!----></div></li>
+	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/copy?style=solid" class="font_5 cell small-3 text_center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-copy" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">copy</span> <!----></div> <!----></div></li>
+	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/copy?style=regular" class="font_5 cell small-3 text_center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-copy" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">copy</span> <!----></div> <!----></div></li>
+	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/cut?style=solid" class="font_5 cell small-3 text_center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-cut" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">cut</span> <!----></div> <!----></div></li>
+	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/database?style=solid" class="font_5 cell small-3 text_center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-database" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">database</span> <!----></div> <!----></div></li>
+	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/dot-circle?style=solid" class="font_5 cell small-3 text_center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-dot-circle" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">dot-circle</span> <!----></div> <!----></div></li>
+	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/dot-circle?style=regular" class="font_5 cell small-3 text_center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-dot-circle" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">dot-circle</span> <!----></div> <!----></div></li>
+	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/download?style=solid" class="font_5 cell small-3 text_center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-download" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">download</span> <!----></div> <!----></div></li>
+	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/edit?style=solid" class="font_5 cell small-3 text_center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-edit" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">edit</span> <!----></div> <!----></div></li>
+	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/edit?style=regular" class="font_5 cell small-3 text_center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-edit" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">edit</span> <!----></div> <!----></div></li>
+	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/ellipsis-h?style=solid" class="font_5 cell small-3 text_center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-ellipsis-h" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">ellipsis-h</span> <!----></div> <!----></div></li>
+	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/ellipsis-v?style=solid" class="font_5 cell small-3 text_center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-ellipsis-v" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">ellipsis-v</span> <!----></div> <!----></div></li>
+	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/envelope?style=solid" class="font_5 cell small-3 text_center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-envelope" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">envelope</span> <!----></div> <!----></div></li>
 </ul>
 
 	Styleguide DesignBase.Icons.FontAwesome
@@ -6861,14 +6861,14 @@ Icons: Solid
 
  markup:
 <ul class="no-bullet list m_0 p_0 grid-x  justify-start items-start">
-	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/award?style=solid" class="font_5 cell small-3 text-center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-award" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">award</span> <!----></div> <!----></div></li>
-	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/ban?style=solid" class="font_5 cell small-3 text-center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-ban" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">ban</span> <!----></div> <!----></div></li>
-	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/barcode?style=solid" class="font_5 cell small-3 text-center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-barcode" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">barcode</span> <!----></div> <!----></div></li>
-	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/bars?style=solid" class="font_5 cell small-3 text-center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-bars" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">bars</span> <!----></div> <!----></div></li>
-	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/beer?style=solid" class="font_5 cell small-3 text-center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-beer" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">beer</span> <!----></div> <!----></div></li>
-	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/bell?style=solid" class="font_5 cell small-3 text-center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-bell" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">bell</span> <!----></div> <!----></div></li>
-	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/bell?style=regular" class="font_5 cell small-3 text-center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-bell" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">bell</span> <!----></div> <!----></div></li>
-	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/bell-slash?style=solid" class="font_5 cell small-3 text-center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-bell-slash" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">bell-slash</span> <!----></div> <!----></div></li></ul>
+	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/award?style=solid" class="font_5 cell small-3 text_center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-award" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">award</span> <!----></div> <!----></div></li>
+	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/ban?style=solid" class="font_5 cell small-3 text_center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-ban" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">ban</span> <!----></div> <!----></div></li>
+	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/barcode?style=solid" class="font_5 cell small-3 text_center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-barcode" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">barcode</span> <!----></div> <!----></div></li>
+	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/bars?style=solid" class="font_5 cell small-3 text_center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-bars" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">bars</span> <!----></div> <!----></div></li>
+	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/beer?style=solid" class="font_5 cell small-3 text_center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-beer" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">beer</span> <!----></div> <!----></div></li>
+	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/bell?style=solid" class="font_5 cell small-3 text_center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-bell" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">bell</span> <!----></div> <!----></div></li>
+	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/bell?style=regular" class="font_5 cell small-3 text_center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-bell" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">bell</span> <!----></div> <!----></div></li>
+	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/bell-slash?style=solid" class="font_5 cell small-3 text_center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-bell-slash" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">bell-slash</span> <!----></div> <!----></div></li></ul>
 
 	Styleguide DesignBase.Icons.Solid
 */
@@ -6880,14 +6880,14 @@ Icons: Light
 
  markup:
 <ul class="no-bullet list m_0 p_0 grid-x  justify-start items-start">
-	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/award?style=solid" class="font_5 cell small-3 text-center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fal fa-award" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">award</span> <!----></div> <!----></div></li>
-	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/ban?style=solid" class="font_5 cell small-3 text-center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fal fa-ban" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">ban</span> <!----></div> <!----></div></li>
-	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/barcode?style=solid" class="font_5 cell small-3 text-center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fal fa-barcode" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">barcode</span> <!----></div> <!----></div></li>
-	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/bars?style=solid" class="font_5 cell small-3 text-center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fal fa-bars" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">bars</span> <!----></div> <!----></div></li>
-	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/beer?style=solid" class="font_5 cell small-3 text-center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fal fa-beer" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">beer</span> <!----></div> <!----></div></li>
-	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/bell?style=solid" class="font_5 cell small-3 text-center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fal fa-bell" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">bell</span> <!----></div> <!----></div></li>
-	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/bell?style=regular" class="font_5 cell small-3 text-center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="far fa-bell" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">bell</span> <!----></div> <!----></div></li>
-	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/bell-slash?style=solid" class="font_5 cell small-3 text-center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fal fa-bell-slash" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">bell-slash</span> <!----></div> <!----></div></li></ul>
+	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/award?style=solid" class="font_5 cell small-3 text_center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fal fa-award" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">award</span> <!----></div> <!----></div></li>
+	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/ban?style=solid" class="font_5 cell small-3 text_center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fal fa-ban" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">ban</span> <!----></div> <!----></div></li>
+	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/barcode?style=solid" class="font_5 cell small-3 text_center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fal fa-barcode" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">barcode</span> <!----></div> <!----></div></li>
+	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/bars?style=solid" class="font_5 cell small-3 text_center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fal fa-bars" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">bars</span> <!----></div> <!----></div></li>
+	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/beer?style=solid" class="font_5 cell small-3 text_center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fal fa-beer" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">beer</span> <!----></div> <!----></div></li>
+	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/bell?style=solid" class="font_5 cell small-3 text_center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fal fa-bell" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">bell</span> <!----></div> <!----></div></li>
+	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/bell?style=regular" class="font_5 cell small-3 text_center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="far fa-bell" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">bell</span> <!----></div> <!----></div></li>
+	<li class="dib  br_secondary-4 br_solid br_1 small-6 cell"><div class="grid-x"><a href="/icons/bell-slash?style=solid" class="font_5 cell small-3 text_center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fal fa-bell-slash" style=""></i></a> <div class=" cell auto p_4 p-y_2 f2 w-100 flex flex-column justify-center word-wrap"><span class="db select-all c_secondary  h:c_secondary-n2 text">bell-slash</span> <!----></div> <!----></div></li></ul>
 
 	Styleguide DesignBase.Icons.Light
 */
@@ -6903,7 +6903,7 @@ Icons: Regular
 			<div class="grid-x">
 				<a
 					href="#"
-					class="font_5 cell small-3 text-center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"
+					class="font_5 cell small-3 text_center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"
 					><i class="far fa-award"></i
 				></a>
 				<div
@@ -6919,7 +6919,7 @@ Icons: Regular
 			<div class="grid-x">
 				<a
 					href="#"
-					class="font_5 cell small-3 text-center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"
+					class="font_5 cell small-3 text_center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"
 					><i class="far fa-ban"></i
 				></a>
 				<div
@@ -6935,7 +6935,7 @@ Icons: Regular
 			<div class="grid-x">
 				<a
 					href="#"
-					class="font_5 cell small-3 text-center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"
+					class="font_5 cell small-3 text_center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"
 					><i class="far fa-barcode"></i
 				></a>
 				<div
@@ -6951,7 +6951,7 @@ Icons: Regular
 			<div class="grid-x">
 				<a
 					href="#"
-					class="font_5 cell small-3 text-center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"
+					class="font_5 cell small-3 text_center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"
 					><i class="far fa-bars"></i
 				></a>
 				<div
@@ -6967,7 +6967,7 @@ Icons: Regular
 			<div class="grid-x">
 				<a
 					href="#"
-					class="font_5 cell small-3 text-center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"
+					class="font_5 cell small-3 text_center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"
 					><i class="far fa-beer"></i
 				></a>
 				<div
@@ -6983,7 +6983,7 @@ Icons: Regular
 			<div class="grid-x">
 				<a
 					href="#"
-					class="font_5 cell small-3 text-center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"
+					class="font_5 cell small-3 text_center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"
 					><i class="far fa-bell"></i
 				></a>
 				<div
@@ -6999,7 +6999,7 @@ Icons: Regular
 			<div class="grid-x">
 				<a
 					href="#"
-					class="font_5 cell small-3 text-center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"
+					class="font_5 cell small-3 text_center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"
 					><i class="far fa-bell"></i
 				></a>
 				<div
@@ -7015,7 +7015,7 @@ Icons: Regular
 			<div class="grid-x">
 				<a
 					href="#"
-					class="font_5 cell small-3 text-center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"
+					class="font_5 cell small-3 text_center p_3 no-underline db c_inherit cell auto justify-center items-center h:bg_navigation-n3 h:c_white bg_secondary-5"
 					><i class="far fa-bell-slash"></i
 				></a>
 				<div
@@ -7362,7 +7362,7 @@ Margin
 
 markup:
 <div class="bg_warning-3 d-block br_1 br_solid">
-	<div class="{{modifier_class}} p_2 bg_primary text-center c_white cell auto opacity_5 d-block">Container With Margins</div>
+	<div class="{{modifier_class}} p_2 bg_primary text_center c_white cell auto opacity_5 d-block">Container With Margins</div>
 </div>
 
 Styleguide Spacing.Margin
@@ -8455,8 +8455,8 @@ Padding
 .p-b_4       - Bottom padding set to global padding
 
 markup:
-<div class="{{modifier_class}} br_solid br_transparent bg_alert-3  text-center">
-	<div class="bg_primary-5 text-center">Content With Padding</div>
+<div class="{{modifier_class}} br_solid br_transparent bg_alert-3  text_center">
+	<div class="bg_primary-5 text_center">Content With Padding</div>
 </div>
 
 Styleguide Spacing.Padding
@@ -9072,7 +9072,7 @@ Position
 
 markup:
 <div class=" br_solid br_transparent bg_accent-3 relative p_5" style="height:200px;">
-	<div class="bg_primary-5 text-center absolute {{modifier_class}}">Position Absolute {{modifier_class}}</div>
+	<div class="bg_primary-5 text_center absolute {{modifier_class}}">Position Absolute {{modifier_class}}</div>
 </div>
 
 Styleguide Spacing.Position
@@ -10874,19 +10874,19 @@ bg_acc                    - background color modified light to dark
 
 markup:
 <div class="flex">
-  <div class="bg_white flex_auto text-center p_2 p-y_5 ">white</div>
-  <div class="{{modifier_class}}-5 flex_auto text-center  p_2 p-y_5">5</div>
-  <div class="{{modifier_class}}-4 flex_auto text-center  p_2 p-y_5">4</div>
-  <div class="{{modifier_class}}-3 flex_auto text-center  p_2 p-y_5">3</div>
-  <div class="{{modifier_class}}-2 flex_auto text-center  p_2 p-y_5">2</div>
-  <div class="{{modifier_class}}-1 flex_auto text-center  c_white p_2 p-y_5">1</div>
-  <div class="{{modifier_class}}-0 flex_auto text-center  c_white p_2 p-y_5">0</div>
-  <div class="{{modifier_class}}-n1 flex_auto text-center  c_white p_2 p-y_5">n1</div>
-  <div class="{{modifier_class}}-n2 flex_auto text-center  c_white p_2 p-y_5">n2</div>
-  <div class="{{modifier_class}}-n3 flex_auto text-center  c_white p_2 p-y_5">n3</div>
-  <div class="{{modifier_class}}-n4 flex_auto text-center  c_white p_2 p-y_5">n4</div>
-  <div class="{{modifier_class}}-n5 flex_auto text-center  c_white p_2 p-y_5">n5</div>
-  <div class="bg_black flex_auto text-center  c_white p_2 p-y_5">black</div>
+  <div class="bg_white flex_auto text_center p_2 p-y_5 ">white</div>
+  <div class="{{modifier_class}}-5 flex_auto text_center  p_2 p-y_5">5</div>
+  <div class="{{modifier_class}}-4 flex_auto text_center  p_2 p-y_5">4</div>
+  <div class="{{modifier_class}}-3 flex_auto text_center  p_2 p-y_5">3</div>
+  <div class="{{modifier_class}}-2 flex_auto text_center  p_2 p-y_5">2</div>
+  <div class="{{modifier_class}}-1 flex_auto text_center  c_white p_2 p-y_5">1</div>
+  <div class="{{modifier_class}}-0 flex_auto text_center  c_white p_2 p-y_5">0</div>
+  <div class="{{modifier_class}}-n1 flex_auto text_center  c_white p_2 p-y_5">n1</div>
+  <div class="{{modifier_class}}-n2 flex_auto text_center  c_white p_2 p-y_5">n2</div>
+  <div class="{{modifier_class}}-n3 flex_auto text_center  c_white p_2 p-y_5">n3</div>
+  <div class="{{modifier_class}}-n4 flex_auto text_center  c_white p_2 p-y_5">n4</div>
+  <div class="{{modifier_class}}-n5 flex_auto text_center  c_white p_2 p-y_5">n5</div>
+  <div class="bg_black flex_auto text_center  c_white p_2 p-y_5">black</div>
 </div>
 
 
@@ -11479,17 +11479,17 @@ Styleguide Background.ColorShades
 
   markup:
   <div class="flex p_4 bg_primary">
-    <div class="bg_{{modifier_class}}-0 flex_auto text-center c_white  p_2 p-y_5">{{modifier_class}}-0</div>
-    <div class="bg_{{modifier_class}}-1 flex_auto text-center c_white  p_2 p-y_5">{{modifier_class}}-1</div>
-    <div class="bg_{{modifier_class}}-2 flex_auto text-center c_white  p_2 p-y_5">{{modifier_class}}-2</div>
-    <div class="bg_{{modifier_class}}-3 flex_auto text-center c_white  p_2 p-y_5">{{modifier_class}}-3</div>
-    <div class="bg_{{modifier_class}}-4 flex_auto text-center c_white p_2 p-y_5">{{modifier_class}}-4</div>
-    <div class="bg_{{modifier_class}}-5 flex_auto text-center c_white p_2 p-y_5">{{modifier_class}}-5</div>
-    <div class="bg_{{modifier_class}}-6 flex_auto text-center c_white p_2 p-y_5">{{modifier_class}}-6</div>
-    <div class="bg_{{modifier_class}}-7 flex_auto text-center c_white p_2 p-y_5">{{modifier_class}}-7</div>
-    <div class="bg_{{modifier_class}}-8 flex_auto text-center c_white p_2 p-y_5">{{modifier_class}}-8</div>
-    <div class="bg_{{modifier_class}}-9 flex_auto text-center c_white p_2 p-y_5">{{modifier_class}}-9</div>
-    <div class="bg_{{modifier_class}} flex_auto text-center c_white p_2 p-y_5">{{modifier_class}}</div>
+    <div class="bg_{{modifier_class}}-0 flex_auto text_center c_white  p_2 p-y_5">{{modifier_class}}-0</div>
+    <div class="bg_{{modifier_class}}-1 flex_auto text_center c_white  p_2 p-y_5">{{modifier_class}}-1</div>
+    <div class="bg_{{modifier_class}}-2 flex_auto text_center c_white  p_2 p-y_5">{{modifier_class}}-2</div>
+    <div class="bg_{{modifier_class}}-3 flex_auto text_center c_white  p_2 p-y_5">{{modifier_class}}-3</div>
+    <div class="bg_{{modifier_class}}-4 flex_auto text_center c_white p_2 p-y_5">{{modifier_class}}-4</div>
+    <div class="bg_{{modifier_class}}-5 flex_auto text_center c_white p_2 p-y_5">{{modifier_class}}-5</div>
+    <div class="bg_{{modifier_class}}-6 flex_auto text_center c_white p_2 p-y_5">{{modifier_class}}-6</div>
+    <div class="bg_{{modifier_class}}-7 flex_auto text_center c_white p_2 p-y_5">{{modifier_class}}-7</div>
+    <div class="bg_{{modifier_class}}-8 flex_auto text_center c_white p_2 p-y_5">{{modifier_class}}-8</div>
+    <div class="bg_{{modifier_class}}-9 flex_auto text_center c_white p_2 p-y_5">{{modifier_class}}-9</div>
+    <div class="bg_{{modifier_class}} flex_auto text_center c_white p_2 p-y_5">{{modifier_class}}</div>
   </div>
 
   Styleguide Background.Colors with Alphas
@@ -11575,7 +11575,7 @@ All textures in the Arches design are a subtle variation of transparent.   Allow
 .texture_disabled              				- This texture is used to paint disabled buttons and ui items giving it a greyed and X'ed out appearand. 
 
 markup:
-<div class="{{modifier_class}} p_5 br_black-8 br_1 br_solid text-center">{{modifier_class}}</div>
+<div class="{{modifier_class}} p_5 br_black-8 br_1 br_solid text_center">{{modifier_class}}</div>
 
 Styleguide Background.Textures
 
@@ -11647,7 +11647,7 @@ Styleguide Background.Textures
 	.texture_disabled.bg_alert             	- textures are slightly transparent so they can be colored with background-color classess
 
 	markup:
-	<div class="{{modifier_class}} p_5 br_black-8 br_1 br_solid text-center">{{modifier_class}}</div>
+	<div class="{{modifier_class}} p_5 br_black-8 br_1 br_solid text_center">{{modifier_class}}</div>
 
 	Styleguide Background.Textures.BackgroundColor
 
@@ -11670,10 +11670,10 @@ Styleguide Background.Textures
 
 	markup:
 	<div class="flex">
-		<div class="{{modifier_class}}-n3 p_3 flex_auto text-center c_white">n3</div>
-		<div class="{{modifier_class}}-n1 p_3 flex_auto text-center c_white">n1</div>
-		<div class="{{modifier_class}}-1 p_3 flex_auto text-center c_white">1</div>
-		<div class="{{modifier_class}}-3 p_3 flex_auto text-center c_white">3</div>
+		<div class="{{modifier_class}}-n3 p_3 flex_auto text_center c_white">n3</div>
+		<div class="{{modifier_class}}-n1 p_3 flex_auto text_center c_white">n1</div>
+		<div class="{{modifier_class}}-1 p_3 flex_auto text_center c_white">1</div>
+		<div class="{{modifier_class}}-3 p_3 flex_auto text_center c_white">3</div>
 	</div>
 
 	Styleguide Background.Textures.Shaded
@@ -11688,7 +11688,7 @@ Styleguide Background.Textures
 */
 /* No styleguide reference. */
 /*
-  Hover:Backgrounds
+  Hover:Background Color
 
   hovers can easily be added to objects by adding `hover:` or `h:` in front of the background color utility like `h:bg_primary`
 
@@ -11701,22 +11701,22 @@ Styleguide Background.Textures
   bg_warning              - background color modified light to dark
 
   markup:
-  <div class="grid-x m_5">
-    <div class="h:{{modifier_class}}-5 cell auto text-center br_1 br_solid br_secondary-4 p_2">5</div>
-    <div class="h:{{modifier_class}}-4 cell auto text-center br_1 br_solid br_secondary-4 p_2">4</div>
-    <div class="h:{{modifier_class}}-3 cell auto text-center br_1 br_solid br_secondary-4 p_2">3</div>
-    <div class="h:{{modifier_class}}-2 cell auto text-center br_1 br_solid br_secondary-4 p_2">2</div>
-    <div class="h:{{modifier_class}}-1 cell auto text-center br_1 br_solid br_secondary-4 p_2">1</div>
-    <div class="h:{{modifier_class}}-0 cell auto text-center br_1 br_solid br_secondary-4 p_2">0</div>
-    <div class="h:{{modifier_class}}-n1 cell auto text-center br_1 br_solid br_secondary-4 p_2 h:c_white">n1</div>
-    <div class="h:{{modifier_class}}-n2 cell auto text-center br_1 br_solid br_secondary-4 p_2 h:c_white">n2</div>
-    <div class="h:{{modifier_class}}-n3 cell auto text-center br_1 br_solid br_secondary-4 p_2 h:c_white">n3</div>
-    <div class="h:{{modifier_class}}-n4 cell auto text-center br_1 br_solid br_secondary-4 p_2 h:c_white">n4</div>
-    <div class="h:{{modifier_class}}-n5 cell auto text-center br_1 br_solid br_secondary-4 p_2 h:c_white">n5</div>
+  <div class="flex m_5">
+    <div class="h:{{modifier_class}}-5 flex_auto text_center br_1 br_solid br_secondary-4 p_2">5</div>
+    <div class="h:{{modifier_class}}-4 flex_auto text_center br_1 br_solid br_secondary-4 p_2">4</div>
+    <div class="h:{{modifier_class}}-3 flex_auto text_center br_1 br_solid br_secondary-4 p_2">3</div>
+    <div class="h:{{modifier_class}}-2 flex_auto text_center br_1 br_solid br_secondary-4 p_2">2</div>
+    <div class="h:{{modifier_class}}-1 flex_auto text_center br_1 br_solid br_secondary-4 p_2">1</div>
+    <div class="h:{{modifier_class}}-0 flex_auto text_center br_1 br_solid br_secondary-4 p_2">0</div>
+    <div class="h:{{modifier_class}}-n1 flex_auto text_center br_1 br_solid br_secondary-4 p_2 h:c_white">n1</div>
+    <div class="h:{{modifier_class}}-n2 flex_auto text_center br_1 br_solid br_secondary-4 p_2 h:c_white">n2</div>
+    <div class="h:{{modifier_class}}-n3 flex_auto text_center br_1 br_solid br_secondary-4 p_2 h:c_white">n3</div>
+    <div class="h:{{modifier_class}}-n4 flex_auto text_center br_1 br_solid br_secondary-4 p_2 h:c_white">n4</div>
+    <div class="h:{{modifier_class}}-n5 flex_auto text_center br_1 br_solid br_secondary-4 p_2 h:c_white">n5</div>
   </div>
 
 
-  Styleguide 109.1
+  Styleguide hover.background
 
  */
 a:focus {
@@ -12701,7 +12701,7 @@ a:focus {
 }
 
 /*
-  Hover: Text 
+  Hover: Text Color
 
   hovers can easily be added to change the text color by adding `hover:` or `h:` in front of the text color utility like `h:primary`
 
@@ -12714,22 +12714,22 @@ a:focus {
   c_alert              - text color modified light to dark
 
   markup:
-  <div class="grid-x m_5">
-    <div class="h:{{modifier_class}}-5 cell auto font_bold bg_secondary-3 font_4 font_slab text-center br_1 br_solid br_secondary-4 p_1">5</div>
-    <div class="h:{{modifier_class}}-4 cell auto font_bold bg_secondary-3 font_4 font_slab text-center br_1 br_solid br_secondary-4 p_1">4</div>
-    <div class="h:{{modifier_class}}-3 cell auto font_bold bg_secondary-3 font_4 font_slab text-center br_1 br_solid br_secondary-4 p_1">3</div>
-    <div class="h:{{modifier_class}}-2 cell auto font_bold bg_secondary-3 font_4 font_slab text-center br_1 br_solid br_secondary-4 p_1">2</div>
-    <div class="h:{{modifier_class}}-1 cell auto font_bold bg_secondary-3 font_4 font_slab text-center br_1 br_solid br_secondary-4 p_1">1</div>
-    <div class="h:{{modifier_class}}-0 cell auto font_bold bg_secondary-3 font_4 font_slab text-center br_1 br_solid br_secondary-4 p_1">0</div>
-    <div class="h:{{modifier_class}}-n1 cell auto font_bold bg_secondary-3 font_4 font_slab text-center br_1 br_solid br_secondary-4 p_1 ">n1</div>
-    <div class="h:{{modifier_class}}-n2 cell auto font_bold bg_secondary-3 font_4 font_slab text-center br_1 br_solid br_secondary-4 p_1 ">n2</div>
-    <div class="h:{{modifier_class}}-n3 cell auto font_bold bg_secondary-3 font_4 font_slab text-center br_1 br_solid br_secondary-4 p_1 ">n3</div>
-    <div class="h:{{modifier_class}}-n4 cell auto font_bold bg_secondary-3 font_4 font_slab text-center br_1 br_solid br_secondary-4 p_1 ">n4</div>
-    <div class="h:{{modifier_class}}-n5 cell auto font_bold bg_secondary-3 font_4 font_slab text-center br_1 br_solid br_secondary-4 p_1 ">n5</div>
+  <div class="flex m_5">
+    <div class="h:{{modifier_class}}-5 flex_auto font_bold bg_secondary-3 font_4 font_slab text_center br_1 br_solid br_secondary-4 p_1">5</div>
+    <div class="h:{{modifier_class}}-4 flex_auto font_bold bg_secondary-3 font_4 font_slab text_center br_1 br_solid br_secondary-4 p_1">4</div>
+    <div class="h:{{modifier_class}}-3 flex_auto font_bold bg_secondary-3 font_4 font_slab text_center br_1 br_solid br_secondary-4 p_1">3</div>
+    <div class="h:{{modifier_class}}-2 flex_auto font_bold bg_secondary-3 font_4 font_slab text_center br_1 br_solid br_secondary-4 p_1">2</div>
+    <div class="h:{{modifier_class}}-1 flex_auto font_bold bg_secondary-3 font_4 font_slab text_center br_1 br_solid br_secondary-4 p_1">1</div>
+    <div class="h:{{modifier_class}}-0 flex_auto font_bold bg_secondary-3 font_4 font_slab text_center br_1 br_solid br_secondary-4 p_1">0</div>
+    <div class="h:{{modifier_class}}-n1 flex_auto font_bold bg_secondary-3 font_4 font_slab text_center br_1 br_solid br_secondary-4 p_1 ">n1</div>
+    <div class="h:{{modifier_class}}-n2 flex_auto font_bold bg_secondary-3 font_4 font_slab text_center br_1 br_solid br_secondary-4 p_1 ">n2</div>
+    <div class="h:{{modifier_class}}-n3 flex_auto font_bold bg_secondary-3 font_4 font_slab text_center br_1 br_solid br_secondary-4 p_1 ">n3</div>
+    <div class="h:{{modifier_class}}-n4 flex_auto font_bold bg_secondary-3 font_4 font_slab text_center br_1 br_solid br_secondary-4 p_1 ">n4</div>
+    <div class="h:{{modifier_class}}-n5 flex_auto font_bold bg_secondary-3 font_4 font_slab text_center br_1 br_solid br_secondary-4 p_1 ">n5</div>
   </div>
 
 
-  Styleguide 109.2
+  Styleguide hover.text
 
  */
 .h\:c_white:hover {
@@ -12795,7 +12795,7 @@ a:focus {
   </p>
 
 
-  Styleguide 109.3
+  Styleguide hover.underlines
 
   */
 /* Transparent Loop */
@@ -12896,30 +12896,30 @@ a:focus {
 }
 
 /*
-  Hover: Background Black and White Opacity 
+Hover: Background Black and White Opacity 
 
-  black and white overlays can be added to hovers easily by adding `hover:` in front of black or white  with the level of opacity needed.
+black and white overlays can be added to hovers easily by adding `hover:` in front of black or white  with the level of opacity needed.
 
-  bg_white              - text color modified light to dark
-  bg_black              - text color modified light to dark
+bg_white              - text color modified light to dark
+bg_black              - text color modified light to dark
 
-  markup:
-  <div class="grid-x m_5 bg_primary m_5">
-    <div class="hover:{{modifier_class}}-0 cell p-y_3 p-x_4 shrink font_bold font_2 font_slab text-center br_1 br_solid br_secondary-4">0</div>
-    <div class="hover:{{modifier_class}}-1 cell p-y_3 p-x_4 shrink font_bold font_2 font_slab text-center br_1 br_solid br_secondary-4">1</div>
-    <div class="hover:{{modifier_class}}-2 cell p-y_3 p-x_4 shrink font_bold font_2 font_slab text-center br_1 br_solid br_secondary-4">2</div>
-    <div class="hover:{{modifier_class}}-3 cell p-y_3 p-x_4 shrink font_bold font_2 font_slab text-center br_1 br_solid br_secondary-4">3</div>
-    <div class="hover:{{modifier_class}}-4 cell p-y_3 p-x_4 shrink font_bold font_2 font_slab text-center br_1 br_solid br_secondary-4">4</div>
-    <div class="hover:{{modifier_class}}-5 cell p-y_3 p-x_4 shrink font_bold font_2 font_slab text-center br_1 br_solid br_secondary-4">5</div>
-    <div class="hover:{{modifier_class}}-6 cell p-y_3 p-x_4 shrink font_bold font_2 font_slab text-center br_1 br_solid br_secondary-4 ">6</div>
-    <div class="hover:{{modifier_class}}-7 cell p-y_3 p-x_4 shrink font_bold font_2 font_slab text-center br_1 br_solid br_secondary-4 ">7</div>
-    <div class="hover:{{modifier_class}}-8 cell p-y_3 p-x_4 shrink font_bold font_2 font_slab text-center br_1 br_solid br_secondary-4 ">8</div>
-    <div class="hover:{{modifier_class}}-9 cell p-y_3 p-x_4 shrink font_bold font_2 font_slab text-center br_1 br_solid br_secondary-4 ">9</div>
-    <div class="hover:{{modifier_class}} cell p-y_3 p-x_4 auto font_bold font_2 font_slab text-center br_1 br_solid br_secondary-4 ">default</div>
-  </div>
+markup:
+<div class="flex m_5 bg_primary m_5">
+  <div class="hover:{{modifier_class}}-0  p-y_3 p-x_4 flex_shrink font_bold font_2 font_slab text_center br_1 br_solid br_secondary-4">0</div>
+  <div class="hover:{{modifier_class}}-1  p-y_3 p-x_4 flex_shrink font_bold font_2 font_slab text_center br_1 br_solid br_secondary-4">1</div>
+  <div class="hover:{{modifier_class}}-2  p-y_3 p-x_4 flex_shrink font_bold font_2 font_slab text_center br_1 br_solid br_secondary-4">2</div>
+  <div class="hover:{{modifier_class}}-3  p-y_3 p-x_4 flex_shrink font_bold font_2 font_slab text_center br_1 br_solid br_secondary-4">3</div>
+  <div class="hover:{{modifier_class}}-4  p-y_3 p-x_4 flex_shrink font_bold font_2 font_slab text_center br_1 br_solid br_secondary-4">4</div>
+  <div class="hover:{{modifier_class}}-5  p-y_3 p-x_4 flex_shrink font_bold font_2 font_slab text_center br_1 br_solid br_secondary-4">5</div>
+  <div class="hover:{{modifier_class}}-6  p-y_3 p-x_4 flex_shrink font_bold font_2 font_slab text_center br_1 br_solid br_secondary-4 ">6</div>
+  <div class="hover:{{modifier_class}}-7  p-y_3 p-x_4 flex_shrink font_bold font_2 font_slab text_center br_1 br_solid br_secondary-4 ">7</div>
+  <div class="hover:{{modifier_class}}-8  p-y_3 p-x_4 flex_shrink font_bold font_2 font_slab text_center br_1 br_solid br_secondary-4 ">8</div>
+  <div class="hover:{{modifier_class}}-9  p-y_3 p-x_4 flex_shrink font_bold font_2 font_slab text_center br_1 br_solid br_secondary-4 ">9</div>
+  <div class="hover:{{modifier_class}}  p-y_3 p-x_4 flex_auto font_bold font_2 font_slab text_center br_1 br_solid br_secondary-4 ">default</div>
+</div>
 
 
-  Styleguide 109.4
+Styleguide hover.opacity
 
  */
 /*
@@ -14107,7 +14107,7 @@ Styleguide 103.2.1
 	.d_none             - the element is now display none
 
 	markup:
-	<div class="br_solid br_transparent bg_alert-3  text-center"><div class="bg_primary-5 text-center {{modifier_class}}">Content</div></div>
+	<div class="br_solid br_transparent bg_alert-3  text_center"><div class="bg_primary-5 text_center {{modifier_class}}">Content</div></div>
 
 	Styleguide 110.1
 
@@ -14209,10 +14209,10 @@ Styleguide 103.2.1
 	.flex_column-reverse              		- flex_row-reverse
 
 	markup:
-	<div class="flex {{modifier_class}} br_solid br_transparent bg_alert-3  text-center  p_3 bg_warning-3"> 
-		<div class="bg_primary-5 text-center flex_auto p_3 br_solid br_1 m_2 br_black">Auto 1</div>
-		<div class="bg_primary-5 text-center flex_shrink p_3 br_solid br_1 m_2 br_black">Shrink 2</div>
-		<div class="bg_primary-5 text-center flex_auto p_3 br_solid br_1 m_2 br_black">Auto 3</div>
+	<div class="flex {{modifier_class}} br_solid br_transparent bg_alert-3  text_center  p_3 bg_warning-3"> 
+		<div class="bg_primary-5 text_center flex_auto p_3 br_solid br_1 m_2 br_black">Auto 1</div>
+		<div class="bg_primary-5 text_center flex_shrink p_3 br_solid br_1 m_2 br_black">Shrink 2</div>
+		<div class="bg_primary-5 text_center flex_auto p_3 br_solid br_1 m_2 br_black">Auto 3</div>
 	</div>
 
 	Styleguide 110.2
@@ -15281,11 +15281,11 @@ Styleguide UC:Width.MaxWidth
 
     markup:
     <div id="nav"class="bg_acc grid-x c_white shadow_3 font_2 flex">
-    <a href="#/"class="text-center p_2 flex_auto center clear c_secondary-5 c_white hover-text_primary-4 m-bottom_0 router-link-exact-active router-link-active"><i class="fas m_2 fa-sign-out-alt"></i></a>
-    <a href="#/search"class="text-center p_2 flex_auto center clear c_secondary-5 c_white hover-text_primary-4 m-bottom_0"><i class="fas m_2 fa-search"></i></a>
-    <a href="#/shared"class="text-center p_2 flex_auto center clear c_secondary-5 c_white hover-text_primary-4 m-bottom_0"><span class="fa-layers fa-fw"><i class="fas m_2 fa-share-alt-square"></i></span></a
-    ><a href="#/history"class="text-center p_2 flex_auto center clear c_secondary-5 c_white hover-text_primary-4 m-bottom_0"><span class="fa-layers fa-fw"><i class="fas m_2 fa-history"></i></span></a>
-    <a href="#/about"class="text-center p_2 flex_auto center clear c_secondary-5 c_white hover-text_primary-4 m-bottom_0"><i class="fas m_2 fa-info-square"></i></a>
+    <a href="#/"class="text_center p_2 flex_auto center clear c_secondary-5 c_white hover-text_primary-4 m-bottom_0 router-link-exact-active router-link-active"><i class="fas m_2 fa-sign-out-alt"></i></a>
+    <a href="#/search"class="text_center p_2 flex_auto center clear c_secondary-5 c_white hover-text_primary-4 m-bottom_0"><i class="fas m_2 fa-search"></i></a>
+    <a href="#/shared"class="text_center p_2 flex_auto center clear c_secondary-5 c_white hover-text_primary-4 m-bottom_0"><span class="fa-layers fa-fw"><i class="fas m_2 fa-share-alt-square"></i></span></a
+    ><a href="#/history"class="text_center p_2 flex_auto center clear c_secondary-5 c_white hover-text_primary-4 m-bottom_0"><span class="fa-layers fa-fw"><i class="fas m_2 fa-history"></i></span></a>
+    <a href="#/about"class="text_center p_2 flex_auto center clear c_secondary-5 c_white hover-text_primary-4 m-bottom_0"><i class="fas m_2 fa-info-square"></i></a>
     </div>
 
     Styleguide 200.001
@@ -15312,7 +15312,7 @@ Styleguide UC:Width.MaxWidth
                 <h1 class="font_5 font_display lh_1">Annual Scientific Session</h1>
                 <h2 class="font_1 font_bold">2018 | New Orleans</h2>
             </div>
-            <div class="small-4 cell c_white text-center">
+            <div class="small-4 cell c_white text_center">
                 <div class="grid-y grid-frame">
                     <div class="small-6 cell p-t_5 shaddow_n2 br_solid h:bg_black-8 br_white-1 br_1 bg_black-1 "><i class="fas m_2 fa-users-class font_4"></i>
                     <div class="font_0 m-t_3">Conference</div></div>
@@ -15322,29 +15322,29 @@ Styleguide UC:Width.MaxWidth
             </div>
         </div>
         <div class="cell small-3 grid-x">
-            <div class="small-4 cell shadow_n1 br_white-1 br_1 br_solid h:bg_black-8 bg_black-2 c_white p-t_5 text-center"><i
+            <div class="small-4 cell shadow_n1 br_white-1 br_1 br_solid h:bg_black-8 bg_black-2 c_white p-t_5 text_center"><i
                     class="fas m_2 fa-calendar-alt font_4"></i>
                 <div class="font_0 m-t_3">Events</div>
             </div>
-            <div class="small-4 cell shadow_n2 br_white-1 br_1 br_solid h:bg_black-8 bg_black-3 c_white p-t_5 text-center"><i
+            <div class="small-4 cell shadow_n2 br_white-1 br_1 br_solid h:bg_black-8 bg_black-3 c_white p-t_5 text_center"><i
                     class="fas m_2 fa-map-marked  font_4"></i>
                 <div class="font_0 m-t_3">Maps</div>
             </div>
-            <div class="small-4 cell shadow_n3 br_white-1 br_1 br_solid h:bg_black-8 bg_black-4 c_white p-t_5 text-center"><i
+            <div class="small-4 cell shadow_n3 br_white-1 br_1 br_solid h:bg_black-8 bg_black-4 c_white p-t_5 text_center"><i
                     class="fas m_2 fa-cogs font_4"></i>
                 <div class="font_0 m-t_3">Options</div>
             </div>
         </div>
         <div class="cell small-3 grid-x">
-            <div class="small-4 cell shadow_n2 br_white-1 br_1 br_solid h:bg_black-8 bg_black-5 c_white p-t_5 text-center"><i
+            <div class="small-4 cell shadow_n2 br_white-1 br_1 br_solid h:bg_black-8 bg_black-5 c_white p-t_5 text_center"><i
                     class="fas m_2 fa-alarm-clock font_4"></i>
                 <div class="font_0 m-t_3">Upcoming</div>
             </div>
-            <div class="small-4 cell shadow_n3 br_white-1 br_1 br_solid h:bg_black-8 bg_black-4 c_white p-t_5 text-center"><i
+            <div class="small-4 cell shadow_n3 br_white-1 br_1 br_solid h:bg_black-8 bg_black-4 c_white p-t_5 text_center"><i
                     class="fas m_2 fa-badge-check font_4"></i>
                 <div class="font_0 m-t_3">Claim Credits</div>
             </div>
-            <div class="small-4 cell shadow_n3 br_white-1 br_1 br_solid h:bg_black-8 bg_black-6 c_white p-t_5 text-center"><i
+            <div class="small-4 cell shadow_n3 br_white-1 br_1 br_solid h:bg_black-8 bg_black-6 c_white p-t_5 text_center"><i
                     class="fas m_2 fa-chess-rook font_4"></i>
                 <div class="font_0 m-t_3">Find a Room</div>
             </div>
