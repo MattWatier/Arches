@@ -38,11 +38,13 @@ $theme-palette: map-merge(
 	color: $black !important;
 }
 
+
 // Other Color Collections from the college
-$cor-green: rgb(111, 194, 132);
-$cor-yellow: rgb(111, 194, 132);
-$cor-orange: rgb(111, 194, 132);
-$cor-red: rgb(111, 194, 132);
+$cor-green: #6fc284;
+$cor-yellow: #ffd44f;
+$cor-yellow-orange:  #faa74b;
+$cor-orange:#f15d4c;
+$cor-red:  #ed1c00;
 
 $loe-dark-blue: rgb(62, 111, 183);
 $loe-mid-blue: rgb(101, 156, 211);
@@ -54,7 +56,8 @@ $COR: () !default;
 $COR: map-merge(
 	(
 		I: $cor-green,
-		II: $cor-yellow,
+		IIA: $cor-yellow,
+		IIB: $cor-yellow-orange,
 		III: $cor-orange,
 		III-NOBENIFIT: $cor-orange,
 		III-HARM: $cor-red
@@ -73,14 +76,35 @@ $LOE: map-merge(
 	$LOE
 );
 
-/*
+$credit-CME:#00a15b;
+$credit-ABP:#007A5B;
+$credit-COP:#775891;
+$credit-CE:#a8a8a8;
+$credit-MOCII:#9a1267;
+$credit-MOCIV:#D3248D;
+$credit-CNE:#198dae;
+$credit-CNErx:#52549E;
+$credit-ECME:#D16528;
+$credit-CPE:#992E2E;
 
-ACC's Blue
 
-$acc-blue            - #00386b; acc
+$CreditColors: () !default;
+$CreditColors: map-merge(
+	(
+		CME: Colors-CME,
+		ABP: $credit-ABP,
+		COP: $credit-COP,
+		CE: $credit-CE,
+		MOCII: $credit-MOCII,
+		MOCIV: $credit-MOCIV,
+		CNE: $credit-CNE,
+		CNErx: $credit-CNErx,
+		ECME: $credit-ECME,
+		CPE: $credit-CPE,
+	),
+	$CreditColors
+);
 
-Styleguide DesignBase.Colors.ACC
-*/
 
 /*
 
@@ -96,7 +120,14 @@ $purple              - #7742bd; highlight
 
 Styleguide DesignBase.Colors
  */
+/*
 
+ACC's Blue
+
+$acc-blue            - #00386b; acc
+
+Styleguide DesignBase.Colors.ACC
+*/
 /*
 
 Action Colors  
@@ -108,21 +139,33 @@ $orange              - #da8210; warning
 $green               - #06a022; success
 $blue                - #2b58c0; navigation
 
-Styleguide DesignBase.Colors.Alternate
+Styleguide DesignBase.Colors.Actions
 
  */
+
+ /*
+
+Color Coding  
+
+Color Coding is used in specific products and concepts to illustrate cohesion and collections. All of these color codes are used universally through out the college and have an assoicated meaning. 
+
+Styleguide DesignBase.Colors.ColorCoding
+
+ */
+
 /*
 
 COR Colors  
 
 (COR) Class of Recomendation is a color collect used in Guideline recomendations.
 
-$cor-green                 - #{$cor-green}; I
-$cor-yellow              - #{$cor-yellow}; II
-$cor-orange               - #{$cor-orange}; III-NoHarm
-$cor-red                - #{$cor-red}; III-harm
+$cor-green                 	- #{$cor-green}; I
+$cor-yellow              	- #{$cor-yellow}; IIA
+$cor-yellow-orange          - #{$cor-yellow-orange}; IIA
+$cor-orange               	- #{$cor-orange};III and III-NoHarm
+$cor-red               		- #{$cor-red}; III-harm
 
-Styleguide DesignBase.Colors.Alternate.COR
+Styleguide DesignBase.Colors.ColorCoding.COR
 
  */
 /*
@@ -136,6 +179,44 @@ $loe-mid-blue              - #{$loe-mid-blue }; B
 $loe-light-blue                - #{$loe-light-blue };B
 $loe-pale-blue                - #{$loe-pale-blue }; C
 
-Styleguide DesignBase.Colors.Alternate.LOE
+Styleguide DesignBase.Colors.ColorCoding.LOE
 
  */
+
+/*
+
+Clinical App Product Colors  
+
+Each of the clinicaal apps within the ACC portfolio are have a distinct color.
+
+$loe-dark-blue                 - #{$loe-dark-blue}; A
+$loe-mid-blue              - #{$loe-mid-blue }; B
+$loe-light-blue                - #{$loe-light-blue };B
+$loe-pale-blue                - #{$loe-pale-blue }; C
+
+Styleguide DesignBase.Colors.ColorCoding.LOE
+
+*/
+
+
+
+/*
+
+Credit Type Color Coding  
+
+Credit Types in the ACC have a specific color coding.
+
+$credit-CME         	-  #00a15b; CME   
+$credit-ABP         	-  #007A5B; ABP   
+$credit-COP         	-  #775891; COP   
+$credit-CE         		-  #a8a8a8; CE   
+$credit-MOCII         	-  #9a1267; MOCII   
+$credit-MOCIV         	-  #D3248D; MOCIV   
+$credit-CNE         	-  #198dae; CNE   
+$credit-CNErx         	-  #52549E; CNErx   
+$credit-ECME         	-  #D16528; ECME   
+$credit-CPE         	-  #992E2E; CPE   
+
+Styleguide DesignBase.Colors.ColorCoding.LOE
+
+*/

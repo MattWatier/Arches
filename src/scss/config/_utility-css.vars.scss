@@ -253,6 +253,14 @@ $value-to-unit: (
 		4: 64rem,
 		5: 80rem
 	),
+	list-type: (
+		none: none,
+		bullet: disc,
+		circle: circle,
+		square: square,
+		lowercase: lower-alpha,
+		uppercase: upper-alpha
+	),
 	text-shadow: (
 		none: "0px 0px 0px rgba(0, 0, 0, 0)",
 		white-1: "2px 2px 2px rgba(255, 255, 255, 0.25)",
@@ -491,6 +499,14 @@ $style-definition: (
 		),
 		long-name: ".left",
 		unit: map-get($value-to-unit, "size")
+	),	
+	list-type: (
+		short-name: ".ul",
+		css-style: (
+			"list-style-type"
+		),
+		long-name: ".list",
+		unit: map-get($value-to-unit, "list-type")
 	),
 	margin: (
 		short-name: ".m",

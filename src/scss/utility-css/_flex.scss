@@ -15,7 +15,7 @@
 		<div class="bg_primary-5 text_center flex_auto p_3 br_solid br_1 m_2 br_black">Auto 3</div>
 	</div>
 
-	Styleguide 110.2
+	Styleguide Flex.direction
 
  */
 
@@ -34,6 +34,16 @@
 	min-height: 0; /* 1 */
 }
 
+.flex_shrink {
+	flex: 0 1 auto;
+	min-width: 0; /* 1 */
+	min-height: 0; /* 1 */
+}
+.flex_expand {
+	flex: 1 0 auto;
+	min-width: 0; /* 1 */
+	min-height: 0; /* 1 */
+}
 .flex_none {
 	flex: none;
 }

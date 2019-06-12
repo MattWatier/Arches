@@ -18,27 +18,29 @@ Styleguide Background.Textures
  */
 
 .texture_light {
-	@include texture-light;
+  @include texture-light;
 }
 .texture_medium {
-	@include texture-medium;
+  @include texture-medium;
 }
 .texture_dark {
-	@include texture-dark;
+  @include texture-dark;
 }
 .texture_dust {
-	@include texture-dust;
+  @include texture-dust;
 }
-.texture_disabled,
+.texture_disabled {
+  @include texture-disabled;
+}
 .disabled,
 .disabled:hover {
-	@include texture-disabled;
+  @include texture-disabled;
 }
 .texture_cross {
-	@include texture-cross;
+  @include texture-cross;
 }
 .texture-dynamic {
-	@include texture-dynamic;
+  @include texture-dynamic;
 }
 
 /*

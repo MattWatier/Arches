@@ -5,68 +5,41 @@ $texture-dark: "../img/cross_stripes.png";
 $texture-disabled: "../img/cross_disabled.png";
 $texture-cross: "../img/cross_color.png";
 $texture-connectwork: "../img/connectwork.png";
-$sg-texture-light: "src/img/whisper.png";
-$sg-texture-medium: "src/img/billie-holiday-speck.png";
-$sg-texture-dust: "src/img/dust.png";
-$sg-texture-dark: "src/img/cross_stripes.png";
-$sg-texture-disabled: "src/img/cross_disabled.png";
-$sg-texture-cross: "src/img/cross_color.png";
 
 div[class^="texture_"] {
-	background-attachment: local;
-	background-repeat: repeat;
-	background-position: top right;
-	background-origin: border-box;
+  background-attachment: local;
+  background-repeat: repeat;
+  background-position: top right;
+  background-origin: border-box;
 }
 
 @mixin texture-light() {
-	background-image: url($texture-light);
-	.sg & {
-		background-image: url($sg-texture-light);
-	}
+  background-image: url($texture-light);
 }
 @mixin texture-medium {
-	background-image: url($texture-medium);
-	.sg & {
-		background-image: url($sg-texture-medium);
-	}
+  background-image: url($texture-medium);
 }
 @mixin texture-dust {
-	background-image: url($texture-dust);
-	.sg & {
-		background-image: url($sg-texture-dust);
-	}
+  background-image: url($texture-dust);
 }
 @mixin texture-medium-shaded($level: 0) {
-	background-color: scale-color(map-get($theme-palette, secondary), $lightness: 20% * $level);
-	background-image: url($texture-medium);
-	.sg & {
-		background-image: url($sg-texture-mediu);
-	}
+  background-color: scale-color(map-get($theme-palette, secondary), $lightness: 20% * $level);
+  background-image: url($texture-medium);
 }
 
 @mixin texture-dark() {
-	background-image: url($texture-dark);
-	.sg & {
-		background-image: url($sg-texture-dark);
-	}
+  background-image: url($texture-dark);
 }
 
 @mixin texture-disabled() {
-	background-image: url($texture-disabled);
-	.sg & {
-		background-image: url($sg-texture-disabled);
-	}
+  background-image: url($texture-disabled);
 }
 
 @mixin texture-cross() {
-	background-image: url($texture-cross);
-	.sg & {
-		background-image: url($sg-texture-cross);
-	}
+  background-image: url($texture-cross);
 }
 @mixin texture-dynamic() {
-	background-image: url($texture-connectwork);
+  background-image: url($texture-connectwork);
 }
 
 /*

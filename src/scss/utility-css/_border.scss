@@ -1,4 +1,4 @@
-/* Find Me */
+
 #{ class-name-constructor(border-radius,dotted)},
 #{ class-name-constructor(border-radius,dashed)},
 #{ class-name-constructor(border-radius,solid)} {
@@ -9,19 +9,19 @@
 }
 
 /*
-Border Type
+Border Style
 
 Depends on base border module in _borders.css
 
-br_none           - none
-br_dotted         - dotted
-br_dashed         - dashed
-br_solid          - solid
+#{ class-name-constructor(border-radius,none)}           - makes a border #{ map-deep-get($style-definition,border-style,unit,none)}
+#{ class-name-constructor(border-style,dotted)}         - makes a border #{ map-deep-get($style-definition,border-style,unit,dotted)}
+#{ class-name-constructor(border-style,dashed)}         - makes a border #{ map-deep-get($style-definition,border-style,unit,dashed)}
+#{ class-name-constructor(border-style,solid)}          - makes a border #{ map-deep-get($style-definition,border-style,unit,solid)}
   
 markup:
 <div class="{{modifier_class}} br_black bw_1 p_3">{{modifier_class}} border</div>
 
-Styleguide 103.1
+Styleguide Borders.Style
 
 */
 
@@ -49,7 +49,7 @@ br_highlight             - border color
 markup:
 <div class="{{modifier_class}} p_3 br_solid bw_3">{{modifier_class}} border</div>
 
-Styleguide 103.2
+Styleguide Borders.2
 
 */
 
@@ -73,7 +73,7 @@ br_black-9             - border black with alpha of 90%
 markup:
 <div class="{{modifier_class}} p_3 br_solid br_5 bg_primary-1 white">{{modifier_class}} border</div>
 
-Styleguide 103.2.1
+Styleguide Borders.2.1
 
 */
 
@@ -97,7 +97,7 @@ Styleguide 103.2.1
   markup:
   <div class="{{modifier_class}} p_3 br_solid br_5 bg_primary-1 c_white">{{modifier_class}} border</div>
   
-  Styleguide 103.2.2
+  Styleguide Borders.2.2
   
   */
 
@@ -130,7 +130,7 @@ Styleguide 103.2.1
 	markup:
 	<div class="{{modifier_class}} p_3 br_black br_solid br_2">{{modifier_class}} border</div>
   
-	Styleguide 103.3
+	Styleguide Borders.3
   
   */
 
@@ -173,7 +173,7 @@ Styleguide 103.2.1
   markup:
   <div class="{{modifier_class}} p_3 br_solid br_1 c_white">{{modifier_class}} border</div>
   
-  Styleguide 103.4
+  Styleguide Borders.4
   
   */
 
@@ -203,7 +203,7 @@ Styleguide 103.2.1
     markup:
     <div class="{{modifier_class}} p_3 br_solid br_black c_black">{{modifier_class}} border</div>
   
-    Styleguide 103.5
+    Styleguide Borders.5
   
    */
 

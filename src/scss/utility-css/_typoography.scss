@@ -26,7 +26,7 @@ $black: rgb(19, 18, 18) !default;
     <div class="uppercase">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
   </div>
 
-  Styleguide Font.FontFamily
+  Styleguide Typography.Font.Family
  */
 
 @include loop-style(font-family);
@@ -45,7 +45,7 @@ $black: rgb(19, 18, 18) !default;
     <div class="uppercase">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
   </div>
 
-  Styleguide Font.FontStyle
+  Styleguide Typography.Font.Style
  */
 .font_normal {
 	font-style: normal !important;
@@ -91,7 +91,7 @@ $black: rgb(19, 18, 18) !default;
     <div class="uppercase">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
   </div>
 
-  Styleguide Font.Weight
+  Styleguide Typography.Weight
  */
 .font_light {
 	font-weight: 100 !important;
@@ -132,7 +132,7 @@ $black: rgb(19, 18, 18) !default;
     <div class="uppercase pre-wrap">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
   </div>
 
-  Styleguide Font.Size
+  Styleguide Typography.Font.Size
  */
 
 @include loop-style(font-size);
@@ -166,7 +166,7 @@ markup:
   <div class="{{modifier_class}}  uppercase">{{modifier_class}} with Parent of .font_n2</div>
 </div>
 
-Styleguide Font.Size.Golden
+Styleguide Typography.Font.Size.Golden
  */
 
 @include loop-style(golden);
@@ -228,19 +228,11 @@ Styleguide Font.Size.Golden
 	text-align: left !important;
 }
 
-.no-bullet {
-	list-style-type: none;
-}
 
-.bullet {
-	list-style-type: disc;
-}
 /*
 Font Color
 
 You can change the color of the text with some simple use classes.
-
-
 
 .c_white - text that's white
 .c_black -  text that's black
@@ -257,7 +249,7 @@ markup:
 </div>
 
 
-Styleguide Font.Color
+Styleguide Typography.Font.Color
  */
 
 /*
@@ -275,7 +267,7 @@ Styleguide Font.Color
 	markup:
 	<div class="{{modifier_class}} p_3 br_solid font_bold br_black-1 br_1 bg bg_primary c_white">text has shadow of {{modifier_class}}</div>
 
-	Styleguide Typography.TextShadow
+	Styleguide Typography.Text.Shadow
 
  */
 
@@ -299,5 +291,48 @@ Styleguide Font.Color
     <p class="{{modifier_class}}">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
   </div>
 
-  Styleguide Typography.LineHeight
+  Styleguide Typography.Text.LineHeight
  */
+
+ /*
+  Alignment
+
+  Change the alignment of text.
+
+  .text_right             -  right alignment
+  .text_center             -  center alignment           
+  .text_left             -  left alignment      
+
+  markup:
+  <div class="font_normal font_1 p_3">
+    <h3 class="font_2 font_bold c_secondary_3 p-b_3 {{modifier_class}}">{{modifier_class}}</h3>
+    <p class="{{modifier_class}} lh_2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  </div>
+
+  Styleguide Typography.Text.Alignment
+ */
+
+ /*
+  List Type
+
+  Change the type of a list.
+
+  .ul_none            -  none
+  .ul_bullet          -  bullet          
+  .ul_square          -  square      
+
+  markup:
+  <div class="font_normal font_1 p_3">
+    <h3 class="font_2 font_bold c_secondary_3 p-b_3">{{modifier_class}}</h3>
+    <ul class="{{modifier_class}}">
+    <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</li>
+    <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</li>
+    <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</li>
+    <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</li>
+    <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</li>
+    </ul>
+  </div>
+
+  Styleguide Typography.list
+ */
+ @include loop-style(list-type,"","!important");

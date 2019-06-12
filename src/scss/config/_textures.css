@@ -8,7 +8,7 @@ div[class^="texture_"] {
 /*
 	Textures
 
-	All textures in the Arches design are a subtle variation of transparent.   Allowing for colors to bleed through from behind.  Different textures have intentions or are reserved for certain usagaes. 
+	All textures in the Arches design are a subtle variation of transparent.   Allowing for colors to bleed through from behind.  Different textures have intentions or are reserved for certain uses. 
 
 	.texture_light                       		- Light textures is reserved for the base of a page where it can gve a soft area for text or cards to live on top of. 
 	.texture_medium            					- medium texture are used for area that are hidden away.  Collapsable navs, areas, or sidebars ususaly use the medium texture.
