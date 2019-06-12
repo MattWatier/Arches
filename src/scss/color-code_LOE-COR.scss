@@ -1,0 +1,131 @@
+$debug-trace: false !default;
+$name-mode: "SHORT" !default; // $name-mode: "SHORT","LONG","ALL"
+$ms-base: 1rem !default; // needs to be in rem's
+$colors: ();
+$grays: ();
+$theme-palette: ();
+@import "helpers/helpers";
+@import "vendor/modular-scale";
+@import "config/utility-css.vars";
+@import "helpers/breakpoint";
+@import "config/colors";
+
+@each $color-name, $color in $COR {
+  $color-name-alt: "cor-" + $color-name;
+  @include color-loop(background-color, $color-name-alt, $color);
+  @include color-loop(color, $color-name-alt, $color);
+  @include color-loop(border-color, $color-name-alt, $color);
+  /*
+
+"#{$color-name-alt}" Decorator Classes 
+
+Font, Border and Background Colors using #{$color-name-alt}
+
+<h3>Border Color `br_#{$color-name-alt}-x`</h3>
+<div class="p_4 bg_secondary_3 flex">
+    <div class="br_#{$color-name-alt}-5 p_3 br_solid br_0 text_center br-t_4 c_black flex_auto">br 5</div>
+    <div class="br_#{$color-name-alt}-4 p_3 br_solid br_0 text_center br-t_4 c_black flex_auto">br 4</div>
+    <div class="br_#{$color-name-alt}-3 p_3 br_solid br_0 text_center br-t_4 c_black flex_auto">br 3</div>
+    <div class="br_#{$color-name-alt}-2 p_3 br_solid br_0 text_center br-t_4 c_black flex_auto">br 2</div>
+    <div class="br_#{$color-name-alt}-1 p_3 br_solid br_0 text_center br-t_4 c_black flex_auto">br 1</div>
+    <div class="br_#{$color-name-alt}-0 p_3 br_solid br_0 text_center br-t_4 c_black flex_auto">br 0</div>
+    <div class="br_#{$color-name-alt}-n1 p_3 br_solid br_0 text_center br-t_4 c_black flex_auto">br n1</div>
+    <div class="br_#{$color-name-alt}-n2 p_3 br_solid br_0 text_center br-t_4 c_black flex_auto">br n2</div>
+    <div class="br_#{$color-name-alt}-n3 p_3 br_solid br_0 text_center br-t_4 c_black flex_auto">br n3</div>
+    <div class="br_#{$color-name-alt}-n4 p_3 br_solid br_0 text_center br-t_4 c_black flex_auto">br n4</div>
+    <div class="br_#{$color-name-alt}-n5 p_3 br_solid br_0 text_center br-t_4 c_black flex_auto">br n5</div>
+</div>
+<h3>Background Color `bg_#{$color-name-alt}-x`</h3>
+<div class="flex">
+  <div class="bg_white flex_auto text_center p_2 p-y_5 ">white</div>
+  <div class="bg_#{$color-name-alt}-5 flex_auto text_center p_2 p-y_5">5</div>
+  <div class="bg_#{$color-name-alt}-4 flex_auto text_center p_2 p-y_5">4</div>
+  <div class="bg_#{$color-name-alt}-3 flex_auto text_center p_2 p-y_5">3</div>
+  <div class="bg_#{$color-name-alt}-2 flex_auto text_center p_2 p-y_5">2</div>
+  <div class="bg_#{$color-name-alt}-1 flex_auto text_center c_white p_2 p-y_5">1</div>
+  <div class="bg_#{$color-name-alt}-0 flex_auto text_center c_white p_2 p-y_5">0</div>
+  <div class="bg_#{$color-name-alt}-n1 flex_auto text_center c_white p_2 p-y_5">n1</div>
+  <div class="bg_#{$color-name-alt}-n2 flex_auto text_center c_white p_2 p-y_5">n2</div>
+  <div class="bg_#{$color-name-alt}-n3 flex_auto text_center c_white p_2 p-y_5">n3</div>
+  <div class="bg_#{$color-name-alt}-n4 flex_auto text_center c_white p_2 p-y_5">n4</div>
+  <div class="bg_#{$color-name-alt}-n5 flex_auto text_center c_white p_2 p-y_5">n5</div>
+  <div class="bg_black flex_auto text_center c_white p_2 p-y_5">black</div>
+</div>
+<h3>Font Color `c_#{$color-name-alt}-x`</h3>
+<div class="font_2 bg_secondary">
+  <div class="c_#{$color-name-alt}-5 text_left br_solid br_0 br-b_1 br_white-3 font_display p_5 p-y_2 bg_secondary">modified level 5 of the font color.</div>
+  <div class="c_#{$color-name-alt}-4 text_left br_solid br_0 br-b_1 br_white-3 font_display p_5 p-y_2 bg_secondary">modified level 4 of the font color.</div>
+  <div class="c_#{$color-name-alt}-3 text_left br_solid br_0 br-b_1 br_white-3 font_display p_5 p-y_2 bg_secondary">modified level 3 of the font color.</div>
+  <div class="c_#{$color-name-alt}-2 text_left br_solid br_0 br-b_1 br_white-3 font_display p_5 p-y_2 bg_secondary">modified level 2 of the font color.</div>
+  <div class="c_#{$color-name-alt}-1 text_left br_solid br_0 br-b_1 br_white-3 font_display p_5 p-y_2 bg_secondary">modified level 1 of the font color.</div>
+  <div class="c_#{$color-name-alt}-0 text_left br_solid br_0 br-b_1 br_white-3 font_display p_5 p-y_2 bg_secondary">modified level 0 of the font color.</div>
+  <div class="c_#{$color-name-alt}-n1 text_left br_solid br_0 br-b_1 br_white-3 font_display p_5 p-y_2 bg_secondary">modified level n1 of the font color.</div>
+  <div class="c_#{$color-name-alt}-n2 text_left br_solid br_0 br-b_1 br_white-3 font_display p_5 p-y_2 bg_secondary">modified level n2 of the font color.</div>
+  <div class="c_#{$color-name-alt}-n3 text_left br_solid br_0 br-b_1 br_white-3 font_display p_5 p-y_2 bg_secondary">modified level n3 of the font color.</div>
+  <div class="c_#{$color-name-alt}-n4 text_left br_solid br_0 br-b_1 br_white-3 font_display p_5 p-y_2 bg_secondary">modified level n4 of the font color.</div>
+  <div class="c_#{$color-name-alt}-n5 text_left br_solid br_0 br-b_1 br_white-3 font_display p_5 p-y_2 bg_secondary">modified level n5 of the font color.</div>
+</div>
+
+Styleguide COR Colors.#{$color-name-alt}
+*/
+}
+
+@each $color-name, $color in $LOE {
+  $color-name-alt: "loe-" + $color-name;
+  @include color-loop(background-color, $color-name-alt, $color);
+  @include color-loop(color, $color-name-alt, $color);
+  @include color-loop(border-color, $color-name-alt, $color);
+  /*
+
+"#{$color-name-alt}" Decorator Classes 
+
+Font, Border and Background Colors using #{$color-name-alt}
+
+<h3>Border Color `br_#{$color-name-alt}-x`</h3>
+<div class="p_4 bg_secondary_3 flex">
+    <div class="br_#{$color-name-alt}-5 p_3 br_solid br_0 text_center br-t_4 c_black flex_auto">br 5</div>
+    <div class="br_#{$color-name-alt}-4 p_3 br_solid br_0 text_center br-t_4 c_black flex_auto">br 4</div>
+    <div class="br_#{$color-name-alt}-3 p_3 br_solid br_0 text_center br-t_4 c_black flex_auto">br 3</div>
+    <div class="br_#{$color-name-alt}-2 p_3 br_solid br_0 text_center br-t_4 c_black flex_auto">br 2</div>
+    <div class="br_#{$color-name-alt}-1 p_3 br_solid br_0 text_center br-t_4 c_black flex_auto">br 1</div>
+    <div class="br_#{$color-name-alt}-0 p_3 br_solid br_0 text_center br-t_4 c_black flex_auto">br 0</div>
+    <div class="br_#{$color-name-alt}-n1 p_3 br_solid br_0 text_center br-t_4 c_black flex_auto">br n1</div>
+    <div class="br_#{$color-name-alt}-n2 p_3 br_solid br_0 text_center br-t_4 c_black flex_auto">br n2</div>
+    <div class="br_#{$color-name-alt}-n3 p_3 br_solid br_0 text_center br-t_4 c_black flex_auto">br n3</div>
+    <div class="br_#{$color-name-alt}-n4 p_3 br_solid br_0 text_center br-t_4 c_black flex_auto">br n4</div>
+    <div class="br_#{$color-name-alt}-n5 p_3 br_solid br_0 text_center br-t_4 c_black flex_auto">br n5</div>
+</div>
+<h3>Background Color `bg_#{$color-name-alt}-x`</h3>
+<div class="flex">
+  <div class="bg_white flex_auto text_center p_2 p-y_5 ">white</div>
+  <div class="bg_#{$color-name-alt}-5 flex_auto text_center p_2 p-y_5">5</div>
+  <div class="bg_#{$color-name-alt}-4 flex_auto text_center p_2 p-y_5">4</div>
+  <div class="bg_#{$color-name-alt}-3 flex_auto text_center p_2 p-y_5">3</div>
+  <div class="bg_#{$color-name-alt}-2 flex_auto text_center p_2 p-y_5">2</div>
+  <div class="bg_#{$color-name-alt}-1 flex_auto text_center c_white p_2 p-y_5">1</div>
+  <div class="bg_#{$color-name-alt}-0 flex_auto text_center c_white p_2 p-y_5">0</div>
+  <div class="bg_#{$color-name-alt}-n1 flex_auto text_center c_white p_2 p-y_5">n1</div>
+  <div class="bg_#{$color-name-alt}-n2 flex_auto text_center c_white p_2 p-y_5">n2</div>
+  <div class="bg_#{$color-name-alt}-n3 flex_auto text_center c_white p_2 p-y_5">n3</div>
+  <div class="bg_#{$color-name-alt}-n4 flex_auto text_center c_white p_2 p-y_5">n4</div>
+  <div class="bg_#{$color-name-alt}-n5 flex_auto text_center c_white p_2 p-y_5">n5</div>
+  <div class="bg_black flex_auto text_center c_white p_2 p-y_5">black</div>
+</div>
+<h3>Font Color `c_#{$color-name-alt}-x`</h3>
+<div class="font_2 bg_secondary">
+  <div class="c_#{$color-name-alt}-5 text_left br_solid br_0 br-b_1 br_white-3 font_display p_5 p-y_2 bg_secondary">modified level 5 of the font color.</div>
+  <div class="c_#{$color-name-alt}-4 text_left br_solid br_0 br-b_1 br_white-3 font_display p_5 p-y_2 bg_secondary">modified level 4 of the font color.</div>
+  <div class="c_#{$color-name-alt}-3 text_left br_solid br_0 br-b_1 br_white-3 font_display p_5 p-y_2 bg_secondary">modified level 3 of the font color.</div>
+  <div class="c_#{$color-name-alt}-2 text_left br_solid br_0 br-b_1 br_white-3 font_display p_5 p-y_2 bg_secondary">modified level 2 of the font color.</div>
+  <div class="c_#{$color-name-alt}-1 text_left br_solid br_0 br-b_1 br_white-3 font_display p_5 p-y_2 bg_secondary">modified level 1 of the font color.</div>
+  <div class="c_#{$color-name-alt}-0 text_left br_solid br_0 br-b_1 br_white-3 font_display p_5 p-y_2 bg_secondary">modified level 0 of the font color.</div>
+  <div class="c_#{$color-name-alt}-n1 text_left br_solid br_0 br-b_1 br_white-3 font_display p_5 p-y_2 bg_secondary">modified level n1 of the font color.</div>
+  <div class="c_#{$color-name-alt}-n2 text_left br_solid br_0 br-b_1 br_white-3 font_display p_5 p-y_2 bg_secondary">modified level n2 of the font color.</div>
+  <div class="c_#{$color-name-alt}-n3 text_left br_solid br_0 br-b_1 br_white-3 font_display p_5 p-y_2 bg_secondary">modified level n3 of the font color.</div>
+  <div class="c_#{$color-name-alt}-n4 text_left br_solid br_0 br-b_1 br_white-3 font_display p_5 p-y_2 bg_secondary">modified level n4 of the font color.</div>
+  <div class="c_#{$color-name-alt}-n5 text_left br_solid br_0 br-b_1 br_white-3 font_display p_5 p-y_2 bg_secondary">modified level n5 of the font color.</div>
+</div>
+
+Styleguide LOE Colors.#{$color-name-alt}
+*/
+}

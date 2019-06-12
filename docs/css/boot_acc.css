@@ -11,6 +11,14 @@
 /**  Colors  **/
 /*
 
+ACC's Blue
+
+$acc-blue            - #00386b; acc
+
+Styleguide DesignBase.Colors.ACC
+*/
+/*
+
 Theme Colors 
 
 Colors are based off of the ACC Scrub Colors.
@@ -23,14 +31,6 @@ $purple              - #7742bd; highlight
 
 Styleguide DesignBase.Colors
  */
-/*
-
-ACC's Blue
-
-$acc-blue            - #00386b; acc
-
-Styleguide DesignBase.Colors.ACC
-*/
 /*
 
 Action Colors  
@@ -49,7 +49,7 @@ Styleguide DesignBase.Colors.Actions
 
 Color Coding  
 
-Color Coding is used in specific products and concepts to illustrate cohesion and collections. All of these color codes are used universally through out the college and have an assoicated meaning. 
+Color Coding is used in specific products and concepts to illustrate cohesion and collections. All of these color codes are used universally through out the college and have an assoicated meaning. All of these colors are just used for reference and have no associated decorator classes.  You must include the the associated color-code_x.css have access to utlity classes that will color using the bellow colors. 
 
 Styleguide DesignBase.Colors.ColorCoding
 
@@ -66,6 +66,8 @@ $cor-yellow-orange          - #faa74b; IIA
 $cor-orange               	- #f15d4c;III and III-NoHarm
 $cor-red               		- #ed1c00; III-harm
 
+Weight: 10
+
 Styleguide DesignBase.Colors.ColorCoding.COR
 
  */
@@ -75,28 +77,16 @@ LOE Colors
 
 (LOE) level of Evedence is a color collect used in Guideline recomendations.
 
-$loe-dark-blue                 - #3e6fb7; A
-$loe-mid-blue              - #659cd3; B
-$loe-light-blue                - #a1c1e6;B
-$loe-pale-blue                - #b5d5e5; C
+$loe-dark-blue                 	- #3e6fb7;LOE A
+$loe-mid-blue              		- #659cd3;LOE B-R
+$loe-light-blue                	- #a1c1e6;LOE B-NR
+$loe-pale-blue                	- #b5d5e5; LOE C
+
+Weight: 10
 
 Styleguide DesignBase.Colors.ColorCoding.LOE
 
  */
-/*
-
-Clinical App Product Colors  
-
-Each of the clinicaal apps within the ACC portfolio are have a distinct color.
-
-$loe-dark-blue                 - #3e6fb7; A
-$loe-mid-blue              - #659cd3; B
-$loe-light-blue                - #a1c1e6;B
-$loe-pale-blue                - #b5d5e5; C
-
-Styleguide DesignBase.Colors.ColorCoding.LOE
-
-*/
 /*
 
 Credit Type Color Coding  
@@ -114,7 +104,35 @@ $credit-CNErx         	-  #52549E; CNErx
 $credit-ECME         	-  #D16528; ECME   
 $credit-CPE         	-  #992E2E; CPE   
 
-Styleguide DesignBase.Colors.ColorCoding.LOE
+Weight: 0
+
+Styleguide DesignBase.Colors.ColorCoding.Credits
+
+*/
+/*
+
+Clinical Pathway Colors  
+
+Each of the clinical pathways has a distinctive color.  These colors are used to give a distinct theme to our clinical apps, marketing, pdf's and tools.
+
+$pathway-invasive-cardiology 							- #c8b02f;  Invasive Cardiology Angiography and Intervention
+$pathway-congenital-heart-disease 						- #fdb918;  Congenital Heart Disease
+$pathway-noninvasive-cardiology 						- #947b33;  Noninvasive Cardiology
+$pathway-ecg-stress-test 								- #d9691f;  Standard ECG, Stress Test
+$pathway-vascular-medicine 								- #ae171c;  Vascular Medicine
+$pathway-pulmonary-hypertension 						- #d60e7e;  Pulmonary Hypertension and Venous Thromboembolic Disease
+$pathway-prevention 									- #a01d51;  Prevention
+$pathway-heart-failure 									- #410d49;  Heart Failure and Cardiomyopathies
+$pathway-valvular-heart-disease 						- #4f4190;  Valvular Heart Disease
+$pathway-arrthythmias-EP 								- #005b37;  Arrthythmias and Clinical EP
+$pathway-preicardial 									- #0079ad;  Preicardial Disease
+$pathway-acute-coronary-syndromes 						- #009974;  Acute Coronary Syndromes
+$pathway-stable-ischemnic-heart-disease 				- #0f3e65;  Stable Ischemnic Heart Disease
+$pathway-special 										- #00b6f1;  Special
+
+Weight: -1
+
+Styleguide DesignBase.Colors.ColorCoding.Pathways
 
 */
 /**  Fonts  **/

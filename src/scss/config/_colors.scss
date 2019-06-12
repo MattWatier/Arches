@@ -1,3 +1,13 @@
+$acc-blue: #004176 !default;
+/*
+
+ACC's Blue
+
+$acc-blue            - #00386b; acc
+
+Styleguide DesignBase.Colors.ACC
+*/
+
 $teal: #198dae !default;
 $green-blue: #24ccae !default;
 $dark-grey: #676a72 !default;
@@ -8,103 +18,35 @@ $red: #dd1a1a !default;
 $blue: #2b58c0 !default;
 $purple: #976ad2 !default;
 $magenta: #c34198 !default;
-$acc-blue: #004176 !default;
+
 $white: rgb(255, 255, 255) !default;
 $black: rgb(19, 18, 18) !default;
 
 $theme-palette: () !default;
 // stylelint-disable-next-line scss/dollar-variable-default
 $theme-palette: map-merge(
-	(
-		primary: $teal,
-		secondary: $dark-grey,
-		success: $green,
-		warning: $orange,
-		alert: $red,
-		navigation: $blue,
-		accent: $green-blue,
-		info: $alt-grey,
-		highlight: $purple,
-		acc: $acc-blue
-	),
-	$theme-palette
+  (
+    primary: $teal,
+    secondary: $dark-grey,
+    success: $green,
+    warning: $orange,
+    alert: $red,
+    navigation: $blue,
+    accent: $green-blue,
+    info: $alt-grey,
+    highlight: $purple,
+    acc: $acc-blue
+  ),
+  $theme-palette
 );
 
 %hover-text-white {
-	color: $white !important;
+  color: $white !important;
 }
 
 %hover-text-black {
-	color: $black !important;
+  color: $black !important;
 }
-
-
-// Other Color Collections from the college
-$cor-green: #6fc284;
-$cor-yellow: #ffd44f;
-$cor-yellow-orange:  #faa74b;
-$cor-orange:#f15d4c;
-$cor-red:  #ed1c00;
-
-$loe-dark-blue: rgb(62, 111, 183);
-$loe-mid-blue: rgb(101, 156, 211);
-$loe-light-blue: rgb(161, 193, 230);
-$loe-pale-blue: rgb(181, 213, 229);
-
-$COR: () !default;
-
-$COR: map-merge(
-	(
-		I: $cor-green,
-		IIA: $cor-yellow,
-		IIB: $cor-yellow-orange,
-		III: $cor-orange,
-		III-NOBENIFIT: $cor-orange,
-		III-HARM: $cor-red
-	),
-	$COR
-);
-$LOE: () !default;
-$LOE: map-merge(
-	(
-		A: $loe-dark-blue,
-		B-NR: $loe-mid-blue,
-		B-BR: $loe-light-blue,
-		C-LD: $loe-pale-blue,
-		C-EO: $loe-pale-blue
-	),
-	$LOE
-);
-
-$credit-CME:#00a15b;
-$credit-ABP:#007A5B;
-$credit-COP:#775891;
-$credit-CE:#a8a8a8;
-$credit-MOCII:#9a1267;
-$credit-MOCIV:#D3248D;
-$credit-CNE:#198dae;
-$credit-CNErx:#52549E;
-$credit-ECME:#D16528;
-$credit-CPE:#992E2E;
-
-
-$CreditColors: () !default;
-$CreditColors: map-merge(
-	(
-		CME: Colors-CME,
-		ABP: $credit-ABP,
-		COP: $credit-COP,
-		CE: $credit-CE,
-		MOCII: $credit-MOCII,
-		MOCIV: $credit-MOCIV,
-		CNE: $credit-CNE,
-		CNErx: $credit-CNErx,
-		ECME: $credit-ECME,
-		CPE: $credit-CPE,
-	),
-	$CreditColors
-);
-
 
 /*
 
@@ -120,14 +62,7 @@ $purple              - #7742bd; highlight
 
 Styleguide DesignBase.Colors
  */
-/*
 
-ACC's Blue
-
-$acc-blue            - #00386b; acc
-
-Styleguide DesignBase.Colors.ACC
-*/
 /*
 
 Action Colors  
@@ -143,16 +78,37 @@ Styleguide DesignBase.Colors.Actions
 
  */
 
- /*
+// Other Color Collections from the college
+
+/*
 
 Color Coding  
 
-Color Coding is used in specific products and concepts to illustrate cohesion and collections. All of these color codes are used universally through out the college and have an assoicated meaning. 
+Color Coding is used in specific products and concepts to illustrate cohesion and collections. All of these color codes are used universally through out the college and have an assoicated meaning. All of these colors are just used for reference and have no associated decorator classes.  You must include the the associated color-code_x.css have access to utlity classes that will color using the bellow colors. 
 
 Styleguide DesignBase.Colors.ColorCoding
 
  */
 
+$cor-green: #6fc284;
+$cor-yellow: #ffd44f;
+$cor-yellow-orange: #faa74b;
+$cor-orange: #f15d4c;
+$cor-red: #ed1c00;
+
+$COR: () !default;
+
+$COR: map-merge(
+  (
+    I: $cor-green,
+    IIA: $cor-yellow,
+    IIB: $cor-yellow-orange,
+    III: $cor-orange,
+    III-NOBENIFIT: $cor-orange,
+    III-HARM: $cor-red
+  ),
+  $COR
+);
 /*
 
 COR Colors  
@@ -165,40 +121,71 @@ $cor-yellow-orange          - #{$cor-yellow-orange}; IIA
 $cor-orange               	- #{$cor-orange};III and III-NoHarm
 $cor-red               		- #{$cor-red}; III-harm
 
+Weight: 10
+
 Styleguide DesignBase.Colors.ColorCoding.COR
 
  */
+$loe-dark-blue: rgb(62, 111, 183);
+$loe-mid-blue: rgb(101, 156, 211);
+$loe-light-blue: rgb(161, 193, 230);
+$loe-pale-blue: rgb(181, 213, 229);
+$LOE: () !default;
+$LOE: map-merge(
+  (
+    A: $loe-dark-blue,
+    B-NR: $loe-mid-blue,
+    B-BR: $loe-light-blue,
+    C-LD: $loe-pale-blue,
+    C-EO: $loe-pale-blue
+  ),
+  $LOE
+);
+
 /*
 
 LOE Colors  
 
 (LOE) level of Evedence is a color collect used in Guideline recomendations.
 
-$loe-dark-blue                 - #{$loe-dark-blue}; A
-$loe-mid-blue              - #{$loe-mid-blue }; B
-$loe-light-blue                - #{$loe-light-blue };B
-$loe-pale-blue                - #{$loe-pale-blue }; C
+$loe-dark-blue                 	- #{$loe-dark-blue};LOE A
+$loe-mid-blue              		- #{$loe-mid-blue };LOE B-R
+$loe-light-blue                	- #{$loe-light-blue };LOE B-NR
+$loe-pale-blue                	- #{$loe-pale-blue }; LOE C
+
+Weight: 10
 
 Styleguide DesignBase.Colors.ColorCoding.LOE
 
  */
 
-/*
+$credit-CME: #00a15b;
+$credit-ABP: #007a5b;
+$credit-COP: #775891;
+$credit-CE: #a8a8a8;
+$credit-MOCII: #9a1267;
+$credit-MOCIV: #d3248d;
+$credit-CNE: #198dae;
+$credit-CNErx: #52549e;
+$credit-ECME: #d16528;
+$credit-CPE: #992e2e;
 
-Clinical App Product Colors  
-
-Each of the clinicaal apps within the ACC portfolio are have a distinct color.
-
-$loe-dark-blue                 - #{$loe-dark-blue}; A
-$loe-mid-blue              - #{$loe-mid-blue }; B
-$loe-light-blue                - #{$loe-light-blue };B
-$loe-pale-blue                - #{$loe-pale-blue }; C
-
-Styleguide DesignBase.Colors.ColorCoding.LOE
-
-*/
-
-
+$CreditColors: () !default;
+$CreditColors: map-merge(
+  (
+    CME: $credit-CME,
+    ABP: $credit-ABP,
+    COP: $credit-COP,
+    CE: $credit-CE,
+    MOCII: $credit-MOCII,
+    MOCIV: $credit-MOCIV,
+    CNE: $credit-CNE,
+    CNErx: $credit-CNErx,
+    ECME: $credit-ECME,
+    CPE: $credit-CPE
+  ),
+  $CreditColors
+);
 
 /*
 
@@ -217,6 +204,71 @@ $credit-CNErx         	-  #52549E; CNErx
 $credit-ECME         	-  #D16528; ECME   
 $credit-CPE         	-  #992E2E; CPE   
 
-Styleguide DesignBase.Colors.ColorCoding.LOE
+Weight: 0
+
+Styleguide DesignBase.Colors.ColorCoding.Credits
+
+*/
+
+$pathway-invasive-cardiology: #c8b02f;
+$pathway-congenital-heart-disease: #fdb918;
+$pathway-noninvasive-cardiology: #947b33;
+$pathway-ecg-stress-test: #d9691f;
+$pathway-vascular-medicine: #ae171c;
+$pathway-pulmonary-hypertension: #d60e7e;
+$pathway-prevention: #a01d51;
+$pathway-heart-failure: #410d49;
+$pathway-valvular-heart-disease: #4f4190;
+$pathway-arrthythmias-EP: #005b37;
+$pathway-preicardial: #0079ad;
+$pathway-acute-coronary-syndromes: #009974;
+$pathway-stable-ischemnic-heart-disease: #0f3e65;
+$pathway-special: #00b6f1;
+
+$PathwayColors: () !default;
+$PathwayColors: map-merge(
+  (
+    invasive: $pathway-invasive-cardiology,
+    congenital: $pathway-congenital-heart-disease,
+    noninvasive: $pathway-noninvasive-cardiology,
+    ecg: $pathway-ecg-stress-test,
+    vascular: $pathway-vascular-medicine,
+    pulmonary: $pathway-pulmonary-hypertension,
+    prevention: $pathway-prevention,
+    hf: $pathway-heart-failure,
+    valvular: $pathway-valvular-heart-disease,
+    arrthythmias: $pathway-arrthythmias-EP,
+    preicardial: $pathway-preicardial,
+    acute: $pathway-acute-coronary-syndromes,
+    ischemnic: $pathway-stable-ischemnic-heart-disease,
+    special: $pathway-special
+  ),
+  $PathwayColors
+);
+
+/*
+
+Clinical Pathway Colors  
+
+Each of the clinical pathways has a distinctive color.  These colors are used to give a distinct theme to our clinical apps, marketing, pdf's and tools.
+
+$pathway-invasive-cardiology 							- #{$pathway-invasive-cardiology};  Invasive Cardiology Angiography and Intervention
+$pathway-congenital-heart-disease 						- #{$pathway-congenital-heart-disease};  Congenital Heart Disease
+$pathway-noninvasive-cardiology 						- #{$pathway-noninvasive-cardiology};  Noninvasive Cardiology
+$pathway-ecg-stress-test 								- #{$pathway-ecg-stress-test};  Standard ECG, Stress Test
+$pathway-vascular-medicine 								- #{$pathway-vascular-medicine};  Vascular Medicine
+$pathway-pulmonary-hypertension 						- #{$pathway-pulmonary-hypertension};  Pulmonary Hypertension and Venous Thromboembolic Disease
+$pathway-prevention 									- #{$pathway-prevention};  Prevention
+$pathway-heart-failure 									- #{$pathway-heart-failure};  Heart Failure and Cardiomyopathies
+$pathway-valvular-heart-disease 						- #{$pathway-valvular-heart-disease};  Valvular Heart Disease
+$pathway-arrthythmias-EP 								- #{$pathway-arrthythmias-EP};  Arrthythmias and Clinical EP
+$pathway-preicardial 									- #{$pathway-preicardial};  Preicardial Disease
+$pathway-acute-coronary-syndromes 						- #{$pathway-acute-coronary-syndromes};  Acute Coronary Syndromes
+$pathway-stable-ischemnic-heart-disease 				- #{$pathway-stable-ischemnic-heart-disease};  Stable Ischemnic Heart Disease
+$pathway-special 										- #{$pathway-special};  Special
+
+Weight: -1
+
+Styleguide DesignBase.Colors.ColorCoding.Pathways
 
 */

@@ -1,180 +1,180 @@
 $debug-trace: true !default;
 
 @function get-themecolor($key: primary, $modifier: 0) {
-	@if $modifier==0 {
-		@return map-get($theme-palette, $key);
-	} @else {
-		$mod: 50%;
-		$mix: map-get($value-to-unit, percent-positive);
+  @if $modifier==0 {
+    @return map-get($theme-palette, $key);
+  } @else {
+    $mod: 50%;
+    $mix: map-get($value-to-unit, percent-positive);
 
-		@if $modifier < 0 {
-			$modifier: $modifier * -1;
-			$mod: map-get($mix, $modifier) * -1;
-		} @else {
-			$mod: map-get($mix, $modifier);
-		}
+    @if $modifier < 0 {
+      $modifier: $modifier * -1;
+      $mod: map-get($mix, $modifier) * -1;
+    } @else {
+      $mod: map-get($mix, $modifier);
+    }
 
-		@return scale-color(map-get($theme-palette, $key), $lightness: $mod);
-	}
+    @return scale-color(map-get($theme-palette, $key), $lightness: $mod);
+  }
 }
 
 @function default-util-size($key) {
-	@if ($key== "font-family") {
-		$default: copy;
-	} @else if($key== "border-style") {
-		$default: none;
-	} @else if ($key== "display") {
-		$default: block;
-	} @else if
-		(
-			$key==
-				"border-radius" or
-				$key==
-				"border-top-right-radius" or
-				$key==
-				"border-top-left-radius" or
-				$key==
-				"border-bottom-right-radius" or
-				$key==
-				"border-bottom-left-radius"
-		)
-	{
-		$default: square;
-	} @else {
-		$default: 0;
-	}
+  @if ($key== "font-family") {
+    $default: copy;
+  } @else if($key== "border-style") {
+    $default: none;
+  } @else if ($key== "display") {
+    $default: block;
+  } @else if
+    (
+      $key==
+        "border-radius" or
+        $key==
+        "border-top-right-radius" or
+        $key==
+        "border-top-left-radius" or
+        $key==
+        "border-bottom-right-radius" or
+        $key==
+        "border-bottom-left-radius"
+    )
+  {
+    $default: square;
+  } @else {
+    $default: 0;
+  }
 
-	@return $default;
+  @return $default;
 }
 
 @function util-style($key, $size: default) {
-	$style: get-css-style($key);
+  $style: get-css-style($key);
 
-	@if ($size==default) {
-		$size: default-util-size($key);
-	}
+  @if ($size==default) {
+    $size: default-util-size($key);
+  }
 
-	$unit: map-get(get-css-unit($key), $size);
-	@return single-util-style($style, $unit);
+  $unit: map-get(get-css-unit($key), $size);
+  @return single-util-style($style, $unit);
 }
 
 @mixin single-util-style($style, $unit) {
-	#{$style}: #{$unit};
+  #{$style}: #{$unit};
 }
 
 @mixin color-loop($key, $color-name, $color, $bp: "") {
-	$white-mix: map-get($value-to-unit, percent-positive);
-	$black-mix: map-get($value-to-unit, percent-negative);
-	$style: get-css-style($key);
-	$unit: $color-name;
-	$breakpoint: $bp;
-	$names: class-name-constructor($key, $unit, $breakpoint);
+  $white-mix: map-get($value-to-unit, percent-positive);
+  $black-mix: map-get($value-to-unit, percent-negative);
+  $style: get-css-style($key);
+  $unit: $color-name;
+  $breakpoint: $bp;
+  $names: class-name-constructor($key, $unit, $breakpoint);
 
-	#{$names} {
-		#{$style}: $color !important;
-	}
+  #{$names} {
+    #{$style}: $color !important;
+  }
 
-	@each $val-name, $val in $white-mix {
-		$unit: #{$color-name}-#{$val-name};
-		$names: class-name-constructor($key, $unit, $breakpoint);
+  @each $val-name, $val in $white-mix {
+    $unit: #{$color-name}-#{$val-name};
+    $names: class-name-constructor($key, $unit, $breakpoint);
 
-		#{$names} {
-			#{$style}: mix(white, $color, $val) !important;
-		}
-	}
+    #{$names} {
+      #{$style}: mix(white, $color, $val) !important;
+    }
+  }
 
-	@each $val-name, $val in $black-mix {
-		$unit: #{$color-name}-#{$val-name};
-		$names: class-name-constructor($key, $unit, $breakpoint);
+  @each $val-name, $val in $black-mix {
+    $unit: #{$color-name}-#{$val-name};
+    $names: class-name-constructor($key, $unit, $breakpoint);
 
-		#{$names} {
-			#{$style}: mix(black, $color, $val) !important;
-		}
-	}
+    #{$names} {
+      #{$style}: mix(black, $color, $val) !important;
+    }
+  }
 
-	@if $debug-trace {
-		@debug "Color Loop for #{$key} painting it with #{$color-name}";
-	}
+  @if $debug-trace {
+    @debug "Color Loop for #{$key} painting it with #{$color-name}";
+  }
 }
 
 @mixin hover-loop($key, $color-name, $color) {
-	$white-mix: map-get($value-to-unit, percent-positive);
-	$black-mix: map-get($value-to-unit, percent-negative);
-	$unit: $color-name;
-	$breakpoint: "" !default;
-	$names: class-name-constructor($key, $unit, $breakpoint, "hover");
-	$styles: get-css-style($key);
+  $white-mix: map-get($value-to-unit, percent-positive);
+  $black-mix: map-get($value-to-unit, percent-negative);
+  $unit: $color-name;
+  $breakpoint: "" !default;
+  $names: class-name-constructor($key, $unit, $breakpoint, "hover");
+  $styles: get-css-style($key);
 
-	#{$names} {
-		@each $style in $styles {
-			#{$style}: $color !important;
-		}
-	}
+  #{$names} {
+    @each $style in $styles {
+      #{$style}: $color !important;
+    }
+  }
 
-	@each $val-name, $val in $white-mix {
-		$unit: #{$color-name}-#{$val-name};
-		$names: class-name-constructor($key, $unit, $breakpoint, "hover");
+  @each $val-name, $val in $white-mix {
+    $unit: #{$color-name}-#{$val-name};
+    $names: class-name-constructor($key, $unit, $breakpoint, "hover");
 
-		#{$names} {
-			@each $style in $styles {
-				#{$style}: mix(white, $color, $val) !important;
-			}
-		}
-	}
+    #{$names} {
+      @each $style in $styles {
+        #{$style}: mix(white, $color, $val) !important;
+      }
+    }
+  }
 
-	@each $val-name, $val in $black-mix {
-		$unit: #{$color-name}-#{$val-name};
-		$names: class-name-constructor($key, $unit, $breakpoint, "hover");
+  @each $val-name, $val in $black-mix {
+    $unit: #{$color-name}-#{$val-name};
+    $names: class-name-constructor($key, $unit, $breakpoint, "hover");
 
-		#{$names} {
-			@each $style in $styles {
-				#{$style}: mix(black, $color, $val) !important;
-			}
-		}
-	}
+    #{$names} {
+      @each $style in $styles {
+        #{$style}: mix(black, $color, $val) !important;
+      }
+    }
+  }
 
-	@if $debug-trace {
-		@debug "Color Loop for #{$key} painting it with #{$color-name}";
-	}
+  @if $debug-trace {
+    @debug "Color Loop for #{$key} painting it with #{$color-name}";
+  }
 }
 
 @mixin loop-transparent($key, $color: "black", $breakpoint: "", $important: "", $hover: false) {
-	$styles: get-css-style($key);
-	$sizes: get-css-unit($key);
-	$hex: #000;
+  $styles: get-css-style($key);
+  $sizes: get-css-unit($key);
+  $hex: #000;
 
-	@if ($color== "white") {
-		$hex: $white;
-	} @else {
-		$hex: $black;
-	}
+  @if ($color== "white") {
+    $hex: $white;
+  } @else {
+    $hex: $black;
+  }
 
-	@if $debug-trace {
-		@debug "Looping Style With Transparent Colors #{$key} #{$color}";
-	}
+  @if $debug-trace {
+    @debug "Looping Style With Transparent Colors #{$key} #{$color}";
+  }
 
-	@each $unit, $val in $sizes {
-		$seperator: "";
+  @each $unit, $val in $sizes {
+    $seperator: "";
 
-		@if ($unit != "") {
-			$seperator: "-";
-		}
+    @if ($unit != "") {
+      $seperator: "-";
+    }
 
-		$color-name: #{$color}#{$seperator}#{$unit};
-		$names: class-name-constructor($key, $color-name, $breakpoint);
+    $color-name: #{$color}#{$seperator}#{$unit};
+    $names: class-name-constructor($key, $color-name, $breakpoint);
 
-		@if ($hover==true) {
-			$names: class-name-constructor($key, $color-name, $breakpoint, "hover");
-		}
+    @if ($hover==true) {
+      $names: class-name-constructor($key, $color-name, $breakpoint, "hover");
+    }
 
-		#{$names} {
-			@each $style in $styles {
-				#{$style}: rgba($hex, $val) #{$important};
-			}
-		}
+    #{$names} {
+      @each $style in $styles {
+        #{$style}: rgba($hex, $val) #{$important};
+      }
+    }
 
-		@if $debug-trace {
-			@debug "My Name is  #{$name}";
-		}
-	}
+    @if $debug-trace {
+      @debug "My Name is  #{$name}";
+    }
+  }
 }

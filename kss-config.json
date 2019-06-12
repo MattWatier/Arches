@@ -1,22 +1,25 @@
 {
-    "title": "No Framework UC Only",
-    "mask": "noframework_acc.css",
-    "builder": "node_modules/michelangelo/kss_styleguide/custom-template/",
-    "source": "./dist/css/",
-    "destination": "docs/",
+	"title": "No Framework UC Only",
+	"mask": "noframework_acc.css",
+	"builder": "node_modules/michelangelo/kss_styleguide/custom-template/",
+	"source": "./dist/css/",
+	"destination": "docs/",
 
-    "//": "relative to source.",
-    "homepage": "../../README.md",
+	"//": "relative to source.",
+	"homepage": "../../README.md",
 
-    "//": "relative to the generated style guide.",
-    "css": [
-        "css/noframework_acc.min.css",
-        "icons/css/fontawesome.css",
-        "icons/css/solid.css",
-        "icons/css/regular.css",
-        "icons/css/brands.css",
-        "icons/css/light.css",
-        "css/styleguide_override.css"
-    ],
-    "js": []
+	"//": "relative to the generated style guide.",
+	"css": [
+		"css/noframework_acc.min.css",
+		"icons/css/fontawesome.css",
+		"icons/css/solid.css",
+		"icons/css/regular.css",
+		"icons/css/brands.css",
+		"icons/css/light.css",
+		"css/styleguide_override.css",
+		"css/color-code_LOE-COR.css",
+		"css/color-code_pathways.css",
+		"css/color-code_credits.css"
+	],
+	"js": []
 }
