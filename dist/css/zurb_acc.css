@@ -9157,7 +9157,7 @@ UC: Introduction
 
 Utility Classes(UCs) are classes that control single styles allowing for quick manipulations of the appearance of the DOM.  When combined with other UCs and toggled with javascripts you can create complex and new UI without the need of writing styles into the system. Examples of some UC built UIs can be found here as recipes. Learn more about UCs in the Introduction section
 
-Weight: 9
+Weight: 100
 
 Styleguide UC
 */
@@ -9241,168 +9241,13 @@ The breakdown of the names for UCs follow a structured patter for easy muscle me
 
  Styleguide UC.Anatomy
 */
-/*
-UC: Counters
-
-Add counters infront of collections without the need of an OL or UL. Counters cannot be nested!
-
-Weight: 10
-
-Styleguide 106.0
-
-*/
 /* No styleguide reference. */
-/*
-	Counter
-
-	Counter can be incremented by the `counter_increment` class.  
-
-	markup:
-    <div class="counter_reset">
-        <div class="bg_primary-2 p_3 m_3"><span class="font_bold counter counter_increment">:</span> Item, Object, or Section</div>
-        <div class="bg_primary-2 p_3 m_3"><span class="font_bold counter counter_increment">:</span> Item, Object, or Section</div>
-        <div class="bg_primary-2 p_3 m_3"><span class="font_bold counter counter_increment">:</span> Item, Object, or Section</div>
- 	</div>
-
-	Styleguide 106.2
-
-*/
-/*
-	Counter Sub
-
-	Counter Subs can be nested inside of counters
-
-	markup:
-    <div class="counter_reset ">
-        <div class="bg_primary-2 p_3 m_3"><span class="font_bold counter counter_increment counter_upper-alpha"></span> Item, Object, or Section</div>
-            <div class="counter-sub_reset">
-                <div class="m_3 p_2 p-l_4 bg_primary-3"><span class="font_bold counter counter_upper-alpha"></span>.<span class="font_bold counter-sub counter-sub_increment counter-sub_lower-alpha"></span> Sub Item</div>
-                <div class="m_3 p_2 p-l_4 bg_primary-3"><span class="font_bold counter counter_upper-alpha"></span>.<span class="font_bold counter-sub counter-sub_increment counter-sub_lower-alpha"></span> Sub Item</div>
-                <div class="m_3 p_2 p-l_4 bg_primary-3"><span class="font_bold counter counter_upper-alpha"></span>.<span class="font_bold counter-sub counter-sub_increment counter-sub_lower-alpha"></span> Sub Item</div>
-            </div>
-        <div class="bg_primary-2 p_3 m_3"><span class="font_bold counter counter_increment counter_upper-alpha"></span> Item, Object, or Section</div>
-        <div class="bg_primary-2 p_3 m_3"><span class="font_bold counter counter_increment counter_upper-alpha"></span> Item, Object, or Section</div>
- 	</div>
-
-	Styleguide 106.3
-
-*/
-/*
-	Counter Types
-
-	Create different types of lists with the counter types
-
-	counter 										- Defualt Number Listing
-	counter_lower-alpha         - Lowercase Alphabetic Listing
-	counter_upper-alpha         - Uppercase Alphabetic Listing
-	counter_lower-roman         - Lowercase Roman Listing
-	counter_upper-roman         - Uppercase Roman Listing
-
-	markup:
-	<div class="counter_reset">
-			<div class="m_3 p_3 bg_primary-2"><span class="{{modifier_class}} font_bold counter_increment"></span> Item, Object, or Section</div>
-			<div class="m_3 p_3 bg_primary-2"><span class="{{modifier_class}} font_bold counter_increment"></span> Item, Object, or Section</div>
-			<div class="m_3 p_3 bg_primary-2"><span class="{{modifier_class}} font_bold counter_increment"></span> Item, Object, or Section</div>
- 	</div>
-
-	Styleguide 106.4
-
-*/
-/*
-	Order Markers
-
-	Quickly decorate the counter with a circle.  Change the  bgground and font color with utility classes to acheive different effects.
-
-
-	markup:
-    <div class="counter_reset">
-        <div class="m_3 p_3"><span class="font_bold counter counter_increment order-marker bg_primary-2"></span> Item, Object, or Section</div>
-        <div class="m_3 p_3"><span class="font_bold counter counter_increment order-marker font_10 br-tl_square br-bl_square bg_highlight-2"></span> Item, Object, or Section</div>
-        <div class="m_3 p_3"><span class="font_bold counter counter_increment order-marker bg_info-2"></span> Item, Object, or Section</div>
-        <div class="m_3 p_3"><span class="font_bold counter counter_increment order-marker bg_warning-2"></span> Item, Object, or Section</div>
-    </div>
-
-	Styleguide 106.5
-
-*/
-.counter_reset {
-  counter-reset: a;
-}
-
-.counter_increment {
-  counter-increment: a;
-}
-
-.counter:before {
-  content: counter(a);
-}
-
-.counter_lower-alpha:before {
-  content: counter(a, lower-alpha);
-}
-
-.counter_upper-alpha:before {
-  content: counter(a, upper-alpha);
-}
-
-.counter_lower-roman:before {
-  content: counter(a, lower-roman);
-}
-
-.counter_upper-roman:before {
-  content: counter(a, upper-roman);
-}
-
-.counter-sub_reset {
-  counter-reset: b;
-}
-
-.counter-sub_increment {
-  counter-increment: b;
-}
-
-.counter-sub:before {
-  content: counter(b);
-}
-
-.counter-sub_lower-alpha:before {
-  content: counter(b, lower-alpha);
-}
-
-.counter-sub_upper-alpha:before {
-  content: counter(b, upper-alpha);
-}
-
-.counter-sub_lower-roman:before {
-  content: counter(a, lower-roman);
-}
-
-.counter-sub_upper-roman:before {
-  content: counter(a, upper-roman);
-}
-
-.order-marker {
-  box-sizing: border-box;
-  display: inline-block;
-  position: relative;
-  width: 1.5em;
-  height: 1.5em;
-  margin-right: 0;
-  margin-right: 0.5em;
-  margin-bottom: 0;
-  padding: 0.75em 0 0 0;
-  border-radius: 50%;
-  line-height: 0;
-  text-align: center;
-  vertical-align: top;
-}
-
 /*
 UC: Spacing
 
 Padding, Margins, and Positions are the most common usage for Utility Classes.  Spacing UC's are responsive and can be postfixed with `:md` and with `:lg` to have finer control on the spacing of objects.
 
-Weight: 10
+Weight: 105
 
 Styleguide Spacing
 */
@@ -11110,6 +10955,26 @@ Styleguide Spacing.Padding
     padding-right: 2rem;
   }
 }
+/*
+Position Type
+
+<div class="p-b_3"><span class="bg_accent br_radius c_white d_inline-block font_n1 p-7_3 p-x_5 sg">Is Responsive: breakpoint modifiers</span></div>Quickly alter the position type and location of an object with 'absolute' and 'top'
+
+relative  		- relative positioned block 
+absolute   		- absolute positioned block
+fixed   			- fixed positioned block 
+sticky   		- sticky positioned block
+
+
+
+markup:
+<div class="br_solid br_transparent bg_accent-3 relative p_5" style="height:200px;">
+	<div class="bg_primary-5 text_center {{modifier_class}}">Position {{modifier_class}}</div>
+</div>
+
+Styleguide Spacing.Position
+
+ */
 .absolute {
   position: absolute;
 }
@@ -11128,9 +10993,9 @@ Styleguide Spacing.Padding
 }
 
 /*
-Position
+Position Location
 
-	<div class="p-b_3"><span class="bg_accent br_radius c_white d_inline-block font_n1 p-7_3 p-x_5 sg">Is Responsive: breakpoint modifiers</span></div>Quickly alter the position type and location of an object with 'absolute' and 'top'
+<div class="p-b_3"><span class="bg_accent br_radius c_white d_inline-block font_n1 p-7_3 p-x_5 sg">Is Responsive: breakpoint modifiers</span></div>Quickly alter the position type and location of an object with top, bottom, left, and right position mondifiers. All of these modifiers will follow the rules of the containers position type. All of the examples below are using absolute positions to have the greatest effect. 
 
 .t_1 - modify top of an absolute positioned block 
 .t_5 - modify top of an absolute positioned block
@@ -11145,7 +11010,7 @@ markup:
 	<div class="bg_primary-5 text_center absolute {{modifier_class}}">Position Absolute {{modifier_class}}</div>
 </div>
 
-Styleguide Spacing.Position
+Styleguide Spacing.Location
 
  */
 .t_0 {
@@ -11711,11 +11576,1225 @@ Styleguide Spacing.Position
   }
 }
 /*
+UC: Display & Flex
+
+Control the display of objects with control of break points, and the layout functions of flex easily by adding utlity classes. 
+
+Weight: 106
+
+Styleguide display
+
+*/
+/* No styleguide reference. */
+/*
+	Display
+
+	quickly alter the padding of an object 
+
+	.d_block              		- the element is the a block
+	.d_inline              		- the element is now inline
+	.d_inline-block            - the element is now inline-block
+	.d_table-cell             	- the element is now table-cell
+	.d_flex-inline             - the element is now flex-inline
+	.d_none             - the element is now display none
+
+	markup:
+	<div class="br_solid br_transparent bg_alert-3  text_center">
+		<div class="bg_primary-5 text_center {{modifier_class}}">Content</div>
+	</div>
+
+	Styleguide display.type
+
+ */
+.d_block {
+  display: block;
+}
+
+.d_inline {
+  display: inline;
+}
+
+.d_inline-block {
+  display: inline-block;
+}
+
+.d_none {
+  display: none;
+}
+
+.d_flex {
+  display: flex;
+}
+
+.d_flex-inline {
+  display: flex-inline;
+}
+
+@media screen and (min-width: 40em) {
+  .d_block\:md {
+    display: block;
+  }
+
+  .d_inline\:md {
+    display: inline;
+  }
+
+  .d_inline-block\:md {
+    display: inline-block;
+  }
+
+  .d_none\:md {
+    display: none;
+  }
+
+  .d_flex\:md {
+    display: flex;
+  }
+
+  .d_flex-inline\:md {
+    display: flex-inline;
+  }
+}
+@media screen and (min-width: 64em) {
+  .d_block\:lg {
+    display: block;
+  }
+
+  .d_inline\:lg {
+    display: inline;
+  }
+
+  .d_inline-block\:lg {
+    display: inline-block;
+  }
+
+  .d_none\:lg {
+    display: none;
+  }
+
+  .d_flex\:lg {
+    display: flex;
+  }
+
+  .d_flex-inline\:lg {
+    display: flex-inline;
+  }
+}
+/*
+	Vertical Align
+
+	quickly alter the verticle alignment of the child
+
+	.vertical-align_top              		- the child is aligned to the top
+	.vertical-align_middle              	- the child is aligned to the top
+	.vertical-align_bottom            		- the child is aligned to the top
+	.vertical-align_baseline          		- the child is aligned to the top
+
+
+	markup:
+	<div class="br_solid br_transparent bg_alert-3 text_center {{modifier_class}} bg_secondary_4 d-inline-block">
+		<div class="bg_primary-5 text_center  d-inline">Content</div>
+	</div>
+
+	Styleguide display.vertical alignment
+
+ */
+.vertical-align_top {
+  vertical-align: top;
+}
+
+.vertical-align_middle {
+  vertical-align: middle;
+}
+
+.vertical-align_bottom {
+  vertical-align: bottom;
+}
+
+.vertical-align_baseline {
+  vertical-align: baseline;
+}
+
+/*
+	Flex
+
+	Structure Objects quickly and change the order of the  
+
+	.flex_row              		- the element is the a block- flex_row
+	.flex_column              		- flex_column
+	.flex_row-reverse              		- flex_column-reverse
+	.flex_column-reverse              		- flex_row-reverse
+
+	markup:
+	<div class="flex {{modifier_class}} br_solid br_transparent bg_alert-3  text_center  p_3 bg_warning-3"> 
+		<div class="bg_primary-5 text_center flex_auto p_3 br_solid br_1 m_2 br_black">Auto 1</div>
+		<div class="bg_primary-5 text_center flex_shrink p_3 br_solid br_1 m_2 br_black">Shrink 2</div>
+		<div class="bg_primary-5 text_center flex_auto p_3 br_solid br_1 m_2 br_black">Auto 3</div>
+	</div>
+
+	Styleguide display.flex.direction
+
+ */
+/* 1. Fix for Chrome 44 bug.
+ * https://code.google.com/p/chromium/issues/detail?id=506893 */
+.flex_auto {
+  flex: 1 1 auto;
+  min-width: 0;
+  /* 1 */
+  min-height: 0;
+  /* 1 */
+}
+
+.flex_shrink {
+  flex: 0 1 auto;
+  min-width: 0;
+  /* 1 */
+  min-height: 0;
+  /* 1 */
+}
+
+.flex_expand {
+  flex: 1 0 auto;
+  min-width: 0;
+  /* 1 */
+  min-height: 0;
+  /* 1 */
+}
+
+.flex_none {
+  flex: none;
+}
+
+.flex_column {
+  flex-direction: column;
+}
+
+.flex_row {
+  flex-direction: row;
+}
+
+.flex_wrap {
+  flex-wrap: wrap;
+}
+
+.flex_nowrap {
+  flex-wrap: nowrap;
+}
+
+.flex_wrap-reverse {
+  flex-wrap: wrap-reverse;
+}
+
+.flex_column-reverse {
+  flex-direction: column-reverse;
+}
+
+.flex_row-reverse {
+  flex-direction: row-reverse;
+}
+
+.items_start {
+  align-items: flex-start;
+}
+
+.items_end {
+  align-items: flex-end;
+}
+
+.items_center {
+  align-items: center;
+}
+
+.items_baseline {
+  align-items: baseline;
+}
+
+.items_stretch {
+  align-items: stretch;
+}
+
+.self_start {
+  align-self: flex-start;
+}
+
+.self_end {
+  align-self: flex-end;
+}
+
+.self_center {
+  -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.self_baseline {
+  align-self: baseline;
+}
+
+.self_stretch {
+  -ms-grid-row-align: stretch;
+      align-self: stretch;
+}
+
+.justify_start {
+  justify-content: flex-start;
+}
+
+.justify_end {
+  justify-content: flex-end;
+}
+
+.justify_center {
+  justify-content: center;
+}
+
+.justify_between {
+  justify-content: space-between;
+}
+
+.justify_around {
+  justify-content: space-around;
+}
+
+.content_start {
+  align-content: flex-start;
+}
+
+.content_end {
+  align-content: flex-end;
+}
+
+.content_center {
+  align-content: center;
+}
+
+.content_between {
+  align-content: space-between;
+}
+
+.content_around {
+  align-content: space-around;
+}
+
+.content_stretch {
+  align-content: stretch;
+}
+
+.order_0 {
+  order: 0;
+}
+
+.order_1 {
+  order: 1;
+}
+
+.order_2 {
+  order: 2;
+}
+
+.order_3 {
+  order: 3;
+}
+
+.order_4 {
+  order: 4;
+}
+
+.order_5 {
+  order: 5;
+}
+
+.order_6 {
+  order: 6;
+}
+
+.order_7 {
+  order: 7;
+}
+
+.order_8 {
+  order: 8;
+}
+
+.order\:lgast {
+  order: 99999;
+}
+
+.flex-grow_0 {
+  flex-grow: 0;
+}
+
+.flex-grow_1 {
+  flex-grow: 1;
+}
+
+.flex-shrink_0 {
+  flex-shrink: 0;
+}
+
+.flex-shrink_1 {
+  flex-shrink: 1;
+}
+
+@media screen and (min-width: 40em) {
+  .flex\:md {
+    display: flex;
+  }
+
+  .flex_inline\:md {
+    display: inline-flex;
+  }
+
+  .flex_auto\:md {
+    flex: 1 1 auto;
+    min-width: 0;
+    /* 1 */
+    min-height: 0;
+    /* 1 */
+  }
+
+  .flex_none\:md {
+    flex: none;
+  }
+
+  .flex_column\:md {
+    flex-direction: column;
+  }
+
+  .flex_row\:md {
+    flex-direction: row;
+  }
+
+  .flex_wrap\:md {
+    flex-wrap: wrap;
+  }
+
+  .flex_nowrap\:md {
+    flex-wrap: nowrap;
+  }
+
+  .flex_wrap-reverse\:md {
+    flex-wrap: wrap-reverse;
+  }
+
+  .flex_column-reverse\:md {
+    flex-direction: column-reverse;
+  }
+
+  .flex_row-reverse\:md {
+    flex-direction: row-reverse;
+  }
+
+  .items_start\:md {
+    align-items: flex-start;
+  }
+
+  .items_end\:md {
+    align-items: flex-end;
+  }
+
+  .items_center\:md {
+    align-items: center;
+  }
+
+  .items_baseline\:md {
+    align-items: baseline;
+  }
+
+  .items_stretch\:md {
+    align-items: stretch;
+  }
+
+  .self_start\:md {
+    align-self: flex-start;
+  }
+
+  .self_end\:md {
+    align-self: flex-end;
+  }
+
+  .self_center\:md {
+    -ms-grid-row-align: center;
+        align-self: center;
+  }
+
+  .self_baseline\:md {
+    align-self: baseline;
+  }
+
+  .self_stretch\:md {
+    -ms-grid-row-align: stretch;
+        align-self: stretch;
+  }
+
+  .justify_start\:md {
+    justify-content: flex-start;
+  }
+
+  .justify_end\:md {
+    justify-content: flex-end;
+  }
+
+  .justify_center\:md {
+    justify-content: center;
+  }
+
+  .justify_between\:md {
+    justify-content: space-between;
+  }
+
+  .justify_around\:md {
+    justify-content: space-around;
+  }
+
+  .content_start\:md {
+    align-content: flex-start;
+  }
+
+  .content_end\:md {
+    align-content: flex-end;
+  }
+
+  .content_center\:md {
+    align-content: center;
+  }
+
+  .content_between\:md {
+    align-content: space-between;
+  }
+
+  .content_around\:md {
+    align-content: space-around;
+  }
+
+  .content_stretch\:md {
+    align-content: stretch;
+  }
+
+  .order_0\:md {
+    order: 0;
+  }
+
+  .order_1\:md {
+    order: 1;
+  }
+
+  .order_2\:md {
+    order: 2;
+  }
+
+  .order_3\:md {
+    order: 3;
+  }
+
+  .order_4\:md {
+    order: 4;
+  }
+
+  .order_5\:md {
+    order: 5;
+  }
+
+  .order_6\:md {
+    order: 6;
+  }
+
+  .order_7\:md {
+    order: 7;
+  }
+
+  .order_8\:md {
+    order: 8;
+  }
+
+  .order\:lgast\:md {
+    order: 99999;
+  }
+
+  .flex-grow_0\:md {
+    flex-grow: 0;
+  }
+
+  .flex-grow_1\:md {
+    flex-grow: 1;
+  }
+
+  .flex_shrink-0\:md {
+    flex-shrink: 0;
+  }
+
+  .flex_shrink-1\:md {
+    flex-shrink: 1;
+  }
+}
+@media screen and (min-width: 64em) {
+  .flex\:lg {
+    display: flex;
+  }
+
+  .flex_inline\:lg {
+    display: inline-flex;
+  }
+
+  .flex_auto\:lg {
+    flex: 1 1 auto;
+    min-width: 0;
+    /* 1 */
+    min-height: 0;
+    /* 1 */
+  }
+
+  .flex_none\:lg {
+    flex: none;
+  }
+
+  .flex_column\:lg {
+    flex-direction: column;
+  }
+
+  .flex_row\:lg {
+    flex-direction: row;
+  }
+
+  .flex_wrap\:lg {
+    flex-wrap: wrap;
+  }
+
+  .flex_nowrap\:lg {
+    flex-wrap: nowrap;
+  }
+
+  .flex_wrap-reverse\:lg {
+    flex-wrap: wrap-reverse;
+  }
+
+  .flex_column-reverse\:lg {
+    flex-direction: column-reverse;
+  }
+
+  .flex_row-reverse\:lg {
+    flex-direction: row-reverse;
+  }
+
+  .items_start\:lg {
+    align-items: flex-start;
+  }
+
+  .items_end\:lg {
+    align-items: flex-end;
+  }
+
+  .items_center\:lg {
+    align-items: center;
+  }
+
+  .items_baseline\:lg {
+    align-items: baseline;
+  }
+
+  .items_stretch\:lg {
+    align-items: stretch;
+  }
+
+  .self_start\:lg {
+    align-self: flex-start;
+  }
+
+  .self_end\:lg {
+    align-self: flex-end;
+  }
+
+  .self_center\:lg {
+    -ms-grid-row-align: center;
+        align-self: center;
+  }
+
+  .self_baseline\:lg {
+    align-self: baseline;
+  }
+
+  .self_stretch\:lg {
+    -ms-grid-row-align: stretch;
+        align-self: stretch;
+  }
+
+  .justify_start\:lg {
+    justify-content: flex-start;
+  }
+
+  .justify_end\:lg {
+    justify-content: flex-end;
+  }
+
+  .justify_center\:lg {
+    justify-content: center;
+  }
+
+  .justify_between\:lg {
+    justify-content: space-between;
+  }
+
+  .justify_around\:lg {
+    justify-content: space-around;
+  }
+
+  .content_start\:lg {
+    align-content: flex-start;
+  }
+
+  .content_end\:lg {
+    align-content: flex-end;
+  }
+
+  .content_center\:lg {
+    align-content: center;
+  }
+
+  .content_between\:lg {
+    align-content: space-between;
+  }
+
+  .content_around\:lg {
+    align-content: space-around;
+  }
+
+  .content_stretch\:lg {
+    align-content: stretch;
+  }
+
+  .order_0\:lg {
+    order: 0;
+  }
+
+  .order_1\:lg {
+    order: 1;
+  }
+
+  .order_2\:lg {
+    order: 2;
+  }
+
+  .order_3\:lg {
+    order: 3;
+  }
+
+  .order_4\:lg {
+    order: 4;
+  }
+
+  .order_5\:lg {
+    order: 5;
+  }
+
+  .order_6\:lg {
+    order: 6;
+  }
+
+  .order_7\:lg {
+    order: 7;
+  }
+
+  .order_8\:lg {
+    order: 8;
+  }
+
+  .order\:lgast\:lg {
+    order: 99999;
+  }
+
+  .flex-grow_0\:lg {
+    flex-grow: 0;
+  }
+
+  .flex-grow_1\:lg {
+    flex-grow: 1;
+  }
+
+  .flex_shrink-0\:lg {
+    flex-shrink: 0;
+  }
+
+  .flex_shrink-1\:lg {
+    flex-shrink: 1;
+  }
+}
+/*
+UC: Overflow
+
+Control some basics of the design with max-width and width.   
+
+Weight: 100
+
+Styleguide Display.Overflow
+
+*/
+/* No styleguide reference. */
+.overflow_hidden, .overflow_ellipsis, .overflow_clip {
+  overflow: hidden;
+}
+
+.overflow_visible {
+  overflow: visible;
+}
+
+.overflow_auto {
+  overflow: auto;
+}
+
+.overflow_scroll {
+  overflow-x: scroll;
+}
+
+.overflow_clip {
+  text-overflow: clip;
+}
+
+.overflow_ellipsis {
+  text-overflow: ellipsis;
+}
+
+.overflow_unset {
+  overflow: unset;
+}
+
+/*
+UC: Widths
+
+Control some basics of the design with max-width and width.   
+
+Weight: 107
+
+Styleguide Width
+
+*/
+/* No styleguide reference. */
+/*
+10% Width 
+
+Control the width either with 12 x grid messurments or by 10% increments.
+
+.w_10 - Grid Width of 10% out of 100% 
+.w_50 - Grid Width of 50% out of 100%
+.w_70 - Grid Width of 70% out of 100% 
+.w_90 - Grid Width of 90% out of 100%
+
+
+markup:
+<div class=" br_solid br_transparent bg_alert-5 p_5">
+	<div class="bg_white text-left {{modifier_class}}">{{modifier_class}} </div>
+</div>
+
+Styleguide Width.Tens
+
+ */
+/*
+Grid Width 
+
+Control the width either with 12 x grid messurments or by 10% increments.
+
+.w-grid_2 - Grid Width of 2 columns of 12 columns  
+.w-grid_6 - Grid Width of 6 columns of 12 columns 
+.w-grid_8 - Grid Width of 8 columns of 12 columns  
+.w-grid_9 - Grid Width of 9 columns of 12 columns 
+
+
+markup:
+<div class=" br_solid br_transparent bg_alert-5 p_5">
+	<div class="bg_white text-left {{modifier_class}}">{{modifier_class}} </div>
+</div>
+
+Styleguide Width.Grid
+
+ */
+.max-w_0 {
+  max-width: 0 !important;
+}
+
+.max-w_1 {
+  max-width: 480px !important;
+  max-width: 30rem !important;
+}
+
+.max-w_2 {
+  max-width: 640px !important;
+  max-width: 40rem !important;
+}
+
+.max-w_3 {
+  max-width: 800px !important;
+  max-width: 50rem !important;
+}
+
+.max-w_4 {
+  max-width: 1024px !important;
+  max-width: 64rem !important;
+}
+
+.max-w_5 {
+  max-width: 1280px !important;
+  max-width: 80rem !important;
+}
+
+.w_0 {
+  width: 0%;
+}
+
+.w_10 {
+  width: 10%;
+}
+
+.w_20 {
+  width: 20%;
+}
+
+.w_30 {
+  width: 30%;
+}
+
+.w_40 {
+  width: 40%;
+}
+
+.w_50 {
+  width: 50%;
+}
+
+.w_60 {
+  width: 60%;
+}
+
+.w_70 {
+  width: 70%;
+}
+
+.w_80 {
+  width: 80%;
+}
+
+.w_90 {
+  width: 90%;
+}
+
+.w_100 {
+  width: 100%;
+}
+
+.w-grid_1 {
+  width: 8.3333333333%;
+}
+
+.w-grid_2 {
+  width: 16.6666666667%;
+}
+
+.w-grid_3 {
+  width: 25%;
+}
+
+.w-grid_4 {
+  width: 33.3333333333%;
+}
+
+.w-grid_5 {
+  width: 41.6666666667%;
+}
+
+.w-grid_6 {
+  width: 50%;
+}
+
+.w-grid_7 {
+  width: 58.3333333333%;
+}
+
+.w-grid_8 {
+  width: 66.6666666667%;
+}
+
+.w-grid_9 {
+  width: 75%;
+}
+
+.w-grid_10 {
+  width: 83.3333333333%;
+}
+
+.w-grid_11 {
+  width: 91.6666666667%;
+}
+
+.w-grid_12 {
+  width: 100%;
+}
+
+@media screen and (min-width: 40em) {
+  .max-w_0\:md {
+    max-width: 0 !important;
+  }
+
+  .max-w_1\:md {
+    max-width: 30rem !important;
+  }
+
+  .max-w_2\:md {
+    max-width: 40rem !important;
+  }
+
+  .max-w_3\:md {
+    max-width: 50rem !important;
+  }
+
+  .max-w_4\:md {
+    max-width: 64rem !important;
+  }
+
+  .max-w_5\:md {
+    max-width: 80rem !important;
+  }
+
+  .w_0\:md {
+    width: 0%;
+  }
+
+  .w_10\:md {
+    width: 10%;
+  }
+
+  .w_20\:md {
+    width: 20%;
+  }
+
+  .w_30\:md {
+    width: 30%;
+  }
+
+  .w_40\:md {
+    width: 40%;
+  }
+
+  .w_50\:md {
+    width: 50%;
+  }
+
+  .w_60\:md {
+    width: 60%;
+  }
+
+  .w_70\:md {
+    width: 70%;
+  }
+
+  .w_80\:md {
+    width: 80%;
+  }
+
+  .w_90\:md {
+    width: 90%;
+  }
+
+  .w_100\:md {
+    width: 100%;
+  }
+
+  .w-grid_1\:md {
+    width: 8.3333333333%;
+  }
+
+  .w-grid_2\:md {
+    width: 16.6666666667%;
+  }
+
+  .w-grid_3\:md {
+    width: 25%;
+  }
+
+  .w-grid_4\:md {
+    width: 33.3333333333%;
+  }
+
+  .w-grid_5\:md {
+    width: 41.6666666667%;
+  }
+
+  .w-grid_6\:md {
+    width: 50%;
+  }
+
+  .w-grid_7\:md {
+    width: 58.3333333333%;
+  }
+
+  .w-grid_8\:md {
+    width: 66.6666666667%;
+  }
+
+  .w-grid_9\:md {
+    width: 75%;
+  }
+
+  .w-grid_10\:md {
+    width: 83.3333333333%;
+  }
+
+  .w-grid_11\:md {
+    width: 91.6666666667%;
+  }
+
+  .w-grid_12\:md {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 64em) {
+  .max-w_0\:lg {
+    max-width: 0 !important;
+  }
+
+  .max-w_1\:lg {
+    max-width: 30rem !important;
+  }
+
+  .max-w_2\:lg {
+    max-width: 40rem !important;
+  }
+
+  .max-w_3\:lg {
+    max-width: 50rem !important;
+  }
+
+  .max-w_4\:lg {
+    max-width: 64rem !important;
+  }
+
+  .max-w_5\:lg {
+    max-width: 80rem !important;
+  }
+
+  .w_0\:lg {
+    width: 0%;
+  }
+
+  .w_10\:lg {
+    width: 10%;
+  }
+
+  .w_20\:lg {
+    width: 20%;
+  }
+
+  .w_30\:lg {
+    width: 30%;
+  }
+
+  .w_40\:lg {
+    width: 40%;
+  }
+
+  .w_50\:lg {
+    width: 50%;
+  }
+
+  .w_60\:lg {
+    width: 60%;
+  }
+
+  .w_70\:lg {
+    width: 70%;
+  }
+
+  .w_80\:lg {
+    width: 80%;
+  }
+
+  .w_90\:lg {
+    width: 90%;
+  }
+
+  .w_100\:lg {
+    width: 100%;
+  }
+
+  .w-grid_1\:lg {
+    width: 8.3333333333%;
+  }
+
+  .w-grid_2\:lg {
+    width: 16.6666666667%;
+  }
+
+  .w-grid_3\:lg {
+    width: 25%;
+  }
+
+  .w-grid_4\:lg {
+    width: 33.3333333333%;
+  }
+
+  .w-grid_5\:lg {
+    width: 41.6666666667%;
+  }
+
+  .w-grid_6\:lg {
+    width: 50%;
+  }
+
+  .w-grid_7\:lg {
+    width: 58.3333333333%;
+  }
+
+  .w-grid_8\:lg {
+    width: 66.6666666667%;
+  }
+
+  .w-grid_9\:lg {
+    width: 75%;
+  }
+
+  .w-grid_10\:lg {
+    width: 83.3333333333%;
+  }
+
+  .w-grid_11\:lg {
+    width: 91.6666666667%;
+  }
+
+  .w-grid_12\:lg {
+    width: 100%;
+  }
+}
+/*
+Max Width
+
+Control the max width by 10% increments or by readable which is 65em
+
+.max-w_1.lh_4 - width size for a column that would match up to the smallest breakpoint.
+.max-w_2.font_n1.lh_4 - comfortable reading range for font_n1 text.
+.max-w_3.font_0.lh_3 - comfortable reading range for font_0 text
+.max-w_4.font_1.lh_2 - comfortable reading range for font_1 text
+.max-w_5.lh_4 - large screen format of 1280px #198dae
+
+
+markup:
+<div class=" br_solid br_transparent bg_alert-3 p_5">
+	<div class="bg_white text-left {{ modifier_class }}">
+		<strong>{{ modifier_class }}</strong> Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
+		inceptos himenaeos. Nam nec ante. Sed lacinia, urna non tincidunt mattis, tortor neque adipiscing diam, a cursus
+		ipsum ante quis turpis. Nulla facilisi. Ut fringilla. Suspendisse potenti. Nunc feugiat mi a tellus consequat
+		imperdiet. Vestibulum sapien. Proin quam. Etiam ultrices. Suspendisse in justo eu magna luctus suscipit. Sed
+		lectus. Integer euismod lacus luctus magna. Quisque cursus, metus vitae pharetra auctor, sem massa mattis sem,
+		at interdum magna augue eget diam. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
+		cubilia Curae; Morbi lacinia molestie dui. Praesent blandit dolor. Sed non quam. In vel mi sit amet augue congue
+		elementum. Morbi in ipsum sit amet pede facilisis laoreet. Donec lacus nunc, viverra nec.
+	</div>
+</div>
+
+Styleguide Width.MaxWidth
+
+ */
+/*
 UC: Typography
 
 Control size, weight, decoration, white-space, and overflow with these utility classes 
 
-Weight: 10
+Weight: 110
 
 Styleguide Typography
 */
@@ -12893,45 +13972,45 @@ Styleguide Typography.Font.Color
   Styleguide Typography.Text.LineHeight
  */
 /*
- Alignment
+  Alignment
 
- Change the alignment of text.
+  Change the alignment of text.
 
- .text_right             -  right alignment
- .text_center             -  center alignment           
- .text_left             -  left alignment      
+  .text_right             -  right alignment
+  .text_center             -  center alignment           
+  .text_left             -  left alignment      
 
- markup:
- <div class="font_normal font_1 p_3">
-   <h3 class="font_2 font_bold c_secondary_3 p-b_3 {{modifier_class}}">{{modifier_class}}</h3>
-   <p class="{{modifier_class}} lh_2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
- </div>
+  markup:
+  <div class="font_normal font_1 p_3">
+    <h3 class="font_2 font_bold c_secondary_3 p-b_3 {{modifier_class}}">{{modifier_class}}</h3>
+    <p class="{{modifier_class}} lh_2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  </div>
 
- Styleguide Typography.Text.Alignment
-*/
+  Styleguide Typography.Text.Alignment
+ */
 /*
- List Type
+  List Type
 
- Change the type of a list.
+  Change the type of a list.
 
- .ul_none            -  none
- .ul_bullet          -  bullet          
- .ul_square          -  square      
+  .ul_none            -  none
+  .ul_bullet          -  bullet          
+  .ul_square          -  square      
 
- markup:
- <div class="font_normal font_1 p_3">
-   <h3 class="font_2 font_bold c_secondary_3 p-b_3">{{modifier_class}}</h3>
-   <ul class="{{modifier_class}}">
-   <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</li>
-   <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</li>
-   <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</li>
-   <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</li>
-   <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</li>
-   </ul>
- </div>
+  markup:
+  <div class="font_normal font_1 p_3">
+    <h3 class="font_2 font_bold c_secondary_3 p-b_3">{{modifier_class}}</h3>
+    <ul class="{{modifier_class}}">
+    <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</li>
+    <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</li>
+    <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</li>
+    <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</li>
+    <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</li>
+    </ul>
+  </div>
 
- Styleguide Typography.list
-*/
+  Styleguide Typography.list
+ */
 .ul_none {
   list-style-type: none !important;
 }
@@ -12957,11 +14036,80 @@ Styleguide Typography.Font.Color
 }
 
 /*
+	Shadows
+
+	Shadows can be easily added to container .shadow_{{modifier_class}}  
+
+	.shadow_n5			- inset shadow
+	.shadow_n4			- inset shadow
+	.shadow_n3			- inset shadow
+	.shadow_n2			- inset shadow
+	.shadow_n1			- inset shadow
+	.shadow_0		- no shadow
+	.shadow_1		- box shadow
+	.shadow_2		- box shadow
+	.shadow_3		- box shadow
+	.shadow_4		- box shadow
+	.shadow_5		- box shadow
+
+	markup:
+	<div class="{{modifier_class}} p_3 br_solid br_black-1 br_1 c_whtie">container has shadow of {{modifier_class}}</div>
+
+	Weight: 100
+
+	Styleguide Background.Shadows
+
+ */
+.shadow_0 {
+  box-shadow: 1.5px 1.5px 6px 0.75px rgba(0, 0, 0, 0.4);
+}
+
+.shadow_1 {
+  box-shadow: 0.5px 0.5px 2px 0.25px rgba(0, 0, 0, 0.1);
+}
+
+.shadow_2 {
+  box-shadow: 1px 1px 4px 0.5px rgba(0, 0, 0, 0.2);
+}
+
+.shadow_3 {
+  box-shadow: 1.5px 1.5px 6px 0.75px rgba(0, 0, 0, 0.3);
+}
+
+.shadow_4 {
+  box-shadow: 1.75px 1.75px 7px 0.875px rgba(0, 0, 0, 0.5);
+}
+
+.shadow_5 {
+  box-shadow: 2px 2px 8px 1px rgba(0, 0, 0, 0.65);
+}
+
+.shadow_n1 {
+  box-shadow: inset 0.5px 0.5px 2px 0.25px rgba(0, 0, 0, 0.1);
+}
+
+.shadow_n2 {
+  box-shadow: inset 1px 1px 4px 0.5px rgba(0, 0, 0, 0.2);
+}
+
+.shadow_n3 {
+  box-shadow: inset 1.5px 1.5px 6px 0.75px rgba(0, 0, 0, 0.3);
+}
+
+.shadow_n4 {
+  box-shadow: inset 1.75px 1.75px 7px 0.875px rgba(0, 0, 0, 0.5);
+}
+
+.shadow_n5 {
+  box-shadow: inset 2px 2px 8px 1px rgba(0, 0, 0, 0.65);
+}
+
+/*
 UC: Background 
 
 Background of containers can be easily maniputlated with textures, colors, and shadows.  
 
-Weight: 10
+Weight: 120
 
 Styleguide Background
 */
@@ -12979,6 +14127,7 @@ Styleguide Background
   bg_info              - background color success color
   bg_highlight              - background color success color
 
+  Weight: -100
 
   markup:
   <div class="{{modifier_class}} p_3 c_white">Background Color of {{modifier_class}}</div>
@@ -13020,7 +14169,7 @@ markup:
 </div>
 
 
-Styleguide Background.ColorShades
+Styleguide Background.Color.Shades
 
  */
 .bg_primary {
@@ -13622,76 +14771,9 @@ Styleguide Background.ColorShades
     <div class="bg_{{modifier_class}} flex_auto text_center c_white p_2 p-y_5">{{modifier_class}}</div>
   </div>
 
-  Styleguide Background.Colors with Alphas
+  Styleguide Background.Color.With Alphas
 
  */
-/*
-	Shadows
-
-	Shadows can be easily added to container .shadow_{{modifier_class}}  
-
-	.shadow_n5			- inset shadow
-	.shadow_n4			- inset shadow
-	.shadow_n3			- inset shadow
-	.shadow_n2			- inset shadow
-	.shadow_n1			- inset shadow
-	.shadow_0		- no shadow
-	.shadow_1		- box shadow
-	.shadow_2		- box shadow
-	.shadow_3		- box shadow
-	.shadow_4		- box shadow
-	.shadow_5		- box shadow
-
-	markup:
-	<div class="{{modifier_class}} p_3 br_solid br_black-1 br_1 c_whtie">container has shadow of {{modifier_class}}</div>
-
-	Styleguide Background.Shadows
-
- */
-.shadow_0 {
-  box-shadow: 1.5px 1.5px 6px 0.75px rgba(0, 0, 0, 0.4);
-}
-
-.shadow_1 {
-  box-shadow: 0.5px 0.5px 2px 0.25px rgba(0, 0, 0, 0.1);
-}
-
-.shadow_2 {
-  box-shadow: 1px 1px 4px 0.5px rgba(0, 0, 0, 0.2);
-}
-
-.shadow_3 {
-  box-shadow: 1.5px 1.5px 6px 0.75px rgba(0, 0, 0, 0.3);
-}
-
-.shadow_4 {
-  box-shadow: 1.75px 1.75px 7px 0.875px rgba(0, 0, 0, 0.5);
-}
-
-.shadow_5 {
-  box-shadow: 2px 2px 8px 1px rgba(0, 0, 0, 0.65);
-}
-
-.shadow_n1 {
-  box-shadow: inset 0.5px 0.5px 2px 0.25px rgba(0, 0, 0, 0.1);
-}
-
-.shadow_n2 {
-  box-shadow: inset 1px 1px 4px 0.5px rgba(0, 0, 0, 0.2);
-}
-
-.shadow_n3 {
-  box-shadow: inset 1.5px 1.5px 6px 0.75px rgba(0, 0, 0, 0.3);
-}
-
-.shadow_n4 {
-  box-shadow: inset 1.75px 1.75px 7px 0.875px rgba(0, 0, 0, 0.5);
-}
-
-.shadow_n5 {
-  box-shadow: inset 2px 2px 8px 1px rgba(0, 0, 0, 0.65);
-}
-
 /*
 Textures
 
@@ -13793,12 +14875,1150 @@ Styleguide Background.Textures
 
  */
 /*
+UC: Borders
+
+Borders a complex utility that demands a combo UCs to acheive their effect. The three UCs that must be used in combo are `style`, `color`, and `width`.  To make an object with single black pixel border that is solid you would have to add '.br_solid.br_1.br_black' 
+
+Weight: 125
+
+Styleguide Borders
+
+*/
+/* No styleguide reference. */
+.br_dotted,
+.br_dashed,
+.br_solid {
+  border-width: 1px;
+}
+
+.br_none {
+  border-width: 0;
+}
+
+/*
+Border Style
+
+Depends on base border module in _borders.css
+
+.br_none           - makes a border none
+.br_dotted         - makes a border dotted
+.br_dashed         - makes a border dashed
+.br_solid          - makes a border solid
+
+markup:
+<div class="{{modifier_class}} br_black bw_1 p_3">{{modifier_class}} border</div>
+
+Styleguide Borders.Style
+
+*/
+.br_none {
+  border-style: none;
+}
+
+.br_solid {
+  border-style: solid;
+}
+
+.br_dashed {
+  border-style: dashed;
+}
+
+.br_dotted {
+  border-style: dotted;
+}
+
+@media screen and (min-width: 40em) and (max-width: 63.99875em) {
+  .br_none\:md {
+    border-style: none;
+  }
+
+  .br_solid\:md {
+    border-style: solid;
+  }
+
+  .br_dashed\:md {
+    border-style: dashed;
+  }
+
+  .br_dotted\:md {
+    border-style: dotted;
+  }
+}
+@media screen and (min-width: 64em) {
+  .br_none\:lg {
+    border-style: none;
+  }
+
+  .br_solid\:lg {
+    border-style: solid;
+  }
+
+  .br_dashed\:lg {
+    border-style: dashed;
+  }
+
+  .br_dotted\:lg {
+    border-style: dotted;
+  }
+}
+/*
+Border Color
+
+alter the border color of and object by adding the border color utitlity class.
+
+br_primary              - border color
+br_secondary            - border color
+br_alert                - border color
+br_warning              - border color
+br_info                 - border color
+br_highlight            - border color
+
+
+markup:
+<div class="{{modifier_class}} p_3 br_solid bw_3">{{modifier_class}} border</div>
+
+Styleguide Borders.Colors
+
+*/
+/*
+Border Alpha Black
+
+Border black has attached alpha modifiers to allow for greater flexablity 
+
+br_black             - border black with alpha of 100%
+br_black-0             - border black with alpha of 2%
+br_black-1             - border black with alpha of 10%
+br_black-2             - border black with alpha of 20%
+br_black-3             - border black with alpha of 30%
+br_black-4             - border black with alpha of 40%
+br_black-5             - border black with alpha of 50%
+br_black-6             - border black with alpha of 60%
+br_black-7             - border black with alpha of 70%
+br_black-8             - border black with alpha of 80%
+br_black-9             - border black with alpha of 90%
+
+markup:
+<div class="{{modifier_class}} p_3 br_solid br_5 bg_primary-1 white">{{modifier_class}} border</div>
+
+Styleguide Borders.Colors.Black
+
+*/
+/*
+  Border Alpha White
+
+  Border white has attached alpha modifiers to allow for greater flexablity 
+
+  br_white             - border white with alpha of 100%
+  br_white-0             - border white with alpha of 2%
+  br_white-1             - border white with alpha of 90%
+  br_white-2             - border white with alpha of 80%
+  br_white-3             - border white with alpha of 70%
+  br_white-4             - border white with alpha of 60%
+  br_white-5             - border white with alpha of 50%
+  br_white-6             - border white with alpha of 40%
+  br_white-7             - border white with alpha of 30%
+  br_white-8             - border white with alpha of 20%
+  br_white-9             - border white with alpha of 10%
+
+  markup:
+  <div class="{{modifier_class}} p_3 br_solid br_5 bg_primary-1 c_white">{{modifier_class}} border</div>
+
+  Styleguide Borders.Colors.White
+
+  */
+.br_black-0 {
+  border-color: rgba(19, 18, 18, 0) !important;
+}
+
+.br_black-1 {
+  border-color: rgba(19, 18, 18, 0.05) !important;
+}
+
+.br_black-2 {
+  border-color: rgba(19, 18, 18, 0.12) !important;
+}
+
+.br_black-3 {
+  border-color: rgba(19, 18, 18, 0.25) !important;
+}
+
+.br_black-4 {
+  border-color: rgba(19, 18, 18, 0.38) !important;
+}
+
+.br_black-5 {
+  border-color: rgba(19, 18, 18, 0.5) !important;
+}
+
+.br_black-6 {
+  border-color: rgba(19, 18, 18, 0.62) !important;
+}
+
+.br_black-7 {
+  border-color: rgba(19, 18, 18, 0.75) !important;
+}
+
+.br_black-8 {
+  border-color: rgba(19, 18, 18, 0.88) !important;
+}
+
+.br_black-9 {
+  border-color: rgba(19, 18, 18, 0.95) !important;
+}
+
+.br_black-none {
+  border-color: #131212 !important;
+}
+
+.br_white-0 {
+  border-color: rgba(255, 255, 255, 0) !important;
+}
+
+.br_white-1 {
+  border-color: rgba(255, 255, 255, 0.05) !important;
+}
+
+.br_white-2 {
+  border-color: rgba(255, 255, 255, 0.12) !important;
+}
+
+.br_white-3 {
+  border-color: rgba(255, 255, 255, 0.25) !important;
+}
+
+.br_white-4 {
+  border-color: rgba(255, 255, 255, 0.38) !important;
+}
+
+.br_white-5 {
+  border-color: rgba(255, 255, 255, 0.5) !important;
+}
+
+.br_white-6 {
+  border-color: rgba(255, 255, 255, 0.62) !important;
+}
+
+.br_white-7 {
+  border-color: rgba(255, 255, 255, 0.75) !important;
+}
+
+.br_white-8 {
+  border-color: rgba(255, 255, 255, 0.88) !important;
+}
+
+.br_white-9 {
+  border-color: rgba(255, 255, 255, 0.95) !important;
+}
+
+.br_white-none {
+  border-color: white !important;
+}
+
+.border_transparent {
+  border-color: transparent;
+}
+
+/*
+	Border Radius
+
+	Apply border radius to objects by adding full or partial classes for border-radius
+
+	br_square           - All square
+	br_radius        - All with $global-radus
+	br_round         - All corners with 99(px)
+	br_circle          - All corders at 100%
+	br-tl_square           - top left square
+	br-tl_radius        - top left with $global-radus
+	br-tl_round         - top left corners with 99(px)
+	br-tl_circle          - top left corders at 100%
+	br-bl_square           - bottom left square
+	br-bl_radius        - bottom left with $global-radus
+	br-bl_round         - bottom left corners with 99(px)
+	br-bl_circle          - bottom left corders at 100%
+
+
+	markup:
+	<div class="{{modifier_class}} p_3 br_black br_solid br_2">{{modifier_class}} border</div>
+
+	Styleguide Borders.Radius
+
+  */
+.br_square {
+  border-radius: 0px;
+}
+
+.br_radius {
+  border-radius: 6px;
+}
+
+.br_round {
+  border-radius: 25px;
+}
+
+.br_circle {
+  border-radius: 100%;
+}
+
+.br-tr_square {
+  border-top-right-radius: 0px;
+}
+
+.br-tr_radius {
+  border-top-right-radius: 6px;
+}
+
+.br-tr_round {
+  border-top-right-radius: 25px;
+}
+
+.br-tr_circle {
+  border-top-right-radius: 100%;
+}
+
+.br-tl_square {
+  border-top-left-radius: 0px;
+}
+
+.br-tl_radius {
+  border-top-left-radius: 6px;
+}
+
+.br-tl_round {
+  border-top-left-radius: 25px;
+}
+
+.br-tl_circle {
+  border-top-left-radius: 100%;
+}
+
+.br-br_square {
+  border-bottom-right-radius: 0px;
+}
+
+.br-br_radius {
+  border-bottom-right-radius: 6px;
+}
+
+.br-br_round {
+  border-bottom-right-radius: 25px;
+}
+
+.br-br_circle {
+  border-bottom-right-radius: 100%;
+}
+
+.br-bl_square {
+  border-bottom-left-radius: 0px;
+}
+
+.br-bl_radius {
+  border-bottom-left-radius: 6px;
+}
+
+.br-bl_round {
+  border-bottom-left-radius: 25px;
+}
+
+.br-bl_circle {
+  border-bottom-left-radius: 100%;
+}
+
+.square,
+.square .switch-paddle,
+.square .switch-paddle::after {
+  border-radius: 0px;
+}
+
+.radius,
+.radius .switch-paddle,
+.radius .switch-paddle::after {
+  border-radius: 6px;
+}
+
+.round,
+.round .switch-paddle,
+.round .switch-paddle::after {
+  border-radius: 25px;
+}
+
+.circle,
+.circle .switch-paddle,
+.circle .switch-paddle::after {
+  border-radius: 100%;
+}
+
+/*
+  Border Colors
+
+  Border black has attached alpha   
+
+  br_primary            	  - border color primary
+  br_primary-1             - border color mixed with white
+  br_primary-2             - border color mixed with white
+  br_primary-3             - border color mixed with white
+  br_primary-4             - border color mixed with white
+  br_primary-5             - border color mixed with white
+  br_primary-n1             - border color mixed with black
+  br_primary-n2             - border color mixed with black
+  br_primary-n3             - border color mixed with black
+  br_primary-n4             - border color mixed with black
+  br_primary-n5             - border color mixed with black 
+
+  markup:
+  <div class="{{modifier_class}} p_3 br_solid br_5 bg_secondary c_white">{{modifier_class}} border</div>
+
+  Styleguide Borders.Colors.Modifiers
+
+  */
+.br_primary {
+  border-color: #198dae !important;
+}
+
+.br_primary-0 {
+  border-color: #198dae !important;
+}
+
+.br_primary-1 {
+  border-color: #3c9eba !important;
+}
+
+.br_primary-2 {
+  border-color: #6eb7cc !important;
+}
+
+.br_primary-3 {
+  border-color: #a3d1df !important;
+}
+
+.br_primary-4 {
+  border-color: #cce6ed !important;
+}
+
+.br_primary-5 {
+  border-color: #e8f4f7 !important;
+}
+
+.br_primary-n1 {
+  border-color: #177f9d !important;
+}
+
+.br_primary-n2 {
+  border-color: #136a83 !important;
+}
+
+.br_primary-n3 {
+  border-color: #0e4e60 !important;
+}
+
+.br_primary-n4 {
+  border-color: #0a3846 !important;
+}
+
+.br_primary-n5 {
+  border-color: #06232c !important;
+}
+
+.br_secondary {
+  border-color: #676a72 !important;
+}
+
+.br_secondary-0 {
+  border-color: #676a72 !important;
+}
+
+.br_secondary-1 {
+  border-color: #7e8087 !important;
+}
+
+.br_secondary-2 {
+  border-color: #9fa1a6 !important;
+}
+
+.br_secondary-3 {
+  border-color: #c2c3c7 !important;
+}
+
+.br_secondary-4 {
+  border-color: #dedee0 !important;
+}
+
+.br_secondary-5 {
+  border-color: #f0f0f1 !important;
+}
+
+.br_secondary-n1 {
+  border-color: #5d5f67 !important;
+}
+
+.br_secondary-n2 {
+  border-color: #4d5056 !important;
+}
+
+.br_secondary-n3 {
+  border-color: #393a3f !important;
+}
+
+.br_secondary-n4 {
+  border-color: #292a2e !important;
+}
+
+.br_secondary-n5 {
+  border-color: #1a1b1d !important;
+}
+
+.br_success {
+  border-color: #078a2e !important;
+}
+
+.br_success-0 {
+  border-color: #078a2e !important;
+}
+
+.br_success-1 {
+  border-color: #2c9c4d !important;
+}
+
+.br_success-2 {
+  border-color: #63b57b !important;
+}
+
+.br_success-3 {
+  border-color: #9cd0ab !important;
+}
+
+.br_success-4 {
+  border-color: #c8e5d1 !important;
+}
+
+.br_success-5 {
+  border-color: #e6f3ea !important;
+}
+
+.br_success-n1 {
+  border-color: #067c29 !important;
+}
+
+.br_success-n2 {
+  border-color: #056823 !important;
+}
+
+.br_success-n3 {
+  border-color: #044c19 !important;
+}
+
+.br_success-n4 {
+  border-color: #033712 !important;
+}
+
+.br_success-n5 {
+  border-color: #02230c !important;
+}
+
+.br_warning {
+  border-color: #da8210 !important;
+}
+
+.br_warning-0 {
+  border-color: #da8210 !important;
+}
+
+.br_warning-1 {
+  border-color: #e09534 !important;
+}
+
+.br_warning-2 {
+  border-color: #e8b068 !important;
+}
+
+.br_warning-3 {
+  border-color: #f0cd9f !important;
+}
+
+.br_warning-4 {
+  border-color: #f7e4ca !important;
+}
+
+.br_warning-5 {
+  border-color: #fbf3e7 !important;
+}
+
+.br_warning-n1 {
+  border-color: #c4750e !important;
+}
+
+.br_warning-n2 {
+  border-color: #a4620c !important;
+}
+
+.br_warning-n3 {
+  border-color: #784809 !important;
+}
+
+.br_warning-n4 {
+  border-color: #573406 !important;
+}
+
+.br_warning-n5 {
+  border-color: #372104 !important;
+}
+
+.br_alert {
+  border-color: #dd1a1a !important;
+}
+
+.br_alert-0 {
+  border-color: #dd1a1a !important;
+}
+
+.br_alert-1 {
+  border-color: #e23c3c !important;
+}
+
+.br_alert-2 {
+  border-color: #ea6f6f !important;
+}
+
+.br_alert-3 {
+  border-color: #f1a3a3 !important;
+}
+
+.br_alert-4 {
+  border-color: #f8cdcd !important;
+}
+
+.br_alert-5 {
+  border-color: #fce8e8 !important;
+}
+
+.br_alert-n1 {
+  border-color: #c71717 !important;
+}
+
+.br_alert-n2 {
+  border-color: #a61414 !important;
+}
+
+.br_alert-n3 {
+  border-color: #7a0e0e !important;
+}
+
+.br_alert-n4 {
+  border-color: #580a0a !important;
+}
+
+.br_alert-n5 {
+  border-color: #370707 !important;
+}
+
+.br_navigation {
+  border-color: #2b58c0 !important;
+}
+
+.br_navigation-0 {
+  border-color: #2b58c0 !important;
+}
+
+.br_navigation-1 {
+  border-color: #4b71c9 !important;
+}
+
+.br_navigation-2 {
+  border-color: #7996d7 !important;
+}
+
+.br_navigation-3 {
+  border-color: #aabce6 !important;
+}
+
+.br_navigation-4 {
+  border-color: #d0daf1 !important;
+}
+
+.br_navigation-5 {
+  border-color: #eaeef9 !important;
+}
+
+.br_navigation-n1 {
+  border-color: #274fad !important;
+}
+
+.br_navigation-n2 {
+  border-color: #204290 !important;
+}
+
+.br_navigation-n3 {
+  border-color: #18306a !important;
+}
+
+.br_navigation-n4 {
+  border-color: #11234d !important;
+}
+
+.br_navigation-n5 {
+  border-color: #0b1630 !important;
+}
+
+.br_accent {
+  border-color: #16a385 !important;
+}
+
+.br_accent-0 {
+  border-color: #16a385 !important;
+}
+
+.br_accent-1 {
+  border-color: #39b197 !important;
+}
+
+.br_accent-2 {
+  border-color: #6cc5b2 !important;
+}
+
+.br_accent-3 {
+  border-color: #a2dace !important;
+}
+
+.br_accent-4 {
+  border-color: #ccebe4 !important;
+}
+
+.br_accent-5 {
+  border-color: #e8f6f3 !important;
+}
+
+.br_accent-n1 {
+  border-color: #149378 !important;
+}
+
+.br_accent-n2 {
+  border-color: #117a64 !important;
+}
+
+.br_accent-n3 {
+  border-color: #0c5a49 !important;
+}
+
+.br_accent-n4 {
+  border-color: #094135 !important;
+}
+
+.br_accent-n5 {
+  border-color: #062921 !important;
+}
+
+.br_info {
+  border-color: #a3988c !important;
+}
+
+.br_info-0 {
+  border-color: #a3988c !important;
+}
+
+.br_info-1 {
+  border-color: #b1a79d !important;
+}
+
+.br_info-2 {
+  border-color: #c5beb7 !important;
+}
+
+.br_info-3 {
+  border-color: #dad6d1 !important;
+}
+
+.br_info-4 {
+  border-color: #ebe8e6 !important;
+}
+
+.br_info-5 {
+  border-color: #f6f5f4 !important;
+}
+
+.br_info-n1 {
+  border-color: #93897e !important;
+}
+
+.br_info-n2 {
+  border-color: #7a7269 !important;
+}
+
+.br_info-n3 {
+  border-color: #5a544d !important;
+}
+
+.br_info-n4 {
+  border-color: #413d38 !important;
+}
+
+.br_info-n5 {
+  border-color: #292623 !important;
+}
+
+.br_highlight {
+  border-color: #7742bd !important;
+}
+
+.br_highlight-0 {
+  border-color: #7742bd !important;
+}
+
+.br_highlight-1 {
+  border-color: #8b5ec7 !important;
+}
+
+.br_highlight-2 {
+  border-color: #a988d5 !important;
+}
+
+.br_highlight-3 {
+  border-color: #c9b3e5 !important;
+}
+
+.br_highlight-4 {
+  border-color: #e1d5f0 !important;
+}
+
+.br_highlight-5 {
+  border-color: #f1ecf8 !important;
+}
+
+.br_highlight-n1 {
+  border-color: #6b3baa !important;
+}
+
+.br_highlight-n2 {
+  border-color: #59328e !important;
+}
+
+.br_highlight-n3 {
+  border-color: #412468 !important;
+}
+
+.br_highlight-n4 {
+  border-color: #301a4c !important;
+}
+
+.br_highlight-n5 {
+  border-color: #1e112f !important;
+}
+
+.br_acc {
+  border-color: #00386b !important;
+}
+
+.br_acc-0 {
+  border-color: #00386b !important;
+}
+
+.br_acc-1 {
+  border-color: #265681 !important;
+}
+
+.br_acc-2 {
+  border-color: #5e82a2 !important;
+}
+
+.br_acc-3 {
+  border-color: #99afc4 !important;
+}
+
+.br_acc-4 {
+  border-color: #c7d3de !important;
+}
+
+.br_acc-5 {
+  border-color: #e6ebf0 !important;
+}
+
+.br_acc-n1 {
+  border-color: #003260 !important;
+}
+
+.br_acc-n2 {
+  border-color: #002a50 !important;
+}
+
+.br_acc-n3 {
+  border-color: #001f3b !important;
+}
+
+.br_acc-n4 {
+  border-color: #00162b !important;
+}
+
+.br_acc-n5 {
+  border-color: #000e1b !important;
+}
+
+/*
+    Border Width
+
+    Manipulation of borders with thisese classes either all border or with single borders   
+
+    br_0            	- all border with no border
+    br_1            	- all borders with 1px
+    br_2            	- all borders with .125rem
+    br_3            	- all borders with .25rem
+    br_4            	- all borders with .5rem
+    br_5            	- all borders with rem
+    br-l_0.br_1            	- left border with no border
+    br-l_1.br_1            	- left borders with 1px
+    br-l_2.br_1            	- left borders with .125rem
+    br-l_3.br_1            	- left borders with .25rem
+    br-l_4.br_1            	- left borders with .5rem
+    br-l_5.br_1            	- left borders with rem
+
+
+    markup:
+    <div class="{{modifier_class}} p_3 br_solid br_black c_black">{{modifier_class}} border</div>
+
+    Styleguide Borders.Width
+
+   */
+.br-t_0,
+.br-t_1,
+.br-t_2,
+.br-t_3,
+.br-t_4,
+.br-t_5,
+.br-r_0,
+.br-r_1,
+.br-r_2,
+.br-r_3,
+.br-r_4,
+.br-r_5,
+.br-l_0,
+.br-l_1,
+.br-l_2,
+.br-l_3,
+.br-l_4,
+.br-l_5,
+.br-b_0,
+.br-b_1,
+.br-b_2,
+.br-b_3,
+.br-b_4,
+.br-b_5 {
+  border-width: 0;
+}
+
+.br_0 {
+  border-width: 0px;
+}
+
+.br_1 {
+  border-width: 1px;
+}
+
+.br_2 {
+  border-width: 3px;
+}
+
+.br_3 {
+  border-width: 5px;
+}
+
+.br_4 {
+  border-width: 8px;
+  border-width: 0.5rem;
+}
+
+.br_5 {
+  border-width: 16px;
+  border-width: 1rem;
+}
+
+.br-t_0 {
+  border-top-width: 0px;
+}
+
+.br-t_1 {
+  border-top-width: 1px;
+}
+
+.br-t_2 {
+  border-top-width: 3px;
+}
+
+.br-t_3 {
+  border-top-width: 5px;
+}
+
+.br-t_4 {
+  border-top-width: 8px;
+  border-top-width: 0.5rem;
+}
+
+.br-t_5 {
+  border-top-width: 16px;
+  border-top-width: 1rem;
+}
+
+.br-r_0 {
+  border-right-width: 0px;
+}
+
+.br-r_1 {
+  border-right-width: 1px;
+}
+
+.br-r_2 {
+  border-right-width: 3px;
+}
+
+.br-r_3 {
+  border-right-width: 5px;
+}
+
+.br-r_4 {
+  border-right-width: 8px;
+  border-right-width: 0.5rem;
+}
+
+.br-r_5 {
+  border-right-width: 16px;
+  border-right-width: 1rem;
+}
+
+.br-l_0 {
+  border-left-width: 0px;
+}
+
+.br-l_1 {
+  border-left-width: 1px;
+}
+
+.br-l_2 {
+  border-left-width: 3px;
+}
+
+.br-l_3 {
+  border-left-width: 5px;
+}
+
+.br-l_4 {
+  border-left-width: 8px;
+  border-left-width: 0.5rem;
+}
+
+.br-l_5 {
+  border-left-width: 16px;
+  border-left-width: 1rem;
+}
+
+.br-b_0 {
+  border-bottom-width: 0px;
+}
+
+.br-b_1 {
+  border-bottom-width: 1px;
+}
+
+.br-b_2 {
+  border-bottom-width: 3px;
+}
+
+.br-b_3 {
+  border-bottom-width: 5px;
+}
+
+.br-b_4 {
+  border-bottom-width: 8px;
+  border-bottom-width: 0.5rem;
+}
+
+.br-b_5 {
+  border-bottom-width: 16px;
+  border-bottom-width: 1rem;
+}
+
+/*
+UC: Opacity
+
+A subtle set of  UCs that control opacity can alter the objects level of focus.
+
+Weight: 128
+
+Styleguide Opacity
+
+*/
+/* No styleguide reference. */
+/*
+	Opacity Levels
+
+	Set the Opacity of an object.
+
+	.opacity_0                        - Opacity of 0%
+	.opacity_1                        - Opacity of 10%
+	.opacity_2                        - Opacity of 20%
+	.opacity_3                        - Opacity of 30%
+	.opacity_4                        - Opacity of 40%
+	.opacity_5                        - Opacity of 50%
+	.opacity_6                        - Opacity of 60%
+	.opacity_7                        - Opacity of 70%
+	.opacity_8                        - Opacity of 80%
+	.opacity_9                        - Opacity of 90%
+	.opacity_none                     - No Opacity
+
+	markup:
+	<div class="p_4 bg_primary">
+		<div class="{{modifier_class}} br_1 br_solid br_white p_2 bg_warning c_white">{{modifier_class}}</div>
+	</div>
+
+	Styleguide opacity.basic
+
+ */
+.opacity_0 {
+  opacity: 0;
+}
+
+.opacity_1 {
+  opacity: 0.05;
+}
+
+.opacity_2 {
+  opacity: 0.12;
+}
+
+.opacity_3 {
+  opacity: 0.25;
+}
+
+.opacity_4 {
+  opacity: 0.38;
+}
+
+.opacity_5 {
+  opacity: 0.5;
+}
+
+.opacity_6 {
+  opacity: 0.62;
+}
+
+.opacity_7 {
+  opacity: 0.75;
+}
+
+.opacity_8 {
+  opacity: 0.88;
+}
+
+.opacity_9 {
+  opacity: 0.95;
+}
+
+.opacity_none {
+  opacity: 1;
+}
+
+/*
 UC: Hover
 
 Decorate containers and text to show user intereaction with simple hover, and focus effects. 
 
 
-Weight: 10
+Weight: 130
 
 Styleguide hover
 */
@@ -13831,6 +16051,7 @@ Styleguide hover
     <div class="h:{{modifier_class}}-n5 flex_auto text_center br_1 br_solid br_secondary-4 p_2 h:c_white">n5</div>
   </div>
 
+  Weight: 30
 
   Styleguide hover.background
 
@@ -14846,6 +17067,7 @@ a:focus {
     <div class="h:{{modifier_class}}-n5 flex_auto font_bold bg_secondary-3 font_4 font_slab text_center br_1 br_solid br_secondary-4 p_1 ">n5</div>
   </div>
 
+  Weight: 10
 
   Styleguide hover.text
 
@@ -14912,6 +17134,7 @@ a:focus {
         adipisicing elit aut nulla et.
   </p>
 
+  Weight: 20
 
   Styleguide hover.underlines
 
@@ -15036,2359 +17259,190 @@ markup:
   <div class="h:{{modifier_class}}  p-y_3 p-x_4 flex_auto font_bold font_2 font_slab text_center br_1 br_solid br_secondary-4 ">default</div>
 </div>
 
+Weight: 50
 
 Styleguide hover.opacity
 
  */
 /*
-UC: Borders
+Opacity: Hover to Full Opacity
 
-Borders a complex utility that demands a combo UCs to acheive their effect. The three UCs that must be used in combo are `style`, `color`, and `width`.  To make an object with single black pixel border that is solid you would have to add '.br_solid.br_1.br_black' 
+Set the Opacity of an object to 100% while hovered.
 
-Weight: 10
 
-Styleguide Borders
-
-*/
-/* No styleguide reference. */
-.br_dotted,
-.br_dashed,
-.br_solid {
-  border-width: 1px;
-}
-
-.br_none {
-  border-width: 0;
-}
-
-/*
-Border Style
-
-Depends on base border module in _borders.css
-
-.br_none           - makes a border none
-.br_dotted         - makes a border dotted
-.br_dashed         - makes a border dashed
-.br_solid          - makes a border solid
+.opacity_1                        - Opacity of 5%
+.opacity_5                        - Opacity of 50%
+.opacity_9                        - Opacity of 95%
+.opacity_0                        - Opacity of 95%
 
 markup:
-<div class="{{modifier_class}} br_black bw_1 p_3">{{modifier_class}} border</div>
+<div class="p_4 bg_primary">
+  <div class="{{modifier_class}} h:opacity  br_1 br_solid br_white p_2 bg_warning c_white">hover me to bring me to full opacity</div>
+</div>
 
-Styleguide Borders.Style
+Weight: 60
 
-*/
-.br_none {
-  border-style: none;
-}
-
-.br_solid {
-  border-style: solid;
-}
-
-.br_dashed {
-  border-style: dashed;
-}
-
-.br_dotted {
-  border-style: dotted;
-}
-
-@media screen and (min-width: 40em) and (max-width: 63.99875em) {
-  .br_none\:md {
-    border-style: none;
-  }
-
-  .br_solid\:md {
-    border-style: solid;
-  }
-
-  .br_dashed\:md {
-    border-style: dashed;
-  }
-
-  .br_dotted\:md {
-    border-style: dotted;
-  }
-}
-@media screen and (min-width: 64em) {
-  .br_none\:lg {
-    border-style: none;
-  }
-
-  .br_solid\:lg {
-    border-style: solid;
-  }
-
-  .br_dashed\:lg {
-    border-style: dashed;
-  }
-
-  .br_dotted\:lg {
-    border-style: dotted;
-  }
-}
-/*
-Border Color
-
-
-br_primary            - border color
-br_secondary             - border color
-br_alert             - border color
-br_warning             - border color
-br_info            - border color
-br_highlight             - border color
-
-
-markup:
-<div class="{{modifier_class}} p_3 br_solid bw_3">{{modifier_class}} border</div>
-
-Styleguide Borders.2
+Styleguide hover.opacity
 
 */
-/*
-Border Alpha Black
-
-Border black has attached alpha modifiers to allow for greater flexablity 
-
-br_black             - border black with alpha of 100%
-br_black-0             - border black with alpha of 2%
-br_black-1             - border black with alpha of 10%
-br_black-2             - border black with alpha of 20%
-br_black-3             - border black with alpha of 30%
-br_black-4             - border black with alpha of 40%
-br_black-5             - border black with alpha of 50%
-br_black-6             - border black with alpha of 60%
-br_black-7             - border black with alpha of 70%
-br_black-8             - border black with alpha of 80%
-br_black-9             - border black with alpha of 90%
-
-markup:
-<div class="{{modifier_class}} p_3 br_solid br_5 bg_primary-1 white">{{modifier_class}} border</div>
-
-Styleguide Borders.2.1
-
-*/
-/*
-  Border Alpha White
-
-  Border white has attached alpha modifiers to allow for greater flexablity 
-
-  br_white             - border white with alpha of 100%
-  br_white-0             - border white with alpha of 2%
-  br_white-1             - border white with alpha of 90%
-  br_white-2             - border white with alpha of 80%
-  br_white-3             - border white with alpha of 70%
-  br_white-4             - border white with alpha of 60%
-  br_white-5             - border white with alpha of 50%
-  br_white-6             - border white with alpha of 40%
-  br_white-7             - border white with alpha of 30%
-  br_white-8             - border white with alpha of 20%
-  br_white-9             - border white with alpha of 10%
-
-  markup:
-  <div class="{{modifier_class}} p_3 br_solid br_5 bg_primary-1 c_white">{{modifier_class}} border</div>
-
-  Styleguide Borders.2.2
-
-  */
-.br_black-0 {
-  border-color: rgba(19, 18, 18, 0) !important;
-}
-
-.br_black-1 {
-  border-color: rgba(19, 18, 18, 0.05) !important;
-}
-
-.br_black-2 {
-  border-color: rgba(19, 18, 18, 0.12) !important;
-}
-
-.br_black-3 {
-  border-color: rgba(19, 18, 18, 0.25) !important;
-}
-
-.br_black-4 {
-  border-color: rgba(19, 18, 18, 0.38) !important;
-}
-
-.br_black-5 {
-  border-color: rgba(19, 18, 18, 0.5) !important;
-}
-
-.br_black-6 {
-  border-color: rgba(19, 18, 18, 0.62) !important;
-}
-
-.br_black-7 {
-  border-color: rgba(19, 18, 18, 0.75) !important;
-}
-
-.br_black-8 {
-  border-color: rgba(19, 18, 18, 0.88) !important;
-}
-
-.br_black-9 {
-  border-color: rgba(19, 18, 18, 0.95) !important;
-}
-
-.br_black-none {
-  border-color: #131212 !important;
-}
-
-.br_white-0 {
-  border-color: rgba(255, 255, 255, 0) !important;
-}
-
-.br_white-1 {
-  border-color: rgba(255, 255, 255, 0.05) !important;
-}
-
-.br_white-2 {
-  border-color: rgba(255, 255, 255, 0.12) !important;
-}
-
-.br_white-3 {
-  border-color: rgba(255, 255, 255, 0.25) !important;
-}
-
-.br_white-4 {
-  border-color: rgba(255, 255, 255, 0.38) !important;
-}
-
-.br_white-5 {
-  border-color: rgba(255, 255, 255, 0.5) !important;
-}
-
-.br_white-6 {
-  border-color: rgba(255, 255, 255, 0.62) !important;
-}
-
-.br_white-7 {
-  border-color: rgba(255, 255, 255, 0.75) !important;
-}
-
-.br_white-8 {
-  border-color: rgba(255, 255, 255, 0.88) !important;
-}
-
-.br_white-9 {
-  border-color: rgba(255, 255, 255, 0.95) !important;
-}
-
-.br_white-none {
-  border-color: white !important;
-}
-
-.border_transparent {
-  border-color: transparent;
-}
-
-/*
-	Border Radius
-
-	Apply border radius to objects by adding full or partial classes for border-radius
-
-	br_square           - All square
-	br_radius        - All with $global-radus
-	br_round         - All corners with 99(px)
-	br_circle          - All corders at 100%
-	br-tl_square           - top left square
-	br-tl_radius        - top left with $global-radus
-	br-tl_round         - top left corners with 99(px)
-	br-tl_circle          - top left corders at 100%
-	br-bl_square           - bottom left square
-	br-bl_radius        - bottom left with $global-radus
-	br-bl_round         - bottom left corners with 99(px)
-	br-bl_circle          - bottom left corders at 100%
-
-
-	markup:
-	<div class="{{modifier_class}} p_3 br_black br_solid br_2">{{modifier_class}} border</div>
-
-	Styleguide Borders.3
-
-  */
-.br_square {
-  border-radius: 0px;
-}
-
-.br_radius {
-  border-radius: 6px;
-}
-
-.br_round {
-  border-radius: 25px;
-}
-
-.br_circle {
-  border-radius: 100%;
-}
-
-.br-tr_square {
-  border-top-right-radius: 0px;
-}
-
-.br-tr_radius {
-  border-top-right-radius: 6px;
-}
-
-.br-tr_round {
-  border-top-right-radius: 25px;
-}
-
-.br-tr_circle {
-  border-top-right-radius: 100%;
-}
-
-.br-tl_square {
-  border-top-left-radius: 0px;
-}
-
-.br-tl_radius {
-  border-top-left-radius: 6px;
-}
-
-.br-tl_round {
-  border-top-left-radius: 25px;
-}
-
-.br-tl_circle {
-  border-top-left-radius: 100%;
-}
-
-.br-br_square {
-  border-bottom-right-radius: 0px;
-}
-
-.br-br_radius {
-  border-bottom-right-radius: 6px;
-}
-
-.br-br_round {
-  border-bottom-right-radius: 25px;
-}
-
-.br-br_circle {
-  border-bottom-right-radius: 100%;
-}
-
-.br-bl_square {
-  border-bottom-left-radius: 0px;
-}
-
-.br-bl_radius {
-  border-bottom-left-radius: 6px;
-}
-
-.br-bl_round {
-  border-bottom-left-radius: 25px;
-}
-
-.br-bl_circle {
-  border-bottom-left-radius: 100%;
-}
-
-.square,
-.square .switch-paddle,
-.square .switch-paddle::after {
-  border-radius: 0px;
-}
-
-.radius,
-.radius .switch-paddle,
-.radius .switch-paddle::after {
-  border-radius: 6px;
-}
-
-.round,
-.round .switch-paddle,
-.round .switch-paddle::after {
-  border-radius: 25px;
-}
-
-.circle,
-.circle .switch-paddle,
-.circle .switch-paddle::after {
-  border-radius: 100%;
-}
-
-/*
-  Border Colors
-
-  Border black has attached alpha   
-
-  br_primary            	  - border color primary
-  br_alert            	    - border color alert
-  br_warning            	  - border color warning
-  br_success            	  - border color success
-  br_primary-1             - border color mixed with white
-  br_primary-2             - border color mixed with white
-  br_primary-3             - border color mixed with white
-  br_primary-4             - border color mixed with white
-  br_primary-5             - border color mixed with white
-  br_primary-n1             - border color mixed with black
-  br_primary-n2             - border color mixed with black
-  br_primary-n3             - border color mixed with black
-  br_primary-n4             - border color mixed with black
-  br_primary-n5             - border color mixed with black 
-
-  markup:
-  <div class="{{modifier_class}} p_3 br_solid br_1 c_white">{{modifier_class}} border</div>
-
-  Styleguide Borders.4
-
-  */
-.br_primary {
-  border-color: #198dae !important;
-}
-
-.br_primary-0 {
-  border-color: #198dae !important;
-}
-
-.br_primary-1 {
-  border-color: #3c9eba !important;
-}
-
-.br_primary-2 {
-  border-color: #6eb7cc !important;
-}
-
-.br_primary-3 {
-  border-color: #a3d1df !important;
-}
-
-.br_primary-4 {
-  border-color: #cce6ed !important;
-}
-
-.br_primary-5 {
-  border-color: #e8f4f7 !important;
-}
-
-.br_primary-n1 {
-  border-color: #177f9d !important;
-}
-
-.br_primary-n2 {
-  border-color: #136a83 !important;
-}
-
-.br_primary-n3 {
-  border-color: #0e4e60 !important;
-}
-
-.br_primary-n4 {
-  border-color: #0a3846 !important;
-}
-
-.br_primary-n5 {
-  border-color: #06232c !important;
-}
-
-.br_secondary {
-  border-color: #676a72 !important;
-}
-
-.br_secondary-0 {
-  border-color: #676a72 !important;
-}
-
-.br_secondary-1 {
-  border-color: #7e8087 !important;
-}
-
-.br_secondary-2 {
-  border-color: #9fa1a6 !important;
-}
-
-.br_secondary-3 {
-  border-color: #c2c3c7 !important;
-}
-
-.br_secondary-4 {
-  border-color: #dedee0 !important;
-}
-
-.br_secondary-5 {
-  border-color: #f0f0f1 !important;
-}
-
-.br_secondary-n1 {
-  border-color: #5d5f67 !important;
-}
-
-.br_secondary-n2 {
-  border-color: #4d5056 !important;
-}
-
-.br_secondary-n3 {
-  border-color: #393a3f !important;
-}
-
-.br_secondary-n4 {
-  border-color: #292a2e !important;
-}
-
-.br_secondary-n5 {
-  border-color: #1a1b1d !important;
-}
-
-.br_success {
-  border-color: #078a2e !important;
-}
-
-.br_success-0 {
-  border-color: #078a2e !important;
-}
-
-.br_success-1 {
-  border-color: #2c9c4d !important;
-}
-
-.br_success-2 {
-  border-color: #63b57b !important;
-}
-
-.br_success-3 {
-  border-color: #9cd0ab !important;
-}
-
-.br_success-4 {
-  border-color: #c8e5d1 !important;
-}
-
-.br_success-5 {
-  border-color: #e6f3ea !important;
-}
-
-.br_success-n1 {
-  border-color: #067c29 !important;
-}
-
-.br_success-n2 {
-  border-color: #056823 !important;
-}
-
-.br_success-n3 {
-  border-color: #044c19 !important;
-}
-
-.br_success-n4 {
-  border-color: #033712 !important;
-}
-
-.br_success-n5 {
-  border-color: #02230c !important;
-}
-
-.br_warning {
-  border-color: #da8210 !important;
-}
-
-.br_warning-0 {
-  border-color: #da8210 !important;
-}
-
-.br_warning-1 {
-  border-color: #e09534 !important;
-}
-
-.br_warning-2 {
-  border-color: #e8b068 !important;
-}
-
-.br_warning-3 {
-  border-color: #f0cd9f !important;
-}
-
-.br_warning-4 {
-  border-color: #f7e4ca !important;
-}
-
-.br_warning-5 {
-  border-color: #fbf3e7 !important;
-}
-
-.br_warning-n1 {
-  border-color: #c4750e !important;
-}
-
-.br_warning-n2 {
-  border-color: #a4620c !important;
-}
-
-.br_warning-n3 {
-  border-color: #784809 !important;
-}
-
-.br_warning-n4 {
-  border-color: #573406 !important;
-}
-
-.br_warning-n5 {
-  border-color: #372104 !important;
-}
-
-.br_alert {
-  border-color: #dd1a1a !important;
-}
-
-.br_alert-0 {
-  border-color: #dd1a1a !important;
-}
-
-.br_alert-1 {
-  border-color: #e23c3c !important;
-}
-
-.br_alert-2 {
-  border-color: #ea6f6f !important;
-}
-
-.br_alert-3 {
-  border-color: #f1a3a3 !important;
-}
-
-.br_alert-4 {
-  border-color: #f8cdcd !important;
-}
-
-.br_alert-5 {
-  border-color: #fce8e8 !important;
-}
-
-.br_alert-n1 {
-  border-color: #c71717 !important;
-}
-
-.br_alert-n2 {
-  border-color: #a61414 !important;
-}
-
-.br_alert-n3 {
-  border-color: #7a0e0e !important;
-}
-
-.br_alert-n4 {
-  border-color: #580a0a !important;
-}
-
-.br_alert-n5 {
-  border-color: #370707 !important;
-}
-
-.br_navigation {
-  border-color: #2b58c0 !important;
-}
-
-.br_navigation-0 {
-  border-color: #2b58c0 !important;
-}
-
-.br_navigation-1 {
-  border-color: #4b71c9 !important;
-}
-
-.br_navigation-2 {
-  border-color: #7996d7 !important;
-}
-
-.br_navigation-3 {
-  border-color: #aabce6 !important;
-}
-
-.br_navigation-4 {
-  border-color: #d0daf1 !important;
-}
-
-.br_navigation-5 {
-  border-color: #eaeef9 !important;
-}
-
-.br_navigation-n1 {
-  border-color: #274fad !important;
-}
-
-.br_navigation-n2 {
-  border-color: #204290 !important;
-}
-
-.br_navigation-n3 {
-  border-color: #18306a !important;
-}
-
-.br_navigation-n4 {
-  border-color: #11234d !important;
-}
-
-.br_navigation-n5 {
-  border-color: #0b1630 !important;
-}
-
-.br_accent {
-  border-color: #16a385 !important;
-}
-
-.br_accent-0 {
-  border-color: #16a385 !important;
-}
-
-.br_accent-1 {
-  border-color: #39b197 !important;
-}
-
-.br_accent-2 {
-  border-color: #6cc5b2 !important;
-}
-
-.br_accent-3 {
-  border-color: #a2dace !important;
-}
-
-.br_accent-4 {
-  border-color: #ccebe4 !important;
-}
-
-.br_accent-5 {
-  border-color: #e8f6f3 !important;
-}
-
-.br_accent-n1 {
-  border-color: #149378 !important;
-}
-
-.br_accent-n2 {
-  border-color: #117a64 !important;
-}
-
-.br_accent-n3 {
-  border-color: #0c5a49 !important;
-}
-
-.br_accent-n4 {
-  border-color: #094135 !important;
-}
-
-.br_accent-n5 {
-  border-color: #062921 !important;
-}
-
-.br_info {
-  border-color: #a3988c !important;
-}
-
-.br_info-0 {
-  border-color: #a3988c !important;
-}
-
-.br_info-1 {
-  border-color: #b1a79d !important;
-}
-
-.br_info-2 {
-  border-color: #c5beb7 !important;
-}
-
-.br_info-3 {
-  border-color: #dad6d1 !important;
-}
-
-.br_info-4 {
-  border-color: #ebe8e6 !important;
-}
-
-.br_info-5 {
-  border-color: #f6f5f4 !important;
-}
-
-.br_info-n1 {
-  border-color: #93897e !important;
-}
-
-.br_info-n2 {
-  border-color: #7a7269 !important;
-}
-
-.br_info-n3 {
-  border-color: #5a544d !important;
-}
-
-.br_info-n4 {
-  border-color: #413d38 !important;
-}
-
-.br_info-n5 {
-  border-color: #292623 !important;
-}
-
-.br_highlight {
-  border-color: #7742bd !important;
-}
-
-.br_highlight-0 {
-  border-color: #7742bd !important;
-}
-
-.br_highlight-1 {
-  border-color: #8b5ec7 !important;
-}
-
-.br_highlight-2 {
-  border-color: #a988d5 !important;
-}
-
-.br_highlight-3 {
-  border-color: #c9b3e5 !important;
-}
-
-.br_highlight-4 {
-  border-color: #e1d5f0 !important;
-}
-
-.br_highlight-5 {
-  border-color: #f1ecf8 !important;
-}
-
-.br_highlight-n1 {
-  border-color: #6b3baa !important;
-}
-
-.br_highlight-n2 {
-  border-color: #59328e !important;
-}
-
-.br_highlight-n3 {
-  border-color: #412468 !important;
-}
-
-.br_highlight-n4 {
-  border-color: #301a4c !important;
-}
-
-.br_highlight-n5 {
-  border-color: #1e112f !important;
-}
-
-.br_acc {
-  border-color: #00386b !important;
-}
-
-.br_acc-0 {
-  border-color: #00386b !important;
-}
-
-.br_acc-1 {
-  border-color: #265681 !important;
-}
-
-.br_acc-2 {
-  border-color: #5e82a2 !important;
-}
-
-.br_acc-3 {
-  border-color: #99afc4 !important;
-}
-
-.br_acc-4 {
-  border-color: #c7d3de !important;
-}
-
-.br_acc-5 {
-  border-color: #e6ebf0 !important;
-}
-
-.br_acc-n1 {
-  border-color: #003260 !important;
-}
-
-.br_acc-n2 {
-  border-color: #002a50 !important;
-}
-
-.br_acc-n3 {
-  border-color: #001f3b !important;
-}
-
-.br_acc-n4 {
-  border-color: #00162b !important;
-}
-
-.br_acc-n5 {
-  border-color: #000e1b !important;
-}
-
-/*
-    Border Width
-
-    Manipulation of borders with thisese classes either all border or with single borders   
-
-    br_0            	- all border with no border
-    br_1            	- all borders with 1px
-    br_2            	- all borders with .125rem
-    br_3            	- all borders with .25rem
-    br_4            	- all borders with .5rem
-    br_5            	- all borders with rem
-    br-l_0.br_1            	- left border with no border
-    br-l_1.br_1            	- left borders with 1px
-    br-l_2.br_1            	- left borders with .125rem
-    br-l_3.br_1            	- left borders with .25rem
-    br-l_4.br_1            	- left borders with .5rem
-    br-l_5.br_1            	- left borders with rem
-
-
-    markup:
-    <div class="{{modifier_class}} p_3 br_solid br_black c_black">{{modifier_class}} border</div>
-
-    Styleguide Borders.5
-
-   */
-.br-t_0,
-.br-t_1,
-.br-t_2,
-.br-t_3,
-.br-t_4,
-.br-t_5,
-.br-r_0,
-.br-r_1,
-.br-r_2,
-.br-r_3,
-.br-r_4,
-.br-r_5,
-.br-l_0,
-.br-l_1,
-.br-l_2,
-.br-l_3,
-.br-l_4,
-.br-l_5,
-.br-b_0,
-.br-b_1,
-.br-b_2,
-.br-b_3,
-.br-b_4,
-.br-b_5 {
-  border-width: 0;
-}
-
-.br_0 {
-  border-width: 0px;
-}
-
-.br_1 {
-  border-width: 1px;
-}
-
-.br_2 {
-  border-width: 3px;
-}
-
-.br_3 {
-  border-width: 5px;
-}
-
-.br_4 {
-  border-width: 8px;
-  border-width: 0.5rem;
-}
-
-.br_5 {
-  border-width: 16px;
-  border-width: 1rem;
-}
-
-.br-t_0 {
-  border-top-width: 0px;
-}
-
-.br-t_1 {
-  border-top-width: 1px;
-}
-
-.br-t_2 {
-  border-top-width: 3px;
-}
-
-.br-t_3 {
-  border-top-width: 5px;
-}
-
-.br-t_4 {
-  border-top-width: 8px;
-  border-top-width: 0.5rem;
-}
-
-.br-t_5 {
-  border-top-width: 16px;
-  border-top-width: 1rem;
-}
-
-.br-r_0 {
-  border-right-width: 0px;
-}
-
-.br-r_1 {
-  border-right-width: 1px;
-}
-
-.br-r_2 {
-  border-right-width: 3px;
-}
-
-.br-r_3 {
-  border-right-width: 5px;
-}
-
-.br-r_4 {
-  border-right-width: 8px;
-  border-right-width: 0.5rem;
-}
-
-.br-r_5 {
-  border-right-width: 16px;
-  border-right-width: 1rem;
-}
-
-.br-l_0 {
-  border-left-width: 0px;
-}
-
-.br-l_1 {
-  border-left-width: 1px;
-}
-
-.br-l_2 {
-  border-left-width: 3px;
-}
-
-.br-l_3 {
-  border-left-width: 5px;
-}
-
-.br-l_4 {
-  border-left-width: 8px;
-  border-left-width: 0.5rem;
-}
-
-.br-l_5 {
-  border-left-width: 16px;
-  border-left-width: 1rem;
-}
-
-.br-b_0 {
-  border-bottom-width: 0px;
-}
-
-.br-b_1 {
-  border-bottom-width: 1px;
-}
-
-.br-b_2 {
-  border-bottom-width: 3px;
-}
-
-.br-b_3 {
-  border-bottom-width: 5px;
-}
-
-.br-b_4 {
-  border-bottom-width: 8px;
-  border-bottom-width: 0.5rem;
-}
-
-.br-b_5 {
-  border-bottom-width: 16px;
-  border-bottom-width: 1rem;
-}
-
-/*
-UC: Opacity
-
-A subtle set of  UCs that can make objects less interactive or combine to show a level of focus.
-
-Weight: 10
-
-Styleguide Opacity
-
-*/
-/* No styleguide reference. */
-/*
-	Opacity Levels
-
-	Set the Opacity of an object.  Unlike the 
-
-	.opacity_0                        - Opacity of 0%
-	.opacity_1                        - Opacity of 10%
-	.opacity_2                        - Opacity of 20%
-	.opacity_3                        - Opacity of 30%
-	.opacity_4                        - Opacity of 40%
-	.opacity_5                        - Opacity of 50%
-	.opacity_6                        - Opacity of 60%
-	.opacity_7                        - Opacity of 70%
-	.opacity_8                        - Opacity of 80%
-	.opacity_9                        - Opacity of 90%
-	.opacity_none                     - No Opacity
-
-	markup:
-	<div class="{{modifier_class}} br_1 br_solid br_white p_2 bg_warning c_white">{{modifier_class}}</div>
-
-	sg-wrapper: 
-	<div class="p_4 bg_primary">
-		<sg-wrapper-content/>
-	</div>
-
-	Styleguide Opacity.Basic
-
- */
-.opacity_0 {
-  opacity: 0;
-}
-
-.opacity_1 {
-  opacity: 0.05;
-}
-
-.opacity_2 {
-  opacity: 0.12;
-}
-
-.opacity_3 {
-  opacity: 0.25;
-}
-
-.opacity_4 {
-  opacity: 0.38;
-}
-
-.opacity_5 {
-  opacity: 0.5;
-}
-
-.opacity_6 {
-  opacity: 0.62;
-}
-
-.opacity_7 {
-  opacity: 0.75;
-}
-
-.opacity_8 {
-  opacity: 0.88;
-}
-
-.opacity_9 {
-  opacity: 0.95;
-}
-
-.opacity_none {
-  opacity: 1;
-}
-
 .h\:opacity:hover {
   opacity: 1;
 }
 
 /*
-	Opacity: Hover
+UC: Counters
 
-	Set the Opacity of an object to 100% while hovered.
+Add counters infront of collections without the need of an OL or UL. Counters cannot be nested!
 
+Weight: 150
 
-	.opacity_1                        - Opacity of 5%
-	.opacity_5                        - Opacity of 50%
-	.opacity_9                        - Opacity of 95%
-	.opacity_0                        - Opacity of 95%
-
-	markup:
-	<div class="{{modifier_class}} h:opacity  br_1 br_solid br_white p_2 bg_warning c_white">hover me to bring me to full opacity</div>
-
-	sg-wrapper: 
-	<div class="p_4 bg_primary">
-		<sg-wrapper-content/>
-	</div>
-
-	Styleguide Opacity.Hover
-
- */
-/*
-UC: Display & Flex
-
-Control the display of objects with control of break points, and the layout functions of flex easily by adding utlity classes.. 
-
-Weight: 10
-
-Styleguide Flex.0
+Styleguide Counters
 
 */
 /* No styleguide reference. */
 /*
-	Display
+	Counter
 
-	quickly alter the padding of an object 
-
-	.d_block              		- the element is the a block
-	.d_inline              		- the element is now inline
-	.d_inline-block            - the element is now inline-block
-	.d_table-cell             	- the element is now table-cell
-	.d_flex-inline             - the element is now flex-inline
-	.d_none             - the element is now display none
+	Counter can be incremented by the `counter_increment` class.  
 
 	markup:
-	<div class="br_solid br_transparent bg_alert-3  text_center"><div class="bg_primary-5 text_center {{modifier_class}}">Content</div></div>
+    <div class="counter_reset">
+        <div class="bg_primary-2 p_3 m_3"><span class="font_bold counter counter_increment">:</span> Item, Object, or Section</div>
+        <div class="bg_primary-2 p_3 m_3"><span class="font_bold counter counter_increment">:</span> Item, Object, or Section</div>
+        <div class="bg_primary-2 p_3 m_3"><span class="font_bold counter counter_increment">:</span> Item, Object, or Section</div>
+ 	</div>
 
-	Styleguide Flex.1
+	Styleguide Counters
 
- */
-.d_block {
-  display: block;
+*/
+.counter_reset {
+  counter-reset: a;
 }
 
-.d_inline {
-  display: inline;
+.counter_increment {
+  counter-increment: a;
 }
 
-.d_inline-block {
+.counter:before {
+  content: counter(a);
+}
+
+/*
+	Counter Sub
+
+	Counter Subs can be nested inside of counters
+
+	markup:
+    <div class="counter_reset ">
+        <div class="bg_primary-2 p_3 m_3"><span class="font_bold counter counter_increment counter_upper-alpha"></span> Item, Object, or Section</div>
+            <div class="counter-sub_reset">
+                <div class="m_3 p_2 p-l_4 bg_primary-3"><span class="font_bold counter counter_upper-alpha"></span>.<span class="font_bold counter-sub counter-sub_increment counter-sub_lower-alpha"></span> Sub Item</div>
+                <div class="m_3 p_2 p-l_4 bg_primary-3"><span class="font_bold counter counter_upper-alpha"></span>.<span class="font_bold counter-sub counter-sub_increment counter-sub_lower-alpha"></span> Sub Item</div>
+                <div class="m_3 p_2 p-l_4 bg_primary-3"><span class="font_bold counter counter_upper-alpha"></span>.<span class="font_bold counter-sub counter-sub_increment counter-sub_lower-alpha"></span> Sub Item</div>
+            </div>
+        <div class="bg_primary-2 p_3 m_3"><span class="font_bold counter counter_increment counter_upper-alpha"></span> Item, Object, or Section</div>
+        <div class="bg_primary-2 p_3 m_3"><span class="font_bold counter counter_increment counter_upper-alpha"></span> Item, Object, or Section</div>
+ 	</div>
+
+	Styleguide Counters.Sub Counters
+
+*/
+.counter-sub_reset {
+  counter-reset: b;
+}
+
+.counter-sub_increment {
+  counter-increment: b;
+}
+
+/*
+	Counter Types
+
+	Create different types of lists with the counter types
+
+	counter 										- Defualt Number Listing
+	counter_lower-alpha         - Lowercase Alphabetic Listing
+	counter_upper-alpha         - Uppercase Alphabetic Listing
+	counter_lower-roman         - Lowercase Roman Listing
+	counter_upper-roman         - Uppercase Roman Listing
+
+	markup:
+	<div class="counter_reset">
+			<div class="m_3 p_3 bg_primary-2"><span class="{{modifier_class}} font_bold counter_increment"></span> Item, Object, or Section</div>
+			<div class="m_3 p_3 bg_primary-2"><span class="{{modifier_class}} font_bold counter_increment"></span> Item, Object, or Section</div>
+			<div class="m_3 p_3 bg_primary-2"><span class="{{modifier_class}} font_bold counter_increment"></span> Item, Object, or Section</div>
+ 	</div>
+
+	Styleguide Counters.Types
+
+*/
+.counter_lower-alpha:before {
+  content: counter(a, lower-alpha);
+}
+
+.counter_upper-alpha:before {
+  content: counter(a, upper-alpha);
+}
+
+.counter_lower-roman:before {
+  content: counter(a, lower-roman);
+}
+
+.counter_upper-roman:before {
+  content: counter(a, upper-roman);
+}
+
+.counter-sub:before {
+  content: counter(b);
+}
+
+.counter-sub_lower-alpha:before {
+  content: counter(b, lower-alpha);
+}
+
+.counter-sub_upper-alpha:before {
+  content: counter(b, upper-alpha);
+}
+
+.counter-sub_lower-roman:before {
+  content: counter(b, lower-roman);
+}
+
+.counter-sub_upper-roman:before {
+  content: counter(b, upper-roman);
+}
+
+/*
+	Order Markers
+
+	Quickly decorate the counter with a circle.  Change the  bgground and font color with utility classes to acheive different effects.
+
+
+	markup:
+    <div class="counter_reset">
+        <div class="m_3 p_3"><span class="font_bold counter counter_increment order-marker bg_primary-2"></span> Item, Object, or Section</div>
+        <div class="m_3 p_3"><span class="font_bold counter counter_increment order-marker font_10 br-tl_square br-bl_square bg_highlight-2"></span> Item, Object, or Section</div>
+        <div class="m_3 p_3"><span class="font_bold counter counter_increment order-marker bg_info-2"></span> Item, Object, or Section</div>
+        <div class="m_3 p_3"><span class="font_bold counter counter_increment order-marker bg_warning-2"></span> Item, Object, or Section</div>
+    </div>
+
+	Styleguide Counters.Markers
+
+*/
+.order-marker {
+  box-sizing: border-box;
   display: inline-block;
-}
-
-.d_none {
-  display: none;
-}
-
-.d_flex {
-  display: flex;
-}
-
-.d_flex-inline {
-  display: flex-inline;
-}
-
-@media screen and (min-width: 40em) {
-  .d_block\:md {
-    display: block;
-  }
-
-  .d_inline\:md {
-    display: inline;
-  }
-
-  .d_inline-block\:md {
-    display: inline-block;
-  }
-
-  .d_none\:md {
-    display: none;
-  }
-
-  .d_flex\:md {
-    display: flex;
-  }
-
-  .d_flex-inline\:md {
-    display: flex-inline;
-  }
-}
-@media screen and (min-width: 64em) {
-  .d_block\:lg {
-    display: block;
-  }
-
-  .d_inline\:lg {
-    display: inline;
-  }
-
-  .d_inline-block\:lg {
-    display: inline-block;
-  }
-
-  .d_none\:lg {
-    display: none;
-  }
-
-  .d_flex\:lg {
-    display: flex;
-  }
-
-  .d_flex-inline\:lg {
-    display: flex-inline;
-  }
-}
-.vertical-align_top {
+  position: relative;
+  width: 1.5em;
+  height: 1.5em;
+  margin-right: 0;
+  margin-right: 0.5em;
+  margin-bottom: 0;
+  padding: 0.75em 0 0 0;
+  border-radius: 50%;
+  line-height: 0;
+  text-align: center;
   vertical-align: top;
-}
-
-.vertical-align_middle {
-  vertical-align: middle;
-}
-
-.vertical-align_bottom {
-  vertical-align: bottom;
-}
-
-/*
-	Flex
-
-	Structure Objects quickly and change the order of the  
-
-	.flex_row              		- the element is the a block- flex_row
-	.flex_column              		- flex_column
-	.flex_row-reverse              		- flex_column-reverse
-	.flex_column-reverse              		- flex_row-reverse
-
-	markup:
-	<div class="flex {{modifier_class}} br_solid br_transparent bg_alert-3  text_center  p_3 bg_warning-3"> 
-		<div class="bg_primary-5 text_center flex_auto p_3 br_solid br_1 m_2 br_black">Auto 1</div>
-		<div class="bg_primary-5 text_center flex_shrink p_3 br_solid br_1 m_2 br_black">Shrink 2</div>
-		<div class="bg_primary-5 text_center flex_auto p_3 br_solid br_1 m_2 br_black">Auto 3</div>
-	</div>
-
-	Styleguide Flex.direction
-
- */
-.flex {
-  display: flex;
-}
-
-.flex_inline {
-  display: inline-flex;
-}
-
-/* 1. Fix for Chrome 44 bug.
- * https://code.google.com/p/chromium/issues/detail?id=506893 */
-.flex_auto {
-  flex: 1 1 auto;
-  min-width: 0;
-  /* 1 */
-  min-height: 0;
-  /* 1 */
-}
-
-.flex_shrink {
-  flex: 0 1 auto;
-  min-width: 0;
-  /* 1 */
-  min-height: 0;
-  /* 1 */
-}
-
-.flex_expand {
-  flex: 1 0 auto;
-  min-width: 0;
-  /* 1 */
-  min-height: 0;
-  /* 1 */
-}
-
-.flex_none {
-  flex: none;
-}
-
-.flex_column {
-  flex-direction: column;
-}
-
-.flex_row {
-  flex-direction: row;
-}
-
-.flex_wrap {
-  flex-wrap: wrap;
-}
-
-.flex_nowrap {
-  flex-wrap: nowrap;
-}
-
-.flex_wrap-reverse {
-  flex-wrap: wrap-reverse;
-}
-
-.flex_column-reverse {
-  flex-direction: column-reverse;
-}
-
-.flex_row-reverse {
-  flex-direction: row-reverse;
-}
-
-.items_start {
-  align-items: flex-start;
-}
-
-.items_end {
-  align-items: flex-end;
-}
-
-.items_center {
-  align-items: center;
-}
-
-.items_baseline {
-  align-items: baseline;
-}
-
-.items_stretch {
-  align-items: stretch;
-}
-
-.self_start {
-  align-self: flex-start;
-}
-
-.self_end {
-  align-self: flex-end;
-}
-
-.self_center {
-  -ms-grid-row-align: center;
-      align-self: center;
-}
-
-.self_baseline {
-  align-self: baseline;
-}
-
-.self_stretch {
-  -ms-grid-row-align: stretch;
-      align-self: stretch;
-}
-
-.justify_start {
-  justify-content: flex-start;
-}
-
-.justify_end {
-  justify-content: flex-end;
-}
-
-.justify_center {
-  justify-content: center;
-}
-
-.justify_between {
-  justify-content: space-between;
-}
-
-.justify_around {
-  justify-content: space-around;
-}
-
-.content_start {
-  align-content: flex-start;
-}
-
-.content_end {
-  align-content: flex-end;
-}
-
-.content_center {
-  align-content: center;
-}
-
-.content_between {
-  align-content: space-between;
-}
-
-.content_around {
-  align-content: space-around;
-}
-
-.content_stretch {
-  align-content: stretch;
-}
-
-.order_0 {
-  order: 0;
-}
-
-.order_1 {
-  order: 1;
-}
-
-.order_2 {
-  order: 2;
-}
-
-.order_3 {
-  order: 3;
-}
-
-.order_4 {
-  order: 4;
-}
-
-.order_5 {
-  order: 5;
-}
-
-.order_6 {
-  order: 6;
-}
-
-.order_7 {
-  order: 7;
-}
-
-.order_8 {
-  order: 8;
-}
-
-.order\:lgast {
-  order: 99999;
-}
-
-.flex-grow_0 {
-  flex-grow: 0;
-}
-
-.flex-grow_1 {
-  flex-grow: 1;
-}
-
-.flex-shrink_0 {
-  flex-shrink: 0;
-}
-
-.flex-shrink_1 {
-  flex-shrink: 1;
-}
-
-@media screen and (min-width: 40em) {
-  .flex\:md {
-    display: flex;
-  }
-
-  .flex_inline\:md {
-    display: inline-flex;
-  }
-
-  .flex_auto\:md {
-    flex: 1 1 auto;
-    min-width: 0;
-    /* 1 */
-    min-height: 0;
-    /* 1 */
-  }
-
-  .flex_none\:md {
-    flex: none;
-  }
-
-  .flex_column\:md {
-    flex-direction: column;
-  }
-
-  .flex_row\:md {
-    flex-direction: row;
-  }
-
-  .flex_wrap\:md {
-    flex-wrap: wrap;
-  }
-
-  .flex_nowrap\:md {
-    flex-wrap: nowrap;
-  }
-
-  .flex_wrap-reverse\:md {
-    flex-wrap: wrap-reverse;
-  }
-
-  .flex_column-reverse\:md {
-    flex-direction: column-reverse;
-  }
-
-  .flex_row-reverse\:md {
-    flex-direction: row-reverse;
-  }
-
-  .items_start\:md {
-    align-items: flex-start;
-  }
-
-  .items_end\:md {
-    align-items: flex-end;
-  }
-
-  .items_center\:md {
-    align-items: center;
-  }
-
-  .items_baseline\:md {
-    align-items: baseline;
-  }
-
-  .items_stretch\:md {
-    align-items: stretch;
-  }
-
-  .self_start\:md {
-    align-self: flex-start;
-  }
-
-  .self_end\:md {
-    align-self: flex-end;
-  }
-
-  .self_center\:md {
-    -ms-grid-row-align: center;
-        align-self: center;
-  }
-
-  .self_baseline\:md {
-    align-self: baseline;
-  }
-
-  .self_stretch\:md {
-    -ms-grid-row-align: stretch;
-        align-self: stretch;
-  }
-
-  .justify_start\:md {
-    justify-content: flex-start;
-  }
-
-  .justify_end\:md {
-    justify-content: flex-end;
-  }
-
-  .justify_center\:md {
-    justify-content: center;
-  }
-
-  .justify_between\:md {
-    justify-content: space-between;
-  }
-
-  .justify_around\:md {
-    justify-content: space-around;
-  }
-
-  .content_start\:md {
-    align-content: flex-start;
-  }
-
-  .content_end\:md {
-    align-content: flex-end;
-  }
-
-  .content_center\:md {
-    align-content: center;
-  }
-
-  .content_between\:md {
-    align-content: space-between;
-  }
-
-  .content_around\:md {
-    align-content: space-around;
-  }
-
-  .content_stretch\:md {
-    align-content: stretch;
-  }
-
-  .order_0\:md {
-    order: 0;
-  }
-
-  .order_1\:md {
-    order: 1;
-  }
-
-  .order_2\:md {
-    order: 2;
-  }
-
-  .order_3\:md {
-    order: 3;
-  }
-
-  .order_4\:md {
-    order: 4;
-  }
-
-  .order_5\:md {
-    order: 5;
-  }
-
-  .order_6\:md {
-    order: 6;
-  }
-
-  .order_7\:md {
-    order: 7;
-  }
-
-  .order_8\:md {
-    order: 8;
-  }
-
-  .order\:lgast\:md {
-    order: 99999;
-  }
-
-  .flex-grow_0\:md {
-    flex-grow: 0;
-  }
-
-  .flex-grow_1\:md {
-    flex-grow: 1;
-  }
-
-  .flex_shrink-0\:md {
-    flex-shrink: 0;
-  }
-
-  .flex_shrink-1\:md {
-    flex-shrink: 1;
-  }
-}
-@media screen and (min-width: 64em) {
-  .flex\:lg {
-    display: flex;
-  }
-
-  .flex_inline\:lg {
-    display: inline-flex;
-  }
-
-  .flex_auto\:lg {
-    flex: 1 1 auto;
-    min-width: 0;
-    /* 1 */
-    min-height: 0;
-    /* 1 */
-  }
-
-  .flex_none\:lg {
-    flex: none;
-  }
-
-  .flex_column\:lg {
-    flex-direction: column;
-  }
-
-  .flex_row\:lg {
-    flex-direction: row;
-  }
-
-  .flex_wrap\:lg {
-    flex-wrap: wrap;
-  }
-
-  .flex_nowrap\:lg {
-    flex-wrap: nowrap;
-  }
-
-  .flex_wrap-reverse\:lg {
-    flex-wrap: wrap-reverse;
-  }
-
-  .flex_column-reverse\:lg {
-    flex-direction: column-reverse;
-  }
-
-  .flex_row-reverse\:lg {
-    flex-direction: row-reverse;
-  }
-
-  .items_start\:lg {
-    align-items: flex-start;
-  }
-
-  .items_end\:lg {
-    align-items: flex-end;
-  }
-
-  .items_center\:lg {
-    align-items: center;
-  }
-
-  .items_baseline\:lg {
-    align-items: baseline;
-  }
-
-  .items_stretch\:lg {
-    align-items: stretch;
-  }
-
-  .self_start\:lg {
-    align-self: flex-start;
-  }
-
-  .self_end\:lg {
-    align-self: flex-end;
-  }
-
-  .self_center\:lg {
-    -ms-grid-row-align: center;
-        align-self: center;
-  }
-
-  .self_baseline\:lg {
-    align-self: baseline;
-  }
-
-  .self_stretch\:lg {
-    -ms-grid-row-align: stretch;
-        align-self: stretch;
-  }
-
-  .justify_start\:lg {
-    justify-content: flex-start;
-  }
-
-  .justify_end\:lg {
-    justify-content: flex-end;
-  }
-
-  .justify_center\:lg {
-    justify-content: center;
-  }
-
-  .justify_between\:lg {
-    justify-content: space-between;
-  }
-
-  .justify_around\:lg {
-    justify-content: space-around;
-  }
-
-  .content_start\:lg {
-    align-content: flex-start;
-  }
-
-  .content_end\:lg {
-    align-content: flex-end;
-  }
-
-  .content_center\:lg {
-    align-content: center;
-  }
-
-  .content_between\:lg {
-    align-content: space-between;
-  }
-
-  .content_around\:lg {
-    align-content: space-around;
-  }
-
-  .content_stretch\:lg {
-    align-content: stretch;
-  }
-
-  .order_0\:lg {
-    order: 0;
-  }
-
-  .order_1\:lg {
-    order: 1;
-  }
-
-  .order_2\:lg {
-    order: 2;
-  }
-
-  .order_3\:lg {
-    order: 3;
-  }
-
-  .order_4\:lg {
-    order: 4;
-  }
-
-  .order_5\:lg {
-    order: 5;
-  }
-
-  .order_6\:lg {
-    order: 6;
-  }
-
-  .order_7\:lg {
-    order: 7;
-  }
-
-  .order_8\:lg {
-    order: 8;
-  }
-
-  .order\:lgast\:lg {
-    order: 99999;
-  }
-
-  .flex-grow_0\:lg {
-    flex-grow: 0;
-  }
-
-  .flex-grow_1\:lg {
-    flex-grow: 1;
-  }
-
-  .flex_shrink-0\:lg {
-    flex-shrink: 0;
-  }
-
-  .flex_shrink-1\:lg {
-    flex-shrink: 1;
-  }
-}
-/*
-UC: Widths
-
-Control some basics of the design with max-width and width.   
-
-Weight: 10
-
-Styleguide 111.0
-
-*/
-/* No styleguide reference. */
-/*
-UC:Width
-
-Control the width either with 12 x grid messurments or by 10% increments.
-
-.w_10 - Grid Width of 10% out of 100% 
-.w_50 - Grid Width of 50% out of 100%
-.w_70 - Grid Width of 70% out of 100% 
-.w_90 - Grid Width of 90% out of 100%
-.w-grid_2 - Grid Width of 2 columns of 12 columns  
-.w-grid_6 - Grid Width of 6 columns of 12 columns 
-.w-grid_8 - Grid Width of 8 columns of 12 columns  
-.w-grid_9 - Grid Width of 9 columns of 12 columns 
-
-
-markup:
-<div class=" br_solid br_transparent bg_alert-5 p_5">
-	<div class="bg_white text-left {{modifier_class}}">{{modifier_class}} </div>
-</div>
-
-Styleguide UC:Width
-
- */
-.max-w_0 {
-  max-width: 0 !important;
-}
-
-.max-w_1 {
-  max-width: 480px !important;
-  max-width: 30rem !important;
-}
-
-.max-w_2 {
-  max-width: 640px !important;
-  max-width: 40rem !important;
-}
-
-.max-w_3 {
-  max-width: 800px !important;
-  max-width: 50rem !important;
-}
-
-.max-w_4 {
-  max-width: 1024px !important;
-  max-width: 64rem !important;
-}
-
-.max-w_5 {
-  max-width: 1280px !important;
-  max-width: 80rem !important;
-}
-
-.w_0 {
-  width: 0%;
-}
-
-.w_10 {
-  width: 10%;
-}
-
-.w_20 {
-  width: 20%;
-}
-
-.w_30 {
-  width: 30%;
-}
-
-.w_40 {
-  width: 40%;
-}
-
-.w_50 {
-  width: 50%;
-}
-
-.w_60 {
-  width: 60%;
-}
-
-.w_70 {
-  width: 70%;
-}
-
-.w_80 {
-  width: 80%;
-}
-
-.w_90 {
-  width: 90%;
-}
-
-.w_100 {
-  width: 100%;
-}
-
-.w-grid_1 {
-  width: 8.3333333333%;
-}
-
-.w-grid_2 {
-  width: 16.6666666667%;
-}
-
-.w-grid_3 {
-  width: 25%;
-}
-
-.w-grid_4 {
-  width: 33.3333333333%;
-}
-
-.w-grid_5 {
-  width: 41.6666666667%;
-}
-
-.w-grid_6 {
-  width: 50%;
-}
-
-.w-grid_7 {
-  width: 58.3333333333%;
-}
-
-.w-grid_8 {
-  width: 66.6666666667%;
-}
-
-.w-grid_9 {
-  width: 75%;
-}
-
-.w-grid_10 {
-  width: 83.3333333333%;
-}
-
-.w-grid_11 {
-  width: 91.6666666667%;
-}
-
-.w-grid_12 {
-  width: 100%;
-}
-
-@media screen and (min-width: 40em) {
-  .max-w_0\:md {
-    max-width: 0 !important;
-  }
-
-  .max-w_1\:md {
-    max-width: 30rem !important;
-  }
-
-  .max-w_2\:md {
-    max-width: 40rem !important;
-  }
-
-  .max-w_3\:md {
-    max-width: 50rem !important;
-  }
-
-  .max-w_4\:md {
-    max-width: 64rem !important;
-  }
-
-  .max-w_5\:md {
-    max-width: 80rem !important;
-  }
-
-  .w_0\:md {
-    width: 0%;
-  }
-
-  .w_10\:md {
-    width: 10%;
-  }
-
-  .w_20\:md {
-    width: 20%;
-  }
-
-  .w_30\:md {
-    width: 30%;
-  }
-
-  .w_40\:md {
-    width: 40%;
-  }
-
-  .w_50\:md {
-    width: 50%;
-  }
-
-  .w_60\:md {
-    width: 60%;
-  }
-
-  .w_70\:md {
-    width: 70%;
-  }
-
-  .w_80\:md {
-    width: 80%;
-  }
-
-  .w_90\:md {
-    width: 90%;
-  }
-
-  .w_100\:md {
-    width: 100%;
-  }
-
-  .w-grid_1\:md {
-    width: 8.3333333333%;
-  }
-
-  .w-grid_2\:md {
-    width: 16.6666666667%;
-  }
-
-  .w-grid_3\:md {
-    width: 25%;
-  }
-
-  .w-grid_4\:md {
-    width: 33.3333333333%;
-  }
-
-  .w-grid_5\:md {
-    width: 41.6666666667%;
-  }
-
-  .w-grid_6\:md {
-    width: 50%;
-  }
-
-  .w-grid_7\:md {
-    width: 58.3333333333%;
-  }
-
-  .w-grid_8\:md {
-    width: 66.6666666667%;
-  }
-
-  .w-grid_9\:md {
-    width: 75%;
-  }
-
-  .w-grid_10\:md {
-    width: 83.3333333333%;
-  }
-
-  .w-grid_11\:md {
-    width: 91.6666666667%;
-  }
-
-  .w-grid_12\:md {
-    width: 100%;
-  }
-}
-@media screen and (min-width: 64em) {
-  .max-w_0\:lg {
-    max-width: 0 !important;
-  }
-
-  .max-w_1\:lg {
-    max-width: 30rem !important;
-  }
-
-  .max-w_2\:lg {
-    max-width: 40rem !important;
-  }
-
-  .max-w_3\:lg {
-    max-width: 50rem !important;
-  }
-
-  .max-w_4\:lg {
-    max-width: 64rem !important;
-  }
-
-  .max-w_5\:lg {
-    max-width: 80rem !important;
-  }
-
-  .w_0\:lg {
-    width: 0%;
-  }
-
-  .w_10\:lg {
-    width: 10%;
-  }
-
-  .w_20\:lg {
-    width: 20%;
-  }
-
-  .w_30\:lg {
-    width: 30%;
-  }
-
-  .w_40\:lg {
-    width: 40%;
-  }
-
-  .w_50\:lg {
-    width: 50%;
-  }
-
-  .w_60\:lg {
-    width: 60%;
-  }
-
-  .w_70\:lg {
-    width: 70%;
-  }
-
-  .w_80\:lg {
-    width: 80%;
-  }
-
-  .w_90\:lg {
-    width: 90%;
-  }
-
-  .w_100\:lg {
-    width: 100%;
-  }
-
-  .w-grid_1\:lg {
-    width: 8.3333333333%;
-  }
-
-  .w-grid_2\:lg {
-    width: 16.6666666667%;
-  }
-
-  .w-grid_3\:lg {
-    width: 25%;
-  }
-
-  .w-grid_4\:lg {
-    width: 33.3333333333%;
-  }
-
-  .w-grid_5\:lg {
-    width: 41.6666666667%;
-  }
-
-  .w-grid_6\:lg {
-    width: 50%;
-  }
-
-  .w-grid_7\:lg {
-    width: 58.3333333333%;
-  }
-
-  .w-grid_8\:lg {
-    width: 66.6666666667%;
-  }
-
-  .w-grid_9\:lg {
-    width: 75%;
-  }
-
-  .w-grid_10\:lg {
-    width: 83.3333333333%;
-  }
-
-  .w-grid_11\:lg {
-    width: 91.6666666667%;
-  }
-
-  .w-grid_12\:lg {
-    width: 100%;
-  }
-}
-/*
-Max Width
-
-Control the max width by 10% increments or by readable which is 65em
-
-.max-w_1.lh_4 - width size for a column that would match up to the smallest breakpoint.
-.max-w_2.font_n1.lh_4 - comfortable reading range for font_n1 text.
-.max-w_3.font_0.lh_3 - comfortable reading range for font_0 text
-.max-w_4.font_1.lh_2 - comfortable reading range for font_1 text
-.max-w_5.lh_4 - large screen format of 1280px #198dae
-
-
-markup:
-<div class=" br_solid br_transparent bg_alert-3 p_5">
-	<div class="bg_white text-left {{ modifier_class }}">
-		<strong>{{ modifier_class }}</strong> Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
-		inceptos himenaeos. Nam nec ante. Sed lacinia, urna non tincidunt mattis, tortor neque adipiscing diam, a cursus
-		ipsum ante quis turpis. Nulla facilisi. Ut fringilla. Suspendisse potenti. Nunc feugiat mi a tellus consequat
-		imperdiet. Vestibulum sapien. Proin quam. Etiam ultrices. Suspendisse in justo eu magna luctus suscipit. Sed
-		lectus. Integer euismod lacus luctus magna. Quisque cursus, metus vitae pharetra auctor, sem massa mattis sem,
-		at interdum magna augue eget diam. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
-		cubilia Curae; Morbi lacinia molestie dui. Praesent blandit dolor. Sed non quam. In vel mi sit amet augue congue
-		elementum. Morbi in ipsum sit amet pede facilisis laoreet. Donec lacus nunc, viverra nec.
-	</div>
-</div>
-
-Styleguide UC:Width.MaxWidth
-
- */
-/*
-UC: Overflow
-
-Control some basics of the design with max-width and width.   
-
-Weight: 10
-
-Styleguide 112.0
-
-*/
-/* No styleguide reference. */
-.overflow_hidden, .overflow_ellipsis, .overflow_clip {
-  overflow: hidden;
-}
-
-.overflow_visible {
-  overflow: visible;
-}
-
-.overflow_auto {
-  overflow: auto;
-}
-
-.overflow_scroll {
-  overflow-x: scroll;
-}
-
-.overflow_clip {
-  text-overflow: clip;
-}
-
-.overflow_ellipsis {
-  text-overflow: ellipsis;
-}
-
-.overflow_unset {
-  overflow: unset;
 }
 
 /**  No Framework Recipes    *********************************/

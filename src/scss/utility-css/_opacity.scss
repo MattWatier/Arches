@@ -1,7 +1,19 @@
 /*
+UC: Opacity
+
+A subtle set of  UCs that control opacity can alter the objects level of focus.
+
+Weight: 128
+
+Styleguide Opacity
+
+*/
+/* No styleguide reference. */
+
+/*
 	Opacity Levels
 
-	Set the Opacity of an object.  Unlike the 
+	Set the Opacity of an object.
 
 	.opacity_0                        - Opacity of 0%
 	.opacity_1                        - Opacity of 10%
@@ -16,40 +28,11 @@
 	.opacity_none                     - No Opacity
 
 	markup:
-	<div class="{{modifier_class}} br_1 br_solid br_white p_2 bg_warning c_white">{{modifier_class}}</div>
-
-	sg-wrapper: 
 	<div class="p_4 bg_primary">
-		<sg-wrapper-content/>
+		<div class="{{modifier_class}} br_1 br_solid br_white p_2 bg_warning c_white">{{modifier_class}}</div>
 	</div>
 
-	Styleguide Opacity.Basic
+	Styleguide opacity.basic
  
  */
 @include loop-style(opacity);
-
-#{#{class-name-constructor(opacity,"", "","hover")}} {
-	opacity: 1;
-}
-/*
-	Opacity: Hover
-
-	Set the Opacity of an object to 100% while hovered.
-
-	
-	.opacity_1                        - Opacity of 5%
-	.opacity_5                        - Opacity of 50%
-	.opacity_9                        - Opacity of 95%
-	.opacity_0                        - Opacity of 95%
-
-	markup:
-	<div class="{{modifier_class}} h:opacity  br_1 br_solid br_white p_2 bg_warning c_white">hover me to bring me to full opacity</div>
-
-	sg-wrapper: 
-	<div class="p_4 bg_primary">
-		<sg-wrapper-content/>
-	</div>
-
-	Styleguide Opacity.Hover
- 
- */

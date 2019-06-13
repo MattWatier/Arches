@@ -1,4 +1,14 @@
 /*
+UC: Background 
+
+Background of containers can be easily maniputlated with textures, colors, and shadows.  
+
+Weight: 120
+
+Styleguide Background
+*/
+/* No styleguide reference. */
+/*
   Background Colors
  
   Background colors can be easily change with bg_`color-name`  
@@ -11,6 +21,7 @@
   bg_info              - background color success color
   bg_highlight              - background color success color
 
+  Weight: -100
 
   markup:
   <div class="{{modifier_class}} p_3 c_white">Background Color of {{modifier_class}}</div>
@@ -52,7 +63,7 @@ markup:
 </div>
 
 
-Styleguide Background.ColorShades
+Styleguide Background.Color.Shades
  
  */
 
@@ -91,6 +102,6 @@ Styleguide Background.ColorShades
     <div class="bg_{{modifier_class}} flex_auto text_center c_white p_2 p-y_5">{{modifier_class}}</div>
   </div>
 
-  Styleguide Background.Colors with Alphas
+  Styleguide Background.Color.With Alphas
  
  */

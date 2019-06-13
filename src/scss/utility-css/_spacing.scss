@@ -1,4 +1,15 @@
 /*
+UC: Spacing
+
+Padding, Margins, and Positions are the most common usage for Utility Classes.  Spacing UC's are responsive and can be postfixed with `:md` and with `:lg` to have finer control on the spacing of objects.
+
+Weight: 105
+
+Styleguide Spacing
+*/
+/* No styleguide reference. */
+
+/*
 Margin
 
 <div class="p-b_3"><span class="bg_accent br_radius c_white d_inline-block font_n1 p-7_3 p-x_5 sg">Is Responsive: breakpoint modifiers</span></div>Margin classes are mobile first with postfix modifier for `:md`and `:lg` variations for responsive sizing. Margins that use the short codes of all margin, auto, x margins, and y margin are overriden by specific side margins.	
@@ -117,6 +128,26 @@ Styleguide Spacing.Padding
 	@include loop-style(padding-right, $bp-label_large, "");
 }
 
+/*
+Position Type
+
+<div class="p-b_3"><span class="bg_accent br_radius c_white d_inline-block font_n1 p-7_3 p-x_5 sg">Is Responsive: breakpoint modifiers</span></div>Quickly alter the position type and location of an object with 'absolute' and 'top'
+
+relative  		- relative positioned block 
+absolute   		- absolute positioned block
+fixed   			- fixed positioned block 
+sticky   		- sticky positioned block
+
+
+
+markup:
+<div class="br_solid br_transparent bg_accent-3 relative p_5" style="height:200px;">
+	<div class="bg_primary-5 text_center {{modifier_class}}">Position {{modifier_class}}</div>
+</div>
+
+Styleguide Spacing.Position
+
+ */
 .absolute {
 	position: absolute;
 }
@@ -134,9 +165,9 @@ Styleguide Spacing.Padding
 }
 
 /*
-Position
+Position Location
 
-	<div class="p-b_3"><span class="bg_accent br_radius c_white d_inline-block font_n1 p-7_3 p-x_5 sg">Is Responsive: breakpoint modifiers</span></div>Quickly alter the position type and location of an object with 'absolute' and 'top'
+<div class="p-b_3"><span class="bg_accent br_radius c_white d_inline-block font_n1 p-7_3 p-x_5 sg">Is Responsive: breakpoint modifiers</span></div>Quickly alter the position type and location of an object with top, bottom, left, and right position mondifiers. All of these modifiers will follow the rules of the containers position type. All of the examples below are using absolute positions to have the greatest effect. 
 
 #{class-name-constructor(top,1)} - modify top of an absolute positioned block 
 #{class-name-constructor(top,5)} - modify top of an absolute positioned block
@@ -151,10 +182,9 @@ markup:
 	<div class="bg_primary-5 text_center absolute {{modifier_class}}">Position Absolute {{modifier_class}}</div>
 </div>
 
-Styleguide Spacing.Position
+Styleguide Spacing.Location
 
  */
-
 @include loop-style(top, "", "");
 @include loop-style(bottom, "", "");
 @include loop-style(left, "", "");

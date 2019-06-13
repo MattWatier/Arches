@@ -1,4 +1,16 @@
 /*
+UC: Counters
+
+Add counters infront of collections without the need of an OL or UL. Counters cannot be nested!
+
+Weight: 150
+
+Styleguide Counters
+
+*/
+/* No styleguide reference. */
+
+/*
 	Counter
 
 	Counter can be incremented by the `counter_increment` class.  
@@ -10,9 +22,20 @@
         <div class="bg_primary-2 p_3 m_3"><span class="font_bold counter counter_increment">:</span> Item, Object, or Section</div>
  	</div>
 
-	Styleguide 106.2
+	Styleguide Counters
 
 */
+
+.counter_reset {
+	counter-reset: a;
+}
+.counter_increment {
+	counter-increment: a;
+}
+.counter:before {
+	content: counter(a);
+}
+
 /*
 	Counter Sub
 
@@ -30,9 +53,15 @@
         <div class="bg_primary-2 p_3 m_3"><span class="font_bold counter counter_increment counter_upper-alpha"></span> Item, Object, or Section</div>
  	</div>
 
-	Styleguide 106.3
+	Styleguide Counters.Sub Counters
 
 */
+.counter-sub_reset {
+	counter-reset: b;
+}
+.counter-sub_increment {
+	counter-increment: b;
+}
 
 /*
 	Counter Types
@@ -52,9 +81,41 @@
 			<div class="m_3 p_3 bg_primary-2"><span class="{{modifier_class}} font_bold counter_increment"></span> Item, Object, or Section</div>
  	</div>
 
-	Styleguide 106.4
+	Styleguide Counters.Types
 
 */
+.counter_lower-alpha:before {
+	content: counter(a, lower-alpha);
+}
+.counter_upper-alpha:before {
+	content: counter(a, upper-alpha);
+}
+
+.counter_lower-roman:before {
+	content: counter(a, lower-roman);
+}
+.counter_upper-roman:before {
+	content: counter(a, upper-roman);
+}
+.counter-sub:before {
+	content: counter(b);
+}
+
+.counter-sub_lower-alpha:before {
+	content: counter(b, lower-alpha);
+}
+
+.counter-sub_upper-alpha:before {
+	content: counter(b, upper-alpha);
+}
+
+.counter-sub_lower-roman:before {
+	content: counter(b, lower-roman);
+}
+
+.counter-sub_upper-roman:before {
+	content: counter(b, upper-roman);
+}
 
 /*
 	Order Markers
@@ -70,59 +131,9 @@
         <div class="m_3 p_3"><span class="font_bold counter counter_increment order-marker bg_warning-2"></span> Item, Object, or Section</div>
     </div>
 
-	Styleguide 106.5
+	Styleguide Counters.Markers
 
 */
-
-.counter_reset {
-	counter-reset: a;
-}
-.counter_increment {
-	counter-increment: a;
-}
-.counter:before {
-	content: counter(a);
-}
-.counter_lower-alpha:before {
-	content: counter(a, lower-alpha);
-}
-.counter_upper-alpha:before {
-	content: counter(a, upper-alpha);
-}
-
-.counter_lower-roman:before {
-	content: counter(a, lower-roman);
-}
-.counter_upper-roman:before {
-	content: counter(a, upper-roman);
-}
-
-.counter-sub_reset {
-	counter-reset: b;
-}
-.counter-sub_increment {
-	counter-increment: b;
-}
-.counter-sub:before {
-	content: counter(b);
-}
-
-.counter-sub_lower-alpha:before {
-	content: counter(b, lower-alpha);
-}
-
-.counter-sub_upper-alpha:before {
-	content: counter(b, upper-alpha);
-}
-
-.counter-sub_lower-roman:before {
-	content: counter(a, lower-roman);
-}
-
-.counter-sub_upper-roman:before {
-	content: counter(a, upper-roman);
-}
-
 .order-marker {
 	border-radius: 50%;
 	display: inline-block;

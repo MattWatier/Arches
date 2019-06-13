@@ -1,4 +1,15 @@
 /*
+UC: Display & Flex
+
+Control the display of objects with control of break points, and the layout functions of flex easily by adding utlity classes. 
+
+Weight: 106
+
+Styleguide display
+
+*/
+/* No styleguide reference. */
+/*
 	Display
 
 	quickly alter the padding of an object 
@@ -11,9 +22,11 @@
 	.d_none             - the element is now display none
 
 	markup:
-	<div class="br_solid br_transparent bg_alert-3  text_center"><div class="bg_primary-5 text_center {{modifier_class}}">Content</div></div>
+	<div class="br_solid br_transparent bg_alert-3  text_center">
+		<div class="bg_primary-5 text_center {{modifier_class}}">Content</div>
+	</div>
 
-	Styleguide Flex.1
+	Styleguide display.type
 
  */
 
@@ -26,6 +39,26 @@
 	@include loop-style(display, $bp-label_large);
 }
 
+/*
+	Vertical Align
+
+	quickly alter the verticle alignment of the child
+
+	.vertical-align_top              		- the child is aligned to the top
+	.vertical-align_middle              	- the child is aligned to the top
+	.vertical-align_bottom            		- the child is aligned to the top
+	.vertical-align_baseline          		- the child is aligned to the top
+
+
+	markup:
+	<div class="br_solid br_transparent bg_alert-3 text_center {{modifier_class}} bg_secondary_4 d-inline-block">
+		<div class="bg_primary-5 text_center  d-inline">Content</div>
+	</div>
+
+	Styleguide display.vertical alignment
+
+ */
+
 .vertical-align_top {
 	vertical-align: top;
 }
@@ -34,4 +67,7 @@
 }
 .vertical-align_bottom {
 	vertical-align: bottom;
+}
+.vertical-align_baseline {
+	vertical-align: baseline;
 }

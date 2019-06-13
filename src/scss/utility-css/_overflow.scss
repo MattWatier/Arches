@@ -1,29 +1,41 @@
+/*
+UC: Overflow
+
+Control some basics of the design with max-width and width.   
+
+Weight: 100
+
+Styleguide Display.Overflow
+
+*/
+/* No styleguide reference. */
+
 .overflow_hidden {
-  overflow: hidden;
+	overflow: hidden;
 }
 
 .overflow_visible {
-  overflow: visible;
+	overflow: visible;
 }
 
 .overflow_auto {
-  overflow: auto;
+	overflow: auto;
 }
 
 .overflow_scroll {
-  overflow-x: scroll;
+	overflow-x: scroll;
 }
 
 .overflow_clip {
-  @extend .overflow_hidden;
-  text-overflow: clip;
+	@extend .overflow_hidden;
+	text-overflow: clip;
 }
 
 .overflow_ellipsis {
-  @extend .overflow_hidden;
-  text-overflow: ellipsis;
+	@extend .overflow_hidden;
+	text-overflow: ellipsis;
 }
 
 .overflow_unset {
-  overflow: unset;
+	overflow: unset;
 }

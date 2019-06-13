@@ -1,3 +1,13 @@
+/*
+UC: Typography
+
+Control size, weight, decoration, white-space, and overflow with these utility classes 
+
+Weight: 110
+
+Styleguide Typography
+*/
+/* No styleguide reference. */
 $white: rgb(246, 246, 246) !default;
 $black: rgb(19, 18, 18) !default;
 
@@ -228,7 +238,6 @@ Styleguide Typography.Font.Size.Golden
 	text-align: left !important;
 }
 
-
 /*
 Font Color
 
@@ -294,7 +303,7 @@ Styleguide Typography.Font.Color
   Styleguide Typography.Text.LineHeight
  */
 
- /*
+/*
   Alignment
 
   Change the alignment of text.
@@ -312,7 +321,7 @@ Styleguide Typography.Font.Color
   Styleguide Typography.Text.Alignment
  */
 
- /*
+/*
   List Type
 
   Change the type of a list.
@@ -335,4 +344,4 @@ Styleguide Typography.Font.Color
 
   Styleguide Typography.list
  */
- @include loop-style(list-type,"","!important");
+@include loop-style(list-type, "", "!important");

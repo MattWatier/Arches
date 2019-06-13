@@ -1,5 +1,17 @@
 /*
-UC:Width
+UC: Widths
+
+Control some basics of the design with max-width and width.   
+
+Weight: 107
+
+Styleguide Width
+
+*/
+/* No styleguide reference. */
+
+/*
+10% Width 
 
 Control the width either with 12 x grid messurments or by 10% increments.
 
@@ -7,6 +19,22 @@ Control the width either with 12 x grid messurments or by 10% increments.
 #{class-name-constructor(width,50)} - Grid Width of 50% out of 100%
 #{class-name-constructor(width,70)} - Grid Width of 70% out of 100% 
 #{class-name-constructor(width,90)} - Grid Width of 90% out of 100%
+
+
+markup:
+<div class=" br_solid br_transparent bg_alert-5 p_5">
+	<div class="bg_white text-left {{modifier_class}}">{{modifier_class}} </div>
+</div>
+
+Styleguide Width.Tens
+
+ */
+
+/*
+Grid Width 
+
+Control the width either with 12 x grid messurments or by 10% increments.
+
 #{class-name-constructor(grid-width,2)} - Grid Width of 2 columns of 12 columns  
 #{class-name-constructor(grid-width,6)} - Grid Width of 6 columns of 12 columns 
 #{class-name-constructor(grid-width,8)} - Grid Width of 8 columns of 12 columns  
@@ -18,7 +46,7 @@ markup:
 	<div class="bg_white text-left {{modifier_class}}">{{modifier_class}} </div>
 </div>
 
-Styleguide UC:Width
+Styleguide Width.Grid
 
  */
 @include loop-style(max-width, "", "!important");
@@ -63,6 +91,6 @@ markup:
 	</div>
 </div>
 
-Styleguide UC:Width.MaxWidth
+Styleguide Width.MaxWidth
 
  */

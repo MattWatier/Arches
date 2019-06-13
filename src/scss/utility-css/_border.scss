@@ -1,3 +1,14 @@
+/*
+UC: Borders
+
+Borders a complex utility that demands a combo UCs to acheive their effect. The three UCs that must be used in combo are `style`, `color`, and `width`.  To make an object with single black pixel border that is solid you would have to add '.br_solid.br_1.br_black' 
+
+Weight: 125
+
+Styleguide Borders
+
+*/
+/* No styleguide reference. */
 
 #{ class-name-constructor(border-radius,dotted)},
 #{ class-name-constructor(border-radius,dashed)},
@@ -37,19 +48,20 @@ Styleguide Borders.Style
 /*
 Border Color
 
+alter the border color of and object by adding the border color utitlity class.
 
-br_primary            - border color
-br_secondary             - border color
-br_alert             - border color
-br_warning             - border color
-br_info            - border color
-br_highlight             - border color
+br_primary              - border color
+br_secondary            - border color
+br_alert                - border color
+br_warning              - border color
+br_info                 - border color
+br_highlight            - border color
 
 
 markup:
 <div class="{{modifier_class}} p_3 br_solid bw_3">{{modifier_class}} border</div>
 
-Styleguide Borders.2
+Styleguide Borders.Colors
 
 */
 
@@ -73,7 +85,7 @@ br_black-9             - border black with alpha of 90%
 markup:
 <div class="{{modifier_class}} p_3 br_solid br_5 bg_primary-1 white">{{modifier_class}} border</div>
 
-Styleguide Borders.2.1
+Styleguide Borders.Colors.Black
 
 */
 
@@ -97,7 +109,7 @@ Styleguide Borders.2.1
   markup:
   <div class="{{modifier_class}} p_3 br_solid br_5 bg_primary-1 c_white">{{modifier_class}} border</div>
   
-  Styleguide Borders.2.2
+  Styleguide Borders.Colors.White
   
   */
 
@@ -130,7 +142,7 @@ Styleguide Borders.2.1
 	markup:
 	<div class="{{modifier_class}} p_3 br_black br_solid br_2">{{modifier_class}} border</div>
   
-	Styleguide Borders.3
+	Styleguide Borders.Radius
   
   */
 
@@ -156,9 +168,6 @@ Styleguide Borders.2.1
   Border black has attached alpha   
   
   br_primary            	  - border color primary
-  br_alert            	    - border color alert
-  br_warning            	  - border color warning
-  br_success            	  - border color success
   br_primary-1             - border color mixed with white
   br_primary-2             - border color mixed with white
   br_primary-3             - border color mixed with white
@@ -171,9 +180,9 @@ Styleguide Borders.2.1
   br_primary-n5             - border color mixed with black 
   
   markup:
-  <div class="{{modifier_class}} p_3 br_solid br_1 c_white">{{modifier_class}} border</div>
+  <div class="{{modifier_class}} p_3 br_solid br_5 bg_secondary c_white">{{modifier_class}} border</div>
   
-  Styleguide Borders.4
+  Styleguide Borders.Colors.Modifiers
   
   */
 
@@ -203,7 +212,7 @@ Styleguide Borders.2.1
     markup:
     <div class="{{modifier_class}} p_3 br_solid br_black c_black">{{modifier_class}} border</div>
   
-    Styleguide Borders.5
+    Styleguide Borders.Width
   
    */
 

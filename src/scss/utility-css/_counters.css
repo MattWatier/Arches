@@ -1,0 +1,155 @@
+/*
+UC: Counters
+
+Add counters infront of collections without the need of an OL or UL. Counters cannot be nested!
+
+Weight: 150
+
+Styleguide Counters
+
+*/
+/* No styleguide reference. */
+/*
+	Counter
+
+	Counter can be incremented by the `counter_increment` class.  
+
+	markup:
+    <div class="counter_reset">
+        <div class="bg_primary-2 p_3 m_3"><span class="font_bold counter counter_increment">:</span> Item, Object, or Section</div>
+        <div class="bg_primary-2 p_3 m_3"><span class="font_bold counter counter_increment">:</span> Item, Object, or Section</div>
+        <div class="bg_primary-2 p_3 m_3"><span class="font_bold counter counter_increment">:</span> Item, Object, or Section</div>
+ 	</div>
+
+	Styleguide Counters
+
+*/
+.counter_reset {
+  counter-reset: a;
+}
+
+.counter_increment {
+  counter-increment: a;
+}
+
+.counter:before {
+  content: counter(a);
+}
+
+/*
+	Counter Sub
+
+	Counter Subs can be nested inside of counters
+
+	markup:
+    <div class="counter_reset ">
+        <div class="bg_primary-2 p_3 m_3"><span class="font_bold counter counter_increment counter_upper-alpha"></span> Item, Object, or Section</div>
+            <div class="counter-sub_reset">
+                <div class="m_3 p_2 p-l_4 bg_primary-3"><span class="font_bold counter counter_upper-alpha"></span>.<span class="font_bold counter-sub counter-sub_increment counter-sub_lower-alpha"></span> Sub Item</div>
+                <div class="m_3 p_2 p-l_4 bg_primary-3"><span class="font_bold counter counter_upper-alpha"></span>.<span class="font_bold counter-sub counter-sub_increment counter-sub_lower-alpha"></span> Sub Item</div>
+                <div class="m_3 p_2 p-l_4 bg_primary-3"><span class="font_bold counter counter_upper-alpha"></span>.<span class="font_bold counter-sub counter-sub_increment counter-sub_lower-alpha"></span> Sub Item</div>
+            </div>
+        <div class="bg_primary-2 p_3 m_3"><span class="font_bold counter counter_increment counter_upper-alpha"></span> Item, Object, or Section</div>
+        <div class="bg_primary-2 p_3 m_3"><span class="font_bold counter counter_increment counter_upper-alpha"></span> Item, Object, or Section</div>
+ 	</div>
+
+	Styleguide Counters.Sub Counters
+
+*/
+.counter-sub_reset {
+  counter-reset: b;
+}
+
+.counter-sub_increment {
+  counter-increment: b;
+}
+
+/*
+	Counter Types
+
+	Create different types of lists with the counter types
+	
+	counter 										- Defualt Number Listing
+	counter_lower-alpha         - Lowercase Alphabetic Listing
+	counter_upper-alpha         - Uppercase Alphabetic Listing
+	counter_lower-roman         - Lowercase Roman Listing
+	counter_upper-roman         - Uppercase Roman Listing
+
+	markup:
+	<div class="counter_reset">
+			<div class="m_3 p_3 bg_primary-2"><span class="{{modifier_class}} font_bold counter_increment"></span> Item, Object, or Section</div>
+			<div class="m_3 p_3 bg_primary-2"><span class="{{modifier_class}} font_bold counter_increment"></span> Item, Object, or Section</div>
+			<div class="m_3 p_3 bg_primary-2"><span class="{{modifier_class}} font_bold counter_increment"></span> Item, Object, or Section</div>
+ 	</div>
+
+	Styleguide Counters.Types
+
+*/
+.counter_lower-alpha:before {
+  content: counter(a, lower-alpha);
+}
+
+.counter_upper-alpha:before {
+  content: counter(a, upper-alpha);
+}
+
+.counter_lower-roman:before {
+  content: counter(a, lower-roman);
+}
+
+.counter_upper-roman:before {
+  content: counter(a, upper-roman);
+}
+
+.counter-sub:before {
+  content: counter(b);
+}
+
+.counter-sub_lower-alpha:before {
+  content: counter(b, lower-alpha);
+}
+
+.counter-sub_upper-alpha:before {
+  content: counter(b, upper-alpha);
+}
+
+.counter-sub_lower-roman:before {
+  content: counter(b, lower-roman);
+}
+
+.counter-sub_upper-roman:before {
+  content: counter(b, upper-roman);
+}
+
+/*
+	Order Markers
+
+	Quickly decorate the counter with a circle.  Change the  bgground and font color with utility classes to acheive different effects.
+
+
+	markup:
+    <div class="counter_reset">
+        <div class="m_3 p_3"><span class="font_bold counter counter_increment order-marker bg_primary-2"></span> Item, Object, or Section</div>
+        <div class="m_3 p_3"><span class="font_bold counter counter_increment order-marker font_10 br-tl_square br-bl_square bg_highlight-2"></span> Item, Object, or Section</div>
+        <div class="m_3 p_3"><span class="font_bold counter counter_increment order-marker bg_info-2"></span> Item, Object, or Section</div>
+        <div class="m_3 p_3"><span class="font_bold counter counter_increment order-marker bg_warning-2"></span> Item, Object, or Section</div>
+    </div>
+
+	Styleguide Counters.Markers
+
+*/
+.order-marker {
+  border-radius: 50%;
+  display: inline-block;
+  height: 1.5em;
+  width: 1.5em;
+  margin-right: 0;
+  margin-bottom: 0;
+  padding: 0.75em 0 0 0;
+  position: relative;
+  margin-right: 0.5em;
+  text-align: center;
+  box-sizing: border-box;
+  line-height: 0;
+  vertical-align: top;
+}
