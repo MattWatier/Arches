@@ -250,7 +250,20 @@ div[class^=texture_] {
 /** changing default names to be used with frameworks. **/
 /*
 
-Color Codes: Clinical Pathways  
+Color Codes 
+
+<div class="p-b_3"><span class="bg_alert br_radius c_white d_inline-block font_n1 p-7_3 p-x_5 sg">Is Extra Style Sheets Must Be Included</span></div>Color Codes are sepereate style sheets that give you access to decorating classes created with the color pallete.
+
+
+
+Weight: 2000
+
+Styleguide Color Codes
+
+*/
+/*
+
+Clinical Pathways  
 
 Each of the clinical pathways has a distinctive color.  These colors are used to give a distinct theme to our clinical apps, marketing, pdf's and tools.
 
@@ -271,7 +284,7 @@ $pathway-special 										- #00b6f1;  Special
 
 Weight: 300
 
-Styleguide Pathway Colors
+Styleguide Color Codes.Pathway Colors
 
 */
 /*
@@ -326,7 +339,7 @@ Font, Border and Background Colors using invasive
 </div>
 
 
-Styleguide Pathway Colors.invasive
+Styleguide Color Codes.Pathway Colors.invasive
 */
 /*
 
@@ -380,7 +393,7 @@ Font, Border and Background Colors using congenital
 </div>
 
 
-Styleguide Pathway Colors.congenital
+Styleguide Color Codes.Pathway Colors.congenital
 */
 /*
 
@@ -434,7 +447,7 @@ Font, Border and Background Colors using noninvasive
 </div>
 
 
-Styleguide Pathway Colors.noninvasive
+Styleguide Color Codes.Pathway Colors.noninvasive
 */
 /*
 
@@ -488,7 +501,7 @@ Font, Border and Background Colors using ecg
 </div>
 
 
-Styleguide Pathway Colors.ecg
+Styleguide Color Codes.Pathway Colors.ecg
 */
 /*
 
@@ -542,7 +555,7 @@ Font, Border and Background Colors using vascular
 </div>
 
 
-Styleguide Pathway Colors.vascular
+Styleguide Color Codes.Pathway Colors.vascular
 */
 /*
 
@@ -596,7 +609,7 @@ Font, Border and Background Colors using pulmonary
 </div>
 
 
-Styleguide Pathway Colors.pulmonary
+Styleguide Color Codes.Pathway Colors.pulmonary
 */
 /*
 
@@ -650,7 +663,7 @@ Font, Border and Background Colors using prevention
 </div>
 
 
-Styleguide Pathway Colors.prevention
+Styleguide Color Codes.Pathway Colors.prevention
 */
 /*
 
@@ -704,7 +717,7 @@ Font, Border and Background Colors using hf
 </div>
 
 
-Styleguide Pathway Colors.hf
+Styleguide Color Codes.Pathway Colors.hf
 */
 /*
 
@@ -758,7 +771,7 @@ Font, Border and Background Colors using valvular
 </div>
 
 
-Styleguide Pathway Colors.valvular
+Styleguide Color Codes.Pathway Colors.valvular
 */
 /*
 
@@ -812,7 +825,7 @@ Font, Border and Background Colors using arrthythmias
 </div>
 
 
-Styleguide Pathway Colors.arrthythmias
+Styleguide Color Codes.Pathway Colors.arrthythmias
 */
 /*
 
@@ -866,7 +879,7 @@ Font, Border and Background Colors using preicardial
 </div>
 
 
-Styleguide Pathway Colors.preicardial
+Styleguide Color Codes.Pathway Colors.preicardial
 */
 /*
 
@@ -920,7 +933,7 @@ Font, Border and Background Colors using acute
 </div>
 
 
-Styleguide Pathway Colors.acute
+Styleguide Color Codes.Pathway Colors.acute
 */
 /*
 
@@ -974,7 +987,7 @@ Font, Border and Background Colors using ischemnic
 </div>
 
 
-Styleguide Pathway Colors.ischemnic
+Styleguide Color Codes.Pathway Colors.ischemnic
 */
 /*
 
@@ -1028,11 +1041,11 @@ Font, Border and Background Colors using special
 </div>
 
 
-Styleguide Pathway Colors.special
+Styleguide Color Codes.Pathway Colors.special
 */
 /*
 
-Color Codes: COR  
+Class of Recomendation 
 
 (COR) Class of Recomendation is a color collect used in Guideline recomendations.
 
@@ -1044,7 +1057,7 @@ $cor-red               		- #ed1c00; III-harm
 
 Weight: 310
 
-Styleguide COR Colors
+Styleguide Color Codes.COR Colors
 
  */
 /*
@@ -1099,7 +1112,7 @@ Font, Border and Background Colors using cor-I
 </div>
 
 
-Styleguide COR Colors.cor-I
+Styleguide Color Codes.COR Colors.cor-I
 */
 /*
 
@@ -1153,7 +1166,7 @@ Font, Border and Background Colors using cor-IIA
 </div>
 
 
-Styleguide COR Colors.cor-IIA
+Styleguide Color Codes.COR Colors.cor-IIA
 */
 /*
 
@@ -1207,7 +1220,7 @@ Font, Border and Background Colors using cor-IIB
 </div>
 
 
-Styleguide COR Colors.cor-IIB
+Styleguide Color Codes.COR Colors.cor-IIB
 */
 /*
 
@@ -1261,7 +1274,7 @@ Font, Border and Background Colors using cor-III
 </div>
 
 
-Styleguide COR Colors.cor-III
+Styleguide Color Codes.COR Colors.cor-III
 */
 /*
 
@@ -1315,7 +1328,7 @@ Font, Border and Background Colors using cor-III-NOBENIFIT
 </div>
 
 
-Styleguide COR Colors.cor-III-NOBENIFIT
+Styleguide Color Codes.COR Colors.cor-III-NOBENIFIT
 */
 /*
 
@@ -1369,11 +1382,11 @@ Font, Border and Background Colors using cor-III-HARM
 </div>
 
 
-Styleguide COR Colors.cor-III-HARM
+Styleguide Color Codes.COR Colors.cor-III-HARM
 */
 /*
 
-Color Codes: LOE  
+level of Evedence  
 
 (LOE) level of Evedence is a color collect used in Guideline recomendations.
 
@@ -1384,7 +1397,7 @@ $loe-pale-blue                	- #b5d5e5; LOE C
 
 Weight: 309
 
-Styleguide LOE Colors
+Styleguide Color Codes.LOE Colors
  */
 /*
 
@@ -1437,7 +1450,7 @@ Font, Border and Background Colors using loe-A
 <div class="c_loe-A-n5 text_left br_solid br_0 br-b_1 br_white-3 font_display flex"><div class="flex_auto p_5 p-y_2">modified level n5 of the font color.</div><div class="flex_auto p_5 p-y_2 bg_secondary-n3">modified level n5 of the font color.</div></div>
 </div>
 
-Styleguide LOE Colors.loe-A
+Styleguide Color Codes.LOE Colors.loe-A
 */
 /*
 
@@ -1490,7 +1503,7 @@ Font, Border and Background Colors using loe-B-NR
 <div class="c_loe-B-NR-n5 text_left br_solid br_0 br-b_1 br_white-3 font_display flex"><div class="flex_auto p_5 p-y_2">modified level n5 of the font color.</div><div class="flex_auto p_5 p-y_2 bg_secondary-n3">modified level n5 of the font color.</div></div>
 </div>
 
-Styleguide LOE Colors.loe-B-NR
+Styleguide Color Codes.LOE Colors.loe-B-NR
 */
 /*
 
@@ -1543,7 +1556,7 @@ Font, Border and Background Colors using loe-B-BR
 <div class="c_loe-B-BR-n5 text_left br_solid br_0 br-b_1 br_white-3 font_display flex"><div class="flex_auto p_5 p-y_2">modified level n5 of the font color.</div><div class="flex_auto p_5 p-y_2 bg_secondary-n3">modified level n5 of the font color.</div></div>
 </div>
 
-Styleguide LOE Colors.loe-B-BR
+Styleguide Color Codes.LOE Colors.loe-B-BR
 */
 /*
 
@@ -1596,7 +1609,7 @@ Font, Border and Background Colors using loe-C-LD
 <div class="c_loe-C-LD-n5 text_left br_solid br_0 br-b_1 br_white-3 font_display flex"><div class="flex_auto p_5 p-y_2">modified level n5 of the font color.</div><div class="flex_auto p_5 p-y_2 bg_secondary-n3">modified level n5 of the font color.</div></div>
 </div>
 
-Styleguide LOE Colors.loe-C-LD
+Styleguide Color Codes.LOE Colors.loe-C-LD
 */
 /*
 
@@ -1649,11 +1662,11 @@ Font, Border and Background Colors using loe-C-EO
 <div class="c_loe-C-EO-n5 text_left br_solid br_0 br-b_1 br_white-3 font_display flex"><div class="flex_auto p_5 p-y_2">modified level n5 of the font color.</div><div class="flex_auto p_5 p-y_2 bg_secondary-n3">modified level n5 of the font color.</div></div>
 </div>
 
-Styleguide LOE Colors.loe-C-EO
+Styleguide Color Codes.LOE Colors.loe-C-EO
 */
 /*
 
-Color Codes: Credit Type  
+Credit Type  
 
 Credit Types in the ACC have a specific color coding.
 
@@ -1670,7 +1683,7 @@ $credit-CPE         	-  #992E2E; CPE
 
 Weight: 299
 
-Styleguide Credit Colors
+Styleguide Color Codes.Credit Colors
 
 */
 /*
@@ -1724,7 +1737,7 @@ Font, Border and Background Colors using CME
 <div class="c_CME-n5 text_left br_solid br_0 br-b_1 br_white-3 font_display flex"><div class="flex_auto p_5 p-y_2">modified level n5 of the font color.</div><div class="flex_auto p_5 p-y_2 bg_secondary-n3">modified level n5 of the font color.</div></div>
 </div>
 
-Styleguide Credit Colors.CME
+Styleguide Color Codes.Credit Colors.CME
 */
 /*
 
@@ -1777,7 +1790,7 @@ Font, Border and Background Colors using ABP
 <div class="c_ABP-n5 text_left br_solid br_0 br-b_1 br_white-3 font_display flex"><div class="flex_auto p_5 p-y_2">modified level n5 of the font color.</div><div class="flex_auto p_5 p-y_2 bg_secondary-n3">modified level n5 of the font color.</div></div>
 </div>
 
-Styleguide Credit Colors.ABP
+Styleguide Color Codes.Credit Colors.ABP
 */
 /*
 
@@ -1830,7 +1843,7 @@ Font, Border and Background Colors using COP
 <div class="c_COP-n5 text_left br_solid br_0 br-b_1 br_white-3 font_display flex"><div class="flex_auto p_5 p-y_2">modified level n5 of the font color.</div><div class="flex_auto p_5 p-y_2 bg_secondary-n3">modified level n5 of the font color.</div></div>
 </div>
 
-Styleguide Credit Colors.COP
+Styleguide Color Codes.Credit Colors.COP
 */
 /*
 
@@ -1883,7 +1896,7 @@ Font, Border and Background Colors using CE
 <div class="c_CE-n5 text_left br_solid br_0 br-b_1 br_white-3 font_display flex"><div class="flex_auto p_5 p-y_2">modified level n5 of the font color.</div><div class="flex_auto p_5 p-y_2 bg_secondary-n3">modified level n5 of the font color.</div></div>
 </div>
 
-Styleguide Credit Colors.CE
+Styleguide Color Codes.Credit Colors.CE
 */
 /*
 
@@ -1936,7 +1949,7 @@ Font, Border and Background Colors using MOCII
 <div class="c_MOCII-n5 text_left br_solid br_0 br-b_1 br_white-3 font_display flex"><div class="flex_auto p_5 p-y_2">modified level n5 of the font color.</div><div class="flex_auto p_5 p-y_2 bg_secondary-n3">modified level n5 of the font color.</div></div>
 </div>
 
-Styleguide Credit Colors.MOCII
+Styleguide Color Codes.Credit Colors.MOCII
 */
 /*
 
@@ -1989,7 +2002,7 @@ Font, Border and Background Colors using MOCIV
 <div class="c_MOCIV-n5 text_left br_solid br_0 br-b_1 br_white-3 font_display flex"><div class="flex_auto p_5 p-y_2">modified level n5 of the font color.</div><div class="flex_auto p_5 p-y_2 bg_secondary-n3">modified level n5 of the font color.</div></div>
 </div>
 
-Styleguide Credit Colors.MOCIV
+Styleguide Color Codes.Credit Colors.MOCIV
 */
 /*
 
@@ -2042,7 +2055,7 @@ Font, Border and Background Colors using CNE
 <div class="c_CNE-n5 text_left br_solid br_0 br-b_1 br_white-3 font_display flex"><div class="flex_auto p_5 p-y_2">modified level n5 of the font color.</div><div class="flex_auto p_5 p-y_2 bg_secondary-n3">modified level n5 of the font color.</div></div>
 </div>
 
-Styleguide Credit Colors.CNE
+Styleguide Color Codes.Credit Colors.CNE
 */
 /*
 
@@ -2095,7 +2108,7 @@ Font, Border and Background Colors using CNErx
 <div class="c_CNErx-n5 text_left br_solid br_0 br-b_1 br_white-3 font_display flex"><div class="flex_auto p_5 p-y_2">modified level n5 of the font color.</div><div class="flex_auto p_5 p-y_2 bg_secondary-n3">modified level n5 of the font color.</div></div>
 </div>
 
-Styleguide Credit Colors.CNErx
+Styleguide Color Codes.Credit Colors.CNErx
 */
 /*
 
@@ -2148,7 +2161,7 @@ Font, Border and Background Colors using ECME
 <div class="c_ECME-n5 text_left br_solid br_0 br-b_1 br_white-3 font_display flex"><div class="flex_auto p_5 p-y_2">modified level n5 of the font color.</div><div class="flex_auto p_5 p-y_2 bg_secondary-n3">modified level n5 of the font color.</div></div>
 </div>
 
-Styleguide Credit Colors.ECME
+Styleguide Color Codes.Credit Colors.ECME
 */
 /*
 
@@ -2201,7 +2214,7 @@ Font, Border and Background Colors using CPE
 <div class="c_CPE-n5 text_left br_solid br_0 br-b_1 br_white-3 font_display flex"><div class="flex_auto p_5 p-y_2">modified level n5 of the font color.</div><div class="flex_auto p_5 p-y_2 bg_secondary-n3">modified level n5 of the font color.</div></div>
 </div>
 
-Styleguide Credit Colors.CPE
+Styleguide Color Codes.Credit Colors.CPE
 */
 h1, h2, h3, h4, h5, h6, p, td, th {
   /* Safari */
@@ -2219,396 +2232,6 @@ h1, h2, h3, h4, h5, h6, p, td, th {
   opacity: 0.75;
 }
 
-/*
-  Table
-
-  There is a basic styling around the pure DOM of a table.   But to get full brand styling alter the parent tag to <table class='table'>.
-
-  markup:
-  <table>
-    <thead>
-      <tr>
-        <th>Table Header</th>
-        <th>Table Header</th>
-        <th>Table Header</th>
-        <th>Table Header</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Content Goes Here</td>
-        <td>This is longer content Donec id elit non mi porta gravida at eget metus.</td>
-        <td>Content Goes Here</td>
-        <td>Content Goes Here</td>
-      </tr>
-      <tr>
-        <td>Content Goes Here</td>
-        <td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
-        <td>Content Goes Here</td>
-        <td>Content Goes Here</td>
-      </tr>
-      <tr>
-        <td>Content Goes Here</td>
-        <td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
-        <td>Content Goes Here</td>
-        <td>Content Goes Here</td>
-      </tr>
-    </tbody>
-  </table>
-
- Styleguide HTML.Table
-*/
-/*
-
-Table Styled
-
-<table class='table'> will style the table with the generic branded coloring and spacing. 
-
-markup:
-<table class="table">
-  <thead class="thead">
-    <tr>
-      <th>table header</th>
-      <th>table header</th>
-      <th>table header</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>table row 1 table cell A
-        <br>
-        <small class="c_primary">this is small text in blue</small>
-      </td>
-      <td>table row 1 table cell B
-        <br>
-        <small class="c_highlight">this is small text with magenta</small>
-      </td>
-      <td>table row 1 table cell C</td>
-    </tr>
-    <tr>
-      <td>table row 2 table cell A</td>
-      <td>table row 2 table cell B</td>
-      <td>table row 2 table cell C</td>
-    </tr>
-  </tbody>
-  <tfoot class="tfoot">
-    <tr>
-      <td colspan="3">footer cell</td>
-    </tr>
-  </tfoot>
-</table>
-
-Styleguide HTML.Table.BasicStyle
-*/
-.table {
-  border-spacing: 0;
-}
-.table .thead,
-.table thead {
-  background-color: white;
-}
-.table .thead th,
-.table .thead td,
-.table thead th,
-.table thead td {
-  border-bottom: 2px solid #1faed7;
-}
-.table .tfoot,
-.table tfoot {
-  background-color: #f0f0f1;
-}
-.table .tfoot th,
-.table .tfoot td,
-.table tfoot th,
-.table tfoot td {
-  border-top: 1px solid #7c8089;
-  font-style: italic;
-}
-
-/*
-
-Table Column Shaded
-
-`<table class="table column-shaded">` gives a blue tint to every other column in the table.
-
-
-
-markup:
-<table class="table column-shaded">
-  <thead>
-    <tr>
-      <th>table header</th>
-      <th>table header</th>
-      <th>table header</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>row 1 cell A</td>
-      <td>row 1 cell B</td>
-      <td>row 1 cell C</td>
-    </tr>
-    <tr>
-      <td>row 2 cell A</td>
-      <td>row 2 cell B</td>
-      <td>row 2 cell C</td>
-    </tr>
-    <tr>
-      <td>row 3 cell A</td>
-      <td>row 3 cell B</td>
-      <td>row 3 cell C</td>
-    </tr>
-  </tbody>
-  <tfoot>
-    <tr>
-      <td colspan="3">footer cell</td>
-    </tr>
-  </tfoot>
-</table>
-
-Styleguide HTML.Table.ColumnShaded
-*/
-.table.column-shaded .thead th:nth-child(even),
-.table.column-shaded thead th:nth-child(even) {
-  background-color: #d7ecff;
-}
-.table.column-shaded .tbody td:nth-child(even),
-.table.column-shaded tbody td:nth-child(even) {
-  background-color: #e4f6fb;
-}
-.table.column-shaded .tbody tr:nth-child(even) td:nth-child(even),
-.table.column-shaded tbody tr:nth-child(even) td:nth-child(even) {
-  background-color: #a6d5ff;
-}
-
-/*
-
-
-Table Unshaded
-
-`<table class="table unshaded"> removes the shadding for rows and footer giving a cleaner table. This table type is great for small data sets and removes the 100% wide table that is default in all other tables.  
-
-markup:
-<table class="table unshaded">
-  <thead>
-    <tr>
-      <th>table header</th>
-      <th>table header</th>
-      <th>table header</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>row 1 cell A</td>
-      <td>row 1 cell B</td>
-      <td>row 1 cell C</td>
-    </tr>
-    <tr>
-      <td>row 2 cell A</td>
-      <td>row 2 cell B</td>
-      <td>row 2 cell C</td>
-    </tr>
-    <tr>
-      <td>row 3 cell A</td>
-      <td>row 3 cell B</td>
-      <td>row 3 cell C</td>
-    </tr>
-  </tbody>
-  <tfoot>
-    <tr>
-      <td colspan="3">footer cell</td>
-    </tr>
-  </tfoot>
-</table>
-
-Styleguide HTML.Table.Unshaded
-*/
-.table.unshaded {
-  width: auto;
-  border: none;
-}
-.table.unshaded thead {
-  border-top: none;
-  border-right: none;
-  border-left: none;
-}
-.table.unshaded tbody tr:nth-child(even) {
-  background-color: unset;
-}
-.table.unshaded tbody tr + tr td {
-  border-top: 1px #f0f0f1 solid;
-}
-.table.unshaded tfoot {
-  background-color: unset;
-}
-
-/*
-
-Table Column Shading: recipe
-
-Table shading can be much more dynamic and varied if you are willing to build with utlity classes(UC's). You can see few variations of tables bellow that have been quickly been made with a basic table and background color classes applied to cells. 
-
-.primary          - column colored variations of primary
-.info             - column colored variations of info 
-.accent      - column colored variations of highlighted 
-
-markup:
-<table class="table">
-  <thead>
-    <tr>
-      <th>table header</th>
-      <th class="bg_{{modifier_class}}-4">table header</th>
-      <th>table header</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>row 1 cell A</td>
-      <td class="bg_{{modifier_class}}-5">row 1 cell B</td>
-      <td>row 1 cell C</td>
-    </tr>
-    <tr>
-      <td>row 2 cell A</td>
-      <td class="bg_{{modifier_class}}-4">row 2 cell B</td>
-      <td>row 2 cell C</td>
-    </tr>
-    <tr>
-      <td>row 3 cell A</td>
-      <td class="bg_{{modifier_class}}-5">row 3 cell B</td>
-      <td>row 3 cell C</td>
-    </tr>
-  </tbody>
-  <tfoot>
-    <tr>
-      <td colspan="3">footer cell</td>
-    </tr>
-  </tfoot>
-</table>
-
-Styleguide HTML.Table.UtilityClasses.Shading
-*/
-/*
-Table Cell States: RECIPE
-
-States can be easily applied to the tables using UC's
-
-
-markup:
-<table class="table">
-  <tr>
-    <td class="bg_alert-4 border_solid border-width_1 border_alert font-weight_bold text_center">
-      <i class="fas fa-times-circle"></i>
-    </td>
-    <td class="">
-    </td>
-    <td class="">Text</td>
-    <td class="bg_warning-4 border_solid border-width_1 border_warning font-weight_bold">
-      <i class="fas fa-exclamation-triangle"></i> Warning</td>
-  </tr>
-  <tr>
-    <td class="">
-    </td>
-    <td class="bg_info-4 border_solid border-width_1 border_info font-weight_bold text_center">
-      <i class="fas fa-lightbulb-exclamation"></i>
-    </td>
-    <td class="">Text</td>
-    <td class="bg_info-4 border_solid border-width_1 border_info font-weight_bold">
-      <i class="fas fa-lightbulb-exclamation"></i>
-      Info</td>
-  </tr>
-  <tr>
-    <td class="">
-    </td>
-    <td class="warning icon">
-    </td>  
-    <td class="bg_alert-4 border_solid border-width_1 border_alert font-weight_bold">Alert</td>
-    <td class=""> Text</td>
-  </tr>
-  <tr>
-    <td class="success icon">
-    </td>
-    <td class="info icon">
-    </td>
-    <td class="bg_success-4 border_solid border-width_1 border_success font-weight_bold"><i class="fas fa-check"></i> Success</td>
-    <td class=""> text</td>
-  </tr>
-</table>
-
-Styleguide HTML.Table.UtilityClasses.CellStates
-*/
-/*
-
-Table Seperators: RECIPE
-
-Styling seperators on tables is now completely controled by utility classes giving much more flexablity to designs.
-
-
-
-markup:
-<table class="table stripped">
-  <thead>
-    <tr>
-      <th>table header</th>
-      <th>table header</th>
-      <th>table header</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>row 1 cell A</td>
-      <td>row 1 cell B</td>
-      <td>row 1 cell C</td>
-    </tr>
-    <tr class="bg_info-1 border_solid border-left-width_0  border-right-width_0 border-width_1 border border_info font-weight_bold font_n2 text-left c_white">
-      <td colspan='3' class="p_2">Separator With Info</td>
-    </tr>
-    <tr>
-      <td>row 1 cell A</td>
-      <td>row 1 cell B</td>
-      <td>row 1 cell C</td>
-    </tr>
-    <tr class="bg_success-1 border_solid border-left-width_0  border-right-width_0 border-width_1 border border_success font-weight_bold font_n2 text-left c_white">
-      <td colspan='3' class="p_2">Separator With success</td>
-    </tr>
-    <tr>
-      <td>row 1 cell A</td>
-      <td>row 1 cell B</td>
-      <td>row 1 cell C</td>
-    </tr>
-    <tr class="bg_alert-1 border_solid border-left-width_0 border-right-width_0 border-width_1 border border_alert font-weight_bold font_n2 text-left c_white">
-      <td colspan='3' class="p_2">Separator With Alert</td>
-    </tr>
-    <tr>
-      <td>row 1 cell A</td>
-      <td>row 1 cell B</td>
-      <td>row 1 cell C</td>
-    </tr>
-   <tr class="bg_warning-1 border_solid border-left-width_0  border-right-width_0 border-width_1 border border_warning font-weight_bold font_n2 text-left">
-      <td colspan='3' class="p_2">Separator With warning</td>
-    </tr>
-    <tr>
-      <td>row 1 cell A</td>
-      <td>row 1 cell B</td>
-      <td>row 1 cell C</td>
-    </tr>
-   <tr class="bg_secondary-3 border_solid border-left-width_0  border-right-width_0 border-width_1 border border_secondary font-weight_bold font_n2 text-left">
-      <td colspan='3' class="p_2">Separator With disabled</td>
-    </tr>
-    <tr>
-      <td>row 1 cell A</td>
-      <td>row 1 cell B</td>
-      <td>row 1 cell C</td>
-    </tr>
-  </tbody>
-  <tfoot>
-    <tr>
-      <td colspan="3">footer cell</td>
-    </tr>
-  </tfoot>
-</table>
-
-Styleguide HTML.Table.UtilityClasses.RowSeperators
-*/
 /*
 Logos
 
@@ -3323,21 +2946,21 @@ Icons: Font Icons
 
  markup:
 <ul class="ul_none list m_0 p_0 flex flex_wrap justify-start items-start">
-    <li class="br_secondary-4 br_solid br_1 flex_auto w-grid_3"><div class="flex"><div class="font_5 cell w-grid_3 text_center p_3 no-underline c_inherit flex_shrink justify_center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-award"></i></div><div class="flex_auto p_4 p-y_2 self_center"><span class="c_secondary h:c_secondary-n2 text font_bold font_display">award</span></div></div></li>
-    <li class="br_secondary-4 br_solid br_1 flex_auto w-grid_3"><div class="flex"><div class="font_5 cell w-grid_3 text_center p_3 no-underline c_inherit flex_shrink justify_center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-ban"></i></div><div class="flex_auto p_4 p-y_2 self_center"><span class="c_secondary h:c_secondary-n2 text font_bold font_display">ban</span></div></div></li>
-	<li class="br_secondary-4 br_solid br_1 flex_auto w-grid_3"><div class="flex"><div class="font_5 cell w-grid_3 text_center p_3 no-underline c_inherit flex_shrink justify_center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-barcode"></i></div><div class="flex_auto p_4 p-y_2 self_center"><span class="c_secondary h:c_secondary-n2 text font_bold font_display">barcode</span></div></div></li>
-    <li class="br_secondary-4 br_solid br_1 flex_auto w-grid_3"><div class="flex"><div class="font_5 cell w-grid_3 text_center p_3 no-underline c_inherit flex_shrink justify_center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-bars"></i></div><div class="flex_auto p_4 p-y_2 self_center"><span class="c_secondary h:c_secondary-n2 text font_bold font_display">bars</span></div></div></li>
-    <li class="br_secondary-4 br_solid br_1 flex_auto w-grid_3"><div class="flex"><div class="font_5 cell w-grid_3 text_center p_3 no-underline c_inherit flex_shrink justify_center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-beer"></i></div><div class="flex_auto p_4 p-y_2 self_center"><span class="c_secondary h:c_secondary-n2 text font_bold font_display">beer</span></div></div></li>
-    <li class="br_secondary-4 br_solid br_1 flex_auto w-grid_3"><div class="flex"><div class="font_5 cell w-grid_3 text_center p_3 no-underline c_inherit flex_shrink justify_center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-bell"></i></div><div class="flex_auto p_4 p-y_2 self_center"><span class="c_secondary h:c_secondary-n2 text font_bold font_display">bell</span></div></div></li>
-	<li class="br_secondary-4 br_solid br_1 flex_auto w-grid_3"><div class="flex"><div class="font_5 cell w-grid_3 text_center p_3 no-underline c_inherit flex_shrink justify_center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-bell"></i></div><div class="flex_auto p_4 p-y_2 self_center"><span class="c_secondary h:c_secondary-n2 text font_bold font_display">bell</span></div></div></li>
-    <li class="br_secondary-4 br_solid br_1 flex_auto w-grid_3"><div class="flex"><div class="font_5 cell w-grid_3 text_center p_3 no-underline c_inherit flex_shrink justify_center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-bell-slash"></i></div><div class="flex_auto p_4 p-y_2 self_center"><span class="c_secondary h:c_secondary-n2 text font_bold font_display">bell-slash</span></div></div></li>
-    <li class="br_secondary-4 br_solid br_1 flex_auto w-grid_3"><div class="flex"><div class="font_5 cell w-grid_3 text_center p_3 no-underline c_inherit flex_shrink justify_center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-bell-slash"></i></div><div class="flex_auto p_4 p-y_2 self_center"><span class="c_secondary h:c_secondary-n2 text font_bold font_display">bell-slash</span></div></div></li>
-    <li class="br_secondary-4 br_solid br_1 flex_auto w-grid_3"><div class="flex"><div class="font_5 cell w-grid_3 text_center p_3 no-underline c_inherit flex_shrink justify_center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-bug"></i></div><div class="flex_auto p_4 p-y_2 self_center"><span class="c_secondary h:c_secondary-n2 text font_bold font_display">bug</span></div></div></li>
-    <li class="br_secondary-4 br_solid br_1 flex_auto w-grid_3"><div class="flex"><div class="font_5 cell w-grid_3 text_center p_3 no-underline c_inherit flex_shrink justify_center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-bullhorn"></i></div><div class="flex_auto p_4 p-y_2 self_center"><span class="c_secondary h:c_secondary-n2 text font_bold font_display">bullhorn</span></div></div></li>
-    <li class="br_secondary-4 br_solid br_1 flex_auto w-grid_3"><div class="flex"><div class="font_5 cell w-grid_3 text_center p_3 no-underline c_inherit flex_shrink justify_center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-bullseye"></i></div><div class="flex_auto p_4 p-y_2 self_center"><span class="c_secondary h:c_secondary-n2 text font_bold font_display">bullseye</span></div></div></li>
-    <li class="br_secondary-4 br_solid br_1 flex_auto w-grid_3"><div class="flex"><div class="font_5 cell w-grid_3 text_center p_3 no-underline c_inherit flex_shrink justify_center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-calculator"></i></div><div class="flex_auto p_4 p-y_2 self_center"><span class="c_secondary h:c_secondary-n2 text font_bold font_display">calculator</span></div></div></li>
-    <li class="br_secondary-4 br_solid br_1 flex_auto w-grid_3"><div class="flex"><div class="font_5 cell w-grid_3 text_center p_3 no-underline c_inherit flex_shrink justify_center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-calendar"></i></div><div class="flex_auto p_4 p-y_2 self_center"><span class="c_secondary h:c_secondary-n2 text font_bold font_display">calendar</span></div></div></li>
-    <li class="br_secondary-4 br_solid br_1 flex_auto w-grid_3"><div class="flex"><div class="font_5 cell w-grid_3 text_center p_3 no-underline c_inherit flex_shrink justify_center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-calendar"></i></div><div class="flex_auto p_4 p-y_2 self_center"><span class="c_secondary h:c_secondary-n2 text font_bold font_display">calendar</span></div></div></li>
+    <li class="relative br_secondary-4 br_solid br_1 flex_auto w-grid_3"><div class="flex"><div class="font_5 cell w-grid_3 text_center p_3 no-underline c_inherit flex_shrink justify_center h:bg_navigation-n3 h:c_white bg_secondary-5 exapnded-click-area"><i class="fas fa-award"></i></div><div class="flex_auto p_4 p-y_2 self_center"><span class="c_secondary h:c_secondary-n2 text font_bold font_display">award</span></div></div></li>
+    <li class="relative br_secondary-4 br_solid br_1 flex_auto w-grid_3"><div class="flex"><div class="font_5 cell w-grid_3 text_center p_3 no-underline c_inherit flex_shrink justify_center h:bg_navigation-n3 h:c_white bg_secondary-5 exapnded-click-area"><i class="fas fa-ban"></i></div><div class="flex_auto p_4 p-y_2 self_center"><span class="c_secondary h:c_secondary-n2 text font_bold font_display">ban</span></div></div></li>
+	<li class="relative br_secondary-4 br_solid br_1 flex_auto w-grid_3"><div class="flex"><div class="font_5 cell w-grid_3 text_center p_3 no-underline c_inherit flex_shrink justify_center h:bg_navigation-n3 h:c_white bg_secondary-5 exapnded-click-area"><i class="fas fa-barcode"></i></div><div class="flex_auto p_4 p-y_2 self_center"><span class="c_secondary h:c_secondary-n2 text font_bold font_display">barcode</span></div></div></li>
+    <li class="relative br_secondary-4 br_solid br_1 flex_auto w-grid_3"><div class="flex"><div class="font_5 cell w-grid_3 text_center p_3 no-underline c_inherit flex_shrink justify_center h:bg_navigation-n3 h:c_white bg_secondary-5 exapnded-click-area"><i class="fas fa-bars"></i></div><div class="flex_auto p_4 p-y_2 self_center"><span class="c_secondary h:c_secondary-n2 text font_bold font_display">bars</span></div></div></li>
+    <li class="relative br_secondary-4 br_solid br_1 flex_auto w-grid_3"><div class="flex"><div class="font_5 cell w-grid_3 text_center p_3 no-underline c_inherit flex_shrink justify_center h:bg_navigation-n3 h:c_white bg_secondary-5 exapnded-click-area"><i class="fas fa-beer"></i></div><div class="flex_auto p_4 p-y_2 self_center"><span class="c_secondary h:c_secondary-n2 text font_bold font_display">beer</span></div></div></li>
+    <li class="relative br_secondary-4 br_solid br_1 flex_auto w-grid_3"><div class="flex"><div class="font_5 cell w-grid_3 text_center p_3 no-underline c_inherit flex_shrink justify_center h:bg_navigation-n3 h:c_white bg_secondary-5 exapnded-click-area"><i class="fas fa-bell"></i></div><div class="flex_auto p_4 p-y_2 self_center"><span class="c_secondary h:c_secondary-n2 text font_bold font_display">bell</span></div></div></li>
+	<li class="relative br_secondary-4 br_solid br_1 flex_auto w-grid_3"><div class="flex"><div class="font_5 cell w-grid_3 text_center p_3 no-underline c_inherit flex_shrink justify_center h:bg_navigation-n3 h:c_white bg_secondary-5 exapnded-click-area"><i class="fas fa-bell"></i></div><div class="flex_auto p_4 p-y_2 self_center"><span class="c_secondary h:c_secondary-n2 text font_bold font_display">bell</span></div></div></li>
+    <li class="relative br_secondary-4 br_solid br_1 flex_auto w-grid_3"><div class="flex"><div class="font_5 cell w-grid_3 text_center p_3 no-underline c_inherit flex_shrink justify_center h:bg_navigation-n3 h:c_white bg_secondary-5 exapnded-click-area"><i class="fas fa-bell-slash"></i></div><div class="flex_auto p_4 p-y_2 self_center"><span class="c_secondary h:c_secondary-n2 text font_bold font_display">bell-slash</span></div></div></li>
+    <li class="relative br_secondary-4 br_solid br_1 flex_auto w-grid_3"><div class="flex"><div class="font_5 cell w-grid_3 text_center p_3 no-underline c_inherit flex_shrink justify_center h:bg_navigation-n3 h:c_white bg_secondary-5 exapnded-click-area"><i class="fas fa-bell-slash"></i></div><div class="flex_auto p_4 p-y_2 self_center"><span class="c_secondary h:c_secondary-n2 text font_bold font_display">bell-slash</span></div></div></li>
+    <li class="relative br_secondary-4 br_solid br_1 flex_auto w-grid_3"><div class="flex"><div class="font_5 cell w-grid_3 text_center p_3 no-underline c_inherit flex_shrink justify_center h:bg_navigation-n3 h:c_white bg_secondary-5 exapnded-click-area"><i class="fas fa-bug"></i></div><div class="flex_auto p_4 p-y_2 self_center"><span class="c_secondary h:c_secondary-n2 text font_bold font_display">bug</span></div></div></li>
+    <li class="relative br_secondary-4 br_solid br_1 flex_auto w-grid_3"><div class="flex"><div class="font_5 cell w-grid_3 text_center p_3 no-underline c_inherit flex_shrink justify_center h:bg_navigation-n3 h:c_white bg_secondary-5 exapnded-click-area"><i class="fas fa-bullhorn"></i></div><div class="flex_auto p_4 p-y_2 self_center"><span class="c_secondary h:c_secondary-n2 text font_bold font_display">bullhorn</span></div></div></li>
+    <li class="relative br_secondary-4 br_solid br_1 flex_auto w-grid_3"><div class="flex"><div class="font_5 cell w-grid_3 text_center p_3 no-underline c_inherit flex_shrink justify_center h:bg_navigation-n3 h:c_white bg_secondary-5 exapnded-click-area"><i class="fas fa-bullseye"></i></div><div class="flex_auto p_4 p-y_2 self_center"><span class="c_secondary h:c_secondary-n2 text font_bold font_display">bullseye</span></div></div></li>
+    <li class="relative br_secondary-4 br_solid br_1 flex_auto w-grid_3"><div class="flex"><div class="font_5 cell w-grid_3 text_center p_3 no-underline c_inherit flex_shrink justify_center h:bg_navigation-n3 h:c_white bg_secondary-5 exapnded-click-area"><i class="fas fa-calculator"></i></div><div class="flex_auto p_4 p-y_2 self_center"><span class="c_secondary h:c_secondary-n2 text font_bold font_display">calculator</span></div></div></li>
+    <li class="relative br_secondary-4 br_solid br_1 flex_auto w-grid_3"><div class="flex"><div class="font_5 cell w-grid_3 text_center p_3 no-underline c_inherit flex_shrink justify_center h:bg_navigation-n3 h:c_white bg_secondary-5 exapnded-click-area"><i class="fas fa-calendar"></i></div><div class="flex_auto p_4 p-y_2 self_center"><span class="c_secondary h:c_secondary-n2 text font_bold font_display">calendar</span></div></div></li>
+    <li class="relative br_secondary-4 br_solid br_1 flex_auto w-grid_3"><div class="flex"><div class="font_5 cell w-grid_3 text_center p_3 no-underline c_inherit flex_shrink justify_center h:bg_navigation-n3 h:c_white bg_secondary-5 exapnded-click-area"><i class="fas fa-calendar"></i></div><div class="flex_auto p_4 p-y_2 self_center"><span class="c_secondary h:c_secondary-n2 text font_bold font_display">calendar</span></div></div></li>
 </ul>
 
 
@@ -3351,15 +2974,15 @@ Icons: Solid
 
  markup:
 <ul class="ul_none list m_0 p_0 flex flex_wrap justify-start items-start">
-    <li class="br_secondary-4 br_solid br_1 flex_auto w-grid_3"><div class="flex"><div class="font_5 cell w-grid_3 text_center p_3 no-underline c_inherit flex_shrink justify_center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-award"></i></div><div class="flex_auto p_4 p-y_2 self_center"><span class="c_secondary h:c_secondary-n2 text font_bold font_display">award</span></div></div></li>
-	<li class="br_secondary-4 br_solid br_1 flex_auto w-grid_3"><div class="flex"><div class="font_5 cell w-grid_3 text_center p_3 no-underline c_inherit flex_shrink justify_center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-ban"></i></div><div class="flex_auto p_4 p-y_2 self_center"><span class="c_secondary h:c_secondary-n2 text font_bold font_display">ban</span></div></div></li>
-	<li class="br_secondary-4 br_solid br_1 flex_auto w-grid_3"><div class="flex"><div class="font_5 cell w-grid_3 text_center p_3 no-underline c_inherit flex_shrink justify_center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-barcode"></i></div><div class="flex_auto p_4 p-y_2 self_center"><span class="c_secondary h:c_secondary-n2 text font_bold font_display">barcode</span></div></div></li>
-    <li class="br_secondary-4 br_solid br_1 flex_auto w-grid_3"><div class="flex"><div class="font_5 cell w-grid_3 text_center p_3 no-underline c_inherit flex_shrink justify_center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-bars"></i></div><div class="flex_auto p_4 p-y_2 self_center"><span class="c_secondary h:c_secondary-n2 text font_bold font_display">bars</span></div></div></li>
-    <li class="br_secondary-4 br_solid br_1 flex_auto w-grid_3"><div class="flex"><div class="font_5 cell w-grid_3 text_center p_3 no-underline c_inherit flex_shrink justify_center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-beer"></i></div><div class="flex_auto p_4 p-y_2 self_center"><span class="c_secondary h:c_secondary-n2 text font_bold font_display">beer</span></div></div></li>
-    <li class="br_secondary-4 br_solid br_1 flex_auto w-grid_3"><div class="flex"><div class="font_5 cell w-grid_3 text_center p_3 no-underline c_inherit flex_shrink justify_center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-bell"></i></div><div class="flex_auto p_4 p-y_2 self_center"><span class="c_secondary h:c_secondary-n2 text font_bold font_display">bell</span></div></div></li>
-	<li class="br_secondary-4 br_solid br_1 flex_auto w-grid_3"><div class="flex"><div class="font_5 cell w-grid_3 text_center p_3 no-underline c_inherit flex_shrink justify_center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-bell"></i></div><div class="flex_auto p_4 p-y_2 self_center"><span class="c_secondary h:c_secondary-n2 text font_bold font_display">bell</span></div></div></li>
-    <li class="br_secondary-4 br_solid br_1 flex_auto w-grid_3"><div class="flex"><div class="font_5 cell w-grid_3 text_center p_3 no-underline c_inherit flex_shrink justify_center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-bell-slash"></i></div><div class="flex_auto p_4 p-y_2 self_center"><span class="c_secondary h:c_secondary-n2 text font_bold font_display">bell-slash</span></div></div></li>
-    <li class="br_secondary-4 br_solid br_1 flex_auto w-grid_3"><div class="flex"><div class="font_5 cell w-grid_3 text_center p_3 no-underline c_inherit flex_shrink justify_center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fas fa-bell-slash"></i></div><div class="flex_auto p_4 p-y_2 self_center"><span class="c_secondary h:c_secondary-n2 text font_bold font_display">bell-slash</span></div></div></li>
+    <li class="relative br_secondary-4 br_solid br_1 flex_auto w-grid_3"><div class="flex"><div class="font_5 cell w-grid_3 text_center p_3 no-underline c_inherit flex_shrink justify_center h:bg_navigation-n3 h:c_white bg_secondary-5 exapnded-click-area"><i class="fas fa-award"></i></div><div class="flex_auto p_4 p-y_2 self_center"><span class="c_secondary h:c_secondary-n2 text font_bold font_display">award</span></div></div></li>
+	<li class="relative br_secondary-4 br_solid br_1 flex_auto w-grid_3"><div class="flex"><div class="font_5 cell w-grid_3 text_center p_3 no-underline c_inherit flex_shrink justify_center h:bg_navigation-n3 h:c_white bg_secondary-5 exapnded-click-area"><i class="fas fa-ban"></i></div><div class="flex_auto p_4 p-y_2 self_center"><span class="c_secondary h:c_secondary-n2 text font_bold font_display">ban</span></div></div></li>
+	<li class="relative br_secondary-4 br_solid br_1 flex_auto w-grid_3"><div class="flex"><div class="font_5 cell w-grid_3 text_center p_3 no-underline c_inherit flex_shrink justify_center h:bg_navigation-n3 h:c_white bg_secondary-5 exapnded-click-area"><i class="fas fa-barcode"></i></div><div class="flex_auto p_4 p-y_2 self_center"><span class="c_secondary h:c_secondary-n2 text font_bold font_display">barcode</span></div></div></li>
+    <li class="relative br_secondary-4 br_solid br_1 flex_auto w-grid_3"><div class="flex"><div class="font_5 cell w-grid_3 text_center p_3 no-underline c_inherit flex_shrink justify_center h:bg_navigation-n3 h:c_white bg_secondary-5 exapnded-click-area"><i class="fas fa-bars"></i></div><div class="flex_auto p_4 p-y_2 self_center"><span class="c_secondary h:c_secondary-n2 text font_bold font_display">bars</span></div></div></li>
+    <li class="relative br_secondary-4 br_solid br_1 flex_auto w-grid_3"><div class="flex"><div class="font_5 cell w-grid_3 text_center p_3 no-underline c_inherit flex_shrink justify_center h:bg_navigation-n3 h:c_white bg_secondary-5 exapnded-click-area"><i class="fas fa-beer"></i></div><div class="flex_auto p_4 p-y_2 self_center"><span class="c_secondary h:c_secondary-n2 text font_bold font_display">beer</span></div></div></li>
+    <li class="relative br_secondary-4 br_solid br_1 flex_auto w-grid_3"><div class="flex"><div class="font_5 cell w-grid_3 text_center p_3 no-underline c_inherit flex_shrink justify_center h:bg_navigation-n3 h:c_white bg_secondary-5 exapnded-click-area"><i class="fas fa-bell"></i></div><div class="flex_auto p_4 p-y_2 self_center"><span class="c_secondary h:c_secondary-n2 text font_bold font_display">bell</span></div></div></li>
+	<li class="relative br_secondary-4 br_solid br_1 flex_auto w-grid_3"><div class="flex"><div class="font_5 cell w-grid_3 text_center p_3 no-underline c_inherit flex_shrink justify_center h:bg_navigation-n3 h:c_white bg_secondary-5 exapnded-click-area"><i class="fas fa-bell"></i></div><div class="flex_auto p_4 p-y_2 self_center"><span class="c_secondary h:c_secondary-n2 text font_bold font_display">bell</span></div></div></li>
+    <li class="relative br_secondary-4 br_solid br_1 flex_auto w-grid_3"><div class="flex"><div class="font_5 cell w-grid_3 text_center p_3 no-underline c_inherit flex_shrink justify_center h:bg_navigation-n3 h:c_white bg_secondary-5 exapnded-click-area"><i class="fas fa-bell-slash"></i></div><div class="flex_auto p_4 p-y_2 self_center"><span class="c_secondary h:c_secondary-n2 text font_bold font_display">bell-slash</span></div></div></li>
+    <li class="relative br_secondary-4 br_solid br_1 flex_auto w-grid_3"><div class="flex"><div class="font_5 cell w-grid_3 text_center p_3 no-underline c_inherit flex_shrink justify_center h:bg_navigation-n3 h:c_white bg_secondary-5 exapnded-click-area"><i class="fas fa-bell-slash"></i></div><div class="flex_auto p_4 p-y_2 self_center"><span class="c_secondary h:c_secondary-n2 text font_bold font_display">bell-slash</span></div></div></li>
 </ul>
 
 	Styleguide DesignBase.Icons.Solid
@@ -3372,15 +2995,15 @@ Icons: Light
 
  markup:
 <ul class="ul_none list m_0 p_0 flex flex_wrap justify-start items-start">
-    <li class="br_secondary-4 br_solid br_1 flex_auto w-grid_3"><div class="flex"><div class="font_5 cell w-grid_3 text_center p_3 no-underline c_inherit flex_shrink justify_center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fal fa-award"></i></div><div class="flex_auto p_4 p-y_2 self_center"><span class="c_secondary h:c_secondary-n2 text font_bold font_display">award</span></div></div></li>
-    <li class="br_secondary-4 br_solid br_1 flex_auto w-grid_3"><div class="flex"><div class="font_5 cell w-grid_3 text_center p_3 no-underline c_inherit flex_shrink justify_center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fal fa-ban"></i></div><div class="flex_auto p_4 p-y_2 self_center"><span class="c_secondary h:c_secondary-n2 text font_bold font_display">ban</span></div></div></li>
-	<li class="br_secondary-4 br_solid br_1 flex_auto w-grid_3"><div class="flex"><div class="font_5 cell w-grid_3 text_center p_3 no-underline c_inherit flex_shrink justify_center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fal fa-barcode"></i></div><div class="flex_auto p_4 p-y_2 self_center"><span class="c_secondary h:c_secondary-n2 text font_bold font_display">barcode</span></div></div></li>
-    <li class="br_secondary-4 br_solid br_1 flex_auto w-grid_3"><div class="flex"><div class="font_5 cell w-grid_3 text_center p_3 no-underline c_inherit flex_shrink justify_center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fal fa-bars"></i></div><div class="flex_auto p_4 p-y_2 self_center"><span class="c_secondary h:c_secondary-n2 text font_bold font_display">bars</span></div></div></li>
-    <li class="br_secondary-4 br_solid br_1 flex_auto w-grid_3"><div class="flex"><div class="font_5 cell w-grid_3 text_center p_3 no-underline c_inherit flex_shrink justify_center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fal fa-beer"></i></div><div class="flex_auto p_4 p-y_2 self_center"><span class="c_secondary h:c_secondary-n2 text font_bold font_display">beer</span></div></div></li>
-    <li class="br_secondary-4 br_solid br_1 flex_auto w-grid_3"><div class="flex"><div class="font_5 cell w-grid_3 text_center p_3 no-underline c_inherit flex_shrink justify_center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fal fa-bell"></i></div><div class="flex_auto p_4 p-y_2 self_center"><span class="c_secondary h:c_secondary-n2 text font_bold font_display">bell</span></div></div></li>
-	<li class="br_secondary-4 br_solid br_1 flex_auto w-grid_3"><div class="flex"><div class="font_5 cell w-grid_3 text_center p_3 no-underline c_inherit flex_shrink justify_center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fal fa-bell"></i></div><div class="flex_auto p_4 p-y_2 self_center"><span class="c_secondary h:c_secondary-n2 text font_bold font_display">bell</span></div></div></li>
-    <li class="br_secondary-4 br_solid br_1 flex_auto w-grid_3"><div class="flex"><div class="font_5 cell w-grid_3 text_center p_3 no-underline c_inherit flex_shrink justify_center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fal fa-bell-slash"></i></div><div class="flex_auto p_4 p-y_2 self_center"><span class="c_secondary h:c_secondary-n2 text font_bold font_display">bell-slash</span></div></div></li>
-    <li class="br_secondary-4 br_solid br_1 flex_auto w-grid_3"><div class="flex"><div class="font_5 cell w-grid_3 text_center p_3 no-underline c_inherit flex_shrink justify_center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="fal fa-bell-slash"></i></div><div class="flex_auto p_4 p-y_2 self_center"><span class="c_secondary h:c_secondary-n2 text font_bold font_display">bell-slash</span></div></div></li>
+    <li class="relative br_secondary-4 br_solid br_1 flex_auto w-grid_3"><div class="flex"><div class="font_5 cell w-grid_3 text_center p_3 no-underline c_inherit flex_shrink justify_center h:bg_navigation-n3 h:c_white bg_secondary-5 exapnded-click-area"><i class="fal fa-award"></i></div><div class="flex_auto p_4 p-y_2 self_center"><span class="c_secondary h:c_secondary-n2 text font_bold font_display">award</span></div></div></li>
+    <li class="relative br_secondary-4 br_solid br_1 flex_auto w-grid_3"><div class="flex"><div class="font_5 cell w-grid_3 text_center p_3 no-underline c_inherit flex_shrink justify_center h:bg_navigation-n3 h:c_white bg_secondary-5 exapnded-click-area"><i class="fal fa-ban"></i></div><div class="flex_auto p_4 p-y_2 self_center"><span class="c_secondary h:c_secondary-n2 text font_bold font_display">ban</span></div></div></li>
+	<li class="relative br_secondary-4 br_solid br_1 flex_auto w-grid_3"><div class="flex"><div class="font_5 cell w-grid_3 text_center p_3 no-underline c_inherit flex_shrink justify_center h:bg_navigation-n3 h:c_white bg_secondary-5 exapnded-click-area"><i class="fal fa-barcode"></i></div><div class="flex_auto p_4 p-y_2 self_center"><span class="c_secondary h:c_secondary-n2 text font_bold font_display">barcode</span></div></div></li>
+    <li class="relative br_secondary-4 br_solid br_1 flex_auto w-grid_3"><div class="flex"><div class="font_5 cell w-grid_3 text_center p_3 no-underline c_inherit flex_shrink justify_center h:bg_navigation-n3 h:c_white bg_secondary-5 exapnded-click-area"><i class="fal fa-bars"></i></div><div class="flex_auto p_4 p-y_2 self_center"><span class="c_secondary h:c_secondary-n2 text font_bold font_display">bars</span></div></div></li>
+    <li class="relative br_secondary-4 br_solid br_1 flex_auto w-grid_3"><div class="flex"><div class="font_5 cell w-grid_3 text_center p_3 no-underline c_inherit flex_shrink justify_center h:bg_navigation-n3 h:c_white bg_secondary-5 exapnded-click-area"><i class="fal fa-beer"></i></div><div class="flex_auto p_4 p-y_2 self_center"><span class="c_secondary h:c_secondary-n2 text font_bold font_display">beer</span></div></div></li>
+    <li class="relative br_secondary-4 br_solid br_1 flex_auto w-grid_3"><div class="flex"><div class="font_5 cell w-grid_3 text_center p_3 no-underline c_inherit flex_shrink justify_center h:bg_navigation-n3 h:c_white bg_secondary-5 exapnded-click-area"><i class="fal fa-bell"></i></div><div class="flex_auto p_4 p-y_2 self_center"><span class="c_secondary h:c_secondary-n2 text font_bold font_display">bell</span></div></div></li>
+	<li class="relative br_secondary-4 br_solid br_1 flex_auto w-grid_3"><div class="flex"><div class="font_5 cell w-grid_3 text_center p_3 no-underline c_inherit flex_shrink justify_center h:bg_navigation-n3 h:c_white bg_secondary-5 exapnded-click-area"><i class="fal fa-bell"></i></div><div class="flex_auto p_4 p-y_2 self_center"><span class="c_secondary h:c_secondary-n2 text font_bold font_display">bell</span></div></div></li>
+    <li class="relative br_secondary-4 br_solid br_1 flex_auto w-grid_3"><div class="flex"><div class="font_5 cell w-grid_3 text_center p_3 no-underline c_inherit flex_shrink justify_center h:bg_navigation-n3 h:c_white bg_secondary-5 exapnded-click-area"><i class="fal fa-bell-slash"></i></div><div class="flex_auto p_4 p-y_2 self_center"><span class="c_secondary h:c_secondary-n2 text font_bold font_display">bell-slash</span></div></div></li>
+    <li class="relative br_secondary-4 br_solid br_1 flex_auto w-grid_3"><div class="flex"><div class="font_5 cell w-grid_3 text_center p_3 no-underline c_inherit flex_shrink justify_center h:bg_navigation-n3 h:c_white bg_secondary-5 exapnded-click-area"><i class="fal fa-bell-slash"></i></div><div class="flex_auto p_4 p-y_2 self_center"><span class="c_secondary h:c_secondary-n2 text font_bold font_display">bell-slash</span></div></div></li>
 </ul>
 
 	Styleguide DesignBase.Icons.Light
@@ -3393,37 +3016,19 @@ Icons: Regular
 
  markup:
 <ul class="ul_none list m_0 p_0 flex flex_wrap justify-start items-start">
-    <li class="br_secondary-4 br_solid br_1 flex_auto w-grid_3"><div class="flex"><div class="font_5 cell w-grid_3 text_center p_3 no-underline c_inherit flex_shrink justify_center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="far fa-award"></i></div><div class="flex_auto p_4 p-y_2 self_center"><span class="c_secondary h:c_secondary-n2 text font_bold font_display">award</span></div></div></li>
-    <li class="br_secondary-4 br_solid br_1 flex_auto w-grid_3"><div class="flex"><div class="font_5 cell w-grid_3 text_center p_3 no-underline c_inherit flex_shrink justify_center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="far fa-ban"></i></div><div class="flex_auto p_4 p-y_2 self_center"><span class="c_secondary h:c_secondary-n2 text font_bold font_display">ban</span></div></div></li>
-	<li class="br_secondary-4 br_solid br_1 flex_auto w-grid_3"><div class="flex"><div class="font_5 cell w-grid_3 text_center p_3 no-underline c_inherit flex_shrink justify_center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="far fa-barcode"></i></div><div class="flex_auto p_4 p-y_2 self_center"><span class="c_secondary h:c_secondary-n2 text font_bold font_display">barcode</span></div></div></li>
-    <li class="br_secondary-4 br_solid br_1 flex_auto w-grid_3"><div class="flex"><div class="font_5 cell w-grid_3 text_center p_3 no-underline c_inherit flex_shrink justify_center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="far fa-bars"></i></div><div class="flex_auto p_4 p-y_2 self_center"><span class="c_secondary h:c_secondary-n2 text font_bold font_display">bars</span></div></div></li>
-    <li class="br_secondary-4 br_solid br_1 flex_auto w-grid_3"><div class="flex"><div class="font_5 cell w-grid_3 text_center p_3 no-underline c_inherit flex_shrink justify_center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="far fa-beer"></i></div><div class="flex_auto p_4 p-y_2 self_center"><span class="c_secondary h:c_secondary-n2 text font_bold font_display">beer</span></div></div></li>
-    <li class="br_secondary-4 br_solid br_1 flex_auto w-grid_3"><div class="flex"><div class="font_5 cell w-grid_3 text_center p_3 no-underline c_inherit flex_shrink justify_center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="far fa-bell"></i></div><div class="flex_auto p_4 p-y_2 self_center"><span class="c_secondary h:c_secondary-n2 text font_bold font_display">bell</span></div></div></li>
-	<li class="br_secondary-4 br_solid br_1 flex_auto w-grid_3"><div class="flex"><div class="font_5 cell w-grid_3 text_center p_3 no-underline c_inherit flex_shrink justify_center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="far fa-bell"></i></div><div class="flex_auto p_4 p-y_2 self_center"><span class="c_secondary h:c_secondary-n2 text font_bold font_display">bell</span></div></div></li>
-    <li class="br_secondary-4 br_solid br_1 flex_auto w-grid_3"><div class="flex"><div class="font_5 cell w-grid_3 text_center p_3 no-underline c_inherit flex_shrink justify_center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="far fa-bell-slash"></i></div><div class="flex_auto p_4 p-y_2 self_center"><span class="c_secondary h:c_secondary-n2 text font_bold font_display">bell-slash</span></div></div></li>
-    <li class="br_secondary-4 br_solid br_1 flex_auto w-grid_3"><div class="flex"><div class="font_5 cell w-grid_3 text_center p_3 no-underline c_inherit flex_shrink justify_center h:bg_navigation-n3 h:c_white bg_secondary-5"><i class="far fa-bell-slash"></i></div><div class="flex_auto p_4 p-y_2 self_center"><span class="c_secondary h:c_secondary-n2 text font_bold font_display">bell-slash</span></div></div></li>
+    <li class="relative br_secondary-4 br_solid br_1 flex_auto w-grid_3"><div class="flex"><div class="font_5 cell w-grid_3 text_center p_3 no-underline c_inherit flex_shrink justify_center h:bg_navigation-n3 h:c_white bg_secondary-5 exapnded-click-area"><i class="far fa-award"></i></div><div class="flex_auto p_4 p-y_2 self_center"><span class="c_secondary h:c_secondary-n2 text font_bold font_display">award</span></div></div></li>
+    <li class="relative br_secondary-4 br_solid br_1 flex_auto w-grid_3"><div class="flex"><div class="font_5 cell w-grid_3 text_center p_3 no-underline c_inherit flex_shrink justify_center h:bg_navigation-n3 h:c_white bg_secondary-5 exapnded-click-area"><i class="far fa-ban"></i></div><div class="flex_auto p_4 p-y_2 self_center"><span class="c_secondary h:c_secondary-n2 text font_bold font_display">ban</span></div></div></li>
+	<li class="relative br_secondary-4 br_solid br_1 flex_auto w-grid_3"><div class="flex"><div class="font_5 cell w-grid_3 text_center p_3 no-underline c_inherit flex_shrink justify_center h:bg_navigation-n3 h:c_white bg_secondary-5 exapnded-click-area"><i class="far fa-barcode"></i></div><div class="flex_auto p_4 p-y_2 self_center"><span class="c_secondary h:c_secondary-n2 text font_bold font_display">barcode</span></div></div></li>
+    <li class="relative br_secondary-4 br_solid br_1 flex_auto w-grid_3"><div class="flex"><div class="font_5 cell w-grid_3 text_center p_3 no-underline c_inherit flex_shrink justify_center h:bg_navigation-n3 h:c_white bg_secondary-5 exapnded-click-area"><i class="far fa-bars"></i></div><div class="flex_auto p_4 p-y_2 self_center"><span class="c_secondary h:c_secondary-n2 text font_bold font_display">bars</span></div></div></li>
+    <li class="relative br_secondary-4 br_solid br_1 flex_auto w-grid_3"><div class="flex"><div class="font_5 cell w-grid_3 text_center p_3 no-underline c_inherit flex_shrink justify_center h:bg_navigation-n3 h:c_white bg_secondary-5 exapnded-click-area"><i class="far fa-beer"></i></div><div class="flex_auto p_4 p-y_2 self_center"><span class="c_secondary h:c_secondary-n2 text font_bold font_display">beer</span></div></div></li>
+    <li class="relative br_secondary-4 br_solid br_1 flex_auto w-grid_3"><div class="flex"><div class="font_5 cell w-grid_3 text_center p_3 no-underline c_inherit flex_shrink justify_center h:bg_navigation-n3 h:c_white bg_secondary-5 exapnded-click-area"><i class="far fa-bell"></i></div><div class="flex_auto p_4 p-y_2 self_center"><span class="c_secondary h:c_secondary-n2 text font_bold font_display">bell</span></div></div></li>
+	<li class="relative br_secondary-4 br_solid br_1 flex_auto w-grid_3"><div class="flex"><div class="font_5 cell w-grid_3 text_center p_3 no-underline c_inherit flex_shrink justify_center h:bg_navigation-n3 h:c_white bg_secondary-5 exapnded-click-area"><i class="far fa-bell"></i></div><div class="flex_auto p_4 p-y_2 self_center"><span class="c_secondary h:c_secondary-n2 text font_bold font_display">bell</span></div></div></li>
+    <li class="relative br_secondary-4 br_solid br_1 flex_auto w-grid_3"><div class="flex"><div class="font_5 cell w-grid_3 text_center p_3 no-underline c_inherit flex_shrink justify_center h:bg_navigation-n3 h:c_white bg_secondary-5 exapnded-click-area"><i class="far fa-bell-slash"></i></div><div class="flex_auto p_4 p-y_2 self_center"><span class="c_secondary h:c_secondary-n2 text font_bold font_display">bell-slash</span></div></div></li>
+    <li class="relative br_secondary-4 br_solid br_1 flex_auto w-grid_3"><div class="flex"><div class="font_5 cell w-grid_3 text_center p_3 no-underline c_inherit flex_shrink justify_center h:bg_navigation-n3 h:c_white bg_secondary-5 exapnded-click-area"><i class="far fa-bell-slash"></i></div><div class="flex_auto p_4 p-y_2 self_center"><span class="c_secondary h:c_secondary-n2 text font_bold font_display">bell-slash</span></div></div></li>
 </ul>
 
 
 	Styleguide DesignBase.Icons.Regular
-*/
-/*
-
- Basic HTML
-
- Arches is strongly based on semantic HTML so much of the design will come together with basic structured html and minimal classes.  The product uses zurb foundation so please read and understand its documentation to see how many of the basic items should be constructed  before you manipulate with utiltiy classes or create new css.  
-
- Weight: -10
-
- Styleguide HTML
-
-*/
-/*
-Navigation Components
-
-Most of the intranet is a collection of content you navigate in between.   Here are some useful components that allow for that type of task. 
-
- Styleguide Navigation
 */
 /*
 InteractiveExtras
@@ -3433,18 +3038,29 @@ Interactions can be enhanced with toggle icons or loading graphics to show the s
  Styleguide InteractiveExtras
 */
 /*
- Question Block
 
-The Question has been stripped back to the basic inplementation from zurb foundation. Utility classes have been applied to the decorate the desgin and make it look more robust.
+ Basic HTML
 
- Styleguide Questions
-*/
-/*
-Containers
+ Arches is strongly based on utility classes styling everything so it commonly just builds on either the base of the browser defaults or the defaults of the framework that is built on. This is a kitchen sink of html elements so you can see how this variation will effect html. There is No basic styling around the pure DOM with the utlity class only.  To get full brand styling use a framework based version of arches.  
 
- Structured containers to bring content and ui together.
+markup:
+<main><section><hgroup><h1>h1 HTML5 Kitchen Sink</h1><h2>h2 Back in my quaint <a href="#">garden</a></h2><h3>h3 Jaunty <a href="#">zinnias</a> vie with flaunting phlox</h3><h4>h4 Five or six big jet planes zoomed quickly by the new tower.</h4><h5>h5 Expect skilled signwriters to use many jazzy, quaint old alphabets effectively.</h5><h6>h6 Pack my box with five dozen liquor jugs.</h6></hgroup></section><hr><section><header><nav><ul><li><a href="#">Home</a></li><li><a href="#">About</a></li><li><a href="#">Contact</a></li></ul></nav></header><article><p>This paragraph is nested inside an article. It contains many different, sometimes useful, <a href="https://www.w3schools.com/tags/">HTML5 tags</a>. Of course there are classics like <em>emphasis</em>, <strong>strong</strong>, and <small>small</small> but there are many others as well. Hover the following text for abbreviation tag: <abbr title="abbreviation">abbr</abbr>. Similarly, you can use acronym tag like this: <acronym title="For The Win">ftw</acronym>. You can define <del>deleted text</del> which often gets replaced with <ins>inserted</ins> text.</p><p>You can also use <kbd>keyboard text</kbd>, which sometimes is styled similarly to the <code>&lt;code&gt;</code> or <samp>samp</samp> tags. Even more specifically, there is a tag just for <var>variables</var>. Not to be mistaken with blockquotes below, the quote tag lets you denote something as <q>quoted text</q>. Lastly don't forget the sub (H<sub>2</sub>O) and sup (E = MC<sup>2</sup>) tags.</p></article><aside>This is an aside.</aside><footer>This is footer for this section</footer></section><hr><section><blockquote><p>Blockquote: I quickly explained that many big jobs involve few hazards</p></blockquote><blockquote><p>This is a mult-line blockquote with a cite reference. People think focus means saying yes to the thing you’ve got to focus on. But that’s not what it means at all. It means saying no to the hundred other good ideas that there are. You have to pick carefully. I’m actually as proud of the things we haven’tdone as the things I have done. Innovation is saying no to 1,000 things. <cite>Steve Jobs – Apple Worldwide Developers’ Conference, 1997</cite></p></blockquote></section><hr><section><table><caption>Tables can have captions now.</caption><tbody><tr><th>Person</th><th>Number</th><th>Third Column</th></tr><tr><td>Someone Lastname</td><td>900</td><td>Nullam quis risus eget urna mollis ornare vel eu leo.</td></tr><tr><td><a href="#">Person Name</a></td><td>1200</td><td>Vestibulum id ligula porta felis euismod semper. Donec ullamcorper nulla non metus auctor fringilla.</td></tr><tr><td>Another Person</td><td>1500</td><td>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Nullam id dolor id nibh ultricies vehicula ut id elit.</td></tr><tr><td>Last One</td><td>2800</td><td>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</td></tr></tbody></table></section><hr><section><dl><dt>Definition List Title</dt><dd>Definition list division.</dd><dt>Kitchen Sink</dt><dd>Used in expressions to describe work in which all conceivable (and some inconceivable) sources have been mined. In this case, a bunch of markup.</dd><dt>aside</dt><dd>Defines content aside from the page content</dd><dt>blockquote</dt><dd>Defines a section that is quoted from another source</dd></dl></section><hr><section><ul><li>Unordered List item one<ul><li>Nested list item<ul><li>Level 3, item one</li><li>Level 3, item two</li><li>Level 3, item three</li><li>Level 3, item four</li></ul></li><li>List item two</li><li>List item three</li><li>List item four</li></ul></li><li>List item two</li><li>List item three</li><li>List item four</li></ul><hr><ol><li>List item one<ol><li>List item one<ol><li>List item one</li><li>List item two</li><li>List item three</li><li>List item four</li></ol></li><li>List item two</li><li>List item three</li><li>List item four</li></ol></li><li>List item two</li><li>List item three</li><li>List item four</li></ol></section><hr><section><address>1 Infinite Loop<br>Cupertino, CA 95014<br>United States</address></section><hr><section><pre>
+pre {
+  display: block;
+  padding: 7px;
+  background-color: #F5F5F5;
+  border: 1px solid #E1E1E8;
+  border-radius: 3px;
+  white-space: pre-wrap;
+  word-break: break-all;
+  font-family: Menlo, Monaco;
+  line-height: 160%;
+}</pre></section><hr><figure><img src="https://www.fillmurray.com/505/314"><figcaption>Fig1. A picture of Bill Murray from <a href="https://www.fillmurray.com/">fillmurray.com</a></figcaption></figure><hr><section><form><p><label for="example-input-email">Email address</label> <input type="email" id="example-input-email" placeholder="Enter email"></p><p><label for="example-input-password1">Number</label> <input type="number" id="example-input-number" placeholder="Number"></p><p><label for="example-input-password">Password</label> <input type="password" id="example-input-password" placeholder="Password"></p><p><label for="example-input-search">Search</label> <input type="search" id="example-input-serach" placeholder="Search .."></p><p><label for="example-input-tel">Telephone number</label> <input type="tel" id="example-input-tel" placeholder="Telephone number"></p><p><label for="example-input-text">Text</label> <input type="text" id="example-input-text" placeholder="Enter some text here"></p><p><label for="example-input-url">Url</label> <input type="url" id="example-input-url" placeholder="Enter a url here"></p><p><label for="example-input-color">Color</label> <input type="color" id="example-inupt-color" placeholder="#fff"></p><p><label for="example-input-date">Date</label> <input type="date" id="example-input-date" placeholder="date"></p><p><label for="example-input-date-time">Date / Time</label> <input type="datetime" id="example-input-date-time" placeholder="date / time"></p><p><label for="example-input-date-time-local">Date / Time local</label> <input type="datetime-local" id="example-input-date-time-local" placeholder="date / time local"></p><p><label for="example-input-month">Month</label> <input type="month" id="example-input-month" placeholder="Month"></p><p><label for="example-input-week">Week</label> <input type="week" id="example-input-week" placeholder="Week"></p><p><label for="example-input-time">Time</label> <input type="time" id="example-input-time" placeholder="Time"></p><p><label for="example-select1">Example select</label> <select id="example-select1"><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></p><p><label for="example-select2">Example multiple select</label> <select multiple id="example-select2"><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></p><p><label for="example-textarea">Example textarea</label> <textarea id="example-textarea" rows="3"></textarea></p><p><label for="example-input-file">File input</label> <input type="file" id="example-input-file"></p><fieldset><legend>I am legend</legend><div><label><input type="radio" name="options-radios" id="optionsR-radios1" value="option1" checked> Option one is this and that&mdash;be sure to include why it's great</label></div><div><label><input type="radio" name="options-radios" id="options-radios2" value="option2"> Option two can be something else and selecting it will deselect option one</label></div><div><label><input type="radio" name="optionsRadios" id="options-radios3" value="option3" disabled> Option three is disabled</label></div></fieldset><fieldset><legend>I am also legend</legend><input type="checkbox"> Check me out <input type="checkbox"> Or check me out</fieldset><p><button type="button" name="button">Button</button> <input type="button" name="input" value="Input Button"> <input type="submit" name="submit" value="Submit Button"> <input type="reset" name="reset" value="Reset Button"></p></form></section></main><!-- end kitchen sink -->
 
- Styleguide Containers
+ Weight: -10
+
+ Styleguide HTML
+
 */
 .container,
 .card {
@@ -5313,6 +4929,18 @@ markup:
 Styleguide Spacing.Location
 
  */
+.t_100 {
+  top: 100%;
+}
+
+.t_auto {
+  top: auto;
+}
+
+.t_unset {
+  top: unset;
+}
+
 .t_0 {
   top: 0;
 }
@@ -5363,6 +4991,18 @@ Styleguide Spacing.Location
 .t_5 {
   top: 32px;
   top: 2rem;
+}
+
+.b_100 {
+  bottom: 100%;
+}
+
+.b_auto {
+  bottom: auto;
+}
+
+.b_unset {
+  bottom: unset;
 }
 
 .b_0 {
@@ -5417,6 +5057,18 @@ Styleguide Spacing.Location
   bottom: 2rem;
 }
 
+.l_100 {
+  left: 100%;
+}
+
+.l_auto {
+  left: auto;
+}
+
+.l_unset {
+  left: unset;
+}
+
 .l_0 {
   left: 0;
 }
@@ -5467,6 +5119,18 @@ Styleguide Spacing.Location
 .l_5 {
   left: 32px;
   left: 2rem;
+}
+
+.r_100 {
+  right: 100%;
+}
+
+.r_auto {
+  right: auto;
+}
+
+.r_unset {
+  right: unset;
 }
 
 .r_0 {
@@ -5522,6 +5186,18 @@ Styleguide Spacing.Location
 }
 
 @media only screen and (min-width : 640px) {
+  .t_100\:md {
+    top: 100%;
+  }
+
+  .t_auto\:md {
+    top: auto;
+  }
+
+  .t_unset\:md {
+    top: unset;
+  }
+
   .t_0\:md {
     top: 0;
   }
@@ -5564,6 +5240,18 @@ Styleguide Spacing.Location
 
   .t_5\:md {
     top: 2rem;
+  }
+
+  .b_100\:md {
+    bottom: 100%;
+  }
+
+  .b_auto\:md {
+    bottom: auto;
+  }
+
+  .b_unset\:md {
+    bottom: unset;
   }
 
   .b_0\:md {
@@ -5610,6 +5298,18 @@ Styleguide Spacing.Location
     bottom: 2rem;
   }
 
+  .l_100\:md {
+    left: 100%;
+  }
+
+  .l_auto\:md {
+    left: auto;
+  }
+
+  .l_unset\:md {
+    left: unset;
+  }
+
   .l_0\:md {
     left: 0;
   }
@@ -5652,6 +5352,18 @@ Styleguide Spacing.Location
 
   .l_5\:md {
     left: 2rem;
+  }
+
+  .r_100\:md {
+    right: 100%;
+  }
+
+  .r_auto\:md {
+    right: auto;
+  }
+
+  .r_unset\:md {
+    right: unset;
   }
 
   .r_0\:md {
@@ -5699,6 +5411,18 @@ Styleguide Spacing.Location
   }
 }
 @media only screen and (min-width : 1024px) {
+  .t_100\:lg {
+    top: 100%;
+  }
+
+  .t_auto\:lg {
+    top: auto;
+  }
+
+  .t_unset\:lg {
+    top: unset;
+  }
+
   .t_0\:lg {
     top: 0;
   }
@@ -5741,6 +5465,18 @@ Styleguide Spacing.Location
 
   .t_5\:lg {
     top: 2rem;
+  }
+
+  .b_100\:lg {
+    bottom: 100%;
+  }
+
+  .b_auto\:lg {
+    bottom: auto;
+  }
+
+  .b_unset\:lg {
+    bottom: unset;
   }
 
   .b_0\:lg {
@@ -5787,6 +5523,18 @@ Styleguide Spacing.Location
     bottom: 2rem;
   }
 
+  .l_100\:lg {
+    left: 100%;
+  }
+
+  .l_auto\:lg {
+    left: auto;
+  }
+
+  .l_unset\:lg {
+    left: unset;
+  }
+
   .l_0\:lg {
     left: 0;
   }
@@ -5829,6 +5577,18 @@ Styleguide Spacing.Location
 
   .l_5\:lg {
     left: 2rem;
+  }
+
+  .r_100\:lg {
+    right: 100%;
+  }
+
+  .r_auto\:lg {
+    right: auto;
+  }
+
+  .r_unset\:lg {
+    right: unset;
   }
 
   .r_0\:lg {
@@ -5906,6 +5666,10 @@ Styleguide display
 	Styleguide display.type
 
  */
+.d_none {
+  display: none;
+}
+
 .d_block {
   display: block;
 }
@@ -5918,8 +5682,8 @@ Styleguide display
   display: inline-block;
 }
 
-.d_none {
-  display: none;
+.d_table-cell {
+  display: table-cell;
 }
 
 .d_flex {
@@ -5931,6 +5695,10 @@ Styleguide display
 }
 
 @media only screen and (min-width : 640px) {
+  .d_none\:md {
+    display: none;
+  }
+
   .d_block\:md {
     display: block;
   }
@@ -5943,8 +5711,8 @@ Styleguide display
     display: inline-block;
   }
 
-  .d_none\:md {
-    display: none;
+  .d_table-cell\:md {
+    display: table-cell;
   }
 
   .d_flex\:md {
@@ -5956,6 +5724,10 @@ Styleguide display
   }
 }
 @media only screen and (min-width : 1024px) {
+  .d_none\:lg {
+    display: none;
+  }
+
   .d_block\:lg {
     display: block;
   }
@@ -5968,8 +5740,8 @@ Styleguide display
     display: inline-block;
   }
 
-  .d_none\:lg {
-    display: none;
+  .d_table-cell\:lg {
+    display: table-cell;
   }
 
   .d_flex\:lg {
@@ -5983,7 +5755,7 @@ Styleguide display
 /*
 	Vertical Align
 
-	quickly alter the verticle alignment of the child
+	quickly alter the verticle alignment of the child. Cation the vertical only works on valid combinations. 
 
 	.vertical-align_top              		- the child is aligned to the top
 	.vertical-align_middle              	- the child is aligned to the top
@@ -5992,8 +5764,8 @@ Styleguide display
 
 
 	markup:
-	<div class="br_solid br_transparent bg_alert-3 text_center {{modifier_class}} bg_secondary_4 d-inline-block">
-		<div class="bg_primary-5 text_center  d-inline">Content</div>
+	<div class="br_solid br_transparent bg_alert-3 text_center d_table-cell w_100 {{modifier_class}} " style="height:100px;">
+		<div class="bg_primary-5 text_center d_inline-block ">Content</div>
 	</div>
 
 	Styleguide display.vertical alignment
@@ -6032,9 +5804,17 @@ Styleguide display
 		<div class="bg_primary-5 text_center flex_auto p_3 br_solid br_1 m_2 br_black">Auto 3</div>
 	</div>
 
-	Styleguide display.flex.direction
+	Styleguide display.flex
 
  */
+.flex {
+  display: flex;
+}
+
+.flex_inline {
+  display: inline-flex;
+}
+
 /* 1. Fix for Chrome 44 bug.
  * https://code.google.com/p/chromium/issues/detail?id=506893 */
 .flex_auto {
@@ -6618,16 +6398,28 @@ Styleguide display
   }
 }
 /*
-UC: Overflow
+Overflow
 
-Control some basics of the design with max-width and width.   
+Control some basics of how content overflows.   
+
+.overflow_hidden   - hidden
+.overflow_auto    - auto
+.overflow_visible    - visible
+.overflow_scroll    - scroll
+.overflow_clip    - clip
+.overflow_ellipsis    - ellipsis
+.overflow_unset   - unset
+
+	markup:
+	<div class="br_solid br_transparent bg_alert-3 max-w_1 {{modifier_class}}">
+		<p class="nowrap">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore quisquam vero, accusamus repellendus rerum sed dolorem quidem harum, neque odit dolor minima, quia et recusandae voluptatibus similique! Earum, unde laborum.</p>
+	</div>
 
 Weight: 100
 
-Styleguide Display.Overflow
+Styleguide display.overflow
 
 */
-/* No styleguide reference. */
 .overflow_hidden, .overflow_ellipsis, .overflow_clip {
   overflow: hidden;
 }
@@ -10239,7 +10031,7 @@ A subtle set of  UCs that control opacity can alter the objects level of focus.
 
 Weight: 128
 
-Styleguide Opacity
+Styleguide opacity
 
 */
 /* No styleguide reference. */
@@ -11594,12 +11386,12 @@ Add counters infront of collections without the need of an OL or UL. Counters ca
 
 Weight: 150
 
-Styleguide Counters
+Styleguide counters
 
 */
 /* No styleguide reference. */
 /*
-	Counter
+	Counter Basics
 
 	Counter can be incremented by the `counter_increment` class.  
 
@@ -11610,7 +11402,9 @@ Styleguide Counters
         <div class="bg_primary-2 p_3 m_3"><span class="font_bold counter counter_increment">:</span> Item, Object, or Section</div>
  	</div>
 
-	Styleguide Counters
+	 Weight: -100
+
+	Styleguide counters.basics
 
 */
 .counter_reset {
@@ -11642,7 +11436,7 @@ Styleguide Counters
         <div class="bg_primary-2 p_3 m_3"><span class="font_bold counter counter_increment counter_upper-alpha"></span> Item, Object, or Section</div>
  	</div>
 
-	Styleguide Counters.Sub Counters
+	Styleguide counters.sub counters
 
 */
 .counter-sub_reset {
@@ -11671,7 +11465,7 @@ Styleguide Counters
 			<div class="m_3 p_3 bg_primary-2"><span class="{{modifier_class}} font_bold counter_increment"></span> Item, Object, or Section</div>
  	</div>
 
-	Styleguide Counters.Types
+	Styleguide counters.types
 
 */
 .counter_lower-alpha:before {
@@ -11719,12 +11513,14 @@ Styleguide Counters
 	markup:
     <div class="counter_reset">
         <div class="m_3 p_3"><span class="font_bold counter counter_increment order-marker bg_primary-2"></span> Item, Object, or Section</div>
-        <div class="m_3 p_3"><span class="font_bold counter counter_increment order-marker font_10 br-tl_square br-bl_square bg_highlight-2"></span> Item, Object, or Section</div>
+        <div class="m_3 p_3"><span class="font_bold counter counter_increment order-marker font_10 br-tr_round br-br_round bg_highlight-2"></span> Item, Object, or Section</div>
         <div class="m_3 p_3"><span class="font_bold counter counter_increment order-marker bg_info-2"></span> Item, Object, or Section</div>
         <div class="m_3 p_3"><span class="font_bold counter counter_increment order-marker bg_warning-2"></span> Item, Object, or Section</div>
     </div>
 
-	Styleguide Counters.Markers
+	Weight: 100
+
+	Styleguide counters.markers
 
 */
 .order-marker {
@@ -11737,7 +11533,6 @@ Styleguide Counters
   margin-right: 0.5em;
   margin-bottom: 0;
   padding: 0.75em 0 0 0;
-  border-radius: 50%;
   line-height: 0;
   text-align: center;
   vertical-align: top;
@@ -11745,11 +11540,13 @@ Styleguide Counters
 
 /**  No Framework Recipes    *********************************/
 /*
-	recipes
+	Utility Class Recipes
 
 	Combination of UCs can make complex and rich UI elements.  Here is a collection of curated UI that can be used in projects by just following these patterns.
 
-	Styleguide Recipe.0
+	Weight: 900
+
+	Styleguide Recipe
 
 */
 /* Styleguide Recipe.010 */
@@ -11758,104 +11555,38 @@ Styleguide Counters
 
 	small list navs used in header structures of websites.
 
+	<ul class="menu quicklinks ul_none">
+		<li class="quicklinks__item br_solid br_0 br-r_1 br_primary-1 p-x_2"><a href="#" class="quicklinks__link h:bg_primary-5 c_black font_n1 lh_1 p-x_2">First</a></li>
+		<li class="quicklinks__item br_solid br_0 br-r_1 br_primary-1 p-x_2"><a href="#" class="quicklinks__link h:bg_primary-5 c_black font_n1 lh_1 p-x_2">One</a></li>
+		<li class="quicklinks__item br_solid br_0 br-r_1 br_primary-1 p-x_2"><a href="#" class="quicklinks__link h:bg_primary-5 c_black font_n1 lh_1 p-x_2">Two</a></li>
+		<li class="quicklinks__item br_solid br_0 br-r_1 br_primary-1 p-x_2"><a href="#" class="quicklinks__link h:bg_primary-5 c_black font_n1 lh_1 p-x_2">Three</a></li>
+		<li class="quicklinks__item"><a href="#" class="quicklinks__link  h:bg_primary-5 c_black font_n1 lh_1 p-x_2">End</a></li>
+	</ul>
 
-	markup: 
-	  <li class="quicklinks__item br_solid br_0 br-r_1 br_primary-1 p-x_2"><a href="#" class="quicklinks__link h:bg_primary-5 c_black font_n1 lh_1 p-x_2">One</a></li>
-
-	sg-wrapper:
-	  <ul class="menu quicklinks">
-	    <sg-wrapper-content/>
-	    <sg-wrapper-content/>
-	    <sg-wrapper-content/>
-	    <sg-wrapper-content/>
-	    <li class="quicklinks__item"><a href="#" class="quicklinks__link  h:bg_primary-5 c_black font_n1 lh_1 p-x_2">End</a></li>
-	  </ul>
-
-	Styleguide Recipe.010
+	Styleguide Recipe.quicklinks
  */
 /* Nav Recipe.00x */
 /*
-    RECIPE: Mobile Footer Nav
+    Mobile Footer Nav
 
     Placed in applications used for navigation in mobile apps.
 
     markup:
-    <div id="nav"class="bg_acc grid-x c_white shadow_3 font_2 flex">
-    <a href="#/"class="text_center p_2 flex_auto center clear c_secondary-5 c_white hover-text_primary-4 m-bottom_0 router-link-exact-active router-link-active"><i class="fas m_2 fa-sign-out-alt"></i></a>
-    <a href="#/search"class="text_center p_2 flex_auto center clear c_secondary-5 c_white hover-text_primary-4 m-bottom_0"><i class="fas m_2 fa-search"></i></a>
-    <a href="#/shared"class="text_center p_2 flex_auto center clear c_secondary-5 c_white hover-text_primary-4 m-bottom_0"><span class="fa-layers fa-fw"><i class="fas m_2 fa-share-alt-square"></i></span></a
-    ><a href="#/history"class="text_center p_2 flex_auto center clear c_secondary-5 c_white hover-text_primary-4 m-bottom_0"><span class="fa-layers fa-fw"><i class="fas m_2 fa-history"></i></span></a>
-    <a href="#/about"class="text_center p_2 flex_auto center clear c_secondary-5 c_white hover-text_primary-4 m-bottom_0"><i class="fas m_2 fa-info-square"></i></a>
+    <div class="texture-medium bg_secondary-3 relative" style="max-width:412px;max-height:732px;width:100vw;height:100vh">
+    <div id="nav" class="bg_acc c_white shadow_3 font_2 flex sticky b_0 l_0 r_0 w_100">
+        <a href="#/" class="text_center p_2 flex_auto center clear c_secondary-5 c_white hover-text_primary-4 m-bottom_0 router-link-exact-active router-link-active"><i class="fas m_2 fa-sign-out-alt"></i></a>
+        <a href="#/search" class="text_center p_2 flex_auto center clear c_secondary-5 c_white hover-text_primary-4 m-bottom_0"><i class="fas m_2 fa-search"></i></a>
+        <a href="#/shared" class="text_center p_2 flex_auto center clear c_secondary-5 c_white hover-text_primary-4 m-bottom_0"><span class="fa-layers fa-fw"><i class="fas m_2 fa-share-alt-square"></i></span></a>
+        <a href="#/history" class="text_center p_2 flex_auto center clear c_secondary-5 c_white hover-text_primary-4 m-bottom_0"><span class="fa-layers fa-fw"><i class="fas m_2 fa-history"></i></span></a>
+        <a href="#/about" class="text_center p_2 flex_auto center clear c_secondary-5 c_white hover-text_primary-4 m-bottom_0"><i class="fas m_2 fa-info-square"></i></a>
+    </div>
     </div>
 
-    Styleguide Recipe.001
+    Styleguide Recipe.mobile nav
 */
-/*
-    recipe: Button Group
-
-    markup:
-    <div class="button-group">
-        <a class="button is-active primary"><i class="far icon-toggle_check"></i> One</a>
-        <a class="button secondary"><i class="far icon-toggle_check"></i> Two</a>
-        <a class="button secondary"><i class="far icon-toggle_check"></i> Three</a>
-    </div>
-
-    Styleguide Recipe.002
-*/
-/* 
-    Grid Button Splash
-
-    markup:
-    <div class="grid-y lh_1 " style="width:412px;height: 732px; background-image:url('https://picsum.photos/412/732/?image=857')">
-        <div class="cell small-6 grid-x">
-            <div class="small-8 cell c_white p_5 lh_1 text-left">
-                <h1 class="font_5 font_display lh_1">Annual Scientific Session</h1>
-                <h2 class="font_1 font_bold">2018 | New Orleans</h2>
-            </div>
-            <div class="small-4 cell c_white text_center">
-                <div class="grid-y grid-frame">
-                    <div class="small-6 cell p-t_5 shaddow_n2 br_solid h:bg_black-8 br_white-1 br_1 bg_black-1 "><i class="fas m_2 fa-users-class font_4"></i>
-                    <div class="font_0 m-t_3">Conference</div></div>
-                    <div class="small-6 cell p-t_5 shaddow_n2 br_solid h:bg_black-8 br_white-1 br_1 bg_black-2"><i class="fas m_2 fa-users-crown font_4"></i>
-                    <div class="font_0 m-t_3">After Party</div></div>
-                </div>
-            </div>
-        </div>
-        <div class="cell small-3 grid-x">
-            <div class="small-4 cell shadow_n1 br_white-1 br_1 br_solid h:bg_black-8 bg_black-2 c_white p-t_5 text_center"><i
-                    class="fas m_2 fa-calendar-alt font_4"></i>
-                <div class="font_0 m-t_3">Events</div>
-            </div>
-            <div class="small-4 cell shadow_n2 br_white-1 br_1 br_solid h:bg_black-8 bg_black-3 c_white p-t_5 text_center"><i
-                    class="fas m_2 fa-map-marked  font_4"></i>
-                <div class="font_0 m-t_3">Maps</div>
-            </div>
-            <div class="small-4 cell shadow_n3 br_white-1 br_1 br_solid h:bg_black-8 bg_black-4 c_white p-t_5 text_center"><i
-                    class="fas m_2 fa-cogs font_4"></i>
-                <div class="font_0 m-t_3">Options</div>
-            </div>
-        </div>
-        <div class="cell small-3 grid-x">
-            <div class="small-4 cell shadow_n2 br_white-1 br_1 br_solid h:bg_black-8 bg_black-5 c_white p-t_5 text_center"><i
-                    class="fas m_2 fa-alarm-clock font_4"></i>
-                <div class="font_0 m-t_3">Upcoming</div>
-            </div>
-            <div class="small-4 cell shadow_n3 br_white-1 br_1 br_solid h:bg_black-8 bg_black-4 c_white p-t_5 text_center"><i
-                    class="fas m_2 fa-badge-check font_4"></i>
-                <div class="font_0 m-t_3">Claim Credits</div>
-            </div>
-            <div class="small-4 cell shadow_n3 br_white-1 br_1 br_solid h:bg_black-8 bg_black-6 c_white p-t_5 text_center"><i
-                    class="fas m_2 fa-chess-rook font_4"></i>
-                <div class="font_0 m-t_3">Find a Room</div>
-            </div>
-        </div>
-    </div>  
-
-    Styleguide Recipe.003
-    */
 /* Nav Recipe.04x */
 /*
-    Footer (Recipe)
+    Footer
 
 
     This defines the web footer 
@@ -11863,56 +11594,54 @@ Styleguide Counters
     markup:
         <div class="grid-container footer">
             <div class="grid-y">
-                <div class="cell p-t_3 p-b_3 p_4 grid-x br_0 br-t_3  br_solid br_secondary-n1 c_secondary-1 texture_light bg_secondary-1">
+                <div class="cell p-t_3 p-b_3 p_4 flex br_0 br-t_3  br_solid br_secondary-n1 c_secondary-1 texture_light bg_secondary-1">
                     <sg-insert>0.5</sg-insert>
                     <!-- Logo -->
                 </div>
-                <div class="cell grid-x texture_dark grid-p-x p_5-large p_4 p-b_3">
+                <div class="cell flex texture_dark grid-p-x p_5-large p_4 p-b_3">
                     <div class="cell medium-6 large-8">
-                        <sg-insert>Recipe.040.4</sg-insert>
+                        <sg-insert>Recipe.Footer.4</sg-insert>
                         <!-- Address -->
-                            <sg-insert>Recipe.040.3</sg-insert>
+                            <sg-insert>Recipe.Footer.3</sg-insert>
                             <!-- Social -->
                     </div>
                     <div class="cell medium-6 large-4">
-                        <sg-insert>Recipe.040.2</sg-insert>
+                        <sg-insert>Recipe.Footer.2</sg-insert>
                         <!-- Footer External Links -->
                     </div>
                 </div>
-                <div class="cell grid-x texture_light bg_secondary-1">
+                <div class="cell flex texture_light bg_secondary-1">
                     <div class="cell medium-12">
-                        <sg-insert>Recipe.040.5</sg-insert>
+                        <sg-insert>Recipe.Footer.5</sg-insert>
                         <!-- Footer Cite -->
                     </div>
                 </div>
             </div>
         </div>
 
-    Styleguide Recipe.040
+    Styleguide Recipe.Footer
 */
 /*
-	PARTIAL: Cite
+	Cite and Copywrite
 
 	Contains copy right 
 
 	markup:
-    <cite class="c_secondary-1 font_italic font_bold font_n1 p_3 lh_2">&copy;
-    2015 American College of Cardiology</cite>
+    <div class="texture_light bg_secondary-1 p_4">
+        <cite class="c_secondary-1 font_italic font_bold font_n1 p_3 lh_2">&copy; 2015 American College of Cardiology</cite>
+    </div>
 
-	sg-wrapper:
- 	<div class="texture_light bg_secondary-1 p_4">
- 	<sg-wrapper-content/>
- 	</div>
 
-	Styleguide Recipe.040.5
+	Styleguide Recipe.Footer.Cite
 
 */
 /*
-	PARTIAL: Footer External Nav
+	External Nav
 
 	Links to acc-websites
 
-	markup:
+    markup:
+    <div class="texture_dark">
     <section class="acc-websites row c_white p-x_3">
         <h4 class="font_slab">Improving Cardiovascular Care</h4>
         <nav class="nav-list small d_block clearfix">
@@ -11950,14 +11679,10 @@ Styleguide Counters
             </ul>
         </nav>
     </section>	
-
-	sg-wrapper:
- 	<div class="texture_dark">
- 	    <sg-wrapper-content/>
  	</div>                   
 
 
-	Styleguide Recipe.040.2
+	Styleguide Recipe.Footer.External Nav
 
 */
 /*
@@ -11966,16 +11691,18 @@ Styleguide Counters
 	The social networks that the acc is a part of 
 
 	markup:
-	<h4 class="font_slab c_white">Stay Connected</h4>
-	<ul class="grid-x social-bar no-bullet c_white h:c_white">
-	<li class="auto cell m-r_2"><a href="https://twitter.com/accintouch" target="_blank" class="twitter social-bar--button m-b_0 button expanded text_right h:bg_primary-n1"><i class="fab fa-twitter-square font_2 "></i></a></li>
-	<li class="auto cell m-r_2"><a href="https://www.facebook.com/AmericanCollegeofCardiology" target="_blank" class="facebook social-bar--button m-b_0 button expanded text_right h:bg_primary-n1"><i class="fab fa-facebook-square font_2 "></i></a></li>
-	<li class="auto cell m-r_2"><a href="https://www.linkedin.com/groups/732607/profile" target="_blank" class="linkedin social-bar--button m-b_0 button expanded text_right h:bg_primary-n1"><i class="fab fa-linkedin font_2 "></i></a></li>
-	<li class="auto cell m-r_2"><a href="https://plus.google.com/118164094874227618578" target="_blank" class="google-plus social-bar--button m-b_0 button expanded text_right h:bg_primary-n1"><i class="fab fa-google-plus font_2 "></i></a></li>
-	<li class="auto cell m-r_2"><a href="http://www.youtube.com/user/ACCinTouch" target="_blank" class="youtube social-bar--button m-b_0 button expanded text_right h:bg_primary-n1"><i class="fab fa-youtube font_2 "></i></a></li>
-	</ul>
+    <div class="texture-dark">
+        <h4 class="font_slab c_white">Stay Connected</h4>
+        <ul class="flex social-bar ul_none c_white h:c_white">
+            <li class="flex_auto m-r_2"><a href="https://twitter.com/accintouch" target="_blank" class="twitter social-bar--button d_block m-b_0 p-x_5 p-y_3 c_white-8 h:c_white text_right h:bg_primary-n1"><i class="fab fa-twitter-square font_2"></i></a></li>
+            <li class="flex_auto m-r_2"><a href="https://www.facebook.com/AmericanCollegeofCardiology" target="_blank" class="facebook social-bar--button d_block m-b_0 p-x_5 p-y_3 c_white-8 h:c_white text_right h:bg_primary-n1"><i class="fab fa-facebook-square font_2"></i></a></li>
+            <li class="flex_auto m-r_2"><a href="https://www.linkedin.com/groups/732607/profile" target="_blank" class="linkedin social-bar--button d_block m-b_0 p-x_5 p-y_3 c_white-8 h:c_white text_right h:bg_primary-n1"><i class="fab fa-linkedin font_2"></i></a></li>
+            <li class="flex_auto m-r_2"><a href="https://plus.google.com/118164094874227618578" target="_blank" class="google-plus social-bar--button d_block m-b_0 p-x_5 p-y_3 c_white-8 h:c_white text_right h:bg_primary-n1"><i class="fab fa-google-plus font_2"></i></a></li>
+            <li class="flex_auto m-r_2"><a href="http://www.youtube.com/user/ACCinTouch" target="_blank" class="youtube social-bar--button d_block m-b_0 p-x_5 p-y_3 c_white-8 h:c_white text_right h:bg_primary-n1"><i class="fab fa-youtube font_2"></i></a></li>
+        </ul>
+    </div>
 
-	Styleguide Recipe.040.3
+	Styleguide Recipe.Footer.Social Buttons
 
 */
 .twitter {
@@ -12003,13 +11730,14 @@ Styleguide Counters
 
 	Address and contact information for Heart House
 
-	markup:
+    markup:
+    <div class="texture_dark p_4">
     <section class="address c_white">
         <h3 class="font_slab font_2">American College of Cardiology</h3>
         <address>
             <!-- http://microformats.org/wiki/hcard -->
             <h4 class="font_slab font_1 m-b_4">Heart House</h4>
-            <div class="grid-x">
+            <div class="flex">
             <div class="cell medium-5 large-4">
                 <ul class="no-bullet">
                     <li class="m-b_1 m-b_3:medium font_0 font_normal">
@@ -12050,92 +11778,57 @@ Styleguide Counters
             </div>
         </address>
     </section>
-
- sg-wrapper:
- 	<div class="texture_dark p_4">
- 	<sg-wrapper-content/>
  	</div>
 
-	Styleguide Recipe.040.4
+	Styleguide Recipe.Footer.Address
 
 */
 /* content Recipe.100 */
 /*
-    RECIPE: Accordians
-
-    Accordions are elements that help you organize and navigate multiple documents in a single container. They can be used for switching between items in the container.
-
-    markup: 
-    <ul class="accordion" data-accordion>
-        <li class="accordion-item is-active" data-accordion-item>
-            <!-- Accordion tab title -->
-            <a href="#" class="accordion-title font_1 font_slab hover:bg_primary-4"><i class="fas icon-toggle_plus-minus fa-fw"></i> Accordion 1</a>
-            <!-- Accordion tab content: it would start in the open state due to using the `is-active` state class. -->
-            <div class="accordion-content" data-tab-content>
-                <p>Panel 1. Lorem ipsum dolor</p>
-                <a href="#">Nowhere to Go</a>
-            </div>
-        </li>
-        <li class="accordion-item" data-accordion-item>
-            <!-- Accordion tab title -->
-            <a href="#"class="accordion-title  font_1 font_slab hover:bg_primary-4"><i class="fas icon-toggle_plus-minus fa-fw"></i>Accordion 2</a>
-            <!-- Accordion tab content: it would start in the open state due to using the `is-active` state class. -->
-            <div class="accordion-content" data-tab-content>
-                <p>Panel 1. Lorem ipsum dolor</p>
-                <a href="#">Nowhere to Go</a>
-            </div>
-        </li>
-    </ul>
-
-    Styleguide Recipe.200
-
-*/
-/*
-  RECIPE: Ordered Cards
+  Ordered Cards
 
   Having cards order on page to help users find there way through steps can some times be very helpful. 
 
   markup:
-  <div class="card shadow_2 cell small-6 large-4">
-      <div class="grid-x font_slab  font_3 br-t_square c_white font_3 texture_dust bg_alert">
-          <div class="cell shrink p_3  bg_alert-n4"><span class="counter counter_increment font_5 lh_0 font_display c_whsite"></span></div>
-      <div class="cell auto p_3">First it is bad</div>
+  <div class="flex texture_medium counter_reset p_5">
+  <div class="card texture_light bg_white shadow_2 flex_auto m-x_3">
+      <div class="flex font_slab  font_3 br-t_square c_white font_3 texture_dust bg_alert">
+          <div class="flex_shrink p_3  bg_alert-n4"><span class="counter counter_increment font_5 lh_0 font_display c_whsite"></span></div>
+      <div class="flex_auto p_3">First it is bad</div>
       </div>
-      <div class="card-section">
+      <div class="card-section p-x_4 p-y_3">
       <h4>This is a card.</h4>
       <p>It has an easy to override visual style, and is appropriately subdued.</p>
       </div>
   </div>
-      <div class="card shadow_2 cell small-6 large-4">
-      <div class="grid-x font_slab  font_3 br-t_square c_white font_3 texture_dust bg_warning">
-          <div class="cell shrink p_3  bg_warning-n4"><span class="counter counter_increment font_5 lh_0 font_display c_whsite"></span></div>
-      <div class="cell auto p_3">Then it is not right</div>
+      <div class="card texture_light bg_white shadow_2 flex_auto m-x_3">
+      <div class="flex font_slab  font_3 br-t_square c_white font_3 texture_dust bg_warning">
+          <div class="flex_shrink p_3  bg_warning-n4"><span class="counter counter_increment font_5 lh_0 font_display c_whsite"></span></div>
+      <div class="flex_auto p_3">Then it is not right</div>
       </div>
-      <div class="card-section">
+      <div class="card-section p-x_4 p-y_3">
       <h4>This is a card.</h4>
       <p>It has an easy to override visual style, and is appropriately subdued.</p>
       </div>
   </div>
-      <div class="card shadow_2 cell small-6 large-4">
-      <div class="grid-x font_slab  font_3 br-t_square c_white font_3 texture_dust bg_success">
-          <div class="cell shrink p_3  bg_success-n4"><span class="counter counter_increment font_5 lh_0 font_display c_whsite"></span></div>
-      <div class="cell auto p_3">At last it is good</div>
+      <div class="card texture_light bg_white shadow_2 flex_auto m-x_3">
+      <div class="flex font_slab  font_3 br-t_square c_white font_3 texture_dust bg_success">
+          <div class="flex_shrink p_3  bg_success-n4"><span class="counter counter_increment font_5 lh_0 font_display c_whsite"></span></div>
+      <div class="flex_auto p_3">At last it is good</div>
       </div>
-      <div class="card-section">
+      <div class="card-section p-x_4 p-y_3">
       <h4>This is a card.</h4>
       <p>It has an easy to override visual style, and is appropriately subdued.</p>
       </div>
   </div>
+</div>
 
-  sg-wrapper: 
-  <div class="grid-x grid-margin-x grid-margin-y texture_medium counter_reset"><sg-wrapper-content/></div>
-
-  Styleguide Recipe.201
+  Styleguide Recipe.Ordered Cards
 
     */
 /* content Recipe.200 */
 /*
-    RECIPE: User Card
+    User Card
 
     Member Cards Used in the CSTool give a great represendation on how complex the UI can be with a combination of UCs
 
@@ -12191,30 +11884,31 @@ Styleguide Counters
     sg-wrapper: 
     <div class="p_5 p-t_3 p-b_3 texture_light bg_secondary-4"><sg-wrapper-content/></div>
 
-    Styleguide Recipe.100
+    Styleguide Recipe.Zurb.User Card
 */
 /* content Recipe.250 */
 /*
-    RECIPE: Guidline Section
+    Guideline Result
 
-    Seciton Results from the guideline search tool can have variations of content type but the shells have the basic content layout. 
+    Section Results from the guideline search tool can have variations of content type but the shells have the basic content layout. 
 
     section - basic layout of a result which returns a paragraph as a result
 
 
     markup:
+    <div class="p_5 p-y_4 bg_secondary-3 texture_medium">
     <article class="result {{modifier_class}} grid-container br_solid br_1 br_secondary-3 bg_white p_3">
-        <header class="grid-x font_1 font_display">
-            <div class="cell auto result-title overflow-ellipsis nowrap font_2 wrap">
+        <header class="flex font_1 font_display">
+            <div class="flex_auto result-title overflow-ellipsis nowrap font_2 wrap">
                 <span class="c_secondary-n5 font_slab"><span class="c_acc font_bold p-r_3">5.1</span>Genetic Predisposition</span><br>
                 <span class="font_italic c_secondary-3 font_n1">{{modifier_class}}</span>
             </div>
-            <div class="cell shrink LOE-COR grid-x m-l_3 font_bold">
+            <div class="cell shrink LOE-COR flex m-l_3 font_bold">
                 <div class="cell small-6 loe-II bg_primary-2 p-x_3 p-y_1">II</div>
                 <div class="cell small-6 cor-b bg_warning-2 p-x_3 p-y_1">b</div>
             </div>
         </header>
-        <nav class="grid-x font_n2 none">
+        <nav class="flex font_n2 none">
             <a href="#saveToLibrary" class="cell shrink bg_primary_5 link-fulldoc m-r_1 p-y_1 p-x_2 br_primary-5 c_secondary-n3 hover:c_white hover:bg_primary br_solid br_secondary-3 br_1 br_radius"><i
                     class="fas fa-save m-r_3"></i><span>SAVE</span></a>
             <a href="#shareResult" class="cell shrink bg_primary_5 link-pdf m-x_1 p-y_1 p-x_2 br_primary-5 c_secondary-n3 hover:c_white hover:bg_primary br_solid br_secondary-3 br_1 br_radius"><i
@@ -12228,29 +11922,27 @@ Styleguide Counters
 	</section>
         </main>
         <footer class="result-docuemnt br-t_1 br_0 br_solid br_acc-3 p-t_2 is-active bg_secondary-5 m-x_n3 p-x_4 p-y_2">
-            <div class="clear-fix document-title overflow-ellipsis font_slab c_acc-1 nowrap font_n1">
+            <div class="clear-fix overflow_ellipsis document-title overflow-ellipsis font_slab c_acc-1 nowrap font_n1">
                <i class="fas icon-toggle_chevron-up-down"></i> International Organization for Standardization. (2016). Occupational health and safety management systems—Requirements
                 with Heart
             </div>
             <div class="result-document-publish-date font_n2 c_secondary">Focused Update: March 15, 2018</div>
-            <nav class="grid-x font_n1">
+            <nav class="flex font_n1">
                 <a href="#fulldoc" class="cell shrink link-fulldoc m-r_3 p-y_2 c_secondary-n3 hover:c_primary"><i class="fas fa-share-square m-r_3"></i><span>FULL DOC</span></a>
                 <a href="#pdfdownload" class="cell shrink link-pdf m-x_3 p-y_2 c_secondary-n3 hover:c_primary"><i class="fas fa-file-pdf m-r_3"></i><span>PDF</span></a>
                 <a href="#hublink" class="cell shrink link-hub m-x_3 p-y_2 c_secondary-n3 hover:c_primary"><i class="fas fa-share-alt m-r_3"></i><span>HUB</span></a>
             </nav>
         </footer>
         <aside class="bg_secondary-4 m-x_n3 m-b_n3">
-            <div class="grid-x font_n2 c_secondary-1  p_2 p-x_4">
+            <div class="flex font_n2 c_secondary-1  p_2 p-x_4">
                 <strong class="cell shrink c_secondary"><i class="fas fa-quote"></i>cite document:&nbsp;</strong>
-                <span class="cell auto overflow-ellipsis nowrap">International Organization for Standardization. (2016). Occupational health and safety management systems—Requirements with Heart</span>
+                <span class="flex_auto overflow-ellipsis nowrap">International Organization for Standardization. (2016). Occupational health and safety management systems—Requirements with Heart</span>
             </div>
         </aside>
     </article>
+</div>
 
-    sg-wrapper: 
-    <div class="p_5 p-y_4 bg_secondary-3 texture_medium"><sg-wrapper-content/></div>
-
-    Styleguide Recipe.250
+    Styleguide Recipe.Guideline.Result
 */
 /*
     RECIPE: Guidline Section
@@ -12259,51 +11951,50 @@ Styleguide Counters
 
 
     markup:
-    <article class="result {{modifier_class}} grid-container br_solid br_1 br_secondary-3 bg_white p_3">
-        <header class="grid-x font_1 font_display">
-            <div class="cell auto result-title overflow-ellipsis nowrap font_1 wrap">
-                <span class="c_acc font_slab">Result Title</span>
-                <span class="font_italic c_secondary-3 font_n1">{{modifier_class}}</span>
-            </div>
-            <div class="cell shrink LOE-COR grid-x m-l_3 font_bold">
-                <div class="cell small-6 loe-II bg_primary-2 p-x_3 p-y_1">II</div>
-                <div class="cell small-6 cor-b bg_warning-2 p-x_3 p-y_1">b</div>
-            </div>
-        </header>
-        <nav class="grid-x font_n2">
-            <a href="#saveToLibrary" class="cell shrink bg_primary_5 link-fulldoc m-r_1 p-y_1 p-x_2 br_primary-5 c_secondary-n3 hover:c_white hover:bg_primary br_solid br_secondary-3 br_1 br_radius"><i
-                    class="fas fa-save m-r_3"></i><span>SAVE</span></a>
-            <a href="#shareResult" class="cell shrink bg_primary_5 link-pdf m-x_1 p-y_1 p-x_2 br_primary-5 c_secondary-n3 hover:c_white hover:bg_primary br_solid br_secondary-3 br_1 br_radius"><i
-                    class="fas fa-file-pdf m-r_3"></i><span>SHARE</span></a>
-            <a href="#printResult" class="cell shrink bg_primary_5 link-hub m-x_1 p-y_1 p-x_2 br_primary-5 c_secondary-n3 hover:c_white hover:bg_primary br_solid br_secondary-3 br_1 br_radius"><i
-                    class="fas fa-print m-r_3"></i><span>PRINT</span></a>
-        </nav>
-        <main class="result-content p-y_2">
-            <p class="lh_3 font_0 m-b_0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem aperiam alias explicabo impedit eius, ducimus nihil animi sapiente placeat ullam sequi, hic quod <span class="bg_highlight-4 c_highlight-n4  underline p-x_2">expedita laboriosam</span>, dolor et. Maiores, illum animi!</p>
-        </main>
-        <footer class="result-docuemnt br-t_1 br_0 br_dashed br_acc-3 p-t_2 is-active">
-            <div class="clear-fix document-title overflow-ellipsis font_slab c_acc-1 nowrap font_n1">
-               <i class="fas icon-toggle_chevron-up-down"></i> International Organization for Standardization. (2016). Occupational health and safety management systems—Requirements
-                with Heart
-            </div>
-            <div class="result-document-publish-date font_n2 c_secondary">Focused Update: March 15, 2018</div>
-            <nav class="grid-x font_n2">
-                <a href="#fulldoc" class="cell shrink link-fulldoc m-r_3 p-y_2 c_secondary-n3 hover:c_primary"><i class="fas fa-share-square m-r_3"></i><span>FULL DOC</span></a>
-                <a href="#pdfdownload" class="cell shrink link-pdf m-x_3 p-y_2 c_secondary-n3 hover:c_primary"><i class="fas fa-file-pdf m-r_3"></i><span>PDF</span></a>
-                <a href="#hublink" class="cell shrink link-hub m-x_3 p-y_2 c_secondary-n3 hover:c_primary"><i class="fas fa-share-alt m-r_3"></i><span>HUB</span></a>
+    <div class="p_5 p-t_3 p-b_3 bg_secondary-5">
+        <article class="result {{modifier_class}} grid-container br_solid br_1 br_secondary-3 bg_white p_3">
+            <header class="flex font_1 font_display">
+                <div class="flex_auto result-title overflow-ellipsis nowrap font_1 wrap">
+                    <span class="c_acc font_slab">Result Title</span>
+                    <span class="font_italic c_secondary-3 font_n1">{{modifier_class}}</span>
+                </div>
+                <div class="cell shrink LOE-COR flex m-l_3 font_bold">
+                    <div class="cell small-6 loe-II bg_primary-2 p-x_3 p-y_1">II</div>
+                    <div class="cell small-6 cor-b bg_warning-2 p-x_3 p-y_1">b</div>
+                </div>
+            </header>
+            <nav class="flex font_n2">
+                <a href="#saveToLibrary" class="cell shrink bg_primary_5 link-fulldoc m-r_1 p-y_1 p-x_2 br_primary-5 c_secondary-n3 hover:c_white hover:bg_primary br_solid br_secondary-3 br_1 br_radius"><i
+                        class="fas fa-save m-r_3"></i><span>SAVE</span></a>
+                <a href="#shareResult" class="cell shrink bg_primary_5 link-pdf m-x_1 p-y_1 p-x_2 br_primary-5 c_secondary-n3 hover:c_white hover:bg_primary br_solid br_secondary-3 br_1 br_radius"><i
+                        class="fas fa-file-pdf m-r_3"></i><span>SHARE</span></a>
+                <a href="#printResult" class="cell shrink bg_primary_5 link-hub m-x_1 p-y_1 p-x_2 br_primary-5 c_secondary-n3 hover:c_white hover:bg_primary br_solid br_secondary-3 br_1 br_radius"><i
+                        class="fas fa-print m-r_3"></i><span>PRINT</span></a>
             </nav>
-        </footer>
-        <aside class="bg_secondary-4 m-x_n3 m-b_n3">
-            <div class="grid-x font_n3 c_secondary-1  p_1 p-x_3">
-                <strong class="cell shrink c_secondary"><i class="fas fa-quote"></i>cite document:&nbsp;</strong>
-                <span class="cell auto overflow-ellipsis nowrap">International Organization for Standardization. (2016). Occupational health and safety management systems—Requirements with Heart</span>
-            </div>
-        </aside>
-    </article>
+            <main class="result-content p-y_2">
+                <p class="lh_3 font_0 m-b_0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem aperiam alias explicabo impedit eius, ducimus nihil animi sapiente placeat ullam sequi, hic quod <span class="bg_highlight-4 c_highlight-n4  underline p-x_2">expedita laboriosam</span>, dolor et. Maiores, illum animi!</p>
+            </main>
+            <footer class="result-docuemnt br-t_1 br_0 br_dashed br_acc-3 p-t_2 is-active">
+                <div class="clear-fix document-title overflow-ellipsis font_slab c_acc-1 nowrap font_n1">
+                <i class="fas icon-toggle_chevron-up-down"></i> International Organization for Standardization. (2016). Occupational health and safety management systems—Requirements
+                    with Heart
+                </div>
+                <div class="result-document-publish-date font_n2 c_secondary">Focused Update: March 15, 2018</div>
+                <nav class="flex font_n2">
+                    <a href="#fulldoc" class="cell shrink link-fulldoc m-r_3 p-y_2 c_secondary-n3 hover:c_primary"><i class="fas fa-share-square m-r_3"></i><span>FULL DOC</span></a>
+                    <a href="#pdfdownload" class="cell shrink link-pdf m-x_3 p-y_2 c_secondary-n3 hover:c_primary"><i class="fas fa-file-pdf m-r_3"></i><span>PDF</span></a>
+                    <a href="#hublink" class="cell shrink link-hub m-x_3 p-y_2 c_secondary-n3 hover:c_primary"><i class="fas fa-share-alt m-r_3"></i><span>HUB</span></a>
+                </nav>
+            </footer>
+            <aside class="bg_secondary-4 m-x_n3 m-b_n3">
+                <div class="flex font_n3 c_secondary-1  p_1 p-x_3">
+                    <strong class="cell shrink c_secondary"><i class="fas fa-quote"></i>cite document:&nbsp;</strong>
+                    <span class="flex_auto overflow-ellipsis nowrap">International Organization for Standardization. (2016). Occupational health and safety management systems—Requirements with Heart</span>
+                </div>
+            </aside>
+        </article>
+    </div>
 
-    sg-wrapper: 
-    <div class="p_5 p-t_3 p-b_3 bg_secondary-5"><sg-wrapper-content/></div>
-
-    Styleguide Recipe.250.1
+    Styleguide Recipe.Guideline.ResultAlt
 */
 /*# sourceMappingURL=maps/noframework_acc.css.map */

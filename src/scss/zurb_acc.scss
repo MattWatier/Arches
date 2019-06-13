@@ -148,23 +148,69 @@ $basicSizeMultiplier: 1rem;
 @import "components/scrollbar";
 
 @import "styleguide/styleguide";
+@import "styleguide/__basic-html.base";
 @import "structures/structures";
+@import "base/table.zurb";
 @import "components/zurb/zurb.buttons";
 @import "components/zurb/zurb.close-button.override";
 @import "components/zurb/zurb.tabs.override";
 @import "components/zurb/zurb.questions";
 @import "components/zurb/zurb.pagination.override";
+@import "styleguide/__basic-html.zurb";
 /*
-	Foudation recipes
+	Foudation Zurb Recipes
 
 	Combination of UCs and Base Components from the Framework can make an infinate amount of alterations to designs and layouts. Bellow are some alteratoins to Foudations Components with the Utiltity Classes. 
 
 	Styleguide Recipes
 
 */
-/* Styleguide recipes */
-@import "styleguide/_containers";
+/* Styleguide recipes.zurb */
+
 @import "recipes/_zurb.cards";
+@import "recipes/grid_button_splash";
+/*
+	recipe: Button Group
+
+	markup:
+	<div class="button-group">
+		<a class="button is-active primary"><i class="far icon-toggle_check"></i> One</a>
+		<a class="button secondary"><i class="far icon-toggle_check"></i> Two</a>
+		<a class="button secondary"><i class="far icon-toggle_check"></i> Three</a>
+	</div>
+
+	Styleguide Recipe.Zurb.button group
+*/
+/*
+    RECIPE: Accordians
+
+    Accordions are elements that help you organize and navigate multiple documents in a single container. They can be used for switching between items in the container.
+
+    markup: 
+    <ul class="accordion" data-accordion>
+        <li class="accordion-item is-active" data-accordion-item>
+            <!-- Accordion tab title -->
+            <a href="#" class="accordion-title font_1 font_slab hover:bg_primary-4"><i class="fas icon-toggle_plus-minus fa-fw"></i> Accordion 1</a>
+            <!-- Accordion tab content: it would start in the open state due to using the `is-active` state class. -->
+            <div class="accordion-content" data-tab-content>
+                <p>Panel 1. Lorem ipsum dolor</p>
+                <a href="#">Nowhere to Go</a>
+            </div>
+        </li>
+        <li class="accordion-item" data-accordion-item>
+            <!-- Accordion tab title -->
+            <a href="#"class="accordion-title  font_1 font_slab hover:bg_primary-4"><i class="fas icon-toggle_plus-minus fa-fw"></i>Accordion 2</a>
+            <!-- Accordion tab content: it would start in the open state due to using the `is-active` state class. -->
+            <div class="accordion-content" data-tab-content>
+                <p>Panel 1. Lorem ipsum dolor</p>
+                <a href="#">Nowhere to Go</a>
+            </div>
+        </li>
+    </ul>
+
+    Styleguide Recipe.Zurb.Accordians
+
+*/
 /**  Utility Classes    *********************************/
 @import "utility-css/utility-css";
 

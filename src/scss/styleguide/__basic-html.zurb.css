@@ -1,15 +1,5 @@
 /*
 
- Basic HTML
-
- Arches is strongly based on semantic HTML so much of the design will come together with basic structured html and minimal classes.  The product uses zurb foundation so please read and understand its documentation to see how many of the basic items should be constructed  before you manipulate with utiltiy classes or create new css.  
- 
- Styleguide HTML
-
-*/
-
-/*
-
   Switches
 
   markup:
@@ -34,7 +24,6 @@
 
   Styleguide HTML.Switches
   */
-
 /*
 
   Progress Bars
@@ -71,7 +60,6 @@
 
   Styleguide HTML.ProgressBars
   */
-
 /*
 
   Call Out Example
@@ -89,7 +77,6 @@
 
   Styleguide HTML.Callout
 */
-
 /*
 
   Accordian
@@ -123,7 +110,6 @@
 
   Styleguide Components.Accordian
 */
-
 /*
 
   Breadcrumbs
@@ -142,7 +128,6 @@
 
   Styleguide Components.Breadcrumbs
 */
-
 /*
     Tabs
 
@@ -171,7 +156,6 @@
     Styleguide Navigation.Tabs
 
 */
-
 /*
     Tabs Inset Area :recipe
 
@@ -200,7 +184,6 @@
     Styleguide Navigation.Tabs.Inset
 
 */
-
 /*
     Tabs on card :recipe
 

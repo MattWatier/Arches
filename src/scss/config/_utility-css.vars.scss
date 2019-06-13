@@ -56,6 +56,22 @@ $value-to-unit: (
 		4: 1 * $basicSizeMultiplier,
 		5: 2 * $basicSizeMultiplier
 	),
+	sizeAlt: (
+		100: 100%,
+		auto: auto,
+		unset: unset,
+		0: 0,
+		n5: -2 * $basicSizeMultiplier,
+		n4: -1 * $basicSizeMultiplier,
+		n3: -0.5 * $basicSizeMultiplier,
+		n2: -0.25 * $basicSizeMultiplier,
+		n1: -1px,
+		1: 1px,
+		2: 0.25 * $basicSizeMultiplier,
+		3: 0.5 * $basicSizeMultiplier,
+		4: 1 * $basicSizeMultiplier,
+		5: 2 * $basicSizeMultiplier
+	),
 	size-positive: (
 		0: 0,
 		1: 1px,
@@ -199,10 +215,11 @@ $value-to-unit: (
 		5: ms-calc(5, $ms-base, $golden)
 	),
 	display: (
+		none: none,
 		block: block,
 		inline: inline,
 		inline-block: inline-block,
-		none: none,
+		table-cell: table-cell,
 		flex: flex,
 		flex-inline: flex-inline
 	),
@@ -490,7 +507,7 @@ $style-definition: (
 			"bottom"
 		),
 		long-name: ".bottom",
-		unit: map-get($value-to-unit, "size")
+		unit: map-get($value-to-unit, "sizeAlt")
 	),
 	left: (
 		short-name: ".l",
@@ -498,8 +515,8 @@ $style-definition: (
 			"left"
 		),
 		long-name: ".left",
-		unit: map-get($value-to-unit, "size")
-	),	
+		unit: map-get($value-to-unit, "sizeAlt")
+	),
 	list-type: (
 		short-name: ".ul",
 		css-style: (
@@ -674,7 +691,7 @@ $style-definition: (
 			"right"
 		),
 		long-name: ".right",
-		unit: map-get($value-to-unit, "size")
+		unit: map-get($value-to-unit, "sizeAlt")
 	),
 	top: (
 		short-name: ".t",
@@ -682,7 +699,7 @@ $style-definition: (
 			"top"
 		),
 		long-name: ".top",
-		unit: map-get($value-to-unit, "size")
+		unit: map-get($value-to-unit, "sizeAlt")
 	),
 	text-shadow: (
 		short-name: ".text-shadow",

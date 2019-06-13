@@ -5,12 +5,12 @@ Add counters infront of collections without the need of an OL or UL. Counters ca
 
 Weight: 150
 
-Styleguide Counters
+Styleguide counters
 
 */
 /* No styleguide reference. */
 /*
-	Counter
+	Counter Basics
 
 	Counter can be incremented by the `counter_increment` class.  
 
@@ -21,7 +21,9 @@ Styleguide Counters
         <div class="bg_primary-2 p_3 m_3"><span class="font_bold counter counter_increment">:</span> Item, Object, or Section</div>
  	</div>
 
-	Styleguide Counters
+	 Weight: -100
+
+	Styleguide counters.basics
 
 */
 .counter_reset {
@@ -53,7 +55,7 @@ Styleguide Counters
         <div class="bg_primary-2 p_3 m_3"><span class="font_bold counter counter_increment counter_upper-alpha"></span> Item, Object, or Section</div>
  	</div>
 
-	Styleguide Counters.Sub Counters
+	Styleguide counters.sub counters
 
 */
 .counter-sub_reset {
@@ -82,7 +84,7 @@ Styleguide Counters
 			<div class="m_3 p_3 bg_primary-2"><span class="{{modifier_class}} font_bold counter_increment"></span> Item, Object, or Section</div>
  	</div>
 
-	Styleguide Counters.Types
+	Styleguide counters.types
 
 */
 .counter_lower-alpha:before {
@@ -130,16 +132,17 @@ Styleguide Counters
 	markup:
     <div class="counter_reset">
         <div class="m_3 p_3"><span class="font_bold counter counter_increment order-marker bg_primary-2"></span> Item, Object, or Section</div>
-        <div class="m_3 p_3"><span class="font_bold counter counter_increment order-marker font_10 br-tl_square br-bl_square bg_highlight-2"></span> Item, Object, or Section</div>
+        <div class="m_3 p_3"><span class="font_bold counter counter_increment order-marker font_10 br-tr_round br-br_round bg_highlight-2"></span> Item, Object, or Section</div>
         <div class="m_3 p_3"><span class="font_bold counter counter_increment order-marker bg_info-2"></span> Item, Object, or Section</div>
         <div class="m_3 p_3"><span class="font_bold counter counter_increment order-marker bg_warning-2"></span> Item, Object, or Section</div>
     </div>
 
-	Styleguide Counters.Markers
+	Weight: 100
+
+	Styleguide counters.markers
 
 */
 .order-marker {
-  border-radius: 50%;
   display: inline-block;
   height: 1.5em;
   width: 1.5em;

@@ -1,5 +1,5 @@
 {
-	"title": "No Framework UC Only",
+	"title": "Arches",
 	"mask": "noframework_acc.css",
 	"builder": "node_modules/michelangelo/kss_styleguide/custom-template/",
 	"source": "./dist/css/",

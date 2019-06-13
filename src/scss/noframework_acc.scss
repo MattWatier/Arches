@@ -136,7 +136,21 @@ $basicSizeMultiplier: 1rem;
 /** changing default names to be used with frameworks. **/
 /*
 
-Color Codes: Clinical Pathways  
+Color Codes 
+
+<div class="p-b_3"><span class="bg_alert br_radius c_white d_inline-block font_n1 p-7_3 p-x_5 sg">Is Extra Style Sheets Must Be Included</span></div>Color Codes are sepereate style sheets that give you access to decorating classes created with the color pallete.
+
+
+
+Weight: 2000
+
+Styleguide Color Codes
+
+*/
+
+/*
+
+Clinical Pathways  
 
 Each of the clinical pathways has a distinctive color.  These colors are used to give a distinct theme to our clinical apps, marketing, pdf's and tools.
 
@@ -157,13 +171,13 @@ $pathway-special 										- #{$pathway-special};  Special
 
 Weight: 300
 
-Styleguide Pathway Colors
+Styleguide Color Codes.Pathway Colors
 
 */
 
 @each $color-name, $color in $PathwayColors {
-  $color-name-alt: $color-name;
-  /*
+	$color-name-alt: $color-name;
+	/*
 
 "#{$color-name-alt }" Decorator Classes 
 
@@ -215,13 +229,13 @@ Font, Border and Background Colors using #{$color-name-alt }
 </div>
 
 
-Styleguide Pathway Colors.#{$color-name-alt }
+Styleguide Color Codes.Pathway Colors.#{$color-name-alt }
 */
 }
 
 /*
 
-Color Codes: COR  
+Class of Recomendation 
 
 (COR) Class of Recomendation is a color collect used in Guideline recomendations.
 
@@ -233,12 +247,12 @@ $cor-red               		- #{$cor-red}; III-harm
 
 Weight: 310
 
-Styleguide COR Colors
+Styleguide Color Codes.COR Colors
 
  */
 @each $color-name, $color in $COR {
-  $color-name-alt: "cor-" + $color-name;
-  /*
+	$color-name-alt: "cor-" + $color-name;
+	/*
 
 "#{$color-name-alt }" Decorator Classes 
 
@@ -290,13 +304,13 @@ Font, Border and Background Colors using #{$color-name-alt }
 </div>
 
 
-Styleguide COR Colors.#{$color-name-alt }
+Styleguide Color Codes.COR Colors.#{$color-name-alt }
 */
 }
 
 /*
 
-Color Codes: LOE  
+level of Evedence  
 
 (LOE) level of Evedence is a color collect used in Guideline recomendations.
 
@@ -307,11 +321,11 @@ $loe-pale-blue                	- #{$loe-pale-blue }; LOE C
 
 Weight: 309
 
-Styleguide LOE Colors
+Styleguide Color Codes.LOE Colors
  */
 @each $color-name, $color in $LOE {
-  $color-name-alt: "loe-" + $color-name;
-  /*
+	$color-name-alt: "loe-" + $color-name;
+	/*
 
 "#{$color-name-alt }" Decorator Classes 
 
@@ -362,13 +376,13 @@ Font, Border and Background Colors using #{$color-name-alt }
 <div class="c_#{$color-name-alt }-n5 text_left br_solid br_0 br-b_1 br_white-3 font_display flex"><div class="flex_auto p_5 p-y_2">modified level n5 of the font color.</div><div class="flex_auto p_5 p-y_2 bg_secondary-n3">modified level n5 of the font color.</div></div>
 </div>
 
-Styleguide LOE Colors.#{$color-name-alt }
+Styleguide Color Codes.LOE Colors.#{$color-name-alt }
 */
 }
 
 /*
 
-Color Codes: Credit Type  
+Credit Type  
 
 Credit Types in the ACC have a specific color coding.
 
@@ -385,13 +399,13 @@ $credit-CPE         	-  #992E2E; CPE
 
 Weight: 299
 
-Styleguide Credit Colors
+Styleguide Color Codes.Credit Colors
 
 */
 
 @each $color-name, $color in $CreditColors {
-  $color-name-alt: $color-name;
-  /*
+	$color-name-alt: $color-name;
+	/*
 
 "#{$color-name-alt }" Decorator Classes 
 
@@ -442,7 +456,7 @@ Font, Border and Background Colors using #{$color-name-alt }
 <div class="c_#{$color-name-alt }-n5 text_left br_solid br_0 br-b_1 br_white-3 font_display flex"><div class="flex_auto p_5 p-y_2">modified level n5 of the font color.</div><div class="flex_auto p_5 p-y_2 bg_secondary-n3">modified level n5 of the font color.</div></div>
 </div>
 
-Styleguide Credit Colors.#{$color-name-alt }
+Styleguide Color Codes.Credit Colors.#{$color-name-alt }
 */
 }
 // ACC Design Alterations
@@ -456,6 +470,7 @@ Styleguide Credit Colors.#{$color-name-alt }
 @import "components/scrollbar";
 
 @import "styleguide/styleguide";
+@import "styleguide/__basic-html.base";
 @import "structures/structures";
 /**  Utility Classes    *********************************/
 @import "utility-css/utility-css";

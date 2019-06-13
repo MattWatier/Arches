@@ -15,10 +15,16 @@
 		<div class="bg_primary-5 text_center flex_auto p_3 br_solid br_1 m_2 br_black">Auto 3</div>
 	</div>
 
-	Styleguide display.flex.direction
+	Styleguide display.flex
 
  */
 
+.flex {
+	display: flex;
+}
+.flex_inline {
+	display: inline-flex;
+}
 /* 1. Fix for Chrome 44 bug.
  * https://code.google.com/p/chromium/issues/detail?id=506893 */
 .flex_auto {
