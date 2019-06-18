@@ -26,9 +26,11 @@ $black: rgb(19, 18, 18) !default;
 
   You can change the features of the text with some simple use classes.
 
-  .font_slab            -  Font Slab:  Used in X objects
-  .font_normal          -  Font Normal:  Used in content            
+  .font_slab            -  Font Slab:  Used main Nav and Some headers
   .font_display         -  Font Display: Used in headlines, buttons,       
+  .font_copy          -  Font Normal:  Used in content            
+  .font_ui          -  Font Normal:  Used components like navs and dense ui elements            
+  .font_mono         - Used is quotes or data or code       
 
   markup:
   <div class="{{modifier_class}} font_3">
@@ -344,4 +346,8 @@ Styleguide Typography.Font.Color
 
   Styleguide Typography.list
  */
+// list with no decoration shouldn't have a padding
+.ul_none {
+	padding-left: 0;
+}
 @include loop-style(list-type, "", "!important");

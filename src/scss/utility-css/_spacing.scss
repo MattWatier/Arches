@@ -203,3 +203,31 @@ Styleguide Spacing.Location
 	@include loop-style(left, $bp-label_large, "");
 	@include loop-style(right, $bp-label_large, "");
 }
+
+/*
+Float
+
+<div class="p-b_3"><span class="bg_accent br_radius c_white d_inline-block font_n1 p-7_3 p-x_5 sg">Is Responsive: breakpoint modifiers</span></div> Easily Add Float to an object
+
+#{class-name-constructor(float,unset)} - modify float of a block 
+#{class-name-constructor(float,none)} - modify float of a block 
+#{class-name-constructor(float,left)} - modify float of a block 
+#{class-name-constructor(float,right)} - modify float of a block 
+
+
+markup:
+<div class=" br_solid br_transparent bg_accent-3 relative p_5" style="height:200px;">
+	<div class="bg_primary-5 text_center {{modifier_class}}">Position Absolute {{modifier_class}}</div>
+</div>
+
+Styleguide Spacing.Location
+
+ */
+@include loop-style(float, "", "");
+@media #{$medium-up} {
+	@include loop-style(float, $bp-label_medium, "");
+}
+
+@media #{$large-up} {
+	@include loop-style(float, $bp-label_large, "");
+}

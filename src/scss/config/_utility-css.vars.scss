@@ -182,6 +182,12 @@ $value-to-unit: (
 		round: $global-border-round,
 		circle: 100%
 	),
+	float: (
+		unset: unset,
+		none: none,
+		left: left,
+		right: right
+	),
 	border-style: (
 		none: none,
 		solid: solid,
@@ -236,17 +242,40 @@ $value-to-unit: (
 		5: 1rem
 	),
 	font-family: (
-		slab: (
-			"Roboto Slab",
-			"Times New Roman",
-			"Lucida Bright",
-			Georgia,
-			serif
-		),
-		display: '"Maven Pro","Open Sans","Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif',
-		copy: '"Muli","Open Sans","Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif',
-		ui: '"Open Sans",-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif',
-		mono: 'SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace'
+		slab: #{"Roboto Slab",
+		"Times New Roman",
+		"Lucida Bright",
+		Georgia,
+		serif},
+		display: #{"Maven Pro",
+		"Open Sans",
+		"Helvetica Neue",
+		"Helvetica",
+		Helvetica,
+		Arial,
+		sans-serif},
+		copy: #{"Muli",
+		"Open Sans",
+		"Helvetica Neue",
+		"Helvetica",
+		Helvetica,
+		Arial,
+		sans-serif},
+		ui: #{"Open Sans",
+		-apple-system,
+		BlinkMacSystemFont,
+		"Segoe UI",
+		Roboto,
+		Helvetica,
+		Arial,
+		sans-serif},
+		mono: #{SFMono-Regular,
+		Menlo,
+		Monaco,
+		Consolas,
+		"Liberation Mono",
+		"Courier New",
+		monospace}
 	),
 	grid: (
 		1: 1/12 * 100%,
@@ -435,6 +464,14 @@ $style-definition: (
 		),
 		long-name: ".color",
 		unit: map-get($value-to-unit, "percent")
+	),
+	float: (
+		short-name: ".float",
+		css-style: (
+			"float"
+		),
+		long-name: ".float",
+		unit: map-get($value-to-unit, "float")
 	),
 	font-family: (
 		short-name: ".font",

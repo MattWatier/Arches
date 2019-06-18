@@ -2828,6 +2828,46 @@ Styleguide InteractiveExtras.Scrollbar
 }
 
 /*
+	Social
+
+	The social networks that the acc is a part of 
+
+	markup:
+    <div class="texture-dark">
+        <h4 class="font_slab c_white">Stay Connected</h4>
+        <ul class="flex social-bar ul_none c_white h:c_white">
+            <li class="flex_auto m-r_2"><a href="https://twitter.com/accintouch" target="_blank" class="twitter social-bar--button d_block m-b_0 p-x_5 p-y_3 c_white-8 h:c_white text_right h:bg_primary-n1"><i class="fab fa-twitter-square font_2"></i></a></li>
+            <li class="flex_auto m-r_2"><a href="https://www.facebook.com/AmericanCollegeofCardiology" target="_blank" class="facebook social-bar--button d_block m-b_0 p-x_5 p-y_3 c_white-8 h:c_white text_right h:bg_primary-n1"><i class="fab fa-facebook-square font_2"></i></a></li>
+            <li class="flex_auto m-r_2"><a href="https://www.linkedin.com/groups/732607/profile" target="_blank" class="linkedin social-bar--button d_block m-b_0 p-x_5 p-y_3 c_white-8 h:c_white text_right h:bg_primary-n1"><i class="fab fa-linkedin font_2"></i></a></li>
+            <li class="flex_auto m-r_2"><a href="https://plus.google.com/118164094874227618578" target="_blank" class="google-plus social-bar--button d_block m-b_0 p-x_5 p-y_3 c_white-8 h:c_white text_right h:bg_primary-n1"><i class="fab fa-google-plus font_2"></i></a></li>
+            <li class="flex_auto m-r_2"><a href="http://www.youtube.com/user/ACCinTouch" target="_blank" class="youtube social-bar--button d_block m-b_0 p-x_5 p-y_3 c_white-8 h:c_white text_right h:bg_primary-n1"><i class="fab fa-youtube font_2"></i></a></li>
+        </ul>
+    </div>
+
+	Styleguide Recipe.Footer.Social Buttons
+
+*/
+.twitter {
+  background-color: #00aced;
+}
+
+.facebook {
+  background-color: #3b5998;
+}
+
+.linkedin {
+  background-color: #007bb6;
+}
+
+.google-plus {
+  background-color: #dd4b39;
+}
+
+.youtube {
+  background-color: #bb0000;
+}
+
+/*
  Design Base
 
  Arches is design inspired by a pad of paper in the hand.  Subtle Textures and Layer shadows keep the readablity very high. 
@@ -2857,8 +2897,8 @@ Roboto Slab
 			<span class="sub-line">font-family: 'Roboto Slab', "Times New Roman",  'Lucida Bright', Georgia, serif</span>
 		</h2>
 		<div class="font flex grid-padding-x grid-padding-y">
-			<div class="cell shrink font_10 font--dropcase_2x">Rs</div>
-			<div class="cell auto font--example">
+			<div class="flex_shrink p-r_5 font_10 font--dropcase_2x">Rs</div>
+			<div class="flex_auto font--example">
 				<h3 class="font_slab">Slab Font</h3>
 				<div class="text-lowercase font_4">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
 				<div class="text-uppercase font_4">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
@@ -2885,8 +2925,8 @@ Maven Pro
 			<span class="sub-line">font-family: 'Maven Pro', "Times New Roman",  'Lucida Bright', Georgia, serif</span>
 		</h2>
 		<div class="font flex grid-padding-x grid-padding-y">
-			<div class="cell shrink font_10 font--dropcase_2x">Mp</div>
-			<div class="cell auto font--example">
+			<div class="flex_shrink p-r_5  font_10 font--dropcase_2x">Mp</div>
+			<div class="flex_auto font--example">
 				<h3 class="font_display">Display Font</h3>
 				<div class="text-lowercase font_4">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
 				<div class="text-uppercase font_4">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
@@ -2907,15 +2947,15 @@ Muli
  A clean font for content and text of none UI elements. 
 
  markup:
-	<div class="font_normal">
-		<h2 class="font_normal group-divide-bottom font--name small-12">
+	<div class="font_copy">
+		<h2 class=" group-divide-bottom font--name small-12">
 			Muli
 			<span class="sub-line">font-family: 'Muli', "Times New Roman",  'Lucida Bright', Georgia, serif</span>
 		</h2>
 		<div class="font flex grid-padding-x grid-padding-y">
-			<div class="cell shrink font_10 font--dropcase_2x">Mu</div>
-			<div class="cell auto font--example">
-				<h3 class="font_normal">Content Font</h3>
+			<div class="flex_shrink p-r_5 font_10 font--dropcase_2x">Mu</div>
+			<div class="felx_auto font--example">
+				<h3 class="">Content Font</h3>
 				<div class="text-lowercase font_4">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
 				<div class="text-uppercase font_4">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
 				<div class="text-numbers font_4">0 1 2 3 4 5 6 7 8 9</div>
@@ -5636,6 +5676,75 @@ Styleguide Spacing.Location
   }
 }
 /*
+Float
+
+<div class="p-b_3"><span class="bg_accent br_radius c_white d_inline-block font_n1 p-7_3 p-x_5 sg">Is Responsive: breakpoint modifiers</span></div> Easily Add Float to an object
+
+.float_unset - modify float of a block 
+.float_none - modify float of a block 
+.float_left - modify float of a block 
+.float_right - modify float of a block 
+
+
+markup:
+<div class=" br_solid br_transparent bg_accent-3 relative p_5" style="height:200px;">
+	<div class="bg_primary-5 text_center {{modifier_class}}">Position Absolute {{modifier_class}}</div>
+</div>
+
+Styleguide Spacing.Location
+
+ */
+.float_unset {
+  float: unset;
+}
+
+.float_none {
+  float: none;
+}
+
+.float_left {
+  float: left;
+}
+
+.float_right {
+  float: right;
+}
+
+@media only screen and (min-width : 640px) {
+  .float_unset\:md {
+    float: unset;
+  }
+
+  .float_none\:md {
+    float: none;
+  }
+
+  .float_left\:md {
+    float: left;
+  }
+
+  .float_right\:md {
+    float: right;
+  }
+}
+@media only screen and (min-width : 1024px) {
+  .float_unset\:lg {
+    float: unset;
+  }
+
+  .float_none\:lg {
+    float: none;
+  }
+
+  .float_left\:lg {
+    float: left;
+  }
+
+  .float_right\:lg {
+    float: right;
+  }
+}
+/*
 UC: Display & Flex
 
 Control the display of objects with control of break points, and the layout functions of flex easily by adding utlity classes. 
@@ -6906,9 +7015,11 @@ Styleguide Typography
 
   You can change the features of the text with some simple use classes.
 
-  .font_slab            -  Font Slab:  Used in X objects
-  .font_normal          -  Font Normal:  Used in content            
+  .font_slab            -  Font Slab:  Used main Nav and Some headers
   .font_display         -  Font Display: Used in headlines, buttons,       
+  .font_copy          -  Font Normal:  Used in content            
+  .font_ui          -  Font Normal:  Used components like navs and dense ui elements            
+  .font_mono         - Used is quotes or data or code       
 
   markup:
   <div class="{{modifier_class}} font_3">
@@ -6919,23 +7030,23 @@ Styleguide Typography
   Styleguide Typography.Font.Family
  */
 .font_slab {
-  font-family: "Roboto Slab", "Times New Roman", "Lucida Bright", Georgia, serif;
+  font-family: Roboto Slab, Times New Roman, Lucida Bright, Georgia, serif;
 }
 
 .font_display {
-  font-family: '"Maven Pro","Open Sans","Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif';
+  font-family: Maven Pro, Open Sans, Helvetica Neue, Helvetica, Helvetica, Arial, sans-serif;
 }
 
 .font_copy {
-  font-family: '"Muli","Open Sans","Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif';
+  font-family: Muli, Open Sans, Helvetica Neue, Helvetica, Helvetica, Arial, sans-serif;
 }
 
 .font_ui {
-  font-family: '"Open Sans",-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif';
+  font-family: Open Sans, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
 }
 
 .font_mono {
-  font-family: 'SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace';
+  font-family: SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
 }
 
 /*
@@ -8103,6 +8214,10 @@ Styleguide Typography.Font.Color
 
   Styleguide Typography.list
  */
+.ul_none {
+  padding-left: 0;
+}
+
 .ul_none {
   list-style-type: none !important;
 }
@@ -11592,31 +11707,118 @@ Styleguide counters
     This defines the web footer 
 
     markup:
-        <div class="grid-container footer">
-            <div class="grid-y">
-                <div class="cell p-t_3 p-b_3 p_4 flex br_0 br-t_3  br_solid br_secondary-n1 c_secondary-1 texture_light bg_secondary-1">
-                    <sg-insert>0.5</sg-insert>
-                    <!-- Logo -->
-                </div>
-                <div class="cell flex texture_dark grid-p-x p_5-large p_4 p-b_3">
-                    <div class="cell medium-6 large-8">
-                        <sg-insert>Recipe.Footer.4</sg-insert>
-                        <!-- Address -->
-                            <sg-insert>Recipe.Footer.3</sg-insert>
-                            <!-- Social -->
-                    </div>
-                    <div class="cell medium-6 large-4">
-                        <sg-insert>Recipe.Footer.2</sg-insert>
-                        <!-- Footer External Links -->
-                    </div>
-                </div>
-                <div class="cell flex texture_light bg_secondary-1">
-                    <div class="cell medium-12">
-                        <sg-insert>Recipe.Footer.5</sg-insert>
-                        <!-- Footer Cite -->
-                    </div>
-                </div>
+        <div class="footer">
+        <div class="p-t_3 p-b_3 p_4 flex br_0 br-t_3  br_solid br_secondary-n1 c_secondary-1 texture_light bg_secondary-1">
+            <div class="logo_condensed max-w_1"><span class="alt">logo_condensed-alt max-w_1</span></div>
+        </div>
+        <div class="flex texture_dark p_5-large p_4 p-b_3">
+            <div class="flex_auto w_50:md p-l_4:md p-r_5:md">
+                <!-- Address -->
+                <section class="address c_white">
+                    <h3 class="font_slab font_2">American College of Cardiology</h3>
+                    <address>
+                        <!-- http://microformats.org/wiki/hcard -->
+                        <h4 class="font_slab font_1 m-b_4">Heart House</h4>
+                        <div class="flex font_copy font_0">
+                        <div class="flex_shrink p-r_5 m-r_5">
+                            <ul class="ul_none  lh_2">
+                                <li class="m-b_1 m-b_3:md font_normal">
+                                    <span class="street-address">2400 N. St. NW</span>
+                                </li>
+                                <li class="m-b_1 m-b_3:md font_normal">
+                                    <span class="locality ">Washington</span>,
+                                    <span class="city-name ">
+                                <abbr title="District of Colombia">DC</abbr>
+                                </span>
+                                    <span class="postal-code">20037</span>
+                                </li>
+                                <li class="m-b_1 m-b_3:md font_normal">
+                                    <a href="mailto:resource@acc.org" class="email c_white text_underline  h:c_white ">
+                                        <strong class="p-r_2 d_inline d_block:md d_inline:lg">Email:</strong>
+                                        <span class="d_inline d_block:md d_inline:lg">resource@acc.org</span></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="flex_auto grid-w_6">
+                        <ul class="ul_none lh_2">
+                            <li class="m-b_1 m-b_3:md font_normal">
+                                <a tel="+12023756000" href="tel:+12023756000" class="tel c_white h:c_white h:underline">
+                                <strong class="p-r_2 d_block:md d_inline:lg">Phone:</strong><span class=" d_block:md d_inline:lg">(202) 375-6000, ext. 5603</span></a>
+                            </li>
+                            <li class="m-b_1 m-b_3:md font_normal">
+                                <a tel="+18002574737" href="tel:+18002534636.5603" class="tel c_white h:c_white h:underline">
+                                <strong class="p-r_2 d_block:md d_inline:lg">Toll Free:</strong><span class=" d_block:md d_inline:lg">(800) 253-4636, ext. 5603</span></a>
+                            </li>
+                            <li class="m-b_1 m-b_3:md font_normal">
+                                <a fax="+12023757000" href="fax:+12023757000" class="fax c_white h:c_white h:underline">
+                                <strong class="p-r_2 d_block:md d_inline:lg">Fax:</strong>
+                                <span class="block:md d_inline:lg">(202) 375-7000</span>
+                                </a>
+                            </li>
+                        </ul>
+                        </div>
+                        </div>
+                    </address>
+                </section>
+                <!-- /Address -->
+                <!-- Social -->
+                <h4 class="font_slab c_white">Stay Connected</h4>
+                <ul class="flex social-bar ul_none c_white h:c_white">
+                    <li class="flex_auto m-r_2"><a href="https://twitter.com/accintouch" target="_blank" class="twitter social-bar--button d_block m-b_0 p-x_5 p-y_3 c_white-8 h:c_white text_right h:bg_primary-n1"><i class="fab fa-twitter-square font_2"></i></a></li>
+                    <li class="flex_auto m-r_2"><a href="https://www.facebook.com/AmericanCollegeofCardiology" target="_blank" class="facebook social-bar--button d_block m-b_0 p-x_5 p-y_3 c_white-8 h:c_white text_right h:bg_primary-n1"><i class="fab fa-facebook-square font_2"></i></a></li>
+                    <li class="flex_auto m-r_2"><a href="https://www.linkedin.com/groups/732607/profile" target="_blank" class="linkedin social-bar--button d_block m-b_0 p-x_5 p-y_3 c_white-8 h:c_white text_right h:bg_primary-n1"><i class="fab fa-linkedin font_2"></i></a></li>
+                    <li class="flex_auto m-r_2"><a href="https://plus.google.com/118164094874227618578" target="_blank" class="google-plus social-bar--button d_block m-b_0 p-x_5 p-y_3 c_white-8 h:c_white text_right h:bg_primary-n1"><i class="fab fa-google-plus font_2"></i></a></li>
+                    <li class="flex_auto m-r_2"><a href="http://www.youtube.com/user/ACCinTouch" target="_blank" class="youtube social-bar--button d_block m-b_0 p-x_5 p-y_3 c_white-8 h:c_white text_right h:bg_primary-n1"><i class="fab fa-youtube font_2"></i></a></li>
+                </ul>
+                <!-- Social -->
             </div>
+            <div class="flex_auto p-l_4:md p-r_4:md">
+                <!-- Footer External Links -->
+                <section class="acc-websites row c_white p-x_3">
+                    <h3 class="font_slab">Improving Cardiovascular Care</h3>
+                    <nav class="font_copy d_block clearfix">
+                        <ul class="ul_none lh_2 font_0">
+                            <li class="c_white br_solid  br_0 br-b_1  br_white-5">
+                                <a target="_blank" class="h:bg_black-2  h:c_white c_white p-x_2 p_3 d_block" href="http://www.acc.org">
+                                <span class="d_inline-block p-l_3">Acc</span>
+                                <i class="float_right fas p-r_3 c_white h:c_white fa-external-link-square "></i>
+                                </a>
+                            </li>
+                            <li class="c_white br_solid br_0 br-b_1  br_white-5">
+                                <a target="_blank" class="h:bg_black-2  h:c_white c_white p-x_2 p_3 d_block" href="https://cvquality.acc.org/Accreditation?">
+                                <span class="d_inline-block p-l_3">Accreditation Services</span>
+                                <i class="float_right fas p-r_3 c_white h:c_white fa-external-link-square "></i>
+                                </a>
+                            </li>
+                            <li class="c_white br_solid br_0 br-b_1  br_white-5">
+                                <a target="_blank" class="h:bg_black-2  h:c_white c_white p-x_2 p_3 d_block" href="http://www.ncdr.com">
+                                <span class="d_inline-block p-l_3">NCDR</span>
+                                <i class="float_right fas p-r_3 c_white h:c_white fa-external-link-square "></i>
+                                </a>
+                            </li>
+                            <li class="c_white br_solid br_0 br-b_1  br_white-5">
+                                <a target="_blank" class="h:bg_black-2  h:c_white c_white p-x_2 p_3 d_block" href="http://www.cardiosmart.org">
+                                <span class="d_inline-block p-l_3">CardioSmart</span>
+                                <i class="float_right fas p-r_3 c_white h:c_white fa-external-link-square "></i>
+                                </a>
+                            </li>
+                            <li class="c_white">
+                                <a target="_blank" class="h:bg_black-2  h:c_white c_white p-x_2 p_3 d_block" href="http://www.onlinejacc.org/">
+                                <span class="d_inline-block p-l_3">JACC</span>
+                                <i class="float_right fas p-r_3 c_white fa-external-link-square "></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </section>	
+                <!-- /Footer External Links -->
+            </div>
+        </div>
+        <!-- Cite -->
+        <div class="texture_light bg_secondary-1 p_4">
+            <cite class="c_secondary-1 font_italic font_bold font_n1 p_3 lh_2">&copy; 2015 American College of Cardiology</cite>
+        </div>
+        <!-- /Cite -->
         </div>
 
     Styleguide Recipe.Footer
@@ -11641,90 +11843,49 @@ Styleguide counters
 	Links to acc-websites
 
     markup:
-    <div class="texture_dark">
-    <section class="acc-websites row c_white p-x_3">
-        <h4 class="font_slab">Improving Cardiovascular Care</h4>
-        <nav class="nav-list small d_block clearfix">
-            <ul class="no-bullet lh_2 font_0">
-                <li class="c_white br_solid  br_0 br-b_1  br_white-5">
-                    <a target="_blank" class="h:bg_black-2  h:c_white c_white p-x_2 p_3 block" href="http://www.acc.org">
-                    <span class="">Acc</span>
-                    <i class="float-right fas c_white h:c_white fa-external-link-square "></i>
-                    </a>
-                </li>
-                <li class="c_white br_solid br_0 br-b_1  br_white-5">
-                    <a target="_blank" class="h:bg_black-2  h:c_white c_white p-x_2 p_3 block" href="https://cvquality.acc.org/Accreditation?">
-                    <span class="">Accreditation Services</span>
-                    <i class="float-right fas c_white h:c_white fa-external-link-square "></i>
-                    </a>
-                </li>
-                <li class="c_white br_solid br_0 br-b_1  br_white-5">
-                    <a target="_blank" class="h:bg_black-2  h:c_white c_white p-x_2 p_3 block" href="http://www.ncdr.com">
-                    <span class="">NCDR</span>
-                    <i class="float-right fas c_white h:c_white fa-external-link-square "></i>
-                    </a>
-                </li>
-                <li class="c_white br_solid br_0 br-b_1  br_white-5">
-                    <a target="_blank" class="h:bg_black-2  h:c_white c_white p-x_2 p_3 block" href="http://www.cardiosmart.org">
-                    <span class="">CardioSmart</span>
-                    <i class="float-right fas c_white h:c_white fa-external-link-square "></i>
-                    </a>
-                </li>
-                <li class="c_white">
-                    <a target="_blank" class="h:bg_black-2  h:c_white c_white p-x_2 p_3 block" href="http://www.onlinejacc.org/">
-                    <span class="">JACC</span>
-                    <i class="float-right fas c_white fa-external-link-square "></i>
-                    </a>
-                </li>
-            </ul>
-        </nav>
-    </section>	
- 	</div>                   
-
+    <div class="texture_dark p_4">
+        <section class="acc-websites row c_white p-x_3">
+            <h4 class="font_slab">Improving Cardiovascular Care</h4>
+            <nav class="d_block clearfix font_copy">
+                <ul class="ul_none lh_2 font_0">
+                    <li class="c_white br_solid  br_0 br-b_1  br_white-5">
+                        <a target="_blank" class="h:bg_black-2  h:c_white c_white p-x_2 p_3 d_block" href="http://www.acc.org">
+                        <span class="d_inline-block p-l_3">Acc</span>
+                        <i class="float_right fas p-r_3 c_white h:c_white fa-external-link-square "></i>
+                        </a>
+                    </li>
+                    <li class="c_white br_solid br_0 br-b_1  br_white-5">
+                        <a target="_blank" class="h:bg_black-2  h:c_white c_white p-x_2 p_3 d_block" href="https://cvquality.acc.org/Accreditation?">
+                        <span class="d_inline-block p-l_3">Accreditation Services</span>
+                        <i class="float_right fas p-r_3 c_white h:c_white fa-external-link-square "></i>
+                        </a>
+                    </li>
+                    <li class="c_white br_solid br_0 br-b_1  br_white-5">
+                        <a target="_blank" class="h:bg_black-2  h:c_white c_white p-x_2 p_3 d_block" href="http://www.ncdr.com">
+                        <span class="d_inline-block p-l_3">NCDR</span>
+                        <i class="float_right fas p-r_3 c_white h:c_white fa-external-link-square "></i>
+                        </a>
+                    </li>
+                    <li class="c_white br_solid br_0 br-b_1  br_white-5">
+                        <a target="_blank" class="h:bg_black-2  h:c_white c_white p-x_2 p_3 d_block" href="http://www.cardiosmart.org">
+                        <span class="d_inline-block p-l_3">CardioSmart</span>
+                        <i class="float_right fas p-r_3 c_white h:c_white fa-external-link-square "></i>
+                        </a>
+                    </li>
+                    <li class="c_white">
+                        <a target="_blank" class="h:bg_black-2  h:c_white c_white p-x_2 p_3 d_block" href="http://www.onlinejacc.org/">
+                        <span class="d_inline-block p-l_3">JACC</span>
+                        <i class="float_right fas p-r_3 c_white fa-external-link-square "></i>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </section>	
+    </div>                   
 
 	Styleguide Recipe.Footer.External Nav
 
 */
-/*
-	Social
-
-	The social networks that the acc is a part of 
-
-	markup:
-    <div class="texture-dark">
-        <h4 class="font_slab c_white">Stay Connected</h4>
-        <ul class="flex social-bar ul_none c_white h:c_white">
-            <li class="flex_auto m-r_2"><a href="https://twitter.com/accintouch" target="_blank" class="twitter social-bar--button d_block m-b_0 p-x_5 p-y_3 c_white-8 h:c_white text_right h:bg_primary-n1"><i class="fab fa-twitter-square font_2"></i></a></li>
-            <li class="flex_auto m-r_2"><a href="https://www.facebook.com/AmericanCollegeofCardiology" target="_blank" class="facebook social-bar--button d_block m-b_0 p-x_5 p-y_3 c_white-8 h:c_white text_right h:bg_primary-n1"><i class="fab fa-facebook-square font_2"></i></a></li>
-            <li class="flex_auto m-r_2"><a href="https://www.linkedin.com/groups/732607/profile" target="_blank" class="linkedin social-bar--button d_block m-b_0 p-x_5 p-y_3 c_white-8 h:c_white text_right h:bg_primary-n1"><i class="fab fa-linkedin font_2"></i></a></li>
-            <li class="flex_auto m-r_2"><a href="https://plus.google.com/118164094874227618578" target="_blank" class="google-plus social-bar--button d_block m-b_0 p-x_5 p-y_3 c_white-8 h:c_white text_right h:bg_primary-n1"><i class="fab fa-google-plus font_2"></i></a></li>
-            <li class="flex_auto m-r_2"><a href="http://www.youtube.com/user/ACCinTouch" target="_blank" class="youtube social-bar--button d_block m-b_0 p-x_5 p-y_3 c_white-8 h:c_white text_right h:bg_primary-n1"><i class="fab fa-youtube font_2"></i></a></li>
-        </ul>
-    </div>
-
-	Styleguide Recipe.Footer.Social Buttons
-
-*/
-.twitter {
-  background-color: #00aced;
-}
-
-.facebook {
-  background-color: #3b5998;
-}
-
-.linkedin {
-  background-color: #007bb6;
-}
-
-.google-plus {
-  background-color: #dd4b39;
-}
-
-.youtube {
-  background-color: #bb0000;
-}
-
 /*
 	Address
 
@@ -11732,57 +11893,61 @@ Styleguide counters
 
     markup:
     <div class="texture_dark p_4">
-    <section class="address c_white">
-        <h3 class="font_slab font_2">American College of Cardiology</h3>
-        <address>
-            <!-- http://microformats.org/wiki/hcard -->
-            <h4 class="font_slab font_1 m-b_4">Heart House</h4>
-            <div class="flex">
-            <div class="cell medium-5 large-4">
-                <ul class="no-bullet">
-                    <li class="m-b_1 m-b_3:medium font_0 font_normal">
-                        <span class="street-address">2400 N. St. NW</span>
+        <section class="address c_white">
+            <h3 class="font_slab font_2">American College of Cardiology</h3>
+            <address>
+                <!-- http://microformats.org/wiki/hcard -->
+                <h4 class="font_slab font_1 m-b_4">Heart House</h4>
+                <div class="flex font_copy font_0">
+                <div class="flex_shrink p-r_5 m-r_5">
+                    <ul class="ul_none  lh_2">
+                        <li class="m-b_1 m-b_3:md font_normal">
+                            <span class="street-address">2400 N. St. NW</span>
+                        </li>
+                        <li class="m-b_1 m-b_3:md font_normal">
+                            <span class="locality ">Washington</span>,
+                            <span class="city-name ">
+                        <abbr title="District of Colombia">DC</abbr>
+                        </span>
+                            <span class="postal-code">20037</span>
+                        </li>
+                        <li class="m-b_1 m-b_3:md font_normal">
+                            <a href="mailto:resource@acc.org" class="email c_white text_underline  h:c_white ">
+                                <strong class="p-r_2 d_inline d_block:md d_inline:lg">Email:</strong>
+                                <span class="d_inline d_block:md d_inline:lg">resource@acc.org</span></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="flex_auto grid-w_6">
+                <ul class="ul_none lh_2">
+                    <li class="m-b_1 m-b_3:md font_normal">
+                        <a tel="+12023756000" href="tel:+12023756000" class="tel c_white h:c_white h:underline">
+                        <strong class="p-r_2 d_block:md d_inline:lg">Phone:</strong><span class=" d_block:md d_inline:lg">(202) 375-6000, ext. 5603</span></a>
                     </li>
-                    <li class="m-b_1 m-b_3:medium font_0 font_normal">
-                        <span class="locality ">Washington</span>,
-                        <span class="city-name ">
-                    <abbr title="District of Colombia">DC</abbr>
-                    </span>
-                        <span class="postal-code">20037</span>
+                    <li class="m-b_1 m-b_3:md font_normal">
+                        <a tel="+18002574737" href="tel:+18002534636.5603" class="tel c_white h:c_white h:underline">
+                        <strong class="p-r_2 d_block:md d_inline:lg">Toll Free:</strong><span class=" d_block:md d_inline:lg">(800) 253-4636, ext. 5603</span></a>
                     </li>
-                    <li class="m-b_1 m-b_3:medium font_0 font_normal">
-                        <a href="mailto:resource@acc.org" class="email c_white text_underline lh_2 h:c_white ">
-                            <strong class="p-r_2 inline block:medium inline:large">Email:</strong>
-                            <span class="inline block:medium inline:large">resource@acc.org</span></a>
+                    <li class="m-b_1 m-b_3:md font_normal">
+                        <a fax="+12023757000" href="fax:+12023757000" class="fax c_white h:c_white h:underline">
+                        <strong class="p-r_2 d_block:md d_inline:lg">Fax:</strong>
+                        <span class="block:md d_inline:lg">(202) 375-7000</span>
+                        </a>
                     </li>
                 </ul>
-            </div>
-            <div class="cell medium-7 large-8">
-            <ul class="no-bullet">
-                <li class="m-b_1 m-b_3:medium font_0 font_normal">
-                    <a tel="+12023756000" href="tel:+12023756000" class="lh_2 tel c_white h:c_white h:underline">
-                    <strong class="p-r_2 block:medium inline:large">Phone:</strong><span class=" block:medium inline:large">(202) 375-6000, ext. 5603</span></a>
-                </li>
-                <li class="m-b_1 m-b_3:medium font_0 font_normal">
-                    <a tel="+18002574737" href="tel:+18002534636.5603" class="lh_2 tel c_white h:c_white h:underline">
-                    <strong class="p-r_2 block:medium inline:large">Toll Free:</strong><span class=" block:medium inline:large">(800) 253-4636, ext. 5603</span></a>
-                </li>
-                <li class="m-b_1 m-b_3:medium font_0 font_normal">
-                    <a fax="+12023757000" href="fax:+12023757000" class="lh_2 fax c_white h:c_white h:underline">
-                    <strong class="p-r_2 block:medium inline:large">Fax:</strong>
-                    <span class="block:medium inline:large">(202) 375-7000</span>
-                    </a>
-                </li>
-            </ul>
-            </div>
-            </div>
-        </address>
-    </section>
+                </div>
+                </div>
+            </address>
+        </section>
  	</div>
 
 	Styleguide Recipe.Footer.Address
 
 */
+.address {
+  font-style: unset;
+}
+
 /* content Recipe.100 */
 /*
   Ordered Cards

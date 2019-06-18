@@ -18,7 +18,10 @@
 		"../css/styleguide_override.css",
 		"../css/color-code_LOE-COR.css",
 		"../css/color-code_pathways.css",
-		"../css/color-code_credits.css"
+		"../css/color-code_credits.css",
+		"https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap",
+		"https://fonts.googleapis.com/css?family=Muli&display=swap",
+		"https://fonts.googleapis.com/css?family=Maven+Pro&display=swap"
 	],
 	"js": []
 }

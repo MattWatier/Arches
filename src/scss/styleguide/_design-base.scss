@@ -30,8 +30,8 @@ Roboto Slab
 			<span class="sub-line">font-family: 'Roboto Slab', "Times New Roman",  'Lucida Bright', Georgia, serif</span>
 		</h2>
 		<div class="font flex grid-padding-x grid-padding-y">
-			<div class="cell shrink font_10 font--dropcase_2x">Rs</div>
-			<div class="cell auto font--example">
+			<div class="flex_shrink p-r_5 font_10 font--dropcase_2x">Rs</div>
+			<div class="flex_auto font--example">
 				<h3 class="font_slab">Slab Font</h3>
 				<div class="text-lowercase font_4">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
 				<div class="text-uppercase font_4">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
@@ -58,8 +58,8 @@ Maven Pro
 			<span class="sub-line">font-family: 'Maven Pro', "Times New Roman",  'Lucida Bright', Georgia, serif</span>
 		</h2>
 		<div class="font flex grid-padding-x grid-padding-y">
-			<div class="cell shrink font_10 font--dropcase_2x">Mp</div>
-			<div class="cell auto font--example">
+			<div class="flex_shrink p-r_5  font_10 font--dropcase_2x">Mp</div>
+			<div class="flex_auto font--example">
 				<h3 class="font_display">Display Font</h3>
 				<div class="text-lowercase font_4">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
 				<div class="text-uppercase font_4">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
@@ -81,15 +81,15 @@ Muli
  A clean font for content and text of none UI elements. 
 
  markup:
-	<div class="font_normal">
-		<h2 class="font_normal group-divide-bottom font--name small-12">
+	<div class="font_copy">
+		<h2 class=" group-divide-bottom font--name small-12">
 			Muli
 			<span class="sub-line">font-family: 'Muli', "Times New Roman",  'Lucida Bright', Georgia, serif</span>
 		</h2>
 		<div class="font flex grid-padding-x grid-padding-y">
-			<div class="cell shrink font_10 font--dropcase_2x">Mu</div>
-			<div class="cell auto font--example">
-				<h3 class="font_normal">Content Font</h3>
+			<div class="flex_shrink p-r_5 font_10 font--dropcase_2x">Mu</div>
+			<div class="felx_auto font--example">
+				<h3 class="">Content Font</h3>
 				<div class="text-lowercase font_4">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
 				<div class="text-uppercase font_4">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
 				<div class="text-numbers font_4">0 1 2 3 4 5 6 7 8 9</div>
