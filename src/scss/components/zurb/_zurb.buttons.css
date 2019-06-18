@@ -24,7 +24,7 @@ default		            - Medium buttons (default)
 markup:
 <a class="button {{modifier_class}}">{{modifier_class}} button</a>
 
- Styleguide HTML
+ Styleguide HTML.Buttons
 */
 .button {
   white-space: nowrap;
