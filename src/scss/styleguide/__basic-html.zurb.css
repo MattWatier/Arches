@@ -160,6 +160,9 @@
     Tabs Inset Area :recipe
 
     markup:
+    <div class="bg_white br_1 br_secondary-4 br_solid p_4">
+    hello this is some text
+</div>
     <ul class="texture_light tabs br_primary bg_primary-3 shadow_n3 p-x_2 p-t_3 br-b_0" data-active-collapse="true" data-tabs id="collapsing-tabs">
         <li class="tabs-title m-x_1 is-active"><a class="br-tr_radius br-tl_radius h:bg_white br_primary"href="#panel-demo2-1c"aria-selected="true"><i class="fal icon-complete_check"></i>Tab 1</a></li>
         <li class="tabs-title m-x_1"><a class="h:c_white br-tr_radius br-tl_radius h:bg_primary" href="#panel-demo2-2c"><i class="fal icon-complete_check"></i>Tab 2</a></li>
@@ -188,6 +191,10 @@
     Tabs on card :recipe
 
     markup:
+        <div class="card shadow_2 cell small-6 large-4" style="max-width: 500px;">
+      <div class="font_slab border-top-left-square c_white font_3 p_4 texture_dust bg_primary">
+      This is a header
+      </div>
     <ul class="texture_light tabs br_0 bg_primary br_none texture_dust p-x_2 p-t_3 br-b_0" data-active-collapse="true" data-tabs id="collapsing-tabs">
         <li class="tabs-title m-x_1 is-active"><a class="br-tr_radius br-tl_radius h:bg_white br_primary"href="#panel-demo2-1c"aria-selected="true"><i class="fal icon-complete_check"></i>Tab 1</a></li>
         <li class="tabs-title m-x_1"><a class="h:c_white c_white-3 br-tr_radius br-tl_radius h:bg_primary-n2" href="#panel-demo2-2c"><i class="fal icon-complete_check"></i>Tab 2</a></li>
@@ -208,13 +215,6 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         </div>
     </div>
-
-    sg-wrapper:
-    <div class="card shadow_2 cell small-6 large-4" style="max-width: 500px;">
-      <div class="font_slab border-top-left-square c_white font_3 p_4 texture_dust bg_primary">
-      This is a header
-      </div>
-      <sg-wrapper-content/>
     </div>
 
     Styleguide Navigation.Tabs.OnCard

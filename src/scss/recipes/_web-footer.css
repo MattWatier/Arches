@@ -13,10 +13,10 @@
             <div class="flex_auto w_50:md p-l_4:md p-r_5:md">
                 <!-- Address -->
                 <section class="address c_white">
-                    <h3 class="font_slab font_2">American College of Cardiology</h3>
+                    <h3 class="font_slab font_1 m-b_0 font_normal font_regular">American College of Cardiology</h3>
                     <address>
                         <!-- http://microformats.org/wiki/hcard -->
-                        <h4 class="font_slab font_1 m-b_4">Heart House</h4>
+                        <h4 class="m-b_0 font_bold font_copy font_normal font_1 m-t_4">Heart House</h4>
                         <div class="flex font_copy font_0">
                         <div class="flex_shrink p-r_5 m-r_5">
                             <ul class="ul_none  lh_2">
@@ -60,7 +60,7 @@
                 </section>
                 <!-- /Address -->
                 <!-- Social -->
-                <h4 class="font_slab c_white">Stay Connected</h4>
+                <h4 class="font_slab c_white font_regular">Stay Connected</h4>
                 <ul class="flex social-bar ul_none c_white h:c_white">
                     <li class="flex_auto m-r_2"><a href="https://twitter.com/accintouch" target="_blank" class="twitter social-bar--button d_block m-b_0 p-x_5 p-y_3 c_white-8 h:c_white text_right h:bg_primary-n1"><i class="fab fa-twitter-square font_2"></i></a></li>
                     <li class="flex_auto m-r_2"><a href="https://www.facebook.com/AmericanCollegeofCardiology" target="_blank" class="facebook social-bar--button d_block m-b_0 p-x_5 p-y_3 c_white-8 h:c_white text_right h:bg_primary-n1"><i class="fab fa-facebook-square font_2"></i></a></li>
@@ -73,7 +73,7 @@
             <div class="flex_auto p-l_4:md p-r_4:md">
                 <!-- Footer External Links -->
                 <section class="acc-websites row c_white p-x_3">
-                    <h3 class="font_slab">Improving Cardiovascular Care</h3>
+                    <h3 class="font_slab font_regular">Improving Cardiovascular Care</h3>
                     <nav class="font_copy d_block clearfix">
                         <ul class="ul_none lh_2 font_0">
                             <li class="c_white br_solid  br_0 br-b_1  br_white-5">
@@ -143,7 +143,7 @@
     markup:
     <div class="texture_dark p_4">
         <section class="acc-websites row c_white p-x_3">
-            <h4 class="font_slab">Improving Cardiovascular Care</h4>
+            <h4 class="font_slab font_regular">Improving Cardiovascular Care</h4>
             <nav class="d_block clearfix font_copy">
                 <ul class="ul_none lh_2 font_0">
                     <li class="c_white br_solid  br_0 br-b_1  br_white-5">
@@ -192,10 +192,10 @@
     markup:
     <div class="texture_dark p_4">
         <section class="address c_white">
-            <h3 class="font_slab font_2">American College of Cardiology</h3>
+            <h3 class="font_slab font_1 m-b_0 font_normal font_regular">American College of Cardiology</h3>
             <address>
                 <!-- http://microformats.org/wiki/hcard -->
-                <h4 class="font_slab font_1 m-b_4">Heart House</h4>
+                <h4 class="m-b_0 font_bold font_copy font_normal font_1 m-t_4">Heart House</h4>
                 <div class="flex font_copy font_0">
                 <div class="flex_shrink p-r_5 m-r_5">
                     <ul class="ul_none  lh_2">

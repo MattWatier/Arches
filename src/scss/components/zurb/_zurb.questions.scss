@@ -39,8 +39,10 @@
     </div>
     <div class="hint-holder m-t_2 font_n1 c_secondary p_2 p-t_0">This is some hint-holder text</div>
     </div>
+    
+    Weight:-1
 
-    Styleguide 30.1
+    Styleguide Questions.Introduction
 */
 
 /*
@@ -91,7 +93,7 @@
     <div class="hint-holder m-t_2 font_n1 c_secondary p_2 p-t_0">This is some hint-holder text</div>
     </div>
 
-    Styleguide 30.1.1
+    Styleguide Questions.States
 */
 
 .question div.alert,
@@ -127,10 +129,6 @@
 	display: inline-flex;
 }
 
-select {
-	background: unset !important;
-	appearance: initial !important;
-}
 .switch {
 	margin-bottom: $margin_0;
 }
@@ -209,7 +207,7 @@ select {
         <div class="hint-holder m-t_2 font_n1 c_secondary p_2 p-t_0">This is some hint-holder text</div>
     </div>
 
-    Styleguide 30.2
+    Styleguide Questions.Value Area
 */
 
 /*
@@ -265,7 +263,7 @@ select {
         <div class="hint-holder m-t_2 font_n1 c_secondary p_2 p-t_0">This is some hint-holder text</div>
     </div>
 
-    Styleguide 30.3
+    Styleguide Questions.Grouped Inputs
 */
 
 /*
@@ -330,5 +328,5 @@ select {
         <div class="hint-holder m-t_2 font_n1 c_secondary p_2 p-t_0">This is some hint-holder text</div>
     </div>
 
-    Styleguide 30.4
+    Styleguide Questions.Switches
 */

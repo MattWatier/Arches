@@ -15,17 +15,16 @@
                 <span class="c_secondary-n5 font_slab"><span class="c_acc font_bold p-r_3">5.1</span>Genetic Predisposition</span><br>
                 <span class="font_italic c_secondary-3 font_n1">{{modifier_class}}</span>
             </div>
-            <div class="cell shrink LOE-COR flex m-l_3 font_bold">
-                <div class="cell small-6 loe-II bg_primary-2 p-x_3 p-y_1">II</div>
-                <div class="cell small-6 cor-b bg_warning-2 p-x_3 p-y_1">b</div>
+            <div class="felx_shrink flex m-l_3 font_bold">
+                  <div class="felx_shrink flex m-l_3 font_bold"><div class="flex_auto bg_loe-B-BR-0 bg_primary-2 p-x_3 p-y_1">B-BR</div><div class="flex_auto bg_cor-IIA p-x_3 p-y_1">II</div></div>
             </div>
         </header>
         <nav class="flex font_n2 none">
-            <a href="#saveToLibrary" class="cell shrink bg_primary_5 link-fulldoc m-r_1 p-y_1 p-x_2 br_primary-5 c_secondary-n3 hover:c_white hover:bg_primary br_solid br_secondary-3 br_1 br_radius"><i
+            <a href="#saveToLibrary" class="felx_shrink bg_primary_5 link-fulldoc m-r_1 p-y_1 p-x_2 br_primary-5 c_secondary-n3 hover:c_white hover:bg_primary br_solid br_secondary-3 br_1 br_radius"><i
                     class="fas fa-save m-r_3"></i><span>SAVE</span></a>
-            <a href="#shareResult" class="cell shrink bg_primary_5 link-pdf m-x_1 p-y_1 p-x_2 br_primary-5 c_secondary-n3 hover:c_white hover:bg_primary br_solid br_secondary-3 br_1 br_radius"><i
+            <a href="#shareResult" class="felx_shrink bg_primary_5 link-pdf m-x_1 p-y_1 p-x_2 br_primary-5 c_secondary-n3 hover:c_white hover:bg_primary br_solid br_secondary-3 br_1 br_radius"><i
                     class="fas fa-file-pdf m-r_3"></i><span>SHARE</span></a>
-            <a href="#printResult" class="cell shrink bg_primary_5 link-hub m-x_1 p-y_1 p-x_2 br_primary-5 c_secondary-n3 hover:c_white hover:bg_primary br_solid br_secondary-3 br_1 br_radius"><i
+            <a href="#printResult" class="felx_shrink bg_primary_5 link-hub m-x_1 p-y_1 p-x_2 br_primary-5 c_secondary-n3 hover:c_white hover:bg_primary br_solid br_secondary-3 br_1 br_radius"><i
                     class="fas fa-print m-r_3"></i><span>PRINT</span></a>
         </nav>
         <main class="result-content p_3 p-y_4 font_0">
@@ -40,14 +39,14 @@
             </div>
             <div class="result-document-publish-date font_n2 c_secondary">Focused Update: March 15, 2018</div>
             <nav class="flex font_n1">
-                <a href="#fulldoc" class="cell shrink link-fulldoc m-r_3 p-y_2 c_secondary-n3 hover:c_primary"><i class="fas fa-share-square m-r_3"></i><span>FULL DOC</span></a>
-                <a href="#pdfdownload" class="cell shrink link-pdf m-x_3 p-y_2 c_secondary-n3 hover:c_primary"><i class="fas fa-file-pdf m-r_3"></i><span>PDF</span></a>
-                <a href="#hublink" class="cell shrink link-hub m-x_3 p-y_2 c_secondary-n3 hover:c_primary"><i class="fas fa-share-alt m-r_3"></i><span>HUB</span></a>
+                <a href="#fulldoc" class="felx_shrink link-fulldoc m-r_3 p-y_2 c_secondary-n3 hover:c_primary"><i class="fas fa-share-square m-r_3"></i><span>FULL DOC</span></a>
+                <a href="#pdfdownload" class="felx_shrink link-pdf m-x_3 p-y_2 c_secondary-n3 hover:c_primary"><i class="fas fa-file-pdf m-r_3"></i><span>PDF</span></a>
+                <a href="#hublink" class="felx_shrink link-hub m-x_3 p-y_2 c_secondary-n3 hover:c_primary"><i class="fas fa-share-alt m-r_3"></i><span>HUB</span></a>
             </nav>
         </footer>
-        <aside class="bg_secondary-4 m-x_n3 m-b_n3">
+        <aside class="bg_secondary-4 m-x_n3 m-b_n3 p_2">
             <div class="flex font_n2 c_secondary-1  p_2 p-x_4">
-                <strong class="cell shrink c_secondary"><i class="fas fa-quote"></i>cite document:&nbsp;</strong>
+                <strong class="felx_shrink c_secondary"><i class="fas fa-quote"></i>cite document:&nbsp;</strong>
                 <span class="flex_auto overflow-ellipsis nowrap">International Organization for Standardization. (2016). Occupational health and safety management systems—Requirements with Heart</span>
             </div>
         </aside>
@@ -70,17 +69,16 @@
                     <span class="c_acc font_slab">Result Title</span>
                     <span class="font_italic c_secondary-3 font_n1">{{modifier_class}}</span>
                 </div>
-                <div class="cell shrink LOE-COR flex m-l_3 font_bold">
-                    <div class="cell small-6 loe-II bg_primary-2 p-x_3 p-y_1">II</div>
-                    <div class="cell small-6 cor-b bg_warning-2 p-x_3 p-y_1">b</div>
+                <div class="felx_shrink flex m-l_3 font_bold">
+                      <div class="felx_shrink flex m-l_3 font_bold"><div class="flex_auto bg_loe-B-BR-0 bg_primary-2 p-x_3 p-y_1">B-BR</div><div class="flex_auto bg_cor-IIA p-x_3 p-y_1">II</div></div>
                 </div>
             </header>
             <nav class="flex font_n2">
-                <a href="#saveToLibrary" class="cell shrink bg_primary_5 link-fulldoc m-r_1 p-y_1 p-x_2 br_primary-5 c_secondary-n3 hover:c_white hover:bg_primary br_solid br_secondary-3 br_1 br_radius"><i
+                <a href="#saveToLibrary" class="felx_shrink bg_primary_5 link-fulldoc m-r_1 p-y_1 p-x_2 br_primary-5 c_secondary-n3 hover:c_white hover:bg_primary br_solid br_secondary-3 br_1 br_radius"><i
                         class="fas fa-save m-r_3"></i><span>SAVE</span></a>
-                <a href="#shareResult" class="cell shrink bg_primary_5 link-pdf m-x_1 p-y_1 p-x_2 br_primary-5 c_secondary-n3 hover:c_white hover:bg_primary br_solid br_secondary-3 br_1 br_radius"><i
+                <a href="#shareResult" class="felx_shrink bg_primary_5 link-pdf m-x_1 p-y_1 p-x_2 br_primary-5 c_secondary-n3 hover:c_white hover:bg_primary br_solid br_secondary-3 br_1 br_radius"><i
                         class="fas fa-file-pdf m-r_3"></i><span>SHARE</span></a>
-                <a href="#printResult" class="cell shrink bg_primary_5 link-hub m-x_1 p-y_1 p-x_2 br_primary-5 c_secondary-n3 hover:c_white hover:bg_primary br_solid br_secondary-3 br_1 br_radius"><i
+                <a href="#printResult" class="felx_shrink bg_primary_5 link-hub m-x_1 p-y_1 p-x_2 br_primary-5 c_secondary-n3 hover:c_white hover:bg_primary br_solid br_secondary-3 br_1 br_radius"><i
                         class="fas fa-print m-r_3"></i><span>PRINT</span></a>
             </nav>
             <main class="result-content p-y_2">
@@ -93,14 +91,14 @@
                 </div>
                 <div class="result-document-publish-date font_n2 c_secondary">Focused Update: March 15, 2018</div>
                 <nav class="flex font_n2">
-                    <a href="#fulldoc" class="cell shrink link-fulldoc m-r_3 p-y_2 c_secondary-n3 hover:c_primary"><i class="fas fa-share-square m-r_3"></i><span>FULL DOC</span></a>
-                    <a href="#pdfdownload" class="cell shrink link-pdf m-x_3 p-y_2 c_secondary-n3 hover:c_primary"><i class="fas fa-file-pdf m-r_3"></i><span>PDF</span></a>
-                    <a href="#hublink" class="cell shrink link-hub m-x_3 p-y_2 c_secondary-n3 hover:c_primary"><i class="fas fa-share-alt m-r_3"></i><span>HUB</span></a>
+                    <a href="#fulldoc" class="felx_shrink link-fulldoc m-r_3 p-y_2 c_secondary-n3 hover:c_primary"><i class="fas fa-share-square m-r_3"></i><span>FULL DOC</span></a>
+                    <a href="#pdfdownload" class="felx_shrink link-pdf m-x_3 p-y_2 c_secondary-n3 hover:c_primary"><i class="fas fa-file-pdf m-r_3"></i><span>PDF</span></a>
+                    <a href="#hublink" class="felx_shrink link-hub m-x_3 p-y_2 c_secondary-n3 hover:c_primary"><i class="fas fa-share-alt m-r_3"></i><span>HUB</span></a>
                 </nav>
             </footer>
-            <aside class="bg_secondary-4 m-x_n3 m-b_n3">
+            <aside class="bg_secondary-4 m-x_n3 m-b_n3 p_2">
                 <div class="flex font_n3 c_secondary-1  p_1 p-x_3">
-                    <strong class="cell shrink c_secondary"><i class="fas fa-quote"></i>cite document:&nbsp;</strong>
+                    <strong class="felx_shrink c_secondary"><i class="fas fa-quote"></i>cite document:&nbsp;</strong>
                     <span class="flex_auto overflow-ellipsis nowrap">International Organization for Standardization. (2016). Occupational health and safety management systems—Requirements with Heart</span>
                 </div>
             </aside>

@@ -146,11 +146,12 @@ Styleguide DesignBase.Colors.ColorCoding.Pathways
 }
 /* Robto Slab Bold */
 @font-face {
-  src: local("Roboto Slab Bold"), local("RobotoSlab-Bold"), url(https://fonts.gstatic.com/s/robotoslab/v7/BngRUXZYTXPIvIBgJJSb6u92w7CGwR0.woff2) format("woff2");
+  font-display: swap;
+  src: local("Roboto Slab Regular"), local("RobotoSlab-Regular"), url(https://fonts.gstatic.com/s/robotoslab/v8/BngMUXZYTXPIvIBgJJSb6ufA5qW54A.woff2) format("woff2");
   font-family: "Roboto Slab";
   font-style: normal;
-  font-weight: 700;
-  unicode-range: U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  font-weight: 400;
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
 }
 /* Maven PRo */
 @font-face {
@@ -250,9 +251,9 @@ div[class^=texture_] {
 /** changing default names to be used with frameworks. **/
 /*
 
-Color Codes 
+Color Codes (CC) 
 
-<div class="p-b_3"><span class="bg_alert br_radius c_white d_inline-block font_n1 p-7_3 p-x_5 sg">Is Extra Style Sheets Must Be Included</span></div>Color Codes are sepereate style sheets that give you access to decorating classes created with the color pallete.
+<div class="p-b_3"><span class="bg_alert br_radius c_white d_inline-block font_n1 p-7_3 p-x_5 sg">!! Extra Style Sheet Must Be Included !!</span></div>Color Codes are sepereate style sheets that give you access to decorating classes created with the color pallete.
 
 
 
@@ -263,7 +264,7 @@ Styleguide Color Codes
 */
 /*
 
-Clinical Pathways  
+Pathway CC  
 
 Each of the clinical pathways has a distinctive color.  These colors are used to give a distinct theme to our clinical apps, marketing, pdf's and tools.
 
@@ -282,9 +283,9 @@ $pathway-acute-coronary-syndromes 						- #009974;  Acute Coronary Syndromes
 $pathway-stable-ischemnic-heart-disease 				- #0f3e65;  Stable Ischemnic Heart Disease
 $pathway-special 										- #00b6f1;  Special
 
-Weight: 300
+Weight: 2010
 
-Styleguide Color Codes.Pathway Colors
+Styleguide Pathway Colors
 
 */
 /*
@@ -339,7 +340,7 @@ Font, Border and Background Colors using invasive
 </div>
 
 
-Styleguide Color Codes.Pathway Colors.invasive
+Styleguide Pathway Colors.invasive
 */
 /*
 
@@ -393,7 +394,7 @@ Font, Border and Background Colors using congenital
 </div>
 
 
-Styleguide Color Codes.Pathway Colors.congenital
+Styleguide Pathway Colors.congenital
 */
 /*
 
@@ -447,7 +448,7 @@ Font, Border and Background Colors using noninvasive
 </div>
 
 
-Styleguide Color Codes.Pathway Colors.noninvasive
+Styleguide Pathway Colors.noninvasive
 */
 /*
 
@@ -501,7 +502,7 @@ Font, Border and Background Colors using ecg
 </div>
 
 
-Styleguide Color Codes.Pathway Colors.ecg
+Styleguide Pathway Colors.ecg
 */
 /*
 
@@ -555,7 +556,7 @@ Font, Border and Background Colors using vascular
 </div>
 
 
-Styleguide Color Codes.Pathway Colors.vascular
+Styleguide Pathway Colors.vascular
 */
 /*
 
@@ -609,7 +610,7 @@ Font, Border and Background Colors using pulmonary
 </div>
 
 
-Styleguide Color Codes.Pathway Colors.pulmonary
+Styleguide Pathway Colors.pulmonary
 */
 /*
 
@@ -663,7 +664,7 @@ Font, Border and Background Colors using prevention
 </div>
 
 
-Styleguide Color Codes.Pathway Colors.prevention
+Styleguide Pathway Colors.prevention
 */
 /*
 
@@ -717,7 +718,7 @@ Font, Border and Background Colors using hf
 </div>
 
 
-Styleguide Color Codes.Pathway Colors.hf
+Styleguide Pathway Colors.hf
 */
 /*
 
@@ -771,7 +772,7 @@ Font, Border and Background Colors using valvular
 </div>
 
 
-Styleguide Color Codes.Pathway Colors.valvular
+Styleguide Pathway Colors.valvular
 */
 /*
 
@@ -825,7 +826,7 @@ Font, Border and Background Colors using arrthythmias
 </div>
 
 
-Styleguide Color Codes.Pathway Colors.arrthythmias
+Styleguide Pathway Colors.arrthythmias
 */
 /*
 
@@ -879,7 +880,7 @@ Font, Border and Background Colors using preicardial
 </div>
 
 
-Styleguide Color Codes.Pathway Colors.preicardial
+Styleguide Pathway Colors.preicardial
 */
 /*
 
@@ -933,7 +934,7 @@ Font, Border and Background Colors using acute
 </div>
 
 
-Styleguide Color Codes.Pathway Colors.acute
+Styleguide Pathway Colors.acute
 */
 /*
 
@@ -987,7 +988,7 @@ Font, Border and Background Colors using ischemnic
 </div>
 
 
-Styleguide Color Codes.Pathway Colors.ischemnic
+Styleguide Pathway Colors.ischemnic
 */
 /*
 
@@ -1041,11 +1042,11 @@ Font, Border and Background Colors using special
 </div>
 
 
-Styleguide Color Codes.Pathway Colors.special
+Styleguide Pathway Colors.special
 */
 /*
 
-Class of Recomendation 
+COR CC 
 
 (COR) Class of Recomendation is a color collect used in Guideline recomendations.
 
@@ -1055,9 +1056,9 @@ $cor-yellow-orange          - #faa74b; IIA
 $cor-orange               	- #f15d4c;III and III-NoHarm
 $cor-red               		- #ed1c00; III-harm
 
-Weight: 310
+Weight: 2030
 
-Styleguide Color Codes.COR Colors
+Styleguide COR Colors
 
  */
 /*
@@ -1112,7 +1113,7 @@ Font, Border and Background Colors using cor-I
 </div>
 
 
-Styleguide Color Codes.COR Colors.cor-I
+Styleguide COR Colors.cor-I
 */
 /*
 
@@ -1166,7 +1167,7 @@ Font, Border and Background Colors using cor-IIA
 </div>
 
 
-Styleguide Color Codes.COR Colors.cor-IIA
+Styleguide COR Colors.cor-IIA
 */
 /*
 
@@ -1220,7 +1221,7 @@ Font, Border and Background Colors using cor-IIB
 </div>
 
 
-Styleguide Color Codes.COR Colors.cor-IIB
+Styleguide COR Colors.cor-IIB
 */
 /*
 
@@ -1274,7 +1275,7 @@ Font, Border and Background Colors using cor-III
 </div>
 
 
-Styleguide Color Codes.COR Colors.cor-III
+Styleguide COR Colors.cor-III
 */
 /*
 
@@ -1328,7 +1329,7 @@ Font, Border and Background Colors using cor-III-NOBENIFIT
 </div>
 
 
-Styleguide Color Codes.COR Colors.cor-III-NOBENIFIT
+Styleguide COR Colors.cor-III-NOBENIFIT
 */
 /*
 
@@ -1382,11 +1383,11 @@ Font, Border and Background Colors using cor-III-HARM
 </div>
 
 
-Styleguide Color Codes.COR Colors.cor-III-HARM
+Styleguide COR Colors.cor-III-HARM
 */
 /*
 
-level of Evedence  
+LOE CC
 
 (LOE) level of Evedence is a color collect used in Guideline recomendations.
 
@@ -1395,9 +1396,9 @@ $loe-mid-blue              		- #659cd3;LOE B-R
 $loe-light-blue                	- #a1c1e6;LOE B-NR
 $loe-pale-blue                	- #b5d5e5; LOE C
 
-Weight: 309
+Weight: 2020
 
-Styleguide Color Codes.LOE Colors
+Styleguide LOE Colors
  */
 /*
 
@@ -1450,7 +1451,7 @@ Font, Border and Background Colors using loe-A
 <div class="c_loe-A-n5 text_left br_solid br_0 br-b_1 br_white-3 font_display flex"><div class="flex_auto p_5 p-y_2">modified level n5 of the font color.</div><div class="flex_auto p_5 p-y_2 bg_secondary-n3">modified level n5 of the font color.</div></div>
 </div>
 
-Styleguide Color Codes.LOE Colors.loe-A
+Styleguide LOE Colors.loe-A
 */
 /*
 
@@ -1503,7 +1504,7 @@ Font, Border and Background Colors using loe-B-NR
 <div class="c_loe-B-NR-n5 text_left br_solid br_0 br-b_1 br_white-3 font_display flex"><div class="flex_auto p_5 p-y_2">modified level n5 of the font color.</div><div class="flex_auto p_5 p-y_2 bg_secondary-n3">modified level n5 of the font color.</div></div>
 </div>
 
-Styleguide Color Codes.LOE Colors.loe-B-NR
+Styleguide LOE Colors.loe-B-NR
 */
 /*
 
@@ -1556,7 +1557,7 @@ Font, Border and Background Colors using loe-B-BR
 <div class="c_loe-B-BR-n5 text_left br_solid br_0 br-b_1 br_white-3 font_display flex"><div class="flex_auto p_5 p-y_2">modified level n5 of the font color.</div><div class="flex_auto p_5 p-y_2 bg_secondary-n3">modified level n5 of the font color.</div></div>
 </div>
 
-Styleguide Color Codes.LOE Colors.loe-B-BR
+Styleguide LOE Colors.loe-B-BR
 */
 /*
 
@@ -1609,7 +1610,7 @@ Font, Border and Background Colors using loe-C-LD
 <div class="c_loe-C-LD-n5 text_left br_solid br_0 br-b_1 br_white-3 font_display flex"><div class="flex_auto p_5 p-y_2">modified level n5 of the font color.</div><div class="flex_auto p_5 p-y_2 bg_secondary-n3">modified level n5 of the font color.</div></div>
 </div>
 
-Styleguide Color Codes.LOE Colors.loe-C-LD
+Styleguide LOE Colors.loe-C-LD
 */
 /*
 
@@ -1662,13 +1663,13 @@ Font, Border and Background Colors using loe-C-EO
 <div class="c_loe-C-EO-n5 text_left br_solid br_0 br-b_1 br_white-3 font_display flex"><div class="flex_auto p_5 p-y_2">modified level n5 of the font color.</div><div class="flex_auto p_5 p-y_2 bg_secondary-n3">modified level n5 of the font color.</div></div>
 </div>
 
-Styleguide Color Codes.LOE Colors.loe-C-EO
+Styleguide LOE Colors.loe-C-EO
 */
 /*
 
-Credit Type  
+Credit CC
 
-Credit Types in the ACC have a specific color coding.
+Credit Type Color codes in the ACC have a specific color coding.
 
 $credit-CME         	-  #00a15b; CME   
 $credit-ABP         	-  #007A5B; ABP   
@@ -1681,9 +1682,9 @@ $credit-CNErx         	-  #52549E; CNErx
 $credit-ECME         	-  #D16528; ECME   
 $credit-CPE         	-  #992E2E; CPE   
 
-Weight: 299
+Weight: 2000
 
-Styleguide Color Codes.Credit Colors
+Styleguide Credit Colors
 
 */
 /*
@@ -1737,7 +1738,7 @@ Font, Border and Background Colors using CME
 <div class="c_CME-n5 text_left br_solid br_0 br-b_1 br_white-3 font_display flex"><div class="flex_auto p_5 p-y_2">modified level n5 of the font color.</div><div class="flex_auto p_5 p-y_2 bg_secondary-n3">modified level n5 of the font color.</div></div>
 </div>
 
-Styleguide Color Codes.Credit Colors.CME
+Styleguide Credit Colors.CME
 */
 /*
 
@@ -1790,7 +1791,7 @@ Font, Border and Background Colors using ABP
 <div class="c_ABP-n5 text_left br_solid br_0 br-b_1 br_white-3 font_display flex"><div class="flex_auto p_5 p-y_2">modified level n5 of the font color.</div><div class="flex_auto p_5 p-y_2 bg_secondary-n3">modified level n5 of the font color.</div></div>
 </div>
 
-Styleguide Color Codes.Credit Colors.ABP
+Styleguide Credit Colors.ABP
 */
 /*
 
@@ -1843,7 +1844,7 @@ Font, Border and Background Colors using COP
 <div class="c_COP-n5 text_left br_solid br_0 br-b_1 br_white-3 font_display flex"><div class="flex_auto p_5 p-y_2">modified level n5 of the font color.</div><div class="flex_auto p_5 p-y_2 bg_secondary-n3">modified level n5 of the font color.</div></div>
 </div>
 
-Styleguide Color Codes.Credit Colors.COP
+Styleguide Credit Colors.COP
 */
 /*
 
@@ -1896,7 +1897,7 @@ Font, Border and Background Colors using CE
 <div class="c_CE-n5 text_left br_solid br_0 br-b_1 br_white-3 font_display flex"><div class="flex_auto p_5 p-y_2">modified level n5 of the font color.</div><div class="flex_auto p_5 p-y_2 bg_secondary-n3">modified level n5 of the font color.</div></div>
 </div>
 
-Styleguide Color Codes.Credit Colors.CE
+Styleguide Credit Colors.CE
 */
 /*
 
@@ -1949,7 +1950,7 @@ Font, Border and Background Colors using MOCII
 <div class="c_MOCII-n5 text_left br_solid br_0 br-b_1 br_white-3 font_display flex"><div class="flex_auto p_5 p-y_2">modified level n5 of the font color.</div><div class="flex_auto p_5 p-y_2 bg_secondary-n3">modified level n5 of the font color.</div></div>
 </div>
 
-Styleguide Color Codes.Credit Colors.MOCII
+Styleguide Credit Colors.MOCII
 */
 /*
 
@@ -2002,7 +2003,7 @@ Font, Border and Background Colors using MOCIV
 <div class="c_MOCIV-n5 text_left br_solid br_0 br-b_1 br_white-3 font_display flex"><div class="flex_auto p_5 p-y_2">modified level n5 of the font color.</div><div class="flex_auto p_5 p-y_2 bg_secondary-n3">modified level n5 of the font color.</div></div>
 </div>
 
-Styleguide Color Codes.Credit Colors.MOCIV
+Styleguide Credit Colors.MOCIV
 */
 /*
 
@@ -2055,7 +2056,7 @@ Font, Border and Background Colors using CNE
 <div class="c_CNE-n5 text_left br_solid br_0 br-b_1 br_white-3 font_display flex"><div class="flex_auto p_5 p-y_2">modified level n5 of the font color.</div><div class="flex_auto p_5 p-y_2 bg_secondary-n3">modified level n5 of the font color.</div></div>
 </div>
 
-Styleguide Color Codes.Credit Colors.CNE
+Styleguide Credit Colors.CNE
 */
 /*
 
@@ -2108,7 +2109,7 @@ Font, Border and Background Colors using CNErx
 <div class="c_CNErx-n5 text_left br_solid br_0 br-b_1 br_white-3 font_display flex"><div class="flex_auto p_5 p-y_2">modified level n5 of the font color.</div><div class="flex_auto p_5 p-y_2 bg_secondary-n3">modified level n5 of the font color.</div></div>
 </div>
 
-Styleguide Color Codes.Credit Colors.CNErx
+Styleguide Credit Colors.CNErx
 */
 /*
 
@@ -2161,7 +2162,7 @@ Font, Border and Background Colors using ECME
 <div class="c_ECME-n5 text_left br_solid br_0 br-b_1 br_white-3 font_display flex"><div class="flex_auto p_5 p-y_2">modified level n5 of the font color.</div><div class="flex_auto p_5 p-y_2 bg_secondary-n3">modified level n5 of the font color.</div></div>
 </div>
 
-Styleguide Color Codes.Credit Colors.ECME
+Styleguide Credit Colors.ECME
 */
 /*
 
@@ -2214,7 +2215,7 @@ Font, Border and Background Colors using CPE
 <div class="c_CPE-n5 text_left br_solid br_0 br-b_1 br_white-3 font_display flex"><div class="flex_auto p_5 p-y_2">modified level n5 of the font color.</div><div class="flex_auto p_5 p-y_2 bg_secondary-n3">modified level n5 of the font color.</div></div>
 </div>
 
-Styleguide Color Codes.Credit Colors.CPE
+Styleguide Credit Colors.CPE
 */
 h1, h2, h3, h4, h5, h6, p, td, th {
   /* Safari */
@@ -11664,22 +11665,6 @@ Styleguide counters
 	Styleguide Recipe
 
 */
-/* Styleguide Recipe.010 */
-/*
-	Quicklinks
-
-	small list navs used in header structures of websites.
-
-	<ul class="menu quicklinks ul_none">
-		<li class="quicklinks__item br_solid br_0 br-r_1 br_primary-1 p-x_2"><a href="#" class="quicklinks__link h:bg_primary-5 c_black font_n1 lh_1 p-x_2">First</a></li>
-		<li class="quicklinks__item br_solid br_0 br-r_1 br_primary-1 p-x_2"><a href="#" class="quicklinks__link h:bg_primary-5 c_black font_n1 lh_1 p-x_2">One</a></li>
-		<li class="quicklinks__item br_solid br_0 br-r_1 br_primary-1 p-x_2"><a href="#" class="quicklinks__link h:bg_primary-5 c_black font_n1 lh_1 p-x_2">Two</a></li>
-		<li class="quicklinks__item br_solid br_0 br-r_1 br_primary-1 p-x_2"><a href="#" class="quicklinks__link h:bg_primary-5 c_black font_n1 lh_1 p-x_2">Three</a></li>
-		<li class="quicklinks__item"><a href="#" class="quicklinks__link  h:bg_primary-5 c_black font_n1 lh_1 p-x_2">End</a></li>
-	</ul>
-
-	Styleguide Recipe.quicklinks
- */
 /* Nav Recipe.00x */
 /*
     Mobile Footer Nav
@@ -11715,10 +11700,10 @@ Styleguide counters
             <div class="flex_auto w_50:md p-l_4:md p-r_5:md">
                 <!-- Address -->
                 <section class="address c_white">
-                    <h3 class="font_slab font_2">American College of Cardiology</h3>
+                    <h3 class="font_slab font_1 m-b_0 font_normal font_regular">American College of Cardiology</h3>
                     <address>
                         <!-- http://microformats.org/wiki/hcard -->
-                        <h4 class="font_slab font_1 m-b_4">Heart House</h4>
+                        <h4 class="m-b_0 font_bold font_copy font_normal font_1 m-t_4">Heart House</h4>
                         <div class="flex font_copy font_0">
                         <div class="flex_shrink p-r_5 m-r_5">
                             <ul class="ul_none  lh_2">
@@ -11762,7 +11747,7 @@ Styleguide counters
                 </section>
                 <!-- /Address -->
                 <!-- Social -->
-                <h4 class="font_slab c_white">Stay Connected</h4>
+                <h4 class="font_slab c_white font_regular">Stay Connected</h4>
                 <ul class="flex social-bar ul_none c_white h:c_white">
                     <li class="flex_auto m-r_2"><a href="https://twitter.com/accintouch" target="_blank" class="twitter social-bar--button d_block m-b_0 p-x_5 p-y_3 c_white-8 h:c_white text_right h:bg_primary-n1"><i class="fab fa-twitter-square font_2"></i></a></li>
                     <li class="flex_auto m-r_2"><a href="https://www.facebook.com/AmericanCollegeofCardiology" target="_blank" class="facebook social-bar--button d_block m-b_0 p-x_5 p-y_3 c_white-8 h:c_white text_right h:bg_primary-n1"><i class="fab fa-facebook-square font_2"></i></a></li>
@@ -11775,7 +11760,7 @@ Styleguide counters
             <div class="flex_auto p-l_4:md p-r_4:md">
                 <!-- Footer External Links -->
                 <section class="acc-websites row c_white p-x_3">
-                    <h3 class="font_slab">Improving Cardiovascular Care</h3>
+                    <h3 class="font_slab font_regular">Improving Cardiovascular Care</h3>
                     <nav class="font_copy d_block clearfix">
                         <ul class="ul_none lh_2 font_0">
                             <li class="c_white br_solid  br_0 br-b_1  br_white-5">
@@ -11845,7 +11830,7 @@ Styleguide counters
     markup:
     <div class="texture_dark p_4">
         <section class="acc-websites row c_white p-x_3">
-            <h4 class="font_slab">Improving Cardiovascular Care</h4>
+            <h4 class="font_slab font_regular">Improving Cardiovascular Care</h4>
             <nav class="d_block clearfix font_copy">
                 <ul class="ul_none lh_2 font_0">
                     <li class="c_white br_solid  br_0 br-b_1  br_white-5">
@@ -11894,10 +11879,10 @@ Styleguide counters
     markup:
     <div class="texture_dark p_4">
         <section class="address c_white">
-            <h3 class="font_slab font_2">American College of Cardiology</h3>
+            <h3 class="font_slab font_1 m-b_0 font_normal font_regular">American College of Cardiology</h3>
             <address>
                 <!-- http://microformats.org/wiki/hcard -->
-                <h4 class="font_slab font_1 m-b_4">Heart House</h4>
+                <h4 class="m-b_0 font_bold font_copy font_normal font_1 m-t_4">Heart House</h4>
                 <div class="flex font_copy font_0">
                 <div class="flex_shrink p-r_5 m-r_5">
                     <ul class="ul_none  lh_2">
@@ -11992,65 +11977,6 @@ Styleguide counters
 
     */
 /* content Recipe.200 */
-/*
-    User Card
-
-    Member Cards Used in the CSTool give a great represendation on how complex the UI can be with a combination of UCs
-
-    markup:
-    <div class="detail-container shadow br_solid br_black-1 bg_white">
-        <div class="grid-x">
-            <div class="cell auto p_3">
-                <div class="member-name font_1 font_slab lh_2 member-name p-x_3 p-y-l_4">David
-                    Y. Wilder
-                    <a class="bg_secondary-4 float-right font_0 hover:bg_secondary p-l_3 p-r_3 p_2"><i
-                            class="fas fa-share-alt-square"></i>
-                        </a>
-                </div>
-                <div>
-                    <ul class="details no-bullet p-l_3 p-r_3 m_0 font_0 grid-x grid-margin-x">
-                        <li class="br_0 br-b_1 br_secondary-5 br_0 br_solid p_2 cell small-12">
-                            <div><i class="m-l_3 m-r_3 c_secondary-2 fal fa-user-slash"></i>NPI</div>
-                        </li>
-                        <li class="br-b_1 br_secondary-5 br_0 br_solid p_2 cell small-12"><i class="m-l_3 m-r_3 c_secondary-2 fal fa-hashtag"></i>1696062374299
-                        </li>
-                        <li class="br-b_1 br_secondary-5 br_0 br_solid p_2 cell small-12"><i class="m-l_3 m-r_3 c_secondary-2 fal fa-at"></i>Donec@quis.org
-                            <a class="link float-right p_2"><i class="fal fa-pencil"></i></a></li>
-                        <li class="br-b_1 br_secondary-5 br_0 br_solid p_2 cell small-12"><i class="m-l_3 m-r_3 c_secondary-2 fal fa-map-pin"></i>Polatlı
-                        </li>
-                        <li class="br-b_1 br_secondary-5 br_0 br_solid p_2 cell small-12"><i class="m-l_3 m-r_3 c_secondary-2 fal fa-badge-check"></i>75988
-                            <a href="" class="link float-right p_2"><i class="fal fa-exchange-alt"></i></a></li>
-                        <li class="br-b_1 br_secondary-5 br_0 br_solid p_2 cell small-12"><i class="m-l_3 m-r_3 c_secondary-2 fal fa-user-circle"></i>neque.et@neque.net
-                            <a href="#" class="link float-right p_2"><i class="fal fa-pencil"></i></a></li>
-                        <li class="br-b_1 br_secondary-5 br_0 br_solid p_2 cell small-12"><i class="m-l_3 m-r_3 c_secondary-2 fal fa-key"></i>GRW95WZD9VY
-                            <a href="#" class="link float-right p_2"><a href="#" class="link float-right p_2"><i
-                                        class="fal fa-pencil"></i></a></a></li>
-                    </ul>
-                    <div class="p_4 flex font_n1"><i class="m-l_3 c_secondary-2 fal fa-users-crown flex-shrink"></i><a
-                            class="link m-l_3 m-r_3 flex-auto">
-                            <i class="fas fa-chevron-circle-right p-r_3"></i>1 linked account(s) </a><a class="link float-right m-l_3 m-r_3 flex-1">manage
-                            &nbsp;
-                            <i class="fal fa-pencil"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="cell shrink texture_light bg_secondary-3 m-r_3 c_secondary-1 font_n2">
-                <ul class="flag no-bullet">
-                    <li class="p_3 center member"><i class="fal fa-user-md"></i></li>
-                    <li class="p_3 center accbadge active"><i class="fal fa-badge-check"></i></li>
-                    <li class="p_3 center iscience"><i class="fal fa-flask"></i></li>
-                    <li class="p_3 center bruteforce"><i class="fal fa-lock-alt"></i></li>
-                    <li class="p_3 center expobadge"><i class="fal fa-exclamation-circle"></i></li>
-                </ul>
-            </div>
-        </div>
-    </div>
-
-    sg-wrapper: 
-    <div class="p_5 p-t_3 p-b_3 texture_light bg_secondary-4"><sg-wrapper-content/></div>
-
-    Styleguide Recipe.Zurb.User Card
-*/
 /* content Recipe.250 */
 /*
     Guideline Result
@@ -12068,17 +11994,16 @@ Styleguide counters
                 <span class="c_secondary-n5 font_slab"><span class="c_acc font_bold p-r_3">5.1</span>Genetic Predisposition</span><br>
                 <span class="font_italic c_secondary-3 font_n1">{{modifier_class}}</span>
             </div>
-            <div class="cell shrink LOE-COR flex m-l_3 font_bold">
-                <div class="cell small-6 loe-II bg_primary-2 p-x_3 p-y_1">II</div>
-                <div class="cell small-6 cor-b bg_warning-2 p-x_3 p-y_1">b</div>
+            <div class="felx_shrink flex m-l_3 font_bold">
+                  <div class="felx_shrink flex m-l_3 font_bold"><div class="flex_auto bg_loe-B-BR-0 bg_primary-2 p-x_3 p-y_1">B-BR</div><div class="flex_auto bg_cor-IIA p-x_3 p-y_1">II</div></div>
             </div>
         </header>
         <nav class="flex font_n2 none">
-            <a href="#saveToLibrary" class="cell shrink bg_primary_5 link-fulldoc m-r_1 p-y_1 p-x_2 br_primary-5 c_secondary-n3 hover:c_white hover:bg_primary br_solid br_secondary-3 br_1 br_radius"><i
+            <a href="#saveToLibrary" class="felx_shrink bg_primary_5 link-fulldoc m-r_1 p-y_1 p-x_2 br_primary-5 c_secondary-n3 hover:c_white hover:bg_primary br_solid br_secondary-3 br_1 br_radius"><i
                     class="fas fa-save m-r_3"></i><span>SAVE</span></a>
-            <a href="#shareResult" class="cell shrink bg_primary_5 link-pdf m-x_1 p-y_1 p-x_2 br_primary-5 c_secondary-n3 hover:c_white hover:bg_primary br_solid br_secondary-3 br_1 br_radius"><i
+            <a href="#shareResult" class="felx_shrink bg_primary_5 link-pdf m-x_1 p-y_1 p-x_2 br_primary-5 c_secondary-n3 hover:c_white hover:bg_primary br_solid br_secondary-3 br_1 br_radius"><i
                     class="fas fa-file-pdf m-r_3"></i><span>SHARE</span></a>
-            <a href="#printResult" class="cell shrink bg_primary_5 link-hub m-x_1 p-y_1 p-x_2 br_primary-5 c_secondary-n3 hover:c_white hover:bg_primary br_solid br_secondary-3 br_1 br_radius"><i
+            <a href="#printResult" class="felx_shrink bg_primary_5 link-hub m-x_1 p-y_1 p-x_2 br_primary-5 c_secondary-n3 hover:c_white hover:bg_primary br_solid br_secondary-3 br_1 br_radius"><i
                     class="fas fa-print m-r_3"></i><span>PRINT</span></a>
         </nav>
         <main class="result-content p_3 p-y_4 font_0">
@@ -12093,14 +12018,14 @@ Styleguide counters
             </div>
             <div class="result-document-publish-date font_n2 c_secondary">Focused Update: March 15, 2018</div>
             <nav class="flex font_n1">
-                <a href="#fulldoc" class="cell shrink link-fulldoc m-r_3 p-y_2 c_secondary-n3 hover:c_primary"><i class="fas fa-share-square m-r_3"></i><span>FULL DOC</span></a>
-                <a href="#pdfdownload" class="cell shrink link-pdf m-x_3 p-y_2 c_secondary-n3 hover:c_primary"><i class="fas fa-file-pdf m-r_3"></i><span>PDF</span></a>
-                <a href="#hublink" class="cell shrink link-hub m-x_3 p-y_2 c_secondary-n3 hover:c_primary"><i class="fas fa-share-alt m-r_3"></i><span>HUB</span></a>
+                <a href="#fulldoc" class="felx_shrink link-fulldoc m-r_3 p-y_2 c_secondary-n3 hover:c_primary"><i class="fas fa-share-square m-r_3"></i><span>FULL DOC</span></a>
+                <a href="#pdfdownload" class="felx_shrink link-pdf m-x_3 p-y_2 c_secondary-n3 hover:c_primary"><i class="fas fa-file-pdf m-r_3"></i><span>PDF</span></a>
+                <a href="#hublink" class="felx_shrink link-hub m-x_3 p-y_2 c_secondary-n3 hover:c_primary"><i class="fas fa-share-alt m-r_3"></i><span>HUB</span></a>
             </nav>
         </footer>
-        <aside class="bg_secondary-4 m-x_n3 m-b_n3">
+        <aside class="bg_secondary-4 m-x_n3 m-b_n3 p_2">
             <div class="flex font_n2 c_secondary-1  p_2 p-x_4">
-                <strong class="cell shrink c_secondary"><i class="fas fa-quote"></i>cite document:&nbsp;</strong>
+                <strong class="felx_shrink c_secondary"><i class="fas fa-quote"></i>cite document:&nbsp;</strong>
                 <span class="flex_auto overflow-ellipsis nowrap">International Organization for Standardization. (2016). Occupational health and safety management systems—Requirements with Heart</span>
             </div>
         </aside>
@@ -12123,17 +12048,16 @@ Styleguide counters
                     <span class="c_acc font_slab">Result Title</span>
                     <span class="font_italic c_secondary-3 font_n1">{{modifier_class}}</span>
                 </div>
-                <div class="cell shrink LOE-COR flex m-l_3 font_bold">
-                    <div class="cell small-6 loe-II bg_primary-2 p-x_3 p-y_1">II</div>
-                    <div class="cell small-6 cor-b bg_warning-2 p-x_3 p-y_1">b</div>
+                <div class="felx_shrink flex m-l_3 font_bold">
+                      <div class="felx_shrink flex m-l_3 font_bold"><div class="flex_auto bg_loe-B-BR-0 bg_primary-2 p-x_3 p-y_1">B-BR</div><div class="flex_auto bg_cor-IIA p-x_3 p-y_1">II</div></div>
                 </div>
             </header>
             <nav class="flex font_n2">
-                <a href="#saveToLibrary" class="cell shrink bg_primary_5 link-fulldoc m-r_1 p-y_1 p-x_2 br_primary-5 c_secondary-n3 hover:c_white hover:bg_primary br_solid br_secondary-3 br_1 br_radius"><i
+                <a href="#saveToLibrary" class="felx_shrink bg_primary_5 link-fulldoc m-r_1 p-y_1 p-x_2 br_primary-5 c_secondary-n3 hover:c_white hover:bg_primary br_solid br_secondary-3 br_1 br_radius"><i
                         class="fas fa-save m-r_3"></i><span>SAVE</span></a>
-                <a href="#shareResult" class="cell shrink bg_primary_5 link-pdf m-x_1 p-y_1 p-x_2 br_primary-5 c_secondary-n3 hover:c_white hover:bg_primary br_solid br_secondary-3 br_1 br_radius"><i
+                <a href="#shareResult" class="felx_shrink bg_primary_5 link-pdf m-x_1 p-y_1 p-x_2 br_primary-5 c_secondary-n3 hover:c_white hover:bg_primary br_solid br_secondary-3 br_1 br_radius"><i
                         class="fas fa-file-pdf m-r_3"></i><span>SHARE</span></a>
-                <a href="#printResult" class="cell shrink bg_primary_5 link-hub m-x_1 p-y_1 p-x_2 br_primary-5 c_secondary-n3 hover:c_white hover:bg_primary br_solid br_secondary-3 br_1 br_radius"><i
+                <a href="#printResult" class="felx_shrink bg_primary_5 link-hub m-x_1 p-y_1 p-x_2 br_primary-5 c_secondary-n3 hover:c_white hover:bg_primary br_solid br_secondary-3 br_1 br_radius"><i
                         class="fas fa-print m-r_3"></i><span>PRINT</span></a>
             </nav>
             <main class="result-content p-y_2">
@@ -12146,14 +12070,14 @@ Styleguide counters
                 </div>
                 <div class="result-document-publish-date font_n2 c_secondary">Focused Update: March 15, 2018</div>
                 <nav class="flex font_n2">
-                    <a href="#fulldoc" class="cell shrink link-fulldoc m-r_3 p-y_2 c_secondary-n3 hover:c_primary"><i class="fas fa-share-square m-r_3"></i><span>FULL DOC</span></a>
-                    <a href="#pdfdownload" class="cell shrink link-pdf m-x_3 p-y_2 c_secondary-n3 hover:c_primary"><i class="fas fa-file-pdf m-r_3"></i><span>PDF</span></a>
-                    <a href="#hublink" class="cell shrink link-hub m-x_3 p-y_2 c_secondary-n3 hover:c_primary"><i class="fas fa-share-alt m-r_3"></i><span>HUB</span></a>
+                    <a href="#fulldoc" class="felx_shrink link-fulldoc m-r_3 p-y_2 c_secondary-n3 hover:c_primary"><i class="fas fa-share-square m-r_3"></i><span>FULL DOC</span></a>
+                    <a href="#pdfdownload" class="felx_shrink link-pdf m-x_3 p-y_2 c_secondary-n3 hover:c_primary"><i class="fas fa-file-pdf m-r_3"></i><span>PDF</span></a>
+                    <a href="#hublink" class="felx_shrink link-hub m-x_3 p-y_2 c_secondary-n3 hover:c_primary"><i class="fas fa-share-alt m-r_3"></i><span>HUB</span></a>
                 </nav>
             </footer>
-            <aside class="bg_secondary-4 m-x_n3 m-b_n3">
+            <aside class="bg_secondary-4 m-x_n3 m-b_n3 p_2">
                 <div class="flex font_n3 c_secondary-1  p_1 p-x_3">
-                    <strong class="cell shrink c_secondary"><i class="fas fa-quote"></i>cite document:&nbsp;</strong>
+                    <strong class="felx_shrink c_secondary"><i class="fas fa-quote"></i>cite document:&nbsp;</strong>
                     <span class="flex_auto overflow-ellipsis nowrap">International Organization for Standardization. (2016). Occupational health and safety management systems—Requirements with Heart</span>
                 </div>
             </aside>
