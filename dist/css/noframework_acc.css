@@ -7716,6 +7716,11 @@ Styleguide Typography
 
     <div class="p-b_3"><span class="bg_accent br_radius c_white d_inline-block font_n1 p-7_3 p-x_5 sg">Is Responsive: breakpoint modifiers</span></div>You can alter the size of the font with font_[x]
 
+  .font_10 - 10x
+  .font_9 - 9x
+  .font_8 - 8x
+  .font_7 - 7x
+  .font_6 - 6x
   .font_5 - Largest
   .font_4 - Large
   .font_3 - Big
@@ -7944,103 +7949,6 @@ Styleguide Typography
 
   .font_n5\:lg {
     font-size: 0.401877572rem;
-  }
-}
-/*
-Golden Ratio Font Size
-
-<div class="p-b_3"><span class="bg_accent br_radius c_white d_inline-block font_n1 p-7_3 p-x_5 sg">Style Is Responsive</span></div> 
-Golden Ratio Fonts can make a more impactful text for marketing areas. Unlike font size the golden ratio fonts are based on ems so in combination with the parents fonts size the modifications can create marketing focused typography solutions.
-
-
-
-.font-golden_5 - Largest
-.font-golden_4 - Large
-.font-golden_3 - Big
-.font-golden_2 - Big-ish
-.font-golden_1 - Slightly Bigger
-.font-golden_0 - Default Size
-
-
-markup:
-<div class="font_n2 font_normal">
-  <div class="{{modifier_class}}  uppercase">{{modifier_class}} with Parent of .font_n2</div>
-</div>
-
-Styleguide Typography.Font.Size.Golden
- */
-.font-golden_0 {
-  font-size: 1em;
-}
-
-.font-golden_1 {
-  font-size: 1.618034em;
-}
-
-.font-golden_2 {
-  font-size: 2.6180340252em;
-}
-
-.font-golden_3 {
-  font-size: 4.2360680659em;
-}
-
-.font-golden_4 {
-  font-size: 6.8541021569em;
-}
-
-.font-golden_5 {
-  font-size: 11.0901703293em;
-}
-
-@media only screen and (min-width : 640px) {
-  .font-golden_0\:md {
-    font-size: 1em;
-  }
-
-  .font-golden_1\:md {
-    font-size: 1.618034em;
-  }
-
-  .font-golden_2\:md {
-    font-size: 2.6180340252em;
-  }
-
-  .font-golden_3\:md {
-    font-size: 4.2360680659em;
-  }
-
-  .font-golden_4\:md {
-    font-size: 6.8541021569em;
-  }
-
-  .font-golden_5\:md {
-    font-size: 11.0901703293em;
-  }
-}
-@media only screen and (min-width : 1024px) {
-  .font-golden_0\:lg {
-    font-size: 1em;
-  }
-
-  .font-golden_1\:lg {
-    font-size: 1.618034em;
-  }
-
-  .font-golden_2\:lg {
-    font-size: 2.6180340252em;
-  }
-
-  .font-golden_3\:lg {
-    font-size: 4.2360680659em;
-  }
-
-  .font-golden_4\:lg {
-    font-size: 6.8541021569em;
-  }
-
-  .font-golden_5\:lg {
-    font-size: 11.0901703293em;
   }
 }
 .wrap {

@@ -126,6 +126,11 @@ $black: rgb(19, 18, 18) !default;
 
     <div class="p-b_3"><span class="bg_accent br_radius c_white d_inline-block font_n1 p-7_3 p-x_5 sg">Is Responsive: breakpoint modifiers</span></div>You can alter the size of the font with font_[x]
 
+  .font_10 - 10x
+  .font_9 - 9x
+  .font_8 - 8x
+  .font_7 - 7x
+  .font_6 - 6x
   .font_5 - Largest
   .font_4 - Large
   .font_3 - Big
@@ -157,39 +162,34 @@ $black: rgb(19, 18, 18) !default;
   @include loop-style(font-size, $bp-label_large, "");
 }
 
-/*
-Golden Ratio Font Size
+// Golden Ratio Font Size
 
-<div class="p-b_3"><span class="bg_accent br_radius c_white d_inline-block font_n1 p-7_3 p-x_5 sg">Style Is Responsive</span></div> 
-Golden Ratio Fonts can make a more impactful text for marketing areas. Unlike font size the golden ratio fonts are based on ems so in combination with the parents fonts size the modifications can create marketing focused typography solutions.
+// <div class="p-b_3"><span class="bg_accent br_radius c_white d_inline-block font_n1 p-7_3 p-x_5 sg">Style Is Responsive</span></div>
+// Golden Ratio Fonts can make a more impactful text for marketing areas. Unlike font size the golden ratio fonts are based on ems so in combination with the parents fonts size the modifications can create marketing focused typography solutions.
 
+// .font-golden_5 - Largest
+// .font-golden_4 - Large
+// .font-golden_3 - Big
+// .font-golden_2 - Big-ish
+// .font-golden_1 - Slightly Bigger
+// .font-golden_0 - Default Size
 
+// markup:
+// <div class="font_n2 font_normal">
+//   <div class="{{modifier_class}}  uppercase">{{modifier_class}} with Parent of .font_n2</div>
+// </div>
 
-.font-golden_5 - Largest
-.font-golden_4 - Large
-.font-golden_3 - Big
-.font-golden_2 - Big-ish
-.font-golden_1 - Slightly Bigger
-.font-golden_0 - Default Size
+//Styleguide Typography.Font.Size.Golden
 
+// @include loop-style(golden);
 
-markup:
-<div class="font_n2 font_normal">
-  <div class="{{modifier_class}}  uppercase">{{modifier_class}} with Parent of .font_n2</div>
-</div>
+// @media #{$medium-up} {
+//   @include loop-style(golden, $bp-label_medium, "");
+// }
 
-Styleguide Typography.Font.Size.Golden
- */
-
-@include loop-style(golden);
-
-@media #{$medium-up} {
-  @include loop-style(golden, $bp-label_medium, "");
-}
-
-@media #{$large-up} {
-  @include loop-style(golden, $bp-label_large, "");
-}
+// @media #{$large-up} {
+//   @include loop-style(golden, $bp-label_large, "");
+// }
 
 .wrap {
   white-space: normal;
