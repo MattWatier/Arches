@@ -5443,8 +5443,7 @@ table.hover:not(.unstriped) tr:nth-of-type(even):hover {
   padding: 8px 16px;
   padding: 0.5rem 1rem;
   color: #198dae;
-  font-size: 12px;
-  font-size: 0.75rem;
+  font-size: 1em;
   line-height: 1;
 }
 [data-whatinput=mouse] .tabs-title > a {
@@ -7954,7 +7953,7 @@ Styleguide InteractiveExtras.Scrollbar
 	markup:
     <div class="texture-dark">
         <h4 class="font_slab c_white">Stay Connected</h4>
-        <ul class="flex social-bar ul_none c_white h:c_white">
+        <ul class="flex social-bar ul_none c_white h:c_white m_0">
             <li class="flex_auto m-r_2"><a href="https://twitter.com/accintouch" target="_blank" class="twitter social-bar--button d_block m-b_0 p-x_5 p-y_3 c_white-8 h:c_white text_right h:bg_primary-n1"><i class="fab fa-twitter-square font_2"></i></a></li>
             <li class="flex_auto m-r_2"><a href="https://www.facebook.com/AmericanCollegeofCardiology" target="_blank" class="facebook social-bar--button d_block m-b_0 p-x_5 p-y_3 c_white-8 h:c_white text_right h:bg_primary-n1"><i class="fab fa-facebook-square font_2"></i></a></li>
             <li class="flex_auto m-r_2"><a href="https://www.linkedin.com/groups/732607/profile" target="_blank" class="linkedin social-bar--button d_block m-b_0 p-x_5 p-y_3 c_white-8 h:c_white text_right h:bg_primary-n1"><i class="fab fa-linkedin font_2"></i></a></li>
@@ -8190,7 +8189,7 @@ Icons: Regular
 	Styleguide DesignBase.Icons.Regular
 */
 /*
-InteractiveExtras
+Interactive Extras
 
 Interactions can be enhanced with toggle icons or loading graphics to show the system is responding to user input.
 
@@ -9038,7 +9037,7 @@ markup:
   </ul>
 </nav>
 
- Styleguide Recipe.11
+ Styleguide Navigation.Pagination
 */
 .pagination-previous,
 .pagination-next {
@@ -9050,34 +9049,31 @@ markup:
 }
 
 /*
- Pagination in card
+ Pagination in Card
 
  This is what pagination should look like and its modifications.
 
  markup:
- <nav aria-label="Pagination" class=" pagination-container">
-  <ul class="pagination font_display font_bold float-right">
-    <li class="pagination-previous disabled"><i class="fas fa-chevron-left"></i> <span class="show-for-sr">page</span></li>
-    <li class="current"><span class="show-for-sr">You're on page</span> 1</li>
-    <li class=""><a href="#" aria-label="Page 2">2</a></li>
-    <li class=""><a href="#" aria-label="Page 3">3</a></li>
-    <li class=""><a href="#" aria-label="Page 4">4</a></li>
-    <li class=" fal fa-ellipsis-h " aria-hidden="true"></li>
-    <li class=""><a href="#" aria-label="Page 12">12</a></li>
-    <li class=""><a href="#" aria-label="Page 13">13</a></li>
-    <li class="pagination-next"><a href="#" aria-label="Next page"><i class="fas fa-chevron-right"></i><span class="show-for-sr">page</span></a></li>
-  </ul>
-</nav>
-
-sg-wrapper:
-<div class="card shadow_2" >
-  <div class="card-section">
-    <h4>This is a card.</h4>
-   </div>
-  <sg-wrapper-content/>
+ <div class="card shadow_2" >
+    <div class="card-section">
+        <h4>This is a card.</h4>
+    </div>
+    <nav aria-label="Pagination" class=" pagination-container">
+      <ul class="pagination font_display font_bold float-right">
+        <li class="pagination-previous disabled"><i class="fas fa-chevron-left"></i> <span class="show-for-sr">page</span></li>
+        <li class="current"><span class="show-for-sr">You're on page</span> 1</li>
+        <li class=""><a href="#" aria-label="Page 2">2</a></li>
+        <li class=""><a href="#" aria-label="Page 3">3</a></li>
+        <li class=""><a href="#" aria-label="Page 4">4</a></li>
+        <li class=" fal fa-ellipsis-h " aria-hidden="true"></li>
+        <li class=""><a href="#" aria-label="Page 12">12</a></li>
+        <li class=""><a href="#" aria-label="Page 13">13</a></li>
+        <li class="pagination-next"><a href="#" aria-label="Next page"><i class="fas fa-chevron-right"></i><span class="show-for-sr">page</span></a></li>
+      </ul>
+    </nav>
 </div>
 
- Styleguide Recipe.12
+ Styleguide Navigation.Pagination.Cards
 */
 .pagination-container {
   padding: 0 8px;
@@ -9227,25 +9223,7 @@ sg-wrapper:
     </li>
   </ul>
 
-  Styleguide Components.Accordian
-*/
-/*
-
-  Breadcrumbs
-
-  markup:
-  <nav aria-label="You are here:" role="navigation">
-    <ul class="breadcrumbs font_1">
-      <li><a href="#0">Home</a></li>
-      <li><a href="#0">Features</a></li>
-      <li class="font-italic">Gene Splicing</li>
-      <li>
-        <span class="show-for-sr">Current: </span> Cloning
-      </li>
-    </ul>
-  </nav>
-
-  Styleguide Components.Breadcrumbs
+  Styleguide Containers.Accordian
 */
 /*
     Tabs
@@ -9276,12 +9254,12 @@ sg-wrapper:
 
 */
 /*
-    Tabs Inset Area :recipe
+    Tabs Inset Area
 
     markup:
     <div class="bg_white br_1 br_secondary-4 br_solid p_4">
-    hello this is some text
-</div>
+        hello this is some text
+    </div>
     <ul class="texture_light tabs br_primary bg_primary-3 shadow_n3 p-x_2 p-t_3 br-b_0" data-active-collapse="true" data-tabs id="collapsing-tabs">
         <li class="tabs-title m-x_1 is-active"><a class="br-tr_radius br-tl_radius h:bg_white br_primary"href="#panel-demo2-1c"aria-selected="true"><i class="fal icon-complete_check"></i>Tab 1</a></li>
         <li class="tabs-title m-x_1"><a class="h:c_white br-tr_radius br-tl_radius h:bg_primary" href="#panel-demo2-2c"><i class="fal icon-complete_check"></i>Tab 2</a></li>
@@ -9307,7 +9285,9 @@ sg-wrapper:
 
 */
 /*
-    Tabs on card :recipe
+    Tabs In A Card
+
+    Use Case: When content of a card needs to be toggled rather then a whole section of a page.
 
     markup:
         <div class="card shadow_2 cell small-6 large-4" style="max-width: 500px;">
@@ -9315,10 +9295,9 @@ sg-wrapper:
       This is a header
       </div>
     <ul class="texture_light tabs br_0 bg_primary br_none texture_dust p-x_2 p-t_3 br-b_0" data-active-collapse="true" data-tabs id="collapsing-tabs">
-        <li class="tabs-title m-x_1 is-active"><a class="br-tr_radius br-tl_radius h:bg_white br_primary"href="#panel-demo2-1c"aria-selected="true"><i class="fal icon-complete_check"></i>Tab 1</a></li>
-        <li class="tabs-title m-x_1"><a class="h:c_white c_white-3 br-tr_radius br-tl_radius h:bg_primary-n2" href="#panel-demo2-2c"><i class="fal icon-complete_check"></i>Tab 2</a></li>
-        <li class="tabs-title m-x_1"><a class="h:c_white c_white-3 br-tr_radius br-tl_radius h:bg_primary-n2" href="#panel-demo2-3c"><i class="fal icon-complete_check"></i>Tab 3</a></li>
-        <li class="tabs-title m-x_1"><a class="h:c_white c_white-3 br-tr_radius br-tl_radius h:bg_primary-n2" href="#panel-demo2-4c"><i class="fal icon-complete_check"></i>Tab 4</a></li>
+        <li class="tabs-title m-x_1 is-active"><a class="br-tr_radius br-tl_radius h:bg_white br_primary"href="#panel-demo2-1c"aria-selected="true"><i class="fal icon-complete_check"></i>Overview</a></li>
+        <li class="tabs-title m-x_1"><a class="h:c_white c_white-3 br-tr_radius br-tl_radius h:bg_primary-n2" href="#panel-demo2-2c"><i class="fal icon-complete_check"></i>Details</a></li>
+        <li class="tabs-title m-x_1"><a class="h:c_white c_white-3 br-tr_radius br-tl_radius h:bg_primary-n2" href="#panel-demo2-3c"><i class="fal icon-complete_check"></i>Extra</a></li>
     </ul>
     <div class="tabs-content" data-tabs-content="collapsing-tabs">
         <div class="tabs-panel-demo2 is-active p-x_4 p-y_3" id="panel-demo2-1c">
@@ -9329,9 +9308,6 @@ sg-wrapper:
         </div>
         <div class="tabs-panel-demo2  p-x_4 p-y_3" id="panel-demo2-3c">
             <img src="https://picsum.photos/400/300">
-        </div>
-        <div class="tabs-panel-demo2  p-x_4 p-y_3" id="panel-demo2-4c">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         </div>
     </div>
     </div>
@@ -9481,16 +9457,16 @@ Styleguide Recipes.zurb.Page Messages
     Styleguide Recipe.003
     */
 /*
-	recipe: Button Group
+	Button Group
 
 	markup:
 	<div class="button-group">
-		<a class="button is-active primary"><i class="far icon-toggle_check"></i> One</a>
-		<a class="button secondary"><i class="far icon-toggle_check"></i> Two</a>
-		<a class="button secondary"><i class="far icon-toggle_check"></i> Three</a>
+		<a class="button is-active primary"><i class="far icon-toggle_arrow-circle"></i> One</a>
+		<a class="button secondary"><i class="far icon-toggle_arrow-circle"></i> Two</a>
+		<a class="button secondary"><i class="far icon-toggle_arrow-circle"></i> Three</a>
 	</div>
 
-	Styleguide Recipe.Zurb.button group
+	Styleguide Navigation.Button Group
 */
 /*
     RECIPE: Accordians
@@ -14689,6 +14665,7 @@ Styleguide Typography.Font.Color
   Styleguide Typography.list
  */
 .ul_none {
+  margin-left: 0;
   padding-left: 0;
 }
 
@@ -16856,6 +16833,102 @@ a:focus {
   color: #06232c !important;
 }
 
+.is-active > .a\:bg_primary {
+  background-color: #198dae !important;
+}
+
+.is-active > .a\:bg_primary-0 {
+  background-color: #198dae !important;
+}
+
+.is-active > .a\:bg_primary-1 {
+  background-color: #3c9eba !important;
+}
+
+.is-active > .a\:bg_primary-2 {
+  background-color: #6eb7cc !important;
+}
+
+.is-active > .a\:bg_primary-3 {
+  background-color: #a3d1df !important;
+}
+
+.is-active > .a\:bg_primary-4 {
+  background-color: #cce6ed !important;
+}
+
+.is-active > .a\:bg_primary-5 {
+  background-color: #e8f4f7 !important;
+}
+
+.is-active > .a\:bg_primary-n1 {
+  background-color: #177f9d !important;
+}
+
+.is-active > .a\:bg_primary-n2 {
+  background-color: #136a83 !important;
+}
+
+.is-active > .a\:bg_primary-n3 {
+  background-color: #0e4e60 !important;
+}
+
+.is-active > .a\:bg_primary-n4 {
+  background-color: #0a3846 !important;
+}
+
+.is-active > .a\:bg_primary-n5 {
+  background-color: #06232c !important;
+}
+
+.is-active > .a\:c_primary {
+  color: #198dae !important;
+}
+
+.is-active > .a\:c_primary-0 {
+  color: #198dae !important;
+}
+
+.is-active > .a\:c_primary-1 {
+  color: #3c9eba !important;
+}
+
+.is-active > .a\:c_primary-2 {
+  color: #6eb7cc !important;
+}
+
+.is-active > .a\:c_primary-3 {
+  color: #a3d1df !important;
+}
+
+.is-active > .a\:c_primary-4 {
+  color: #cce6ed !important;
+}
+
+.is-active > .a\:c_primary-5 {
+  color: #e8f4f7 !important;
+}
+
+.is-active > .a\:c_primary-n1 {
+  color: #177f9d !important;
+}
+
+.is-active > .a\:c_primary-n2 {
+  color: #136a83 !important;
+}
+
+.is-active > .a\:c_primary-n3 {
+  color: #0e4e60 !important;
+}
+
+.is-active > .a\:c_primary-n4 {
+  color: #0a3846 !important;
+}
+
+.is-active > .a\:c_primary-n5 {
+  color: #06232c !important;
+}
+
 .h\:bg_secondary:hover {
   background-color: #676a72 !important;
 }
@@ -16949,6 +17022,102 @@ a:focus {
 }
 
 .h\:c_secondary-n5:hover {
+  color: #1a1b1d !important;
+}
+
+.is-active > .a\:bg_secondary {
+  background-color: #676a72 !important;
+}
+
+.is-active > .a\:bg_secondary-0 {
+  background-color: #676a72 !important;
+}
+
+.is-active > .a\:bg_secondary-1 {
+  background-color: #7e8087 !important;
+}
+
+.is-active > .a\:bg_secondary-2 {
+  background-color: #9fa1a6 !important;
+}
+
+.is-active > .a\:bg_secondary-3 {
+  background-color: #c2c3c7 !important;
+}
+
+.is-active > .a\:bg_secondary-4 {
+  background-color: #dedee0 !important;
+}
+
+.is-active > .a\:bg_secondary-5 {
+  background-color: #f0f0f1 !important;
+}
+
+.is-active > .a\:bg_secondary-n1 {
+  background-color: #5d5f67 !important;
+}
+
+.is-active > .a\:bg_secondary-n2 {
+  background-color: #4d5056 !important;
+}
+
+.is-active > .a\:bg_secondary-n3 {
+  background-color: #393a3f !important;
+}
+
+.is-active > .a\:bg_secondary-n4 {
+  background-color: #292a2e !important;
+}
+
+.is-active > .a\:bg_secondary-n5 {
+  background-color: #1a1b1d !important;
+}
+
+.is-active > .a\:c_secondary {
+  color: #676a72 !important;
+}
+
+.is-active > .a\:c_secondary-0 {
+  color: #676a72 !important;
+}
+
+.is-active > .a\:c_secondary-1 {
+  color: #7e8087 !important;
+}
+
+.is-active > .a\:c_secondary-2 {
+  color: #9fa1a6 !important;
+}
+
+.is-active > .a\:c_secondary-3 {
+  color: #c2c3c7 !important;
+}
+
+.is-active > .a\:c_secondary-4 {
+  color: #dedee0 !important;
+}
+
+.is-active > .a\:c_secondary-5 {
+  color: #f0f0f1 !important;
+}
+
+.is-active > .a\:c_secondary-n1 {
+  color: #5d5f67 !important;
+}
+
+.is-active > .a\:c_secondary-n2 {
+  color: #4d5056 !important;
+}
+
+.is-active > .a\:c_secondary-n3 {
+  color: #393a3f !important;
+}
+
+.is-active > .a\:c_secondary-n4 {
+  color: #292a2e !important;
+}
+
+.is-active > .a\:c_secondary-n5 {
   color: #1a1b1d !important;
 }
 
@@ -17048,6 +17217,102 @@ a:focus {
   color: #02230c !important;
 }
 
+.is-active > .a\:bg_success {
+  background-color: #078a2e !important;
+}
+
+.is-active > .a\:bg_success-0 {
+  background-color: #078a2e !important;
+}
+
+.is-active > .a\:bg_success-1 {
+  background-color: #2c9c4d !important;
+}
+
+.is-active > .a\:bg_success-2 {
+  background-color: #63b57b !important;
+}
+
+.is-active > .a\:bg_success-3 {
+  background-color: #9cd0ab !important;
+}
+
+.is-active > .a\:bg_success-4 {
+  background-color: #c8e5d1 !important;
+}
+
+.is-active > .a\:bg_success-5 {
+  background-color: #e6f3ea !important;
+}
+
+.is-active > .a\:bg_success-n1 {
+  background-color: #067c29 !important;
+}
+
+.is-active > .a\:bg_success-n2 {
+  background-color: #056823 !important;
+}
+
+.is-active > .a\:bg_success-n3 {
+  background-color: #044c19 !important;
+}
+
+.is-active > .a\:bg_success-n4 {
+  background-color: #033712 !important;
+}
+
+.is-active > .a\:bg_success-n5 {
+  background-color: #02230c !important;
+}
+
+.is-active > .a\:c_success {
+  color: #078a2e !important;
+}
+
+.is-active > .a\:c_success-0 {
+  color: #078a2e !important;
+}
+
+.is-active > .a\:c_success-1 {
+  color: #2c9c4d !important;
+}
+
+.is-active > .a\:c_success-2 {
+  color: #63b57b !important;
+}
+
+.is-active > .a\:c_success-3 {
+  color: #9cd0ab !important;
+}
+
+.is-active > .a\:c_success-4 {
+  color: #c8e5d1 !important;
+}
+
+.is-active > .a\:c_success-5 {
+  color: #e6f3ea !important;
+}
+
+.is-active > .a\:c_success-n1 {
+  color: #067c29 !important;
+}
+
+.is-active > .a\:c_success-n2 {
+  color: #056823 !important;
+}
+
+.is-active > .a\:c_success-n3 {
+  color: #044c19 !important;
+}
+
+.is-active > .a\:c_success-n4 {
+  color: #033712 !important;
+}
+
+.is-active > .a\:c_success-n5 {
+  color: #02230c !important;
+}
+
 .h\:bg_warning:hover {
   background-color: #da8210 !important;
 }
@@ -17141,6 +17406,102 @@ a:focus {
 }
 
 .h\:c_warning-n5:hover {
+  color: #372104 !important;
+}
+
+.is-active > .a\:bg_warning {
+  background-color: #da8210 !important;
+}
+
+.is-active > .a\:bg_warning-0 {
+  background-color: #da8210 !important;
+}
+
+.is-active > .a\:bg_warning-1 {
+  background-color: #e09534 !important;
+}
+
+.is-active > .a\:bg_warning-2 {
+  background-color: #e8b068 !important;
+}
+
+.is-active > .a\:bg_warning-3 {
+  background-color: #f0cd9f !important;
+}
+
+.is-active > .a\:bg_warning-4 {
+  background-color: #f7e4ca !important;
+}
+
+.is-active > .a\:bg_warning-5 {
+  background-color: #fbf3e7 !important;
+}
+
+.is-active > .a\:bg_warning-n1 {
+  background-color: #c4750e !important;
+}
+
+.is-active > .a\:bg_warning-n2 {
+  background-color: #a4620c !important;
+}
+
+.is-active > .a\:bg_warning-n3 {
+  background-color: #784809 !important;
+}
+
+.is-active > .a\:bg_warning-n4 {
+  background-color: #573406 !important;
+}
+
+.is-active > .a\:bg_warning-n5 {
+  background-color: #372104 !important;
+}
+
+.is-active > .a\:c_warning {
+  color: #da8210 !important;
+}
+
+.is-active > .a\:c_warning-0 {
+  color: #da8210 !important;
+}
+
+.is-active > .a\:c_warning-1 {
+  color: #e09534 !important;
+}
+
+.is-active > .a\:c_warning-2 {
+  color: #e8b068 !important;
+}
+
+.is-active > .a\:c_warning-3 {
+  color: #f0cd9f !important;
+}
+
+.is-active > .a\:c_warning-4 {
+  color: #f7e4ca !important;
+}
+
+.is-active > .a\:c_warning-5 {
+  color: #fbf3e7 !important;
+}
+
+.is-active > .a\:c_warning-n1 {
+  color: #c4750e !important;
+}
+
+.is-active > .a\:c_warning-n2 {
+  color: #a4620c !important;
+}
+
+.is-active > .a\:c_warning-n3 {
+  color: #784809 !important;
+}
+
+.is-active > .a\:c_warning-n4 {
+  color: #573406 !important;
+}
+
+.is-active > .a\:c_warning-n5 {
   color: #372104 !important;
 }
 
@@ -17240,6 +17601,102 @@ a:focus {
   color: #370707 !important;
 }
 
+.is-active > .a\:bg_alert {
+  background-color: #dd1a1a !important;
+}
+
+.is-active > .a\:bg_alert-0 {
+  background-color: #dd1a1a !important;
+}
+
+.is-active > .a\:bg_alert-1 {
+  background-color: #e23c3c !important;
+}
+
+.is-active > .a\:bg_alert-2 {
+  background-color: #ea6f6f !important;
+}
+
+.is-active > .a\:bg_alert-3 {
+  background-color: #f1a3a3 !important;
+}
+
+.is-active > .a\:bg_alert-4 {
+  background-color: #f8cdcd !important;
+}
+
+.is-active > .a\:bg_alert-5 {
+  background-color: #fce8e8 !important;
+}
+
+.is-active > .a\:bg_alert-n1 {
+  background-color: #c71717 !important;
+}
+
+.is-active > .a\:bg_alert-n2 {
+  background-color: #a61414 !important;
+}
+
+.is-active > .a\:bg_alert-n3 {
+  background-color: #7a0e0e !important;
+}
+
+.is-active > .a\:bg_alert-n4 {
+  background-color: #580a0a !important;
+}
+
+.is-active > .a\:bg_alert-n5 {
+  background-color: #370707 !important;
+}
+
+.is-active > .a\:c_alert {
+  color: #dd1a1a !important;
+}
+
+.is-active > .a\:c_alert-0 {
+  color: #dd1a1a !important;
+}
+
+.is-active > .a\:c_alert-1 {
+  color: #e23c3c !important;
+}
+
+.is-active > .a\:c_alert-2 {
+  color: #ea6f6f !important;
+}
+
+.is-active > .a\:c_alert-3 {
+  color: #f1a3a3 !important;
+}
+
+.is-active > .a\:c_alert-4 {
+  color: #f8cdcd !important;
+}
+
+.is-active > .a\:c_alert-5 {
+  color: #fce8e8 !important;
+}
+
+.is-active > .a\:c_alert-n1 {
+  color: #c71717 !important;
+}
+
+.is-active > .a\:c_alert-n2 {
+  color: #a61414 !important;
+}
+
+.is-active > .a\:c_alert-n3 {
+  color: #7a0e0e !important;
+}
+
+.is-active > .a\:c_alert-n4 {
+  color: #580a0a !important;
+}
+
+.is-active > .a\:c_alert-n5 {
+  color: #370707 !important;
+}
+
 .h\:bg_navigation:hover {
   background-color: #2b58c0 !important;
 }
@@ -17333,6 +17790,102 @@ a:focus {
 }
 
 .h\:c_navigation-n5:hover {
+  color: #0b1630 !important;
+}
+
+.is-active > .a\:bg_navigation {
+  background-color: #2b58c0 !important;
+}
+
+.is-active > .a\:bg_navigation-0 {
+  background-color: #2b58c0 !important;
+}
+
+.is-active > .a\:bg_navigation-1 {
+  background-color: #4b71c9 !important;
+}
+
+.is-active > .a\:bg_navigation-2 {
+  background-color: #7996d7 !important;
+}
+
+.is-active > .a\:bg_navigation-3 {
+  background-color: #aabce6 !important;
+}
+
+.is-active > .a\:bg_navigation-4 {
+  background-color: #d0daf1 !important;
+}
+
+.is-active > .a\:bg_navigation-5 {
+  background-color: #eaeef9 !important;
+}
+
+.is-active > .a\:bg_navigation-n1 {
+  background-color: #274fad !important;
+}
+
+.is-active > .a\:bg_navigation-n2 {
+  background-color: #204290 !important;
+}
+
+.is-active > .a\:bg_navigation-n3 {
+  background-color: #18306a !important;
+}
+
+.is-active > .a\:bg_navigation-n4 {
+  background-color: #11234d !important;
+}
+
+.is-active > .a\:bg_navigation-n5 {
+  background-color: #0b1630 !important;
+}
+
+.is-active > .a\:c_navigation {
+  color: #2b58c0 !important;
+}
+
+.is-active > .a\:c_navigation-0 {
+  color: #2b58c0 !important;
+}
+
+.is-active > .a\:c_navigation-1 {
+  color: #4b71c9 !important;
+}
+
+.is-active > .a\:c_navigation-2 {
+  color: #7996d7 !important;
+}
+
+.is-active > .a\:c_navigation-3 {
+  color: #aabce6 !important;
+}
+
+.is-active > .a\:c_navigation-4 {
+  color: #d0daf1 !important;
+}
+
+.is-active > .a\:c_navigation-5 {
+  color: #eaeef9 !important;
+}
+
+.is-active > .a\:c_navigation-n1 {
+  color: #274fad !important;
+}
+
+.is-active > .a\:c_navigation-n2 {
+  color: #204290 !important;
+}
+
+.is-active > .a\:c_navigation-n3 {
+  color: #18306a !important;
+}
+
+.is-active > .a\:c_navigation-n4 {
+  color: #11234d !important;
+}
+
+.is-active > .a\:c_navigation-n5 {
   color: #0b1630 !important;
 }
 
@@ -17432,6 +17985,102 @@ a:focus {
   color: #062921 !important;
 }
 
+.is-active > .a\:bg_accent {
+  background-color: #16a385 !important;
+}
+
+.is-active > .a\:bg_accent-0 {
+  background-color: #16a385 !important;
+}
+
+.is-active > .a\:bg_accent-1 {
+  background-color: #39b197 !important;
+}
+
+.is-active > .a\:bg_accent-2 {
+  background-color: #6cc5b2 !important;
+}
+
+.is-active > .a\:bg_accent-3 {
+  background-color: #a2dace !important;
+}
+
+.is-active > .a\:bg_accent-4 {
+  background-color: #ccebe4 !important;
+}
+
+.is-active > .a\:bg_accent-5 {
+  background-color: #e8f6f3 !important;
+}
+
+.is-active > .a\:bg_accent-n1 {
+  background-color: #149378 !important;
+}
+
+.is-active > .a\:bg_accent-n2 {
+  background-color: #117a64 !important;
+}
+
+.is-active > .a\:bg_accent-n3 {
+  background-color: #0c5a49 !important;
+}
+
+.is-active > .a\:bg_accent-n4 {
+  background-color: #094135 !important;
+}
+
+.is-active > .a\:bg_accent-n5 {
+  background-color: #062921 !important;
+}
+
+.is-active > .a\:c_accent {
+  color: #16a385 !important;
+}
+
+.is-active > .a\:c_accent-0 {
+  color: #16a385 !important;
+}
+
+.is-active > .a\:c_accent-1 {
+  color: #39b197 !important;
+}
+
+.is-active > .a\:c_accent-2 {
+  color: #6cc5b2 !important;
+}
+
+.is-active > .a\:c_accent-3 {
+  color: #a2dace !important;
+}
+
+.is-active > .a\:c_accent-4 {
+  color: #ccebe4 !important;
+}
+
+.is-active > .a\:c_accent-5 {
+  color: #e8f6f3 !important;
+}
+
+.is-active > .a\:c_accent-n1 {
+  color: #149378 !important;
+}
+
+.is-active > .a\:c_accent-n2 {
+  color: #117a64 !important;
+}
+
+.is-active > .a\:c_accent-n3 {
+  color: #0c5a49 !important;
+}
+
+.is-active > .a\:c_accent-n4 {
+  color: #094135 !important;
+}
+
+.is-active > .a\:c_accent-n5 {
+  color: #062921 !important;
+}
+
 .h\:bg_info:hover {
   background-color: #a3988c !important;
 }
@@ -17525,6 +18174,102 @@ a:focus {
 }
 
 .h\:c_info-n5:hover {
+  color: #292623 !important;
+}
+
+.is-active > .a\:bg_info {
+  background-color: #a3988c !important;
+}
+
+.is-active > .a\:bg_info-0 {
+  background-color: #a3988c !important;
+}
+
+.is-active > .a\:bg_info-1 {
+  background-color: #b1a79d !important;
+}
+
+.is-active > .a\:bg_info-2 {
+  background-color: #c5beb7 !important;
+}
+
+.is-active > .a\:bg_info-3 {
+  background-color: #dad6d1 !important;
+}
+
+.is-active > .a\:bg_info-4 {
+  background-color: #ebe8e6 !important;
+}
+
+.is-active > .a\:bg_info-5 {
+  background-color: #f6f5f4 !important;
+}
+
+.is-active > .a\:bg_info-n1 {
+  background-color: #93897e !important;
+}
+
+.is-active > .a\:bg_info-n2 {
+  background-color: #7a7269 !important;
+}
+
+.is-active > .a\:bg_info-n3 {
+  background-color: #5a544d !important;
+}
+
+.is-active > .a\:bg_info-n4 {
+  background-color: #413d38 !important;
+}
+
+.is-active > .a\:bg_info-n5 {
+  background-color: #292623 !important;
+}
+
+.is-active > .a\:c_info {
+  color: #a3988c !important;
+}
+
+.is-active > .a\:c_info-0 {
+  color: #a3988c !important;
+}
+
+.is-active > .a\:c_info-1 {
+  color: #b1a79d !important;
+}
+
+.is-active > .a\:c_info-2 {
+  color: #c5beb7 !important;
+}
+
+.is-active > .a\:c_info-3 {
+  color: #dad6d1 !important;
+}
+
+.is-active > .a\:c_info-4 {
+  color: #ebe8e6 !important;
+}
+
+.is-active > .a\:c_info-5 {
+  color: #f6f5f4 !important;
+}
+
+.is-active > .a\:c_info-n1 {
+  color: #93897e !important;
+}
+
+.is-active > .a\:c_info-n2 {
+  color: #7a7269 !important;
+}
+
+.is-active > .a\:c_info-n3 {
+  color: #5a544d !important;
+}
+
+.is-active > .a\:c_info-n4 {
+  color: #413d38 !important;
+}
+
+.is-active > .a\:c_info-n5 {
   color: #292623 !important;
 }
 
@@ -17624,6 +18369,102 @@ a:focus {
   color: #1e112f !important;
 }
 
+.is-active > .a\:bg_highlight {
+  background-color: #7742bd !important;
+}
+
+.is-active > .a\:bg_highlight-0 {
+  background-color: #7742bd !important;
+}
+
+.is-active > .a\:bg_highlight-1 {
+  background-color: #8b5ec7 !important;
+}
+
+.is-active > .a\:bg_highlight-2 {
+  background-color: #a988d5 !important;
+}
+
+.is-active > .a\:bg_highlight-3 {
+  background-color: #c9b3e5 !important;
+}
+
+.is-active > .a\:bg_highlight-4 {
+  background-color: #e1d5f0 !important;
+}
+
+.is-active > .a\:bg_highlight-5 {
+  background-color: #f1ecf8 !important;
+}
+
+.is-active > .a\:bg_highlight-n1 {
+  background-color: #6b3baa !important;
+}
+
+.is-active > .a\:bg_highlight-n2 {
+  background-color: #59328e !important;
+}
+
+.is-active > .a\:bg_highlight-n3 {
+  background-color: #412468 !important;
+}
+
+.is-active > .a\:bg_highlight-n4 {
+  background-color: #301a4c !important;
+}
+
+.is-active > .a\:bg_highlight-n5 {
+  background-color: #1e112f !important;
+}
+
+.is-active > .a\:c_highlight {
+  color: #7742bd !important;
+}
+
+.is-active > .a\:c_highlight-0 {
+  color: #7742bd !important;
+}
+
+.is-active > .a\:c_highlight-1 {
+  color: #8b5ec7 !important;
+}
+
+.is-active > .a\:c_highlight-2 {
+  color: #a988d5 !important;
+}
+
+.is-active > .a\:c_highlight-3 {
+  color: #c9b3e5 !important;
+}
+
+.is-active > .a\:c_highlight-4 {
+  color: #e1d5f0 !important;
+}
+
+.is-active > .a\:c_highlight-5 {
+  color: #f1ecf8 !important;
+}
+
+.is-active > .a\:c_highlight-n1 {
+  color: #6b3baa !important;
+}
+
+.is-active > .a\:c_highlight-n2 {
+  color: #59328e !important;
+}
+
+.is-active > .a\:c_highlight-n3 {
+  color: #412468 !important;
+}
+
+.is-active > .a\:c_highlight-n4 {
+  color: #301a4c !important;
+}
+
+.is-active > .a\:c_highlight-n5 {
+  color: #1e112f !important;
+}
+
 .h\:bg_acc:hover {
   background-color: #00386b !important;
 }
@@ -17720,6 +18561,102 @@ a:focus {
   color: #000e1b !important;
 }
 
+.is-active > .a\:bg_acc {
+  background-color: #00386b !important;
+}
+
+.is-active > .a\:bg_acc-0 {
+  background-color: #00386b !important;
+}
+
+.is-active > .a\:bg_acc-1 {
+  background-color: #265681 !important;
+}
+
+.is-active > .a\:bg_acc-2 {
+  background-color: #5e82a2 !important;
+}
+
+.is-active > .a\:bg_acc-3 {
+  background-color: #99afc4 !important;
+}
+
+.is-active > .a\:bg_acc-4 {
+  background-color: #c7d3de !important;
+}
+
+.is-active > .a\:bg_acc-5 {
+  background-color: #e6ebf0 !important;
+}
+
+.is-active > .a\:bg_acc-n1 {
+  background-color: #003260 !important;
+}
+
+.is-active > .a\:bg_acc-n2 {
+  background-color: #002a50 !important;
+}
+
+.is-active > .a\:bg_acc-n3 {
+  background-color: #001f3b !important;
+}
+
+.is-active > .a\:bg_acc-n4 {
+  background-color: #00162b !important;
+}
+
+.is-active > .a\:bg_acc-n5 {
+  background-color: #000e1b !important;
+}
+
+.is-active > .a\:c_acc {
+  color: #00386b !important;
+}
+
+.is-active > .a\:c_acc-0 {
+  color: #00386b !important;
+}
+
+.is-active > .a\:c_acc-1 {
+  color: #265681 !important;
+}
+
+.is-active > .a\:c_acc-2 {
+  color: #5e82a2 !important;
+}
+
+.is-active > .a\:c_acc-3 {
+  color: #99afc4 !important;
+}
+
+.is-active > .a\:c_acc-4 {
+  color: #c7d3de !important;
+}
+
+.is-active > .a\:c_acc-5 {
+  color: #e6ebf0 !important;
+}
+
+.is-active > .a\:c_acc-n1 {
+  color: #003260 !important;
+}
+
+.is-active > .a\:c_acc-n2 {
+  color: #002a50 !important;
+}
+
+.is-active > .a\:c_acc-n3 {
+  color: #001f3b !important;
+}
+
+.is-active > .a\:c_acc-n4 {
+  color: #00162b !important;
+}
+
+.is-active > .a\:c_acc-n5 {
+  color: #000e1b !important;
+}
+
 /*
   Hover: Text Color
 
@@ -17753,11 +18690,13 @@ a:focus {
   Styleguide hover.text
 
  */
-.h\:c_white:hover {
+.h\:c_white:hover,
+.is-active > .a\:c_white {
   color: white !important;
 }
 
-.h\:c_black:hover {
+.h\:c_black:hover,
+.is-active > .a\:c_black {
   color: #131212 !important;
 }
 
@@ -17821,7 +18760,8 @@ a:focus {
 
   */
 /* Transparent Loop */
-.h\:bg_white:hover {
+.h\:bg_white:hover,
+.is-active > .a\:bg_white {
   background-color: white;
 }
 
@@ -17869,7 +18809,8 @@ a:focus {
   background-color: #131212 !important;
 }
 
-.h\:bg_black:hover {
+.h\:bg_black:hover,
+.is-active > .a\:bg_black {
   background-color: #131212;
 }
 
@@ -17951,10 +18892,10 @@ Opacity: Hover to Full Opacity
 Set the Opacity of an object to 100% while hovered.
 
 
+.opacity_0                        - Opacity of 0%
 .opacity_1                        - Opacity of 5%
 .opacity_5                        - Opacity of 50%
 .opacity_9                        - Opacity of 95%
-.opacity_0                        - Opacity of 95%
 
 markup:
 <div class="p_4 bg_primary">
@@ -17966,10 +18907,139 @@ Weight: 60
 Styleguide hover.opacity
 
 */
-.h\:opacity:hover {
+.h\:opacity:hover,
+.is-active > .a\:opacity {
   opacity: 1;
 }
 
+/*
+UC: Is-active 
+
+A common class name given to the parent container can effect the color, background and opacity of the children.  
+
+Weight: 135
+
+Styleguide is-active
+
+*/
+/*
+Is-active to Full Opacity
+
+<div class="p-b_3"><span class="bg_highlight br_radius c_white d_inline-block font_n1 p-7_3 p-x_5 sg">Click the areas below to toggle the "is-active" state.</span></div><strong>`.is-acitve .a:opacity`</strong> Set the Opacity of an objects children to 100% when it has the class is-active. 
+
+markup:
+<div class="flex p_4 bg_primary is-active_toggle-function ">
+  <div class="flex_auto opacity_0 a:opacity br_1 br_solid br_white p_2 bg_warning c_white"> 0 </div>
+  <div class="flex_auto opacity_1 a:opacity br_1 br_solid br_white p_2 bg_warning c_white"> 1 </div>
+  <div class="flex_auto opacity_2 a:opacity br_1 br_solid br_white p_2 bg_warning c_white"> 2 </div>
+  <div class="flex_auto opacity_3 a:opacity br_1 br_solid br_white p_2 bg_warning c_white"> 3 </div>
+  <div class="flex_auto opacity_4 a:opacity br_1 br_solid br_white p_2 bg_warning c_white"> 4 </div>
+  <div class="flex_auto opacity_5 a:opacity br_1 br_solid br_white p_2 bg_warning c_white"> 5 </div>
+  <div class="flex_auto opacity_6 a:opacity br_1 br_solid br_white p_2 bg_warning c_white"> 6 </div>
+  <div class="flex_auto opacity_7 a:opacity br_1 br_solid br_white p_2 bg_warning c_white"> 7 </div>
+  <div class="flex_auto opacity_8 a:opacity br_1 br_solid br_white p_2 bg_warning c_white"> 8 </div>
+  <div class="flex_auto opacity_9 a:opacity br_1 br_solid br_white p_2 bg_warning c_white"> 9 </div>
+</div>
+
+Weight: 60
+
+Styleguide is-active.opacity
+
+*/
+/*
+Is-active background black and white 
+
+<div class="p-b_3"><span class="bg_highlight br_radius c_white d_inline-block font_n1 p-7_3 p-x_5 sg">Click the areas below to toggle the "is-active" state.</span></div>Set the background to full white or black when the parent has a class of `is-active`. 
+
+bg_white              - text color modified light to dark
+bg_black              - text color modified light to dark
+
+markup:
+<div class="flex p_5 bg_primary m_5 is-active_toggle-function">
+  <div class="flex_auto a:{{modifier_class}} bg_{{modifier_class}}-0 p-y_3 p-x_4 font_bold font_2 font_slab c_secondary text_center br_1 br_solid br_secondary-4">0</div>
+  <div class="flex_auto a:{{modifier_class}} bg_{{modifier_class}}-1 p-y_3 p-x_4 font_bold font_2 font_slab c_secondary text_center br_1 br_solid br_secondary-4">1</div>
+  <div class="flex_auto a:{{modifier_class}} bg_{{modifier_class}}-2 p-y_3 p-x_4 font_bold font_2 font_slab c_secondary text_center br_1 br_solid br_secondary-4">2</div>
+  <div class="flex_auto a:{{modifier_class}} bg_{{modifier_class}}-3 p-y_3 p-x_4 font_bold font_2 font_slab c_secondary text_center br_1 br_solid br_secondary-4">3</div>
+  <div class="flex_auto a:{{modifier_class}} bg_{{modifier_class}}-4 p-y_3 p-x_4 font_bold font_2 font_slab c_secondary text_center br_1 br_solid br_secondary-4">4</div>
+  <div class="flex_auto a:{{modifier_class}} bg_{{modifier_class}}-5 p-y_3 p-x_4 font_bold font_2 font_slab c_secondary text_center br_1 br_solid br_secondary-4">5</div>
+  <div class="flex_auto a:{{modifier_class}} bg_{{modifier_class}}-6 p-y_3 p-x_4 font_bold font_2 font_slab c_secondary text_center br_1 br_solid br_secondary-4 ">6</div>
+  <div class="flex_auto a:{{modifier_class}} bg_{{modifier_class}}-7 p-y_3 p-x_4 font_bold font_2 font_slab c_secondary text_center br_1 br_solid br_secondary-4 ">7</div>
+  <div class="flex_auto a:{{modifier_class}} bg_{{modifier_class}}-8 p-y_3 p-x_4 font_bold font_2 font_slab c_secondary text_center br_1 br_solid br_secondary-4 ">8</div>
+  <div class="flex_auto a:{{modifier_class}} bg_{{modifier_class}}-9 p-y_3 p-x_4 font_bold font_2 font_slab c_secondary text_center br_1 br_solid br_secondary-4 ">9</div>
+  <div class="flex_auto  a:{{modifier_class}} bg_{{modifier_class}}-0 p-y_3 p-x_4 font_bold font_2 font_slab c_secondary text_center br_1 br_solid br_secondary-4 ">default</div>
+</div>
+
+Weight: 50
+
+Styleguide is-active.black and white
+
+ */
+/*
+  Is active font color
+
+  <div class="p-b_3"><span class="bg_highlight br_radius c_white d_inline-block font_n1 p-7_3 p-x_5 sg">Click the areas below to toggle the "is-active" state.</span></div> Set the font color of the child by setting the parent to .is-active. `a:c_primary`
+
+  c_primary              - text color modified light to dark
+  c_secondary              - text color modified light to dark
+  c_info              - text color modified light to dark
+  c_highlight              - text color success color
+  c_success              - text color modified light to dark
+  c_warning              - text color modified light to dark
+  c_alert              - text color modified light to dark
+
+  markup:
+  <div class="flex p_5 is-active_toggle-function">
+    <div class="flex_auto a:{{modifier_class}}-5 font_bold bg_secondary font_4 font_slab text_center br_1 br_solid br_secondary-4 p_1">5</div>
+    <div class="flex_auto a:{{modifier_class}}-4 font_bold bg_secondary font_4 font_slab text_center br_1 br_solid br_secondary-4 p_1">4</div>
+    <div class="flex_auto a:{{modifier_class}}-3 font_bold bg_secondary-1 font_4 font_slab text_center br_1 br_solid br_secondary-4 p_1">3</div>
+    <div class="flex_auto a:{{modifier_class}}-2 font_bold bg_secondary-1 font_4 font_slab text_center br_1 br_solid br_secondary-4 p_1">2</div>
+    <div class="flex_auto a:{{modifier_class}}-1 font_bold bg_secondary-1 font_4 font_slab text_center br_1 br_solid br_secondary-4 p_1">1</div>
+    <div class="flex_auto a:{{modifier_class}}-0 font_bold bg_secondary-2 font_4 font_slab text_center br_1 br_solid br_secondary-4 p_1">0</div>
+    <div class="flex_auto a:{{modifier_class}}-n1 font_bold bg_secondary-2 font_4 font_slab text_center br_1 br_solid br_secondary-4 p_1">n1</div>
+    <div class="flex_auto a:{{modifier_class}}-n2 font_bold bg_secondary-2 font_4 font_slab text_center br_1 br_solid br_secondary-4 p_1">n2</div>
+    <div class="flex_auto a:{{modifier_class}}-n3 font_bold bg_secondary-3 font_4 font_slab text_center br_1 br_solid br_secondary-4 p_1">n3</div>
+    <div class="flex_auto a:{{modifier_class}}-n4 font_bold bg_secondary-3 font_4 font_slab text_center br_1 br_solid br_secondary-4 p_1">n4</div>
+    <div class="flex_auto a:{{modifier_class}}-n5 font_bold bg_secondary-3 font_4 font_slab text_center br_1 br_solid br_secondary-4 p_1">n5</div>
+  </div>
+
+  Weight: 10
+
+  Styleguide is-active.text
+
+ */
+/*
+  Is active font color
+
+  <div class="p-b_3"><span class="bg_highlight br_radius c_white d_inline-block font_n1 p-7_3 p-x_5 sg">Click the areas below to toggle the "is-active" state.</span></div> Set the font color of the child by setting the parent to .is-active. `a:c_primary`
+
+  bg_primary              - text color modified light to dark
+  bg_secondary              - text color modified light to dark
+  bg_info              - text color modified light to dark
+  bg_highlight              - text color success color
+  bg_success              - text color modified light to dark
+  bg_warning              - text color modified light to dark
+  bg_alert              - text color modified light to dark
+
+  markup:
+  <div class="flex p_5 is-active_toggle-function">
+    <div class="flex_auto a:{{modifier_class}}-5 font_bold  bg_secondary-2 font_4 font_slab text_center br_1 br_solid br_secondary-4 p_1">5</div>
+    <div class="flex_auto a:{{modifier_class}}-4 font_bold  bg_secondary-2 font_4 font_slab text_center br_1 br_solid br_secondary-4 p_1">4</div>
+    <div class="flex_auto a:{{modifier_class}}-3 font_bold  bg_secondary-2 font_4 font_slab text_center br_1 br_solid br_secondary-4 p_1">3</div>
+    <div class="flex_auto a:{{modifier_class}}-2 font_bold  bg_secondary-2 font_4 font_slab text_center br_1 br_solid br_secondary-4 p_1">2</div>
+    <div class="flex_auto a:{{modifier_class}}-1 font_bold  bg_secondary-2 font_4 font_slab text_center br_1 br_solid br_secondary-4 p_1">1</div>
+    <div class="flex_auto a:{{modifier_class}}-0 font_bold  bg_secondary-2 font_4 font_slab text_center br_1 br_solid br_secondary-4 p_1">0</div>
+    <div class="flex_auto a:{{modifier_class}}-n1 font_bold bg_secondary-2  font_4 font_slab text_center br_1 br_solid br_secondary-4 p_1">n1</div>
+    <div class="flex_auto a:{{modifier_class}}-n2 font_bold bg_secondary-2  font_4 font_slab text_center br_1 br_solid br_secondary-4 p_1">n2</div>
+    <div class="flex_auto a:{{modifier_class}}-n3 font_bold bg_secondary-2  font_4 font_slab text_center br_1 br_solid br_secondary-4 p_1">n3</div>
+    <div class="flex_auto a:{{modifier_class}}-n4 font_bold bg_secondary-2  font_4 font_slab text_center br_1 br_solid br_secondary-4 p_1">n4</div>
+    <div class="flex_auto a:{{modifier_class}}-n5 font_bold bg_secondary-2  font_4 font_slab text_center br_1 br_solid br_secondary-4 p_1">n5</div>
+  </div>
+
+  Weight: 10
+
+  Styleguide is-active.background color
+
+ */
 /*
 UC: Counters
 

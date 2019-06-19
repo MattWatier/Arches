@@ -44,30 +44,32 @@ Styleguide hover
  
  */
 a:focus {
-	color: unset;
+  color: unset;
 }
 %hover_transition,
 *[class^=" hover:"],
 *[class^=" h\:"] {
-	transition: all ease-out 0.75s; // used for backgrounds
-	cursor: pointer;
-	&:focus {
-		background: inherit;
-		border: inherit;
-		color: inherit;
-	}
+  transition: all ease-out 0.75s; // used for backgrounds
+  cursor: pointer;
+  &:focus {
+    background: inherit;
+    border: inherit;
+    color: inherit;
+  }
 }
 %hover_transition-in {
-	transition: all ease-in 0.5s; // used for text
+  transition: all ease-in 0.5s; // used for text
 }
 
 *[class^="hover:c"],
 *[class^=" h:c"] {
-	@extend %hover_transition-in;
+  @extend %hover_transition-in;
 }
 @each $color-name, $color in $theme-palette {
-	@include hover-loop("background-color", $color-name, $color);
-	@include hover-loop("color", $color-name, $color);
+  @include hover-loop("background-color", $color-name, $color);
+  @include hover-loop("color", $color-name, $color);
+  @include is-active-loop("background-color", $color-name, $color);
+  @include is-active-loop("color", $color-name, $color);
 }
 
 /*
@@ -104,43 +106,45 @@ a:focus {
  
  */
 
-#{ class-name-constructor(color, white, "", "hover")} {
-	color: $white !important;
+#{ class-name-constructor(color, white, "", "hover")},
+#{ class-name-constructor(color, white, "", "is-active")} {
+  color: $white !important;
 }
-#{ class-name-constructor(color, black, "", "hover")} {
-	color: $black !important;
+#{ class-name-constructor(color, black, "", "hover")},
+#{ class-name-constructor(color, black, "", "is-active")} {
+  color: $black !important;
 }
 
 %hover_text-decoration {
-	text-decoration: none;
-	&:hover {
-		text-decoration: underline;
-	}
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
 }
 .hover\:underline,
 .h\:underline {
-	@extend %hover_text-decoration;
+  @extend %hover_text-decoration;
 }
 .hover\:dashed,
 .h\:dashed {
-	@extend %hover_text-decoration;
-	&:hover {
-		text-decoration-style: dashed;
-	}
+  @extend %hover_text-decoration;
+  &:hover {
+    text-decoration-style: dashed;
+  }
 }
 .hover\:double,
 .h\:double {
-	@extend %hover_text-decoration;
-	&:hover {
-		text-decoration-style: double;
-	}
+  @extend %hover_text-decoration;
+  &:hover {
+    text-decoration-style: double;
+  }
 }
 .hover\:dotted,
 .h\:dotted {
-	@extend %hover_text-decoration;
-	&:hover {
-		text-decoration-style: dotted;
-	}
+  @extend %hover_text-decoration;
+  &:hover {
+    text-decoration-style: dotted;
+  }
 }
 
 /*
@@ -171,13 +175,15 @@ a:focus {
   */
 
 /* Transparent Loop */
-#{ class-name-constructor(background-color, white, "", "hover")} {
-	background-color: $white;
+#{ class-name-constructor(background-color, white, "", "hover")},
+#{ class-name-constructor(background-color, white, "", "is-active")} {
+  background-color: $white;
 }
 @include loop-transparent(background-transparent, white, "", "!important", true);
 
-#{ class-name-constructor(background-color, black, "", "hover")} {
-	background-color: $black;
+#{ class-name-constructor(background-color, black, "", "hover")},
+#{ class-name-constructor(background-color, black, "", "is-active")} {
+  background-color: $black;
 }
 @include loop-transparent(background-transparent, black, "", "!important", true);
 
@@ -216,10 +222,10 @@ Opacity: Hover to Full Opacity
 Set the Opacity of an object to 100% while hovered.
 
 
+.opacity_0                        - Opacity of 0%
 .opacity_1                        - Opacity of 5%
 .opacity_5                        - Opacity of 50%
 .opacity_9                        - Opacity of 95%
-.opacity_0                        - Opacity of 95%
 
 markup:
 <div class="p_4 bg_primary">
@@ -231,6 +237,7 @@ Weight: 60
 Styleguide hover.opacity
 
 */
-#{class-name-constructor(opacity,"", "","hover")} {
-	opacity: 1;
+#{class-name-constructor(opacity,"", "","hover")},
+#{class-name-constructor(opacity,"", "","is-active")} {
+  opacity: 1;
 }

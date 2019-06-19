@@ -172,19 +172,8 @@ $basicSizeMultiplier: 1rem;
 @import "recipes/_zurb.quicklinks";
 @import "recipes/_zurb.cards";
 @import "recipes/grid_button_splash";
+@import "recipes/zurb/_zurb.button_group";
 
-/*
-	recipe: Button Group
-
-	markup:
-	<div class="button-group">
-		<a class="button is-active primary"><i class="far icon-toggle_check"></i> One</a>
-		<a class="button secondary"><i class="far icon-toggle_check"></i> Two</a>
-		<a class="button secondary"><i class="far icon-toggle_check"></i> Three</a>
-	</div>
-
-	Styleguide Recipe.Zurb.button group
-*/
 /*
     RECIPE: Accordians
 

@@ -1,0 +1,130 @@
+/*
+UC: Is-active 
+
+A common class name given to the parent container can effect the color, background and opacity of the children.  
+
+Weight: 135
+
+Styleguide is-active
+
+*/
+
+/*
+Is-active to Full Opacity
+
+<div class="p-b_3"><span class="bg_highlight br_radius c_white d_inline-block font_n1 p-7_3 p-x_5 sg">Click the areas below to toggle the "is-active" state.</span></div><strong>`.is-acitve .a:opacity`</strong> Set the Opacity of an objects children to 100% when it has the class is-active. 
+
+markup:
+<div class="flex p_4 bg_primary is-active_toggle-function ">
+  <div class="flex_auto opacity_0 a:opacity br_1 br_solid br_white p_2 bg_warning c_white"> 0 </div>
+  <div class="flex_auto opacity_1 a:opacity br_1 br_solid br_white p_2 bg_warning c_white"> 1 </div>
+  <div class="flex_auto opacity_2 a:opacity br_1 br_solid br_white p_2 bg_warning c_white"> 2 </div>
+  <div class="flex_auto opacity_3 a:opacity br_1 br_solid br_white p_2 bg_warning c_white"> 3 </div>
+  <div class="flex_auto opacity_4 a:opacity br_1 br_solid br_white p_2 bg_warning c_white"> 4 </div>
+  <div class="flex_auto opacity_5 a:opacity br_1 br_solid br_white p_2 bg_warning c_white"> 5 </div>
+  <div class="flex_auto opacity_6 a:opacity br_1 br_solid br_white p_2 bg_warning c_white"> 6 </div>
+  <div class="flex_auto opacity_7 a:opacity br_1 br_solid br_white p_2 bg_warning c_white"> 7 </div>
+  <div class="flex_auto opacity_8 a:opacity br_1 br_solid br_white p_2 bg_warning c_white"> 8 </div>
+  <div class="flex_auto opacity_9 a:opacity br_1 br_solid br_white p_2 bg_warning c_white"> 9 </div>
+</div>
+
+Weight: 60
+
+Styleguide is-active.opacity
+
+*/
+
+/*
+Is-active background black and white 
+
+<div class="p-b_3"><span class="bg_highlight br_radius c_white d_inline-block font_n1 p-7_3 p-x_5 sg">Click the areas below to toggle the "is-active" state.</span></div>Set the background to full white or black when the parent has a class of `is-active`. 
+
+bg_white              - text color modified light to dark
+bg_black              - text color modified light to dark
+
+markup:
+<div class="flex p_5 bg_primary m_5 is-active_toggle-function">
+  <div class="flex_auto a:{{modifier_class}} bg_{{modifier_class}}-0 p-y_3 p-x_4 font_bold font_2 font_slab c_secondary text_center br_1 br_solid br_secondary-4">0</div>
+  <div class="flex_auto a:{{modifier_class}} bg_{{modifier_class}}-1 p-y_3 p-x_4 font_bold font_2 font_slab c_secondary text_center br_1 br_solid br_secondary-4">1</div>
+  <div class="flex_auto a:{{modifier_class}} bg_{{modifier_class}}-2 p-y_3 p-x_4 font_bold font_2 font_slab c_secondary text_center br_1 br_solid br_secondary-4">2</div>
+  <div class="flex_auto a:{{modifier_class}} bg_{{modifier_class}}-3 p-y_3 p-x_4 font_bold font_2 font_slab c_secondary text_center br_1 br_solid br_secondary-4">3</div>
+  <div class="flex_auto a:{{modifier_class}} bg_{{modifier_class}}-4 p-y_3 p-x_4 font_bold font_2 font_slab c_secondary text_center br_1 br_solid br_secondary-4">4</div>
+  <div class="flex_auto a:{{modifier_class}} bg_{{modifier_class}}-5 p-y_3 p-x_4 font_bold font_2 font_slab c_secondary text_center br_1 br_solid br_secondary-4">5</div>
+  <div class="flex_auto a:{{modifier_class}} bg_{{modifier_class}}-6 p-y_3 p-x_4 font_bold font_2 font_slab c_secondary text_center br_1 br_solid br_secondary-4 ">6</div>
+  <div class="flex_auto a:{{modifier_class}} bg_{{modifier_class}}-7 p-y_3 p-x_4 font_bold font_2 font_slab c_secondary text_center br_1 br_solid br_secondary-4 ">7</div>
+  <div class="flex_auto a:{{modifier_class}} bg_{{modifier_class}}-8 p-y_3 p-x_4 font_bold font_2 font_slab c_secondary text_center br_1 br_solid br_secondary-4 ">8</div>
+  <div class="flex_auto a:{{modifier_class}} bg_{{modifier_class}}-9 p-y_3 p-x_4 font_bold font_2 font_slab c_secondary text_center br_1 br_solid br_secondary-4 ">9</div>
+  <div class="flex_auto  a:{{modifier_class}} bg_{{modifier_class}}-0 p-y_3 p-x_4 font_bold font_2 font_slab c_secondary text_center br_1 br_solid br_secondary-4 ">default</div>
+</div>
+
+Weight: 50
+
+Styleguide is-active.black and white
+ 
+ */
+/*
+  Is active font color
+ 
+  <div class="p-b_3"><span class="bg_highlight br_radius c_white d_inline-block font_n1 p-7_3 p-x_5 sg">Click the areas below to toggle the "is-active" state.</span></div> Set the font color of the child by setting the parent to .is-active. `a:c_primary`
+
+  c_primary              - text color modified light to dark
+  c_secondary              - text color modified light to dark
+  c_info              - text color modified light to dark
+  c_highlight              - text color success color
+  c_success              - text color modified light to dark
+  c_warning              - text color modified light to dark
+  c_alert              - text color modified light to dark
+
+  markup:
+  <div class="flex p_5 is-active_toggle-function">
+    <div class="flex_auto a:{{modifier_class}}-5 font_bold bg_secondary font_4 font_slab text_center br_1 br_solid br_secondary-4 p_1">5</div>
+    <div class="flex_auto a:{{modifier_class}}-4 font_bold bg_secondary font_4 font_slab text_center br_1 br_solid br_secondary-4 p_1">4</div>
+    <div class="flex_auto a:{{modifier_class}}-3 font_bold bg_secondary-1 font_4 font_slab text_center br_1 br_solid br_secondary-4 p_1">3</div>
+    <div class="flex_auto a:{{modifier_class}}-2 font_bold bg_secondary-1 font_4 font_slab text_center br_1 br_solid br_secondary-4 p_1">2</div>
+    <div class="flex_auto a:{{modifier_class}}-1 font_bold bg_secondary-1 font_4 font_slab text_center br_1 br_solid br_secondary-4 p_1">1</div>
+    <div class="flex_auto a:{{modifier_class}}-0 font_bold bg_secondary-2 font_4 font_slab text_center br_1 br_solid br_secondary-4 p_1">0</div>
+    <div class="flex_auto a:{{modifier_class}}-n1 font_bold bg_secondary-2 font_4 font_slab text_center br_1 br_solid br_secondary-4 p_1">n1</div>
+    <div class="flex_auto a:{{modifier_class}}-n2 font_bold bg_secondary-2 font_4 font_slab text_center br_1 br_solid br_secondary-4 p_1">n2</div>
+    <div class="flex_auto a:{{modifier_class}}-n3 font_bold bg_secondary-3 font_4 font_slab text_center br_1 br_solid br_secondary-4 p_1">n3</div>
+    <div class="flex_auto a:{{modifier_class}}-n4 font_bold bg_secondary-3 font_4 font_slab text_center br_1 br_solid br_secondary-4 p_1">n4</div>
+    <div class="flex_auto a:{{modifier_class}}-n5 font_bold bg_secondary-3 font_4 font_slab text_center br_1 br_solid br_secondary-4 p_1">n5</div>
+  </div>
+
+  Weight: 10
+ 
+  Styleguide is-active.text
+ 
+ */
+/*
+  Is active font color
+ 
+  <div class="p-b_3"><span class="bg_highlight br_radius c_white d_inline-block font_n1 p-7_3 p-x_5 sg">Click the areas below to toggle the "is-active" state.</span></div> Set the font color of the child by setting the parent to .is-active. `a:c_primary`
+
+  bg_primary              - text color modified light to dark
+  bg_secondary              - text color modified light to dark
+  bg_info              - text color modified light to dark
+  bg_highlight              - text color success color
+  bg_success              - text color modified light to dark
+  bg_warning              - text color modified light to dark
+  bg_alert              - text color modified light to dark
+
+  markup:
+  <div class="flex p_5 is-active_toggle-function">
+    <div class="flex_auto a:{{modifier_class}}-5 font_bold  bg_secondary-2 font_4 font_slab text_center br_1 br_solid br_secondary-4 p_1">5</div>
+    <div class="flex_auto a:{{modifier_class}}-4 font_bold  bg_secondary-2 font_4 font_slab text_center br_1 br_solid br_secondary-4 p_1">4</div>
+    <div class="flex_auto a:{{modifier_class}}-3 font_bold  bg_secondary-2 font_4 font_slab text_center br_1 br_solid br_secondary-4 p_1">3</div>
+    <div class="flex_auto a:{{modifier_class}}-2 font_bold  bg_secondary-2 font_4 font_slab text_center br_1 br_solid br_secondary-4 p_1">2</div>
+    <div class="flex_auto a:{{modifier_class}}-1 font_bold  bg_secondary-2 font_4 font_slab text_center br_1 br_solid br_secondary-4 p_1">1</div>
+    <div class="flex_auto a:{{modifier_class}}-0 font_bold  bg_secondary-2 font_4 font_slab text_center br_1 br_solid br_secondary-4 p_1">0</div>
+    <div class="flex_auto a:{{modifier_class}}-n1 font_bold bg_secondary-2  font_4 font_slab text_center br_1 br_solid br_secondary-4 p_1">n1</div>
+    <div class="flex_auto a:{{modifier_class}}-n2 font_bold bg_secondary-2  font_4 font_slab text_center br_1 br_solid br_secondary-4 p_1">n2</div>
+    <div class="flex_auto a:{{modifier_class}}-n3 font_bold bg_secondary-2  font_4 font_slab text_center br_1 br_solid br_secondary-4 p_1">n3</div>
+    <div class="flex_auto a:{{modifier_class}}-n4 font_bold bg_secondary-2  font_4 font_slab text_center br_1 br_solid br_secondary-4 p_1">n4</div>
+    <div class="flex_auto a:{{modifier_class}}-n5 font_bold bg_secondary-2  font_4 font_slab text_center br_1 br_solid br_secondary-4 p_1">n5</div>
+  </div>
+
+  Weight: 10
+ 
+  Styleguide is-active.background color
+ 
+ */

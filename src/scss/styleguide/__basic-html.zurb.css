@@ -110,24 +110,7 @@
 
   Styleguide Components.Accordian
 */
-/*
 
-  Breadcrumbs
-
-  markup:
-  <nav aria-label="You are here:" role="navigation">
-    <ul class="breadcrumbs font_1">
-      <li><a href="#0">Home</a></li>
-      <li><a href="#0">Features</a></li>
-      <li class="font-italic">Gene Splicing</li>
-      <li>
-        <span class="show-for-sr">Current: </span> Cloning
-      </li>
-    </ul>
-  </nav>
-
-  Styleguide Components.Breadcrumbs
-*/
 /*
     Tabs
 
@@ -188,7 +171,7 @@
 
 */
 /*
-    Tabs on card :recipe
+    Tabs on Card
 
     markup:
         <div class="card shadow_2 cell small-6 large-4" style="max-width: 500px;">
@@ -197,9 +180,9 @@
       </div>
     <ul class="texture_light tabs br_0 bg_primary br_none texture_dust p-x_2 p-t_3 br-b_0" data-active-collapse="true" data-tabs id="collapsing-tabs">
         <li class="tabs-title m-x_1 is-active"><a class="br-tr_radius br-tl_radius h:bg_white br_primary"href="#panel-demo2-1c"aria-selected="true"><i class="fal icon-complete_check"></i>Tab 1</a></li>
-        <li class="tabs-title m-x_1"><a class="h:c_white c_white-3 br-tr_radius br-tl_radius h:bg_primary-n2" href="#panel-demo2-2c"><i class="fal icon-complete_check"></i>Tab 2</a></li>
-        <li class="tabs-title m-x_1"><a class="h:c_white c_white-3 br-tr_radius br-tl_radius h:bg_primary-n2" href="#panel-demo2-3c"><i class="fal icon-complete_check"></i>Tab 3</a></li>
-        <li class="tabs-title m-x_1"><a class="h:c_white c_white-3 br-tr_radius br-tl_radius h:bg_primary-n2" href="#panel-demo2-4c"><i class="fal icon-complete_check"></i>Tab 4</a></li>
+        <li class="tabs-title m-x_1"><a class="h:c_white c_white-8 br-tr_radius br-tl_radius h:bg_primary-n2" href="#panel-demo2-2c"><i class="fal icon-complete_check"></i>Tab 2</a></li>
+        <li class="tabs-title m-x_1"><a class="h:c_white c_white-8 br-tr_radius br-tl_radius h:bg_primary-n2" href="#panel-demo2-3c"><i class="fal icon-complete_check"></i>Tab 3</a></li>
+        <li class="tabs-title m-x_1"><a class="h:c_white c_white-8 br-tr_radius br-tl_radius h:bg_primary-n2" href="#panel-demo2-4c"><i class="fal icon-complete_check"></i>Tab 4</a></li>
     </ul>
     <div class="tabs-content" data-tabs-content="collapsing-tabs">
         <div class="tabs-panel-demo2 is-active p-x_4 p-y_3" id="panel-demo2-1c">
@@ -215,7 +198,9 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         </div>
     </div>
-    </div>
+    </div>    <script>
+      $(document).foundation();
+    </script>
 
     Styleguide Navigation.Tabs.OnCard
 

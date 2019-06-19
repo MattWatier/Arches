@@ -178,3 +178,44 @@ $debug-trace: true !default;
     }
   }
 }
+
+@mixin is-active-loop($key, $color-name, $color) {
+  $white-mix: map-get($value-to-unit, percent-positive);
+  $black-mix: map-get($value-to-unit, percent-negative);
+  $unit: $color-name;
+  $breakpoint: "" !default;
+  $names: class-name-constructor($key, $unit, $breakpoint, "is-active");
+  $styles: get-css-style($key);
+
+  #{$names} {
+    @each $style in $styles {
+      #{$style}: $color !important;
+    }
+  }
+
+  @each $val-name, $val in $white-mix {
+    $unit: #{$color-name}-#{$val-name};
+    $names: class-name-constructor($key, $unit, $breakpoint, "is-active");
+
+    #{$names} {
+      @each $style in $styles {
+        #{$style}: mix(white, $color, $val) !important;
+      }
+    }
+  }
+
+  @each $val-name, $val in $black-mix {
+    $unit: #{$color-name}-#{$val-name};
+    $names: class-name-constructor($key, $unit, $breakpoint, "is-active");
+
+    #{$names} {
+      @each $style in $styles {
+        #{$style}: mix(black, $color, $val) !important;
+      }
+    }
+  }
+
+  @if $debug-trace {
+    @debug "Is Active Color Loop for #{$key} painting it with #{$color-name}";
+  }
+}
