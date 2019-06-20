@@ -15942,7 +15942,7 @@ Styleguide is-active.opacity
 
 */
 /*
-Is-active background black and white 
+Is-active Black n White 
 
 <div class="p-b_3"><span class="bg_highlight br_radius c_white d_inline-block font_n1 p-7_3 p-x_5 sg">Click the areas below to toggle the "is-active" state.</span></div>Set the background to full white or black when the parent has a class of `is-active`. 
 
@@ -16035,6 +16035,78 @@ Styleguide is-active.black and white
   Styleguide is-active.background color
 
  */
+/*
+  Is active Icons
+
+  <div class="p-b_3"><span class="bg_highlight br_radius c_white d_inline-block font_n1 p-7_3 p-x_5 sg">Click the areas below to toggle the "is-active" state.</span></div> Toggle the display and hide of a an icon with applying `is-active_icon-show` or `is-active_icon-hide`  
+
+  fa-award            - toggle the award icon
+  fa-bell             - toggle the bell icon
+  fa-bell-slash       - toggle the bell slash icon
+  fa-bug              - toggle the bug icon
+
+
+  markup:
+  <div class="flex p_5 is-active_toggle-function">
+    <div class="flex_auto a:bg_accent font_bold  bg_secondary-2 font_4 font_slab text_center br_1 br_solid br_secondary-4 p_1"><i class="fas {{modifier_class}} a:icon-show"></i> Show When Active</div>
+    <div class="flex_auto a:bg_accent font_bold  bg_secondary-2 font_4 font_slab text_center br_1 br_solid br_secondary-4 p_1"><i class="fas {{modifier_class}} a:icon-hide"></i> Hide when Active</div>
+  </div>
+
+  Weight: 10
+
+  Styleguide is-active.icon
+
+ */
+.a\:icon-show,
+.is-active .a\:icon-hide {
+  display: none !important;
+}
+
+.is-active .a\:icon-show {
+  display: inline-block !important;
+}
+
+.a\:d_inline,
+.a\:d_inline-block,
+.a\:d_block,
+.is-active > .a\:d_none {
+  display: none !important;
+}
+
+.is-active > .a\:d_inline {
+  display: inline !important;
+}
+
+.is-active > .a\:d_inline-block {
+  display: inline-block !important;
+}
+
+.is-active > .a\:d_block {
+  display: block !important;
+}
+
+/*
+Is active Display
+
+<div class="p-b_3"><span class="bg_highlight br_radius c_white d_inline-block font_n1 p-7_3 p-x_5 sg"> Click the areas below to toggle the "is-active" state.</span></div>Toggle the display type of an object when it's parent is-active
+
+none           -  make the display none when parent is-active
+inline           -  make the display inline when parent is-active
+inline-block           -  make the display inline-block when parent is-active
+block          -  make the display block when parent is-active
+
+
+markup:
+<div class="flex p_5 is-active_toggle-function">
+  <div class="flex_shrink a:bg_accent font_bold  bg_secondary-2 font_4 font_slab text_center br_1 br_solid br_secondary-4 p_1">No Display Toggle</div>
+  <div class="flex_auto a:d_{{modifier_class}} a:bg_accent font_bold  bg_secondary-2 font_4 font_slab text_center br_1 br_solid br_secondary-4 p_1">IS Active my display is {{modifier_class}}</div>
+</div>
+
+Weight: 10
+
+Styleguide is-active.display
+
+*/
 /*
 UC: Counters
 
