@@ -1,0 +1,101 @@
+/*
+
+Ebiz Multi Due Payment
+
+A quick mock up of the multi-due payment screen.
+
+markup:
+<div class="flex:md h_100 texture_light" style="
+    min-height: 100vh;
+">
+	<div class="flex_auto">
+		<div class="bg_primary-2 p_5 p-x_5">
+			<div class="bg_primary-2 clearfix">
+			<h1 class="c_white font_1 font_display font_regular">
+				<input type="checkbox"><span class="flex_auto"> I would like to have a copy of the payment complete email. </span>
+            </h1>
+            <div class="flex max-w_1"><input type="email" class="flex_auto m_0"><button class="button flex_auto lh_2 p-x_4 p_3 bg_primary br_0 br_none br-tr_radius br-br_radius button c_white font_2 h:bg_primary-n2 m-r_3 none p-x_4 p-y_2">update</button></div></div>
+		</div>
+		<div class="card shadow_2 bg_success-5 opacity_5 m_4 relative clearfix">
+			<div class=" font_slab br-tl_square c_white font_3 p_4 texture_dust bg_success">
+				Thank You
+			</div>
+			<div class="card-section">
+				<div class="flex">
+					<div class="flex_shrink p_4 font_5 c_success-n3">
+						<i class="fas fa-check"></i>
+					</div>
+					<div class="flex_auto p_4">
+						You have successfully paid for doctor x for the next year
+					</div>
+				</div>
+			</div>
+			<div class="br-t_1 br_0 br_solid br_success p-x_4 p_3 relative text_right">
+				<button href="" class="bg_success h:success-n2 br_0 br_none br_radius button c_white font_2 h:bg_primary-n2 m-r_3 none p-x_4 p-y_2"><i class="fas fa-times"></i>&nbsp;self closing in 2 sec</button>
+			</div>
+		</div>
+		<div class="shadow_1 br_radius bg_white m_4 p_5 text_center font_copy">
+			<h1 class=" font_regular c_black font_3 font_display">
+				Find the Doctor you would like to pay for by searching by there ACC
+				member ID
+			</h1>
+			<a href="" class="underline c-primary font_n1">Where do I locate the member ID</a>
+			<div class="m-t_4 flex ">
+				<input type="text" class="flex_auto font_2 font_ui p-x_3 p-y_2 br-tl_radius br-bl_radius">
+				<button class="button bg_primary br_0 br_none font_2 p-x_4 p-y_2  br-tr_radius br-br_radius c_white">
+					Search
+				</button>
+			</div>
+		</div>
+		<div class="shadow_1 br_radius bg_white m_4 p_5 text_center font_copy">
+			<div class="shadow_n1 br_radius bg_primary-4 m_3 p_3 text_center font_4 font_slab">
+				Doctors Full Name. MD. FACC
+			</div>
+			<h1 class=" font_regular c_black font_3 font_display">
+				Is this the doctor you want to pay for.
+			</h1>			
+			<div class="m-t_4 flex max-w_2 m_auto">
+				<button class="button flex_auto bg_primary h:bg_primary-n2 br_0 br_none font_3 p-x_4 p-y_2  br_radius c_white m-r_3">
+					Yes
+				</button>
+				<button class="button flex_auto bg_secondary-3 h:bg_secondary-1 br_0 br_none font_3 p-x_4 p-y_2 br_radius  m-r_3 c_black">
+					No
+				</button>
+			</div>
+		</div>
+	</div>
+	<div class="div flex_shrink w_30:lg w_20:md br-l_1 br_0 br_secondary-5 br_solid bg_white">
+		<h2 class="font_2 font_display font_regular p-x_4">
+			Recently Paid
+		</h2>
+		<section class="m-x_3 br-t_1 br_primary br_solid p-x_3 p-y_4">
+			<ul class="ul_none">
+				<li class="br_dotted br-b_1 br_secondary-5 p-b_3">
+					<div class="font_1 flex c_secondary font_display">
+						<div class="flex_auto">Full Name</div>
+						<div class="flex_shrink c_primary font_bold font_n1">$750.00</div>
+					</div>
+					<div class="font_n1 font_ui c_secondary-1">
+						<strong class="font_bold">Paid On:</strong>
+						<span class="font_italic"></span>|<strong class="font_bold">ACC ID:</strong>
+						<span class="font_italic">000141421</span>
+					</div>
+				</li>
+				<li class="br_dotted br-b_1 br_secondary-5 p-b_3">
+					<div class="font_1 flex c_secondary font_display">
+						<div class="flex_auto">Full Name</div>
+						<div class="flex_shrink c_primary font_bold font_n1">$750.00</div>
+					</div>
+					<div class="font_n1 font_ui c_secondary-1">
+						<strong class="font_bold">Paid On:</strong>
+						<span class="font_italic"></span>|<strong class="font_bold">ACC ID:</strong>
+						<span class="font_italic">000141421</span>
+					</div>
+				</li>
+			</ul>
+		</section>
+	</div>
+</div>
+
+styleguide: Recipe.Ebiz.MultiPay
+*/
