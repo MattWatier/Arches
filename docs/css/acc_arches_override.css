@@ -2236,20 +2236,20 @@
 
   markup:
   <ul class="ul_none m_0 p_0">
-  	<li class="is-active_toggle-function is-active flex p-x_3 p-y_2 bg_secondary-3 font_3 a:bg_success-3">	
+  	<li class="is-active_toggle-function is-active c_white a:c_black flex p-x_3 p-y_2 a:bg_secondary-3 font_3 bg_success-n1">	
   			<span class="">FA Solid {{ modifier_class }}</span>
-  			<span class="a:d_inline">is-active></span>
   			<i class="fas fa-fw {{ modifier_class }}"></i>
+  			<span class="a:d_inline"> (is-active) </span>
   	</li>
-  	<li class="is-active_toggle-function is-active flex p-x_3 p-y_2 bg_secondary-3 font_3 a:bg_success-3">	
+  	<li class="is-active_toggle-function is-active c_white a:c_black flex p-x_3 p-y_2 a:bg_secondary-3 font_3 bg_success-n1">	
   			<span class="">FA Regular {{ modifier_class }}</span>
-  			<span class="a:d_inline">is-active></span>
-  			<i class="fa-r-project fa-fw {{ modifier_class }}"></i>
+  			<i class="fa-r  fa-fw {{ modifier_class }}"></i>
+  			<span class="a:d_inline"> (is-active) </span>
   	</li>
-  	<li class="is-active_toggle-function is-active flex p-x_3 p-y_2 bg_secondary-3 font_3 a:bg_success-3">	
+  	<li class="is-active_toggle-function is-active c_white a:c_black flex p-x_3 p-y_2 a:bg_secondary-3 font_3 bg_success-n1">	
   			<span class="">FA Light {{ modifier_class }}</span>
-  			<span class="a:d_inline">is-active></span>
   			<i class="fal fa-fw {{ modifier_class }}"></i>
+  			<span class="a:d_inline"> (is-active) </span>
   	</li>
   </ul>
 
@@ -11477,10 +11477,12 @@
   color: #000e1b !important;
 }
 #acc_arches_override .a\:icon-show,
-#acc_arches_override .is-active .a\:icon-hide {
+#acc_arches_override .is-active.a\:icon-hide,
+#acc_arches_override .is-active > .a\:icon-hide {
   display: none !important;
 }
-#acc_arches_override .is-active .a\:icon-show {
+#acc_arches_override .is-active > .a\:icon-show,
+#acc_arches_override .is-active.a\:icon-show {
   display: inline-block !important;
 }
 #acc_arches_override .a\:d_inline,
