@@ -1,15 +1,15 @@
 {
 	"title": "Utility Only",
-	"mask": "noframework_acc.css",
+	"mask": "uconly_acc.css",
 	"builder": "node_modules/michelangelo/kss_styleguide/custom-template/",
 	"source": "./dist/css/",
-	"destination": "docs/noframework_acc/",
+	"destination": "docs/uconly_acc/",
 	"//": "relative to source.",
 	"homepage": "../../None_ACC.md",
 
 	"//": "relative to the generated style guide.",
 	"css": [
-		"../css/noframework_acc.css",
+		"../css/uconly_acc.css",
 		"../icons/css/fontawesome.css",
 		"../icons/css/solid.css",
 		"../icons/css/regular.css",

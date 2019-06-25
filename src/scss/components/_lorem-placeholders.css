@@ -6,85 +6,42 @@ It is often we need to have space held for a return of details or text.
 
 markup:
 <div class="max-w_3">
-   <div class="m-y_2 lorem-loader  lorem-text lorem-headline">&nbsp;</div>
-   <h1 class="lorem-loader lorem-text">&nbsp;</h1>
-   <p class="m-y_2 lorem-loader  lorem-text gw_
-   70">&nbsp;</div>
-   <div class="m-y_2 lorem-loader  lorem-text gw_
-   80">&nbsp;</div>
-   <div class="m-y_2 lorem-loader  lorem-text gw_
-   70">&nbsp;</div>
+   <h1 class="lorem-loader font_3 m-y_3">&nbsp;</h1>
+   <p class="m-y_2 font_0 lorem-loader">&nbsp;</div>
+   <p class="m-y_2 font_0 lorem-loader">&nbsp;</div>
+   <p class="m-y_2 font_0 lorem-loader">&nbsp;</div>
 </div>
 
 Styleguide InteractiveExtras.Text Placeholder Loader
 */
 /*
 
-Lorem Image Loader Apsect Raitio
+Lorem + Aspect Ratio
 
-It is often we need to have space held for a return of details or text. 
+To create an image placeholder use the lorem-loader plus an aspect of the intended image on th parent container while waiting for the image.The placeholder will be a 100% of the container so size the container properly. 
 
-lorem-aspect_3x2
+aspect_1x2
+aspect_1x1
+aspect_3x2
+aspect_4x3
+aspect_16x9
 
-
-markup:
-<div class="max-w_1">
-   <div class="m-y_2 lorem-loader lorem-aspect_3x2">&nbsp;</div>
-</div>
-
-Styleguide InteractiveExtras.Image Placeholder Loader
-*/
-/*
-
-Lorem Thumbnail Loader
-
-It is often we need to have space held for a return of details or text.  
 
 markup:
-<div class="wg_1">
-   <div class="m-y_2 lorem-loader lorem-thumb">&nbsp;</div>
+<div class="grid-w_2">
+   <div class="m-y_2 lorem-loader {{modifier_class}} ">&nbsp;</div>
 </div>
 
-Styleguide InteractiveExtras.Thumbnail Placeholder Loader
+Styleguide InteractiveExtras.Placeholder Aspect Ratio
 */
-.lorem-text:before {
-  padding-top: 1.2em;
-}
-
-.lorem-headline {
-  margin-bottom: 0.6em;
-}
-
-.lorem-headline:before {
-  padding-top: 2.4em;
-}
-
-.lorem-aspect_4x3 {
-  padding-top: 133.33333%;
-}
-
-.lorem-aspect_3x2 {
-  padding-top: 150%;
-}
-
-.lorem-aspect_1x1 {
-  padding-top: 100%;
-}
-
-.lorem-aspect_2x1 {
-  padding-top: 200%;
-}
-
+div[class^="aspect_"],
 .lorem-loader {
-  color: #fff;
-  background: linear-gradient(-45deg, get-themecolor(primary, 3), get-themecolor(secondary, 3), get-themecolor(info, 3), get-themecolor(accent, 3));
-  background-size: 400% 400%;
-  -webkit-animation: Gradient 8s ease infinite;
-  -moz-animation: Gradient 8s ease infinite;
-  animation: Gradient 8s ease infinite;
   width: 100%;
+  overflow: hidden;
+  text-indent: -9999px;
 }
 
+div[class^="aspect_"]:before,
 .lorem-loader:before {
   content: "";
   width: 1px;
@@ -93,10 +50,40 @@ Styleguide InteractiveExtras.Thumbnail Placeholder Loader
   height: 0;
 }
 
+div[class^="aspect_"]:after,
 .lorem-loader:after {
   content: "";
   display: table;
   clear: both;
+}
+
+.aspect_16x9 {
+  padding-top: 56.25%;
+}
+
+.aspect_4x3 {
+  padding-top: 75%;
+}
+
+.aspect_3x2 {
+  padding-top: 66.66667%;
+}
+
+.aspect_1x1 {
+  padding-top: 100%;
+}
+
+.aspect_2x1 {
+  padding-top: 50%;
+}
+
+.lorem-loader {
+  color: #fff;
+  background: linear-gradient(-45deg, get-themecolor(primary, 3), get-themecolor(secondary, 3));
+  background-size: 400% 400%;
+  -webkit-animation: Gradient 4s ease infinite;
+  -moz-animation: Gradient 4s ease infinite;
+  animation: Gradient 4s ease infinite;
 }
 
 @-webkit-keyframes Gradient {
@@ -143,14 +130,14 @@ allows for a relative container to be clickable by the link.
 
 markup:
 <div class="card shadow_2 cell small-6 large-4 max-w_3" >
-  <div class=" font_slab border-top-left-square c_white font_3 p_4 texture_dust card-divider bg_primary">
+  <div class=" font_slab border-top-left-square c_white font_3 p_4 texture_dust card-divider bg_primary card-header">
     This is a header
   </div>
   <img src="https://picsum.photos/400/300">
-  <div class="card-section">
+  <div class="card-section card-body">
     <h4>This is a card.</h4>
 	 <p>It has an easy to override visual style, and is appropriately subdued.</p>
-	 <a href="#" class="exapnded-click-area button">I am so clickable</a>
+	 <a href="#" class="exapnded-click-area button btn btn-primary">I am so clickable</a>
   </div>
 </div>
 

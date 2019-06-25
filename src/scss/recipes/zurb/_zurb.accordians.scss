@@ -1,0 +1,30 @@
+/*
+    RECIPE: Accordians
+
+    Accordions are elements that help you organize and navigate multiple documents in a single container. They can be used for switching between items in the container.
+
+    markup: 
+    <ul class="accordion" data-accordion>
+        <li class="accordion-item is-active" data-accordion-item>
+            <!-- Accordion tab title -->
+            <a href="#" class="accordion-title font_1 font_slab hover:bg_primary-4"><i class="fas icon-toggle_plus-minus fa-fw"></i> Accordion 1</a>
+            <!-- Accordion tab content: it would start in the open state due to using the `is-active` state class. -->
+            <div class="accordion-content" data-tab-content>
+                <p>Panel 1. Lorem ipsum dolor</p>
+                <a href="#">Nowhere to Go</a>
+            </div>
+        </li>
+        <li class="accordion-item" data-accordion-item>
+            <!-- Accordion tab title -->
+            <a href="#"class="accordion-title  font_1 font_slab hover:bg_primary-4"><i class="fas icon-toggle_plus-minus fa-fw"></i>Accordion 2</a>
+            <!-- Accordion tab content: it would start in the open state due to using the `is-active` state class. -->
+            <div class="accordion-content" data-tab-content>
+                <p>Panel 1. Lorem ipsum dolor</p>
+                <a href="#">Nowhere to Go</a>
+            </div>
+        </li>
+    </ul>
+
+    Styleguide Recipe.Zurb.Accordians
+
+*/

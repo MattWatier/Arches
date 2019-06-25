@@ -163,16 +163,20 @@ Styleguide is-active.black and white
 .a\:d_inline,
 .a\:d_inline-block,
 .a\:d_block,
-#{class-name-constructor(display,none,"",is-active)} {
+#{class-name-constructor(display,none,"",is-active)},
+#{class-name-constructor(display,none,"",is-active-self)} {
 	display: none !important;
 }
-#{class-name-constructor(display,inline,"",is-active)} {
+#{class-name-constructor(display,inline,"",is-active)},
+#{class-name-constructor(display,inline,"",is-active-self)} {
 	display: inline !important;
 }
-#{class-name-constructor(display,inline-block,"",is-active)} {
+#{class-name-constructor(display,inline-block,"",is-active)},
+#{class-name-constructor(display,inline-block,"",is-active-self)} {
 	display: inline-block !important;
 }
-#{class-name-constructor(display,block,"",is-active)} {
+#{class-name-constructor(display,block,"",is-active)},
+#{class-name-constructor(display,inline-block,"",is-active-self)} {
 	display: block !important;
 }
 

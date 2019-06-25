@@ -271,8 +271,8 @@ $embed-responsive-aspect-ratios: join(
 // Font, line-height, and color for body text, headings, and more.
 
 // stylelint-disable value-keyword-case
-$font-family-sans-serif:      map-deep-get($value-to-unit, font-family, copy);
-$font-family-monospace:        map-deep-get($value-to-unit, font-family, mono);
+$font-family-sans-serif:      #{map-deep-get($value-to-unit, font-family, copy)};
+$font-family-monospace:       #{map-deep-get($value-to-unit, font-family, mono)};
 $font-family-base:            $font-family-sans-serif;
 // stylelint-enable value-keyword-case
 
@@ -297,7 +297,7 @@ $h5-font-size:                map-deep-get($value-to-unit, font-size, 1);
 $h6-font-size:                map-deep-get($value-to-unit, font-size, 0);
 
 $headings-margin-bottom:      $spacer / 2 !default;
-$headings-font-family:        map-deep-get($value-to-unit, font-family, display);
+$headings-font-family:        #{map-deep-get($value-to-unit, font-family, display)};
 $headings-font-weight:       300;
 $headings-line-height:       map-deep-get($value-to-unit, line-height, 2);
 $headings-color:              null !default;

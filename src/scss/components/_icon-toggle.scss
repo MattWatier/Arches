@@ -14,28 +14,28 @@ Many momment there are needs for toggles of icon when the parent is in the state
 .icon-toggle_bars-times 					-  Toggle between bars and times
 
 markup:
-<ul class="no-bullet">
-<li class="font_bold border_solid border_secondary-5 p_3 border-width_1">
-	<div class="font_bold c_secondary-3">FA Solid {{modifier_class}}</div>
-	<div class="p_2 font_4">
-		<span class="br_radius m-x_2 p-x_3 p-y_2 bg_secondary-4">default: <i class="fas fa-fw {{modifier_class}}"></i></span> 
-		<span class="m-x_4 p_4  p-y_2  br_circle  bg_black c_white">vs</span>
-		<span class="is-active br_radius m-x_2 p-x_3 p-y_2 bg_primary-4">is-active: <i class="fas {{modifier_class}}"></i></span></div>
-</li>
-<li class="font_bold border_solid border_secondary-5 p_3 border-width_1">
-	<div class="font_bold c_secondary-3">FA Regular {{modifier_class}}</div>
-	<div class="p_2 font_4">
-		<span class="br_radius m-x_2 p-x_3 p-y_2 bg_secondary-4">default: <i class="far fa-fw {{modifier_class}}"></i></span> 
-		<span class="m-x_4 p_4  p-y_2 br_circle bg_black c_white">vs</span>
-		<span class="is-active br_radius m-x_2 p-x_3 p-y_2 bg_primary-4">is-active: <i class="far {{modifier_class}}"></i></span></div>
-</li>
-<li class="font_bold border_solid border_secondary-5 p_3 border-width_1">
-	<div class="font_bold c_secondary-3">FA Light {{modifier_class}}</div>
-	<div class="p_2 font_4">
-		<span class="br_radius m-x_2 p-x_3 p-y_2 bg_secondary-4">default: <i class="fal fa-fw {{modifier_class}}"></i></span> 
-		<span class="m-x_4 p_4  p-y_2 br_circle bg_black c_white">vs</span>
-		<span class="is-active br_radius m-x_2 p-x_3 p-y_2 bg_primary-4">is-active: <i class="fal {{modifier_class}}"></i></span></div>
-</li>
+<ul class="ul_none m_0 p_0">
+	<li class="is-active_toggle-function br_solid br_secondary-5 p_3 brh_1 is-active">	
+		<div class="br_radius m-x_2 p-x_3 p-y_2 bg_secondary-3 font_3 a:bg_success-3">
+			<span class="c_secondary-3">FA Solid {{ modifier_class }}</span>
+			<span class="a:d_inline">is-active></span>
+			<i class="fas fa-fw {{ modifier_class }}"></i>
+		</div>
+	</li>
+	<li class="is-active_toggle-function br_solid br_secondary-5 p_3 brh_1 is-active">	
+		<div class="br_radius m-x_2 p-x_3 p-y_2 bg_secondary-3 font_3 a:bg_success-3">
+			<span class="c_secondary-3">FA Regular {{ modifier_class }}</span>
+			<span class="a:d_inline">is-active></span>
+			<i class="fa-r-project fa-fw {{ modifier_class }}"></i>
+		</div>
+	</li>
+	<li class="is-active_toggle-function br_solid br_secondary-5 p_3 brh_1 is-active">	
+		<div class="br_radius m-x_2 p-x_3 p-y_2 bg_secondary-3 font_3 a:bg_success-3">
+			<span class="c_secondary-3">FA Light {{ modifier_class }}</span>
+			<span class="a:d_inline">is-active></span>
+			<i class="fal fa-fw {{ modifier_class }}"></i>
+		</div>
+	</li>
 </ul>
 
 
@@ -108,23 +108,23 @@ This variation of the icon toggle responds to `is-complete` and not is `is-activ
 .icon-complete_check-circle		- Toggle a check mark to show.
 
 markup:
-<ul class="no-bullet">
-<li class="font_bold border_solid border_secondary-5 p_3 border-width_1">
-	<div class="font_bold c_secondary-3">FA Solid {{modifier_class}}</div>
+<ul class="ul_none">
+<li class="br_solid br_secondary-5 p_3 br_1">
+	<div class="c_secondary-3">FA Solid {{modifier_class}}</div>
 	<div class="p_2 font_4">
 		<span class="br_radius m-x_2 p-x_3 p-y_2 bg_secondary-4">default: <i class="fas fa-fw {{modifier_class}}"></i></span> 
 		<span class="m-x_4 p_4  p-y_2 br_circle bg_black c_white">vs</span>
 		<span class="is-complete br_radius m-x_2 p-x_3 p-y_2 bg_primary-4">is-complete: <i class="fas {{modifier_class}}"></i></span></div>
 </li>
-<li class="font_bold border_solid border_secondary-5 p_3 border-width_1">
-	<div class="font_bold c_secondary-3">FA Regular {{modifier_class}}</div>
+<li class="br_solid br_secondary-5 p_3 br_1">
+	<div class="c_secondary-3">FA Regular {{modifier_class}}</div>
 	<div class="p_2 font_4">
 		<span class="br_radius m-x_2 p-x_3 p-y_2 bg_secondary-4">default: <i class="far fa-fw {{modifier_class}}"></i></span> 
 		<span class="m-x_4 p_4  p-y_2 br_circle bg_black c_white">vs</span>
 		<span class="is-complete br_radius m-x_2 p-x_3 p-y_2 bg_primary-4">is-complete: <i class="far {{modifier_class}}"></i></span></div>
 </li>
-<li class="font_bold border_solid border_secondary-5 p_3 border-width_1">
-	<div class="font_bold c_secondary-3">FA Light {{modifier_class}}</div>
+<li class="br_solid br_secondary-5 p_3 br_1">
+	<div class="c_secondary-3">FA Light {{modifier_class}}</div>
 	<div class="p_2 font_4">
 		<span class="br_radius m-x_2 p-x_3 p-y_2 bg_secondary-4">default: <i class="fal fa-fw {{modifier_class}}"></i></span> 
 		<span class="m-x_4 p_4  p-y_2 br_circle bg_black c_white">vs</span>

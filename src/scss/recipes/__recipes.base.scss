@@ -10,15 +10,13 @@
 */
 
 /* Nav Recipe.00x */
-@import "mobile-nav";
+@import "base/mobile-nav";
 
 /* Nav Recipe.04x */
-@import "web-footer";
+@import "base/web-footer";
 
 /* content Recipe.100 */
-@import "content-containers";
+@import "base/ordered-cards.scss";
 
-/* content Recipe.200 */
-@import "data-containers";
 /* content Recipe.250 */
-@import "search-result-GL";
+@import "base/GLSEARCH-search-result";
