@@ -3,7 +3,7 @@
   background-color: transparent;
   background-size: contain;
   background-position: center center;
-  background-repeat: none;
+  background-repeat: no-repeat;
   text-indent: -9999px;
   overflow: hidden;
 }

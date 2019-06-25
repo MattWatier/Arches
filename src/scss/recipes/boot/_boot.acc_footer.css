@@ -5,346 +5,413 @@
    The Footer of ACC.org 
    
    Markup:
-   <div id="footer-wrap">
-	<!-- ********************************** breadcrumbs ********************************** -->
-	<div id="breadcrumbs" class="breadcrumbs-container">
-		<b class="breadcrumbs-title">YOU ARE HERE: </b>
-		Home
-	</div>
-<!-- This is the inner footer that we cache -->
-	<div id="footer" role="contentinfo">
-		<div class="column">
-			<h2>
-				<a href="//www.acc.org/guidelines" target="_parent" title="Guidelines">Guidelines</a>
-			</h2>
-			<h2>
-				<a href="//www.acc.org/jacc-journals">JACC Journals on ACC.org</a>
-			</h2>
-			<ul>
-				<li>
-					<a
-						href="http://www.acc.org/jacc-journals?w_nav=FN#journal=Journal of the American College of Cardiology"
-						>JACC</a
-					>
-				</li>
-				<li>
-					<a href="http://www.acc.org/jacc-journals?w_nav=FN#journal=JACC: Basic to Translational Science"
-						>JACC: Basic to Translational Science</a
-					>
-				</li>
-				<li><a href="http://www.onlinejacc.org/CardioOncology" target="_blank">JACC: CardioOncology</a></li>
-				<li>
-					<a
-						href="//www.acc.org/jacc-journals#journal=JACC: Cardiovascular Imaging"
-						target="_parent"
-						title="JACC: Cardiovascular Imaging"
-						>JACC: Cardiovascular Imaging
-					</a>
-				</li>
-				<li>
-					<a
-						href="//www.acc.org/jacc-journals#journal=JACC: Cardiovascular Interventions"
-						target="_parent"
-						title="JACC: Cardiovascular Interventions"
-						>JACC: Cardiovascular Interventions
-					</a>
-				</li>
-				<li><a href="https://casereports.onlinejacc.org/" target="_blank">JACC: Case Reports</a></li>
-				<li>
-					<a href="http://www.acc.org/jacc-journals?w_nav=FN#journal=JACC: Clinical Electrophysiology"
-						>JACC: Clinical Electrophysiology</a
-					>
-				</li>
-				<li>
-					<a
-						href="//www.acc.org/jacc-journals#journal=JACC: Heart Failure"
-						target="_parent"
-						title="JACC Heart Failure"
-						>JACC Heart Failure</a
-					>
-				</li>
-			</ul>
-			<h2>
-				<a href="//www.acc.org/membership" target="_parent" title="Membership ">Membership </a>
-			</h2>
-			<ul>
-				<li><a href="//www.acc.org/membership/about-membership">About Membership</a></li>
-				<li><a href="//www.acc.org/membership/become-a-member">Become a Member</a></li>
-				<li><a href="//www.acc.org/membership/renew-your-membership">Renew Your Membership</a></li>
-				<li>
-					<a href="//www.acc.org/membership/member-benefits-and-resources">Member Benefits and Resources</a>
-				</li>
-				<li><a href="//www.acc.org/membership/sections-and-councils">Member Sections</a></li>
-				<li><a href="//www.acc.org/membership/chapters">Chapters</a></li>
-				<li><a href="//www.acc.org">Member Directory</a></li>
-			</ul>
-			<h2>
-				<a href="//www.acc.org/about-acc" title="About ACC">About ACC</a>
-			</h2>
-			<ul>
-				<li><a href="//www.acc.org/about-acc/our-strategic-direction">Our Strategic Direction</a></li>
-				<li>
-					<a href="//www.acc.org/about-acc/our-history" target="_parent" title="Our History ">Our History </a>
-				</li>
-				<li>
-					<a href="//www.acc.org/about-acc/our-bylaws-and-code-of-ethics">Our Bylaws and Code of Ethics</a>
-				</li>
-				<li><a href="//www.acc.org/about-acc/leadership">Leadership and Governance</a></li>
-				<li><a href="//www.acc.org/about-acc/industry-relations">Industry Relations</a></li>
-				<li><a href="//www.acc.org/about-acc/support-the-acc">Support the ACC</a></li>
-				<li><a href="//www.acc.org/about-acc/jobs-at-the-acc">Jobs at the ACC</a></li>
-				<li><a href="//www.acc.org/about-acc/press-releases">Press Releases</a></li>
-				<li><a href="//www.acc.org/about-acc/social-media">Social Media</a></li>
-				<li><a href="//www.acc.org/about-acc/book-our-conference-center">Book Our Conference Center</a></li>
-			</ul>
-		</div>
-		<div class="column">
-			<h2>
-				<a href="//www.acc.org/clinical-topics">Clinical Topics</a>
-			</h2>
-			<ul>
-				<li><a href="//www.acc.org/clinical-topics/acute-coronary-syndromes">Acute Coronary Syndromes</a></li>
-				<li>
-					<a href="//www.acc.org/clinical-topics/anticoagulation-management">Anticoagulation Management</a>
-				</li>
-				<li>
-					<a href="//www.acc.org/clinical-topics/arrhythmias-and-clinical-ep">Arrhythmias and Clinical EP</a>
-				</li>
-				<li><a href="//www.acc.org/clinical-topics/cardiac-surgery">Cardiac Surgery</a></li>
-				<li><a href="//www.acc.org/clinical-topics/cardio-oncology">Cardio-Oncology</a></li>
-				<li>
-					<a href="//www.acc.org/clinical-topics/stable-ischemic-heart-disease/chronic-angina"
-						>Chronic Angina</a
-					>
-				</li>
-				<li>
-					<a href="//www.acc.org/clinical-topics/congenital-heart-disease-pediatric-cardiology"
-						>Congenital Heart Disease and <br />
-						&nbsp; &nbsp;&nbsp;Pediatric Cardiology</a
-					>
-				</li>
-				<li>
-					<a href="//www.acc.org/clinical-topics/diabetes-and-cardiometabolic-disease"
-						>Diabetes and Cardiometabolic <br />&nbsp;&nbsp;&nbsp; Disease</a
-					>
-				</li>
-				<li><a href="//www.acc.org/clinical-topics/dyslipidemia">Dyslipidemia</a></li>
-				<li><a href="//www.acc.org/clinical-topics/geriatric-cardiology">Geriatric Cardiology</a></li>
-				<li>
-					<a href="//www.acc.org/clinical-topics/heart-failure-and-cardiomyopathies"
-						>Heart Failure and Cardiomyopathies</a
-					>
-				</li>
-				<li>
-					<a href="//www.acc.org/clinical-topics/dyslipidemia/hypertriglyceridemia">Hypertriglyceridemia</a>
-				</li>
-				<li>
-					<a href="//www.acc.org/clinical-topics/invasive-cardiovascular-angiography-and-intervention"
-						>Invasive Cardiovascular Angiography<br />
-						&nbsp; &nbsp;and Intervention</a
-					>
-				</li>
-				<li><a href="//www.acc.org/clinical-topics/noninvasive-imaging">Noninvasive Imaging</a></li>
-				<li><a href="//www.acc.org/clinical-topics/pericardial-disease">Pericardial Disease</a></li>
-				<li><a href="//www.acc.org/clinical-topics/prevention">Prevention</a></li>
-				<li>
-					<a href="//www.acc.org/clinical-topics/pulmonary-hypertension-and-venous-thromboembolism"
-						>Pulmonary Hypertension and Venous<br />
-						&nbsp; &nbsp; Thromboembolism</a
-					>
-				</li>
-				<li>
-					<a href="//www.acc.org/clinical-topics/sports-and-exercise-cardiology"
-						>Sports and Exercise Cardiology</a
-					>
-				</li>
-				<li>
-					<a href="//www.acc.org/clinical-topics/stable-ischemic-heart-disease"
-						>Stable Ischemic Heart Disease</a
-					>
-				</li>
-				<li><a href="//www.acc.org/clinical-topics/valvular-heart-disease">Valvular Heart Disease</a></li>
-				<li><a href="//www.acc.org/clinical-topics/vascular-medicine">Vascular Medicine</a></li>
-			</ul>
-		</div>
-		<div class="column">
-			<h2>
-				<a href="//www.acc.org/latest-in-cardiology">Latest in Cardiology</a>
-			</h2>
-			<ul>
-				<li>
-					<a href="//www.acc.org/latest-in-cardiology#theme=Clinical Updates and Discoveries"
-						>Clinical Updates &amp; Discoveries</a
-					>
-				</li>
-				<li>
-					<a href="//www.acc.org/latest-in-cardiology#theme=Advocacy and Policy">Advocacy &amp; Policy</a>
-				</li>
-				<li>
-					<a href="//www.acc.org/latest-in-cardiology#theme=Perspectives and Analysis"
-						>Perspectives &amp; Analysis</a
-					>
-				</li>
-				<li><a href="//www.acc.org/latest-in-cardiology#theme=Meeting Coverage">Meeting Coverage</a></li>
-				<li>
-					<a href="//www.acc.org/membership/member-benefits-and-resources/acc-member-publications"
-						>ACC Member Publications</a
-					>
-				</li>
-				<li><a href="//www.acc.org/latest-in-cardiology/features/podcasts">ACC Podcasts</a></li>
-			</ul>
-			<h2>
-				<a href="//www.acc.org/education-and-meetings">Education and Meetings</a>
-			</h2>
-			<ul>
-				<li><a href="//www.acc.org">Online Learning Catalog</a></li>
-				<li>
-					<a href="//www.acc.org/education-and-meetings/maintenance-of-certification-information-hub"
-						>Understanding MOC</a
-					>
-				</li>
-				<li>
-					<a href="//www.acc.org/education-and-meetings/products-and-resources">Products and Resources</a>
-				</li>
-				<li>
-					<a href="//www.acc.org/education-and-meetings/image-and-slide-gallery">Image and Slide Gallery</a>
-				</li>
-				<li><a href="//www.acc.org/education-and-meetings/meetings">Meetings</a></li>
-				<li>
-					<a href="https://accscientificsession.acc.org/" class="new-window-icon" target="_blank"
-						>Annual Scientific Session</a
-					>
-				</li>
-			</ul>
-			<h2>
-				<a href="//www.acc.org/tools-and-practice-support">Tools and Practice Support</a>
-			</h2>
-			<ul>
-				<li>
-					<a href="http://cvquality.acc.org/" class="new-window-icon">Quality Improvement for Institutions</a>
-				</li>
-				<li><a href="https://www.ncdr.com/webncdr/" class="new-window-icon" target="_blank">NCDR</a></li>
-				<li><a href="https://www.cardiosmart.org/" class="new-window-icon" target="_blank">CardioSmart</a></li>
-				<li>
-					<a href="https://cvquality.acc.org/Accreditation" class="new-window-icon" target="_blank"
-						>Accreditation Services</a
-					>
-				</li>
-				<li><a href="//www.acc.org/tools-and-practice-support/clinical-toolkits">Clinical Toolkits</a></li>
-				<li><a href="//www.acc.org/tools-and-practice-support/mobile-resources">Mobile Resources</a></li>
-				<li>
-					<a href="//www.acc.org/tools-and-practice-support/advocacy-at-the-acc" target="_parent"
-						>Advocacy at the ACC</a
-					>
-				</li>
-				<li>
-					<a href="http://www.healthecareers.com/acc" class="new-window-icon" target="_blank"
-						>Cardiology Careers</a
-					>
-				</li>
-				<li><a href="//www.acc.org/tools-and-practice-support/practice-solutions">Practice Solutions</a></li>
-				<li><a href="//www.acc.org/tools-and-practice-support/quality-programs">Quality Programs</a></li>
-			</ul>
-		</div>
-	<!-- column 4 -->
-		<div class="column">
-			<ul class="acc-social">
-				<li>
-					<a href="https://www.youtube.com/user/ACCinTouch" target="_blank"
-						><img src="/~/media/Images/Icons/YouTube4.png" alt="YouTube"
-					/></a>
-				</li>
-				<li>
-					<a href="https://www.linkedin.com/company/american-college-of-cardiology/" target="_blank"
-						><img src="/~/media/Images/Icons/LinkedIn.png" alt="LinkedIn"
-					/></a>
-				</li>
-				<li>
-					<a href="https://www.facebook.com/AmericanCollegeofCardiology" target="_blank"
-						><img src="/~/media/Images/Icons/Facebook.png" alt="Facebook"
-					/></a>
-				</li>
-				<li>
-					<a href="https://twitter.com/accintouch" target="_blank"
-						><img src="/~/media/Images/Icons/Twitter.png" alt="Twitter"
-					/></a>
-				</li>
-			</ul>
-			<ul class="acc-properties">
-				<li><a href="http://www.onlinejacc.org/" class="new-window-icon" target="_blank">JACC</a></li>
-				<li>
-					<a href="http://cvquality.acc.org/" class="new-window-icon" target="_blank"
-						>Quality Improvement for Institutions</a
-					>
-				</li>
-				<li><a href="http://cvquality.acc.org/NCDR-Home" class="new-window-icon" target="_blank">NCDR</a></li>
-				<li>
-					<a href="https://www.cardiosmart.org/For-Clinicians" class="new-window-icon" target="_blank"
-						>CardioSmart</a
-					>
-				</li>
-				<li><a href="https://www.medaxiom.com/" class="new-window-icon" target="_blank">MedAxiom</a></li>
-				<li>
-					<a href="https://cvquality.acc.org/accreditation" class="new-window-icon" target="_blank"
-						>Accreditation Services
-					</a>
-				</li>
-				<li><a href="/about-acc/contact-us">Contact Us</a></li>
-			</ul>
-			<dl class="address">
-				<dt>Heart House</dt>
-				<dd>2400 N Street NW</dd>
-				<dd>Washington, DC 20037</dd>
-			</dl>
-			<dl class="contact-numbers">
-				<dt>Phone:</dt>
-				<dd>
-					<a href="tel://1-800-253-4636">(800) 253-4636</a>, ext. 5603 or<br />
-					<a href="tel://1-202-375-6000">(202) 375-6000</a>, ext. 5603
-				</dd>
-				<dt>E-mail:</dt>
-				<dd><a href="mailto:resource@acc.org">resource@acc.org</a></dd>
-				<dt>Fax:</dt>
-				<dd>(202) 375-7000</dd>
-			</dl>
-			<p id="logo-footer">
-				<a href="//www.acc.org">
-					<img
-						src="/~/media/Images/Logos/UPDATED OCT 3 2014/ACC-Footer.png"
-						width="142"
-						height="45"
-						alt="ACC Logo Footer"
-					/>
-				</a>
-			</p>
-		</div>
-	</div>
-	<!-- / footer -->
-	<div id="subfooter">
-		<ul class="footer-bottom-links">
-			<li><a href="//www.acc.org/footer-pages/media-center">Media Center</a></li>
-			<li><a href="//www.acc.org/footer-pages/quick-start-guide">ACC.org Quick Start Guide</a></li>
-			<li>
-				<a href="//www.acc.org/footer-pages/advertising-and-sponsorship-policy"
-					>Advertising &amp; Sponsorship Policy</a
-				>
-			</li>
-			<li><a href="//www.acc.org/footer-pages/clinical-content-disclaimer">Clinical Content Disclaimer</a></li>
-			<li><a href="//www.acc.org/footer-pages/editorial-board">Editorial Board</a></li>
-			<li><a href="//www.acc.org/footer-pages/privacy-policy">Privacy Policy</a></li>
-			<li><a href="//www.acc.org/footer-pages/registered-user-agreement">Registered User Agreement</a></li>
-			<li><a href="//www.acc.org/footer-pages/terms-and-conditions">Terms of Service</a></li>
-			<li><a href="//www.acc.org/footer-pages/cookie-policy">Cookie Policy</a></li>
-			<li><a href="//www.acc.org/footer-pages/member-hub-terms-of-use">Member Hub Terms of Use</a></li>
-			<li><a href="//www.acc.org/sitemap-acc.xml">Site Map</a></li>
-		</ul>
-		<!-- /footer-bottom-links -->
-		<p class="legal">© 2019 American College of Cardiology Foundation. All rights reserved.</p>
-	</div>
-	<!-- /subfooter -->
+<div id="footer-wrap" class="max-w_5">
+<!-- ********************************** breadcrumbs ********************************** -->
+<div id="breadcrumbs" class="bg_acc breadcrumbs-container c_white font_n1 p-x_4 p_2">
+	<b class="breadcrumbs-title">YOU ARE HERE: </b>
+	Home
 </div>
-
+<!-- This is the inner footer that we cache -->
+<div id="footer" role="contentinfo" class="bg_secondary-n3 flex p-x_3">
+	<div class="flex_auto p-x_3 p-y_4 w-grid_3">
+		<h2 class="font_1 font_slab">
+			<a href="//www.acc.org/guidelines" target="_parent" title="Guidelines" class="c_white h:c_primary-3">Guidelines</a>
+		</h2>
+		<h2 class="font_1 font_slab">
+			<a class="c_white h:c_primary-3" href="//www.acc.org/jacc-journals">JACC Journals on ACC.org</a>
+		</h2>
+		<ul class="font_0 m-b_4 ul_none">
+			<li class="reverse-indent">
+				<a class="c_white h:c_primary-3" href="http://www.acc.org/jacc-journals?w_nav=FN#journal=Journal of the American College of Cardiology">JACC</a>
+			</li>
+			<li class="reverse-indent">
+				<a class="c_white h:c_primary-3" href="http://www.acc.org/jacc-journals?w_nav=FN#journal=JACC: Basic to Translational Science">JACC: Basic to Translational Science</a>
+			</li>
+			<li class="reverse-indent">
+				<a class="c_white h:c_primary-3" href="http://www.onlinejacc.org/CardioOncology" target="_blank">JACC: CardioOncology</a>
+			</li>
+			<li class="reverse-indent">
+				<a class="c_white h:c_primary-3" href="//www.acc.org/jacc-journals#journal=JACC: Cardiovascular Imaging" target="_parent" title="JACC: Cardiovascular Imaging">JACC: Cardiovascular Imaging
+				</a>
+			</li>
+			<li class="reverse-indent">
+				<a class="c_white h:c_primary-3" href="//www.acc.org/jacc-journals#journal=JACC: Cardiovascular Interventions" target="_parent" title="JACC: Cardiovascular Interventions">JACC: Cardiovascular Interventions
+				</a>
+			</li>
+			<li class="reverse-indent">
+				<a class="c_white h:c_primary-3" href="https://casereports.onlinejacc.org/" target="_blank">JACC: Case Reports</a>
+			</li>
+			<li class="reverse-indent">
+				<a class="c_white h:c_primary-3" href="http://www.acc.org/jacc-journals?w_nav=FN#journal=JACC: Clinical Electrophysiology">JACC: Clinical Electrophysiology</a>
+			</li>
+			<li class="reverse-indent">
+				<a class="c_white h:c_primary-3" href="//www.acc.org/jacc-journals#journal=JACC: Heart Failure" target="_parent" title="JACC Heart Failure">JACC Heart Failure</a>
+			</li>
+		</ul>
+		<h2 class="font_1 font_slab m-t_4">
+			<a class="c_white h:c_primary-3" href="//www.acc.org/membership" target="_parent" title="Membership ">Membership
+			</a>
+		</h2>
+		<ul class="ul_none font_0">
+			<li class="reverse-indent">
+				<a class="c_white h:c_primary-3" href="//www.acc.org/membership/about-membership">About Membership</a>
+			</li>
+			<li class="reverse-indent">
+				<a class="c_white h:c_primary-3" href="//www.acc.org/membership/become-a-member">Become a Member</a>
+			</li>
+			<li class="reverse-indent">
+				<a class="c_white h:c_primary-3" href="//www.acc.org/membership/renew-your-membership">Renew Your Membership</a>
+			</li>
+			<li class="reverse-indent">
+				<a class="c_white h:c_primary-3" href="//www.acc.org/membership/member-benefits-and-resources">Member Benefits and Resources</a>
+			</li>
+			<li class="reverse-indent">
+				<a class="c_white h:c_primary-3" href="//www.acc.org/membership/sections-and-councils">Member Sections</a>
+			</li>
+			<li class="reverse-indent"><a class="c_white h:c_primary-3" href="//www.acc.org/membership/chapters">Chapters</a></li>
+			<li class="reverse-indent"><a class="c_white h:c_primary-3" href="//www.acc.org">Member Directory</a></li>
+		</ul>
+		<h2 class="font_1 font_slab m-t_4">
+			<a class="c_white h:c_primary-3" href="//www.acc.org/about-acc" title="About ACC">About ACC</a>
+		</h2>
+		<ul class="ul_none font_0">
+			<li class="reverse-indent">
+				<a class="c_white h:c_primary-3" href="//www.acc.org/about-acc/our-strategic-direction">Our Strategic Direction</a>
+			</li>
+			<li class="reverse-indent">
+				<a class="c_white h:c_primary-3" href="//www.acc.org/about-acc/our-history" target="_parent" title="Our History ">Our History
+				</a>
+			</li>
+			<li class="reverse-indent">
+				<a class="c_white h:c_primary-3" href="//www.acc.org/about-acc/our-bylaws-and-code-of-ethics">Our Bylaws and Code of Ethics</a>
+			</li>
+			<li class="reverse-indent">
+				<a class="c_white h:c_primary-3" href="//www.acc.org/about-acc/leadership">Leadership and Governance</a>
+			</li>
+			<li class="reverse-indent">
+				<a class="c_white h:c_primary-3" href="//www.acc.org/about-acc/industry-relations">Industry Relations</a>
+			</li>
+			<li class="reverse-indent">
+				<a class="c_white h:c_primary-3" href="//www.acc.org/about-acc/support-the-acc">Support the ACC</a>
+			</li>
+			<li class="reverse-indent">
+				<a class="c_white h:c_primary-3" href="//www.acc.org/about-acc/jobs-at-the-acc">Jobs at the ACC</a>
+			</li>
+			<li class="reverse-indent">
+				<a class="c_white h:c_primary-3" href="//www.acc.org/about-acc/press-releases">Press Releases</a>
+			</li>
+			<li class="reverse-indent"><a class="c_white h:c_primary-3" href="//www.acc.org/about-acc/social-media">Social Media</a></li>
+			<li class="reverse-indent">
+				<a class="c_white h:c_primary-3" href="//www.acc.org/about-acc/book-our-conference-center">Book Our Conference Center</a>
+			</li>
+		</ul>
+	</div>
+	<div class="flex_auto p-x_3 p-y_4 w-grid_3">
+		<h2 class="font_1 font_slab">
+			<a class="c_white h:c_primary-3" href="//www.acc.org/clinical-topics">Clinical Topics</a>
+		</h2>
+		<ul class="ul_none font_0">
+			<li class="reverse-indent">
+				<a class="c_white h:c_primary-3" href="//www.acc.org/clinical-topics/acute-coronary-syndromes">Acute Coronary Syndromes</a>
+			</li>
+			<li class="reverse-indent">
+				<a class="c_white h:c_primary-3" href="//www.acc.org/clinical-topics/anticoagulation-management">Anticoagulation Management</a>
+			</li>
+			<li class="reverse-indent">
+				<a class="c_white h:c_primary-3" href="//www.acc.org/clinical-topics/arrhythmias-and-clinical-ep">Arrhythmias and Clinical EP</a>
+			</li>
+			<li class="reverse-indent">
+				<a class="c_white h:c_primary-3" href="//www.acc.org/clinical-topics/cardiac-surgery">Cardiac Surgery</a>
+			</li>
+			<li class="reverse-indent">
+				<a class="c_white h:c_primary-3" href="//www.acc.org/clinical-topics/cardio-oncology">Cardio-Oncology</a>
+			</li>
+			<li class="reverse-indent">
+				<a class="c_white h:c_primary-3" href="//www.acc.org/clinical-topics/stable-ischemic-heart-disease/chronic-angina">Chronic Angina</a>
+			</li>
+			<li class="reverse-indent">
+				<a class="c_white h:c_primary-3" href="//www.acc.org/clinical-topics/congenital-heart-disease-pediatric-cardiology">Congenital Heart Disease and Pediatric Cardiology</a>
+			</li>
+			<li class="reverse-indent">
+				<a class="c_white h:c_primary-3" href="//www.acc.org/clinical-topics/diabetes-and-cardiometabolic-disease" style="\">Diabetes and Cardiometabolic Disease</a>
+			</li>
+			<li class="reverse-indent">
+				<a class="c_white h:c_primary-3" href="//www.acc.org/clinical-topics/dyslipidemia">Dyslipidemia</a>
+			</li>
+			<li class="reverse-indent">
+				<a class="c_white h:c_primary-3" href="//www.acc.org/clinical-topics/geriatric-cardiology">Geriatric Cardiology</a>
+			</li>
+			<li class="reverse-indent">
+				<a class="c_white h:c_primary-3" href="//www.acc.org/clinical-topics/heart-failure-and-cardiomyopathies">Heart Failure and Cardiomyopathies</a>
+			</li>
+			<li class="reverse-indent">
+				<a class="c_white h:c_primary-3" href="//www.acc.org/clinical-topics/dyslipidemia/hypertriglyceridemia">Hypertriglyceridemia</a>
+			</li>
+			<li class="reverse-indent">
+				<a class="c_white h:c_primary-3" href="//www.acc.org/clinical-topics/invasive-cardiovascular-angiography-and-intervention">Invasive Cardiovascular Angiography and Intervention</a>
+			</li>
+			<li class="reverse-indent">
+				<a class="c_white h:c_primary-3" href="//www.acc.org/clinical-topics/noninvasive-imaging">Noninvasive Imaging</a>
+			</li>
+			<li class="reverse-indent">
+				<a class="c_white h:c_primary-3" href="//www.acc.org/clinical-topics/pericardial-disease">Pericardial Disease</a>
+			</li>
+			<li class="reverse-indent"><a class="c_white h:c_primary-3" href="//www.acc.org/clinical-topics/prevention">Prevention</a></li>
+			<li class="reverse-indent">
+				<a class="c_white h:c_primary-3" href="//www.acc.org/clinical-topics/pulmonary-hypertension-and-venous-thromboembolism">Pulmonary Hypertension and Venous Thromboembolism</a>
+			</li>
+			<li class="reverse-indent">
+				<a class="c_white h:c_primary-3" href="//www.acc.org/clinical-topics/sports-and-exercise-cardiology">Sports and Exercise Cardiology</a>
+			</li>
+			<li class="reverse-indent">
+				<a class="c_white h:c_primary-3" href="//www.acc.org/clinical-topics/stable-ischemic-heart-disease">Stable Ischemic Heart Disease</a>
+			</li>
+			<li class="reverse-indent">
+				<a class="c_white h:c_primary-3" href="//www.acc.org/clinical-topics/valvular-heart-disease">Valvular Heart Disease</a>
+			</li>
+			<li class="reverse-indent">
+				<a class="c_white h:c_primary-3" href="//www.acc.org/clinical-topics/vascular-medicine">Vascular Medicine</a>
+			</li>
+		</ul>
+	</div>
+	<div class="flex_auto p-x_3 p-y_4 w-grid_3">
+		<h2 class="font_1 font_slab">
+			<a class="c_white h:c_primary-3" href="//www.acc.org/latest-in-cardiology">Latest in Cardiology</a>
+		</h2>
+		<ul class="ul_none font_0">
+			<li class="reverse-indent">
+				<a class="c_white h:c_primary-3" href="//www.acc.org/latest-in-cardiology#theme=Clinical Updates and Discoveries">Clinical Updates &amp; Discoveries</a>
+			</li>
+			<li class="reverse-indent">
+				<a class="c_white h:c_primary-3" href="//www.acc.org/latest-in-cardiology#theme=Advocacy and Policy">Advocacy &amp; Policy</a>
+			</li>
+			<li class="reverse-indent">
+				<a class="c_white h:c_primary-3" href="//www.acc.org/latest-in-cardiology#theme=Perspectives and Analysis">Perspectives &amp; Analysis</a>
+			</li>
+			<li class="reverse-indent">
+				<a class="c_white h:c_primary-3" href="//www.acc.org/latest-in-cardiology#theme=Meeting Coverage">Meeting Coverage</a>
+			</li>
+			<li class="reverse-indent">
+				<a class="c_white h:c_primary-3" href="//www.acc.org/membership/member-benefits-and-resources/acc-member-publications">ACC Member Publications</a>
+			</li>
+			<li class="reverse-indent">
+				<a class="c_white h:c_primary-3" href="//www.acc.org/latest-in-cardiology/features/podcasts">ACC Podcasts</a>
+			</li>
+		</ul>
+		<h2 class="font_1 font_slab m-t_4">
+			<a class="c_white h:c_primary-3" href="//www.acc.org/education-and-meetings">Education and Meetings</a>
+		</h2>
+		<ul class="ul_none font_0">
+			<li class="reverse-indent"><a class="c_white h:c_primary-3" href="//www.acc.org">Online Learning Catalog</a></li>
+			<li class="reverse-indent">
+				<a class="c_white h:c_primary-3" href="//www.acc.org/education-and-meetings/maintenance-of-certification-information-hub">Understanding MOC</a>
+			</li>
+			<li class="reverse-indent">
+				<a class="c_white h:c_primary-3" href="//www.acc.org/education-and-meetings/products-and-resources">Products and Resources</a>
+			</li>
+			<li class="reverse-indent">
+				<a class="c_white h:c_primary-3" href="//www.acc.org/education-and-meetings/image-and-slide-gallery">Image and Slide Gallery</a>
+			</li>
+			<li class="reverse-indent">
+				<a class="c_white h:c_primary-3" href="//www.acc.org/education-and-meetings/meetings">Meetings</a>
+			</li>
+			<li class="reverse-indent">
+				<a class="c_white h:c_primary-3" href="https://accscientificsession.acc.org/" target="_blank">Annual Scientific Session</a>
+			</li>
+		</ul>
+		<h2 class="font_1 font_slab m-t_4">
+			<a class="c_white h:c_primary-3" href="//www.acc.org/tools-and-practice-support">Tools and Practice Support</a>
+		</h2>
+		<ul class="ul_none font_0">
+			<li class="reverse-indent">
+				<a class="c_white h:c_primary-3" href="http://cvquality.acc.org/">Quality Improvement for Institutions</a>
+			</li>
+			<li class="reverse-indent"><a class="c_white h:c_primary-3" href="https://www.ncdr.com/webncdr/" target="_blank">NCDR</a></li>
+			<li class="reverse-indent">
+				<a class="c_white h:c_primary-3" href="https://www.cardiosmart.org/" target="_blank">CardioSmart</a>
+			</li>
+			<li class="reverse-indent">
+				<a class="c_white h:c_primary-3" href="https://cvquality.acc.org/Accreditation" target="_blank">Accreditation Services</a>
+			</li>
+			<li class="reverse-indent">
+				<a class="c_white h:c_primary-3" href="//www.acc.org/tools-and-practice-support/clinical-toolkits">Clinical Toolkits</a>
+			</li>
+			<li class="reverse-indent">
+				<a class="c_white h:c_primary-3" href="//www.acc.org/tools-and-practice-support/mobile-resources">Mobile Resources</a>
+			</li>
+			<li class="reverse-indent">
+				<a class="c_white h:c_primary-3" href="//www.acc.org/tools-and-practice-support/advocacy-at-the-acc" target="_parent">Advocacy at the ACC</a>
+			</li>
+			<li class="reverse-indent">
+				<a class="c_white h:c_primary-3" href="http://www.healthecareers.com/acc" target="_blank">Cardiology Careers</a>
+			</li>
+			<li class="reverse-indent">
+				<a class="c_white h:c_primary-3" href="//www.acc.org/tools-and-practice-support/practice-solutions">Practice Solutions</a>
+			</li>
+			<li class="reverse-indent">
+				<a class="c_white h:c_primary-3" href="//www.acc.org/tools-and-practice-support/quality-programs">Quality Programs</a>
+			</li>
+		</ul>
+	</div>
+	<!-- column 4 -->
+	<div class="flex_auto p-x_3 p-y_4 relative">
+		<section class="acc-websites m-y_3">
+			<nav class="clearfix d_block font_bold font_ui">
+				<ul class="font_1 lh_4 ul_none">
+					<li class="c_white">
+						<a target="_blank" class="c_white d_block h:bg_black-2 h:c_white" href="http://www.acc.org">
+							<span class="d_inline-block">Acc</span>
+							<i class="float_right fas p-r_3 c_white h:c_white fa-external-link-square "></i>
+						</a>
+					</li>
+					<li class="c_white">
+						<a target="_blank" class="c_white d_block h:bg_black-2 h:c_white" href="https://cvquality.acc.org/Accreditation?">
+							<span class="d_inline-block">Accreditation Services</span>
+							<i class="float_right fas p-r_3 c_white h:c_white fa-external-link-square "></i>
+						</a>
+					</li>
+					<li class="c_white">
+						<a target="_blank" class="c_white d_block h:bg_black-2 h:c_white" href="http://www.ncdr.com">
+							<span class="d_inline-block">NCDR</span>
+							<i class="float_right fas p-r_3 c_white h:c_white fa-external-link-square "></i>
+						</a>
+					</li>
+					<li class="c_white">
+						<a target="_blank" class="c_white d_block h:bg_black-2 h:c_white" href="http://www.cardiosmart.org">
+							<span class="d_inline-block">CardioSmart</span>
+							<i class="float_right fas p-r_3 c_white h:c_white fa-external-link-square "></i>
+						</a>
+					</li>
+					<li class="c_white">
+						<a target="_blank" class="c_white d_block h:bg_black-2 h:c_white" href="http://www.onlinejacc.org/">
+							<span class="d_inline-block">JACC</span>
+							<i class="float_right fas p-r_3 c_white fa-external-link-square "></i>
+						</a>
+					</li>
+				</ul>
+			</nav>
+		</section>
+		<section class="address c_white">
+			<address>
+				<!-- http://microformats.org/wiki/hcard -->
+				<h4 class="m-b_0 font_bold font_copy font_normal font_1 m-t_4">Heart House</h4>
+				<div class="font_ui font_0">
+					<ul class="ul_none  lh_2">
+						<li class="m-b_1 m-b_3:md font_normal">
+							<span class="street-address">2400 N. St. NW</span>
+						</li>
+						<li class="m-b_1 m-b_3:md font_normal">
+							<span class="locality ">Washington</span>,
+							<span class="city-name ">
+								<abbr title="District of Colombia">DC</abbr>
+							</span>
+							<span class="postal-code">20037</span>
+						</li>
+						<li class="m-b_1 m-b_3:md font_normal">
+							<a href="mailto:resource@acc.org" class="email c_white text_underline  h:c_white ">
+								<strong class="p-r_2 d_inline d_block:md d_inline:lg">Email:</strong>
+								<span class="d_inline d_block:md d_inline:lg">resource@acc.org</span></a>
+						</li>
+					</ul>
+					<ul class="ul_none lh_2">
+						<li class="m-b_1 m-b_3:md font_normal">
+							<a tel="+12023756000" href="tel:+12023756000" class="tel c_white h:c_white h:underline">
+								<strong class="p-r_2 d_block:md d_inline:lg">Phone:</strong><span class=" d_block:md d_inline:lg">(202) 375-6000, ext. 5603</span></a>
+						</li>
+						<li class="m-b_1 m-b_3:md font_normal">
+							<a tel="+18002574737" href="tel:+18002534636.5603" class="tel c_white h:c_white h:underline">
+								<strong class="p-r_2 d_block:md d_inline:lg">Toll Free:</strong><span class=" d_block:md d_inline:lg">(800) 253-4636, ext. 5603</span></a>
+						</li>
+						<li class="m-b_1 m-b_3:md font_normal">
+							<a fax="+12023757000" href="fax:+12023757000" class="fax c_white h:c_white h:underline">
+								<strong class="p-r_2 d_block:md d_inline:lg">Fax:</strong>
+								<span class="block:md d_inline:lg">(202) 375-7000</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</address>
+			<div class="logo_condensed-alt max-w_1" style="height: 80px;">
+				<span class="alt">logo_condensed-alt max-w_1</span>
+			</div>
+		</section>
+	<section class="l_0 m-t_4 r_0 social m-t_4">
+			<ul class="flex social-bar ul_none c_white h:c_white m_0">
+				<li class="flex_auto m-r_2">
+					<a href="https://twitter.com/accintouch" target="_blank" class="twitter social-bar--button d_block m-b_0 p-x_5 p-y_3 c_white-8 h:c_white text_right h:bg_primary-n1"><i class="fab fa-twitter-square font_2"></i></a>
+				</li>
+				<li class="flex_auto m-r_2">
+					<a href="https://www.facebook.com/AmericanCollegeofCardiology" target="_blank" class="facebook social-bar--button d_block m-b_0 p-x_5 p-y_3 c_white-8 h:c_white text_right h:bg_primary-n1"><i class="fab fa-facebook-square font_2"></i></a>
+				</li>
+				<li class="flex_auto m-r_2">
+					<a href="https://www.linkedin.com/groups/732607/profile" target="_blank" class="linkedin social-bar--button d_block m-b_0 p-x_5 p-y_3 c_white-8 h:c_white text_right h:bg_primary-n1"><i class="fab fa-linkedin font_2"></i></a>
+				</li>
+				<li class="flex_auto m-r_2">
+					<a href="https://plus.google.com/118164094874227618578" target="_blank" class="google-plus social-bar--button d_block m-b_0 p-x_5 p-y_3 c_white-8 h:c_white text_right h:bg_primary-n1"><i class="fab fa-google-plus font_2"></i></a>
+				</li>
+				<li class="flex_auto m-r_2">
+					<a href="http://www.youtube.com/user/ACCinTouch" target="_blank" class="youtube social-bar--button d_block m-b_0 p-x_5 p-y_3 c_white-8 h:c_white text_right h:bg_primary-n1"><i class="fab fa-youtube font_2"></i></a>
+				</li>
+			</ul>
+		</section></div>
+</div>
+<!-- / footer -->
+<div id="subfooter bg_primary-n1 c_white" class="bg_primary-n1 c_white font_n1 p-x_4 p-y_4">
+	<ul class="d_block footer-bottom-links ul_none">
+		<li class="d_inline p_2">
+			<a href="//www.acc.org/footer-pages/media-center" class="c_white-8 h:c_white">Media Center</a>
+		</li>
+		<li class="d_inline p_2">
+			<a href="//www.acc.org/footer-pages/quick-start-guide" class="c_white-8 h:c_white">ACC.org Quick Start Guide</a>
+		</li>
+		<li class="d_inline p_2">
+			<a class="c_white-6 h:c_white" href="//www.acc.org/footer-pages/advertising-and-sponsorship-policy">Advertising &amp; Sponsorship Policy</a>
+		</li>
+		<li class="d_inline p_2">
+			<a class="c_white-8 h:c_white" href="//www.acc.org/footer-pages/clinical-content-disclaimer">Clinical Content Disclaimer</a>
+		</li>
+		<li class="d_inline p_2">
+			<a class="c_white-8 h:c_white" href="//www.acc.org/footer-pages/editorial-board">Editorial Board</a>
+		</li>
+		<li class="d_inline p_2">
+			<a class="c_white-8 h:c_white" href="//www.acc.org/footer-pages/privacy-policy">Privacy Policy</a>
+		</li>
+		<li class="d_inline p_2">
+			<a class="c_white-8 h:c_white" href="//www.acc.org/footer-pages/registered-user-agreement">Registered User Agreement</a>
+		</li>
+		<li class="d_inline p_2">
+			<a class="c_white-8 h:c_white" href="//www.acc.org/footer-pages/terms-and-conditions">Terms of Service</a>
+		</li>
+		<li class="d_inline p_2">
+			<a class="c_white-8 h:c_white" href="//www.acc.org/footer-pages/cookie-policy">Cookie Policy</a>
+		</li>
+		<li class="d_inline p_2">
+			<a class="c_white-8 h:c_white" href="//www.acc.org/footer-pages/member-hub-terms-of-use">Member Hub Terms of Use</a>
+		</li>
+		<li class="d_inline p_2">
+			<a class="c_white-8 h:c_white" href="//www.acc.org/sitemap-acc.xml">Site Map</a>
+		</li>
+	</ul>
+	<!-- /footer-bottom-links -->
+	<p class="c_white-5 font_italic font_n2 legal m-b_2 m-t_3">
+		© 2019 American College of Cardiology Foundation. All rights reserved.
+	</p>
+</div>
+<!-- /subfooter -->
+</div>
 
 	Styleguide Recipes.ACC.Footer
 
 */
+.reverse-indent {
+  margin-left: 1em;
+  text-indent: -1em;
+  display: inline-block;
+  width: calc(100% - 2em);
+}
+
+.reverse-indent:after {
+  content: "";
+  display: table;
+  clear: both;
+}

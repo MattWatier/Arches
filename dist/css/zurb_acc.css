@@ -224,7 +224,7 @@ div[class^=texture_] {
   overflow: hidden;
   background-color: transparent;
   background-position: center center;
-  background-repeat: none;
+  background-repeat: no-repeat;
   background-size: contain;
   text-indent: -9999px;
 }
