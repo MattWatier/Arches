@@ -265,8 +265,10 @@ pre code.hljs {
 }
 
 .kss-section__markup > pre.language-markup::-webkit-scrollbar {
-  width: 8px;
-  width: 0.5rem;
+  width: 5.6px;
+  width: 0.35rem;
+  height: 5.6px;
+  height: 0.35rem;
 }
 
 /* Track */

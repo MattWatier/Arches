@@ -6,7 +6,7 @@ Give a mini scroll bar to a content area.
 
 markup:
 <div class="card shadow_2 cell small-6 large-4 max-w_3" >
-    <div class=" font_slab border-top-left-square c_white font_3 p_4 texture_dust card-divider bg_primary">
+    <div class=" font_slab border-top-left-square c_white font_3 p_4 texture_dust card-divider bg_primary card-header">
     This is a header
     </div>
     <div class="card-section card-body p_4 scrollbar-mini overflow_auto" style="max-height:300px;">
@@ -25,7 +25,8 @@ Styleguide InteractiveExtras.Scrollbar
 
 /* Let's get this party started */
 .scrollbar-mini::-webkit-scrollbar {
-	width: 0.5rem;
+	width: 0.25rem;
+	height: 0.35rem;
 }
 /* Track */
 .scrollbar-mini::-webkit-scrollbar-track {

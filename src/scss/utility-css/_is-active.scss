@@ -152,11 +152,18 @@ Styleguide is-active.black and white
  
  */
 
+@each $color-name, $color in $theme-palette {
+	@include is-active-loop("background-color", $color-name, $color);
+	@include is-active-loop("color", $color-name, $color);
+}
+
 .a\:icon-show,
-.is-active .a\:icon-hide {
+.is-active.a\:icon-hide,
+.is-active > .a\:icon-hide {
 	display: none !important;
 }
-.is-active .a\:icon-show {
+.is-active > .a\:icon-show,
+.is-active.a\:icon-show {
 	display: inline-block !important;
 }
 

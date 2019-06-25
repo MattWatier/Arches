@@ -510,7 +510,7 @@ $style-definition: (
 		unit: map-get($value-to-unit, "hover")
 	),
 	is-active: (
-		short-name: "is-active>.a\\3A",
+		short-name: "is-active>.a\\3A ",
 		css-style: (
 			"background-color"
 		),
@@ -518,7 +518,7 @@ $style-definition: (
 		unit: map-get($value-to-unit, "active")
 	),
 	is-active-self: (
-		short-name: "is-active.a\\3A",
+		short-name: "is-active.a\\3A ",
 		css-style: (
 			"background-color"
 		),
@@ -530,7 +530,7 @@ $style-definition: (
 		css-style: (
 			"background-color"
 		),
-		long-name: "active\\3A ",
+		long-name: "active\:a ",
 		unit: map-get($value-to-unit, "active")
 	),
 	visited: (

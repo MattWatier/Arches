@@ -306,6 +306,15 @@ gulp.task("construct", function () {
 		.pipe(
 			header(
 				fs.readFileSync(
+					PATHS.SCSS + "/recipes/__recipes.boot.scss",
+					"utf8"
+				), {
+					pkg: pkg
+				}
+			)
+		).pipe(
+			header(
+				fs.readFileSync(
 					PATHS.SCSS + "/components/__components.boot.scss",
 					"utf8"
 				), {

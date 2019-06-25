@@ -47,71 +47,71 @@ $yellow: #ffc107;
 $cyan: #17a2b8;
 
 $theme-palette: map-merge(
-  (
-    primary: $teal,
-    secondary: $dark-grey,
-    success: $green,
-    warning: $orange,
-    alert: $red,
-    navigation: $blue,
-    accent: $green-blue,
-    info: $alt-grey,
-    highlight: $purple,
-    acc: $acc-blue
-  ),
-  $theme-palette
+	(
+		primary: $teal,
+		secondary: $dark-grey,
+		success: $green,
+		warning: $orange,
+		alert: $red,
+		navigation: $blue,
+		accent: $green-blue,
+		info: $alt-grey,
+		highlight: $purple,
+		acc: $acc-blue
+	),
+	$theme-palette
 );
 
 $grays: map-merge(
-  (
-    "100": $gray-100,
-    "200": $gray-200,
-    "300": $gray-300,
-    "400": $gray-400,
-    "500": $gray-500,
-    "600": $gray-600,
-    "700": $gray-700,
-    "800": $gray-800,
-    "900": $gray-900
-  ),
-  $grays
+	(
+		"100": $gray-100,
+		"200": $gray-200,
+		"300": $gray-300,
+		"400": $gray-400,
+		"500": $gray-500,
+		"600": $gray-600,
+		"700": $gray-700,
+		"800": $gray-800,
+		"900": $gray-900
+	),
+	$grays
 );
 $colors: map-merge(
-  (
-    "blue": $blue,
-    "indigo": $indigo,
-    "purple": $purple,
-    "pink": $pink,
-    "red": $red,
-    "orange": $orange,
-    "yellow": $yellow,
-    "green": $green,
-    "teal": $teal,
-    "cyan": $cyan,
-    "white": $white,
-    "gray": $gray-600,
-    "gray-dark": $gray-800
-  ),
-  $colors
+	(
+		"blue": $blue,
+		"indigo": $indigo,
+		"purple": $purple,
+		"pink": $pink,
+		"red": $red,
+		"orange": $orange,
+		"yellow": $yellow,
+		"green": $green,
+		"teal": $teal,
+		"cyan": $cyan,
+		"white": $white,
+		"gray": $gray-600,
+		"gray-dark": $gray-800
+	),
+	$colors
 );
 
 $fonts: (
-  slab: (
-    name: "Roboto Slab",
-    stack: '"Roboto Slab","Times New Roman","Lucida Bright",Georgia,serif, "slab"'
-  ),
-  display: (
-    name: "Maven Pro",
-    stack: '"Maven Pro","Muli","Open Sans","system",sans-serif'
-  ),
-  copy: (
-    name: "Muli",
-    stack: '"Muli","Open Sans","system",sans-serif'
-  ),
-  ui: (
-    name: "Open Sans",
-    stack: '"Open Sans",-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif'
-  )
+	slab: (
+		name: "Roboto Slab",
+		stack: '"Roboto Slab","Times New Roman","Lucida Bright",Georgia,serif, "slab"'
+	),
+	display: (
+		name: "Maven Pro",
+		stack: '"Maven Pro","Muli","Open Sans","system",sans-serif'
+	),
+	copy: (
+		name: "Muli",
+		stack: '"Muli","Open Sans","system",sans-serif'
+	),
+	ui: (
+		name: "Open Sans",
+		stack: '"Open Sans",-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif'
+	)
 );
 
 // Reset Values of Utlity-css.vars.scss
@@ -134,41 +134,42 @@ $basicSizeMultiplier: 1rem;
 @import "config/logo";
 
 pre code.hljs {
-  padding-top: 2em;
-  padding-bottom: 2.5em;
-  max-height: 100%;
+	padding-top: 2em;
+	padding-bottom: 2.5em;
+	max-height: 100%;
 }
 
 /*# sourceMappingURL=maps/styleguide_override.css.map */
 
 .kss-color {
-  height: 160px;
+	height: 160px;
 }
 
 .kss-section__markup > pre.language-markup {
-  margin: 0;
-  max-height: 20vh;
-  overflow-y: auto;
-  overflow-x: auto;
+	margin: 0;
+	max-height: 20vh;
+	overflow-y: auto;
+	overflow-x: auto;
 }
 
 .kss-section__markup > pre.language-markup::-webkit-scrollbar {
-  width: 0.5rem;
+	width: 0.35rem;
+	height: 0.35rem;
 }
 /* Track */
 .kss-section__markup > pre.language-markup::-webkit-scrollbar-track {
-  box-shadow: make-shadow(2, "inset", #000, 0.2);
-  background-color: rgba(get-themecolor(primary, -3), 0.1);
+	box-shadow: make-shadow(2, "inset", #000, 0.2);
+	background-color: rgba(get-themecolor(primary, -3), 0.1);
 }
 /* Handle */
 .kss-section__markup > pre.language-markup::-webkit-scrollbar-thumb {
-  border-radius: get-css-size(border-radius, round);
-  background: get-themecolor(primary, -1);
-  box-shadow: make-shadow(2, "inset", #000, 0.2);
+	border-radius: get-css-size(border-radius, round);
+	background: get-themecolor(primary, -1);
+	box-shadow: make-shadow(2, "inset", #000, 0.2);
 }
 .kss-section__markup > pre.language-markup::-webkit-scrollbar-thumb:window-inactive {
-  background: rgba(get-themecolor(primary, -1), 0.1);
+	background: rgba(get-themecolor(primary, -1), 0.1);
 }
 .kss-section__markup > pre.language-markup::-webkit-scrollbar-track:window-inactive {
-  background: rgba(get-themecolor(primary, -3), 0.1);
+	background: rgba(get-themecolor(primary, -3), 0.1);
 }
