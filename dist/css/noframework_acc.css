@@ -1,4 +1,5 @@
 @charset "UTF-8";
+
 /**
  * arches - Global style system focused on utility classes
  * @version v1.0.0
@@ -144,6 +145,7 @@ Styleguide DesignBase.Colors.ColorCoding.Pathways
   font-weight: 400;
   unicode-range: U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
+
 /* Robto Slab Bold */
 @font-face {
   font-display: swap;
@@ -153,6 +155,7 @@ Styleguide DesignBase.Colors.ColorCoding.Pathways
   font-weight: 400;
   unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
 }
+
 /* Maven PRo */
 @font-face {
   src: local("Maven Pro Medium"), local("MavenPro-Medium"), url(https://fonts.gstatic.com/s/mavenpro/v11/7Au4p_AqnyWWAxW2Wk3OPkcdP3kD.woff2) format("woff2");
@@ -161,6 +164,7 @@ Styleguide DesignBase.Colors.ColorCoding.Pathways
   font-weight: 500;
   unicode-range: U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
+
 /* Muli */
 @font-face {
   src: local("Muli Regular"), local("Muli-Regular"), url(https://fonts.gstatic.com/s/muli/v11/7Auwp_0qiz-afTLGLQ.woff2) format("woff2");
@@ -169,6 +173,7 @@ Styleguide DesignBase.Colors.ColorCoding.Pathways
   font-weight: 400;
   unicode-range: U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
+
 /*Muli */
 @font-face {
   src: local("Muli ExtraBold"), local("Muli-ExtraBold"), url(https://fonts.gstatic.com/s/muli/v11/7Au_p_0qiz-adZXgOCX2zw.woff2) format("woff2");
@@ -177,6 +182,7 @@ Styleguide DesignBase.Colors.ColorCoding.Pathways
   font-weight: 800;
   unicode-range: U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
+
 /* Define the "system" font family */
 @font-face {
   src: local(".SFNSText-Light"), local(".HelveticaNeueDeskInterface-Light"), local(".LucidaGrandeUI"), local("Ubuntu Light"), local("Segoe UI Light"), local("Roboto-Light"), local("DroidSans"), local("Tahoma");
@@ -184,6 +190,7 @@ Styleguide DesignBase.Colors.ColorCoding.Pathways
   font-style: normal;
   font-weight: 300;
 }
+
 html {
   -webkit-font-smoothing: antialiased;
   -webkit-line-break: after-white-space;
@@ -228,6 +235,7 @@ div[class^=texture_] {
   background-size: contain;
   text-indent: -9999px;
 }
+
 [class^=logo_]:before,
 [class^=seal_]:before {
   width: 1px;
@@ -236,14 +244,16 @@ div[class^=texture_] {
   float: left;
   content: "";
 }
+
 [class^=logo_]:after,
 [class^=seal_]:after {
   display: table;
   clear: both;
   content: "";
 }
-[class^=logo_] > .alt-text:before,
-[class^=seal_] > .alt-text:before {
+
+[class^=logo_]>.alt-text:before,
+[class^=seal_]>.alt-text:before {
   display: none;
 }
 
@@ -2217,7 +2227,15 @@ Font, Border and Background Colors using CPE
 
 Styleguide Credit Colors.CPE
 */
-h1, h2, h3, h4, h5, h6, p, td, th {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+td,
+th {
   /* Safari */
   transition: line-height 1s;
   /* Safari */
@@ -2252,40 +2270,48 @@ Styleguide DesignBase.Logos
 .logo_primary {
   background-image: url("../img/ACC_primaryLogo.svg");
 }
+
 .logo_primary:before {
   padding-top: 33.3333333333%;
 }
-.logo_primary > span.alt-text:before {
+
+.logo_primary>span.alt-text:before {
   content: "Logo of the American College Of Cardiology";
 }
 
 .logo_primary-alt {
   background-image: url("../img/ACC_primaryLogo-alt.svg");
 }
+
 .logo_primary-alt:before {
   padding-top: 33.3333333333%;
 }
-.logo_primary-alt > span.alt-text:before {
+
+.logo_primary-alt>span.alt-text:before {
   content: "Logo of the American College Of Cardiology";
 }
 
 .logo_condensed {
   background-image: url("../img/ACC_mobileLogo.svg");
 }
+
 .logo_condensed:before {
   padding-top: 33.3333333333%;
 }
-.logo_condensed > span.alt-text:before {
+
+.logo_condensed>span.alt-text:before {
   content: "Logo of the American College Of Cardiology";
 }
 
 .logo_condensed-alt {
   background-image: url("../img/ACC_mobileLogo-alt.svg");
 }
+
 .logo_condensed-alt:before {
   padding-top: 33.3333333333%;
 }
-.logo_condensed-alt > span.alt-text:before {
+
+.logo_condensed-alt>span.alt-text:before {
   content: "Logo of the American College Of Cardiology";
 }
 
@@ -2308,10 +2334,12 @@ Styleguide DesignBase.Seals
 .seal_normal {
   background-image: url("../img/ACC_seal.svg");
 }
+
 .seal_normal:before {
   padding-top: 100%;
 }
-.seal_normal > span.alt-text:before {
+
+.seal_normal>span.alt-text:before {
   content: "Seal of the American College Of Cardiology";
 }
 
@@ -2319,10 +2347,12 @@ Styleguide DesignBase.Seals
   max-width: 100px;
   background-image: url("../img/ACC_sealCondensed.svg");
 }
+
 .seal_small:before {
   padding-top: 100%;
 }
-.seal_small > span.alt-text:before {
+
+.seal_small>span.alt-text:before {
   content: "Seal of the American College Of Cardiology";
 }
 
@@ -2330,10 +2360,12 @@ Styleguide DesignBase.Seals
   max-width: 40px;
   background-image: url("../img/ACC_sealCondensed-alt.svg");
 }
+
 .seal_tiny:before {
   padding-top: 100%;
 }
-.seal_tiny > span.alt-text:before {
+
+.seal_tiny>span.alt-text:before {
   content: "Seal of the American College Of Cardiology";
 }
 
@@ -2379,6 +2411,7 @@ div[class^=aspect_],
   overflow: hidden;
   text-indent: -9999px;
 }
+
 div[class^=aspect_]:before,
 .lorem-loader:before {
   width: 1px;
@@ -2387,6 +2420,7 @@ div[class^=aspect_]:before,
   float: left;
   content: "";
 }
+
 div[class^=aspect_]:after,
 .lorem-loader:after {
   display: table;
@@ -2427,24 +2461,30 @@ div[class^=aspect_]:after,
   0% {
     background-position: 0% 50%;
   }
+
   50% {
     background-position: 100% 50%;
   }
+
   100% {
     background-position: 0% 50%;
   }
 }
+
 @keyframes Gradient {
   0% {
     background-position: 0% 50%;
   }
+
   50% {
     background-position: 100% 50%;
   }
+
   100% {
     background-position: 0% 50%;
   }
 }
+
 /*
 
 Expanded Click Area
@@ -2484,7 +2524,15 @@ Styleguide InteractiveExtras.Expanded Click Area
   transition-timing-function: ease;
 }
 
-i.icon-complete_check-circle:before, .is-complete i.icon-complete_check:before, i.icon-toggle_arrow-circle:before, i.icon-toggle_caret-circle-right-down:before, i.icon-toggle_chevron-double-left-right:before, i.icon-toggle_chevron-double-up-down:before, i.icon-toggle_chevron-up-down:before, i.icon-toggle_plus-minus:before, i.icon-toggle_bars-times:before {
+i.icon-complete_check-circle:before,
+.is-complete i.icon-complete_check:before,
+i.icon-toggle_arrow-circle:before,
+i.icon-toggle_caret-circle-right-down:before,
+i.icon-toggle_chevron-double-left-right:before,
+i.icon-toggle_chevron-double-up-down:before,
+i.icon-toggle_chevron-up-down:before,
+i.icon-toggle_plus-minus:before,
+i.icon-toggle_bars-times:before {
   margin: 0 4px;
   margin: 0 0.25rem;
 }
@@ -2531,6 +2579,7 @@ Styleguide InteractiveExtras.ToggleIcons
 i.icon-toggle_bars-times:before {
   content: "";
 }
+
 .is-active i.icon-toggle_bars-times:before {
   content: "";
 }
@@ -2538,6 +2587,7 @@ i.icon-toggle_bars-times:before {
 i.icon-toggle_plus-minus:before {
   content: "";
 }
+
 .is-active i.icon-toggle_plus-minus:before {
   content: "";
 }
@@ -2545,6 +2595,7 @@ i.icon-toggle_plus-minus:before {
 i.icon-toggle_chevron-up-down:before {
   content: "";
 }
+
 .is-active i.icon-toggle_chevron-up-down:before {
   content: "";
 }
@@ -2552,6 +2603,7 @@ i.icon-toggle_chevron-up-down:before {
 i.icon-toggle_chevron-double-up-down:before {
   content: "";
 }
+
 .is-active i.icon-toggle_chevron-double-up-down:before {
   content: "";
 }
@@ -2559,6 +2611,7 @@ i.icon-toggle_chevron-double-up-down:before {
 i.icon-toggle_chevron-double-left-right:before {
   content: "";
 }
+
 .is-active i.icon-toggle_chevron-double-left-right:before {
   content: "";
 }
@@ -2566,6 +2619,7 @@ i.icon-toggle_chevron-double-left-right:before {
 i.icon-toggle_caret-circle-right-down:before {
   content: "";
 }
+
 .is-active i.icon-toggle_caret-circle-right-down:before {
   content: "";
 }
@@ -2573,6 +2627,7 @@ i.icon-toggle_caret-circle-right-down:before {
 i.icon-toggle_arrow-circle:before {
   content: "";
 }
+
 .is-active i.icon-toggle_arrow-circle:before {
   content: "";
 }
@@ -2615,6 +2670,7 @@ Styleguide InteractiveExtras.CompleteIcons
 i.icon-complete_check:before {
   content: "";
 }
+
 .is-complete i.icon-complete_check:before {
   content: "";
 }
@@ -2622,6 +2678,7 @@ i.icon-complete_check:before {
 i.icon-complete_check-circle:before {
   content: "";
 }
+
 .is-complete i.icon-complete_check-circle:before {
   content: "";
 }
@@ -2665,27 +2722,33 @@ Styleguide InteractiveExtras.Loading Grid
   height: 64px;
   margin: 0 auto;
 }
-.lds-grid > *:nth-child(1) {
+
+.lds-grid>*:nth-child(1) {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
 }
-.lds-grid > *:nth-child(2) {
+
+.lds-grid>*:nth-child(2) {
   -ms-grid-row: 1;
   -ms-grid-column: 3;
 }
-.lds-grid > *:nth-child(3) {
+
+.lds-grid>*:nth-child(3) {
   -ms-grid-row: 1;
   -ms-grid-column: 5;
 }
-.lds-grid > *:nth-child(4) {
+
+.lds-grid>*:nth-child(4) {
   -ms-grid-row: 3;
   -ms-grid-column: 1;
 }
-.lds-grid > *:nth-child(5) {
+
+.lds-grid>*:nth-child(5) {
   -ms-grid-row: 3;
   -ms-grid-column: 3;
 }
-.lds-grid > *:nth-child(6) {
+
+.lds-grid>*:nth-child(6) {
   -ms-grid-row: 3;
   -ms-grid-column: 5;
 }
@@ -2694,77 +2757,88 @@ Styleguide InteractiveExtras.Loading Grid
   width: 16px;
   height: 16px;
   -webkit-animation: lds-grid 1.5s linear infinite;
-          animation: lds-grid 1.5s linear infinite;
+  animation: lds-grid 1.5s linear infinite;
 }
 
 .lds-grid .dot:nth-child(1) {
   -webkit-animation-delay: 0s;
-          animation-delay: 0s;
+  animation-delay: 0s;
 }
 
 .lds-grid .dot:nth-child(2) {
   -webkit-animation-delay: -0.3s;
-          animation-delay: -0.3s;
+  animation-delay: -0.3s;
 }
 
 .lds-grid .dot:nth-child(4) {
   -webkit-animation-delay: -0.3s;
-          animation-delay: -0.3s;
+  animation-delay: -0.3s;
 }
 
 .lds-grid .dot:nth-child(3) {
   -webkit-animation-delay: -0.6s;
-          animation-delay: -0.6s;
+  animation-delay: -0.6s;
 }
 
 .lds-grid .dot:nth-child(5) {
   -webkit-animation-delay: -0.6s;
-          animation-delay: -0.6s;
+  animation-delay: -0.6s;
 }
 
 .lds-grid .dot:nth-child(7) {
   -webkit-animation-delay: -0.6s;
-          animation-delay: -0.6s;
+  animation-delay: -0.6s;
 }
 
 .lds-grid .dot:nth-child(6) {
   -webkit-animation-delay: -0.9s;
-          animation-delay: -0.9s;
+  animation-delay: -0.9s;
 }
 
 .lds-grid .dot:nth-child(8) {
   -webkit-animation-delay: -0.9s;
-          animation-delay: -0.9s;
+  animation-delay: -0.9s;
 }
 
 .lds-grid .dot:nth-child(9) {
   -webkit-animation-delay: -1.2s;
-          animation-delay: -1.2s;
+  animation-delay: -1.2s;
 }
 
 @-webkit-keyframes lds-grid {
-  0%, 100% {
+
+  0%,
+  100% {
     opacity: 0.95;
   }
-  10%, 90% {
+
+  10%,
+  90% {
     opacity: 0.8;
   }
+
   50% {
     opacity: 0.25;
   }
 }
 
 @keyframes lds-grid {
-  0%, 100% {
+
+  0%,
+  100% {
     opacity: 0.95;
   }
-  10%, 90% {
+
+  10%,
+  90% {
     opacity: 0.8;
   }
+
   50% {
     opacity: 0.25;
   }
 }
+
 /*
 
 Scrollbar Mini
@@ -2960,9 +3034,11 @@ Muli
 .font .font--example {
   background-image: url(http://basehold.it/i/24);
 }
+
 .font .font--name {
   color: #000;
 }
+
 .font .font--dropcase_2x {
   color: #198dae;
 }
@@ -3104,126 +3180,18 @@ Ebiz Multi Due Payment
 A quick mock up of the multi-due payment screen.
 
 markup:
-<div class="flex:md h_100 texture_light" style=" min-height: 100vh;">
-	<div class="flex_auto relative">
-			<div class="bg_secondary-2 clearfix p_5">
-			<h1 class="c_white font_2 font_display font_regular m_0">
-				<input type="checkbox" checked="" class="m-b_4"><span class="flex_auto"> I would like to have a copy of each "thank you for paying statement". </span>
-            </h1>
-				<div class="flex max-w_1"><input type="email" class="flex_auto m_0"><button class="button flex_auto lh_2 p-x_4 p_3 bg_primary br_0 br_none br-tr_radius br-br_radius button c_white font_2 h:bg_primary-n2 m-r_3 none p-x_4 p-y_2">update</button>
-				</div>
-		</div>
-		<div class="shadow_1 br_radius bg_white m_4 p_5 text_center font_copy">
-			<h1 class="c_black font_3 font_display font_regular m_0">
-				Find the Member you would like to pay for by searching by the ACC
-				member ID
-			</h1>
-			<a href="" class="underline c-primary font_n1">Where do I locate the member ID</a>
-			<div class="m-t_4 flex ">
-				<input type="text" class=" flex_auto font_2 font_ui p-x_3 p-y_2">
-				<button class="bg_primary  br_0 br_none button c_white font_2 p-x_4 p-y_2">
-					Search
-				</button>
-			</div>
-
-		<div class="bg_alert-5 bg_white br_1 br_alert-n1 br_radius br_solid font_copy m-t_4 p-t_3 p_3 shadow_1 text_center">
-			<div class="c_alert-n2 font_3 font_slab m_2 p-t_0 p_3 text_center">
-				No Member Found
-			</div>
-			<h1 class="c_black font_2 font_display font_regular m_2">
-				Please Confirm Mebmer ID Number and Try Again. 
-			</h1>
-
-		</div></div>
-
-
-<div class="shadow_1 br_radius bg_white m_4 p_5 text_center font_copy">
-			<div class="shadow_n1 br_radius bg_primary-4 m_3 p_3 text_center font_4 font_slab">
-				Members Full Name. MD. FACC
-			</div>
-			<h1 class="c_black font_3 font_display font_regular m_2">
-				Is this the member you want to pay for.
-			</h1>
-			<div class="m-t_4 flex max-w_2 m_auto">
-				<button class="button flex_auto bg_primary h:bg_primary-n2 br_0 br_none font_3 p-x_4 p-y_2  br_radius c_white m-r_3">
-					Yes
-				</button>
-				<button class="button flex_auto bg_secondary-3 h:bg_secondary-1 br_0 br_none font_3 p-x_4 p-y_2 br_radius  m-r_3 c_black">
-					No
-				</button>
-			</div>
-		</div>
-	</div>
-	<div class="bg_white br-l_1 br_0 br_secondary-2 br_solid flex_shrink w_20:md w_30:lg">
-		<h2 class="font_2 font_display font_regular p-x_4 m-b_0">
-			Payment History
-		</h2>
-		<section class="m-x_3 p-x_3 p-y_4">
-			<ul class="m-t_0 ul_none">
-				<li class="br-b_1 br-t_1 br_primary br_solid font_n1 font_ui m-y_2 p-y_2">
-				Paid <span class="c_primary font_bold"> Today</span></li>
-				<li class="br_2 br_radius br_solid br_success-2 m-y_3 p_3">
-					<div class="bg_success-1 br_3 br_success-0 c_white font_2 m-b_3 m-t_n3 m-x_n3 m_2 p-x_4 p_2 text_center">Thank Your For Payment</div>
-					<div class="font_1 flex c_secondary font_display">
-						<div class="flex_auto">Full Name</div>
-						<div class="flex_shrink c_primary font_bold font_n1">$750.00</div>
-					</div>
-					<div class="font_n1 font_ui c_secondary-1">
-						<strong class="font_bold">Paid On:</strong>
-						<span class="font_italic c_primary font_bold">Today</span>|<strong class="font_bold">ACC ID:</strong>
-						<span class="font_italic">000141421</span>
-					</div>
-				</li>
-				<li class="br_dotted br-b_1 br_secondary-5 p-b_3">
-					<div class="font_1 flex c_secondary font_display">
-						<div class="flex_auto">Full Name</div>
-						<div class="flex_shrink c_primary font_bold font_n1">$750.00</div>
-					</div>
-					<div class="font_n1 font_ui c_secondary-1">
-						<strong class="font_bold">Paid On:</strong>
-						<span class="font_italic c_primary font_bold">Today</span>|<strong class="font_bold">ACC ID:</strong>
-						<span class="font_italic">000141421</span>
-					</div>
-				</li>
-				<li class="br_dotted br-b_1 br_secondary-5 p-b_3">
-					<div class="font_1 flex c_secondary font_display">
-						<div class="flex_auto">Full Name</div>
-						<div class="flex_shrink c_primary font_bold font_n1">$750.00</div>
-					</div>
-					<div class="font_n1 font_ui c_secondary-1">
-						<strong class="font_bold">Paid On:</strong>
-						<span class="font_italic c_primary font_bold">Today</span>|<strong class="font_bold">ACC ID:</strong>
-						<span class="font_italic">000141421</span>
-					</div>
-				</li>
-				<li class="br_dotted br-b_1 br_secondary-5 p-b_3">
-					<div class="font_1 flex c_secondary font_display">
-						<div class="flex_auto">Full Name</div>
-						<div class="flex_shrink c_primary font_bold font_n1">$750.00</div>
-					</div>
-					<div class="font_n1 font_ui c_secondary-1">
-						<strong class="font_bold">Paid On:</strong>
-						<span class="font_italic c_primary font_bold">Today</span>|<strong class="font_bold">ACC ID:</strong>
-						<span class="font_italic">000141421</span>
-					</div>
-				</li>
-				<li class="br-b_1 br-t_1 br_secondary-3 br_solid c_secondary-n1 font_n1 font_ui m-y_2 p-y_2">
-				Paid <span class="c_primary font_bold">June 21, 2019</span></li>
-				<li class="br_dotted br-b_1 br_secondary-5 p-b_3">
-					<div class="font_1 flex c_secondary font_display">
-						<div class="flex_auto">Full Name</div>
-						<div class="flex_shrink c_primary font_bold font_n1">$750.00</div>
-					</div>
-					<div class="font_n1 font_ui c_secondary-1">
-						<strong class="font_bold">Paid On:</strong>
-						<span class="font_italic">June 21, 2019</span>|<strong class="font_bold">ACC ID:</strong>
-						<span class="font_italic">000141421</span>
-					</div>
-				</li>
-			</ul>
-		</section>
-	</div>
-</div>
+<div class="flex:md h_100 texture_light"style=" min-height: 100vh;"><div class="flex_auto relative"><div class="bg_secondary-2 clearfix p_5"><h1 class="c_white font_2 font_display font_regular m_0"><input type="checkbox"checked=""class="m-b_4"/><span class="flex_auto">I would like to have a copy of each "thank you for paying statement". </span></h1><div class="flex max-w_1"><input type="email"class="flex_auto m_0"/><button class="button flex_auto lh_2 p-x_4 p_3 bg_primary br_0 br_none br-tr_radius br-br_radius button c_white font_2 h:bg_primary-n2 m-r_3 none p-x_4 p-y_2"
+>update </button></div></div><div class="shadow_1 br_radius bg_white m_4 p_5 text_center font_copy"><h1 class="c_black font_3 font_display font_regular m_0">Find the Member you would like to pay for by searching by the ACC member ID </h1><a href=""class="underline c-primary font_n1">Where do I locate the member ID</a><div class="m-t_4 flex "><input type="text"class=" flex_auto font_2 font_ui p-x_3 p-y_2"/><button class="bg_primary  br_0 br_none button c_white font_2 p-x_4 p-y_2">Search </button></div><div class="bg_alert-5 bg_white br_1 br_alert-n1 br_radius br_solid font_copy m-t_4 p-t_3 p_3 shadow_1 text_center"
+><div class="c_alert-n2 font_3 font_slab m_2 p-t_0 p_3 text_center">No Member Found </div><h1 class="c_black font_2 font_display font_regular m_2">Please Confirm Mebmer ID Number and Try Again. </h1></div></div><div class="shadow_1 br_radius bg_white m_4 p_5 text_center font_copy"><div class="shadow_n1 br_radius bg_primary-4 m_3 p_3 text_center font_4 font_slab">Members Full Name. MD. FACC </div><h1 class="c_black font_3 font_display font_regular m_2">Is this the member you want to pay for. </h1><div class="m-t_4 flex max-w_2 m_auto"><button class="button flex_auto bg_primary h:bg_primary-n2 br_0 br_none font_3 p-x_4 p-y_2  br_radius c_white m-r_3"
+>Yes </button><button class="button flex_auto bg_secondary-3 h:bg_secondary-1 br_0 br_none font_3 p-x_4 p-y_2 br_radius  m-r_3 c_black"
+>No </button></div></div></div><div class="bg_white br-l_1 br_0 br_secondary-2 br_solid flex_shrink w_20:md w_30:lg"><h2 class="font_2 font_display font_regular p-x_4 m-b_0">Payment History </h2><section class="m-x_3 p-x_3 p-y_4"><ul class="m-t_0 ul_none"><li class="br-b_1 br-t_1 br_primary br_solid font_n1 font_ui m-y_2 p-y_2">Paid <span class="c_primary font_bold">Today</span></li><li class="br_2 br_radius br_solid br_success-2 m-y_3 p_3"><div class="bg_success-1 br_3 br_success-0 c_white font_2 m-b_3 m-t_n3 m-x_n3 m_2 p-x_4 p_2 text_center"
+>Thank Your For Payment </div><div class="font_1 flex c_secondary font_display"><div class="flex_auto">Full Name</div><div class="flex_shrink c_primary font_bold font_n1">$750.00</div></div><div class="font_n1 font_ui c_secondary-1"><strong class="font_bold">Paid On:</strong><span class="font_italic c_primary font_bold">Today</span>|<strong class="font_bold"
+>ACC ID:</strong><span class="font_italic">000141421</span></div></li><li class="br_dotted br-b_1 br_secondary-5 p-b_3"><div class="font_1 flex c_secondary font_display"><div class="flex_auto">Full Name</div><div class="flex_shrink c_primary font_bold font_n1">$750.00</div></div><div class="font_n1 font_ui c_secondary-1"><strong class="font_bold">Paid On:</strong><span class="font_italic c_primary font_bold">Today</span>|<strong class="font_bold"
+>ACC ID:</strong><span class="font_italic">000141421</span></div></li><li class="br_dotted br-b_1 br_secondary-5 p-b_3"><div class="font_1 flex c_secondary font_display"><div class="flex_auto">Full Name</div><div class="flex_shrink c_primary font_bold font_n1">$750.00</div></div><div class="font_n1 font_ui c_secondary-1"><strong class="font_bold">Paid On:</strong><span class="font_italic c_primary font_bold">Today</span>|<strong class="font_bold"
+>ACC ID:</strong><span class="font_italic">000141421</span></div></li><li class="br_dotted br-b_1 br_secondary-5 p-b_3"><div class="font_1 flex c_secondary font_display"><div class="flex_auto">Full Name</div><div class="flex_shrink c_primary font_bold font_n1">$750.00</div></div><div class="font_n1 font_ui c_secondary-1"><strong class="font_bold">Paid On:</strong><span class="font_italic c_primary font_bold">Today</span>|<strong class="font_bold"
+>ACC ID:</strong><span class="font_italic">000141421</span></div></li><li class="br-b_1 br-t_1 br_secondary-3 br_solid c_secondary-n1 font_n1 font_ui m-y_2 p-y_2">Paid <span class="c_primary font_bold">June 21,
+2019</span></li><li class="br_dotted br-b_1 br_secondary-5 p-b_3"><div class="font_1 flex c_secondary font_display"><div class="flex_auto">Full Name</div><div class="flex_shrink c_primary font_bold font_n1">$750.00</div></div><div class="font_n1 font_ui c_secondary-1"><strong class="font_bold">Paid On:</strong><span class="font_italic">June 21,
+2019</span>|<strong class="font_bold">ACC ID:</strong><span class="font_italic">000141421</span></div></li></ul></section></div></div>
 
 styleguide: Recipe.Ebiz.MultiPay
 */
@@ -4096,6 +4064,7 @@ Styleguide Spacing.Margin
     margin-right: 2rem;
   }
 }
+
 @media only screen and (min-width : 1024px) {
   .m_0\:lg {
     margin: 0;
@@ -4427,6 +4396,7 @@ Styleguide Spacing.Margin
     margin-right: 2rem;
   }
 }
+
 /*
 Padding
 
@@ -4850,6 +4820,7 @@ Styleguide Spacing.Padding
     padding-right: 2rem;
   }
 }
+
 @media only screen and (min-width : 1024px) {
   .p_0\:lg {
     padding: 0;
@@ -5031,6 +5002,7 @@ Styleguide Spacing.Padding
     padding-right: 2rem;
   }
 }
+
 /*
 Position Type
 
@@ -5570,6 +5542,7 @@ Styleguide Spacing.Location
     right: 2rem;
   }
 }
+
 @media only screen and (min-width : 1024px) {
   .t_100\:lg {
     top: 100%;
@@ -5795,6 +5768,7 @@ Styleguide Spacing.Location
     right: 2rem;
   }
 }
+
 /*
 Float
 
@@ -5847,6 +5821,7 @@ Styleguide Spacing.Location
     float: right;
   }
 }
+
 @media only screen and (min-width : 1024px) {
   .float_unset\:lg {
     float: unset;
@@ -5864,6 +5839,7 @@ Styleguide Spacing.Location
     float: right;
   }
 }
+
 /*
 UC: Display & Flex
 
@@ -5952,6 +5928,7 @@ Styleguide display
     display: flex-inline;
   }
 }
+
 @media only screen and (min-width : 1024px) {
   .d_none\:lg {
     display: none;
@@ -5981,6 +5958,7 @@ Styleguide display
     display: flex-inline;
   }
 }
+
 /*
 	Vertical Align
 
@@ -6132,7 +6110,7 @@ Styleguide display
 
 .self_center {
   -ms-grid-row-align: center;
-      align-self: center;
+  align-self: center;
 }
 
 .self_baseline {
@@ -6141,7 +6119,7 @@ Styleguide display
 
 .self_stretch {
   -ms-grid-row-align: stretch;
-      align-self: stretch;
+  align-self: stretch;
 }
 
 .justify_start {
@@ -6323,7 +6301,7 @@ Styleguide display
 
   .self_center\:md {
     -ms-grid-row-align: center;
-        align-self: center;
+    align-self: center;
   }
 
   .self_baseline\:md {
@@ -6332,7 +6310,7 @@ Styleguide display
 
   .self_stretch\:md {
     -ms-grid-row-align: stretch;
-        align-self: stretch;
+    align-self: stretch;
   }
 
   .justify_start\:md {
@@ -6435,6 +6413,7 @@ Styleguide display
     flex-shrink: 1;
   }
 }
+
 @media only screen and (min-width : 1024px) {
   .flex\:lg {
     display: flex;
@@ -6514,7 +6493,7 @@ Styleguide display
 
   .self_center\:lg {
     -ms-grid-row-align: center;
-        align-self: center;
+    align-self: center;
   }
 
   .self_baseline\:lg {
@@ -6523,7 +6502,7 @@ Styleguide display
 
   .self_stretch\:lg {
     -ms-grid-row-align: stretch;
-        align-self: stretch;
+    align-self: stretch;
   }
 
   .justify_start\:lg {
@@ -6626,6 +6605,7 @@ Styleguide display
     flex-shrink: 1;
   }
 }
+
 /*
 Overflow
 
@@ -6649,7 +6629,9 @@ Weight: 100
 Styleguide display.overflow
 
 */
-.overflow_hidden, .overflow_ellipsis, .overflow_clip {
+.overflow_hidden,
+.overflow_ellipsis,
+.overflow_clip {
   overflow: hidden;
 }
 
@@ -6964,6 +6946,7 @@ Styleguide Width.Grid
     width: 100%;
   }
 }
+
 @media only screen and (min-width : 1024px) {
   .max-w_0\:lg {
     max-width: 0 !important;
@@ -7081,6 +7064,7 @@ Styleguide Width.Grid
     width: 100%;
   }
 }
+
 /*
 Max Width
 
@@ -8005,6 +7989,7 @@ Styleguide Typography
     font-size: 0.401877572rem;
   }
 }
+
 @media only screen and (min-width : 1024px) {
   .font_0\:lg {
     font-size: 1rem;
@@ -8070,6 +8055,7 @@ Styleguide Typography
     font-size: 0.401877572rem;
   }
 }
+
 .wrap {
   white-space: normal;
 }
@@ -8097,17 +8083,17 @@ Styleguide Typography
 
 .dotted {
   -webkit-text-decoration: dotted;
-          text-decoration: dotted;
+  text-decoration: dotted;
 }
 
 .double {
   -webkit-text-decoration: double;
-          text-decoration: double;
+  text-decoration: double;
 }
 
 .dashed {
   -webkit-text-decoration: dashed;
-          text-decoration: dashed;
+  text-decoration: dashed;
 }
 
 .text_right {
@@ -9180,6 +9166,7 @@ Styleguide Borders.Style
     border-style: dotted;
   }
 }
+
 @media only screen and (min-width : 1024px) {
   .br_none\:lg {
     border-style: none;
@@ -9197,6 +9184,7 @@ Styleguide Borders.Style
     border-style: dotted;
   }
 }
+
 /*
 Border Color
 
@@ -10301,6 +10289,7 @@ a:focus {
   cursor: pointer;
   transition: all ease-out 0.75s;
 }
+
 *[class^=" hover:"]:focus,
 *[class^=" h:"]:focus {
   border: inherit;
@@ -10409,99 +10398,99 @@ a:focus {
   color: #06232c !important;
 }
 
-.is-active > .aΫg_primary {
+.is-active>.aΫg_primary {
   background-color: #198dae !important;
 }
 
-.is-active > .aΫg_primary-0 {
+.is-active>.aΫg_primary-0 {
   background-color: #198dae !important;
 }
 
-.is-active > .aΫg_primary-1 {
+.is-active>.aΫg_primary-1 {
   background-color: #3c9eba !important;
 }
 
-.is-active > .aΫg_primary-2 {
+.is-active>.aΫg_primary-2 {
   background-color: #6eb7cc !important;
 }
 
-.is-active > .aΫg_primary-3 {
+.is-active>.aΫg_primary-3 {
   background-color: #a3d1df !important;
 }
 
-.is-active > .aΫg_primary-4 {
+.is-active>.aΫg_primary-4 {
   background-color: #cce6ed !important;
 }
 
-.is-active > .aΫg_primary-5 {
+.is-active>.aΫg_primary-5 {
   background-color: #e8f4f7 !important;
 }
 
-.is-active > .aΫg_primary-n1 {
+.is-active>.aΫg_primary-n1 {
   background-color: #177f9d !important;
 }
 
-.is-active > .aΫg_primary-n2 {
+.is-active>.aΫg_primary-n2 {
   background-color: #136a83 !important;
 }
 
-.is-active > .aΫg_primary-n3 {
+.is-active>.aΫg_primary-n3 {
   background-color: #0e4e60 !important;
 }
 
-.is-active > .aΫg_primary-n4 {
+.is-active>.aΫg_primary-n4 {
   background-color: #0a3846 !important;
 }
 
-.is-active > .aΫg_primary-n5 {
+.is-active>.aΫg_primary-n5 {
   background-color: #06232c !important;
 }
 
-.is-active > .aά_primary {
+.is-active>.aά_primary {
   color: #198dae !important;
 }
 
-.is-active > .aά_primary-0 {
+.is-active>.aά_primary-0 {
   color: #198dae !important;
 }
 
-.is-active > .aά_primary-1 {
+.is-active>.aά_primary-1 {
   color: #3c9eba !important;
 }
 
-.is-active > .aά_primary-2 {
+.is-active>.aά_primary-2 {
   color: #6eb7cc !important;
 }
 
-.is-active > .aά_primary-3 {
+.is-active>.aά_primary-3 {
   color: #a3d1df !important;
 }
 
-.is-active > .aά_primary-4 {
+.is-active>.aά_primary-4 {
   color: #cce6ed !important;
 }
 
-.is-active > .aά_primary-5 {
+.is-active>.aά_primary-5 {
   color: #e8f4f7 !important;
 }
 
-.is-active > .aά_primary-n1 {
+.is-active>.aά_primary-n1 {
   color: #177f9d !important;
 }
 
-.is-active > .aά_primary-n2 {
+.is-active>.aά_primary-n2 {
   color: #136a83 !important;
 }
 
-.is-active > .aά_primary-n3 {
+.is-active>.aά_primary-n3 {
   color: #0e4e60 !important;
 }
 
-.is-active > .aά_primary-n4 {
+.is-active>.aά_primary-n4 {
   color: #0a3846 !important;
 }
 
-.is-active > .aά_primary-n5 {
+.is-active>.aά_primary-n5 {
   color: #06232c !important;
 }
 
@@ -10601,99 +10590,99 @@ a:focus {
   color: #1a1b1d !important;
 }
 
-.is-active > .aΫg_secondary {
+.is-active>.aΫg_secondary {
   background-color: #676a72 !important;
 }
 
-.is-active > .aΫg_secondary-0 {
+.is-active>.aΫg_secondary-0 {
   background-color: #676a72 !important;
 }
 
-.is-active > .aΫg_secondary-1 {
+.is-active>.aΫg_secondary-1 {
   background-color: #7e8087 !important;
 }
 
-.is-active > .aΫg_secondary-2 {
+.is-active>.aΫg_secondary-2 {
   background-color: #9fa1a6 !important;
 }
 
-.is-active > .aΫg_secondary-3 {
+.is-active>.aΫg_secondary-3 {
   background-color: #c2c3c7 !important;
 }
 
-.is-active > .aΫg_secondary-4 {
+.is-active>.aΫg_secondary-4 {
   background-color: #dedee0 !important;
 }
 
-.is-active > .aΫg_secondary-5 {
+.is-active>.aΫg_secondary-5 {
   background-color: #f0f0f1 !important;
 }
 
-.is-active > .aΫg_secondary-n1 {
+.is-active>.aΫg_secondary-n1 {
   background-color: #5d5f67 !important;
 }
 
-.is-active > .aΫg_secondary-n2 {
+.is-active>.aΫg_secondary-n2 {
   background-color: #4d5056 !important;
 }
 
-.is-active > .aΫg_secondary-n3 {
+.is-active>.aΫg_secondary-n3 {
   background-color: #393a3f !important;
 }
 
-.is-active > .aΫg_secondary-n4 {
+.is-active>.aΫg_secondary-n4 {
   background-color: #292a2e !important;
 }
 
-.is-active > .aΫg_secondary-n5 {
+.is-active>.aΫg_secondary-n5 {
   background-color: #1a1b1d !important;
 }
 
-.is-active > .aά_secondary {
+.is-active>.aά_secondary {
   color: #676a72 !important;
 }
 
-.is-active > .aά_secondary-0 {
+.is-active>.aά_secondary-0 {
   color: #676a72 !important;
 }
 
-.is-active > .aά_secondary-1 {
+.is-active>.aά_secondary-1 {
   color: #7e8087 !important;
 }
 
-.is-active > .aά_secondary-2 {
+.is-active>.aά_secondary-2 {
   color: #9fa1a6 !important;
 }
 
-.is-active > .aά_secondary-3 {
+.is-active>.aά_secondary-3 {
   color: #c2c3c7 !important;
 }
 
-.is-active > .aά_secondary-4 {
+.is-active>.aά_secondary-4 {
   color: #dedee0 !important;
 }
 
-.is-active > .aά_secondary-5 {
+.is-active>.aά_secondary-5 {
   color: #f0f0f1 !important;
 }
 
-.is-active > .aά_secondary-n1 {
+.is-active>.aά_secondary-n1 {
   color: #5d5f67 !important;
 }
 
-.is-active > .aά_secondary-n2 {
+.is-active>.aά_secondary-n2 {
   color: #4d5056 !important;
 }
 
-.is-active > .aά_secondary-n3 {
+.is-active>.aά_secondary-n3 {
   color: #393a3f !important;
 }
 
-.is-active > .aά_secondary-n4 {
+.is-active>.aά_secondary-n4 {
   color: #292a2e !important;
 }
 
-.is-active > .aά_secondary-n5 {
+.is-active>.aά_secondary-n5 {
   color: #1a1b1d !important;
 }
 
@@ -10793,99 +10782,99 @@ a:focus {
   color: #02230c !important;
 }
 
-.is-active > .aΫg_success {
+.is-active>.aΫg_success {
   background-color: #078a2e !important;
 }
 
-.is-active > .aΫg_success-0 {
+.is-active>.aΫg_success-0 {
   background-color: #078a2e !important;
 }
 
-.is-active > .aΫg_success-1 {
+.is-active>.aΫg_success-1 {
   background-color: #2c9c4d !important;
 }
 
-.is-active > .aΫg_success-2 {
+.is-active>.aΫg_success-2 {
   background-color: #63b57b !important;
 }
 
-.is-active > .aΫg_success-3 {
+.is-active>.aΫg_success-3 {
   background-color: #9cd0ab !important;
 }
 
-.is-active > .aΫg_success-4 {
+.is-active>.aΫg_success-4 {
   background-color: #c8e5d1 !important;
 }
 
-.is-active > .aΫg_success-5 {
+.is-active>.aΫg_success-5 {
   background-color: #e6f3ea !important;
 }
 
-.is-active > .aΫg_success-n1 {
+.is-active>.aΫg_success-n1 {
   background-color: #067c29 !important;
 }
 
-.is-active > .aΫg_success-n2 {
+.is-active>.aΫg_success-n2 {
   background-color: #056823 !important;
 }
 
-.is-active > .aΫg_success-n3 {
+.is-active>.aΫg_success-n3 {
   background-color: #044c19 !important;
 }
 
-.is-active > .aΫg_success-n4 {
+.is-active>.aΫg_success-n4 {
   background-color: #033712 !important;
 }
 
-.is-active > .aΫg_success-n5 {
+.is-active>.aΫg_success-n5 {
   background-color: #02230c !important;
 }
 
-.is-active > .aά_success {
+.is-active>.aά_success {
   color: #078a2e !important;
 }
 
-.is-active > .aά_success-0 {
+.is-active>.aά_success-0 {
   color: #078a2e !important;
 }
 
-.is-active > .aά_success-1 {
+.is-active>.aά_success-1 {
   color: #2c9c4d !important;
 }
 
-.is-active > .aά_success-2 {
+.is-active>.aά_success-2 {
   color: #63b57b !important;
 }
 
-.is-active > .aά_success-3 {
+.is-active>.aά_success-3 {
   color: #9cd0ab !important;
 }
 
-.is-active > .aά_success-4 {
+.is-active>.aά_success-4 {
   color: #c8e5d1 !important;
 }
 
-.is-active > .aά_success-5 {
+.is-active>.aά_success-5 {
   color: #e6f3ea !important;
 }
 
-.is-active > .aά_success-n1 {
+.is-active>.aά_success-n1 {
   color: #067c29 !important;
 }
 
-.is-active > .aά_success-n2 {
+.is-active>.aά_success-n2 {
   color: #056823 !important;
 }
 
-.is-active > .aά_success-n3 {
+.is-active>.aά_success-n3 {
   color: #044c19 !important;
 }
 
-.is-active > .aά_success-n4 {
+.is-active>.aά_success-n4 {
   color: #033712 !important;
 }
 
-.is-active > .aά_success-n5 {
+.is-active>.aά_success-n5 {
   color: #02230c !important;
 }
 
@@ -10985,99 +10974,99 @@ a:focus {
   color: #372104 !important;
 }
 
-.is-active > .aΫg_warning {
+.is-active>.aΫg_warning {
   background-color: #da8210 !important;
 }
 
-.is-active > .aΫg_warning-0 {
+.is-active>.aΫg_warning-0 {
   background-color: #da8210 !important;
 }
 
-.is-active > .aΫg_warning-1 {
+.is-active>.aΫg_warning-1 {
   background-color: #e09534 !important;
 }
 
-.is-active > .aΫg_warning-2 {
+.is-active>.aΫg_warning-2 {
   background-color: #e8b068 !important;
 }
 
-.is-active > .aΫg_warning-3 {
+.is-active>.aΫg_warning-3 {
   background-color: #f0cd9f !important;
 }
 
-.is-active > .aΫg_warning-4 {
+.is-active>.aΫg_warning-4 {
   background-color: #f7e4ca !important;
 }
 
-.is-active > .aΫg_warning-5 {
+.is-active>.aΫg_warning-5 {
   background-color: #fbf3e7 !important;
 }
 
-.is-active > .aΫg_warning-n1 {
+.is-active>.aΫg_warning-n1 {
   background-color: #c4750e !important;
 }
 
-.is-active > .aΫg_warning-n2 {
+.is-active>.aΫg_warning-n2 {
   background-color: #a4620c !important;
 }
 
-.is-active > .aΫg_warning-n3 {
+.is-active>.aΫg_warning-n3 {
   background-color: #784809 !important;
 }
 
-.is-active > .aΫg_warning-n4 {
+.is-active>.aΫg_warning-n4 {
   background-color: #573406 !important;
 }
 
-.is-active > .aΫg_warning-n5 {
+.is-active>.aΫg_warning-n5 {
   background-color: #372104 !important;
 }
 
-.is-active > .aά_warning {
+.is-active>.aά_warning {
   color: #da8210 !important;
 }
 
-.is-active > .aά_warning-0 {
+.is-active>.aά_warning-0 {
   color: #da8210 !important;
 }
 
-.is-active > .aά_warning-1 {
+.is-active>.aά_warning-1 {
   color: #e09534 !important;
 }
 
-.is-active > .aά_warning-2 {
+.is-active>.aά_warning-2 {
   color: #e8b068 !important;
 }
 
-.is-active > .aά_warning-3 {
+.is-active>.aά_warning-3 {
   color: #f0cd9f !important;
 }
 
-.is-active > .aά_warning-4 {
+.is-active>.aά_warning-4 {
   color: #f7e4ca !important;
 }
 
-.is-active > .aά_warning-5 {
+.is-active>.aά_warning-5 {
   color: #fbf3e7 !important;
 }
 
-.is-active > .aά_warning-n1 {
+.is-active>.aά_warning-n1 {
   color: #c4750e !important;
 }
 
-.is-active > .aά_warning-n2 {
+.is-active>.aά_warning-n2 {
   color: #a4620c !important;
 }
 
-.is-active > .aά_warning-n3 {
+.is-active>.aά_warning-n3 {
   color: #784809 !important;
 }
 
-.is-active > .aά_warning-n4 {
+.is-active>.aά_warning-n4 {
   color: #573406 !important;
 }
 
-.is-active > .aά_warning-n5 {
+.is-active>.aά_warning-n5 {
   color: #372104 !important;
 }
 
@@ -11177,99 +11166,99 @@ a:focus {
   color: #370707 !important;
 }
 
-.is-active > .aΫg_alert {
+.is-active>.aΫg_alert {
   background-color: #dd1a1a !important;
 }
 
-.is-active > .aΫg_alert-0 {
+.is-active>.aΫg_alert-0 {
   background-color: #dd1a1a !important;
 }
 
-.is-active > .aΫg_alert-1 {
+.is-active>.aΫg_alert-1 {
   background-color: #e23c3c !important;
 }
 
-.is-active > .aΫg_alert-2 {
+.is-active>.aΫg_alert-2 {
   background-color: #ea6f6f !important;
 }
 
-.is-active > .aΫg_alert-3 {
+.is-active>.aΫg_alert-3 {
   background-color: #f1a3a3 !important;
 }
 
-.is-active > .aΫg_alert-4 {
+.is-active>.aΫg_alert-4 {
   background-color: #f8cdcd !important;
 }
 
-.is-active > .aΫg_alert-5 {
+.is-active>.aΫg_alert-5 {
   background-color: #fce8e8 !important;
 }
 
-.is-active > .aΫg_alert-n1 {
+.is-active>.aΫg_alert-n1 {
   background-color: #c71717 !important;
 }
 
-.is-active > .aΫg_alert-n2 {
+.is-active>.aΫg_alert-n2 {
   background-color: #a61414 !important;
 }
 
-.is-active > .aΫg_alert-n3 {
+.is-active>.aΫg_alert-n3 {
   background-color: #7a0e0e !important;
 }
 
-.is-active > .aΫg_alert-n4 {
+.is-active>.aΫg_alert-n4 {
   background-color: #580a0a !important;
 }
 
-.is-active > .aΫg_alert-n5 {
+.is-active>.aΫg_alert-n5 {
   background-color: #370707 !important;
 }
 
-.is-active > .aά_alert {
+.is-active>.aά_alert {
   color: #dd1a1a !important;
 }
 
-.is-active > .aά_alert-0 {
+.is-active>.aά_alert-0 {
   color: #dd1a1a !important;
 }
 
-.is-active > .aά_alert-1 {
+.is-active>.aά_alert-1 {
   color: #e23c3c !important;
 }
 
-.is-active > .aά_alert-2 {
+.is-active>.aά_alert-2 {
   color: #ea6f6f !important;
 }
 
-.is-active > .aά_alert-3 {
+.is-active>.aά_alert-3 {
   color: #f1a3a3 !important;
 }
 
-.is-active > .aά_alert-4 {
+.is-active>.aά_alert-4 {
   color: #f8cdcd !important;
 }
 
-.is-active > .aά_alert-5 {
+.is-active>.aά_alert-5 {
   color: #fce8e8 !important;
 }
 
-.is-active > .aά_alert-n1 {
+.is-active>.aά_alert-n1 {
   color: #c71717 !important;
 }
 
-.is-active > .aά_alert-n2 {
+.is-active>.aά_alert-n2 {
   color: #a61414 !important;
 }
 
-.is-active > .aά_alert-n3 {
+.is-active>.aά_alert-n3 {
   color: #7a0e0e !important;
 }
 
-.is-active > .aά_alert-n4 {
+.is-active>.aά_alert-n4 {
   color: #580a0a !important;
 }
 
-.is-active > .aά_alert-n5 {
+.is-active>.aά_alert-n5 {
   color: #370707 !important;
 }
 
@@ -11369,99 +11358,99 @@ a:focus {
   color: #0b1630 !important;
 }
 
-.is-active > .aΫg_navigation {
+.is-active>.aΫg_navigation {
   background-color: #2b58c0 !important;
 }
 
-.is-active > .aΫg_navigation-0 {
+.is-active>.aΫg_navigation-0 {
   background-color: #2b58c0 !important;
 }
 
-.is-active > .aΫg_navigation-1 {
+.is-active>.aΫg_navigation-1 {
   background-color: #4b71c9 !important;
 }
 
-.is-active > .aΫg_navigation-2 {
+.is-active>.aΫg_navigation-2 {
   background-color: #7996d7 !important;
 }
 
-.is-active > .aΫg_navigation-3 {
+.is-active>.aΫg_navigation-3 {
   background-color: #aabce6 !important;
 }
 
-.is-active > .aΫg_navigation-4 {
+.is-active>.aΫg_navigation-4 {
   background-color: #d0daf1 !important;
 }
 
-.is-active > .aΫg_navigation-5 {
+.is-active>.aΫg_navigation-5 {
   background-color: #eaeef9 !important;
 }
 
-.is-active > .aΫg_navigation-n1 {
+.is-active>.aΫg_navigation-n1 {
   background-color: #274fad !important;
 }
 
-.is-active > .aΫg_navigation-n2 {
+.is-active>.aΫg_navigation-n2 {
   background-color: #204290 !important;
 }
 
-.is-active > .aΫg_navigation-n3 {
+.is-active>.aΫg_navigation-n3 {
   background-color: #18306a !important;
 }
 
-.is-active > .aΫg_navigation-n4 {
+.is-active>.aΫg_navigation-n4 {
   background-color: #11234d !important;
 }
 
-.is-active > .aΫg_navigation-n5 {
+.is-active>.aΫg_navigation-n5 {
   background-color: #0b1630 !important;
 }
 
-.is-active > .aά_navigation {
+.is-active>.aά_navigation {
   color: #2b58c0 !important;
 }
 
-.is-active > .aά_navigation-0 {
+.is-active>.aά_navigation-0 {
   color: #2b58c0 !important;
 }
 
-.is-active > .aά_navigation-1 {
+.is-active>.aά_navigation-1 {
   color: #4b71c9 !important;
 }
 
-.is-active > .aά_navigation-2 {
+.is-active>.aά_navigation-2 {
   color: #7996d7 !important;
 }
 
-.is-active > .aά_navigation-3 {
+.is-active>.aά_navigation-3 {
   color: #aabce6 !important;
 }
 
-.is-active > .aά_navigation-4 {
+.is-active>.aά_navigation-4 {
   color: #d0daf1 !important;
 }
 
-.is-active > .aά_navigation-5 {
+.is-active>.aά_navigation-5 {
   color: #eaeef9 !important;
 }
 
-.is-active > .aά_navigation-n1 {
+.is-active>.aά_navigation-n1 {
   color: #274fad !important;
 }
 
-.is-active > .aά_navigation-n2 {
+.is-active>.aά_navigation-n2 {
   color: #204290 !important;
 }
 
-.is-active > .aά_navigation-n3 {
+.is-active>.aά_navigation-n3 {
   color: #18306a !important;
 }
 
-.is-active > .aά_navigation-n4 {
+.is-active>.aά_navigation-n4 {
   color: #11234d !important;
 }
 
-.is-active > .aά_navigation-n5 {
+.is-active>.aά_navigation-n5 {
   color: #0b1630 !important;
 }
 
@@ -11561,99 +11550,99 @@ a:focus {
   color: #062921 !important;
 }
 
-.is-active > .aΫg_accent {
+.is-active>.aΫg_accent {
   background-color: #16a385 !important;
 }
 
-.is-active > .aΫg_accent-0 {
+.is-active>.aΫg_accent-0 {
   background-color: #16a385 !important;
 }
 
-.is-active > .aΫg_accent-1 {
+.is-active>.aΫg_accent-1 {
   background-color: #39b197 !important;
 }
 
-.is-active > .aΫg_accent-2 {
+.is-active>.aΫg_accent-2 {
   background-color: #6cc5b2 !important;
 }
 
-.is-active > .aΫg_accent-3 {
+.is-active>.aΫg_accent-3 {
   background-color: #a2dace !important;
 }
 
-.is-active > .aΫg_accent-4 {
+.is-active>.aΫg_accent-4 {
   background-color: #ccebe4 !important;
 }
 
-.is-active > .aΫg_accent-5 {
+.is-active>.aΫg_accent-5 {
   background-color: #e8f6f3 !important;
 }
 
-.is-active > .aΫg_accent-n1 {
+.is-active>.aΫg_accent-n1 {
   background-color: #149378 !important;
 }
 
-.is-active > .aΫg_accent-n2 {
+.is-active>.aΫg_accent-n2 {
   background-color: #117a64 !important;
 }
 
-.is-active > .aΫg_accent-n3 {
+.is-active>.aΫg_accent-n3 {
   background-color: #0c5a49 !important;
 }
 
-.is-active > .aΫg_accent-n4 {
+.is-active>.aΫg_accent-n4 {
   background-color: #094135 !important;
 }
 
-.is-active > .aΫg_accent-n5 {
+.is-active>.aΫg_accent-n5 {
   background-color: #062921 !important;
 }
 
-.is-active > .aά_accent {
+.is-active>.aά_accent {
   color: #16a385 !important;
 }
 
-.is-active > .aά_accent-0 {
+.is-active>.aά_accent-0 {
   color: #16a385 !important;
 }
 
-.is-active > .aά_accent-1 {
+.is-active>.aά_accent-1 {
   color: #39b197 !important;
 }
 
-.is-active > .aά_accent-2 {
+.is-active>.aά_accent-2 {
   color: #6cc5b2 !important;
 }
 
-.is-active > .aά_accent-3 {
+.is-active>.aά_accent-3 {
   color: #a2dace !important;
 }
 
-.is-active > .aά_accent-4 {
+.is-active>.aά_accent-4 {
   color: #ccebe4 !important;
 }
 
-.is-active > .aά_accent-5 {
+.is-active>.aά_accent-5 {
   color: #e8f6f3 !important;
 }
 
-.is-active > .aά_accent-n1 {
+.is-active>.aά_accent-n1 {
   color: #149378 !important;
 }
 
-.is-active > .aά_accent-n2 {
+.is-active>.aά_accent-n2 {
   color: #117a64 !important;
 }
 
-.is-active > .aά_accent-n3 {
+.is-active>.aά_accent-n3 {
   color: #0c5a49 !important;
 }
 
-.is-active > .aά_accent-n4 {
+.is-active>.aά_accent-n4 {
   color: #094135 !important;
 }
 
-.is-active > .aά_accent-n5 {
+.is-active>.aά_accent-n5 {
   color: #062921 !important;
 }
 
@@ -11753,99 +11742,99 @@ a:focus {
   color: #292623 !important;
 }
 
-.is-active > .aΫg_info {
+.is-active>.aΫg_info {
   background-color: #a3988c !important;
 }
 
-.is-active > .aΫg_info-0 {
+.is-active>.aΫg_info-0 {
   background-color: #a3988c !important;
 }
 
-.is-active > .aΫg_info-1 {
+.is-active>.aΫg_info-1 {
   background-color: #b1a79d !important;
 }
 
-.is-active > .aΫg_info-2 {
+.is-active>.aΫg_info-2 {
   background-color: #c5beb7 !important;
 }
 
-.is-active > .aΫg_info-3 {
+.is-active>.aΫg_info-3 {
   background-color: #dad6d1 !important;
 }
 
-.is-active > .aΫg_info-4 {
+.is-active>.aΫg_info-4 {
   background-color: #ebe8e6 !important;
 }
 
-.is-active > .aΫg_info-5 {
+.is-active>.aΫg_info-5 {
   background-color: #f6f5f4 !important;
 }
 
-.is-active > .aΫg_info-n1 {
+.is-active>.aΫg_info-n1 {
   background-color: #93897e !important;
 }
 
-.is-active > .aΫg_info-n2 {
+.is-active>.aΫg_info-n2 {
   background-color: #7a7269 !important;
 }
 
-.is-active > .aΫg_info-n3 {
+.is-active>.aΫg_info-n3 {
   background-color: #5a544d !important;
 }
 
-.is-active > .aΫg_info-n4 {
+.is-active>.aΫg_info-n4 {
   background-color: #413d38 !important;
 }
 
-.is-active > .aΫg_info-n5 {
+.is-active>.aΫg_info-n5 {
   background-color: #292623 !important;
 }
 
-.is-active > .aά_info {
+.is-active>.aά_info {
   color: #a3988c !important;
 }
 
-.is-active > .aά_info-0 {
+.is-active>.aά_info-0 {
   color: #a3988c !important;
 }
 
-.is-active > .aά_info-1 {
+.is-active>.aά_info-1 {
   color: #b1a79d !important;
 }
 
-.is-active > .aά_info-2 {
+.is-active>.aά_info-2 {
   color: #c5beb7 !important;
 }
 
-.is-active > .aά_info-3 {
+.is-active>.aά_info-3 {
   color: #dad6d1 !important;
 }
 
-.is-active > .aά_info-4 {
+.is-active>.aά_info-4 {
   color: #ebe8e6 !important;
 }
 
-.is-active > .aά_info-5 {
+.is-active>.aά_info-5 {
   color: #f6f5f4 !important;
 }
 
-.is-active > .aά_info-n1 {
+.is-active>.aά_info-n1 {
   color: #93897e !important;
 }
 
-.is-active > .aά_info-n2 {
+.is-active>.aά_info-n2 {
   color: #7a7269 !important;
 }
 
-.is-active > .aά_info-n3 {
+.is-active>.aά_info-n3 {
   color: #5a544d !important;
 }
 
-.is-active > .aά_info-n4 {
+.is-active>.aά_info-n4 {
   color: #413d38 !important;
 }
 
-.is-active > .aά_info-n5 {
+.is-active>.aά_info-n5 {
   color: #292623 !important;
 }
 
@@ -11945,99 +11934,99 @@ a:focus {
   color: #1e112f !important;
 }
 
-.is-active > .aΫg_highlight {
+.is-active>.aΫg_highlight {
   background-color: #7742bd !important;
 }
 
-.is-active > .aΫg_highlight-0 {
+.is-active>.aΫg_highlight-0 {
   background-color: #7742bd !important;
 }
 
-.is-active > .aΫg_highlight-1 {
+.is-active>.aΫg_highlight-1 {
   background-color: #8b5ec7 !important;
 }
 
-.is-active > .aΫg_highlight-2 {
+.is-active>.aΫg_highlight-2 {
   background-color: #a988d5 !important;
 }
 
-.is-active > .aΫg_highlight-3 {
+.is-active>.aΫg_highlight-3 {
   background-color: #c9b3e5 !important;
 }
 
-.is-active > .aΫg_highlight-4 {
+.is-active>.aΫg_highlight-4 {
   background-color: #e1d5f0 !important;
 }
 
-.is-active > .aΫg_highlight-5 {
+.is-active>.aΫg_highlight-5 {
   background-color: #f1ecf8 !important;
 }
 
-.is-active > .aΫg_highlight-n1 {
+.is-active>.aΫg_highlight-n1 {
   background-color: #6b3baa !important;
 }
 
-.is-active > .aΫg_highlight-n2 {
+.is-active>.aΫg_highlight-n2 {
   background-color: #59328e !important;
 }
 
-.is-active > .aΫg_highlight-n3 {
+.is-active>.aΫg_highlight-n3 {
   background-color: #412468 !important;
 }
 
-.is-active > .aΫg_highlight-n4 {
+.is-active>.aΫg_highlight-n4 {
   background-color: #301a4c !important;
 }
 
-.is-active > .aΫg_highlight-n5 {
+.is-active>.aΫg_highlight-n5 {
   background-color: #1e112f !important;
 }
 
-.is-active > .aά_highlight {
+.is-active>.aά_highlight {
   color: #7742bd !important;
 }
 
-.is-active > .aά_highlight-0 {
+.is-active>.aά_highlight-0 {
   color: #7742bd !important;
 }
 
-.is-active > .aά_highlight-1 {
+.is-active>.aά_highlight-1 {
   color: #8b5ec7 !important;
 }
 
-.is-active > .aά_highlight-2 {
+.is-active>.aά_highlight-2 {
   color: #a988d5 !important;
 }
 
-.is-active > .aά_highlight-3 {
+.is-active>.aά_highlight-3 {
   color: #c9b3e5 !important;
 }
 
-.is-active > .aά_highlight-4 {
+.is-active>.aά_highlight-4 {
   color: #e1d5f0 !important;
 }
 
-.is-active > .aά_highlight-5 {
+.is-active>.aά_highlight-5 {
   color: #f1ecf8 !important;
 }
 
-.is-active > .aά_highlight-n1 {
+.is-active>.aά_highlight-n1 {
   color: #6b3baa !important;
 }
 
-.is-active > .aά_highlight-n2 {
+.is-active>.aά_highlight-n2 {
   color: #59328e !important;
 }
 
-.is-active > .aά_highlight-n3 {
+.is-active>.aά_highlight-n3 {
   color: #412468 !important;
 }
 
-.is-active > .aά_highlight-n4 {
+.is-active>.aά_highlight-n4 {
   color: #301a4c !important;
 }
 
-.is-active > .aά_highlight-n5 {
+.is-active>.aά_highlight-n5 {
   color: #1e112f !important;
 }
 
@@ -12137,99 +12126,99 @@ a:focus {
   color: #000e1b !important;
 }
 
-.is-active > .aΫg_acc {
+.is-active>.aΫg_acc {
   background-color: #00386b !important;
 }
 
-.is-active > .aΫg_acc-0 {
+.is-active>.aΫg_acc-0 {
   background-color: #00386b !important;
 }
 
-.is-active > .aΫg_acc-1 {
+.is-active>.aΫg_acc-1 {
   background-color: #265681 !important;
 }
 
-.is-active > .aΫg_acc-2 {
+.is-active>.aΫg_acc-2 {
   background-color: #5e82a2 !important;
 }
 
-.is-active > .aΫg_acc-3 {
+.is-active>.aΫg_acc-3 {
   background-color: #99afc4 !important;
 }
 
-.is-active > .aΫg_acc-4 {
+.is-active>.aΫg_acc-4 {
   background-color: #c7d3de !important;
 }
 
-.is-active > .aΫg_acc-5 {
+.is-active>.aΫg_acc-5 {
   background-color: #e6ebf0 !important;
 }
 
-.is-active > .aΫg_acc-n1 {
+.is-active>.aΫg_acc-n1 {
   background-color: #003260 !important;
 }
 
-.is-active > .aΫg_acc-n2 {
+.is-active>.aΫg_acc-n2 {
   background-color: #002a50 !important;
 }
 
-.is-active > .aΫg_acc-n3 {
+.is-active>.aΫg_acc-n3 {
   background-color: #001f3b !important;
 }
 
-.is-active > .aΫg_acc-n4 {
+.is-active>.aΫg_acc-n4 {
   background-color: #00162b !important;
 }
 
-.is-active > .aΫg_acc-n5 {
+.is-active>.aΫg_acc-n5 {
   background-color: #000e1b !important;
 }
 
-.is-active > .aά_acc {
+.is-active>.aά_acc {
   color: #00386b !important;
 }
 
-.is-active > .aά_acc-0 {
+.is-active>.aά_acc-0 {
   color: #00386b !important;
 }
 
-.is-active > .aά_acc-1 {
+.is-active>.aά_acc-1 {
   color: #265681 !important;
 }
 
-.is-active > .aά_acc-2 {
+.is-active>.aά_acc-2 {
   color: #5e82a2 !important;
 }
 
-.is-active > .aά_acc-3 {
+.is-active>.aά_acc-3 {
   color: #99afc4 !important;
 }
 
-.is-active > .aά_acc-4 {
+.is-active>.aά_acc-4 {
   color: #c7d3de !important;
 }
 
-.is-active > .aά_acc-5 {
+.is-active>.aά_acc-5 {
   color: #e6ebf0 !important;
 }
 
-.is-active > .aά_acc-n1 {
+.is-active>.aά_acc-n1 {
   color: #003260 !important;
 }
 
-.is-active > .aά_acc-n2 {
+.is-active>.aά_acc-n2 {
   color: #002a50 !important;
 }
 
-.is-active > .aά_acc-n3 {
+.is-active>.aά_acc-n3 {
   color: #001f3b !important;
 }
 
-.is-active > .aά_acc-n4 {
+.is-active>.aά_acc-n4 {
   color: #00162b !important;
 }
 
-.is-active > .aά_acc-n5 {
+.is-active>.aά_acc-n5 {
   color: #000e1b !important;
 }
 
@@ -12267,26 +12256,33 @@ a:focus {
 
  */
 .h\:c_white:hover,
-.is-active > .aά_white {
+.is-active>.aά_white {
   color: white !important;
 }
 
 .h\:c_black:hover,
-.is-active > .aά_black {
+.is-active>.aά_black {
   color: #131212 !important;
 }
 
 .hover\:dotted,
-.h\:dotted, .hover\:double,
-.h\:double, .hover\:dashed,
-.h\:dashed, .hover\:underline,
+.h\:dotted,
+.hover\:double,
+.h\:double,
+.hover\:dashed,
+.h\:dashed,
+.hover\:underline,
 .h\:underline {
   text-decoration: none;
 }
+
 .hover\:dotted:hover,
-.h\:dotted:hover, .hover\:double:hover,
-.h\:double:hover, .hover\:dashed:hover,
-.h\:dashed:hover, .hover\:underline:hover,
+.h\:dotted:hover,
+.hover\:double:hover,
+.h\:double:hover,
+.hover\:dashed:hover,
+.h\:dashed:hover,
+.hover\:underline:hover,
 .h\:underline:hover {
   text-decoration: underline;
 }
@@ -12294,19 +12290,19 @@ a:focus {
 .hover\:dashed:hover,
 .h\:dashed:hover {
   -webkit-text-decoration-style: dashed;
-          text-decoration-style: dashed;
+  text-decoration-style: dashed;
 }
 
 .hover\:double:hover,
 .h\:double:hover {
   -webkit-text-decoration-style: double;
-          text-decoration-style: double;
+  text-decoration-style: double;
 }
 
 .hover\:dotted:hover,
 .h\:dotted:hover {
   -webkit-text-decoration-style: dotted;
-          text-decoration-style: dotted;
+  text-decoration-style: dotted;
 }
 
 /*
@@ -12337,7 +12333,7 @@ a:focus {
   */
 /* Transparent Loop */
 .h\:bg_white:hover,
-.is-active > .aΫg_white {
+.is-active>.aΫg_white {
   background-color: white;
 }
 
@@ -12386,7 +12382,7 @@ a:focus {
 }
 
 .h\:bg_black:hover,
-.is-active > .aΫg_black {
+.is-active>.aΫg_black {
   background-color: #131212;
 }
 
@@ -12484,7 +12480,7 @@ Styleguide hover.opacity
 
 */
 .h\:opacity:hover,
-.is-active > .a\:opacity {
+.is-active>.a\:opacity {
   opacity: 1;
 }
 
@@ -12650,22 +12646,22 @@ Styleguide is-active.black and white
 .a\:d_inline,
 .a\:d_inline-block,
 .a\:d_block,
-.is-active > .aέ_none,
+.is-active>.aέ_none,
 .is-active.aέ_none {
   display: none !important;
 }
 
-.is-active > .aέ_inline,
+.is-active>.aέ_inline,
 .is-active.aέ_inline {
   display: inline !important;
 }
 
-.is-active > .aέ_inline-block,
+.is-active>.aέ_inline-block,
 .is-active.aέ_inline-block {
   display: inline-block !important;
 }
 
-.is-active > .aέ_block,
+.is-active>.aέ_block,
 .is-active.aέ_inline-block {
   display: block !important;
 }
