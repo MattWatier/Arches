@@ -6974,11 +6974,11 @@ pre {
 
 */
 /*
-	ACC.org Footer
+ACC.org Footer
 
-   The Footer of ACC.org 
+The Footer of ACC.org 
 
-   Markup:
+Markup:
 <div id="footer-wrap" class="max-w_5">
 <!-- ********************************** breadcrumbs ********************************** -->
 <div id="breadcrumbs" class="bg_acc breadcrumbs-container c_white font_n1 p-x_4 p_2">
@@ -6986,8 +6986,8 @@ pre {
 	Home
 </div>
 <!-- This is the inner footer that we cache -->
-<div id="footer" role="contentinfo" class="bg_secondary-n3 flex p-x_3">
-	<div class="flex_auto p-x_3 p-y_4 w-grid_3">
+<div id="footer" role="contentinfo" class="bg_secondary-n3 flex:md p-x_3">
+	<div class="flex_auto p-x_3 p-y_4 w-grid_3:lg w-grid_6:md ">
 		<h2 class="font_1 font_slab">
 			<a href="//www.acc.org/guidelines" target="_parent" title="Guidelines" class="c_white h:c_primary-3">Guidelines</a>
 		</h2>
@@ -7026,7 +7026,7 @@ pre {
 			<a class="c_white h:c_primary-3" href="//www.acc.org/membership" target="_parent" title="Membership ">Membership
 			</a>
 		</h2>
-		<ul class="ul_none font_0">
+		<ul class="ul_none font_0 flex flex_column">
 			<li class="reverse-indent">
 				<a class="c_white h:c_primary-3" href="//www.acc.org/membership/about-membership">About Membership</a>
 			</li>
@@ -7048,7 +7048,7 @@ pre {
 		<h2 class="font_1 font_slab m-t_4">
 			<a class="c_white h:c_primary-3" href="//www.acc.org/about-acc" title="About ACC">About ACC</a>
 		</h2>
-		<ul class="ul_none font_0">
+		<ul class="ul_none font_0 flex flex_column">
 			<li class="reverse-indent">
 				<a class="c_white h:c_primary-3" href="//www.acc.org/about-acc/our-strategic-direction">Our Strategic Direction</a>
 			</li>
@@ -7080,11 +7080,11 @@ pre {
 			</li>
 		</ul>
 	</div>
-	<div class="flex_auto p-x_3 p-y_4 w-grid_3">
+	<div class="flex_auto p-x_3 p-y_4 w-grid_3:lg w-grid_6:md">
 		<h2 class="font_1 font_slab">
 			<a class="c_white h:c_primary-3" href="//www.acc.org/clinical-topics">Clinical Topics</a>
 		</h2>
-		<ul class="ul_none font_0">
+		<ul class="ul_none font_0 flex flex_column">
 			<li class="reverse-indent">
 				<a class="c_white h:c_primary-3" href="//www.acc.org/clinical-topics/acute-coronary-syndromes">Acute Coronary Syndromes</a>
 			</li>
@@ -7107,7 +7107,7 @@ pre {
 				<a class="c_white h:c_primary-3" href="//www.acc.org/clinical-topics/congenital-heart-disease-pediatric-cardiology">Congenital Heart Disease and Pediatric Cardiology</a>
 			</li>
 			<li class="reverse-indent">
-				<a class="c_white h:c_primary-3" href="//www.acc.org/clinical-topics/diabetes-and-cardiometabolic-disease" style="\">Diabetes and Cardiometabolic Disease</a>
+				<a class="c_white h:c_primary-3" href="//www.acc.org/clinical-topics/diabetes-and-cardiometabolic-disease">Diabetes and Cardiometabolic Disease</a>
 			</li>
 			<li class="reverse-indent">
 				<a class="c_white h:c_primary-3" href="//www.acc.org/clinical-topics/dyslipidemia">Dyslipidemia</a>
@@ -7148,11 +7148,11 @@ pre {
 			</li>
 		</ul>
 	</div>
-	<div class="flex_auto p-x_3 p-y_4 w-grid_3">
+	<div class="flex_auto p-x_3 p-y_4 w-grid_3:lg w-grid_6:md">
 		<h2 class="font_1 font_slab">
 			<a class="c_white h:c_primary-3" href="//www.acc.org/latest-in-cardiology">Latest in Cardiology</a>
 		</h2>
-		<ul class="ul_none font_0">
+		<ul class="ul_none font_0 flex flex_column">
 			<li class="reverse-indent">
 				<a class="c_white h:c_primary-3" href="//www.acc.org/latest-in-cardiology#theme=Clinical Updates and Discoveries">Clinical Updates &amp; Discoveries</a>
 			</li>
@@ -7175,7 +7175,7 @@ pre {
 		<h2 class="font_1 font_slab m-t_4">
 			<a class="c_white h:c_primary-3" href="//www.acc.org/education-and-meetings">Education and Meetings</a>
 		</h2>
-		<ul class="ul_none font_0">
+		<ul class="ul_none font_0 flex flex_column">
 			<li class="reverse-indent"><a class="c_white h:c_primary-3" href="//www.acc.org">Online Learning Catalog</a></li>
 			<li class="reverse-indent">
 				<a class="c_white h:c_primary-3" href="//www.acc.org/education-and-meetings/maintenance-of-certification-information-hub">Understanding MOC</a>
@@ -7196,7 +7196,7 @@ pre {
 		<h2 class="font_1 font_slab m-t_4">
 			<a class="c_white h:c_primary-3" href="//www.acc.org/tools-and-practice-support">Tools and Practice Support</a>
 		</h2>
-		<ul class="ul_none font_0">
+		<ul class="ul_none font_0 flex flex_column">
 			<li class="reverse-indent">
 				<a class="c_white h:c_primary-3" href="http://cvquality.acc.org/">Quality Improvement for Institutions</a>
 			</li>
@@ -7309,7 +7309,7 @@ pre {
 				<span class="alt">logo_condensed-alt max-w_1</span>
 			</div>
 		</section>
-	<section class="l_0 m-t_4 r_0 social">
+	<section class="l_0 m-t_4 r_0 social m-t_4">
 			<ul class="flex social-bar ul_none c_white h:c_white m_0">
 				<li class="flex_auto m-r_2">
 					<a href="https://twitter.com/accintouch" target="_blank" class="twitter social-bar--button d_block m-b_0 p-x_5 p-y_3 c_white-8 h:c_white text_right h:bg_primary-n1"><i class="fab fa-twitter-square font_2"></i></a>
@@ -7379,8 +7379,10 @@ pre {
 */
 .reverse-indent {
   display: inline-block;
-  margin-left: 2em;
-  text-indent: -2em;
+  width: 100%;
+  margin-left: 1em;
+  padding-right: 1em;
+  text-indent: -1em;
 }
 
 .reverse-indent:after {

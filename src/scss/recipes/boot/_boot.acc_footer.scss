@@ -1,9 +1,9 @@
 /*
-	ACC.org Footer
+ACC.org Footer
 
-   The Footer of ACC.org 
-   
-   Markup:
+The Footer of ACC.org 
+
+Markup:
 <div id="footer-wrap" class="max-w_5">
 <!-- ********************************** breadcrumbs ********************************** -->
 <div id="breadcrumbs" class="bg_acc breadcrumbs-container c_white font_n1 p-x_4 p_2">
@@ -11,8 +11,8 @@
 	Home
 </div>
 <!-- This is the inner footer that we cache -->
-<div id="footer" role="contentinfo" class="bg_secondary-n3 flex p-x_3">
-	<div class="flex_auto p-x_3 p-y_4 w-grid_3">
+<div id="footer" role="contentinfo" class="bg_secondary-n3 flex_inline flex_wrap flex:md p-x_3">
+	<div class="flex_auto p-x_3 p-y_4 w-grid_3:lg w-grid_6:md ">
 		<h2 class="font_1 font_slab">
 			<a href="//www.acc.org/guidelines" target="_parent" title="Guidelines" class="c_white h:c_primary-3">Guidelines</a>
 		</h2>
@@ -105,7 +105,7 @@
 			</li>
 		</ul>
 	</div>
-	<div class="flex_auto p-x_3 p-y_4 w-grid_3">
+	<div class="flex_auto p-x_3 p-y_4 w-grid_3:lg w-grid_6:md">
 		<h2 class="font_1 font_slab">
 			<a class="c_white h:c_primary-3" href="//www.acc.org/clinical-topics">Clinical Topics</a>
 		</h2>
@@ -132,7 +132,7 @@
 				<a class="c_white h:c_primary-3" href="//www.acc.org/clinical-topics/congenital-heart-disease-pediatric-cardiology">Congenital Heart Disease and Pediatric Cardiology</a>
 			</li>
 			<li class="reverse-indent">
-				<a class="c_white h:c_primary-3" href="//www.acc.org/clinical-topics/diabetes-and-cardiometabolic-disease" style="\">Diabetes and Cardiometabolic Disease</a>
+				<a class="c_white h:c_primary-3" href="//www.acc.org/clinical-topics/diabetes-and-cardiometabolic-disease">Diabetes and Cardiometabolic Disease</a>
 			</li>
 			<li class="reverse-indent">
 				<a class="c_white h:c_primary-3" href="//www.acc.org/clinical-topics/dyslipidemia">Dyslipidemia</a>
@@ -173,7 +173,7 @@
 			</li>
 		</ul>
 	</div>
-	<div class="flex_auto p-x_3 p-y_4 w-grid_3">
+	<div class="flex_auto p-x_3 p-y_4 w-grid_3:lg w-grid_6:md">
 		<h2 class="font_1 font_slab">
 			<a class="c_white h:c_primary-3" href="//www.acc.org/latest-in-cardiology">Latest in Cardiology</a>
 		</h2>
@@ -253,7 +253,7 @@
 		</ul>
 	</div>
 	<!-- column 4 -->
-	<div class="flex_auto p-x_3 p-y_4 relative">
+	<div class="flex_auto p-x_3 p-y_4 w-grid_3:lg w-grid_6:md">
 		<section class="acc-websites m-y_3">
 			<nav class="clearfix d_block font_bold font_ui">
 				<ul class="font_1 lh_4 ul_none">
@@ -402,15 +402,17 @@
 	Styleguide Recipes.ACC.Footer
 
 */
-
-.reverse-indent {
-	margin-left: 1em;
-	text-indent: -1em;
-	display: inline-block;
-	width: calc(100% - 2em);
-}
-.reverse-indent:after {
-	content: "";
-	display: table;
-	clear: both;
+@media only screen and (min-width: 640px) {
+  .reverse-indent {
+    display: inline-block;
+    margin-left: 1em;
+    padding-right: 1em;
+    text-indent: -1em;
+    width: 100%;
+  }
+  .reverse-indent:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
 }
