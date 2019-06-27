@@ -1,4 +1,4 @@
-div[class^="texture_"] {
+div[class*="texture_"] {
   background-attachment: local;
   background-repeat: repeat;
   background-position: top right;

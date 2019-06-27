@@ -6,40 +6,40 @@ $texture-disabled: "../img/cross_disabled.png";
 $texture-cross: "../img/cross_color.png";
 $texture-connectwork: "../img/connectwork.png";
 
-div[class^="texture_"] {
-  background-attachment: local;
-  background-repeat: repeat;
-  background-position: top right;
-  background-origin: border-box;
+div[class*="texture_"] {
+	background-attachment: local;
+	background-repeat: repeat;
+	background-position: top right;
+	background-origin: border-box;
 }
 
 @mixin texture-light() {
-  background-image: url($texture-light);
+	background-image: url($texture-light);
 }
 @mixin texture-medium {
-  background-image: url($texture-medium);
+	background-image: url($texture-medium);
 }
 @mixin texture-dust {
-  background-image: url($texture-dust);
+	background-image: url($texture-dust);
 }
 @mixin texture-medium-shaded($level: 0) {
-  background-color: scale-color(map-get($theme-palette, secondary), $lightness: 20% * $level);
-  background-image: url($texture-medium);
+	background-color: scale-color(map-get($theme-palette, secondary), $lightness: 20% * $level);
+	background-image: url($texture-medium);
 }
 
 @mixin texture-dark() {
-  background-image: url($texture-dark);
+	background-image: url($texture-dark);
 }
 
 @mixin texture-disabled() {
-  background-image: url($texture-disabled);
+	background-image: url($texture-disabled);
 }
 
 @mixin texture-cross() {
-  background-image: url($texture-cross);
+	background-image: url($texture-cross);
 }
 @mixin texture-dynamic() {
-  background-image: url($texture-connectwork);
+	background-image: url($texture-connectwork);
 }
 
 /*

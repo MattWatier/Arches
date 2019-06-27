@@ -193,7 +193,7 @@ html {
 }
 
 /**  Textures  **/
-div[class^=texture_] {
+div[class*=texture_] {
   background-attachment: local;
   background-origin: border-box;
   background-position: top right;
@@ -219,8 +219,8 @@ div[class^=texture_] {
 
  */
 /**  Logos  **/
-[class^=logo_],
-[class^=seal_] {
+[class*=logo_],
+[class*=seal_] {
   overflow: hidden;
   background-color: transparent;
   background-position: center center;
@@ -228,22 +228,22 @@ div[class^=texture_] {
   background-size: contain;
   text-indent: -9999px;
 }
-[class^=logo_]:before,
-[class^=seal_]:before {
+[class*=logo_]:before,
+[class*=seal_]:before {
   width: 1px;
   height: 0;
   margin-left: -1px;
   float: left;
   content: "";
 }
-[class^=logo_]:after,
-[class^=seal_]:after {
+[class*=logo_]:after,
+[class*=seal_]:after {
   display: table;
   clear: both;
   content: "";
 }
-[class^=logo_] > .alt-text:before,
-[class^=seal_] > .alt-text:before {
+[class*=logo_] > .alt-text:before,
+[class*=seal_] > .alt-text:before {
   display: none;
 }
 
@@ -7455,6 +7455,42 @@ Styleguide DesignBase.Seals
 }
 
 /*
+Background Position
+
+Seals in the design come in 3 variations the default, small, and tiny.  All Seals will maintain their aspect ratios and will respond to the container, but seals have a max width.  For 508 compliance, please place the brand name in the seal.
+
+.bg_left	            - cardnial left
+.bg_top	            - cardnial left
+.bg_right	          - cardnial left
+.bg_bottom           - cardnial left
+
+markup:
+   <div class="bg_secondary-2 max-w_1 br_solid br_primary br_1"><div class="{{modifier_class}} seal_tiny" style="background-size:10%;width:200px; height:20px"><span class="alt">{{modifier_class}}</span></div></div>
+
+Styleguide Background.Image Positon
+
+*/
+.bg_left {
+  background-position: left center !important;
+}
+
+.bg_right {
+  background-position: right center !important;
+}
+
+.bg_top {
+  background-position: center top !important;
+}
+
+.bg_bottom {
+  background-position: center bottom !important;
+}
+
+.bg_center {
+  background-position: center center !important;
+}
+
+/*
 
 Lorem Text Loader
 
@@ -7490,13 +7526,13 @@ markup:
 
 Styleguide InteractiveExtras.Placeholder Aspect Ratio
 */
-div[class^=aspect_],
+div[class*=aspect_],
 .lorem-loader {
   width: 100%;
   overflow: hidden;
   text-indent: -9999px;
 }
-div[class^=aspect_]:before,
+div[class*=aspect_]:before,
 .lorem-loader:before {
   width: 1px;
   height: 0;
@@ -7504,7 +7540,7 @@ div[class^=aspect_]:before,
   float: left;
   content: "";
 }
-div[class^=aspect_]:after,
+div[class*=aspect_]:after,
 .lorem-loader:after {
   display: table;
   clear: both;
@@ -16617,21 +16653,21 @@ a:focus {
 }
 
 .button.shadow,
-*[class^=" hover:"],
-*[class^=" h:"] {
+*[class*=" hover:"],
+*[class*=" h:"] {
   cursor: pointer;
   transition: all ease-out 0.75s;
 }
 .button.shadow:focus,
-*[class^=" hover:"]:focus,
-*[class^=" h:"]:focus {
+*[class*=" hover:"]:focus,
+*[class*=" h:"]:focus {
   border: inherit;
   background: inherit;
   color: inherit;
 }
 
-*[class^="hover:c"],
-*[class^=" h:c"] {
+*[class*="hover:c"],
+*[class*=" h:c"] {
   transition: all ease-in 0.5s;
 }
 

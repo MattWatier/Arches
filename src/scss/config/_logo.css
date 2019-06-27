@@ -1,5 +1,5 @@
-[class^="logo_"],
-[class^="seal_"] {
+[class*="logo_"],
+[class*="seal_"] {
   background-color: transparent;
   background-size: contain;
   background-position: center center;
@@ -8,8 +8,8 @@
   overflow: hidden;
 }
 
-[class^="logo_"]:before,
-[class^="seal_"]:before {
+[class*="logo_"]:before,
+[class*="seal_"]:before {
   content: "";
   width: 1px;
   margin-left: -1px;
@@ -17,14 +17,14 @@
   height: 0;
 }
 
-[class^="logo_"]:after,
-[class^="seal_"]:after {
+[class*="logo_"]:after,
+[class*="seal_"]:after {
   content: "";
   display: table;
   clear: both;
 }
 
-[class^="logo_"] > .alt-text:before,
-[class^="seal_"] > .alt-text:before {
+[class*="logo_"] > .alt-text:before,
+[class*="seal_"] > .alt-text:before {
   display: none;
 }

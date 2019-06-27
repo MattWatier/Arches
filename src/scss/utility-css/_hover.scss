@@ -47,8 +47,8 @@ a:focus {
 	color: unset;
 }
 %hover_transition,
-*[class^=" hover:"],
-*[class^=" h\:"] {
+*[class*=" hover:"],
+*[class*=" h\:"] {
 	transition: all ease-out 0.75s; // used for backgrounds
 	cursor: pointer;
 	&:focus {
@@ -61,8 +61,8 @@ a:focus {
 	transition: all ease-in 0.5s; // used for text
 }
 
-*[class^="hover:c"],
-*[class^=" h:c"] {
+*[class*="hover:c"],
+*[class*=" h:c"] {
 	@extend %hover_transition-in;
 }
 @each $color-name, $color in $theme-palette {

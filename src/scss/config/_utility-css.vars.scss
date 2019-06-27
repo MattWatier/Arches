@@ -188,6 +188,13 @@ $value-to-unit: (
 		left: left,
 		right: right
 	),
+	background-position: (
+		left: left center,
+		right: right center,
+		top: center top,
+		bottom: center bottom,
+		center: center center
+	),
 	border-style: (
 		none: none,
 		solid: solid,
@@ -341,6 +348,14 @@ $style-definition: (
 		),
 		long-name: ".back",
 		unit: map-get($value-to-unit, "percent")
+	),
+	background-position: (
+		short-name: ".bg",
+		css-style: (
+			"background-position"
+		),
+		long-name: ".back",
+		unit: map-get($value-to-unit, "background-position")
 	),
 	border-color: (
 		short-name: ".br",

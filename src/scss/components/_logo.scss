@@ -16,40 +16,40 @@ Styleguide DesignBase.Logos
 */
 
 .logo_primary {
-  background-image: url(map-deep-get($logo, primary, url));
-  &:before {
-    padding-top: map-deep-get($logo, primary, aspectratio) * 100%;
-  }
-  > span.alt-text:before {
-    content: map-deep-get($logo, primary, alt);
-  }
+	background-image: url(map-deep-get($logo, primary, url));
+	&:before {
+		padding-top: map-deep-get($logo, primary, aspectratio) * 100%;
+	}
+	> span.alt-text:before {
+		content: map-deep-get($logo, primary, alt);
+	}
 }
 .logo_primary-alt {
-  background-image: url(map-deep-get($logo, primary_alt, url));
-  &:before {
-    padding-top: map-deep-get($logo, primary_alt, aspectratio) * 100%;
-  }
-  > span.alt-text:before {
-    content: map-deep-get($logo, primary_alt, alt);
-  }
+	background-image: url(map-deep-get($logo, primary_alt, url));
+	&:before {
+		padding-top: map-deep-get($logo, primary_alt, aspectratio) * 100%;
+	}
+	> span.alt-text:before {
+		content: map-deep-get($logo, primary_alt, alt);
+	}
 }
 .logo_condensed {
-  background-image: url(map-deep-get($logo, condensed, url));
-  &:before {
-    padding-top: map-deep-get($logo, condensed, aspectratio) * 100%;
-  }
-  > span.alt-text:before {
-    content: map-deep-get($logo, condensed, alt);
-  }
+	background-image: url(map-deep-get($logo, condensed, url));
+	&:before {
+		padding-top: map-deep-get($logo, condensed, aspectratio) * 100%;
+	}
+	> span.alt-text:before {
+		content: map-deep-get($logo, condensed, alt);
+	}
 }
 .logo_condensed-alt {
-  background-image: url(map-deep-get($logo, condensed_alt, url));
-  &:before {
-    padding-top: map-deep-get($logo, condensed_alt, aspectratio) * 100%;
-  }
-  > span.alt-text:before {
-    content: map-deep-get($logo, condensed_alt, alt);
-  }
+	background-image: url(map-deep-get($logo, condensed_alt, url));
+	&:before {
+		padding-top: map-deep-get($logo, condensed_alt, aspectratio) * 100%;
+	}
+	> span.alt-text:before {
+		content: map-deep-get($logo, condensed_alt, alt);
+	}
 }
 
 /*
@@ -70,31 +70,50 @@ Styleguide DesignBase.Seals
 */
 
 .seal_normal {
-  background-image: url(map-deep-get($seal, normal, url));
-  &:before {
-    padding-top: map-deep-get($seal, normal, aspectratio) * 100%;
-  }
-  > span.alt-text:before {
-    content: map-deep-get($seal, normal, alt);
-  }
+	background-image: url(map-deep-get($seal, normal, url));
+	&:before {
+		padding-top: map-deep-get($seal, normal, aspectratio) * 100%;
+	}
+	> span.alt-text:before {
+		content: map-deep-get($seal, normal, alt);
+	}
 }
 .seal_small {
-  background-image: url(map-deep-get($seal, small, url));
-  max-width: 100px;
-  &:before {
-    padding-top: map-deep-get($seal, small, aspectratio) * 100%;
-  }
-  > span.alt-text:before {
-    content: map-deep-get($seal, small, alt);
-  }
+	background-image: url(map-deep-get($seal, small, url));
+	max-width: 100px;
+	&:before {
+		padding-top: map-deep-get($seal, small, aspectratio) * 100%;
+	}
+	> span.alt-text:before {
+		content: map-deep-get($seal, small, alt);
+	}
 }
 .seal_tiny {
-  background-image: url(map-deep-get($seal, tiny, url));
-  max-width: 40px;
-  &:before {
-    padding-top: map-deep-get($seal, tiny, aspectratio) * 100%;
-  }
-  > span.alt-text:before {
-    content: map-deep-get($seal, tiny, alt);
-  }
+	background-image: url(map-deep-get($seal, tiny, url));
+	max-width: 40px;
+	&:before {
+		padding-top: map-deep-get($seal, tiny, aspectratio) * 100%;
+	}
+	> span.alt-text:before {
+		content: map-deep-get($seal, tiny, alt);
+	}
 }
+
+/*
+Background Position
+
+Seals in the design come in 3 variations the default, small, and tiny.  All Seals will maintain their aspect ratios and will respond to the container, but seals have a max width.  For 508 compliance, please place the brand name in the seal.
+
+.bg_left	            - cardnial left
+.bg_top	            - cardnial left
+.bg_right	          - cardnial left
+.bg_bottom           - cardnial left
+
+markup:
+   <div class="bg_secondary-2 max-w_1 br_solid br_primary br_1"><div class="{{modifier_class}} seal_tiny" style="background-size:10%;width:200px; height:20px"><span class="alt">{{modifier_class}}</span></div></div>
+
+Styleguide Background.Image Positon
+
+*/
+
+@include loop-style(background-position, "", "!important");

@@ -34,14 +34,14 @@ markup:
 
 Styleguide InteractiveExtras.Placeholder Aspect Ratio
 */
-div[class^="aspect_"],
+div[class*="aspect_"],
 .lorem-loader {
   width: 100%;
   overflow: hidden;
   text-indent: -9999px;
 }
 
-div[class^="aspect_"]:before,
+div[class*="aspect_"]:before,
 .lorem-loader:before {
   content: "";
   width: 1px;
@@ -50,7 +50,7 @@ div[class^="aspect_"]:before,
   height: 0;
 }
 
-div[class^="aspect_"]:after,
+div[class*="aspect_"]:after,
 .lorem-loader:after {
   content: "";
   display: table;

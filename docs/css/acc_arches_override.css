@@ -2167,6 +2167,22 @@
 
   */
   /*
+  Background Position
+
+  Seals in the design come in 3 variations the default, small, and tiny.  All Seals will maintain their aspect ratios and will respond to the container, but seals have a max width.  For 508 compliance, please place the brand name in the seal.
+
+  .bg_left	            - cardnial left
+  .bg_top	            - cardnial left
+  .bg_right	          - cardnial left
+  .bg_bottom           - cardnial left
+
+  markup:
+     <div class="bg_secondary-2 max-w_1 br_solid br_primary br_1"><div class="{{modifier_class}} seal_tiny" style="background-size:10%;width:200px; height:20px"><span class="alt">{{modifier_class}}</span></div></div>
+
+  Styleguide Background.Image Positon
+
+  */
+  /*
 
   Lorem Text Loader
 
@@ -4614,14 +4630,14 @@
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   line-break: white-space;
 }
-#acc_arches_override div[class^=texture_] {
+#acc_arches_override div[class*=texture_] {
   background-attachment: local;
   background-origin: border-box;
   background-position: top right;
   background-repeat: repeat;
 }
-#acc_arches_override [class^=logo_],
-#acc_arches_override [class^=seal_] {
+#acc_arches_override [class*=logo_],
+#acc_arches_override [class*=seal_] {
   overflow: hidden;
   background-color: transparent;
   background-position: center center;
@@ -4629,22 +4645,22 @@
   background-size: contain;
   text-indent: -9999px;
 }
-#acc_arches_override [class^=logo_]:before,
-#acc_arches_override [class^=seal_]:before {
+#acc_arches_override [class*=logo_]:before,
+#acc_arches_override [class*=seal_]:before {
   width: 1px;
   height: 0;
   margin-left: -1px;
   float: left;
   content: "";
 }
-#acc_arches_override [class^=logo_]:after,
-#acc_arches_override [class^=seal_]:after {
+#acc_arches_override [class*=logo_]:after,
+#acc_arches_override [class*=seal_]:after {
   display: table;
   clear: both;
   content: "";
 }
-#acc_arches_override [class^=logo_] > .alt-text:before,
-#acc_arches_override [class^=seal_] > .alt-text:before {
+#acc_arches_override [class*=logo_] > .alt-text:before,
+#acc_arches_override [class*=seal_] > .alt-text:before {
   display: none;
 }
 #acc_arches_override h1, #acc_arches_override h2, #acc_arches_override h3, #acc_arches_override h4, #acc_arches_override h5, #acc_arches_override h6, #acc_arches_override p, #acc_arches_override td, #acc_arches_override th {
@@ -4726,13 +4742,28 @@
 #acc_arches_override .seal_tiny > span.alt-text:before {
   content: "Seal of the American College Of Cardiology";
 }
-#acc_arches_override div[class^=aspect_],
+#acc_arches_override .bg_left {
+  background-position: left center !important;
+}
+#acc_arches_override .bg_right {
+  background-position: right center !important;
+}
+#acc_arches_override .bg_top {
+  background-position: center top !important;
+}
+#acc_arches_override .bg_bottom {
+  background-position: center bottom !important;
+}
+#acc_arches_override .bg_center {
+  background-position: center center !important;
+}
+#acc_arches_override div[class*=aspect_],
 #acc_arches_override .lorem-loader {
   width: 100%;
   overflow: hidden;
   text-indent: -9999px;
 }
-#acc_arches_override div[class^=aspect_]:before,
+#acc_arches_override div[class*=aspect_]:before,
 #acc_arches_override .lorem-loader:before {
   width: 1px;
   height: 0;
@@ -4740,7 +4771,7 @@
   float: left;
   content: "";
 }
-#acc_arches_override div[class^=aspect_]:after,
+#acc_arches_override div[class*=aspect_]:after,
 #acc_arches_override .lorem-loader:after {
   display: table;
   clear: both;
@@ -9665,19 +9696,19 @@
 #acc_arches_override a:focus {
   color: unset;
 }
-#acc_arches_override *[class^=" hover:"],
-#acc_arches_override *[class^=" h:"] {
+#acc_arches_override *[class*=" hover:"],
+#acc_arches_override *[class*=" h:"] {
   cursor: pointer;
   transition: all ease-out 0.75s;
 }
-#acc_arches_override *[class^=" hover:"]:focus,
-#acc_arches_override *[class^=" h:"]:focus {
+#acc_arches_override *[class*=" hover:"]:focus,
+#acc_arches_override *[class*=" h:"]:focus {
   border: inherit;
   background: inherit;
   color: inherit;
 }
-#acc_arches_override *[class^="hover:c"],
-#acc_arches_override *[class^=" h:c"] {
+#acc_arches_override *[class*="hover:c"],
+#acc_arches_override *[class*=" h:c"] {
   transition: all ease-in 0.5s;
 }
 #acc_arches_override .h\:bg_primary:hover {

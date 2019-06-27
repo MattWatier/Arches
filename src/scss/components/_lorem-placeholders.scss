@@ -35,7 +35,7 @@ markup:
 
 Styleguide InteractiveExtras.Placeholder Aspect Ratio
 */
-div[class^="aspect_"],
+div[class*="aspect_"],
 .lorem-loader {
 	width: 100%;
 	overflow: hidden;
