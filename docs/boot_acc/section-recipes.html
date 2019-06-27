@@ -78,9 +78,21 @@
                       </a>
                     </li>
                     <li class="kss-nav__item kss-nav__item--grandchild">
-                      <a href="section-recipes.html#kssref-recipes-acc-footer">
+                      <a href="section-recipes.html#kssref-recipes-acc-branded-nav">
                         <span class="kss-nav__ref">4.1.1</span>
+                        <span class="kss-nav__name">Basic Branding Nav</span>
+                      </a>
+                    </li>
+                    <li class="kss-nav__item kss-nav__item--grandchild">
+                      <a href="section-recipes.html#kssref-recipes-acc-footer">
+                        <span class="kss-nav__ref">4.1.2</span>
                         <span class="kss-nav__name">ACC.org Footer</span>
+                      </a>
+                    </li>
+                    <li class="kss-nav__item kss-nav__item--grandchild">
+                      <a href="section-recipes.html#kssref-recipes-acc-header-nav">
+                        <span class="kss-nav__ref">4.1.3</span>
+                        <span class="kss-nav__name">ACC.org Nav</span>
                       </a>
                     </li>
                 </ul>
@@ -205,6 +217,126 @@
 
 
             </section>
+            <section class="kss-section kss-section--depth-3" id="kssref-recipes-acc-branded-nav">
+
+            <article class="kss-section__content">
+                <p class="kss-section__source">Source: <span>boot_acc.css</span>, line <span>7877</span></p>
+
+              <a class="kss-section__permalink" href="#kssref-recipes-acc-branded-nav">
+                <h3 class="kss-section__item kss-section__item--depth-3">
+                  <span class="kss-section__ref">4.1.1</span>
+                  <span class="kss-section__name">Basic Branding Nav</span>
+                </h3>
+              </a>
+
+                <div class="kss-section__description"><p>The Header Nav of ACC.org</p>
+</div>
+
+            </article>
+
+              <article class="kss-section__modifiers">
+                <h1 class="kss-modifiers__heading">Example</h1>
+
+
+                <div class="kss-modifiers__example"><nav class="navbar navbar-expand-lg navbar-light bg_acc">
+	<a class="navbar-brand c_white" href="#"><i class="fas fa-home"></i></a>
+	<button
+		class="navbar-toggler c_white-5"
+		type="button"
+		data-toggle="collapse"
+		data-target="#navbarSupportedContent"
+		aria-controls="navbarSupportedContent"
+		aria-expanded="false"
+		aria-label="Toggle navigation"
+	>
+		<i class="icon-toggle_bars-times fas"></i>
+	</button>
+	<div class="collapse navbar-collapse" id="navbarSupportedContent">
+		<ul class="navbar-nav mr-auto c_white font_slab">
+			<li class="nav-item active ">
+				<a class="nav-link font_slab c_white" href="#">Clinical Topics</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link font_slab c_white" href="#">Latest In Cardiology</a>
+			</li>
+			<li class="nav-item dropdown">
+				<a
+					class="nav-link font_slab c_white dropdown-toggle"
+					href="#"
+					id="navbarDropdown"
+					role="button"
+					data-toggle="dropdown"
+					aria-haspopup="true"
+					aria-expanded="false"
+				>
+					Education and Meetings
+				</a>
+				<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+					<a class="dropdown-item" href="#">Action</a>
+					<a class="dropdown-item" href="#">Another action</a>
+					<div class="dropdown-divider"></div>
+					<a class="dropdown-item" href="#">Something else here</a>
+				</div>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link font_slab c_white" href="#">Tools &amp; Practice Support</a>
+			</li>
+		</ul>
+	</div>
+</nav></div>
+
+              </article>
+
+                <article class="kss-section__markup">
+                  <pre><code class="language-markup">&lt;nav class&#x3D;&quot;navbar navbar-expand-lg navbar-light bg_acc&quot;&gt;
+	&lt;a class&#x3D;&quot;navbar-brand c_white&quot; href&#x3D;&quot;#&quot;&gt;&lt;i class&#x3D;&quot;fas fa-home&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+	&lt;button
+		class&#x3D;&quot;navbar-toggler c_white-5&quot;
+		type&#x3D;&quot;button&quot;
+		data-toggle&#x3D;&quot;collapse&quot;
+		data-target&#x3D;&quot;#navbarSupportedContent&quot;
+		aria-controls&#x3D;&quot;navbarSupportedContent&quot;
+		aria-expanded&#x3D;&quot;false&quot;
+		aria-label&#x3D;&quot;Toggle navigation&quot;
+	&gt;
+		&lt;i class&#x3D;&quot;icon-toggle_bars-times fas&quot;&gt;&lt;/i&gt;
+	&lt;/button&gt;
+	&lt;div class&#x3D;&quot;collapse navbar-collapse&quot; id&#x3D;&quot;navbarSupportedContent&quot;&gt;
+		&lt;ul class&#x3D;&quot;navbar-nav mr-auto c_white font_slab&quot;&gt;
+			&lt;li class&#x3D;&quot;nav-item active &quot;&gt;
+				&lt;a class&#x3D;&quot;nav-link font_slab c_white&quot; href&#x3D;&quot;#&quot;&gt;Clinical Topics&lt;/a&gt;
+			&lt;/li&gt;
+			&lt;li class&#x3D;&quot;nav-item&quot;&gt;
+				&lt;a class&#x3D;&quot;nav-link font_slab c_white&quot; href&#x3D;&quot;#&quot;&gt;Latest In Cardiology&lt;/a&gt;
+			&lt;/li&gt;
+			&lt;li class&#x3D;&quot;nav-item dropdown&quot;&gt;
+				&lt;a
+					class&#x3D;&quot;nav-link font_slab c_white dropdown-toggle&quot;
+					href&#x3D;&quot;#&quot;
+					id&#x3D;&quot;navbarDropdown&quot;
+					role&#x3D;&quot;button&quot;
+					data-toggle&#x3D;&quot;dropdown&quot;
+					aria-haspopup&#x3D;&quot;true&quot;
+					aria-expanded&#x3D;&quot;false&quot;
+				&gt;
+					Education and Meetings
+				&lt;/a&gt;
+				&lt;div class&#x3D;&quot;dropdown-menu&quot; aria-labelledby&#x3D;&quot;navbarDropdown&quot;&gt;
+					&lt;a class&#x3D;&quot;dropdown-item&quot; href&#x3D;&quot;#&quot;&gt;Action&lt;/a&gt;
+					&lt;a class&#x3D;&quot;dropdown-item&quot; href&#x3D;&quot;#&quot;&gt;Another action&lt;/a&gt;
+					&lt;div class&#x3D;&quot;dropdown-divider&quot;&gt;&lt;/div&gt;
+					&lt;a class&#x3D;&quot;dropdown-item&quot; href&#x3D;&quot;#&quot;&gt;Something else here&lt;/a&gt;
+				&lt;/div&gt;
+			&lt;/li&gt;
+			&lt;li class&#x3D;&quot;nav-item&quot;&gt;
+				&lt;a class&#x3D;&quot;nav-link font_slab c_white&quot; href&#x3D;&quot;#&quot;&gt;Tools &amp;amp; Practice Support&lt;/a&gt;
+			&lt;/li&gt;
+		&lt;/ul&gt;
+	&lt;/div&gt;
+&lt;/nav&gt;</code></pre>
+                </article>
+
+            </section>
             <section class="kss-section kss-section--depth-3" id="kssref-recipes-acc-footer">
 
             <article class="kss-section__content">
@@ -212,7 +344,7 @@
 
               <a class="kss-section__permalink" href="#kssref-recipes-acc-footer">
                 <h3 class="kss-section__item kss-section__item--depth-3">
-                  <span class="kss-section__ref">4.1.1</span>
+                  <span class="kss-section__ref">4.1.2</span>
                   <span class="kss-section__name">ACC.org Footer</span>
                 </h3>
               </a>
@@ -1017,6 +1149,906 @@
 	&lt;/p&gt;
 &lt;/div&gt;
 &lt;!-- /subfooter --&gt;
+&lt;/div&gt;</code></pre>
+                </article>
+
+            </section>
+            <section class="kss-section kss-section--depth-3" id="kssref-recipes-acc-header-nav">
+
+            <article class="kss-section__content">
+                <p class="kss-section__source">Source: <span>boot_acc.css</span>, line <span>7431</span></p>
+
+              <a class="kss-section__permalink" href="#kssref-recipes-acc-header-nav">
+                <h3 class="kss-section__item kss-section__item--depth-3">
+                  <span class="kss-section__ref">4.1.3</span>
+                  <span class="kss-section__name">ACC.org Nav</span>
+                </h3>
+              </a>
+
+                <div class="kss-section__description"><p>The Header Nav of ACC.org</p>
+</div>
+
+            </article>
+
+              <article class="kss-section__modifiers">
+                <h1 class="kss-modifiers__heading">Example</h1>
+
+
+                <div class="kss-modifiers__example"><div id="nav-primary-holder">
+	<div id="myacc-holder">
+		<div class="logged-in">
+			<div id="header-personal">
+				<p>Matt A Watier, BA | <a href="/RemoteLogOff"> Logout</a></p>
+			</div>
+			<ul id="nav-myacc">
+				<li class="header-link header-myacc arrow-down">
+					<span class="no-link">My ACC</span>
+					<div class="dropdown">
+						<ul>
+							<li>
+								<a href="/my-acc/my-profile">My Profile</a>
+							</li>
+							<li>
+								<a href="/my-acc/my-training-program">My Training Programs</a>
+							</li>
+							<li>
+								<a href="/my-acc/my-membership">My Membership</a>
+							</li>
+							<li>
+								<a href="/my-acc/my-library">My Library</a>
+							</li>
+							<li>
+								<a href="http://edu.acc.org/diweb/dashboard">My Learning Dashboard</a>
+							</li>
+							<li>
+								<a href="http://edu.acc.org/diweb/grades">My Transcript</a>
+							</li>
+							<li>
+								<a href="/my-acc/ncdr-physician-dashboard">NCDR Physician Dashboard</a>
+							</li>
+							<li>
+								<a href="/my-acc/my-communication-preferences">My Communication Preferences</a>
+							</li>
+							<li>
+								<a href="https://memberhub.acc.org/">ACC Member Hub</a>
+							</li>
+							<li>
+								<a href="/my-acc/my-purchase-history">My Purchases</a>
+							</li>
+							<li>
+								<a href="/my-acc/personalization">Personalize ACC.org</a>
+							</li>
+							<li>
+								<a href="/RemoteLogOff"> Logout</a>
+							</li>
+						</ul>
+					</div>
+				</li>
+				<li
+					class="header-link header-myacc-cart nav-tooltip"
+					data-placement="top"
+					data-toggle="tooltip"
+					data-original-title="Cart"
+				>
+					<a href="/single-sign-on/ecommerce/shopping-cart" class="iconit"> </a>
+				</li>
+			</ul>
+			<!-- full-nav-holder -->
+		</div>
+	</div>
+	<!-- myacc-holder -->
+	<!-- main navigation -->
+	<div id="header-mobile-trigger">Menu</div>
+	<div
+		class="header-link header-home nav-tooltip"
+		data-placement="top"
+		data-toggle="tooltip"
+		data-original-title="Home"
+	>
+		<a href="/">Home</a>
+	</div>
+	<div id="nav-utility-handheld"></div>
+	<ul id="nav-primary" role="navigation">
+		<li class="header-link header-clinical">
+			<span class="toggler"></span>
+			<a href="/clinical-topics">Clinical Topics</a>
+			<div class="dropdown">
+				<div class="set-one">
+					<ul class="nav-level-1">
+						<li>
+							<a href="/clinical-topics/acute-coronary-syndromes">Acute Coronary Syndromes</a>
+						</li>
+						<li>
+							<a href="/clinical-topics/anticoagulation-management" title="Anticoagulation Management"
+								>Anticoagulation Management</a
+							>
+						</li>
+						<li>
+							<a href="/clinical-topics/arrhythmias-and-clinical-ep">Arrhythmias and Clinical EP</a>
+						</li>
+						<li>
+							<a href="/clinical-topics/acute-coronary-syndromes/atherosclerotic-disease-cad-pad"
+								>Atherosclerotic Disease (CAD/PAD)</a
+							>
+						</li>
+						<li>
+							<a href="/clinical-topics/cardiac-surgery">Cardiac Surgery</a>
+						</li>
+						<li>
+							<a href="/clinical-topics/cardio-oncology">Cardio-Oncology</a>
+						</li>
+						<li>
+							<a href="/clinical-topics/congenital-heart-disease-pediatric-cardiology"
+								>Congenital Heart Disease and Pediatric Cardiology</a
+							>
+						</li>
+						<li>
+							<a href="/clinical-topics/diabetes-and-cardiometabolic-disease"
+								>Diabetes and Cardiometabolic Disease</a
+							>
+						</li>
+						<li>
+							<a href="/clinical-topics/dyslipidemia" title="Dyslipidemia">Dyslipidemia</a>
+						</li>
+						<li>
+							<a href="/clinical-topics/geriatric-cardiology">Geriatric Cardiology</a>
+						</li>
+						<li>
+							<a
+								href="/clinical-topics/heart-failure-and-cardiomyopathies"
+								title="Heart Failure and Cardiomyopathies"
+								>Heart Failure and Cardiomyopathies</a
+							>
+						</li>
+					</ul>
+				</div>
+				<div class="set-two">
+					<ul class="nav-level-1">
+						<li>
+							<a href="/clinical-topics/dyslipidemia/hypertriglyceridemia">Hypertriglyceridemia</a>
+						</li>
+						<li>
+							<a
+								href="/clinical-topics/invasive-cardiovascular-angiography-and-intervention"
+								title="Invasive Cardiovascular Angiography and Intervention"
+								>Invasive Cardiovascular Angiography and Intervention</a
+							>
+						</li>
+						<li>
+							<a href="/clinical-topics/noninvasive-imaging" title="Noninvasive Imaging"
+								>Noninvasive Imaging</a
+							>
+						</li>
+						<li>
+							<a href="/clinical-topics/pericardial-disease" title="Pericardial Disease"
+								>Pericardial Disease</a
+							>
+						</li>
+						<li>
+							<a href="/clinical-topics/prevention" title="Prevention">Prevention</a>
+						</li>
+						<li>
+							<a href="/clinical-topics/pulmonary-hypertension-and-venous-thromboembolism"
+								>Pulmonary Hypertension and Venous Thromboembolism</a
+							>
+						</li>
+						<li>
+							<a href="/clinical-topics/sports-and-exercise-cardiology">Sports and Exercise Cardiology</a>
+						</li>
+						<li>
+							<a
+								href="/clinical-topics/stable-ischemic-heart-disease"
+								title="Stable Ischemic Heart Disease"
+								>Stable Ischemic Heart Disease</a
+							>
+						</li>
+						<li>
+							<a href="/clinical-topics/valvular-heart-disease">Valvular Heart Disease</a>
+						</li>
+						<li>
+							<a href="/clinical-topics/vascular-medicine">Vascular Medicine</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</li>
+		<li class="header-link header-latest">
+			<span class="toggler"></span>
+			<a href="/latest-in-cardiology">Latest In Cardiology</a>
+			<div class="dropdown">
+				<ul class="nav-level-1">
+					<li>
+						<a href="/latest-in-cardiology#theme=Clinical Updates and Discoveries"
+							>Clinical Updates &amp; Discoveries</a
+						>
+					</li>
+					<li>
+						<a href="/latest-in-cardiology#theme=Advocacy and Policy">Advocacy &amp; Policy</a>
+					</li>
+					<li>
+						<a href="/latest-in-cardiology#theme=Perspectives and Analysis">Perspectives &amp; Analysis</a>
+					</li>
+					<li>
+						<a href="/latest-in-cardiology/features/acc-meeting-coverage">Meeting Coverage</a>
+					</li>
+					<li>
+						<a href="/membership/member-benefits-and-resources/acc-member-publications"
+							>ACC Member Publications</a
+						>
+					</li>
+					<li>
+						<a href="/latest-in-cardiology/features/podcasts">ACC Podcasts</a>
+					</li>
+					<li>
+						<a href="/latest-in-cardiology" class="lvl2">View All Cardiology Updates</a>
+					</li>
+				</ul>
+			</div>
+		</li>
+		<li class="header-link header-education">
+			<span class="toggler"></span>
+			<a href="/education-and-meetings">Education and Meetings</a>
+			<div class="dropdown">
+				<div class="set-one">
+					<ul class="nav-level-1">
+						<li>
+							<span class="toggler"></span>
+							<a href="/education-and-meetings/education-catalog">Online Learning Catalog</a>
+							<ul class="nav-level-2">
+								<li><a href="/earncredit">Earn Credit</a></li>
+								<li>
+									<a
+										href="/education-and-meetings/products-and-resources/board-prep-offerings"
+										title="Board Prep Offerings"
+										>Board Prep Offerings</a
+									>
+								</li>
+								<li><a href="/education-and-meetings/education-catalog">View the Entire Catalog</a></li>
+							</ul>
+						</li>
+						<li>
+							<span class="toggler"></span>
+							<a href="/education-and-meetings/education-catalog">Products</a>
+							<ul class="nav-level-2">
+								<li><a href="/education-and-meetings/products-and-resources/accsap">ACCSAP</a></li>
+								<li><a href="/education-and-meetings/products-and-resources/accel-audio">ACCEL</a></li>
+								<li>
+									<a href="/education-and-meetings/products-and-resources/cardiosource-plus"
+										>CardioSource Plus for Institutions and Practices</a
+									>
+								</li>
+								<li><a href="/education-and-meetings/products-and-resources/cathsap">CathSAP</a></li>
+								<li>
+									<a
+										href="/education-and-meetings/products-and-resources/ecg-drill-and-practice"
+										title="ECG Drill and Practice"
+										>ECG Drill and Practice</a
+									>
+								</li>
+								<li><a href="/education-and-meetings/products-and-resources/echosap">EchoSAP </a></li>
+								<li><a href="/education-and-meetings/products-and-resources/epsap">EP SAP</a></li>
+								<li>
+									<a href="/education-and-meetings/products-and-resources/heart-songs-5"
+										>Heart Songs</a
+									>
+								</li>
+								<li><a href="/education-and-meetings/products-and-resources/iscience">iScience</a></li>
+								<li>
+									<a
+										href="/education-and-meetings/products-and-resources/recent-advances-in-clinical-nuclear-cardiology-and-cardiac-ct-mod"
+										>Nuclear Cardiology and Cardiac CT Meeting on Demand</a
+									>
+								</li>
+								<li>
+									<a
+										href="/education-and-meetings/products-and-resources/rightsteps-optimizing-medical-therapy-for-chronic-heart-failure"
+										>RightSTEPS Optimizing Medical Therapy for Chronic Heart Failure</a
+									>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<div class="set-two">
+					<ul class="nav-level-1">
+						<li>
+							<a href="/education-and-meetings/products-and-resources">Resources</a>
+						</li>
+						<li>
+							<a href="/education-and-meetings/products-and-resources/guideline-education"
+								>Guideline Education</a
+							>
+						</li>
+						<li>
+							<a href="/education-and-meetings/maintenance-of-certification-information-hub"
+								>Understanding MOC</a
+							>
+						</li>
+						<li>
+							<a href="/education-and-meetings/image-and-slide-gallery">Image and Slide Gallery</a>
+						</li>
+						<li>
+							<span class="toggler"></span>
+							<a href="/education-and-meetings/meetings">Meetings</a>
+							<ul class="nav-level-2">
+								<li>
+									<a
+										href="http://accscientificsession.acc.org"
+										class="new-window-icon"
+										target="_blank"
+										>Annual Scientific Session and Related Events</a
+									>
+								</li>
+								<li>
+									<a
+										href="http://www.acc.org/education-and-meetings/meetings?w_nav=MN#type=Chapter Meetings"
+										>Chapter Meetings</a
+									>
+								</li>
+								<li>
+									<a
+										href="http://www.acc.org/education-and-meetings/meetings?w_nav=MN#type=Live Meetings"
+										class="lvl2"
+										>Live Meetings</a
+									>
+								</li>
+								<li>
+									<a href="/education-and-meetings/meetings#type=Webinars - Live" class="lvl2"
+										>Webinars - Live</a
+									>
+								</li>
+								<li>
+									<a
+										href="/education-and-meetings/meetings?view=archive&amp;#type=Webinars - OnDemand"
+										>Webinars - OnDemand</a
+									>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</li>
+		<li class="header-link header-tools">
+			<span class="toggler"></span>
+			<a href="/tools-and-practice-support">Tools and Practice Support</a>
+			<div class="dropdown">
+				<div class="set-one">
+					<ul class="nav-level-1">
+						<li class="with-image">
+							<a href="http://cvquality.acc.org/" target="_blank"
+								><img src="/~/media/Non-Clinical/Images/External Site Logos/ACC_QII_logo.png" alt="QII"
+							/></a>
+						</li>
+						<li class="with-image">
+							<a href="http://cvquality.acc.org/NCDR-Home.aspx" target="_blank"
+								><img
+									src="/~/media/Non-Clinical/Images/External Site Logos/ACC_NCDR_logo.png"
+									alt="NCDR"
+							/></a>
+						</li>
+						<li class="with-image">
+							<a href="https://www.medaxiom.com/" target="_blank"
+								><img
+									src="/~/media/Non-Clinical/Images/External Site Logos/ACC_MEDAXIOM_SIG_TRANSITIONAL.jpg"
+									alt="MedAxiom"
+							/></a>
+						</li>
+						<li class="with-image">
+							<a href="https://www.cardiosmart.org/For-Clinicians" target="_blank"
+								><img
+									src="/~/media/Non-Clinical/Images/External Site Logos/Cardiosmart_logo_color.jpg"
+									alt="CardioSmart"
+							/></a>
+						</li>
+						<li class="with-image">
+							<a href="http://accreditation.acc.org" target="_blank"
+								><img
+									src="/~/media/Non-Clinical/Images/External Site Logos/acc-accreditation-services-logo.png"
+									alt="ACC Accreditation Services"
+							/></a>
+						</li>
+					</ul>
+				</div>
+				<div class="set-two">
+					<ul class="nav-level-1">
+						<li>
+							<span class="toggler"></span>
+							<a href="/tools-and-practice-support/advocacy-at-the-acc">Advocacy at the ACC</a>
+							<ul class="nav-level-2">
+								<li>
+									<a href="/tools-and-practice-support/advocacy-at-the-acc/advocacy-action"
+										>Advocacy Action</a
+									>
+								</li>
+								<li>
+									<a
+										href="/tools-and-practice-support/advocacy-at-the-acc/health-policy-issue-center/alternative-payment-model-framework"
+										>Alternative Payment Model Framework</a
+									>
+								</li>
+								<li>
+									<a href="/tools-and-practice-support/advocacy-at-the-acc/acc-legislative-conference"
+										>Legislative Conference</a
+									>
+								</li>
+								<li><a href="http://www.acc.org/macra/index.html" target="_blank">MACRA/QPP Hub</a></li>
+								<li>
+									<a
+										href="/tools-and-practice-support/advocacy-at-the-acc/acc-political-action-committee"
+										>ACC Political Action Committee</a
+									>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="http://www.healthecareers.com/acc" class="new-window-icon" target="_blank"
+								>Cardiology Careers</a
+							>
+						</li>
+						<li>
+							<a href="/tools-and-practice-support/clinical-toolkits">Clinical Toolkits</a>
+						</li>
+						<li>
+							<a href="/tools-and-practice-support/expert-consensus-decision-pathways"
+								>Expert Consensus Decision Pathways</a
+							>
+						</li>
+						<li>
+							<a href="/tools-and-practice-support/infographics">Infographics</a>
+						</li>
+						<li>
+							<a href="/tools-and-practice-support/mobile-resources">Mobile Apps</a>
+						</li>
+						<li>
+							<a href="/tools-and-practice-support/quality-programs">Quality Programs</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</li>
+	</ul>
+	<!-- main-nav -->
+</div></div>
+
+              </article>
+
+                <article class="kss-section__markup">
+                  <pre><code class="language-markup">&lt;div id&#x3D;&quot;nav-primary-holder&quot;&gt;
+	&lt;div id&#x3D;&quot;myacc-holder&quot;&gt;
+		&lt;div class&#x3D;&quot;logged-in&quot;&gt;
+			&lt;div id&#x3D;&quot;header-personal&quot;&gt;
+				&lt;p&gt;Matt A Watier, BA | &lt;a href&#x3D;&quot;/RemoteLogOff&quot;&gt; Logout&lt;/a&gt;&lt;/p&gt;
+			&lt;/div&gt;
+			&lt;ul id&#x3D;&quot;nav-myacc&quot;&gt;
+				&lt;li class&#x3D;&quot;header-link header-myacc arrow-down&quot;&gt;
+					&lt;span class&#x3D;&quot;no-link&quot;&gt;My ACC&lt;/span&gt;
+					&lt;div class&#x3D;&quot;dropdown&quot;&gt;
+						&lt;ul&gt;
+							&lt;li&gt;
+								&lt;a href&#x3D;&quot;/my-acc/my-profile&quot;&gt;My Profile&lt;/a&gt;
+							&lt;/li&gt;
+							&lt;li&gt;
+								&lt;a href&#x3D;&quot;/my-acc/my-training-program&quot;&gt;My Training Programs&lt;/a&gt;
+							&lt;/li&gt;
+							&lt;li&gt;
+								&lt;a href&#x3D;&quot;/my-acc/my-membership&quot;&gt;My Membership&lt;/a&gt;
+							&lt;/li&gt;
+							&lt;li&gt;
+								&lt;a href&#x3D;&quot;/my-acc/my-library&quot;&gt;My Library&lt;/a&gt;
+							&lt;/li&gt;
+							&lt;li&gt;
+								&lt;a href&#x3D;&quot;http://edu.acc.org/diweb/dashboard&quot;&gt;My Learning Dashboard&lt;/a&gt;
+							&lt;/li&gt;
+							&lt;li&gt;
+								&lt;a href&#x3D;&quot;http://edu.acc.org/diweb/grades&quot;&gt;My Transcript&lt;/a&gt;
+							&lt;/li&gt;
+							&lt;li&gt;
+								&lt;a href&#x3D;&quot;/my-acc/ncdr-physician-dashboard&quot;&gt;NCDR Physician Dashboard&lt;/a&gt;
+							&lt;/li&gt;
+							&lt;li&gt;
+								&lt;a href&#x3D;&quot;/my-acc/my-communication-preferences&quot;&gt;My Communication Preferences&lt;/a&gt;
+							&lt;/li&gt;
+							&lt;li&gt;
+								&lt;a href&#x3D;&quot;https://memberhub.acc.org/&quot;&gt;ACC Member Hub&lt;/a&gt;
+							&lt;/li&gt;
+							&lt;li&gt;
+								&lt;a href&#x3D;&quot;/my-acc/my-purchase-history&quot;&gt;My Purchases&lt;/a&gt;
+							&lt;/li&gt;
+							&lt;li&gt;
+								&lt;a href&#x3D;&quot;/my-acc/personalization&quot;&gt;Personalize ACC.org&lt;/a&gt;
+							&lt;/li&gt;
+							&lt;li&gt;
+								&lt;a href&#x3D;&quot;/RemoteLogOff&quot;&gt; Logout&lt;/a&gt;
+							&lt;/li&gt;
+						&lt;/ul&gt;
+					&lt;/div&gt;
+				&lt;/li&gt;
+				&lt;li
+					class&#x3D;&quot;header-link header-myacc-cart nav-tooltip&quot;
+					data-placement&#x3D;&quot;top&quot;
+					data-toggle&#x3D;&quot;tooltip&quot;
+					data-original-title&#x3D;&quot;Cart&quot;
+				&gt;
+					&lt;a href&#x3D;&quot;/single-sign-on/ecommerce/shopping-cart&quot; class&#x3D;&quot;iconit&quot;&gt; &lt;/a&gt;
+				&lt;/li&gt;
+			&lt;/ul&gt;
+			&lt;!-- full-nav-holder --&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;!-- myacc-holder --&gt;
+	&lt;!-- main navigation --&gt;
+	&lt;div id&#x3D;&quot;header-mobile-trigger&quot;&gt;Menu&lt;/div&gt;
+	&lt;div
+		class&#x3D;&quot;header-link header-home nav-tooltip&quot;
+		data-placement&#x3D;&quot;top&quot;
+		data-toggle&#x3D;&quot;tooltip&quot;
+		data-original-title&#x3D;&quot;Home&quot;
+	&gt;
+		&lt;a href&#x3D;&quot;/&quot;&gt;Home&lt;/a&gt;
+	&lt;/div&gt;
+	&lt;div id&#x3D;&quot;nav-utility-handheld&quot;&gt;&lt;/div&gt;
+	&lt;ul id&#x3D;&quot;nav-primary&quot; role&#x3D;&quot;navigation&quot;&gt;
+		&lt;li class&#x3D;&quot;header-link header-clinical&quot;&gt;
+			&lt;span class&#x3D;&quot;toggler&quot;&gt;&lt;/span&gt;
+			&lt;a href&#x3D;&quot;/clinical-topics&quot;&gt;Clinical Topics&lt;/a&gt;
+			&lt;div class&#x3D;&quot;dropdown&quot;&gt;
+				&lt;div class&#x3D;&quot;set-one&quot;&gt;
+					&lt;ul class&#x3D;&quot;nav-level-1&quot;&gt;
+						&lt;li&gt;
+							&lt;a href&#x3D;&quot;/clinical-topics/acute-coronary-syndromes&quot;&gt;Acute Coronary Syndromes&lt;/a&gt;
+						&lt;/li&gt;
+						&lt;li&gt;
+							&lt;a href&#x3D;&quot;/clinical-topics/anticoagulation-management&quot; title&#x3D;&quot;Anticoagulation Management&quot;
+								&gt;Anticoagulation Management&lt;/a
+							&gt;
+						&lt;/li&gt;
+						&lt;li&gt;
+							&lt;a href&#x3D;&quot;/clinical-topics/arrhythmias-and-clinical-ep&quot;&gt;Arrhythmias and Clinical EP&lt;/a&gt;
+						&lt;/li&gt;
+						&lt;li&gt;
+							&lt;a href&#x3D;&quot;/clinical-topics/acute-coronary-syndromes/atherosclerotic-disease-cad-pad&quot;
+								&gt;Atherosclerotic Disease (CAD/PAD)&lt;/a
+							&gt;
+						&lt;/li&gt;
+						&lt;li&gt;
+							&lt;a href&#x3D;&quot;/clinical-topics/cardiac-surgery&quot;&gt;Cardiac Surgery&lt;/a&gt;
+						&lt;/li&gt;
+						&lt;li&gt;
+							&lt;a href&#x3D;&quot;/clinical-topics/cardio-oncology&quot;&gt;Cardio-Oncology&lt;/a&gt;
+						&lt;/li&gt;
+						&lt;li&gt;
+							&lt;a href&#x3D;&quot;/clinical-topics/congenital-heart-disease-pediatric-cardiology&quot;
+								&gt;Congenital Heart Disease and Pediatric Cardiology&lt;/a
+							&gt;
+						&lt;/li&gt;
+						&lt;li&gt;
+							&lt;a href&#x3D;&quot;/clinical-topics/diabetes-and-cardiometabolic-disease&quot;
+								&gt;Diabetes and Cardiometabolic Disease&lt;/a
+							&gt;
+						&lt;/li&gt;
+						&lt;li&gt;
+							&lt;a href&#x3D;&quot;/clinical-topics/dyslipidemia&quot; title&#x3D;&quot;Dyslipidemia&quot;&gt;Dyslipidemia&lt;/a&gt;
+						&lt;/li&gt;
+						&lt;li&gt;
+							&lt;a href&#x3D;&quot;/clinical-topics/geriatric-cardiology&quot;&gt;Geriatric Cardiology&lt;/a&gt;
+						&lt;/li&gt;
+						&lt;li&gt;
+							&lt;a
+								href&#x3D;&quot;/clinical-topics/heart-failure-and-cardiomyopathies&quot;
+								title&#x3D;&quot;Heart Failure and Cardiomyopathies&quot;
+								&gt;Heart Failure and Cardiomyopathies&lt;/a
+							&gt;
+						&lt;/li&gt;
+					&lt;/ul&gt;
+				&lt;/div&gt;
+				&lt;div class&#x3D;&quot;set-two&quot;&gt;
+					&lt;ul class&#x3D;&quot;nav-level-1&quot;&gt;
+						&lt;li&gt;
+							&lt;a href&#x3D;&quot;/clinical-topics/dyslipidemia/hypertriglyceridemia&quot;&gt;Hypertriglyceridemia&lt;/a&gt;
+						&lt;/li&gt;
+						&lt;li&gt;
+							&lt;a
+								href&#x3D;&quot;/clinical-topics/invasive-cardiovascular-angiography-and-intervention&quot;
+								title&#x3D;&quot;Invasive Cardiovascular Angiography and Intervention&quot;
+								&gt;Invasive Cardiovascular Angiography and Intervention&lt;/a
+							&gt;
+						&lt;/li&gt;
+						&lt;li&gt;
+							&lt;a href&#x3D;&quot;/clinical-topics/noninvasive-imaging&quot; title&#x3D;&quot;Noninvasive Imaging&quot;
+								&gt;Noninvasive Imaging&lt;/a
+							&gt;
+						&lt;/li&gt;
+						&lt;li&gt;
+							&lt;a href&#x3D;&quot;/clinical-topics/pericardial-disease&quot; title&#x3D;&quot;Pericardial Disease&quot;
+								&gt;Pericardial Disease&lt;/a
+							&gt;
+						&lt;/li&gt;
+						&lt;li&gt;
+							&lt;a href&#x3D;&quot;/clinical-topics/prevention&quot; title&#x3D;&quot;Prevention&quot;&gt;Prevention&lt;/a&gt;
+						&lt;/li&gt;
+						&lt;li&gt;
+							&lt;a href&#x3D;&quot;/clinical-topics/pulmonary-hypertension-and-venous-thromboembolism&quot;
+								&gt;Pulmonary Hypertension and Venous Thromboembolism&lt;/a
+							&gt;
+						&lt;/li&gt;
+						&lt;li&gt;
+							&lt;a href&#x3D;&quot;/clinical-topics/sports-and-exercise-cardiology&quot;&gt;Sports and Exercise Cardiology&lt;/a&gt;
+						&lt;/li&gt;
+						&lt;li&gt;
+							&lt;a
+								href&#x3D;&quot;/clinical-topics/stable-ischemic-heart-disease&quot;
+								title&#x3D;&quot;Stable Ischemic Heart Disease&quot;
+								&gt;Stable Ischemic Heart Disease&lt;/a
+							&gt;
+						&lt;/li&gt;
+						&lt;li&gt;
+							&lt;a href&#x3D;&quot;/clinical-topics/valvular-heart-disease&quot;&gt;Valvular Heart Disease&lt;/a&gt;
+						&lt;/li&gt;
+						&lt;li&gt;
+							&lt;a href&#x3D;&quot;/clinical-topics/vascular-medicine&quot;&gt;Vascular Medicine&lt;/a&gt;
+						&lt;/li&gt;
+					&lt;/ul&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/li&gt;
+		&lt;li class&#x3D;&quot;header-link header-latest&quot;&gt;
+			&lt;span class&#x3D;&quot;toggler&quot;&gt;&lt;/span&gt;
+			&lt;a href&#x3D;&quot;/latest-in-cardiology&quot;&gt;Latest In Cardiology&lt;/a&gt;
+			&lt;div class&#x3D;&quot;dropdown&quot;&gt;
+				&lt;ul class&#x3D;&quot;nav-level-1&quot;&gt;
+					&lt;li&gt;
+						&lt;a href&#x3D;&quot;/latest-in-cardiology#theme&#x3D;Clinical Updates and Discoveries&quot;
+							&gt;Clinical Updates &amp;amp; Discoveries&lt;/a
+						&gt;
+					&lt;/li&gt;
+					&lt;li&gt;
+						&lt;a href&#x3D;&quot;/latest-in-cardiology#theme&#x3D;Advocacy and Policy&quot;&gt;Advocacy &amp;amp; Policy&lt;/a&gt;
+					&lt;/li&gt;
+					&lt;li&gt;
+						&lt;a href&#x3D;&quot;/latest-in-cardiology#theme&#x3D;Perspectives and Analysis&quot;&gt;Perspectives &amp;amp; Analysis&lt;/a&gt;
+					&lt;/li&gt;
+					&lt;li&gt;
+						&lt;a href&#x3D;&quot;/latest-in-cardiology/features/acc-meeting-coverage&quot;&gt;Meeting Coverage&lt;/a&gt;
+					&lt;/li&gt;
+					&lt;li&gt;
+						&lt;a href&#x3D;&quot;/membership/member-benefits-and-resources/acc-member-publications&quot;
+							&gt;ACC Member Publications&lt;/a
+						&gt;
+					&lt;/li&gt;
+					&lt;li&gt;
+						&lt;a href&#x3D;&quot;/latest-in-cardiology/features/podcasts&quot;&gt;ACC Podcasts&lt;/a&gt;
+					&lt;/li&gt;
+					&lt;li&gt;
+						&lt;a href&#x3D;&quot;/latest-in-cardiology&quot; class&#x3D;&quot;lvl2&quot;&gt;View All Cardiology Updates&lt;/a&gt;
+					&lt;/li&gt;
+				&lt;/ul&gt;
+			&lt;/div&gt;
+		&lt;/li&gt;
+		&lt;li class&#x3D;&quot;header-link header-education&quot;&gt;
+			&lt;span class&#x3D;&quot;toggler&quot;&gt;&lt;/span&gt;
+			&lt;a href&#x3D;&quot;/education-and-meetings&quot;&gt;Education and Meetings&lt;/a&gt;
+			&lt;div class&#x3D;&quot;dropdown&quot;&gt;
+				&lt;div class&#x3D;&quot;set-one&quot;&gt;
+					&lt;ul class&#x3D;&quot;nav-level-1&quot;&gt;
+						&lt;li&gt;
+							&lt;span class&#x3D;&quot;toggler&quot;&gt;&lt;/span&gt;
+							&lt;a href&#x3D;&quot;/education-and-meetings/education-catalog&quot;&gt;Online Learning Catalog&lt;/a&gt;
+							&lt;ul class&#x3D;&quot;nav-level-2&quot;&gt;
+								&lt;li&gt;&lt;a href&#x3D;&quot;/earncredit&quot;&gt;Earn Credit&lt;/a&gt;&lt;/li&gt;
+								&lt;li&gt;
+									&lt;a
+										href&#x3D;&quot;/education-and-meetings/products-and-resources/board-prep-offerings&quot;
+										title&#x3D;&quot;Board Prep Offerings&quot;
+										&gt;Board Prep Offerings&lt;/a
+									&gt;
+								&lt;/li&gt;
+								&lt;li&gt;&lt;a href&#x3D;&quot;/education-and-meetings/education-catalog&quot;&gt;View the Entire Catalog&lt;/a&gt;&lt;/li&gt;
+							&lt;/ul&gt;
+						&lt;/li&gt;
+						&lt;li&gt;
+							&lt;span class&#x3D;&quot;toggler&quot;&gt;&lt;/span&gt;
+							&lt;a href&#x3D;&quot;/education-and-meetings/education-catalog&quot;&gt;Products&lt;/a&gt;
+							&lt;ul class&#x3D;&quot;nav-level-2&quot;&gt;
+								&lt;li&gt;&lt;a href&#x3D;&quot;/education-and-meetings/products-and-resources/accsap&quot;&gt;ACCSAP&lt;/a&gt;&lt;/li&gt;
+								&lt;li&gt;&lt;a href&#x3D;&quot;/education-and-meetings/products-and-resources/accel-audio&quot;&gt;ACCEL&lt;/a&gt;&lt;/li&gt;
+								&lt;li&gt;
+									&lt;a href&#x3D;&quot;/education-and-meetings/products-and-resources/cardiosource-plus&quot;
+										&gt;CardioSource Plus for Institutions and Practices&lt;/a
+									&gt;
+								&lt;/li&gt;
+								&lt;li&gt;&lt;a href&#x3D;&quot;/education-and-meetings/products-and-resources/cathsap&quot;&gt;CathSAP&lt;/a&gt;&lt;/li&gt;
+								&lt;li&gt;
+									&lt;a
+										href&#x3D;&quot;/education-and-meetings/products-and-resources/ecg-drill-and-practice&quot;
+										title&#x3D;&quot;ECG Drill and Practice&quot;
+										&gt;ECG Drill and Practice&lt;/a
+									&gt;
+								&lt;/li&gt;
+								&lt;li&gt;&lt;a href&#x3D;&quot;/education-and-meetings/products-and-resources/echosap&quot;&gt;EchoSAP &lt;/a&gt;&lt;/li&gt;
+								&lt;li&gt;&lt;a href&#x3D;&quot;/education-and-meetings/products-and-resources/epsap&quot;&gt;EP SAP&lt;/a&gt;&lt;/li&gt;
+								&lt;li&gt;
+									&lt;a href&#x3D;&quot;/education-and-meetings/products-and-resources/heart-songs-5&quot;
+										&gt;Heart Songs&lt;/a
+									&gt;
+								&lt;/li&gt;
+								&lt;li&gt;&lt;a href&#x3D;&quot;/education-and-meetings/products-and-resources/iscience&quot;&gt;iScience&lt;/a&gt;&lt;/li&gt;
+								&lt;li&gt;
+									&lt;a
+										href&#x3D;&quot;/education-and-meetings/products-and-resources/recent-advances-in-clinical-nuclear-cardiology-and-cardiac-ct-mod&quot;
+										&gt;Nuclear Cardiology and Cardiac CT Meeting on Demand&lt;/a
+									&gt;
+								&lt;/li&gt;
+								&lt;li&gt;
+									&lt;a
+										href&#x3D;&quot;/education-and-meetings/products-and-resources/rightsteps-optimizing-medical-therapy-for-chronic-heart-failure&quot;
+										&gt;RightSTEPS Optimizing Medical Therapy for Chronic Heart Failure&lt;/a
+									&gt;
+								&lt;/li&gt;
+							&lt;/ul&gt;
+						&lt;/li&gt;
+					&lt;/ul&gt;
+				&lt;/div&gt;
+				&lt;div class&#x3D;&quot;set-two&quot;&gt;
+					&lt;ul class&#x3D;&quot;nav-level-1&quot;&gt;
+						&lt;li&gt;
+							&lt;a href&#x3D;&quot;/education-and-meetings/products-and-resources&quot;&gt;Resources&lt;/a&gt;
+						&lt;/li&gt;
+						&lt;li&gt;
+							&lt;a href&#x3D;&quot;/education-and-meetings/products-and-resources/guideline-education&quot;
+								&gt;Guideline Education&lt;/a
+							&gt;
+						&lt;/li&gt;
+						&lt;li&gt;
+							&lt;a href&#x3D;&quot;/education-and-meetings/maintenance-of-certification-information-hub&quot;
+								&gt;Understanding MOC&lt;/a
+							&gt;
+						&lt;/li&gt;
+						&lt;li&gt;
+							&lt;a href&#x3D;&quot;/education-and-meetings/image-and-slide-gallery&quot;&gt;Image and Slide Gallery&lt;/a&gt;
+						&lt;/li&gt;
+						&lt;li&gt;
+							&lt;span class&#x3D;&quot;toggler&quot;&gt;&lt;/span&gt;
+							&lt;a href&#x3D;&quot;/education-and-meetings/meetings&quot;&gt;Meetings&lt;/a&gt;
+							&lt;ul class&#x3D;&quot;nav-level-2&quot;&gt;
+								&lt;li&gt;
+									&lt;a
+										href&#x3D;&quot;http://accscientificsession.acc.org&quot;
+										class&#x3D;&quot;new-window-icon&quot;
+										target&#x3D;&quot;_blank&quot;
+										&gt;Annual Scientific Session and Related Events&lt;/a
+									&gt;
+								&lt;/li&gt;
+								&lt;li&gt;
+									&lt;a
+										href&#x3D;&quot;http://www.acc.org/education-and-meetings/meetings?w_nav&#x3D;MN#type&#x3D;Chapter Meetings&quot;
+										&gt;Chapter Meetings&lt;/a
+									&gt;
+								&lt;/li&gt;
+								&lt;li&gt;
+									&lt;a
+										href&#x3D;&quot;http://www.acc.org/education-and-meetings/meetings?w_nav&#x3D;MN#type&#x3D;Live Meetings&quot;
+										class&#x3D;&quot;lvl2&quot;
+										&gt;Live Meetings&lt;/a
+									&gt;
+								&lt;/li&gt;
+								&lt;li&gt;
+									&lt;a href&#x3D;&quot;/education-and-meetings/meetings#type&#x3D;Webinars - Live&quot; class&#x3D;&quot;lvl2&quot;
+										&gt;Webinars - Live&lt;/a
+									&gt;
+								&lt;/li&gt;
+								&lt;li&gt;
+									&lt;a
+										href&#x3D;&quot;/education-and-meetings/meetings?view&#x3D;archive&amp;amp;#type&#x3D;Webinars - OnDemand&quot;
+										&gt;Webinars - OnDemand&lt;/a
+									&gt;
+								&lt;/li&gt;
+							&lt;/ul&gt;
+						&lt;/li&gt;
+					&lt;/ul&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/li&gt;
+		&lt;li class&#x3D;&quot;header-link header-tools&quot;&gt;
+			&lt;span class&#x3D;&quot;toggler&quot;&gt;&lt;/span&gt;
+			&lt;a href&#x3D;&quot;/tools-and-practice-support&quot;&gt;Tools and Practice Support&lt;/a&gt;
+			&lt;div class&#x3D;&quot;dropdown&quot;&gt;
+				&lt;div class&#x3D;&quot;set-one&quot;&gt;
+					&lt;ul class&#x3D;&quot;nav-level-1&quot;&gt;
+						&lt;li class&#x3D;&quot;with-image&quot;&gt;
+							&lt;a href&#x3D;&quot;http://cvquality.acc.org/&quot; target&#x3D;&quot;_blank&quot;
+								&gt;&lt;img src&#x3D;&quot;/~/media/Non-Clinical/Images/External Site Logos/ACC_QII_logo.png&quot; alt&#x3D;&quot;QII&quot;
+							/&gt;&lt;/a&gt;
+						&lt;/li&gt;
+						&lt;li class&#x3D;&quot;with-image&quot;&gt;
+							&lt;a href&#x3D;&quot;http://cvquality.acc.org/NCDR-Home.aspx&quot; target&#x3D;&quot;_blank&quot;
+								&gt;&lt;img
+									src&#x3D;&quot;/~/media/Non-Clinical/Images/External Site Logos/ACC_NCDR_logo.png&quot;
+									alt&#x3D;&quot;NCDR&quot;
+							/&gt;&lt;/a&gt;
+						&lt;/li&gt;
+						&lt;li class&#x3D;&quot;with-image&quot;&gt;
+							&lt;a href&#x3D;&quot;https://www.medaxiom.com/&quot; target&#x3D;&quot;_blank&quot;
+								&gt;&lt;img
+									src&#x3D;&quot;/~/media/Non-Clinical/Images/External Site Logos/ACC_MEDAXIOM_SIG_TRANSITIONAL.jpg&quot;
+									alt&#x3D;&quot;MedAxiom&quot;
+							/&gt;&lt;/a&gt;
+						&lt;/li&gt;
+						&lt;li class&#x3D;&quot;with-image&quot;&gt;
+							&lt;a href&#x3D;&quot;https://www.cardiosmart.org/For-Clinicians&quot; target&#x3D;&quot;_blank&quot;
+								&gt;&lt;img
+									src&#x3D;&quot;/~/media/Non-Clinical/Images/External Site Logos/Cardiosmart_logo_color.jpg&quot;
+									alt&#x3D;&quot;CardioSmart&quot;
+							/&gt;&lt;/a&gt;
+						&lt;/li&gt;
+						&lt;li class&#x3D;&quot;with-image&quot;&gt;
+							&lt;a href&#x3D;&quot;http://accreditation.acc.org&quot; target&#x3D;&quot;_blank&quot;
+								&gt;&lt;img
+									src&#x3D;&quot;/~/media/Non-Clinical/Images/External Site Logos/acc-accreditation-services-logo.png&quot;
+									alt&#x3D;&quot;ACC Accreditation Services&quot;
+							/&gt;&lt;/a&gt;
+						&lt;/li&gt;
+					&lt;/ul&gt;
+				&lt;/div&gt;
+				&lt;div class&#x3D;&quot;set-two&quot;&gt;
+					&lt;ul class&#x3D;&quot;nav-level-1&quot;&gt;
+						&lt;li&gt;
+							&lt;span class&#x3D;&quot;toggler&quot;&gt;&lt;/span&gt;
+							&lt;a href&#x3D;&quot;/tools-and-practice-support/advocacy-at-the-acc&quot;&gt;Advocacy at the ACC&lt;/a&gt;
+							&lt;ul class&#x3D;&quot;nav-level-2&quot;&gt;
+								&lt;li&gt;
+									&lt;a href&#x3D;&quot;/tools-and-practice-support/advocacy-at-the-acc/advocacy-action&quot;
+										&gt;Advocacy Action&lt;/a
+									&gt;
+								&lt;/li&gt;
+								&lt;li&gt;
+									&lt;a
+										href&#x3D;&quot;/tools-and-practice-support/advocacy-at-the-acc/health-policy-issue-center/alternative-payment-model-framework&quot;
+										&gt;Alternative Payment Model Framework&lt;/a
+									&gt;
+								&lt;/li&gt;
+								&lt;li&gt;
+									&lt;a href&#x3D;&quot;/tools-and-practice-support/advocacy-at-the-acc/acc-legislative-conference&quot;
+										&gt;Legislative Conference&lt;/a
+									&gt;
+								&lt;/li&gt;
+								&lt;li&gt;&lt;a href&#x3D;&quot;http://www.acc.org/macra/index.html&quot; target&#x3D;&quot;_blank&quot;&gt;MACRA/QPP Hub&lt;/a&gt;&lt;/li&gt;
+								&lt;li&gt;
+									&lt;a
+										href&#x3D;&quot;/tools-and-practice-support/advocacy-at-the-acc/acc-political-action-committee&quot;
+										&gt;ACC Political Action Committee&lt;/a
+									&gt;
+								&lt;/li&gt;
+							&lt;/ul&gt;
+						&lt;/li&gt;
+						&lt;li&gt;
+							&lt;a href&#x3D;&quot;http://www.healthecareers.com/acc&quot; class&#x3D;&quot;new-window-icon&quot; target&#x3D;&quot;_blank&quot;
+								&gt;Cardiology Careers&lt;/a
+							&gt;
+						&lt;/li&gt;
+						&lt;li&gt;
+							&lt;a href&#x3D;&quot;/tools-and-practice-support/clinical-toolkits&quot;&gt;Clinical Toolkits&lt;/a&gt;
+						&lt;/li&gt;
+						&lt;li&gt;
+							&lt;a href&#x3D;&quot;/tools-and-practice-support/expert-consensus-decision-pathways&quot;
+								&gt;Expert Consensus Decision Pathways&lt;/a
+							&gt;
+						&lt;/li&gt;
+						&lt;li&gt;
+							&lt;a href&#x3D;&quot;/tools-and-practice-support/infographics&quot;&gt;Infographics&lt;/a&gt;
+						&lt;/li&gt;
+						&lt;li&gt;
+							&lt;a href&#x3D;&quot;/tools-and-practice-support/mobile-resources&quot;&gt;Mobile Apps&lt;/a&gt;
+						&lt;/li&gt;
+						&lt;li&gt;
+							&lt;a href&#x3D;&quot;/tools-and-practice-support/quality-programs&quot;&gt;Quality Programs&lt;/a&gt;
+						&lt;/li&gt;
+					&lt;/ul&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/li&gt;
+	&lt;/ul&gt;
+	&lt;!-- main-nav --&gt;
 &lt;/div&gt;</code></pre>
                 </article>
 
