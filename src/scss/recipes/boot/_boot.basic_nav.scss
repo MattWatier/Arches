@@ -1,11 +1,11 @@
 /*
-Basic Branding Nav
+Link Nav
 
 The Header Nav of ACC.org
 
 Markup:
-<nav class="navbar navbar-expand-lg navbar-light bg_acc">
-	<a class="navbar-brand c_white" href="#"><i class="fas fa-home"></i></a>
+<nav class="navbar navbar-expand-lg navbar-light bg_acc p-y_0">
+	<a class="navbar-brand c_white br-t_3 br_solid br_accent" href="#"><i class="fas fa-home"></i></a>
 	<button
 		class="navbar-toggler c_white-5"
 		type="button"
@@ -49,6 +49,37 @@ Markup:
 			</li>
 		</ul>
 	</div>
+</nav>
+
+
+	Styleguide Recipes.ACC.Branded Nav
+
+*/
+
+/*
+Login Nav
+
+The Header Nav of ACC.org
+
+Markup:
+<nav class="navbar navbar-expand-sm bg_primary p-y_0">
+	<ul class="navbar-nav mr-auto c_white font_slab">
+		<li class="nav-item is-active dropdown">
+			<a class="nav-link font_slab c_white" href="#"><i class="far icon-toggle_caret-circle-right-down"></i> My ACC</a>
+			<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+				<a class="dropdown-item" href="#">Action</a>
+				<a class="dropdown-item" href="#">Another action</a>
+				<div class="dropdown-divider"></div>
+				<a class="dropdown-item" href="#">Something else here</a>
+			</div>
+		</li>
+				<li class="nav-item">
+			<a class="c_white nav-link" href="#"><i class="far fa-shopping-cart"></i></a>
+		</li>
+				<li class="nav-item">
+			<a class="c_white nav-link" href="#"><i class="fas fa-sign-out-alt"></i></a>
+		</li>
+	</ul>
 </nav>
 
 
