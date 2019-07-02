@@ -25,27 +25,27 @@ $black: rgb(19, 18, 18) !default;
 $theme-palette: () !default;
 // stylelint-disable-next-line scss/dollar-variable-default
 $theme-palette: map-merge(
-  (
-    primary: $teal,
-    secondary: $dark-grey,
-    success: $green,
-    warning: $orange,
-    alert: $red,
-    navigation: $blue,
-    accent: $green-blue,
-    info: $alt-grey,
-    highlight: $purple,
-    acc: $acc-blue
-  ),
-  $theme-palette
+	(
+		primary: $teal,
+		secondary: $dark-grey,
+		success: $green,
+		warning: $orange,
+		alert: $red,
+		navigation: $blue,
+		accent: $magenta,
+		info: $alt-grey,
+		highlight: $purple,
+		acc: $acc-blue
+	),
+	$theme-palette
 );
 
 %hover-text-white {
-  color: $white !important;
+	color: $white !important;
 }
 
 %hover-text-black {
-  color: $black !important;
+	color: $black !important;
 }
 
 /*
@@ -99,15 +99,15 @@ $cor-red: #ed1c00;
 $COR: () !default;
 
 $COR: map-merge(
-  (
-    I: $cor-green,
-    IIA: $cor-yellow,
-    IIB: $cor-yellow-orange,
-    III: $cor-orange,
-    III-NOBENIFIT: $cor-orange,
-    III-HARM: $cor-red
-  ),
-  $COR
+	(
+		I: $cor-green,
+		IIA: $cor-yellow,
+		IIB: $cor-yellow-orange,
+		III: $cor-orange,
+		III-NOBENIFIT: $cor-orange,
+		III-HARM: $cor-red
+	),
+	$COR
 );
 /*
 
@@ -132,14 +132,14 @@ $loe-light-blue: rgb(161, 193, 230);
 $loe-pale-blue: rgb(181, 213, 229);
 $LOE: () !default;
 $LOE: map-merge(
-  (
-    A: $loe-dark-blue,
-    B-NR: $loe-mid-blue,
-    B-BR: $loe-light-blue,
-    C-LD: $loe-pale-blue,
-    C-EO: $loe-pale-blue
-  ),
-  $LOE
+	(
+		A: $loe-dark-blue,
+		B-NR: $loe-mid-blue,
+		B-BR: $loe-light-blue,
+		C-LD: $loe-pale-blue,
+		C-EO: $loe-pale-blue
+	),
+	$LOE
 );
 
 /*
@@ -172,19 +172,19 @@ $credit-CPE: #992e2e;
 
 $CreditColors: () !default;
 $CreditColors: map-merge(
-  (
-    CME: $credit-CME,
-    ABP: $credit-ABP,
-    COP: $credit-COP,
-    CE: $credit-CE,
-    MOCII: $credit-MOCII,
-    MOCIV: $credit-MOCIV,
-    CNE: $credit-CNE,
-    CNErx: $credit-CNErx,
-    ECME: $credit-ECME,
-    CPE: $credit-CPE
-  ),
-  $CreditColors
+	(
+		CME: $credit-CME,
+		ABP: $credit-ABP,
+		COP: $credit-COP,
+		CE: $credit-CE,
+		MOCII: $credit-MOCII,
+		MOCIV: $credit-MOCIV,
+		CNE: $credit-CNE,
+		CNErx: $credit-CNErx,
+		ECME: $credit-ECME,
+		CPE: $credit-CPE
+	),
+	$CreditColors
 );
 
 /*
@@ -227,23 +227,23 @@ $pathway-special: #00b6f1;
 
 $PathwayColors: () !default;
 $PathwayColors: map-merge(
-  (
-    invasive: $pathway-invasive-cardiology,
-    congenital: $pathway-congenital-heart-disease,
-    noninvasive: $pathway-noninvasive-cardiology,
-    ecg: $pathway-ecg-stress-test,
-    vascular: $pathway-vascular-medicine,
-    pulmonary: $pathway-pulmonary-hypertension,
-    prevention: $pathway-prevention,
-    hf: $pathway-heart-failure,
-    valvular: $pathway-valvular-heart-disease,
-    arrthythmias: $pathway-arrthythmias-EP,
-    preicardial: $pathway-preicardial,
-    acute: $pathway-acute-coronary-syndromes,
-    ischemnic: $pathway-stable-ischemnic-heart-disease,
-    special: $pathway-special
-  ),
-  $PathwayColors
+	(
+		invasive: $pathway-invasive-cardiology,
+		congenital: $pathway-congenital-heart-disease,
+		noninvasive: $pathway-noninvasive-cardiology,
+		ecg: $pathway-ecg-stress-test,
+		vascular: $pathway-vascular-medicine,
+		pulmonary: $pathway-pulmonary-hypertension,
+		prevention: $pathway-prevention,
+		hf: $pathway-heart-failure,
+		valvular: $pathway-valvular-heart-disease,
+		arrthythmias: $pathway-arrthythmias-EP,
+		preicardial: $pathway-preicardial,
+		acute: $pathway-acute-coronary-syndromes,
+		ischemnic: $pathway-stable-ischemnic-heart-disease,
+		special: $pathway-special
+	),
+	$PathwayColors
 );
 
 /*

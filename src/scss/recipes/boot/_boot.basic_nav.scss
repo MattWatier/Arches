@@ -1,13 +1,57 @@
 /*
+Basic Bootstrap
+
+Bootstrap nav
+
+Markup:
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Navbar</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dropdown
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#">Disabled</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+
+Styleguide Recipes.ACC.BootNav
+
+*/
+
+/*
 Link Nav
 
 The Header Nav of ACC.org
 
 Markup:
-<nav class="navbar navbar-expand-lg navbar-light bg_acc p-y_0">
-	<a class="navbar-brand c_white br-t_3 br_solid br_accent" href="#"><i class="fas fa-home"></i></a>
+<nav class="navbar navbar-primary navbar-expand-lg navbar-dark bg_acc">
 	<button
-		class="navbar-toggler c_white-5"
+		class="br_white-2 is-active_toggle-function m-l_n2 m-y_3 navbar-toggler p-l_2 p-r_3 p-y_2 collapsed"
 		type="button"
 		data-toggle="collapse"
 		data-target="#navbarSupportedContent"
@@ -15,19 +59,31 @@ Markup:
 		aria-expanded="false"
 		aria-label="Toggle navigation"
 	>
-		<i class="icon-toggle_bars-times fas"></i>
+		<i class="icon-toggle_bars-times fas a:c_acc-2 c_white"></i
+		><span class="a:c_acc-2 c_white">&nbsp;Menu</span>
 	</button>
 	<div class="collapse navbar-collapse" id="navbarSupportedContent">
-		<ul class="navbar-nav mr-auto c_white font_slab">
-			<li class="nav-item active ">
-				<a class="nav-link font_slab c_white" href="#">Clinical Topics</a>
+		<a class="navbar-brand" href="#"
+			><i class="fas fa-home"></i><span class="d_none:lg">&nbsp;Home</span></a
+		>
+		<ul class="navbar-nav mr-auto ">
+			<li class="d_none:lg nav-item">
+				<a
+					class="nav-link"
+					href="//www.acc.org/guidelines#doctype=Guidelines"
+					title="Access ACC guidelines and clinical policy documents as well as related resources"
+					>Guidelines</a
+				>
+			</li>
+			<li class="nav-item active">
+				<a class="nav-link" href="#">Clinical Topics</a>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link font_slab c_white" href="#">Latest In Cardiology</a>
+				<a class="nav-link" href="#">Latest In Cardiology</a>
 			</li>
 			<li class="nav-item dropdown">
 				<a
-					class="nav-link font_slab c_white dropdown-toggle"
+					class="nav-link dropdown-toggle"
 					href="#"
 					id="navbarDropdown"
 					role="button"
@@ -38,34 +94,89 @@ Markup:
 					Education and Meetings
 				</a>
 				<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-					<a class="dropdown-item" href="#">Action</a>
-					<a class="dropdown-item" href="#">Another action</a>
-					<div class="dropdown-divider"></div>
-					<a class="dropdown-item" href="#">Something else here</a>
+					<div class="flex p-x_2">
+						<div class="flex_auto p-x_2 p-y_3">
+							<a class="dropdown-item" href="#">Action</a>
+							<a class="dropdown-item" href="#">Another action</a>
+							<a class="dropdown-item" href="#">Something else here</a>
+						</div>
+						<div class="flex_auto p-x_2 p-y_3 br-l_1 br_solid br_secondary-4">
+							<a class="dropdown-item" href="#">Action</a>
+							<a class="dropdown-item" href="#">Another action</a>
+							<a class="dropdown-item" href="#">Something else here</a>
+						</div>
+					</div>
 				</div>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link font_slab c_white" href="#">Tools &amp; Practice Support</a>
+				<a class="nav-link" href="#">Tools &amp; Practice Support</a>
+			</li>
+			<li class="d_none:lg nav-item">
+				<a
+					class="nav-link"
+					href="//www.acc.org/membership"
+					title="Access exclusive member features and groups or learn about ACC membership"
+					>Membership</a
+				>
+			</li>
+			<li class="d_none:lg nav-item">
+				<a
+					class="nav-link"
+					href="//www.acc.org/about-acc"
+					title="Learn about the ACC organization"
+					>About ACC</a
+				>
+			</li>
+			<li class="d_none:lg nav-item">
+				<a
+					class="nav-link"
+					href="http://www.onlinejacc.org/"
+					target="_blank"
+					title="JACC.org"
+					>JACC</a
+				>
+			</li>
+			<li class="d_none:lg nav-item">
+				<a
+					class="nav-link"
+					href="http://accscientificsession.acc.org"
+					target="_blank"
+					title="ACC Annual Scientific Session Website"
+					>ACC.19</a
+				>
 			</li>
 		</ul>
 	</div>
 </nav>
 
 
+
 	Styleguide Recipes.ACC.Branded Nav
 
 */
-
 /*
 Login Nav
 
 The Header Nav of ACC.org
 
 Markup:
-<nav class="navbar navbar-expand-sm bg_primary p-y_0">
-	<ul class="navbar-nav mr-auto c_white font_slab">
-		<li class="nav-item is-active dropdown">
-			<a class="nav-link font_slab c_white" href="#"><i class="far icon-toggle_caret-circle-right-down"></i> My ACC</a>
+<div class="relative flex">
+<nav class="flex_auto navbar navbar-primary navbar-expand-lg navbar-dark bg_acc">
+<ul class="navbar-nav mr-auto ">
+	<li class="nav-item">
+		<a class="nav-link  " href="#">Latest In Cardiology</a>
+	</li>
+	</ul>
+</nav>
+<nav class="flex_shrink navbar navbar-expand navbar-dark bg_primary p-y_2 absolute r_0">
+	<ul class="navbar-nav mr-auto m-y_1">
+		<li class="nav-item dropdown">
+			<a 	class="nav-link is-active_toggle-function"
+				id="myACCDropdown"
+				role="button"
+				data-toggle="dropdown"
+				aria-haspopup="true"
+				aria-expanded="false"><i class="far icon-toggle_chevron-up-down"></i> My ACC</a>
 			<div class="dropdown-menu" aria-labelledby="navbarDropdown">
 				<a class="dropdown-item" href="#">Action</a>
 				<a class="dropdown-item" href="#">Another action</a>
@@ -73,16 +184,17 @@ Markup:
 				<a class="dropdown-item" href="#">Something else here</a>
 			</div>
 		</li>
-				<li class="nav-item">
-			<a class="c_white nav-link" href="#"><i class="far fa-shopping-cart"></i></a>
+		<li class="nav-item">
+			<a class=" nav-link" href="#"><i class="far fa-shopping-cart"></i></a>
 		</li>
-				<li class="nav-item">
-			<a class="c_white nav-link" href="#"><i class="fas fa-sign-out-alt"></i></a>
+		<li class="nav-item">
+			<a class=" nav-link" href="#"><i class="fas fa-sign-out-alt"></i></a>
 		</li>
 	</ul>
 </nav>
+</div>
 
 
-	Styleguide Recipes.ACC.Branded Nav
+	Styleguide Recipes.ACC.Branded Nav Login
 
 */

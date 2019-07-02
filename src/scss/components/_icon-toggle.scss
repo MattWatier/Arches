@@ -8,26 +8,28 @@ Is Active Toggle
 Many momment there are needs for toggles of icon when the parent is in the state of `is-active`.  Used in tree navs, dropdowns, and collapsing areas. 
 
 .icon-toggle_plus-minus 					-  Toggle between plus and minus square
+.icon-toggle_chevron-up-down				- 	Toggle a chevro pointing up and then down.
 .icon-toggle_chevron-double-up-down 					-  Toggle the double chevron to point up when active
 .icon-toggle_caret-circle-right-down 					-  Toggle the caret to point down when active.
 .icon-toggle_arrow-circle 					-  Toggle the arrow to have a circle when active.
 .icon-toggle_bars-times 					-  Toggle between bars and times
+.icon-toggle_bars-times 					-  Toggle between bars and times
 
 markup:
 <ul class="ul_none m_0 p_0">
-	<li class="is-active_toggle-function is-active c_white a:c_black flex p-x_3 p-y_2 a:bg_secondary-3 font_3 bg_success-n1">	
+	<li class="is-active_toggle-function is-active c_white a:c_black flex p-x_3 p-y_2 a:bg_secondary-3 font_1 bg_success-n1">	
 			<span class="">FA Solid {{ modifier_class }}</span>
-			<i class="fas fa-fw {{ modifier_class }}"></i>
+			<i class="font_3 fas fa-fw {{ modifier_class }}"></i>
 			<span class="a:d_inline"> (is-active) </span>
 	</li>
-	<li class="is-active_toggle-function is-active c_white a:c_black flex p-x_3 p-y_2 a:bg_secondary-3 font_3 bg_success-n1">	
+	<li class="is-active_toggle-function is-active c_white a:c_black flex p-x_3 p-y_2 a:bg_secondary-3 font_1 bg_success-n1">	
 			<span class="">FA Regular {{ modifier_class }}</span>
-			<i class="fa-r  fa-fw {{ modifier_class }}"></i>
+			<i class="font_3 far  fa-fw {{ modifier_class }}"></i>
 			<span class="a:d_inline"> (is-active) </span>
 	</li>
-	<li class="is-active_toggle-function is-active c_white a:c_black flex p-x_3 p-y_2 a:bg_secondary-3 font_3 bg_success-n1">	
+	<li class="is-active_toggle-function is-active c_white a:c_black flex p-x_3 p-y_2 a:bg_secondary-3 font_1 bg_success-n1">	
 			<span class="">FA Light {{ modifier_class }}</span>
-			<i class="fal fa-fw {{ modifier_class }}"></i>
+			<i class="font_3 fal fa-fw {{ modifier_class }}"></i>
 			<span class="a:d_inline"> (is-active) </span>
 	</li>
 </ul>
@@ -57,7 +59,7 @@ i.icon-toggle_plus-minus:before {
 }
 i.icon-toggle_chevron-up-down:before {
 	@extend %icon-toggle-space;
-	content: "\f077";
+	content: "\f106";
 	.is-active & {
 		content: "\f107";
 	}
@@ -80,9 +82,9 @@ i.icon-toggle_chevron-double-left-right:before {
 
 i.icon-toggle_caret-circle-right-down:before {
 	@extend %icon-toggle-space;
-	content: "\f330";
+	content: "\f32d";
 	.is-active & {
-		content: "\f32d";
+		content: "\f330";
 	}
 }
 i.icon-toggle_arrow-circle:before {

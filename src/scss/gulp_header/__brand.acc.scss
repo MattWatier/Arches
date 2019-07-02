@@ -9,7 +9,7 @@ $red: #dd1a1a;
 $blue: #2b58c0;
 $purple: #7742bd;
 $magenta: #c34198;
-$acc-blue: #00386b;
+$acc-blue: #004176;
 $white: rgb(255, 255, 255);
 $black: rgb(19, 18, 18);
 $real-black: #000;
@@ -82,7 +82,8 @@ $colors: map-merge(
 $fonts: (
 	slab: (
 		name: "Roboto Slab",
-		stack: '"Roboto Slab","Times New Roman","Lucida Bright",Georgia,serif, "slab"'
+		stack:
+			'"Roboto Slab","Times New Roman","Lucida Bright",Georgia,serif, "slab"'
 	),
 	display: (
 		name: "Maven Pro",
@@ -94,14 +95,27 @@ $fonts: (
 	),
 	ui: (
 		name: "Open Sans",
-		stack: '"Open Sans",-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif'
+		stack:
+			'"Open Sans",-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif'
 	)
 );
 
 // Reset Values of Utlity-css.vars.scss
-$value-to-unit: map-deep-set($value-to-unit, "font-family" "slab", map-deep-get($fonts, "slab", "stack"));
-$value-to-unit: map-deep-set($value-to-unit, "font-family" "display", map-deep-get($fonts, "display", "stack"));
-$value-to-unit: map-deep-set($value-to-unit, "font-family" "copy", map-deep-get($fonts, "copy", "stack"));
+$value-to-unit: map-deep-set(
+	$value-to-unit,
+	"font-family" "slab",
+	map-deep-get($fonts, "slab", "stack")
+);
+$value-to-unit: map-deep-set(
+	$value-to-unit,
+	"font-family" "display",
+	map-deep-get($fonts, "display", "stack")
+);
+$value-to-unit: map-deep-set(
+	$value-to-unit,
+	"font-family" "copy",
+	map-deep-get($fonts, "copy", "stack")
+);
 
 $global-radus-on: false;
 $global-border-radius: 6px;

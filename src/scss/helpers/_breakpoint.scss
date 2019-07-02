@@ -1,17 +1,27 @@
-$small-up: unquote("only screen and (min-width : #{map-get($breakpoints, sm)})");
-$small-only: unquote("only screen and (max-width : #{map-get($breakpoints, md)})");
+$small-up: unquote(
+	"only screen and (min-width : #{map-get($breakpoints, sm)})"
+);
+$small-only: unquote(
+	"only screen and (max-width : #{map-get($breakpoints, md)})"
+);
 
-$medium-up: unquote("only screen and (min-width : #{map-get($breakpoints, md)})");
+$medium-up: unquote(
+	"only screen and (min-width : #{map-get($breakpoints, md)})"
+);
 $medium-only: unquote(
 	"only screen and (min-width : #{map-get($breakpoints, md)}) and (max-width : #{map-get($breakpoints, lg)})"
 );
 
-$large-up: unquote("only screen and (min-width : #{map-get($breakpoints, lg)})");
+$large-up: unquote(
+	"only screen and (min-width : #{map-get($breakpoints, lg)})"
+);
 $large-only: unquote(
 	"only screen and (min-width : #{map-get($breakpoints, lg)}) and (max-width : #{map-get($breakpoints, xlg)})"
 );
 
-$xlarge-up: unquote("only screen and (min-width : #{map-get($breakpoints, xlg)})");
+$xlarge-up: unquote(
+	"only screen and (min-width : #{map-get($breakpoints, xlg)})"
+);
 $xlarge-only: unquote(
 	"only screen and (min-width : #{map-get($breakpoints, xl)}) and (max-width : #{map-get($breakpoints, xxlg)})"
 );

@@ -19,7 +19,7 @@ Styleguide Background
   bg_warning            	- background color warning color
   bg_success              - background color success color
   bg_info              - background color success color
-  bg_highlight              - background color success color
+  bg_highlight              - background color success color  
 
   Weight: -100
 
@@ -44,6 +44,7 @@ bg_success                - background color modified light to dark
 bg_warning                - background color modified light to dark
 bg_alert                  - background color modified light to dark
 bg_acc                    - background color modified light to dark
+
 
 markup:
 <div class="flex">
@@ -77,8 +78,20 @@ Styleguide Background.Color.Shades
 #{ class-name-constructor(background-color, black)} {
 	background-color: $black;
 }
-@include loop-transparent(background-transparent, "black", "", "!important", false);
-@include loop-transparent(background-transparent, "white", "", "!important", false);
+@include loop-transparent(
+	background-transparent,
+	"black",
+	"",
+	"!important",
+	false
+);
+@include loop-transparent(
+	background-transparent,
+	"white",
+	"",
+	"!important",
+	false
+);
 /*
   Background Colors Alpha
  

@@ -159,12 +159,12 @@
             <header class="kss-section kss-section--depth-3" id="kssref-recipes-acc-branded-nav">
 
             <article class="kss-section__content">
-                <p class="kss-section__source">Source: <span>boot_acc.css</span>, line <span>7877</span></p>
+                <p class="kss-section__source">Source: <span>boot_acc.css</span>, line <span>7991</span></p>
 
               <a class="kss-section__permalink" href="#kssref-recipes-acc-branded-nav">
                 <h3 class="kss-section__item kss-section__item--depth-3">
-                  <span class="kss-section__ref">4.1.1</span>
-                  <span class="kss-section__name">Basic Branding Nav</span>
+                  <span class="kss-section__ref">4.1.2</span>
+                  <span class="kss-section__name">Link Nav</span>
                 </h3>
               </a>
 
@@ -177,10 +177,9 @@
                 <h1 class="kss-modifiers__heading">Example</h1>
 
 
-                <div class="kss-modifiers__example"><nav class="navbar navbar-expand-lg navbar-light bg_acc">
-	<a class="navbar-brand c_white" href="#"><i class="fas fa-home"></i></a>
+                <div class="kss-modifiers__example"><nav class="navbar navbar-primary navbar-expand-lg navbar-dark bg_acc">
 	<button
-		class="navbar-toggler c_white-5"
+		class="br_white-2 is-active_toggle-function m-l_n2 m-y_3 navbar-toggler p-l_2 p-r_3 p-y_2 collapsed"
 		type="button"
 		data-toggle="collapse"
 		data-target="#navbarSupportedContent"
@@ -188,19 +187,31 @@
 		aria-expanded="false"
 		aria-label="Toggle navigation"
 	>
-		<i class="icon-toggle_bars-times fas"></i>
+		<i class="icon-toggle_bars-times fas a:c_acc-2 c_white"></i
+		><span class="a:c_acc-2 c_white">&nbsp;Menu</span>
 	</button>
 	<div class="collapse navbar-collapse" id="navbarSupportedContent">
-		<ul class="navbar-nav mr-auto c_white font_slab">
-			<li class="nav-item active ">
-				<a class="nav-link font_slab c_white" href="#">Clinical Topics</a>
+		<a class="navbar-brand" href="#"
+			><i class="fas fa-home"></i><span class="d_none:lg">&nbsp;Home</span></a
+		>
+		<ul class="navbar-nav mr-auto ">
+			<li class="d_none:lg nav-item">
+				<a
+					class="nav-link"
+					href="//www.acc.org/guidelines#doctype=Guidelines"
+					title="Access ACC guidelines and clinical policy documents as well as related resources"
+					>Guidelines</a
+				>
+			</li>
+			<li class="nav-item active">
+				<a class="nav-link" href="#">Clinical Topics</a>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link font_slab c_white" href="#">Latest In Cardiology</a>
+				<a class="nav-link" href="#">Latest In Cardiology</a>
 			</li>
 			<li class="nav-item dropdown">
 				<a
-					class="nav-link font_slab c_white dropdown-toggle"
+					class="nav-link dropdown-toggle"
 					href="#"
 					id="navbarDropdown"
 					role="button"
@@ -211,14 +222,56 @@
 					Education and Meetings
 				</a>
 				<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-					<a class="dropdown-item" href="#">Action</a>
-					<a class="dropdown-item" href="#">Another action</a>
-					<div class="dropdown-divider"></div>
-					<a class="dropdown-item" href="#">Something else here</a>
+					<div class="flex p-x_2">
+						<div class="flex_auto p-x_2 p-y_3">
+							<a class="dropdown-item" href="#">Action</a>
+							<a class="dropdown-item" href="#">Another action</a>
+							<a class="dropdown-item" href="#">Something else here</a>
+						</div>
+						<div class="flex_auto p-x_2 p-y_3 br-l_1 br_solid br_secondary-4">
+							<a class="dropdown-item" href="#">Action</a>
+							<a class="dropdown-item" href="#">Another action</a>
+							<a class="dropdown-item" href="#">Something else here</a>
+						</div>
+					</div>
 				</div>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link font_slab c_white" href="#">Tools &amp; Practice Support</a>
+				<a class="nav-link" href="#">Tools &amp; Practice Support</a>
+			</li>
+			<li class="d_none:lg nav-item">
+				<a
+					class="nav-link"
+					href="//www.acc.org/membership"
+					title="Access exclusive member features and groups or learn about ACC membership"
+					>Membership</a
+				>
+			</li>
+			<li class="d_none:lg nav-item">
+				<a
+					class="nav-link"
+					href="//www.acc.org/about-acc"
+					title="Learn about the ACC organization"
+					>About ACC</a
+				>
+			</li>
+			<li class="d_none:lg nav-item">
+				<a
+					class="nav-link"
+					href="http://www.onlinejacc.org/"
+					target="_blank"
+					title="JACC.org"
+					>JACC</a
+				>
+			</li>
+			<li class="d_none:lg nav-item">
+				<a
+					class="nav-link"
+					href="http://accscientificsession.acc.org"
+					target="_blank"
+					title="ACC Annual Scientific Session Website"
+					>ACC.19</a
+				>
 			</li>
 		</ul>
 	</div>
@@ -227,10 +280,9 @@
               </article>
 
                 <article class="kss-section__markup">
-                  <pre><code class="language-markup">&lt;nav class&#x3D;&quot;navbar navbar-expand-lg navbar-light bg_acc&quot;&gt;
-	&lt;a class&#x3D;&quot;navbar-brand c_white&quot; href&#x3D;&quot;#&quot;&gt;&lt;i class&#x3D;&quot;fas fa-home&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+                  <pre><code class="language-markup">&lt;nav class&#x3D;&quot;navbar navbar-primary navbar-expand-lg navbar-dark bg_acc&quot;&gt;
 	&lt;button
-		class&#x3D;&quot;navbar-toggler c_white-5&quot;
+		class&#x3D;&quot;br_white-2 is-active_toggle-function m-l_n2 m-y_3 navbar-toggler p-l_2 p-r_3 p-y_2 collapsed&quot;
 		type&#x3D;&quot;button&quot;
 		data-toggle&#x3D;&quot;collapse&quot;
 		data-target&#x3D;&quot;#navbarSupportedContent&quot;
@@ -238,19 +290,31 @@
 		aria-expanded&#x3D;&quot;false&quot;
 		aria-label&#x3D;&quot;Toggle navigation&quot;
 	&gt;
-		&lt;i class&#x3D;&quot;icon-toggle_bars-times fas&quot;&gt;&lt;/i&gt;
+		&lt;i class&#x3D;&quot;icon-toggle_bars-times fas a:c_acc-2 c_white&quot;&gt;&lt;/i
+		&gt;&lt;span class&#x3D;&quot;a:c_acc-2 c_white&quot;&gt;&amp;nbsp;Menu&lt;/span&gt;
 	&lt;/button&gt;
 	&lt;div class&#x3D;&quot;collapse navbar-collapse&quot; id&#x3D;&quot;navbarSupportedContent&quot;&gt;
-		&lt;ul class&#x3D;&quot;navbar-nav mr-auto c_white font_slab&quot;&gt;
-			&lt;li class&#x3D;&quot;nav-item active &quot;&gt;
-				&lt;a class&#x3D;&quot;nav-link font_slab c_white&quot; href&#x3D;&quot;#&quot;&gt;Clinical Topics&lt;/a&gt;
+		&lt;a class&#x3D;&quot;navbar-brand&quot; href&#x3D;&quot;#&quot;
+			&gt;&lt;i class&#x3D;&quot;fas fa-home&quot;&gt;&lt;/i&gt;&lt;span class&#x3D;&quot;d_none:lg&quot;&gt;&amp;nbsp;Home&lt;/span&gt;&lt;/a
+		&gt;
+		&lt;ul class&#x3D;&quot;navbar-nav mr-auto &quot;&gt;
+			&lt;li class&#x3D;&quot;d_none:lg nav-item&quot;&gt;
+				&lt;a
+					class&#x3D;&quot;nav-link&quot;
+					href&#x3D;&quot;//www.acc.org/guidelines#doctype&#x3D;Guidelines&quot;
+					title&#x3D;&quot;Access ACC guidelines and clinical policy documents as well as related resources&quot;
+					&gt;Guidelines&lt;/a
+				&gt;
+			&lt;/li&gt;
+			&lt;li class&#x3D;&quot;nav-item active&quot;&gt;
+				&lt;a class&#x3D;&quot;nav-link&quot; href&#x3D;&quot;#&quot;&gt;Clinical Topics&lt;/a&gt;
 			&lt;/li&gt;
 			&lt;li class&#x3D;&quot;nav-item&quot;&gt;
-				&lt;a class&#x3D;&quot;nav-link font_slab c_white&quot; href&#x3D;&quot;#&quot;&gt;Latest In Cardiology&lt;/a&gt;
+				&lt;a class&#x3D;&quot;nav-link&quot; href&#x3D;&quot;#&quot;&gt;Latest In Cardiology&lt;/a&gt;
 			&lt;/li&gt;
 			&lt;li class&#x3D;&quot;nav-item dropdown&quot;&gt;
 				&lt;a
-					class&#x3D;&quot;nav-link font_slab c_white dropdown-toggle&quot;
+					class&#x3D;&quot;nav-link dropdown-toggle&quot;
 					href&#x3D;&quot;#&quot;
 					id&#x3D;&quot;navbarDropdown&quot;
 					role&#x3D;&quot;button&quot;
@@ -261,14 +325,56 @@
 					Education and Meetings
 				&lt;/a&gt;
 				&lt;div class&#x3D;&quot;dropdown-menu&quot; aria-labelledby&#x3D;&quot;navbarDropdown&quot;&gt;
-					&lt;a class&#x3D;&quot;dropdown-item&quot; href&#x3D;&quot;#&quot;&gt;Action&lt;/a&gt;
-					&lt;a class&#x3D;&quot;dropdown-item&quot; href&#x3D;&quot;#&quot;&gt;Another action&lt;/a&gt;
-					&lt;div class&#x3D;&quot;dropdown-divider&quot;&gt;&lt;/div&gt;
-					&lt;a class&#x3D;&quot;dropdown-item&quot; href&#x3D;&quot;#&quot;&gt;Something else here&lt;/a&gt;
+					&lt;div class&#x3D;&quot;flex p-x_2&quot;&gt;
+						&lt;div class&#x3D;&quot;flex_auto p-x_2 p-y_3&quot;&gt;
+							&lt;a class&#x3D;&quot;dropdown-item&quot; href&#x3D;&quot;#&quot;&gt;Action&lt;/a&gt;
+							&lt;a class&#x3D;&quot;dropdown-item&quot; href&#x3D;&quot;#&quot;&gt;Another action&lt;/a&gt;
+							&lt;a class&#x3D;&quot;dropdown-item&quot; href&#x3D;&quot;#&quot;&gt;Something else here&lt;/a&gt;
+						&lt;/div&gt;
+						&lt;div class&#x3D;&quot;flex_auto p-x_2 p-y_3 br-l_1 br_solid br_secondary-4&quot;&gt;
+							&lt;a class&#x3D;&quot;dropdown-item&quot; href&#x3D;&quot;#&quot;&gt;Action&lt;/a&gt;
+							&lt;a class&#x3D;&quot;dropdown-item&quot; href&#x3D;&quot;#&quot;&gt;Another action&lt;/a&gt;
+							&lt;a class&#x3D;&quot;dropdown-item&quot; href&#x3D;&quot;#&quot;&gt;Something else here&lt;/a&gt;
+						&lt;/div&gt;
+					&lt;/div&gt;
 				&lt;/div&gt;
 			&lt;/li&gt;
 			&lt;li class&#x3D;&quot;nav-item&quot;&gt;
-				&lt;a class&#x3D;&quot;nav-link font_slab c_white&quot; href&#x3D;&quot;#&quot;&gt;Tools &amp;amp; Practice Support&lt;/a&gt;
+				&lt;a class&#x3D;&quot;nav-link&quot; href&#x3D;&quot;#&quot;&gt;Tools &amp;amp; Practice Support&lt;/a&gt;
+			&lt;/li&gt;
+			&lt;li class&#x3D;&quot;d_none:lg nav-item&quot;&gt;
+				&lt;a
+					class&#x3D;&quot;nav-link&quot;
+					href&#x3D;&quot;//www.acc.org/membership&quot;
+					title&#x3D;&quot;Access exclusive member features and groups or learn about ACC membership&quot;
+					&gt;Membership&lt;/a
+				&gt;
+			&lt;/li&gt;
+			&lt;li class&#x3D;&quot;d_none:lg nav-item&quot;&gt;
+				&lt;a
+					class&#x3D;&quot;nav-link&quot;
+					href&#x3D;&quot;//www.acc.org/about-acc&quot;
+					title&#x3D;&quot;Learn about the ACC organization&quot;
+					&gt;About ACC&lt;/a
+				&gt;
+			&lt;/li&gt;
+			&lt;li class&#x3D;&quot;d_none:lg nav-item&quot;&gt;
+				&lt;a
+					class&#x3D;&quot;nav-link&quot;
+					href&#x3D;&quot;http://www.onlinejacc.org/&quot;
+					target&#x3D;&quot;_blank&quot;
+					title&#x3D;&quot;JACC.org&quot;
+					&gt;JACC&lt;/a
+				&gt;
+			&lt;/li&gt;
+			&lt;li class&#x3D;&quot;d_none:lg nav-item&quot;&gt;
+				&lt;a
+					class&#x3D;&quot;nav-link&quot;
+					href&#x3D;&quot;http://accscientificsession.acc.org&quot;
+					target&#x3D;&quot;_blank&quot;
+					title&#x3D;&quot;ACC Annual Scientific Session Website&quot;
+					&gt;ACC.19&lt;/a
+				&gt;
 			&lt;/li&gt;
 		&lt;/ul&gt;
 	&lt;/div&gt;
@@ -285,7 +391,8 @@
   <script src="kss-assets/vendor/jquery.js"></script>
   <script src="kss-assets/vendor/prism.js"></script>
   <script src="kss-assets/js/kss.js"></script>
-  <script src="../js/toggleActive.js"></script>
+  <script src="../bootstrap/bootstrap.js"></script>
+<script src="../js/toggleActive.js"></script>
 
   <!-- /scripts. -->
 
