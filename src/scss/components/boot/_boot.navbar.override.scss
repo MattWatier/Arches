@@ -13,6 +13,9 @@ $navbar-color_secondary: map-get($theme-palette, accent);
 	padding-left: $padding_2;
 	padding-right: $padding_2;
 }
+.navbar-primary .dropdown-toggle:after {
+	display: none;
+}
 .navbar-primary.navbar-expand-md .nav-item {
 	@media #{$medium-up} {
 		border-top: $border-width_3 $navbar-color_primary solid;

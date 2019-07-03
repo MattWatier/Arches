@@ -240,6 +240,14 @@ $value-to-unit: (
 		dark: -30%,
 		light: 30%
 	),
+	transition: (
+		0: all 0s ease-in,
+		1: all 0.1s ease-in,
+		2: all 0.2s ease-in,
+		3: all 0.35s ease-in,
+		4: all 0.5s ease-in,
+		5: all 1s ease-in
+	),
 	active: (
 		dark: 100%,
 		light: 100%
@@ -309,6 +317,15 @@ $value-to-unit: (
 		3: 50rem,
 		4: 64rem,
 		5: 80rem
+	),
+	position: (
+		initial: initial,
+		inherit: inherit,
+		relative: relative,
+		abosulte: abosulte,
+		fixed: fixed,
+		sticky: sticky,
+		unset: unset
 	),
 	list-type: (
 		none: none,
@@ -730,6 +747,15 @@ $style-definition: (
 		unit: map-get($value-to-unit, "opacity"),
 		alt: "none"
 	),
+	position: (
+		short-name: ".",
+		css-style: (
+			"position"
+		),
+		long-name: ".position",
+		unit: map-get($value-to-unit, "position"),
+		alt: "none"
+	),
 	background-transparent: (
 		short-name: ".bg",
 		css-style: (
@@ -780,6 +806,15 @@ $style-definition: (
 		),
 		long-name: ".text-shadow",
 		unit: map-get($value-to-unit, "text-shadow"),
+		alt: "none"
+	),
+	transition: (
+		short-name: ".transition",
+		css-style: (
+			"transition"
+		),
+		long-name: ".transition",
+		unit: map-get($value-to-unit, "transition"),
 		alt: "none"
 	),
 	grid-width: (

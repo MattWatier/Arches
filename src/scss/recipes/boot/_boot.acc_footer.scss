@@ -11,7 +11,7 @@ Markup:
 	Home
 </div>
 <!-- This is the inner footer that we cache -->
-<div id="footer" role="contentinfo" class="flex bg_secondary-n3 flex_column flex_inline flex_wrap flex_row:md p-x_3 p-y_4 p-y_0:lg">
+<div id="footer" role="contentinfo" class="flex bg_secondary-n3 flex_column flex_inline flex_wrap flex_row:md p-x_3 p-y_4 p-y_0:lg w_100">
 	<div class="flex_auto p-x_3 p-y_4:lg w-grid_3:lg w-grid_6:md font_ui">
 		<h2 class="font_0 font_1:lg font_slab m-b_0:md m-b_2">
 			<a href="//www.acc.org/guidelines" target="_parent" title="Guidelines" class="c_white h:c_primary-3">Guidelines</a>
@@ -334,7 +334,7 @@ Markup:
 				<span class="alt">logo_condensed-alt max-w_1</span>
 			</div>
 		</section>
-		<section class="l_0 r_0 social m-t_4 absolute b_4">
+		<section class="l_0 r_0 social m-t_4 relative absolute:md  b_4">
 				<ul class="flex social-bar ul_none c_white h:c_white m_0">
 					<li class="flex_auto m-r_2">
 						<a href="https://twitter.com/accintouch" target="_blank" class="twitter social-bar--button d_block m-b_0 p_3 c_white-8 h:c_white text_center opacity_6 h:opacity"><i class="fab fa-twitter-square font_2"></i></a>

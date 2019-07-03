@@ -80,14 +80,14 @@ Styleguide Background.Color.Shades
 }
 @include loop-transparent(
 	background-transparent,
-	"black",
+	black,
 	"",
 	"!important",
 	false
 );
 @include loop-transparent(
 	background-transparent,
-	"white",
+	white,
 	"",
 	"!important",
 	false

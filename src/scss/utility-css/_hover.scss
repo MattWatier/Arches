@@ -177,13 +177,25 @@ a:focus {
 #{ class-name-constructor(background-color, white, "", "is-active")} {
 	background-color: $white;
 }
-@include loop-transparent(background-transparent, white, "", "!important", true);
+@include loop-transparent(
+	background-transparent,
+	white,
+	"",
+	"!important",
+	true
+);
 
 #{ class-name-constructor(background-color, black, "", "hover")},
 #{ class-name-constructor(background-color, black, "", "is-active")} {
 	background-color: $black;
 }
-@include loop-transparent(background-transparent, black, "", "!important", true);
+@include loop-transparent(
+	background-transparent,
+	black,
+	"",
+	"!important",
+	true
+);
 
 /*
 Hover: Background Black and White Opacity 
@@ -195,16 +207,16 @@ bg_black              - text color modified light to dark
 
 markup:
 <div class="flex m_5 bg_primary m_5">
-  <div class="h:{{modifier_class}}-0  p-y_3 p-x_4 flex_shrink font_bold font_2 font_slab text_center br_1 br_solid br_secondary-4">0</div>
-  <div class="h:{{modifier_class}}-1  p-y_3 p-x_4 flex_shrink font_bold font_2 font_slab text_center br_1 br_solid br_secondary-4">1</div>
-  <div class="h:{{modifier_class}}-2  p-y_3 p-x_4 flex_shrink font_bold font_2 font_slab text_center br_1 br_solid br_secondary-4">2</div>
-  <div class="h:{{modifier_class}}-3  p-y_3 p-x_4 flex_shrink font_bold font_2 font_slab text_center br_1 br_solid br_secondary-4">3</div>
-  <div class="h:{{modifier_class}}-4  p-y_3 p-x_4 flex_shrink font_bold font_2 font_slab text_center br_1 br_solid br_secondary-4">4</div>
-  <div class="h:{{modifier_class}}-5  p-y_3 p-x_4 flex_shrink font_bold font_2 font_slab text_center br_1 br_solid br_secondary-4">5</div>
-  <div class="h:{{modifier_class}}-6  p-y_3 p-x_4 flex_shrink font_bold font_2 font_slab text_center br_1 br_solid br_secondary-4 ">6</div>
-  <div class="h:{{modifier_class}}-7  p-y_3 p-x_4 flex_shrink font_bold font_2 font_slab text_center br_1 br_solid br_secondary-4 ">7</div>
-  <div class="h:{{modifier_class}}-8  p-y_3 p-x_4 flex_shrink font_bold font_2 font_slab text_center br_1 br_solid br_secondary-4 ">8</div>
-  <div class="h:{{modifier_class}}-9  p-y_3 p-x_4 flex_shrink font_bold font_2 font_slab text_center br_1 br_solid br_secondary-4 ">9</div>
+  <div class="h:{{modifier_class}}-0  p-y_3 p-x_4 flex_auto font_bold font_2 font_slab text_center br_1 br_solid br_secondary-4">0</div>
+  <div class="h:{{modifier_class}}-1  p-y_3 p-x_4 flex_auto font_bold font_2 font_slab text_center br_1 br_solid br_secondary-4">1</div>
+  <div class="h:{{modifier_class}}-2  p-y_3 p-x_4 flex_auto font_bold font_2 font_slab text_center br_1 br_solid br_secondary-4">2</div>
+  <div class="h:{{modifier_class}}-3  p-y_3 p-x_4 flex_auto font_bold font_2 font_slab text_center br_1 br_solid br_secondary-4">3</div>
+  <div class="h:{{modifier_class}}-4  p-y_3 p-x_4 flex_auto font_bold font_2 font_slab text_center br_1 br_solid br_secondary-4">4</div>
+  <div class="h:{{modifier_class}}-5  p-y_3 p-x_4 flex_auto font_bold font_2 font_slab text_center br_1 br_solid br_secondary-4">5</div>
+  <div class="h:{{modifier_class}}-6  p-y_3 p-x_4 flex_auto font_bold font_2 font_slab text_center br_1 br_solid br_secondary-4 ">6</div>
+  <div class="h:{{modifier_class}}-7  p-y_3 p-x_4 flex_auto font_bold font_2 font_slab text_center br_1 br_solid br_secondary-4 ">7</div>
+  <div class="h:{{modifier_class}}-8  p-y_3 p-x_4 flex_auto font_bold font_2 font_slab text_center br_1 br_solid br_secondary-4 ">8</div>
+  <div class="h:{{modifier_class}}-9  p-y_3 p-x_4 flex_auto font_bold font_2 font_slab text_center br_1 br_solid br_secondary-4 ">9</div>
   <div class="h:{{modifier_class}}  p-y_3 p-x_4 flex_auto font_bold font_2 font_slab text_center br_1 br_solid br_secondary-4 ">default</div>
 </div>
 
@@ -240,3 +252,37 @@ Styleguide hover.opacity
 #{class-name-constructor(opacity,"", "","is-active-self")} {
 	opacity: 1;
 }
+
+/*
+Hover: Transition 
+
+soften the harshness of transitions of color by adding transitions.
+
+0              - 0 second transition
+1              - .1 second transition
+2              - .25 second transition
+3              - .3 second transition
+4              - .5 second transition
+5              - .5 second transition
+
+markup:
+<div class="flex m_5 bg_primary m_5">
+  <div class="transition_{{modifier_class}} h:bg_black-0  p-y_3 p-x_4 flex_auto font_bold font_2 font_slab text_center br_1 br_solid br_secondary-4">0</div>
+  <div class="transition_{{modifier_class}} h:bg_black-1  p-y_3 p-x_4 flex_auto font_bold font_2 font_slab text_center br_1 br_solid br_secondary-4">1</div>
+  <div class="transition_{{modifier_class}} h:bg_black-2  p-y_3 p-x_4 flex_auto font_bold font_2 font_slab text_center br_1 br_solid br_secondary-4">2</div>
+  <div class="transition_{{modifier_class}} h:bg_black-3  p-y_3 p-x_4 flex_auto font_bold font_2 font_slab text_center br_1 br_solid br_secondary-4">3</div>
+  <div class="transition_{{modifier_class}} h:bg_black-4  p-y_3 p-x_4 flex_auto font_bold font_2 font_slab text_center br_1 br_solid br_secondary-4">4</div>
+  <div class="transition_{{modifier_class}} h:bg_black-5  p-y_3 p-x_4 flex_auto font_bold font_2 font_slab text_center br_1 br_solid br_secondary-4">5</div>
+  <div class="transition_{{modifier_class}} h:bg_black-6  p-y_3 p-x_4 flex_auto font_bold font_2 font_slab text_center br_1 br_solid br_secondary-4 ">6</div>
+  <div class="transition_{{modifier_class}} h:bg_black-7  p-y_3 p-x_4 flex_auto font_bold font_2 font_slab text_center br_1 br_solid br_secondary-4 ">7</div>
+  <div class="transition_{{modifier_class}} h:bg_black-8  p-y_3 p-x_4 flex_auto font_bold font_2 font_slab text_center br_1 br_solid br_secondary-4 ">8</div>
+  <div class="transition_{{modifier_class}} h:bg_black-9  p-y_3 p-x_4 flex_auto font_bold font_2 font_slab text_center br_1 br_solid br_secondary-4 ">9</div>
+  <div class="transition_{{modifier_class}} h:bg_black  p-y_3 p-x_4 flex_auto font_bold font_2 font_slab text_center br_1 br_solid br_secondary-4 ">default</div>
+</div>
+
+Weight: 50
+
+Styleguide hover.transition
+ 
+ */
+@include loop-style(transition, "", " !important");

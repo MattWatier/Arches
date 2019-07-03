@@ -204,6 +204,36 @@ $black: rgb(19, 18, 18) !default;
 	white-space: nowrap;
 }
 
+@media #{$medium-up} {
+	.wrap\:md {
+		white-space: normal;
+	}
+
+	.pre-wrap\:md {
+		white-space: pre-wrap;
+		letter-spacing: -0.01em;
+	}
+
+	.nowrap\:md {
+		white-space: nowrap;
+	}
+}
+
+@media #{$large-up} {
+	.wrap\:lg {
+		white-space: normal;
+	}
+
+	.pre-wrap\:lg {
+		white-space: pre-wrap;
+		letter-spacing: -0.01em;
+	}
+
+	.nowrap\:lg {
+		white-space: nowrap;
+	}
+}
+
 .lowercase {
 	text-transform: lowercase;
 }

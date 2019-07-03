@@ -191,10 +191,10 @@ $paragraph-margin-bottom:   map-deep-get($value-to-unit, "size", "3");
 
 $grid-breakpoints: (
   xs: 0,
-  sm: 576px,
-  md: 768px,
-  lg: 992px,
-  xl: 1200px
+  sm: map-get($breakpoints, sm),
+  md: map-get($breakpoints, md),
+  lg: map-get($breakpoints, lg),
+  xl: map-get($breakpoints, xl)
 ) !default;
 
 @include _assert-ascending($grid-breakpoints, "$grid-breakpoints");
@@ -725,7 +725,7 @@ $navbar-toggler-padding-x:          $padding_3;
 $navbar-toggler-font-size:          $font-size-lg !default;
 $navbar-toggler-border-radius:      $btn-border-radius !default;
 
-$navbar-dark-color:                 rgba($white, .5) !default;
+$navbar-dark-color:                 $white !default;
 $navbar-dark-hover-color:           rgba($white, .75) !default;
 $navbar-dark-active-color:          $white !default;
 $navbar-dark-disabled-color:        rgba($white, .25) !default;

@@ -133,6 +133,9 @@ Position Type
 
 <div class="p-b_3"><span class="bg_accent br_radius c_white d_inline-block font_n1 p-7_3 p-x_5 sg">Is Responsive: breakpoint modifiers</span></div>Quickly alter the position type and location of an object with 'absolute' and 'top'
 
+unset  		- unset positioned block 
+inital  		- inital positioned block 
+inherit  		- inherit positioned block 
 relative  		- relative positioned block 
 absolute   		- absolute positioned block
 fixed   			- fixed positioned block 
@@ -148,20 +151,15 @@ markup:
 Styleguide Spacing.Position
 
  */
-.absolute {
-	position: absolute;
+
+@include loop-style(position, "", "");
+
+@media #{$medium-up} {
+	@include loop-style(position, $bp-label_medium, "");
 }
 
-.relative {
-	position: relative;
-}
-
-.fixed {
-	position: fixed;
-}
-
-.sticky {
-	position: sticky;
+@media #{$large-up} {
+	@include loop-style(position, $bp-label_large, "");
 }
 
 /*
