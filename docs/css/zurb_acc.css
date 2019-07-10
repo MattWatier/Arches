@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /**
  * arches - Global style system focused on utility classes
- * @version v1.0.0
+ * @version v1.1.0
  * @link https://github.com/MattWatier/Arches#readme
  */
 /**  Pre Header - modular scale default break points utility    *********************************/
@@ -10778,22 +10778,22 @@ Styleguide Typography.Font.Color
 }
 
 /*
-	Text Indent
+Text Indent
 
-	Shadows can be easily added to text there is limited shadows black and white and negative black and white  
+indent text needs to have a mondifier to like `text-indent_2
 
-  .text-indent_n3			- indent text magnitued of -3
-  .text-indent_n2			- indent text magnitued of -2
-  .text-indent_n1			- indent text magnitued of -1
-  .text-indent_0			- No indent of the text
-  .text-indent_1			- indent text magnitued of 1
-  .text-indent_2			- indent text magnitued of 2
-  .text-indent_3			- indent text magnitued of 3
+markup:
+<div class="font_normal font_1 m-x_5 br_solid br_1 br_black-4">
+<p class="text-indent_n3">text that has an indent magnitude of n3 </p>
+<p class="text-indent_n2">text that has an indent magnitude of n2 </p>
+<p class="text-indent_n1">text that has an indent magnitude of n1 </p>
+<p class="text-indent_0">text that has an indent magnitude of 0 </p>
+<p class="text-indent_1">text that has an indent magnitude of 1 </p>
+<p class="text-indent_2">text that has an indent magnitude of 2 </p>
+<p class="text-indent_3">text that has an indent magnitude of 3 </p>
+</div>
 
-	markup:
-	<div class="{{modifier_class}} p_3 ">text that has an indent class of {{modifier_class}}</div>
-
-	Styleguide Typography.Text.Indent
+Styleguide Typography.Text.Indent
 
  */
 .text-indent_0 {
