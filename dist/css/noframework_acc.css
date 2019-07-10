@@ -4482,7 +4482,7 @@ Text Indent
 indent text needs to have a mondifier to like `text-indent_2
 
 markup:
-<div class="font_normal font_1 m-x_5 br_solid br_1 br_black-4">
+<div class="font_normal font_1 m-x_5 br_solid br-l_1 br_black-4">
 <p class="text-indent_n3">text that has an indent magnitude of n3 </p>
 <p class="text-indent_n2">text that has an indent magnitude of n2 </p>
 <p class="text-indent_n1">text that has an indent magnitude of n1 </p>
