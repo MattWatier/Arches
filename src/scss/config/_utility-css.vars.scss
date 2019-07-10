@@ -342,6 +342,16 @@ $value-to-unit: (
 		white-n1: "-1px -1px 2px rgba(255, 255, 255, 0.5)",
 		black-n1: "-1px -1px 2px rgba(0, 0, 0, 0.5)"
 	),
+	text-indent: (
+		0: 0,
+		n1: -1 * $base-font-size,
+		n2: -2 * $base-font-size,
+		n3: -3 * $base-font-size,
+		1: 1 * $base-font-size,
+		2: 2 * $base-font-size,
+		3: 3 * $base-font-size,
+
+	),
 	shadow: (
 		0: make-shadow(3, "drop", #000, 0.4),
 		1: make-shadow(1, "drop", #000, 0.1),
@@ -798,6 +808,15 @@ $style-definition: (
 		),
 		long-name: ".top",
 		unit: map-get($value-to-unit, "sizeAlt")
+	),
+	text-indent: (
+		short-name: ".text-indent",
+		css-style: (
+			"text-indent"
+		),
+		long-name: ".text-indent",
+		unit: map-get($value-to-unit, "text-indent"),
+		alt: "none"
 	),
 	text-shadow: (
 		short-name: ".text-shadow",

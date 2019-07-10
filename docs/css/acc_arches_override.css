@@ -7,6 +7,7 @@
    * @link https://github.com/MattWatier/Arches#readme
    */
   /**  Pre Header - modular scale default break points utility    *********************************/
+  /**  Version: 1.1.0    *********************************/
   /** Utility Class with No Framework Shims **/
   /**  ACC Brands    *********************************/
   /**  Default Brands    *********************************/
@@ -2985,6 +2986,25 @@
 
    */
   /*
+  	Text Indent
+
+  	Shadows can be easily added to text there is limited shadows black and white and negative black and white  
+
+    .text-indent_n3			- indent text magnitued of -3
+    .text-indent_n2			- indent text magnitued of -2
+    .text-indent_n1			- indent text magnitued of -1
+    .text-indent_0			- No indent of the text
+    .text-indent_1			- indent text magnitued of 1
+    .text-indent_2			- indent text magnitued of 2
+    .text-indent_3			- indent text magnitued of 3
+
+  	markup:
+  	<div class="{{modifier_class}} p_3 ">text that has an indent class of {{modifier_class}}</div>
+
+  	Styleguide Typography.Text.Indent
+
+   */
+  /*
     Line Height
 
     Change the linehieght of text with `lh_x`.
@@ -5821,6 +5841,27 @@
 }
 #acc_arches_override .text-shadow_black-n1 {
   text-shadow: "-1px -1px 2px rgba(0, 0, 0, 0.5)";
+}
+#acc_arches_override .text-indent_0 {
+  text-indent: 0;
+}
+#acc_arches_override .text-indent_n1 {
+  text-indent: -1em;
+}
+#acc_arches_override .text-indent_n2 {
+  text-indent: -2em;
+}
+#acc_arches_override .text-indent_n3 {
+  text-indent: -3em;
+}
+#acc_arches_override .text-indent_1 {
+  text-indent: 1em;
+}
+#acc_arches_override .text-indent_2 {
+  text-indent: 2em;
+}
+#acc_arches_override .text-indent_3 {
+  text-indent: 3em;
 }
 #acc_arches_override .ul_none {
   margin: 0;

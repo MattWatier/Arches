@@ -1,80 +1,80 @@
 {
-  "name": "arches",
-  "version": "1.0.0",
-  "description": "Global style system focused on utility classes",
-  "main": "index.js",
-  "scripts": {
-    "index": "kss --config kss-config.json",
-    "uc": "kss --config kss-config_uc_only.json",
-    "zurb_acc": "kss --config kss-config_zurb_acc.json",
-    "boot_acc": "kss --config kss-config_boot_acc.json"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/MattWatier/Arches.git"
-  },
-  "keywords": [
-    "Utlity",
-    "Classes",
-    "Zurb",
-    "Boodstrap"
-  ],
-  "author": "Matt Watier",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/MattWatier/Arches/issues"
-  },
-  "browserslist": [
-    "last 2 version",
-    "> 1% in US",
-    "IE 11",
-    "not dead"
-  ],
-  "cssnano": {
-    "preset": [
-      "default",
-      {
-        "discardComments": {
-          "removeAll": true
-        }
-      }
-    ]
-  },
-  "homepage": "https://github.com/MattWatier/Arches#readme",
-  "devDependencies": {
-    "@fortawesome/fontawesome-pro": "^5.9.0",
-    "autoprefixer": "^9.5.1",
-    "bootstrap": "^4.3.1",
-    "css-declaration-sorter": "^4.0.1",
-    "cssnano": "^4.1.10",
-    "foundation-sites": "^6.5.3",
-    "fs": "0.0.1-security",
-    "gulp": "^4.0.2",
-    "gulp-clean": "^0.4.0",
-    "gulp-clone": "^2.0.1",
-    "gulp-dart-sass": "^0.9.1",
-    "gulp-gzip": "^1.4.2",
-    "gulp-header": "^2.0.7",
-    "gulp-kss": "0.0.2",
-    "gulp-postcss": "^8.0.0",
-    "gulp-rename": "^1.4.0",
-    "gulp-run": "^1.7.1",
-    "gulp-run-command": "0.0.9",
-    "gulp-sourcemaps": "^2.6.5",
-    "jquery": "^3.4.1",
-    "kss": "^3.0.0-beta.25",
-    "merge-stream": "^1.0.1",
-    "michelangelo": "^0.8.0",
-    "npm-run": "^5.0.1",
-    "npm-run-all": "^4.1.5",
-    "pixrem": "^5.0.0",
-    "popper.js": "^1.15.0",
-    "postcss-normalize": "^7.0.1",
-    "what-input": "^5.2.1"
-  },
-  "dependencies": {
-    "mocha": "^6.1.4",
-    "npm": "^6.9.0",
-    "postcss-discard-duplicates": "^4.0.2"
-  }
+	"name": "arches",
+	"version": "1.1.0",
+	"description": "Global style system focused on utility classes",
+	"main": "index.js",
+	"scripts": {
+		"index": "kss --config kss-config.json",
+		"uc": "kss --config kss-config_uc_only.json",
+		"zurb_acc": "kss --config kss-config_zurb_acc.json",
+		"boot_acc": "kss --config kss-config_boot_acc.json"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/MattWatier/Arches.git"
+	},
+	"keywords": [
+		"Utlity",
+		"Classes",
+		"Zurb",
+		"Boodstrap"
+	],
+	"author": "Matt Watier",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/MattWatier/Arches/issues"
+	},
+	"browserslist": [
+		"last 2 version",
+		"> 1% in US",
+		"IE 11",
+		"not dead"
+	],
+	"cssnano": {
+		"preset": [
+			"default",
+			{
+				"discardComments": {
+					"removeAll": true
+				}
+			}
+		]
+	},
+	"homepage": "https://github.com/MattWatier/Arches#readme",
+	"devDependencies": {
+		"@fortawesome/fontawesome-pro": "^5.9.0",
+		"autoprefixer": "^9.5.1",
+		"bootstrap": "^4.3.1",
+		"css-declaration-sorter": "^4.0.1",
+		"cssnano": "^4.1.10",
+		"foundation-sites": "^6.5.3",
+		"fs": "0.0.1-security",
+		"gulp": "^4.0.2",
+		"gulp-clean": "^0.4.0",
+		"gulp-clone": "^2.0.1",
+		"gulp-dart-sass": "^0.9.1",
+		"gulp-gzip": "^1.4.2",
+		"gulp-header": "^2.0.7",
+		"gulp-kss": "0.0.2",
+		"gulp-postcss": "^8.0.0",
+		"gulp-rename": "^1.4.0",
+		"gulp-run": "^1.7.1",
+		"gulp-run-command": "0.0.9",
+		"gulp-sourcemaps": "^2.6.5",
+		"jquery": "^3.4.1",
+		"kss": "^3.0.0-beta.25",
+		"merge-stream": "^1.0.1",
+		"michelangelo": "^0.8.0",
+		"npm-run": "^5.0.1",
+		"npm-run-all": "^4.1.5",
+		"pixrem": "^5.0.0",
+		"popper.js": "^1.15.0",
+		"postcss-normalize": "^7.0.1",
+		"what-input": "^5.2.1"
+	},
+	"dependencies": {
+		"mocha": "^6.1.4",
+		"npm": "^6.9.0",
+		"postcss-discard-duplicates": "^4.0.2"
+	}
 }

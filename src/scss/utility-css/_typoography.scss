@@ -12,13 +12,13 @@ $white: rgb(246, 246, 246) !default;
 $black: rgb(19, 18, 18) !default;
 
 .font_unset {
-	font-style: unset;
-	font-weight: unset;
-	font-size: unset;
-	text-decoration: unset;
-	text-align: unset;
-	text-transform: unset;
-	white-space: unset;
+  font-style: unset;
+  font-weight: unset;
+  font-size: unset;
+  text-decoration: unset;
+  text-align: unset;
+  text-transform: unset;
+  white-space: unset;
 }
 
 /*
@@ -60,32 +60,32 @@ $black: rgb(19, 18, 18) !default;
   Styleguide Typography.Font.Style
  */
 .font_normal {
-	font-style: normal !important;
+  font-style: normal !important;
 }
 
 .font_italic {
-	font-style: italic !important;
+  font-style: italic !important;
 }
 
 @include loop-style(line-height);
 
 @each $color-name, $hex-value in $theme-palette {
-	@include color-loop(color, $color-name, $hex-value);
+  @include color-loop(color, $color-name, $hex-value);
 }
 
 .c_white {
-	color: $white !important;
+  color: $white !important;
 }
 
 .c_black {
-	color: $black !important;
+  color: $black !important;
 }
 
 @include loop-transparent(color-transparent, "black", "", "!important", false);
 @include loop-transparent(color-transparent, "white", "", "!important", false);
 
 .c_inherit {
-	color: inherit;
+  color: inherit;
 }
 
 /*
@@ -106,19 +106,19 @@ $black: rgb(19, 18, 18) !default;
   Styleguide Typography.Weight
  */
 .font_light {
-	font-weight: 100 !important;
+  font-weight: 100 !important;
 }
 
 .font_regular {
-	font-weight: 400 !important;
+  font-weight: 400 !important;
 }
 
 .font_bold {
-	font-weight: 700 !important;
+  font-weight: 700 !important;
 }
 
 .font_xbold {
-	font-weight: 900 !important;
+  font-weight: 900 !important;
 }
 
 /*
@@ -155,11 +155,11 @@ $black: rgb(19, 18, 18) !default;
 @include loop-style(font-size);
 
 @media #{$medium-up} {
-	@include loop-style(font-size, $bp-label_medium, "");
+  @include loop-style(font-size, $bp-label_medium, "");
 }
 
 @media #{$large-up} {
-	@include loop-style(font-size, $bp-label_large, "");
+  @include loop-style(font-size, $bp-label_large, "");
 }
 
 // Golden Ratio Font Size
@@ -192,82 +192,82 @@ $black: rgb(19, 18, 18) !default;
 // }
 
 .wrap {
-	white-space: normal;
+  white-space: normal;
 }
 
 .pre-wrap {
-	white-space: pre-wrap;
-	letter-spacing: -0.01em;
+  white-space: pre-wrap;
+  letter-spacing: -0.01em;
 }
 
 .nowrap {
-	white-space: nowrap;
+  white-space: nowrap;
 }
 
 @media #{$medium-up} {
-	.wrap\:md {
-		white-space: normal;
-	}
+  .wrap\:md {
+    white-space: normal;
+  }
 
-	.pre-wrap\:md {
-		white-space: pre-wrap;
-		letter-spacing: -0.01em;
-	}
+  .pre-wrap\:md {
+    white-space: pre-wrap;
+    letter-spacing: -0.01em;
+  }
 
-	.nowrap\:md {
-		white-space: nowrap;
-	}
+  .nowrap\:md {
+    white-space: nowrap;
+  }
 }
 
 @media #{$large-up} {
-	.wrap\:lg {
-		white-space: normal;
-	}
+  .wrap\:lg {
+    white-space: normal;
+  }
 
-	.pre-wrap\:lg {
-		white-space: pre-wrap;
-		letter-spacing: -0.01em;
-	}
+  .pre-wrap\:lg {
+    white-space: pre-wrap;
+    letter-spacing: -0.01em;
+  }
 
-	.nowrap\:lg {
-		white-space: nowrap;
-	}
+  .nowrap\:lg {
+    white-space: nowrap;
+  }
 }
 
 .lowercase {
-	text-transform: lowercase;
+  text-transform: lowercase;
 }
 
 .uppercase {
-	text-transform: uppercase;
+  text-transform: uppercase;
 }
 
 .underline {
-	text-decoration: underline;
+  text-decoration: underline;
 }
 
 .dotted {
-	text-decoration: dotted;
+  text-decoration: dotted;
 }
 
 .double {
-	text-decoration: double;
+  text-decoration: double;
 }
 
 .dashed {
-	text-decoration: dashed;
+  text-decoration: dashed;
 }
 
 .text_right {
-	text-align: right !important;
+  text-align: right !important;
 }
 
 .text_center {
-	text-align: center !important;
+  text-align: center !important;
 }
 
 .text_left {
-	text-align: left !important;
+  text-align: left !important;
 }
 
 /*
@@ -313,6 +313,27 @@ Styleguide Typography.Font.Color
  */
 
 @include loop-style(text-shadow);
+/*
+	Text Indent
+
+	Shadows can be easily added to text there is limited shadows black and white and negative black and white  
+  
+  .text-indent_n3			- indent text magnitued of -3
+  .text-indent_n2			- indent text magnitued of -2
+  .text-indent_n1			- indent text magnitued of -1
+  .text-indent_0			- No indent of the text
+  .text-indent_1			- indent text magnitued of 1
+  .text-indent_2			- indent text magnitued of 2
+  .text-indent_3			- indent text magnitued of 3
+
+	markup:
+	<div class="{{modifier_class}} p_3 ">text that has an indent class of {{modifier_class}}</div>
+
+	Styleguide Typography.Text.Indent
+
+ */
+
+@include loop-style(text-indent);
 
 /*
   Line Height
@@ -378,7 +399,7 @@ Styleguide Typography.Font.Color
  */
 // list with no decoration shouldn't have a padding
 .ul_none {
-	padding: 0;
-	margin: 0;
+  padding: 0;
+  margin: 0;
 }
 @include loop-style(list-type, "", "!important");

@@ -5,6 +5,7 @@
  * @link https://github.com/MattWatier/Arches#readme
  */
 /**  Pre Header - modular scale default break points utility    *********************************/
+/**  Version: 1.1.0    *********************************/
 /** Utility Class Only With Basic ACC Branding **/
 /**  ACC Brands    *********************************/
 /**  Default Brands    *********************************/
@@ -4319,6 +4320,53 @@ Styleguide Typography.Font.Color
 
 .text-shadow_black-n1 {
   text-shadow: "-1px -1px 2px rgba(0, 0, 0, 0.5)";
+}
+
+/*
+	Text Indent
+
+	Shadows can be easily added to text there is limited shadows black and white and negative black and white  
+
+  .text-indent_n3			- indent text magnitued of -3
+  .text-indent_n2			- indent text magnitued of -2
+  .text-indent_n1			- indent text magnitued of -1
+  .text-indent_0			- No indent of the text
+  .text-indent_1			- indent text magnitued of 1
+  .text-indent_2			- indent text magnitued of 2
+  .text-indent_3			- indent text magnitued of 3
+
+	markup:
+	<div class="{{modifier_class}} p_3 ">text that has an indent class of {{modifier_class}}</div>
+
+	Styleguide Typography.Text.Indent
+
+ */
+.text-indent_0 {
+  text-indent: 0;
+}
+
+.text-indent_n1 {
+  text-indent: -1em;
+}
+
+.text-indent_n2 {
+  text-indent: -2em;
+}
+
+.text-indent_n3 {
+  text-indent: -3em;
+}
+
+.text-indent_1 {
+  text-indent: 1em;
+}
+
+.text-indent_2 {
+  text-indent: 2em;
+}
+
+.text-indent_3 {
+  text-indent: 3em;
 }
 
 /*
