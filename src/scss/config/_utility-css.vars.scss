@@ -228,7 +228,7 @@ $value-to-unit: (
 		5: ms-calc(5, $ms-base, $golden)
 	),
 	display: (
-		none: none,
+		display_none: none,
 		block: block,
 		inline: inline,
 		inline-block: inline-block,
@@ -322,7 +322,7 @@ $value-to-unit: (
 		initial: initial,
 		inherit: inherit,
 		relative: relative,
-		abosulte: abosulte,
+		absolute: absolute,
 		fixed: fixed,
 		sticky: sticky,
 		unset: unset
@@ -349,8 +349,7 @@ $value-to-unit: (
 		n3: -3 * $base-font-size,
 		1: 1 * $base-font-size,
 		2: 2 * $base-font-size,
-		3: 3 * $base-font-size,
-
+		3: 3 * $base-font-size
 	),
 	shadow: (
 		0: make-shadow(3, "drop", #000, 0.4),
@@ -495,11 +494,11 @@ $style-definition: (
 		alt: "none"
 	),
 	display: (
-		short-name: ".d",
+		short-name: ".",
 		css-style: (
 			"display"
 		),
-		long-name: "display",
+		long-name: ".display",
 		unit: map-get($value-to-unit, "display"),
 		alt: "none"
 	),

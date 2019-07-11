@@ -17,20 +17,20 @@ Many momment there are needs for toggles of icon when the parent is in the state
 
 markup:
 <ul class="ul_none m_0 p_0">
-	<li class="is-active_toggle-function is-active c_white a:c_black flex p-x_3 p-y_2 a:bg_secondary-3 font_1 bg_success-n1">	
+	<li class="m-t_1 is-active_toggle-function is-active c_white a:c_black flex p-x_3 p-y_2 a:bg_secondary-3 font_1 bg_success-n1">	
 			<span class="">FA Solid {{ modifier_class }}</span>
 			<i class="font_3 fas fa-fw {{ modifier_class }}"></i>
-			<span class="a:d_inline"> (is-active) </span>
+			<span class="a:inline"> (is-active) </span>
 	</li>
-	<li class="is-active_toggle-function is-active c_white a:c_black flex p-x_3 p-y_2 a:bg_secondary-3 font_1 bg_success-n1">	
+	<li class="m-t_1 is-active_toggle-function is-active c_white a:c_black flex p-x_3 p-y_2 a:bg_secondary-3 font_1 bg_success-n1">	
 			<span class="">FA Regular {{ modifier_class }}</span>
 			<i class="font_3 far  fa-fw {{ modifier_class }}"></i>
-			<span class="a:d_inline"> (is-active) </span>
+			<span class="a:inline"> (is-active) </span>
 	</li>
-	<li class="is-active_toggle-function is-active c_white a:c_black flex p-x_3 p-y_2 a:bg_secondary-3 font_1 bg_success-n1">	
+	<li class="m-t_1 is-active_toggle-function is-active c_white a:c_black flex p-x_3 p-y_2 a:bg_secondary-3 font_1 bg_success-n1">	
 			<span class="">FA Light {{ modifier_class }}</span>
 			<i class="font_3 fal fa-fw {{ modifier_class }}"></i>
-			<span class="a:d_inline"> (is-active) </span>
+			<span class="a:inline"> (is-active) </span>
 	</li>
 </ul>
 

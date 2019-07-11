@@ -14,12 +14,12 @@ Styleguide display
 
 	quickly alter the padding of an object 
 
-	.d_block              		- the element is the a block
-	.d_inline              		- the element is now inline
-	.d_inline-block            - the element is now inline-block
-	.d_table-cell             	- the element is now table-cell
-	.d_flex-inline             - the element is now flex-inline
-	.d_none             - the element is now display none
+	.block              		- the element is the a block
+	.inline              	- the element is now inline
+	.inline-block           - the element is now inline-block
+	.table-cell             - the element is now table-cell
+	.flex-inline            - the element is now flex-inline
+	.display_none             		- the element is now display none
 
 	markup:
 	<div class="br_solid br_transparent bg_alert-3  text_center">
@@ -51,8 +51,8 @@ Styleguide display
 
 
 	markup:
-	<div class="br_solid br_transparent bg_alert-3 text_center d_table-cell w_100 {{modifier_class}} " style="height:100px;">
-		<div class="bg_primary-5 text_center d_inline-block ">Content</div>
+	<div class="br_solid br_transparent bg_alert-3 text_center table-cell w_100 {{modifier_class}} " style="height:100px;">
+		<div class="bg_primary-5 text_center inline-block ">Content</div>
 	</div>
 
 	Styleguide display.vertical alignment

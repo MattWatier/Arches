@@ -171,7 +171,7 @@
 
   Color Codes (CC) 
 
-  <div class="p-b_3"><span class="bg_alert br_radius c_white d_inline-block font_n1 p-7_3 p-x_5 sg">!! Extra Style Sheet Must Be Included !!</span></div>Color Codes are sepereate style sheets that give you access to decorating classes created with the color pallete.
+  <div class="p-b_3"><span class="bg_alert br_radius c_white inline-block font_n1 p-7_3 p-x_5 sg">!! Extra Style Sheet Must Be Included !!</span></div>Color Codes are sepereate style sheets that give you access to decorating classes created with the color pallete.
 
 
 
@@ -2192,9 +2192,9 @@
   markup:
   <div class="max-w_3">
      <h1 class="lorem-loader font_3 m-y_3">&nbsp;</h1>
-     <p class="m-y_2 font_0 lorem-loader">&nbsp;</div>
-     <p class="m-y_2 font_0 lorem-loader">&nbsp;</div>
-     <p class="m-y_2 font_0 lorem-loader">&nbsp;</div>
+     <p class="m-y_2 font_0 lorem-loader">&nbsp;</p>
+     <p class="m-y_2 font_0 lorem-loader">&nbsp;</p>
+     <p class="m-y_2 font_0 lorem-loader">&nbsp;</p>
   </div>
 
   Styleguide InteractiveExtras.Text Placeholder Loader
@@ -2205,15 +2205,17 @@
 
   To create an image placeholder use the lorem-loader plus an aspect of the intended image on th parent container while waiting for the image.The placeholder will be a 100% of the container so size the container properly. 
 
-  aspect_1x2
-  aspect_1x1
-  aspect_3x2
-  aspect_4x3
-  aspect_16x9
-
+  .aspect_1x2			- lock image to a 1 to 2 ratio
+  .aspect_1x1			- lock image to a 1 to 1 ratio
+  .aspect_2x1			- lock image to a 2 to 1 ratio
+  .aspect_3x2			- lock image to a 3 to 2 ratio   
+  .aspect_4x3			- lock image to a 4 to 3 ratio 
+  .aspect_16x9		- lock image to a 16 to 9 ratio 
+  .aspect_21x9		- lock image to a 21 to 9 ratio 
+  .aspect_4x1			- lock image to a 4 to 1 ratio 
 
   markup:
-  <div class="grid-w_2">
+  <div class="grid-w_2 max-w_1">
      <div class="m-y_2 lorem-loader {{modifier_class}} ">&nbsp;</div>
   </div>
 
@@ -2255,20 +2257,20 @@
 
   markup:
   <ul class="ul_none m_0 p_0">
-  	<li class="is-active_toggle-function is-active c_white a:c_black flex p-x_3 p-y_2 a:bg_secondary-3 font_1 bg_success-n1">	
+  	<li class="m-t_1 is-active_toggle-function is-active c_white a:c_black flex p-x_3 p-y_2 a:bg_secondary-3 font_1 bg_success-n1">	
   			<span class="">FA Solid {{ modifier_class }}</span>
   			<i class="font_3 fas fa-fw {{ modifier_class }}"></i>
-  			<span class="a:d_inline"> (is-active) </span>
+  			<span class="a:inline"> (is-active) </span>
   	</li>
-  	<li class="is-active_toggle-function is-active c_white a:c_black flex p-x_3 p-y_2 a:bg_secondary-3 font_1 bg_success-n1">	
+  	<li class="m-t_1 is-active_toggle-function is-active c_white a:c_black flex p-x_3 p-y_2 a:bg_secondary-3 font_1 bg_success-n1">	
   			<span class="">FA Regular {{ modifier_class }}</span>
   			<i class="font_3 far  fa-fw {{ modifier_class }}"></i>
-  			<span class="a:d_inline"> (is-active) </span>
+  			<span class="a:inline"> (is-active) </span>
   	</li>
-  	<li class="is-active_toggle-function is-active c_white a:c_black flex p-x_3 p-y_2 a:bg_secondary-3 font_1 bg_success-n1">	
+  	<li class="m-t_1 is-active_toggle-function is-active c_white a:c_black flex p-x_3 p-y_2 a:bg_secondary-3 font_1 bg_success-n1">	
   			<span class="">FA Light {{ modifier_class }}</span>
   			<i class="font_3 fal fa-fw {{ modifier_class }}"></i>
-  			<span class="a:d_inline"> (is-active) </span>
+  			<span class="a:inline"> (is-active) </span>
   	</li>
   </ul>
 
@@ -2372,11 +2374,11 @@
       <div class="texture-dark">
           <h4 class="font_slab c_white">Stay Connected</h4>
           <ul class="flex social-bar ul_none c_white h:c_white m_0">
-              <li class="flex_auto m-r_2"><a href="https://twitter.com/accintouch" target="_blank" class="twitter social-bar--button d_block m-b_0 p-x_5 p-y_3 c_white-8 h:c_white text_right h:bg_primary-n1"><i class="fab fa-twitter-square font_2"></i></a></li>
-              <li class="flex_auto m-r_2"><a href="https://www.facebook.com/AmericanCollegeofCardiology" target="_blank" class="facebook social-bar--button d_block m-b_0 p-x_5 p-y_3 c_white-8 h:c_white text_right h:bg_primary-n1"><i class="fab fa-facebook-square font_2"></i></a></li>
-              <li class="flex_auto m-r_2"><a href="https://www.linkedin.com/groups/732607/profile" target="_blank" class="linkedin social-bar--button d_block m-b_0 p-x_5 p-y_3 c_white-8 h:c_white text_right h:bg_primary-n1"><i class="fab fa-linkedin font_2"></i></a></li>
-              <li class="flex_auto m-r_2"><a href="https://plus.google.com/118164094874227618578" target="_blank" class="google-plus social-bar--button d_block m-b_0 p-x_5 p-y_3 c_white-8 h:c_white text_right h:bg_primary-n1"><i class="fab fa-google-plus font_2"></i></a></li>
-              <li class="flex_auto m-r_2"><a href="http://www.youtube.com/user/ACCinTouch" target="_blank" class="youtube social-bar--button d_block m-b_0 p-x_5 p-y_3 c_white-8 h:c_white text_right h:bg_primary-n1"><i class="fab fa-youtube font_2"></i></a></li>
+              <li class="flex_auto m-r_2"><a href="https://twitter.com/accintouch" target="_blank" class="twitter social-bar--button block m-b_0 p-x_5 p-y_3 c_white-8 h:c_white text_right h:bg_primary-n1"><i class="fab fa-twitter-square font_2"></i></a></li>
+              <li class="flex_auto m-r_2"><a href="https://www.facebook.com/AmericanCollegeofCardiology" target="_blank" class="facebook social-bar--button block m-b_0 p-x_5 p-y_3 c_white-8 h:c_white text_right h:bg_primary-n1"><i class="fab fa-facebook-square font_2"></i></a></li>
+              <li class="flex_auto m-r_2"><a href="https://www.linkedin.com/groups/732607/profile" target="_blank" class="linkedin social-bar--button block m-b_0 p-x_5 p-y_3 c_white-8 h:c_white text_right h:bg_primary-n1"><i class="fab fa-linkedin font_2"></i></a></li>
+              <li class="flex_auto m-r_2"><a href="https://plus.google.com/118164094874227618578" target="_blank" class="google-plus social-bar--button block m-b_0 p-x_5 p-y_3 c_white-8 h:c_white text_right h:bg_primary-n1"><i class="fab fa-google-plus font_2"></i></a></li>
+              <li class="flex_auto m-r_2"><a href="http://www.youtube.com/user/ACCinTouch" target="_blank" class="youtube social-bar--button block m-b_0 p-x_5 p-y_3 c_white-8 h:c_white text_right h:bg_primary-n1"><i class="fab fa-youtube font_2"></i></a></li>
           </ul>
       </div>
 
@@ -2626,7 +2628,7 @@
   			</h1>
   			<div class="flex max-w_1">
   				<input type="email" class="flex_auto m_0" /><button
-  					class="button flex_auto lh_2 p-x_4 p_3 bg_primary br_0 br_none br-tr_radius br-br_radius button c_white font_2 h:bg_primary-n2 m-r_3 none p-x_4 p-y_2"
+  					class="button flex_auto lh_2 p-x_4 p_3 bg_primary br_0 br_none br-tr_radius br-br_radius button c_white font_2 h:bg_primary-n2 m-r_3 display_none p-x_4 p-y_2"
   				>
   					update
   				</button>
@@ -2918,7 +2920,7 @@
   /*
     Font Size
 
-      <div class="p-b_3"><span class="bg_accent br_radius c_white d_inline-block font_n1 p-7_3 p-x_5 sg">Is Responsive: breakpoint modifiers</span></div>You can alter the size of the font with font_[x]
+      <div class="p-b_3"><span class="bg_accent br_radius c_white inline-block font_n1 p-7_3 p-x_5 sg">Is Responsive: breakpoint modifiers</span></div>You can alter the size of the font with font_[x]
 
     .font_10 - 10x
     .font_9 - 9x
@@ -3077,7 +3079,7 @@
   /*
   Margin
 
-  <div class="p-b_3"><span class="bg_accent br_radius c_white d_inline-block font_n1 p-7_3 p-x_5 sg">Is Responsive: breakpoint modifiers</span></div>Margin classes are mobile first with postfix modifier for `:md`and `:lg` variations for responsive sizing. Margins that use the short codes of all margin, auto, x margins, and y margin are overriden by specific side margins.	
+  <div class="p-b_3"><span class="bg_accent br_radius c_white inline-block font_n1 p-7_3 p-x_5 sg">Is Responsive: breakpoint modifiers</span></div>Margin classes are mobile first with postfix modifier for `:md`and `:lg` variations for responsive sizing. Margins that use the short codes of all margin, auto, x margins, and y margin are overriden by specific side margins.	
 
   .m_auto.max-w_2 					 - same as `Margin:0 auto`
   .m_0    					- All margins set to 0
@@ -3108,7 +3110,7 @@
   /*
   Padding
 
-  <div class="p-b_3"><span class="bg_accent br_radius c_white d_inline-block font_n1 p-7_3 p-x_5 sg">Is Responsive: breakpoint modifiers</span></div>Quickly alter the padding of an object.
+  <div class="p-b_3"><span class="bg_accent br_radius c_white inline-block font_n1 p-7_3 p-x_5 sg">Is Responsive: breakpoint modifiers</span></div>Quickly alter the padding of an object.
 
   .p_0              - All paddings set to 0
   .p_1              - All paddings set to 1px
@@ -3134,7 +3136,7 @@
   /*
   Position Type
 
-  <div class="p-b_3"><span class="bg_accent br_radius c_white d_inline-block font_n1 p-7_3 p-x_5 sg">Is Responsive: breakpoint modifiers</span></div>Quickly alter the position type and location of an object with 'absolute' and 'top'
+  <div class="p-b_3"><span class="bg_accent br_radius c_white inline-block font_n1 p-7_3 p-x_5 sg">Is Responsive: breakpoint modifiers</span></div>Quickly alter the position type and location of an object with 'absolute' and 'top'
 
   unset  		- unset positioned block 
   inital  		- inital positioned block 
@@ -3157,7 +3159,7 @@
   /*
   Position Location
 
-  <div class="p-b_3"><span class="bg_accent br_radius c_white d_inline-block font_n1 p-7_3 p-x_5 sg">Is Responsive: breakpoint modifiers</span></div>Quickly alter the position type and location of an object with top, bottom, left, and right position mondifiers. All of these modifiers will follow the rules of the containers position type. All of the examples below are using absolute positions to have the greatest effect. 
+  <div class="p-b_3"><span class="bg_accent br_radius c_white inline-block font_n1 p-7_3 p-x_5 sg">Is Responsive: breakpoint modifiers</span></div>Quickly alter the position type and location of an object with top, bottom, left, and right position mondifiers. All of these modifiers will follow the rules of the containers position type. All of the examples below are using absolute positions to have the greatest effect. 
 
   .t_1 - modify top of an absolute positioned block 
   .t_5 - modify top of an absolute positioned block
@@ -3178,7 +3180,7 @@
   /*
   Float
 
-  <div class="p-b_3"><span class="bg_accent br_radius c_white d_inline-block font_n1 p-7_3 p-x_5 sg">Is Responsive: breakpoint modifiers</span></div> Easily Add Float to an object
+  <div class="p-b_3"><span class="bg_accent br_radius c_white inline-block font_n1 p-7_3 p-x_5 sg">Is Responsive: breakpoint modifiers</span></div> Easily Add Float to an object
 
   .float_unset - modify float of a block 
   .float_none - modify float of a block 
@@ -3210,12 +3212,12 @@
 
   	quickly alter the padding of an object 
 
-  	.d_block              		- the element is the a block
-  	.d_inline              		- the element is now inline
-  	.d_inline-block            - the element is now inline-block
-  	.d_table-cell             	- the element is now table-cell
-  	.d_flex-inline             - the element is now flex-inline
-  	.d_none             - the element is now display none
+  	.block              		- the element is the a block
+  	.inline              	- the element is now inline
+  	.inline-block           - the element is now inline-block
+  	.table-cell             - the element is now table-cell
+  	.flex-inline            - the element is now flex-inline
+  	.display_none             		- the element is now display none
 
   	markup:
   	<div class="br_solid br_transparent bg_alert-3  text_center">
@@ -3237,8 +3239,8 @@
 
 
   	markup:
-  	<div class="br_solid br_transparent bg_alert-3 text_center d_table-cell w_100 {{modifier_class}} " style="height:100px;">
-  		<div class="bg_primary-5 text_center d_inline-block ">Content</div>
+  	<div class="br_solid br_transparent bg_alert-3 text_center table-cell w_100 {{modifier_class}} " style="height:100px;">
+  		<div class="bg_primary-5 text_center inline-block ">Content</div>
   	</div>
 
   	Styleguide display.vertical alignment
@@ -3953,7 +3955,7 @@
   /*
   Is-active to Full Opacity
 
-  <div class="p-b_3"><span class="bg_highlight br_radius c_white d_inline-block font_n1 p-7_3 p-x_5 sg">Click the areas below to toggle the "is-active" state.</span></div><strong>`.is-acitve .a:opacity`</strong> Set the Opacity of an objects children to 100% when it has the class is-active. 
+  <div class="p-b_3"><span class="bg_highlight br_radius c_white inline-block font_n1 p-7_3 p-x_5 sg">Click the areas below to toggle the "is-active" state.</span></div><strong>`.is-acitve .a:opacity`</strong> Set the Opacity of an objects children to 100% when it has the class is-active. 
 
   markup:
   <div class="flex p_4 bg_primary is-active_toggle-function ">
@@ -3977,7 +3979,7 @@
   /*
   Is-active Black n White 
 
-  <div class="p-b_3"><span class="bg_highlight br_radius c_white d_inline-block font_n1 p-7_3 p-x_5 sg">Click the areas below to toggle the "is-active" state.</span></div>Set the background to full white or black when the parent has a class of `is-active`. 
+  <div class="p-b_3"><span class="bg_highlight br_radius c_white inline-block font_n1 p-7_3 p-x_5 sg">Click the areas below to toggle the "is-active" state.</span></div>Set the background to full white or black when the parent has a class of `is-active`. 
 
   bg_white              - text color modified light to dark
   bg_black              - text color modified light to dark
@@ -4005,7 +4007,7 @@
   /*
     Is active font color
 
-    <div class="p-b_3"><span class="bg_highlight br_radius c_white d_inline-block font_n1 p-7_3 p-x_5 sg">Click the areas below to toggle the "is-active" state.</span></div> Set the font color of the child by setting the parent to .is-active. `a:c_primary`
+    <div class="p-b_3"><span class="bg_highlight br_radius c_white inline-block font_n1 p-7_3 p-x_5 sg">Click the areas below to toggle the "is-active" state.</span></div> Set the font color of the child by setting the parent to .is-active. `a:c_primary`
 
     c_primary              - text color modified light to dark
     c_secondary              - text color modified light to dark
@@ -4038,7 +4040,7 @@
   /*
     Is active font color
 
-    <div class="p-b_3"><span class="bg_highlight br_radius c_white d_inline-block font_n1 p-7_3 p-x_5 sg">Click the areas below to toggle the "is-active" state.</span></div> Set the font color of the child by setting the parent to .is-active. `a:c_primary`
+    <div class="p-b_3"><span class="bg_highlight br_radius c_white inline-block font_n1 p-7_3 p-x_5 sg">Click the areas below to toggle the "is-active" state.</span></div> Set the font color of the child by setting the parent to .is-active. `a:c_primary`
 
     bg_primary              - text color modified light to dark
     bg_secondary              - text color modified light to dark
@@ -4071,7 +4073,7 @@
   /*
     Is active Icons
 
-    <div class="p-b_3"><span class="bg_highlight br_radius c_white d_inline-block font_n1 p-7_3 p-x_5 sg">Click the areas below to toggle the "is-active" state.</span></div> Toggle the display and hide of a an icon with applying `is-active_icon-show` or `is-active_icon-hide`  
+    <div class="p-b_3"><span class="bg_highlight br_radius c_white inline-block font_n1 p-7_3 p-x_5 sg">Click the areas below to toggle the "is-active" state.</span></div> Toggle the display and hide of a an icon with applying `is-active_icon-show` or `is-active_icon-hide`  
 
     fa-award            - toggle the award icon
     fa-bell             - toggle the bell icon
@@ -4093,7 +4095,7 @@
   /*
   Is active Display
 
-  <div class="p-b_3"><span class="bg_highlight br_radius c_white d_inline-block font_n1 p-7_3 p-x_5 sg"> Click the areas below to toggle the "is-active" state.</span></div>Toggle the display type of an object when it's parent is-active
+  <div class="p-b_3"><span class="bg_highlight br_radius c_white inline-block font_n1 p-7_3 p-x_5 sg"> Click the areas below to toggle the "is-active" state.</span></div>Toggle the display type of an object when it's parent is-active
 
   none           -  make the display none when parent is-active
   inline           -  make the display inline when parent is-active
@@ -4104,7 +4106,7 @@
   markup:
   <div class="p_5 is-active_toggle-function">
     <span class="a:bg_accent bg_secondary-2 font_4 text_center br_1 br_solid br_secondary-4 p_4">Click to Toggle parent is-active</span>
-    <span class="a:d_{{modifier_class}} a:bg_accent bg_secondary-2 font_4 text_center br_1 br_solid br_secondary-4 p_4">Span with display:{{modifier_class}} when parent is active</span>
+    <span class="a:{{modifier_class}} a:bg_accent bg_secondary-2 font_4 text_center br_1 br_solid br_secondary-4 p_4">Span with display:{{modifier_class}} when parent is active</span>
   </div>
 
   Weight: 10
@@ -4265,8 +4267,8 @@
                                   </li>
                                   <li class="m-b_1 m-b_3:md font_normal">
                                       <a href="mailto:resource@acc.org" class="email c_white text_underline  h:c_white ">
-                                          <strong class="p-r_2 d_inline d_block:md d_inline:lg">Email:</strong>
-                                          <span class="d_inline d_block:md d_inline:lg">resource@acc.org</span></a>
+                                          <strong class="p-r_2 inline block:md inline:lg">Email:</strong>
+                                          <span class="inline block:md inline:lg">resource@acc.org</span></a>
                                   </li>
                               </ul>
                           </div>
@@ -4274,16 +4276,16 @@
                           <ul class="ul_none lh_2">
                               <li class="m-b_1 m-b_3:md font_normal">
                                   <a tel="+12023756000" href="tel:+12023756000" class="tel c_white h:c_white h:underline">
-                                  <strong class="p-r_2 d_block:md d_inline:lg">Phone:</strong><span class=" d_block:md d_inline:lg">(202) 375-6000, ext. 5603</span></a>
+                                  <strong class="p-r_2 block:md inline:lg">Phone:</strong><span class=" block:md inline:lg">(202) 375-6000, ext. 5603</span></a>
                               </li>
                               <li class="m-b_1 m-b_3:md font_normal">
                                   <a tel="+18002574737" href="tel:+18002534636.5603" class="tel c_white h:c_white h:underline">
-                                  <strong class="p-r_2 d_block:md d_inline:lg">Toll Free:</strong><span class=" d_block:md d_inline:lg">(800) 253-4636, ext. 5603</span></a>
+                                  <strong class="p-r_2 block:md inline:lg">Toll Free:</strong><span class=" block:md inline:lg">(800) 253-4636, ext. 5603</span></a>
                               </li>
                               <li class="m-b_1 m-b_3:md font_normal">
                                   <a fax="+12023757000" href="fax:+12023757000" class="fax c_white h:c_white h:underline">
-                                  <strong class="p-r_2 d_block:md d_inline:lg">Fax:</strong>
-                                  <span class="block:md d_inline:lg">(202) 375-7000</span>
+                                  <strong class="p-r_2 block:md inline:lg">Fax:</strong>
+                                  <span class="block:md inline:lg">(202) 375-7000</span>
                                   </a>
                               </li>
                           </ul>
@@ -4295,11 +4297,11 @@
                   <!-- Social -->
                   <h4 class="font_slab c_white font_regular">Stay Connected</h4>
                   <ul class="flex social-bar ul_none c_white h:c_white">
-                      <li class="flex_auto m-r_2"><a href="https://twitter.com/accintouch" target="_blank" class="twitter social-bar--button d_block m-b_0 p-x_5 p-y_3 c_white-8 h:c_white text_right h:bg_primary-n1"><i class="fab fa-twitter-square font_2"></i></a></li>
-                      <li class="flex_auto m-r_2"><a href="https://www.facebook.com/AmericanCollegeofCardiology" target="_blank" class="facebook social-bar--button d_block m-b_0 p-x_5 p-y_3 c_white-8 h:c_white text_right h:bg_primary-n1"><i class="fab fa-facebook-square font_2"></i></a></li>
-                      <li class="flex_auto m-r_2"><a href="https://www.linkedin.com/groups/732607/profile" target="_blank" class="linkedin social-bar--button d_block m-b_0 p-x_5 p-y_3 c_white-8 h:c_white text_right h:bg_primary-n1"><i class="fab fa-linkedin font_2"></i></a></li>
-                      <li class="flex_auto m-r_2"><a href="https://plus.google.com/118164094874227618578" target="_blank" class="google-plus social-bar--button d_block m-b_0 p-x_5 p-y_3 c_white-8 h:c_white text_right h:bg_primary-n1"><i class="fab fa-google-plus font_2"></i></a></li>
-                      <li class="flex_auto m-r_2"><a href="http://www.youtube.com/user/ACCinTouch" target="_blank" class="youtube social-bar--button d_block m-b_0 p-x_5 p-y_3 c_white-8 h:c_white text_right h:bg_primary-n1"><i class="fab fa-youtube font_2"></i></a></li>
+                      <li class="flex_auto m-r_2"><a href="https://twitter.com/accintouch" target="_blank" class="twitter social-bar--button block m-b_0 p-x_5 p-y_3 c_white-8 h:c_white text_right h:bg_primary-n1"><i class="fab fa-twitter-square font_2"></i></a></li>
+                      <li class="flex_auto m-r_2"><a href="https://www.facebook.com/AmericanCollegeofCardiology" target="_blank" class="facebook social-bar--button block m-b_0 p-x_5 p-y_3 c_white-8 h:c_white text_right h:bg_primary-n1"><i class="fab fa-facebook-square font_2"></i></a></li>
+                      <li class="flex_auto m-r_2"><a href="https://www.linkedin.com/groups/732607/profile" target="_blank" class="linkedin social-bar--button block m-b_0 p-x_5 p-y_3 c_white-8 h:c_white text_right h:bg_primary-n1"><i class="fab fa-linkedin font_2"></i></a></li>
+                      <li class="flex_auto m-r_2"><a href="https://plus.google.com/118164094874227618578" target="_blank" class="google-plus social-bar--button block m-b_0 p-x_5 p-y_3 c_white-8 h:c_white text_right h:bg_primary-n1"><i class="fab fa-google-plus font_2"></i></a></li>
+                      <li class="flex_auto m-r_2"><a href="http://www.youtube.com/user/ACCinTouch" target="_blank" class="youtube social-bar--button block m-b_0 p-x_5 p-y_3 c_white-8 h:c_white text_right h:bg_primary-n1"><i class="fab fa-youtube font_2"></i></a></li>
                   </ul>
                   <!-- Social -->
               </div>
@@ -4307,35 +4309,35 @@
                   <!-- Footer External Links -->
                   <section class="acc-websites row c_white p-x_3">
                       <h3 class="font_slab font_regular">Improving Cardiovascular Care</h3>
-                      <nav class="font_copy d_block clearfix">
+                      <nav class="font_copy block clearfix">
                           <ul class="ul_none lh_2 font_0">
                               <li class="c_white br_solid  br_0 br-b_1  br_white-5">
-                                  <a target="_blank" class="h:bg_black-2  h:c_white c_white p-x_2 p_3 d_block" href="http://www.acc.org">
-                                  <span class="d_inline-block p-l_3">Acc</span>
+                                  <a target="_blank" class="h:bg_black-2  h:c_white c_white p-x_2 p_3 block" href="http://www.acc.org">
+                                  <span class="inline-block p-l_3">Acc</span>
                                   <i class="float_right fas p-r_3 c_white h:c_white fa-external-link-square "></i>
                                   </a>
                               </li>
                               <li class="c_white br_solid br_0 br-b_1  br_white-5">
-                                  <a target="_blank" class="h:bg_black-2  h:c_white c_white p-x_2 p_3 d_block" href="https://cvquality.acc.org/Accreditation?">
-                                  <span class="d_inline-block p-l_3">Accreditation Services</span>
+                                  <a target="_blank" class="h:bg_black-2  h:c_white c_white p-x_2 p_3 block" href="https://cvquality.acc.org/Accreditation?">
+                                  <span class="inline-block p-l_3">Accreditation Services</span>
                                   <i class="float_right fas p-r_3 c_white h:c_white fa-external-link-square "></i>
                                   </a>
                               </li>
                               <li class="c_white br_solid br_0 br-b_1  br_white-5">
-                                  <a target="_blank" class="h:bg_black-2  h:c_white c_white p-x_2 p_3 d_block" href="http://www.ncdr.com">
-                                  <span class="d_inline-block p-l_3">NCDR</span>
+                                  <a target="_blank" class="h:bg_black-2  h:c_white c_white p-x_2 p_3 block" href="http://www.ncdr.com">
+                                  <span class="inline-block p-l_3">NCDR</span>
                                   <i class="float_right fas p-r_3 c_white h:c_white fa-external-link-square "></i>
                                   </a>
                               </li>
                               <li class="c_white br_solid br_0 br-b_1  br_white-5">
-                                  <a target="_blank" class="h:bg_black-2  h:c_white c_white p-x_2 p_3 d_block" href="http://www.cardiosmart.org">
-                                  <span class="d_inline-block p-l_3">CardioSmart</span>
+                                  <a target="_blank" class="h:bg_black-2  h:c_white c_white p-x_2 p_3 block" href="http://www.cardiosmart.org">
+                                  <span class="inline-block p-l_3">CardioSmart</span>
                                   <i class="float_right fas p-r_3 c_white h:c_white fa-external-link-square "></i>
                                   </a>
                               </li>
                               <li class="c_white">
-                                  <a target="_blank" class="h:bg_black-2  h:c_white c_white p-x_2 p_3 d_block" href="http://www.onlinejacc.org/">
-                                  <span class="d_inline-block p-l_3">JACC</span>
+                                  <a target="_blank" class="h:bg_black-2  h:c_white c_white p-x_2 p_3 block" href="http://www.onlinejacc.org/">
+                                  <span class="inline-block p-l_3">JACC</span>
                                   <i class="float_right fas p-r_3 c_white fa-external-link-square "></i>
                                   </a>
                               </li>
@@ -4377,35 +4379,35 @@
       <div class="texture_dark p_4">
           <section class="acc-websites c_white p-x_3">
               <h4 class="font_slab font_regular">Improving Cardiovascular Care</h4>
-              <nav class="d_block clearfix font_copy">
+              <nav class="block clearfix font_copy">
                   <ul class="ul_none lh_2 font_0">
                       <li class="c_white br_solid  br_0 br-b_1  br_white-5">
-                          <a target="_blank" class="h:bg_black-2  h:c_white c_white p-x_2 p_3 d_block" href="http://www.acc.org">
-                          <span class="d_inline-block p-l_3">Acc</span>
+                          <a target="_blank" class="h:bg_black-2  h:c_white c_white p-x_2 p_3 block" href="http://www.acc.org">
+                          <span class="inline-block p-l_3">Acc</span>
                           <i class="float_right fas p-r_3 c_white h:c_white fa-external-link-square "></i>
                           </a>
                       </li>
                       <li class="c_white br_solid br_0 br-b_1  br_white-5">
-                          <a target="_blank" class="h:bg_black-2  h:c_white c_white p-x_2 p_3 d_block" href="https://cvquality.acc.org/Accreditation?">
-                          <span class="d_inline-block p-l_3">Accreditation Services</span>
+                          <a target="_blank" class="h:bg_black-2  h:c_white c_white p-x_2 p_3 block" href="https://cvquality.acc.org/Accreditation?">
+                          <span class="inline-block p-l_3">Accreditation Services</span>
                           <i class="float_right fas p-r_3 c_white h:c_white fa-external-link-square "></i>
                           </a>
                       </li>
                       <li class="c_white br_solid br_0 br-b_1  br_white-5">
-                          <a target="_blank" class="h:bg_black-2  h:c_white c_white p-x_2 p_3 d_block" href="http://www.ncdr.com">
-                          <span class="d_inline-block p-l_3">NCDR</span>
+                          <a target="_blank" class="h:bg_black-2  h:c_white c_white p-x_2 p_3 block" href="http://www.ncdr.com">
+                          <span class="inline-block p-l_3">NCDR</span>
                           <i class="float_right fas p-r_3 c_white h:c_white fa-external-link-square "></i>
                           </a>
                       </li>
                       <li class="c_white br_solid br_0 br-b_1  br_white-5">
-                          <a target="_blank" class="h:bg_black-2  h:c_white c_white p-x_2 p_3 d_block" href="http://www.cardiosmart.org">
-                          <span class="d_inline-block p-l_3">CardioSmart</span>
+                          <a target="_blank" class="h:bg_black-2  h:c_white c_white p-x_2 p_3 block" href="http://www.cardiosmart.org">
+                          <span class="inline-block p-l_3">CardioSmart</span>
                           <i class="float_right fas p-r_3 c_white h:c_white fa-external-link-square "></i>
                           </a>
                       </li>
                       <li class="c_white">
-                          <a target="_blank" class="h:bg_black-2  h:c_white c_white p-x_2 p_3 d_block" href="http://www.onlinejacc.org/">
-                          <span class="d_inline-block p-l_3">JACC</span>
+                          <a target="_blank" class="h:bg_black-2  h:c_white c_white p-x_2 p_3 block" href="http://www.onlinejacc.org/">
+                          <span class="inline-block p-l_3">JACC</span>
                           <i class="float_right fas p-r_3 c_white fa-external-link-square "></i>
                           </a>
                       </li>
@@ -4444,8 +4446,8 @@
                           </li>
                           <li class="m-b_1 m-b_3:md font_normal">
                               <a href="mailto:resource@acc.org" class="email c_white text_underline  h:c_white ">
-                                  <strong class="p-r_2 d_inline d_block:md d_inline:lg">Email:</strong>
-                                  <span class="d_inline d_block:md d_inline:lg">resource@acc.org</span></a>
+                                  <strong class="p-r_2 inline block:md inline:lg">Email:</strong>
+                                  <span class="inline block:md inline:lg">resource@acc.org</span></a>
                           </li>
                       </ul>
                   </div>
@@ -4453,16 +4455,16 @@
                   <ul class="ul_none lh_2">
                       <li class="m-b_1 m-b_3:md font_normal">
                           <a tel="+12023756000" href="tel:+12023756000" class="tel c_white h:c_white h:underline">
-                          <strong class="p-r_2 d_block:md d_inline:lg">Phone:</strong><span class=" d_block:md d_inline:lg">(202) 375-6000, ext. 5603</span></a>
+                          <strong class="p-r_2 block:md inline:lg">Phone:</strong><span class=" block:md inline:lg">(202) 375-6000, ext. 5603</span></a>
                       </li>
                       <li class="m-b_1 m-b_3:md font_normal">
                           <a tel="+18002574737" href="tel:+18002534636.5603" class="tel c_white h:c_white h:underline">
-                          <strong class="p-r_2 d_block:md d_inline:lg">Toll Free:</strong><span class=" d_block:md d_inline:lg">(800) 253-4636, ext. 5603</span></a>
+                          <strong class="p-r_2 block:md inline:lg">Toll Free:</strong><span class=" block:md inline:lg">(800) 253-4636, ext. 5603</span></a>
                       </li>
                       <li class="m-b_1 m-b_3:md font_normal">
                           <a fax="+12023757000" href="fax:+12023757000" class="fax c_white h:c_white h:underline">
-                          <strong class="p-r_2 d_block:md d_inline:lg">Fax:</strong>
-                          <span class="block:md d_inline:lg">(202) 375-7000</span>
+                          <strong class="p-r_2 block:md inline:lg">Fax:</strong>
+                          <span class="block:md inline:lg">(202) 375-7000</span>
                           </a>
                       </li>
                   </ul>
@@ -4538,7 +4540,7 @@
                     <div class="felx_shrink flex m-l_3 font_bold"><div class="flex_auto bg_loe-B-BR-0 bg_primary-2 p-x_3 p-y_1">B-BR</div><div class="flex_auto bg_cor-IIA p-x_3 p-y_1">II</div></div>
               </div>
           </header>
-          <nav class="flex font_n2 none">
+          <nav class="flex font_n2 display_none">
               <a href="#saveToLibrary" class="felx_shrink bg_primary_5 link-fulldoc m-r_1 p-y_1 p-x_2 br_primary-5 c_secondary-n3 hover:c_white hover:bg_primary br_solid br_secondary-3 br_1 br_radius"><i
                       class="fas fa-save m-r_3"></i><span>SAVE</span></a>
               <a href="#shareResult" class="felx_shrink bg_primary_5 link-pdf m-x_1 p-y_1 p-x_2 br_primary-5 c_secondary-n3 hover:c_white hover:bg_primary br_solid br_secondary-3 br_1 br_radius"><i
@@ -4820,6 +4822,7 @@
   width: 100%;
   overflow: hidden;
   text-indent: -9999px;
+  opacity: 0.5;
 }
 #acc_arches_override div[class*=aspect_]:before,
 #acc_arches_override .lorem-loader:before {
@@ -4835,8 +4838,14 @@
   clear: both;
   content: "";
 }
-#acc_arches_override .aspect_16x9 {
-  padding-top: 56.25%;
+#acc_arches_override .aspect_2x1 {
+  padding-top: 200%;
+}
+#acc_arches_override .aspect_1x1 {
+  padding-top: 100%;
+}
+#acc_arches_override .aspect_1x2 {
+  padding-top: 50%;
 }
 #acc_arches_override .aspect_4x3 {
   padding-top: 75%;
@@ -4844,11 +4853,14 @@
 #acc_arches_override .aspect_3x2 {
   padding-top: 66.6666666667%;
 }
-#acc_arches_override .aspect_1x1 {
-  padding-top: 100%;
+#acc_arches_override .aspect_16x9 {
+  padding-top: 56.25%;
 }
-#acc_arches_override .aspect_2x1 {
-  padding-top: 50%;
+#acc_arches_override .aspect_21x9 {
+  padding-top: 42.8571428571%;
+}
+#acc_arches_override .aspect_4x1 {
+  padding-top: 25%;
 }
 #acc_arches_override .lorem-loader {
   -webkit-animation: Gradient 4s ease infinite;
@@ -5552,37 +5564,37 @@
   color: #131212 !important;
 }
 #acc_arches_override .c_white-0 {
-  color: rgba(19, 18, 18, 0) !important;
+  color: rgba(255, 255, 255, 0) !important;
 }
 #acc_arches_override .c_white-1 {
-  color: rgba(19, 18, 18, 0.05) !important;
+  color: rgba(255, 255, 255, 0.05) !important;
 }
 #acc_arches_override .c_white-2 {
-  color: rgba(19, 18, 18, 0.12) !important;
+  color: rgba(255, 255, 255, 0.12) !important;
 }
 #acc_arches_override .c_white-3 {
-  color: rgba(19, 18, 18, 0.25) !important;
+  color: rgba(255, 255, 255, 0.25) !important;
 }
 #acc_arches_override .c_white-4 {
-  color: rgba(19, 18, 18, 0.38) !important;
+  color: rgba(255, 255, 255, 0.38) !important;
 }
 #acc_arches_override .c_white-5 {
-  color: rgba(19, 18, 18, 0.5) !important;
+  color: rgba(255, 255, 255, 0.5) !important;
 }
 #acc_arches_override .c_white-6 {
-  color: rgba(19, 18, 18, 0.62) !important;
+  color: rgba(255, 255, 255, 0.62) !important;
 }
 #acc_arches_override .c_white-7 {
-  color: rgba(19, 18, 18, 0.75) !important;
+  color: rgba(255, 255, 255, 0.75) !important;
 }
 #acc_arches_override .c_white-8 {
-  color: rgba(19, 18, 18, 0.88) !important;
+  color: rgba(255, 255, 255, 0.88) !important;
 }
 #acc_arches_override .c_white-9 {
-  color: rgba(19, 18, 18, 0.95) !important;
+  color: rgba(255, 255, 255, 0.95) !important;
 }
 #acc_arches_override .c_white-none {
-  color: #131212 !important;
+  color: white !important;
 }
 #acc_arches_override .c_inherit {
   color: inherit;
@@ -7177,73 +7189,73 @@
     padding-right: 2rem;
   }
 }
-#acc_arches_override ._initial {
+#acc_arches_override .initial {
   position: initial;
 }
-#acc_arches_override ._inherit {
+#acc_arches_override .inherit {
   position: inherit;
 }
-#acc_arches_override ._relative {
+#acc_arches_override .relative {
   position: relative;
 }
-#acc_arches_override ._abosulte {
-  position: abosulte;
+#acc_arches_override .absolute {
+  position: absolute;
 }
-#acc_arches_override ._fixed {
+#acc_arches_override .fixed {
   position: fixed;
 }
-#acc_arches_override ._sticky {
+#acc_arches_override .sticky {
   position: -webkit-sticky;
   position: sticky;
 }
-#acc_arches_override ._unset {
+#acc_arches_override .unset {
   position: unset;
 }
 @media only screen and (min-width : 640px) {
-  #acc_arches_override ._initial\:md {
+  #acc_arches_override .initial\:md {
     position: initial;
   }
-  #acc_arches_override ._inherit\:md {
+  #acc_arches_override .inherit\:md {
     position: inherit;
   }
-  #acc_arches_override ._relative\:md {
+  #acc_arches_override .relative\:md {
     position: relative;
   }
-  #acc_arches_override ._abosulte\:md {
-    position: abosulte;
+  #acc_arches_override .absolute\:md {
+    position: absolute;
   }
-  #acc_arches_override ._fixed\:md {
+  #acc_arches_override .fixed\:md {
     position: fixed;
   }
-  #acc_arches_override ._sticky\:md {
+  #acc_arches_override .sticky\:md {
     position: -webkit-sticky;
     position: sticky;
   }
-  #acc_arches_override ._unset\:md {
+  #acc_arches_override .unset\:md {
     position: unset;
   }
 }
 @media only screen and (min-width : 1024px) {
-  #acc_arches_override ._initial\:lg {
+  #acc_arches_override .initial\:lg {
     position: initial;
   }
-  #acc_arches_override ._inherit\:lg {
+  #acc_arches_override .inherit\:lg {
     position: inherit;
   }
-  #acc_arches_override ._relative\:lg {
+  #acc_arches_override .relative\:lg {
     position: relative;
   }
-  #acc_arches_override ._abosulte\:lg {
-    position: abosulte;
+  #acc_arches_override .absolute\:lg {
+    position: absolute;
   }
-  #acc_arches_override ._fixed\:lg {
+  #acc_arches_override .fixed\:lg {
     position: fixed;
   }
-  #acc_arches_override ._sticky\:lg {
+  #acc_arches_override .sticky\:lg {
     position: -webkit-sticky;
     position: sticky;
   }
-  #acc_arches_override ._unset\:lg {
+  #acc_arches_override .unset\:lg {
     position: unset;
   }
 }
@@ -7827,70 +7839,70 @@
     float: right;
   }
 }
-#acc_arches_override .d_none {
+#acc_arches_override .display_none {
   display: none;
 }
-#acc_arches_override .d_block {
+#acc_arches_override .block {
   display: block;
 }
-#acc_arches_override .d_inline {
+#acc_arches_override .inline {
   display: inline;
 }
-#acc_arches_override .d_inline-block {
+#acc_arches_override .inline-block {
   display: inline-block;
 }
-#acc_arches_override .d_table-cell {
+#acc_arches_override .table-cell {
   display: table-cell;
 }
-#acc_arches_override .d_flex {
+#acc_arches_override .flex {
   display: flex;
 }
-#acc_arches_override .d_flex-inline {
+#acc_arches_override .flex-inline {
   display: flex-inline;
 }
 @media only screen and (min-width : 640px) {
-  #acc_arches_override .d_none\:md {
+  #acc_arches_override .display_none\:md {
     display: none;
   }
-  #acc_arches_override .d_block\:md {
+  #acc_arches_override .block\:md {
     display: block;
   }
-  #acc_arches_override .d_inline\:md {
+  #acc_arches_override .inline\:md {
     display: inline;
   }
-  #acc_arches_override .d_inline-block\:md {
+  #acc_arches_override .inline-block\:md {
     display: inline-block;
   }
-  #acc_arches_override .d_table-cell\:md {
+  #acc_arches_override .table-cell\:md {
     display: table-cell;
   }
-  #acc_arches_override .d_flex\:md {
+  #acc_arches_override .flex\:md {
     display: flex;
   }
-  #acc_arches_override .d_flex-inline\:md {
+  #acc_arches_override .flex-inline\:md {
     display: flex-inline;
   }
 }
 @media only screen and (min-width : 1024px) {
-  #acc_arches_override .d_none\:lg {
+  #acc_arches_override .display_none\:lg {
     display: none;
   }
-  #acc_arches_override .d_block\:lg {
+  #acc_arches_override .block\:lg {
     display: block;
   }
-  #acc_arches_override .d_inline\:lg {
+  #acc_arches_override .inline\:lg {
     display: inline;
   }
-  #acc_arches_override .d_inline-block\:lg {
+  #acc_arches_override .inline-block\:lg {
     display: inline-block;
   }
-  #acc_arches_override .d_table-cell\:lg {
+  #acc_arches_override .table-cell\:lg {
     display: table-cell;
   }
-  #acc_arches_override .d_flex\:lg {
+  #acc_arches_override .flex\:lg {
     display: flex;
   }
-  #acc_arches_override .d_flex-inline\:lg {
+  #acc_arches_override .flex-inline\:lg {
     display: flex-inline;
   }
 }
@@ -8049,7 +8061,7 @@
 #acc_arches_override .order_8 {
   order: 8;
 }
-#acc_arches_override .order\:lgast {
+#acc_arches_override .order_last {
   order: 99999;
 }
 #acc_arches_override .flex-grow_0 {
@@ -8194,7 +8206,7 @@
   #acc_arches_override .order_8\:md {
     order: 8;
   }
-  #acc_arches_override .order\:lgast\:md {
+  #acc_arches_override .order_last\:md {
     order: 99999;
   }
   #acc_arches_override .flex-grow_0\:md {
@@ -8340,7 +8352,7 @@
   #acc_arches_override .order_8\:lg {
     order: 8;
   }
-  #acc_arches_override .order\:lgast\:lg {
+  #acc_arches_override .order_last\:lg {
     order: 99999;
   }
   #acc_arches_override .flex-grow_0\:lg {
@@ -9219,37 +9231,37 @@
   border-color: #131212 !important;
 }
 #acc_arches_override .br_white-0 {
-  border-color: rgba(19, 18, 18, 0) !important;
+  border-color: rgba(255, 255, 255, 0) !important;
 }
 #acc_arches_override .br_white-1 {
-  border-color: rgba(19, 18, 18, 0.05) !important;
+  border-color: rgba(255, 255, 255, 0.05) !important;
 }
 #acc_arches_override .br_white-2 {
-  border-color: rgba(19, 18, 18, 0.12) !important;
+  border-color: rgba(255, 255, 255, 0.12) !important;
 }
 #acc_arches_override .br_white-3 {
-  border-color: rgba(19, 18, 18, 0.25) !important;
+  border-color: rgba(255, 255, 255, 0.25) !important;
 }
 #acc_arches_override .br_white-4 {
-  border-color: rgba(19, 18, 18, 0.38) !important;
+  border-color: rgba(255, 255, 255, 0.38) !important;
 }
 #acc_arches_override .br_white-5 {
-  border-color: rgba(19, 18, 18, 0.5) !important;
+  border-color: rgba(255, 255, 255, 0.5) !important;
 }
 #acc_arches_override .br_white-6 {
-  border-color: rgba(19, 18, 18, 0.62) !important;
+  border-color: rgba(255, 255, 255, 0.62) !important;
 }
 #acc_arches_override .br_white-7 {
-  border-color: rgba(19, 18, 18, 0.75) !important;
+  border-color: rgba(255, 255, 255, 0.75) !important;
 }
 #acc_arches_override .br_white-8 {
-  border-color: rgba(19, 18, 18, 0.88) !important;
+  border-color: rgba(255, 255, 255, 0.88) !important;
 }
 #acc_arches_override .br_white-9 {
-  border-color: rgba(19, 18, 18, 0.95) !important;
+  border-color: rgba(255, 255, 255, 0.95) !important;
 }
 #acc_arches_override .br_white-none {
-  border-color: #131212 !important;
+  border-color: white !important;
 }
 #acc_arches_override .border_transparent {
   border-color: transparent;
@@ -11694,23 +11706,23 @@
 #acc_arches_override .is-active.a\:icon-show {
   display: inline-block !important;
 }
-#acc_arches_override .a\:d_inline,
-#acc_arches_override .a\:d_inline-block,
-#acc_arches_override .a\:d_block,
-#acc_arches_override .is-active > .a\:d_none,
-#acc_arches_override .is-active.a\:d_none {
+#acc_arches_override .a\:inline,
+#acc_arches_override .a\:inline-block,
+#acc_arches_override .a\:block,
+#acc_arches_override .is-active > .a\:_none,
+#acc_arches_override .is-active.a\:_none {
   display: none !important;
 }
-#acc_arches_override .is-active > .a\:d_inline,
-#acc_arches_override .is-active.a\:d_inline {
+#acc_arches_override .is-active > .a\:_inline,
+#acc_arches_override .is-active.a\:_inline {
   display: inline !important;
 }
-#acc_arches_override .is-active > .a\:d_inline-block,
-#acc_arches_override .is-active.a\:d_inline-block {
+#acc_arches_override .is-active > .a\:_inline-block,
+#acc_arches_override .is-active.a\:_inline-block {
   display: inline-block !important;
 }
-#acc_arches_override .is-active > .a\:d_block,
-#acc_arches_override .is-active.a\:d_inline-block {
+#acc_arches_override .is-active > .a\:_block,
+#acc_arches_override .is-active.a\:_inline-block {
   display: block !important;
 }
 #acc_arches_override .counter_reset {

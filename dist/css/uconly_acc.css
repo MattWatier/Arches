@@ -254,7 +254,7 @@ div[class*=texture_] {
 
 Color Codes (CC) 
 
-<div class="p-b_3"><span class="bg_alert br_radius c_white d_inline-block font_n1 p-7_3 p-x_5 sg">!! Extra Style Sheet Must Be Included !!</span></div>Color Codes are sepereate style sheets that give you access to decorating classes created with the color pallete.
+<div class="p-b_3"><span class="bg_alert br_radius c_white inline-block font_n1 p-7_3 p-x_5 sg">!! Extra Style Sheet Must Be Included !!</span></div>Color Codes are sepereate style sheets that give you access to decorating classes created with the color pallete.
 
 
 
@@ -2383,9 +2383,9 @@ It is often we need to have space held for a return of details or text.
 markup:
 <div class="max-w_3">
    <h1 class="lorem-loader font_3 m-y_3">&nbsp;</h1>
-   <p class="m-y_2 font_0 lorem-loader">&nbsp;</div>
-   <p class="m-y_2 font_0 lorem-loader">&nbsp;</div>
-   <p class="m-y_2 font_0 lorem-loader">&nbsp;</div>
+   <p class="m-y_2 font_0 lorem-loader">&nbsp;</p>
+   <p class="m-y_2 font_0 lorem-loader">&nbsp;</p>
+   <p class="m-y_2 font_0 lorem-loader">&nbsp;</p>
 </div>
 
 Styleguide InteractiveExtras.Text Placeholder Loader
@@ -2396,15 +2396,17 @@ Lorem + Aspect Ratio
 
 To create an image placeholder use the lorem-loader plus an aspect of the intended image on th parent container while waiting for the image.The placeholder will be a 100% of the container so size the container properly. 
 
-aspect_1x2
-aspect_1x1
-aspect_3x2
-aspect_4x3
-aspect_16x9
-
+.aspect_1x2			- lock image to a 1 to 2 ratio
+.aspect_1x1			- lock image to a 1 to 1 ratio
+.aspect_2x1			- lock image to a 2 to 1 ratio
+.aspect_3x2			- lock image to a 3 to 2 ratio   
+.aspect_4x3			- lock image to a 4 to 3 ratio 
+.aspect_16x9		- lock image to a 16 to 9 ratio 
+.aspect_21x9		- lock image to a 21 to 9 ratio 
+.aspect_4x1			- lock image to a 4 to 1 ratio 
 
 markup:
-<div class="grid-w_2">
+<div class="grid-w_2 max-w_1">
    <div class="m-y_2 lorem-loader {{modifier_class}} ">&nbsp;</div>
 </div>
 
@@ -2415,6 +2417,7 @@ div[class*=aspect_],
   width: 100%;
   overflow: hidden;
   text-indent: -9999px;
+  opacity: 0.5;
 }
 div[class*=aspect_]:before,
 .lorem-loader:before {
@@ -2431,8 +2434,16 @@ div[class*=aspect_]:after,
   content: "";
 }
 
-.aspect_16x9 {
-  padding-top: 56.25%;
+.aspect_2x1 {
+  padding-top: 200%;
+}
+
+.aspect_1x1 {
+  padding-top: 100%;
+}
+
+.aspect_1x2 {
+  padding-top: 50%;
 }
 
 .aspect_4x3 {
@@ -2443,12 +2454,16 @@ div[class*=aspect_]:after,
   padding-top: 66.6666666667%;
 }
 
-.aspect_1x1 {
-  padding-top: 100%;
+.aspect_16x9 {
+  padding-top: 56.25%;
 }
 
-.aspect_2x1 {
-  padding-top: 50%;
+.aspect_21x9 {
+  padding-top: 42.8571428571%;
+}
+
+.aspect_4x1 {
+  padding-top: 25%;
 }
 
 .lorem-loader {
@@ -2541,20 +2556,20 @@ Many momment there are needs for toggles of icon when the parent is in the state
 
 markup:
 <ul class="ul_none m_0 p_0">
-	<li class="is-active_toggle-function is-active c_white a:c_black flex p-x_3 p-y_2 a:bg_secondary-3 font_1 bg_success-n1">	
+	<li class="m-t_1 is-active_toggle-function is-active c_white a:c_black flex p-x_3 p-y_2 a:bg_secondary-3 font_1 bg_success-n1">	
 			<span class="">FA Solid {{ modifier_class }}</span>
 			<i class="font_3 fas fa-fw {{ modifier_class }}"></i>
-			<span class="a:d_inline"> (is-active) </span>
+			<span class="a:inline"> (is-active) </span>
 	</li>
-	<li class="is-active_toggle-function is-active c_white a:c_black flex p-x_3 p-y_2 a:bg_secondary-3 font_1 bg_success-n1">	
+	<li class="m-t_1 is-active_toggle-function is-active c_white a:c_black flex p-x_3 p-y_2 a:bg_secondary-3 font_1 bg_success-n1">	
 			<span class="">FA Regular {{ modifier_class }}</span>
 			<i class="font_3 far  fa-fw {{ modifier_class }}"></i>
-			<span class="a:d_inline"> (is-active) </span>
+			<span class="a:inline"> (is-active) </span>
 	</li>
-	<li class="is-active_toggle-function is-active c_white a:c_black flex p-x_3 p-y_2 a:bg_secondary-3 font_1 bg_success-n1">	
+	<li class="m-t_1 is-active_toggle-function is-active c_white a:c_black flex p-x_3 p-y_2 a:bg_secondary-3 font_1 bg_success-n1">	
 			<span class="">FA Light {{ modifier_class }}</span>
 			<i class="font_3 fal fa-fw {{ modifier_class }}"></i>
-			<span class="a:d_inline"> (is-active) </span>
+			<span class="a:inline"> (is-active) </span>
 	</li>
 </ul>
 
@@ -2860,11 +2875,11 @@ Styleguide InteractiveExtras.Scrollbar
     <div class="texture-dark">
         <h4 class="font_slab c_white">Stay Connected</h4>
         <ul class="flex social-bar ul_none c_white h:c_white m_0">
-            <li class="flex_auto m-r_2"><a href="https://twitter.com/accintouch" target="_blank" class="twitter social-bar--button d_block m-b_0 p-x_5 p-y_3 c_white-8 h:c_white text_right h:bg_primary-n1"><i class="fab fa-twitter-square font_2"></i></a></li>
-            <li class="flex_auto m-r_2"><a href="https://www.facebook.com/AmericanCollegeofCardiology" target="_blank" class="facebook social-bar--button d_block m-b_0 p-x_5 p-y_3 c_white-8 h:c_white text_right h:bg_primary-n1"><i class="fab fa-facebook-square font_2"></i></a></li>
-            <li class="flex_auto m-r_2"><a href="https://www.linkedin.com/groups/732607/profile" target="_blank" class="linkedin social-bar--button d_block m-b_0 p-x_5 p-y_3 c_white-8 h:c_white text_right h:bg_primary-n1"><i class="fab fa-linkedin font_2"></i></a></li>
-            <li class="flex_auto m-r_2"><a href="https://plus.google.com/118164094874227618578" target="_blank" class="google-plus social-bar--button d_block m-b_0 p-x_5 p-y_3 c_white-8 h:c_white text_right h:bg_primary-n1"><i class="fab fa-google-plus font_2"></i></a></li>
-            <li class="flex_auto m-r_2"><a href="http://www.youtube.com/user/ACCinTouch" target="_blank" class="youtube social-bar--button d_block m-b_0 p-x_5 p-y_3 c_white-8 h:c_white text_right h:bg_primary-n1"><i class="fab fa-youtube font_2"></i></a></li>
+            <li class="flex_auto m-r_2"><a href="https://twitter.com/accintouch" target="_blank" class="twitter social-bar--button block m-b_0 p-x_5 p-y_3 c_white-8 h:c_white text_right h:bg_primary-n1"><i class="fab fa-twitter-square font_2"></i></a></li>
+            <li class="flex_auto m-r_2"><a href="https://www.facebook.com/AmericanCollegeofCardiology" target="_blank" class="facebook social-bar--button block m-b_0 p-x_5 p-y_3 c_white-8 h:c_white text_right h:bg_primary-n1"><i class="fab fa-facebook-square font_2"></i></a></li>
+            <li class="flex_auto m-r_2"><a href="https://www.linkedin.com/groups/732607/profile" target="_blank" class="linkedin social-bar--button block m-b_0 p-x_5 p-y_3 c_white-8 h:c_white text_right h:bg_primary-n1"><i class="fab fa-linkedin font_2"></i></a></li>
+            <li class="flex_auto m-r_2"><a href="https://plus.google.com/118164094874227618578" target="_blank" class="google-plus social-bar--button block m-b_0 p-x_5 p-y_3 c_white-8 h:c_white text_right h:bg_primary-n1"><i class="fab fa-google-plus font_2"></i></a></li>
+            <li class="flex_auto m-r_2"><a href="http://www.youtube.com/user/ACCinTouch" target="_blank" class="youtube social-bar--button block m-b_0 p-x_5 p-y_3 c_white-8 h:c_white text_right h:bg_primary-n1"><i class="fab fa-youtube font_2"></i></a></li>
         </ul>
     </div>
 
@@ -3862,47 +3877,47 @@ Styleguide Typography
 }
 
 .c_white-0 {
-  color: rgba(19, 18, 18, 0) !important;
+  color: rgba(255, 255, 255, 0) !important;
 }
 
 .c_white-1 {
-  color: rgba(19, 18, 18, 0.05) !important;
+  color: rgba(255, 255, 255, 0.05) !important;
 }
 
 .c_white-2 {
-  color: rgba(19, 18, 18, 0.12) !important;
+  color: rgba(255, 255, 255, 0.12) !important;
 }
 
 .c_white-3 {
-  color: rgba(19, 18, 18, 0.25) !important;
+  color: rgba(255, 255, 255, 0.25) !important;
 }
 
 .c_white-4 {
-  color: rgba(19, 18, 18, 0.38) !important;
+  color: rgba(255, 255, 255, 0.38) !important;
 }
 
 .c_white-5 {
-  color: rgba(19, 18, 18, 0.5) !important;
+  color: rgba(255, 255, 255, 0.5) !important;
 }
 
 .c_white-6 {
-  color: rgba(19, 18, 18, 0.62) !important;
+  color: rgba(255, 255, 255, 0.62) !important;
 }
 
 .c_white-7 {
-  color: rgba(19, 18, 18, 0.75) !important;
+  color: rgba(255, 255, 255, 0.75) !important;
 }
 
 .c_white-8 {
-  color: rgba(19, 18, 18, 0.88) !important;
+  color: rgba(255, 255, 255, 0.88) !important;
 }
 
 .c_white-9 {
-  color: rgba(19, 18, 18, 0.95) !important;
+  color: rgba(255, 255, 255, 0.95) !important;
 }
 
 .c_white-none {
-  color: #131212 !important;
+  color: white !important;
 }
 
 .c_inherit {
@@ -3945,7 +3960,7 @@ Styleguide Typography
 /*
   Font Size
 
-    <div class="p-b_3"><span class="bg_accent br_radius c_white d_inline-block font_n1 p-7_3 p-x_5 sg">Is Responsive: breakpoint modifiers</span></div>You can alter the size of the font with font_[x]
+    <div class="p-b_3"><span class="bg_accent br_radius c_white inline-block font_n1 p-7_3 p-x_5 sg">Is Responsive: breakpoint modifiers</span></div>You can alter the size of the font with font_[x]
 
   .font_10 - 10x
   .font_9 - 9x
@@ -4471,7 +4486,7 @@ Styleguide Spacing
 /*
 Margin
 
-<div class="p-b_3"><span class="bg_accent br_radius c_white d_inline-block font_n1 p-7_3 p-x_5 sg">Is Responsive: breakpoint modifiers</span></div>Margin classes are mobile first with postfix modifier for `:md`and `:lg` variations for responsive sizing. Margins that use the short codes of all margin, auto, x margins, and y margin are overriden by specific side margins.	
+<div class="p-b_3"><span class="bg_accent br_radius c_white inline-block font_n1 p-7_3 p-x_5 sg">Is Responsive: breakpoint modifiers</span></div>Margin classes are mobile first with postfix modifier for `:md`and `:lg` variations for responsive sizing. Margins that use the short codes of all margin, auto, x margins, and y margin are overriden by specific side margins.	
 
 .m_auto.max-w_2 					 - same as `Margin:0 auto`
 .m_0    					- All margins set to 0
@@ -5570,7 +5585,7 @@ Styleguide Spacing.Margin
 /*
 Padding
 
-<div class="p-b_3"><span class="bg_accent br_radius c_white d_inline-block font_n1 p-7_3 p-x_5 sg">Is Responsive: breakpoint modifiers</span></div>Quickly alter the padding of an object.
+<div class="p-b_3"><span class="bg_accent br_radius c_white inline-block font_n1 p-7_3 p-x_5 sg">Is Responsive: breakpoint modifiers</span></div>Quickly alter the padding of an object.
 
 .p_0              - All paddings set to 0
 .p_1              - All paddings set to 1px
@@ -6174,7 +6189,7 @@ Styleguide Spacing.Padding
 /*
 Position Type
 
-<div class="p-b_3"><span class="bg_accent br_radius c_white d_inline-block font_n1 p-7_3 p-x_5 sg">Is Responsive: breakpoint modifiers</span></div>Quickly alter the position type and location of an object with 'absolute' and 'top'
+<div class="p-b_3"><span class="bg_accent br_radius c_white inline-block font_n1 p-7_3 p-x_5 sg">Is Responsive: breakpoint modifiers</span></div>Quickly alter the position type and location of an object with 'absolute' and 'top'
 
 unset  		- unset positioned block 
 inital  		- inital positioned block 
@@ -6194,99 +6209,99 @@ markup:
 Styleguide Spacing.Position
 
  */
-._initial {
+.initial {
   position: initial;
 }
 
-._inherit {
+.inherit {
   position: inherit;
 }
 
-._relative {
+.relative {
   position: relative;
 }
 
-._abosulte {
-  position: abosulte;
+.absolute {
+  position: absolute;
 }
 
-._fixed {
+.fixed {
   position: fixed;
 }
 
-._sticky {
+.sticky {
   position: -webkit-sticky;
   position: sticky;
 }
 
-._unset {
+.unset {
   position: unset;
 }
 
 @media only screen and (min-width : 640px) {
-  ._initial\:md {
+  .initial\:md {
     position: initial;
   }
 
-  ._inherit\:md {
+  .inherit\:md {
     position: inherit;
   }
 
-  ._relative\:md {
+  .relative\:md {
     position: relative;
   }
 
-  ._abosulte\:md {
-    position: abosulte;
+  .absolute\:md {
+    position: absolute;
   }
 
-  ._fixed\:md {
+  .fixed\:md {
     position: fixed;
   }
 
-  ._sticky\:md {
+  .sticky\:md {
     position: -webkit-sticky;
     position: sticky;
   }
 
-  ._unset\:md {
+  .unset\:md {
     position: unset;
   }
 }
 @media only screen and (min-width : 1024px) {
-  ._initial\:lg {
+  .initial\:lg {
     position: initial;
   }
 
-  ._inherit\:lg {
+  .inherit\:lg {
     position: inherit;
   }
 
-  ._relative\:lg {
+  .relative\:lg {
     position: relative;
   }
 
-  ._abosulte\:lg {
-    position: abosulte;
+  .absolute\:lg {
+    position: absolute;
   }
 
-  ._fixed\:lg {
+  .fixed\:lg {
     position: fixed;
   }
 
-  ._sticky\:lg {
+  .sticky\:lg {
     position: -webkit-sticky;
     position: sticky;
   }
 
-  ._unset\:lg {
+  .unset\:lg {
     position: unset;
   }
 }
 /*
 Position Location
 
-<div class="p-b_3"><span class="bg_accent br_radius c_white d_inline-block font_n1 p-7_3 p-x_5 sg">Is Responsive: breakpoint modifiers</span></div>Quickly alter the position type and location of an object with top, bottom, left, and right position mondifiers. All of these modifiers will follow the rules of the containers position type. All of the examples below are using absolute positions to have the greatest effect. 
+<div class="p-b_3"><span class="bg_accent br_radius c_white inline-block font_n1 p-7_3 p-x_5 sg">Is Responsive: breakpoint modifiers</span></div>Quickly alter the position type and location of an object with top, bottom, left, and right position mondifiers. All of these modifiers will follow the rules of the containers position type. All of the examples below are using absolute positions to have the greatest effect. 
 
 .t_1 - modify top of an absolute positioned block 
 .t_5 - modify top of an absolute positioned block
@@ -7013,7 +7028,7 @@ Styleguide Spacing.Location
 /*
 Float
 
-<div class="p-b_3"><span class="bg_accent br_radius c_white d_inline-block font_n1 p-7_3 p-x_5 sg">Is Responsive: breakpoint modifiers</span></div> Easily Add Float to an object
+<div class="p-b_3"><span class="bg_accent br_radius c_white inline-block font_n1 p-7_3 p-x_5 sg">Is Responsive: breakpoint modifiers</span></div> Easily Add Float to an object
 
 .float_unset - modify float of a block 
 .float_none - modify float of a block 
@@ -7095,12 +7110,12 @@ Styleguide display
 
 	quickly alter the padding of an object 
 
-	.d_block              		- the element is the a block
-	.d_inline              		- the element is now inline
-	.d_inline-block            - the element is now inline-block
-	.d_table-cell             	- the element is now table-cell
-	.d_flex-inline             - the element is now flex-inline
-	.d_none             - the element is now display none
+	.block              		- the element is the a block
+	.inline              	- the element is now inline
+	.inline-block           - the element is now inline-block
+	.table-cell             - the element is now table-cell
+	.flex-inline            - the element is now flex-inline
+	.display_none             		- the element is now display none
 
 	markup:
 	<div class="br_solid br_transparent bg_alert-3  text_center">
@@ -7110,89 +7125,89 @@ Styleguide display
 	Styleguide display.type
 
  */
-.d_none {
+.display_none {
   display: none;
 }
 
-.d_block {
+.block {
   display: block;
 }
 
-.d_inline {
+.inline {
   display: inline;
 }
 
-.d_inline-block {
+.inline-block {
   display: inline-block;
 }
 
-.d_table-cell {
+.table-cell {
   display: table-cell;
 }
 
-.d_flex {
+.flex {
   display: flex;
 }
 
-.d_flex-inline {
+.flex-inline {
   display: flex-inline;
 }
 
 @media only screen and (min-width : 640px) {
-  .d_none\:md {
+  .display_none\:md {
     display: none;
   }
 
-  .d_block\:md {
+  .block\:md {
     display: block;
   }
 
-  .d_inline\:md {
+  .inline\:md {
     display: inline;
   }
 
-  .d_inline-block\:md {
+  .inline-block\:md {
     display: inline-block;
   }
 
-  .d_table-cell\:md {
+  .table-cell\:md {
     display: table-cell;
   }
 
-  .d_flex\:md {
+  .flex\:md {
     display: flex;
   }
 
-  .d_flex-inline\:md {
+  .flex-inline\:md {
     display: flex-inline;
   }
 }
 @media only screen and (min-width : 1024px) {
-  .d_none\:lg {
+  .display_none\:lg {
     display: none;
   }
 
-  .d_block\:lg {
+  .block\:lg {
     display: block;
   }
 
-  .d_inline\:lg {
+  .inline\:lg {
     display: inline;
   }
 
-  .d_inline-block\:lg {
+  .inline-block\:lg {
     display: inline-block;
   }
 
-  .d_table-cell\:lg {
+  .table-cell\:lg {
     display: table-cell;
   }
 
-  .d_flex\:lg {
+  .flex\:lg {
     display: flex;
   }
 
-  .d_flex-inline\:lg {
+  .flex-inline\:lg {
     display: flex-inline;
   }
 }
@@ -7208,8 +7223,8 @@ Styleguide display
 
 
 	markup:
-	<div class="br_solid br_transparent bg_alert-3 text_center d_table-cell w_100 {{modifier_class}} " style="height:100px;">
-		<div class="bg_primary-5 text_center d_inline-block ">Content</div>
+	<div class="br_solid br_transparent bg_alert-3 text_center table-cell w_100 {{modifier_class}} " style="height:100px;">
+		<div class="bg_primary-5 text_center inline-block ">Content</div>
 	</div>
 
 	Styleguide display.vertical alignment
@@ -7439,7 +7454,7 @@ Styleguide display
   order: 8;
 }
 
-.order\:lgast {
+.order_last {
   order: 99999;
 }
 
@@ -7630,7 +7645,7 @@ Styleguide display
     order: 8;
   }
 
-  .order\:lgast\:md {
+  .order_last\:md {
     order: 99999;
   }
 
@@ -7821,7 +7836,7 @@ Styleguide display
     order: 8;
   }
 
-  .order\:lgast\:lg {
+  .order_last\:lg {
     order: 99999;
   }
 
@@ -9362,47 +9377,47 @@ Styleguide Borders.Colors.Black
 }
 
 .br_white-0 {
-  border-color: rgba(19, 18, 18, 0) !important;
+  border-color: rgba(255, 255, 255, 0) !important;
 }
 
 .br_white-1 {
-  border-color: rgba(19, 18, 18, 0.05) !important;
+  border-color: rgba(255, 255, 255, 0.05) !important;
 }
 
 .br_white-2 {
-  border-color: rgba(19, 18, 18, 0.12) !important;
+  border-color: rgba(255, 255, 255, 0.12) !important;
 }
 
 .br_white-3 {
-  border-color: rgba(19, 18, 18, 0.25) !important;
+  border-color: rgba(255, 255, 255, 0.25) !important;
 }
 
 .br_white-4 {
-  border-color: rgba(19, 18, 18, 0.38) !important;
+  border-color: rgba(255, 255, 255, 0.38) !important;
 }
 
 .br_white-5 {
-  border-color: rgba(19, 18, 18, 0.5) !important;
+  border-color: rgba(255, 255, 255, 0.5) !important;
 }
 
 .br_white-6 {
-  border-color: rgba(19, 18, 18, 0.62) !important;
+  border-color: rgba(255, 255, 255, 0.62) !important;
 }
 
 .br_white-7 {
-  border-color: rgba(19, 18, 18, 0.75) !important;
+  border-color: rgba(255, 255, 255, 0.75) !important;
 }
 
 .br_white-8 {
-  border-color: rgba(19, 18, 18, 0.88) !important;
+  border-color: rgba(255, 255, 255, 0.88) !important;
 }
 
 .br_white-9 {
-  border-color: rgba(19, 18, 18, 0.95) !important;
+  border-color: rgba(255, 255, 255, 0.95) !important;
 }
 
 .br_white-none {
-  border-color: #131212 !important;
+  border-color: white !important;
 }
 
 .border_transparent {
@@ -11653,7 +11668,7 @@ Styleguide is-active
 /*
 Is-active to Full Opacity
 
-<div class="p-b_3"><span class="bg_highlight br_radius c_white d_inline-block font_n1 p-7_3 p-x_5 sg">Click the areas below to toggle the "is-active" state.</span></div><strong>`.is-acitve .a:opacity`</strong> Set the Opacity of an objects children to 100% when it has the class is-active. 
+<div class="p-b_3"><span class="bg_highlight br_radius c_white inline-block font_n1 p-7_3 p-x_5 sg">Click the areas below to toggle the "is-active" state.</span></div><strong>`.is-acitve .a:opacity`</strong> Set the Opacity of an objects children to 100% when it has the class is-active. 
 
 markup:
 <div class="flex p_4 bg_primary is-active_toggle-function ">
@@ -11677,7 +11692,7 @@ Styleguide is-active.opacity
 /*
 Is-active Black n White 
 
-<div class="p-b_3"><span class="bg_highlight br_radius c_white d_inline-block font_n1 p-7_3 p-x_5 sg">Click the areas below to toggle the "is-active" state.</span></div>Set the background to full white or black when the parent has a class of `is-active`. 
+<div class="p-b_3"><span class="bg_highlight br_radius c_white inline-block font_n1 p-7_3 p-x_5 sg">Click the areas below to toggle the "is-active" state.</span></div>Set the background to full white or black when the parent has a class of `is-active`. 
 
 bg_white              - text color modified light to dark
 bg_black              - text color modified light to dark
@@ -11705,7 +11720,7 @@ Styleguide is-active.black and white
 /*
   Is active font color
 
-  <div class="p-b_3"><span class="bg_highlight br_radius c_white d_inline-block font_n1 p-7_3 p-x_5 sg">Click the areas below to toggle the "is-active" state.</span></div> Set the font color of the child by setting the parent to .is-active. `a:c_primary`
+  <div class="p-b_3"><span class="bg_highlight br_radius c_white inline-block font_n1 p-7_3 p-x_5 sg">Click the areas below to toggle the "is-active" state.</span></div> Set the font color of the child by setting the parent to .is-active. `a:c_primary`
 
   c_primary              - text color modified light to dark
   c_secondary              - text color modified light to dark
@@ -11738,7 +11753,7 @@ Styleguide is-active.black and white
 /*
   Is active font color
 
-  <div class="p-b_3"><span class="bg_highlight br_radius c_white d_inline-block font_n1 p-7_3 p-x_5 sg">Click the areas below to toggle the "is-active" state.</span></div> Set the font color of the child by setting the parent to .is-active. `a:c_primary`
+  <div class="p-b_3"><span class="bg_highlight br_radius c_white inline-block font_n1 p-7_3 p-x_5 sg">Click the areas below to toggle the "is-active" state.</span></div> Set the font color of the child by setting the parent to .is-active. `a:c_primary`
 
   bg_primary              - text color modified light to dark
   bg_secondary              - text color modified light to dark
@@ -11771,7 +11786,7 @@ Styleguide is-active.black and white
 /*
   Is active Icons
 
-  <div class="p-b_3"><span class="bg_highlight br_radius c_white d_inline-block font_n1 p-7_3 p-x_5 sg">Click the areas below to toggle the "is-active" state.</span></div> Toggle the display and hide of a an icon with applying `is-active_icon-show` or `is-active_icon-hide`  
+  <div class="p-b_3"><span class="bg_highlight br_radius c_white inline-block font_n1 p-7_3 p-x_5 sg">Click the areas below to toggle the "is-active" state.</span></div> Toggle the display and hide of a an icon with applying `is-active_icon-show` or `is-active_icon-hide`  
 
   fa-award            - toggle the award icon
   fa-bell             - toggle the bell icon
@@ -13001,33 +13016,33 @@ Styleguide is-active.black and white
   display: inline-block !important;
 }
 
-.a\:d_inline,
-.a\:d_inline-block,
-.a\:d_block,
-.is-active > .a\:d_none,
-.is-active.a\:d_none {
+.a\:inline,
+.a\:inline-block,
+.a\:block,
+.is-active > .a\:_none,
+.is-active.a\:_none {
   display: none !important;
 }
 
-.is-active > .a\:d_inline,
-.is-active.a\:d_inline {
+.is-active > .a\:_inline,
+.is-active.a\:_inline {
   display: inline !important;
 }
 
-.is-active > .a\:d_inline-block,
-.is-active.a\:d_inline-block {
+.is-active > .a\:_inline-block,
+.is-active.a\:_inline-block {
   display: inline-block !important;
 }
 
-.is-active > .a\:d_block,
-.is-active.a\:d_inline-block {
+.is-active > .a\:_block,
+.is-active.a\:_inline-block {
   display: block !important;
 }
 
 /*
 Is active Display
 
-<div class="p-b_3"><span class="bg_highlight br_radius c_white d_inline-block font_n1 p-7_3 p-x_5 sg"> Click the areas below to toggle the "is-active" state.</span></div>Toggle the display type of an object when it's parent is-active
+<div class="p-b_3"><span class="bg_highlight br_radius c_white inline-block font_n1 p-7_3 p-x_5 sg"> Click the areas below to toggle the "is-active" state.</span></div>Toggle the display type of an object when it's parent is-active
 
 none           -  make the display none when parent is-active
 inline           -  make the display inline when parent is-active
@@ -13038,7 +13053,7 @@ block          -  make the display block when parent is-active
 markup:
 <div class="p_5 is-active_toggle-function">
   <span class="a:bg_accent bg_secondary-2 font_4 text_center br_1 br_solid br_secondary-4 p_4">Click to Toggle parent is-active</span>
-  <span class="a:d_{{modifier_class}} a:bg_accent bg_secondary-2 font_4 text_center br_1 br_solid br_secondary-4 p_4">Span with display:{{modifier_class}} when parent is active</span>
+  <span class="a:{{modifier_class}} a:bg_accent bg_secondary-2 font_4 text_center br_1 br_solid br_secondary-4 p_4">Span with display:{{modifier_class}} when parent is active</span>
 </div>
 
 Weight: 10
@@ -13270,8 +13285,8 @@ Styleguide counters
                                 </li>
                                 <li class="m-b_1 m-b_3:md font_normal">
                                     <a href="mailto:resource@acc.org" class="email c_white text_underline  h:c_white ">
-                                        <strong class="p-r_2 d_inline d_block:md d_inline:lg">Email:</strong>
-                                        <span class="d_inline d_block:md d_inline:lg">resource@acc.org</span></a>
+                                        <strong class="p-r_2 inline block:md inline:lg">Email:</strong>
+                                        <span class="inline block:md inline:lg">resource@acc.org</span></a>
                                 </li>
                             </ul>
                         </div>
@@ -13279,16 +13294,16 @@ Styleguide counters
                         <ul class="ul_none lh_2">
                             <li class="m-b_1 m-b_3:md font_normal">
                                 <a tel="+12023756000" href="tel:+12023756000" class="tel c_white h:c_white h:underline">
-                                <strong class="p-r_2 d_block:md d_inline:lg">Phone:</strong><span class=" d_block:md d_inline:lg">(202) 375-6000, ext. 5603</span></a>
+                                <strong class="p-r_2 block:md inline:lg">Phone:</strong><span class=" block:md inline:lg">(202) 375-6000, ext. 5603</span></a>
                             </li>
                             <li class="m-b_1 m-b_3:md font_normal">
                                 <a tel="+18002574737" href="tel:+18002534636.5603" class="tel c_white h:c_white h:underline">
-                                <strong class="p-r_2 d_block:md d_inline:lg">Toll Free:</strong><span class=" d_block:md d_inline:lg">(800) 253-4636, ext. 5603</span></a>
+                                <strong class="p-r_2 block:md inline:lg">Toll Free:</strong><span class=" block:md inline:lg">(800) 253-4636, ext. 5603</span></a>
                             </li>
                             <li class="m-b_1 m-b_3:md font_normal">
                                 <a fax="+12023757000" href="fax:+12023757000" class="fax c_white h:c_white h:underline">
-                                <strong class="p-r_2 d_block:md d_inline:lg">Fax:</strong>
-                                <span class="block:md d_inline:lg">(202) 375-7000</span>
+                                <strong class="p-r_2 block:md inline:lg">Fax:</strong>
+                                <span class="block:md inline:lg">(202) 375-7000</span>
                                 </a>
                             </li>
                         </ul>
@@ -13300,11 +13315,11 @@ Styleguide counters
                 <!-- Social -->
                 <h4 class="font_slab c_white font_regular">Stay Connected</h4>
                 <ul class="flex social-bar ul_none c_white h:c_white">
-                    <li class="flex_auto m-r_2"><a href="https://twitter.com/accintouch" target="_blank" class="twitter social-bar--button d_block m-b_0 p-x_5 p-y_3 c_white-8 h:c_white text_right h:bg_primary-n1"><i class="fab fa-twitter-square font_2"></i></a></li>
-                    <li class="flex_auto m-r_2"><a href="https://www.facebook.com/AmericanCollegeofCardiology" target="_blank" class="facebook social-bar--button d_block m-b_0 p-x_5 p-y_3 c_white-8 h:c_white text_right h:bg_primary-n1"><i class="fab fa-facebook-square font_2"></i></a></li>
-                    <li class="flex_auto m-r_2"><a href="https://www.linkedin.com/groups/732607/profile" target="_blank" class="linkedin social-bar--button d_block m-b_0 p-x_5 p-y_3 c_white-8 h:c_white text_right h:bg_primary-n1"><i class="fab fa-linkedin font_2"></i></a></li>
-                    <li class="flex_auto m-r_2"><a href="https://plus.google.com/118164094874227618578" target="_blank" class="google-plus social-bar--button d_block m-b_0 p-x_5 p-y_3 c_white-8 h:c_white text_right h:bg_primary-n1"><i class="fab fa-google-plus font_2"></i></a></li>
-                    <li class="flex_auto m-r_2"><a href="http://www.youtube.com/user/ACCinTouch" target="_blank" class="youtube social-bar--button d_block m-b_0 p-x_5 p-y_3 c_white-8 h:c_white text_right h:bg_primary-n1"><i class="fab fa-youtube font_2"></i></a></li>
+                    <li class="flex_auto m-r_2"><a href="https://twitter.com/accintouch" target="_blank" class="twitter social-bar--button block m-b_0 p-x_5 p-y_3 c_white-8 h:c_white text_right h:bg_primary-n1"><i class="fab fa-twitter-square font_2"></i></a></li>
+                    <li class="flex_auto m-r_2"><a href="https://www.facebook.com/AmericanCollegeofCardiology" target="_blank" class="facebook social-bar--button block m-b_0 p-x_5 p-y_3 c_white-8 h:c_white text_right h:bg_primary-n1"><i class="fab fa-facebook-square font_2"></i></a></li>
+                    <li class="flex_auto m-r_2"><a href="https://www.linkedin.com/groups/732607/profile" target="_blank" class="linkedin social-bar--button block m-b_0 p-x_5 p-y_3 c_white-8 h:c_white text_right h:bg_primary-n1"><i class="fab fa-linkedin font_2"></i></a></li>
+                    <li class="flex_auto m-r_2"><a href="https://plus.google.com/118164094874227618578" target="_blank" class="google-plus social-bar--button block m-b_0 p-x_5 p-y_3 c_white-8 h:c_white text_right h:bg_primary-n1"><i class="fab fa-google-plus font_2"></i></a></li>
+                    <li class="flex_auto m-r_2"><a href="http://www.youtube.com/user/ACCinTouch" target="_blank" class="youtube social-bar--button block m-b_0 p-x_5 p-y_3 c_white-8 h:c_white text_right h:bg_primary-n1"><i class="fab fa-youtube font_2"></i></a></li>
                 </ul>
                 <!-- Social -->
             </div>
@@ -13312,35 +13327,35 @@ Styleguide counters
                 <!-- Footer External Links -->
                 <section class="acc-websites row c_white p-x_3">
                     <h3 class="font_slab font_regular">Improving Cardiovascular Care</h3>
-                    <nav class="font_copy d_block clearfix">
+                    <nav class="font_copy block clearfix">
                         <ul class="ul_none lh_2 font_0">
                             <li class="c_white br_solid  br_0 br-b_1  br_white-5">
-                                <a target="_blank" class="h:bg_black-2  h:c_white c_white p-x_2 p_3 d_block" href="http://www.acc.org">
-                                <span class="d_inline-block p-l_3">Acc</span>
+                                <a target="_blank" class="h:bg_black-2  h:c_white c_white p-x_2 p_3 block" href="http://www.acc.org">
+                                <span class="inline-block p-l_3">Acc</span>
                                 <i class="float_right fas p-r_3 c_white h:c_white fa-external-link-square "></i>
                                 </a>
                             </li>
                             <li class="c_white br_solid br_0 br-b_1  br_white-5">
-                                <a target="_blank" class="h:bg_black-2  h:c_white c_white p-x_2 p_3 d_block" href="https://cvquality.acc.org/Accreditation?">
-                                <span class="d_inline-block p-l_3">Accreditation Services</span>
+                                <a target="_blank" class="h:bg_black-2  h:c_white c_white p-x_2 p_3 block" href="https://cvquality.acc.org/Accreditation?">
+                                <span class="inline-block p-l_3">Accreditation Services</span>
                                 <i class="float_right fas p-r_3 c_white h:c_white fa-external-link-square "></i>
                                 </a>
                             </li>
                             <li class="c_white br_solid br_0 br-b_1  br_white-5">
-                                <a target="_blank" class="h:bg_black-2  h:c_white c_white p-x_2 p_3 d_block" href="http://www.ncdr.com">
-                                <span class="d_inline-block p-l_3">NCDR</span>
+                                <a target="_blank" class="h:bg_black-2  h:c_white c_white p-x_2 p_3 block" href="http://www.ncdr.com">
+                                <span class="inline-block p-l_3">NCDR</span>
                                 <i class="float_right fas p-r_3 c_white h:c_white fa-external-link-square "></i>
                                 </a>
                             </li>
                             <li class="c_white br_solid br_0 br-b_1  br_white-5">
-                                <a target="_blank" class="h:bg_black-2  h:c_white c_white p-x_2 p_3 d_block" href="http://www.cardiosmart.org">
-                                <span class="d_inline-block p-l_3">CardioSmart</span>
+                                <a target="_blank" class="h:bg_black-2  h:c_white c_white p-x_2 p_3 block" href="http://www.cardiosmart.org">
+                                <span class="inline-block p-l_3">CardioSmart</span>
                                 <i class="float_right fas p-r_3 c_white h:c_white fa-external-link-square "></i>
                                 </a>
                             </li>
                             <li class="c_white">
-                                <a target="_blank" class="h:bg_black-2  h:c_white c_white p-x_2 p_3 d_block" href="http://www.onlinejacc.org/">
-                                <span class="d_inline-block p-l_3">JACC</span>
+                                <a target="_blank" class="h:bg_black-2  h:c_white c_white p-x_2 p_3 block" href="http://www.onlinejacc.org/">
+                                <span class="inline-block p-l_3">JACC</span>
                                 <i class="float_right fas p-r_3 c_white fa-external-link-square "></i>
                                 </a>
                             </li>
@@ -13382,35 +13397,35 @@ Styleguide counters
     <div class="texture_dark p_4">
         <section class="acc-websites c_white p-x_3">
             <h4 class="font_slab font_regular">Improving Cardiovascular Care</h4>
-            <nav class="d_block clearfix font_copy">
+            <nav class="block clearfix font_copy">
                 <ul class="ul_none lh_2 font_0">
                     <li class="c_white br_solid  br_0 br-b_1  br_white-5">
-                        <a target="_blank" class="h:bg_black-2  h:c_white c_white p-x_2 p_3 d_block" href="http://www.acc.org">
-                        <span class="d_inline-block p-l_3">Acc</span>
+                        <a target="_blank" class="h:bg_black-2  h:c_white c_white p-x_2 p_3 block" href="http://www.acc.org">
+                        <span class="inline-block p-l_3">Acc</span>
                         <i class="float_right fas p-r_3 c_white h:c_white fa-external-link-square "></i>
                         </a>
                     </li>
                     <li class="c_white br_solid br_0 br-b_1  br_white-5">
-                        <a target="_blank" class="h:bg_black-2  h:c_white c_white p-x_2 p_3 d_block" href="https://cvquality.acc.org/Accreditation?">
-                        <span class="d_inline-block p-l_3">Accreditation Services</span>
+                        <a target="_blank" class="h:bg_black-2  h:c_white c_white p-x_2 p_3 block" href="https://cvquality.acc.org/Accreditation?">
+                        <span class="inline-block p-l_3">Accreditation Services</span>
                         <i class="float_right fas p-r_3 c_white h:c_white fa-external-link-square "></i>
                         </a>
                     </li>
                     <li class="c_white br_solid br_0 br-b_1  br_white-5">
-                        <a target="_blank" class="h:bg_black-2  h:c_white c_white p-x_2 p_3 d_block" href="http://www.ncdr.com">
-                        <span class="d_inline-block p-l_3">NCDR</span>
+                        <a target="_blank" class="h:bg_black-2  h:c_white c_white p-x_2 p_3 block" href="http://www.ncdr.com">
+                        <span class="inline-block p-l_3">NCDR</span>
                         <i class="float_right fas p-r_3 c_white h:c_white fa-external-link-square "></i>
                         </a>
                     </li>
                     <li class="c_white br_solid br_0 br-b_1  br_white-5">
-                        <a target="_blank" class="h:bg_black-2  h:c_white c_white p-x_2 p_3 d_block" href="http://www.cardiosmart.org">
-                        <span class="d_inline-block p-l_3">CardioSmart</span>
+                        <a target="_blank" class="h:bg_black-2  h:c_white c_white p-x_2 p_3 block" href="http://www.cardiosmart.org">
+                        <span class="inline-block p-l_3">CardioSmart</span>
                         <i class="float_right fas p-r_3 c_white h:c_white fa-external-link-square "></i>
                         </a>
                     </li>
                     <li class="c_white">
-                        <a target="_blank" class="h:bg_black-2  h:c_white c_white p-x_2 p_3 d_block" href="http://www.onlinejacc.org/">
-                        <span class="d_inline-block p-l_3">JACC</span>
+                        <a target="_blank" class="h:bg_black-2  h:c_white c_white p-x_2 p_3 block" href="http://www.onlinejacc.org/">
+                        <span class="inline-block p-l_3">JACC</span>
                         <i class="float_right fas p-r_3 c_white fa-external-link-square "></i>
                         </a>
                     </li>
@@ -13449,8 +13464,8 @@ Styleguide counters
                         </li>
                         <li class="m-b_1 m-b_3:md font_normal">
                             <a href="mailto:resource@acc.org" class="email c_white text_underline  h:c_white ">
-                                <strong class="p-r_2 d_inline d_block:md d_inline:lg">Email:</strong>
-                                <span class="d_inline d_block:md d_inline:lg">resource@acc.org</span></a>
+                                <strong class="p-r_2 inline block:md inline:lg">Email:</strong>
+                                <span class="inline block:md inline:lg">resource@acc.org</span></a>
                         </li>
                     </ul>
                 </div>
@@ -13458,16 +13473,16 @@ Styleguide counters
                 <ul class="ul_none lh_2">
                     <li class="m-b_1 m-b_3:md font_normal">
                         <a tel="+12023756000" href="tel:+12023756000" class="tel c_white h:c_white h:underline">
-                        <strong class="p-r_2 d_block:md d_inline:lg">Phone:</strong><span class=" d_block:md d_inline:lg">(202) 375-6000, ext. 5603</span></a>
+                        <strong class="p-r_2 block:md inline:lg">Phone:</strong><span class=" block:md inline:lg">(202) 375-6000, ext. 5603</span></a>
                     </li>
                     <li class="m-b_1 m-b_3:md font_normal">
                         <a tel="+18002574737" href="tel:+18002534636.5603" class="tel c_white h:c_white h:underline">
-                        <strong class="p-r_2 d_block:md d_inline:lg">Toll Free:</strong><span class=" d_block:md d_inline:lg">(800) 253-4636, ext. 5603</span></a>
+                        <strong class="p-r_2 block:md inline:lg">Toll Free:</strong><span class=" block:md inline:lg">(800) 253-4636, ext. 5603</span></a>
                     </li>
                     <li class="m-b_1 m-b_3:md font_normal">
                         <a fax="+12023757000" href="fax:+12023757000" class="fax c_white h:c_white h:underline">
-                        <strong class="p-r_2 d_block:md d_inline:lg">Fax:</strong>
-                        <span class="block:md d_inline:lg">(202) 375-7000</span>
+                        <strong class="p-r_2 block:md inline:lg">Fax:</strong>
+                        <span class="block:md inline:lg">(202) 375-7000</span>
                         </a>
                     </li>
                 </ul>
@@ -13547,7 +13562,7 @@ Styleguide Recipe.Ordered Cards
                   <div class="felx_shrink flex m-l_3 font_bold"><div class="flex_auto bg_loe-B-BR-0 bg_primary-2 p-x_3 p-y_1">B-BR</div><div class="flex_auto bg_cor-IIA p-x_3 p-y_1">II</div></div>
             </div>
         </header>
-        <nav class="flex font_n2 none">
+        <nav class="flex font_n2 display_none">
             <a href="#saveToLibrary" class="felx_shrink bg_primary_5 link-fulldoc m-r_1 p-y_1 p-x_2 br_primary-5 c_secondary-n3 hover:c_white hover:bg_primary br_solid br_secondary-3 br_1 br_radius"><i
                     class="fas fa-save m-r_3"></i><span>SAVE</span></a>
             <a href="#shareResult" class="felx_shrink bg_primary_5 link-pdf m-x_1 p-y_1 p-x_2 br_primary-5 c_secondary-n3 hover:c_white hover:bg_primary br_solid br_secondary-3 br_1 br_radius"><i

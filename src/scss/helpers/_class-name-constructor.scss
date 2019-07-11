@@ -52,7 +52,11 @@
 	} @else if ($name-mode == "LONG") {
 		$names: #{$long-name}#{$unit-seperator}#{$unit}#{$breakpoint}#{$state-psudo};
 	} @else if ($name-mode == "SHORT") {
-		$names: #{$short-name}#{$unit-seperator}#{$unit}#{$breakpoint}#{$state-psudo};
+		@if ($short-name == ".") {
+			$names: #{$short-name}#{$unit}#{$breakpoint}#{$state-psudo};
+		} @else {
+			$names: #{$short-name}#{$unit-seperator}#{$unit}#{$breakpoint}#{$state-psudo};
+		}
 	} @else {
 		$names: #{$short-name}#{$unit-seperator}#{$unit}#{$breakpoint}#{$state-psudo};
 	}

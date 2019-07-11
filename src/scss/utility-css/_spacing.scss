@@ -12,7 +12,7 @@ Styleguide Spacing
 /*
 Margin
 
-<div class="p-b_3"><span class="bg_accent br_radius c_white d_inline-block font_n1 p-7_3 p-x_5 sg">Is Responsive: breakpoint modifiers</span></div>Margin classes are mobile first with postfix modifier for `:md`and `:lg` variations for responsive sizing. Margins that use the short codes of all margin, auto, x margins, and y margin are overriden by specific side margins.	
+<div class="p-b_3"><span class="bg_accent br_radius c_white inline-block font_n1 p-7_3 p-x_5 sg">Is Responsive: breakpoint modifiers</span></div>Margin classes are mobile first with postfix modifier for `:md`and `:lg` variations for responsive sizing. Margins that use the short codes of all margin, auto, x margins, and y margin are overriden by specific side margins.	
 
 .m_auto.max-w_2 					 - same as `Margin:0 auto`
 .m_0    					- All margins set to 0
@@ -76,7 +76,7 @@ Styleguide Spacing.Margin
 /*
 Padding
 
-<div class="p-b_3"><span class="bg_accent br_radius c_white d_inline-block font_n1 p-7_3 p-x_5 sg">Is Responsive: breakpoint modifiers</span></div>Quickly alter the padding of an object.
+<div class="p-b_3"><span class="bg_accent br_radius c_white inline-block font_n1 p-7_3 p-x_5 sg">Is Responsive: breakpoint modifiers</span></div>Quickly alter the padding of an object.
 
 .p_0              - All paddings set to 0
 .p_1              - All paddings set to 1px
@@ -131,7 +131,7 @@ Styleguide Spacing.Padding
 /*
 Position Type
 
-<div class="p-b_3"><span class="bg_accent br_radius c_white d_inline-block font_n1 p-7_3 p-x_5 sg">Is Responsive: breakpoint modifiers</span></div>Quickly alter the position type and location of an object with 'absolute' and 'top'
+<div class="p-b_3"><span class="bg_accent br_radius c_white inline-block font_n1 p-7_3 p-x_5 sg">Is Responsive: breakpoint modifiers</span></div>Quickly alter the position type and location of an object with 'absolute' and 'top'
 
 unset  		- unset positioned block 
 inital  		- inital positioned block 
@@ -165,7 +165,7 @@ Styleguide Spacing.Position
 /*
 Position Location
 
-<div class="p-b_3"><span class="bg_accent br_radius c_white d_inline-block font_n1 p-7_3 p-x_5 sg">Is Responsive: breakpoint modifiers</span></div>Quickly alter the position type and location of an object with top, bottom, left, and right position mondifiers. All of these modifiers will follow the rules of the containers position type. All of the examples below are using absolute positions to have the greatest effect. 
+<div class="p-b_3"><span class="bg_accent br_radius c_white inline-block font_n1 p-7_3 p-x_5 sg">Is Responsive: breakpoint modifiers</span></div>Quickly alter the position type and location of an object with top, bottom, left, and right position mondifiers. All of these modifiers will follow the rules of the containers position type. All of the examples below are using absolute positions to have the greatest effect. 
 
 #{class-name-constructor(top,1)} - modify top of an absolute positioned block 
 #{class-name-constructor(top,5)} - modify top of an absolute positioned block
@@ -205,7 +205,7 @@ Styleguide Spacing.Location
 /*
 Float
 
-<div class="p-b_3"><span class="bg_accent br_radius c_white d_inline-block font_n1 p-7_3 p-x_5 sg">Is Responsive: breakpoint modifiers</span></div> Easily Add Float to an object
+<div class="p-b_3"><span class="bg_accent br_radius c_white inline-block font_n1 p-7_3 p-x_5 sg">Is Responsive: breakpoint modifiers</span></div> Easily Add Float to an object
 
 #{class-name-constructor(float,unset)} - modify float of a block 
 #{class-name-constructor(float,none)} - modify float of a block 

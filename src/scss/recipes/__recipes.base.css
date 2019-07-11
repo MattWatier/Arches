@@ -63,8 +63,8 @@
                                 </li>
                                 <li class="m-b_1 m-b_3:md font_normal">
                                     <a href="mailto:resource@acc.org" class="email c_white text_underline  h:c_white ">
-                                        <strong class="p-r_2 d_inline d_block:md d_inline:lg">Email:</strong>
-                                        <span class="d_inline d_block:md d_inline:lg">resource@acc.org</span></a>
+                                        <strong class="p-r_2 inline block:md inline:lg">Email:</strong>
+                                        <span class="inline block:md inline:lg">resource@acc.org</span></a>
                                 </li>
                             </ul>
                         </div>
@@ -72,16 +72,16 @@
                         <ul class="ul_none lh_2">
                             <li class="m-b_1 m-b_3:md font_normal">
                                 <a tel="+12023756000" href="tel:+12023756000" class="tel c_white h:c_white h:underline">
-                                <strong class="p-r_2 d_block:md d_inline:lg">Phone:</strong><span class=" d_block:md d_inline:lg">(202) 375-6000, ext. 5603</span></a>
+                                <strong class="p-r_2 block:md inline:lg">Phone:</strong><span class=" block:md inline:lg">(202) 375-6000, ext. 5603</span></a>
                             </li>
                             <li class="m-b_1 m-b_3:md font_normal">
                                 <a tel="+18002574737" href="tel:+18002534636.5603" class="tel c_white h:c_white h:underline">
-                                <strong class="p-r_2 d_block:md d_inline:lg">Toll Free:</strong><span class=" d_block:md d_inline:lg">(800) 253-4636, ext. 5603</span></a>
+                                <strong class="p-r_2 block:md inline:lg">Toll Free:</strong><span class=" block:md inline:lg">(800) 253-4636, ext. 5603</span></a>
                             </li>
                             <li class="m-b_1 m-b_3:md font_normal">
                                 <a fax="+12023757000" href="fax:+12023757000" class="fax c_white h:c_white h:underline">
-                                <strong class="p-r_2 d_block:md d_inline:lg">Fax:</strong>
-                                <span class="block:md d_inline:lg">(202) 375-7000</span>
+                                <strong class="p-r_2 block:md inline:lg">Fax:</strong>
+                                <span class="block:md inline:lg">(202) 375-7000</span>
                                 </a>
                             </li>
                         </ul>
@@ -93,11 +93,11 @@
                 <!-- Social -->
                 <h4 class="font_slab c_white font_regular">Stay Connected</h4>
                 <ul class="flex social-bar ul_none c_white h:c_white">
-                    <li class="flex_auto m-r_2"><a href="https://twitter.com/accintouch" target="_blank" class="twitter social-bar--button d_block m-b_0 p-x_5 p-y_3 c_white-8 h:c_white text_right h:bg_primary-n1"><i class="fab fa-twitter-square font_2"></i></a></li>
-                    <li class="flex_auto m-r_2"><a href="https://www.facebook.com/AmericanCollegeofCardiology" target="_blank" class="facebook social-bar--button d_block m-b_0 p-x_5 p-y_3 c_white-8 h:c_white text_right h:bg_primary-n1"><i class="fab fa-facebook-square font_2"></i></a></li>
-                    <li class="flex_auto m-r_2"><a href="https://www.linkedin.com/groups/732607/profile" target="_blank" class="linkedin social-bar--button d_block m-b_0 p-x_5 p-y_3 c_white-8 h:c_white text_right h:bg_primary-n1"><i class="fab fa-linkedin font_2"></i></a></li>
-                    <li class="flex_auto m-r_2"><a href="https://plus.google.com/118164094874227618578" target="_blank" class="google-plus social-bar--button d_block m-b_0 p-x_5 p-y_3 c_white-8 h:c_white text_right h:bg_primary-n1"><i class="fab fa-google-plus font_2"></i></a></li>
-                    <li class="flex_auto m-r_2"><a href="http://www.youtube.com/user/ACCinTouch" target="_blank" class="youtube social-bar--button d_block m-b_0 p-x_5 p-y_3 c_white-8 h:c_white text_right h:bg_primary-n1"><i class="fab fa-youtube font_2"></i></a></li>
+                    <li class="flex_auto m-r_2"><a href="https://twitter.com/accintouch" target="_blank" class="twitter social-bar--button block m-b_0 p-x_5 p-y_3 c_white-8 h:c_white text_right h:bg_primary-n1"><i class="fab fa-twitter-square font_2"></i></a></li>
+                    <li class="flex_auto m-r_2"><a href="https://www.facebook.com/AmericanCollegeofCardiology" target="_blank" class="facebook social-bar--button block m-b_0 p-x_5 p-y_3 c_white-8 h:c_white text_right h:bg_primary-n1"><i class="fab fa-facebook-square font_2"></i></a></li>
+                    <li class="flex_auto m-r_2"><a href="https://www.linkedin.com/groups/732607/profile" target="_blank" class="linkedin social-bar--button block m-b_0 p-x_5 p-y_3 c_white-8 h:c_white text_right h:bg_primary-n1"><i class="fab fa-linkedin font_2"></i></a></li>
+                    <li class="flex_auto m-r_2"><a href="https://plus.google.com/118164094874227618578" target="_blank" class="google-plus social-bar--button block m-b_0 p-x_5 p-y_3 c_white-8 h:c_white text_right h:bg_primary-n1"><i class="fab fa-google-plus font_2"></i></a></li>
+                    <li class="flex_auto m-r_2"><a href="http://www.youtube.com/user/ACCinTouch" target="_blank" class="youtube social-bar--button block m-b_0 p-x_5 p-y_3 c_white-8 h:c_white text_right h:bg_primary-n1"><i class="fab fa-youtube font_2"></i></a></li>
                 </ul>
                 <!-- Social -->
             </div>
@@ -105,35 +105,35 @@
                 <!-- Footer External Links -->
                 <section class="acc-websites row c_white p-x_3">
                     <h3 class="font_slab font_regular">Improving Cardiovascular Care</h3>
-                    <nav class="font_copy d_block clearfix">
+                    <nav class="font_copy block clearfix">
                         <ul class="ul_none lh_2 font_0">
                             <li class="c_white br_solid  br_0 br-b_1  br_white-5">
-                                <a target="_blank" class="h:bg_black-2  h:c_white c_white p-x_2 p_3 d_block" href="http://www.acc.org">
-                                <span class="d_inline-block p-l_3">Acc</span>
+                                <a target="_blank" class="h:bg_black-2  h:c_white c_white p-x_2 p_3 block" href="http://www.acc.org">
+                                <span class="inline-block p-l_3">Acc</span>
                                 <i class="float_right fas p-r_3 c_white h:c_white fa-external-link-square "></i>
                                 </a>
                             </li>
                             <li class="c_white br_solid br_0 br-b_1  br_white-5">
-                                <a target="_blank" class="h:bg_black-2  h:c_white c_white p-x_2 p_3 d_block" href="https://cvquality.acc.org/Accreditation?">
-                                <span class="d_inline-block p-l_3">Accreditation Services</span>
+                                <a target="_blank" class="h:bg_black-2  h:c_white c_white p-x_2 p_3 block" href="https://cvquality.acc.org/Accreditation?">
+                                <span class="inline-block p-l_3">Accreditation Services</span>
                                 <i class="float_right fas p-r_3 c_white h:c_white fa-external-link-square "></i>
                                 </a>
                             </li>
                             <li class="c_white br_solid br_0 br-b_1  br_white-5">
-                                <a target="_blank" class="h:bg_black-2  h:c_white c_white p-x_2 p_3 d_block" href="http://www.ncdr.com">
-                                <span class="d_inline-block p-l_3">NCDR</span>
+                                <a target="_blank" class="h:bg_black-2  h:c_white c_white p-x_2 p_3 block" href="http://www.ncdr.com">
+                                <span class="inline-block p-l_3">NCDR</span>
                                 <i class="float_right fas p-r_3 c_white h:c_white fa-external-link-square "></i>
                                 </a>
                             </li>
                             <li class="c_white br_solid br_0 br-b_1  br_white-5">
-                                <a target="_blank" class="h:bg_black-2  h:c_white c_white p-x_2 p_3 d_block" href="http://www.cardiosmart.org">
-                                <span class="d_inline-block p-l_3">CardioSmart</span>
+                                <a target="_blank" class="h:bg_black-2  h:c_white c_white p-x_2 p_3 block" href="http://www.cardiosmart.org">
+                                <span class="inline-block p-l_3">CardioSmart</span>
                                 <i class="float_right fas p-r_3 c_white h:c_white fa-external-link-square "></i>
                                 </a>
                             </li>
                             <li class="c_white">
-                                <a target="_blank" class="h:bg_black-2  h:c_white c_white p-x_2 p_3 d_block" href="http://www.onlinejacc.org/">
-                                <span class="d_inline-block p-l_3">JACC</span>
+                                <a target="_blank" class="h:bg_black-2  h:c_white c_white p-x_2 p_3 block" href="http://www.onlinejacc.org/">
+                                <span class="inline-block p-l_3">JACC</span>
                                 <i class="float_right fas p-r_3 c_white fa-external-link-square "></i>
                                 </a>
                             </li>
@@ -175,35 +175,35 @@
     <div class="texture_dark p_4">
         <section class="acc-websites row c_white p-x_3">
             <h4 class="font_slab font_regular">Improving Cardiovascular Care</h4>
-            <nav class="d_block clearfix font_copy">
+            <nav class="block clearfix font_copy">
                 <ul class="ul_none lh_2 font_0">
                     <li class="c_white br_solid  br_0 br-b_1  br_white-5">
-                        <a target="_blank" class="h:bg_black-2  h:c_white c_white p-x_2 p_3 d_block" href="http://www.acc.org">
-                        <span class="d_inline-block p-l_3">Acc</span>
+                        <a target="_blank" class="h:bg_black-2  h:c_white c_white p-x_2 p_3 block" href="http://www.acc.org">
+                        <span class="inline-block p-l_3">Acc</span>
                         <i class="float_right fas p-r_3 c_white h:c_white fa-external-link-square "></i>
                         </a>
                     </li>
                     <li class="c_white br_solid br_0 br-b_1  br_white-5">
-                        <a target="_blank" class="h:bg_black-2  h:c_white c_white p-x_2 p_3 d_block" href="https://cvquality.acc.org/Accreditation?">
-                        <span class="d_inline-block p-l_3">Accreditation Services</span>
+                        <a target="_blank" class="h:bg_black-2  h:c_white c_white p-x_2 p_3 block" href="https://cvquality.acc.org/Accreditation?">
+                        <span class="inline-block p-l_3">Accreditation Services</span>
                         <i class="float_right fas p-r_3 c_white h:c_white fa-external-link-square "></i>
                         </a>
                     </li>
                     <li class="c_white br_solid br_0 br-b_1  br_white-5">
-                        <a target="_blank" class="h:bg_black-2  h:c_white c_white p-x_2 p_3 d_block" href="http://www.ncdr.com">
-                        <span class="d_inline-block p-l_3">NCDR</span>
+                        <a target="_blank" class="h:bg_black-2  h:c_white c_white p-x_2 p_3 block" href="http://www.ncdr.com">
+                        <span class="inline-block p-l_3">NCDR</span>
                         <i class="float_right fas p-r_3 c_white h:c_white fa-external-link-square "></i>
                         </a>
                     </li>
                     <li class="c_white br_solid br_0 br-b_1  br_white-5">
-                        <a target="_blank" class="h:bg_black-2  h:c_white c_white p-x_2 p_3 d_block" href="http://www.cardiosmart.org">
-                        <span class="d_inline-block p-l_3">CardioSmart</span>
+                        <a target="_blank" class="h:bg_black-2  h:c_white c_white p-x_2 p_3 block" href="http://www.cardiosmart.org">
+                        <span class="inline-block p-l_3">CardioSmart</span>
                         <i class="float_right fas p-r_3 c_white h:c_white fa-external-link-square "></i>
                         </a>
                     </li>
                     <li class="c_white">
-                        <a target="_blank" class="h:bg_black-2  h:c_white c_white p-x_2 p_3 d_block" href="http://www.onlinejacc.org/">
-                        <span class="d_inline-block p-l_3">JACC</span>
+                        <a target="_blank" class="h:bg_black-2  h:c_white c_white p-x_2 p_3 block" href="http://www.onlinejacc.org/">
+                        <span class="inline-block p-l_3">JACC</span>
                         <i class="float_right fas p-r_3 c_white fa-external-link-square "></i>
                         </a>
                     </li>
@@ -242,8 +242,8 @@
                         </li>
                         <li class="m-b_1 m-b_3:md font_normal">
                             <a href="mailto:resource@acc.org" class="email c_white text_underline  h:c_white ">
-                                <strong class="p-r_2 d_inline d_block:md d_inline:lg">Email:</strong>
-                                <span class="d_inline d_block:md d_inline:lg">resource@acc.org</span></a>
+                                <strong class="p-r_2 inline block:md inline:lg">Email:</strong>
+                                <span class="inline block:md inline:lg">resource@acc.org</span></a>
                         </li>
                     </ul>
                 </div>
@@ -251,16 +251,16 @@
                 <ul class="ul_none lh_2">
                     <li class="m-b_1 m-b_3:md font_normal">
                         <a tel="+12023756000" href="tel:+12023756000" class="tel c_white h:c_white h:underline">
-                        <strong class="p-r_2 d_block:md d_inline:lg">Phone:</strong><span class=" d_block:md d_inline:lg">(202) 375-6000, ext. 5603</span></a>
+                        <strong class="p-r_2 block:md inline:lg">Phone:</strong><span class=" block:md inline:lg">(202) 375-6000, ext. 5603</span></a>
                     </li>
                     <li class="m-b_1 m-b_3:md font_normal">
                         <a tel="+18002574737" href="tel:+18002534636.5603" class="tel c_white h:c_white h:underline">
-                        <strong class="p-r_2 d_block:md d_inline:lg">Toll Free:</strong><span class=" d_block:md d_inline:lg">(800) 253-4636, ext. 5603</span></a>
+                        <strong class="p-r_2 block:md inline:lg">Toll Free:</strong><span class=" block:md inline:lg">(800) 253-4636, ext. 5603</span></a>
                     </li>
                     <li class="m-b_1 m-b_3:md font_normal">
                         <a fax="+12023757000" href="fax:+12023757000" class="fax c_white h:c_white h:underline">
-                        <strong class="p-r_2 d_block:md d_inline:lg">Fax:</strong>
-                        <span class="block:md d_inline:lg">(202) 375-7000</span>
+                        <strong class="p-r_2 block:md inline:lg">Fax:</strong>
+                        <span class="block:md inline:lg">(202) 375-7000</span>
                         </a>
                     </li>
                 </ul>
@@ -340,7 +340,7 @@ Styleguide Recipe.Ordered Cards
                   <div class="felx_shrink flex m-l_3 font_bold"><div class="flex_auto bg_loe-B-BR-0 bg_primary-2 p-x_3 p-y_1">B-BR</div><div class="flex_auto bg_cor-IIA p-x_3 p-y_1">II</div></div>
             </div>
         </header>
-        <nav class="flex font_n2 none">
+        <nav class="flex font_n2 display_none">
             <a href="#saveToLibrary" class="felx_shrink bg_primary_5 link-fulldoc m-r_1 p-y_1 p-x_2 br_primary-5 c_secondary-n3 hover:c_white hover:bg_primary br_solid br_secondary-3 br_1 br_radius"><i
                     class="fas fa-save m-r_3"></i><span>SAVE</span></a>
             <a href="#shareResult" class="felx_shrink bg_primary_5 link-pdf m-x_1 p-y_1 p-x_2 br_primary-5 c_secondary-n3 hover:c_white hover:bg_primary br_solid br_secondary-3 br_1 br_radius"><i

@@ -163,7 +163,7 @@
 .order_8 {
 	order: 8;
 }
-.order#{$bp-label_large}ast {
+.order_last {
 	order: 99999;
 }
 
@@ -311,7 +311,7 @@
 	.order_8#{$bp-label_medium} {
 		order: 8;
 	}
-	.order#{$bp-label_large}ast#{$bp-label_medium} {
+	.order_last#{$bp-label_medium} {
 		order: 99999;
 	}
 
@@ -461,7 +461,7 @@
 	.order_8#{$bp-label_large} {
 		order: 8;
 	}
-	.order#{$bp-label_large}ast#{$bp-label_large} {
+	.order_last#{$bp-label_large} {
 		order: 99999;
 	}
 

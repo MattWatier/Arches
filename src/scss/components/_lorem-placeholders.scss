@@ -7,9 +7,9 @@ It is often we need to have space held for a return of details or text.
 markup:
 <div class="max-w_3">
    <h1 class="lorem-loader font_3 m-y_3">&nbsp;</h1>
-   <p class="m-y_2 font_0 lorem-loader">&nbsp;</div>
-   <p class="m-y_2 font_0 lorem-loader">&nbsp;</div>
-   <p class="m-y_2 font_0 lorem-loader">&nbsp;</div>
+   <p class="m-y_2 font_0 lorem-loader">&nbsp;</p>
+   <p class="m-y_2 font_0 lorem-loader">&nbsp;</p>
+   <p class="m-y_2 font_0 lorem-loader">&nbsp;</p>
 </div>
 
 Styleguide InteractiveExtras.Text Placeholder Loader
@@ -21,15 +21,17 @@ Lorem + Aspect Ratio
 
 To create an image placeholder use the lorem-loader plus an aspect of the intended image on th parent container while waiting for the image.The placeholder will be a 100% of the container so size the container properly. 
 
-aspect_1x2
-aspect_1x1
-aspect_3x2
-aspect_4x3
-aspect_16x9
-
+.aspect_1x2			- lock image to a 1 to 2 ratio
+.aspect_1x1			- lock image to a 1 to 1 ratio
+.aspect_2x1			- lock image to a 2 to 1 ratio
+.aspect_3x2			- lock image to a 3 to 2 ratio   
+.aspect_4x3			- lock image to a 4 to 3 ratio 
+.aspect_16x9		- lock image to a 16 to 9 ratio 
+.aspect_21x9		- lock image to a 21 to 9 ratio 
+.aspect_4x1			- lock image to a 4 to 1 ratio 
 
 markup:
-<div class="grid-w_2">
+<div class="grid-w_2 max-w_1">
    <div class="m-y_2 lorem-loader {{modifier_class}} ">&nbsp;</div>
 </div>
 
@@ -40,6 +42,7 @@ div[class*="aspect_"],
 	width: 100%;
 	overflow: hidden;
 	text-indent: -9999px;
+	opacity: 0.5;
 	&:before {
 		content: "";
 		width: 1px;
@@ -53,8 +56,14 @@ div[class*="aspect_"],
 		clear: both;
 	}
 }
-.aspect_16x9 {
-	padding-top: 9/16 * 100%;
+.aspect_2x1 {
+	padding-top: 2/1 * 100%;
+}
+.aspect_1x1 {
+	padding-top: 1/1 * 100%;
+}
+.aspect_1x2 {
+	padding-top: 1/2 * 100%;
 }
 .aspect_4x3 {
 	padding-top: 3/4 * 100%;
@@ -62,11 +71,14 @@ div[class*="aspect_"],
 .aspect_3x2 {
 	padding-top: 2/3 * 100%;
 }
-.aspect_1x1 {
-	padding-top: 1/1 * 100%;
+.aspect_16x9 {
+	padding-top: 9/16 * 100%;
 }
-.aspect_2x1 {
-	padding-top: 1/2 * 100%;
+.aspect_21x9 {
+	padding-top: 9/21 * 100%;
+}
+.aspect_4x1 {
+	padding-top: 1/4 * 100%;
 }
 .lorem-loader {
 	color: #fff;
