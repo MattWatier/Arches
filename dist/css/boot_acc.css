@@ -8014,38 +8014,88 @@ Login Nav
 The Header Nav of ACC.org
 
 Markup:
-<div class="relative flex">
-<nav class="flex_auto navbar navbar-primary navbar-expand-lg navbar-dark bg_acc">
-<ul class="navbar-nav mr-auto ">
-	<li class="nav-item">
-		<a class="nav-link  " href="#">Latest In Cardiology</a>
-	</li>
-	</ul>
-</nav>
-<nav class="flex_shrink navbar navbar-expand navbar-dark bg_primary p-y_2 absolute r_0">
-	<ul class="navbar-nav mr-auto m-y_1">
-		<li class="nav-item dropdown">
-			<a 	class="nav-link is-active_toggle-function"
-				id="myACCDropdown"
-				role="button"
-				data-toggle="dropdown"
-				aria-haspopup="true"
-				aria-expanded="false"><i class="far icon-toggle_chevron-up-down"></i> My ACC</a>
-			<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-				<a class="dropdown-item" href="#">Action</a>
-				<a class="dropdown-item" href="#">Another action</a>
-				<div class="dropdown-divider"></div>
-				<a class="dropdown-item" href="#">Something else here</a>
-			</div>
-		</li>
-		<li class="nav-item">
-			<a class=" nav-link" href="#"><i class="far fa-shopping-cart"></i></a>
-		</li>
-		<li class="nav-item">
-			<a class=" nav-link" href="#"><i class="fas fa-sign-out-alt"></i></a>
-		</li>
-	</ul>
-</nav>
+<div class="flex  relative">
+	<nav class="flex_auto navbar navbar-primary navbar-expand-lg navbar-dark bg_acc">
+		<button
+				class="br_white-2 is-active_toggle-function m-l_n2 m-y_3 navbar-toggler p-l_2 p-r_3 p-y_2 collapsed"
+				type="button"
+				data-toggle="collapse"
+				data-target="#navbarLoginContent"
+				aria-controls="navbarLoginContent"
+				aria-expanded="false"
+				aria-label="Toggle navigation"
+			>
+				<i class="icon-toggle_bars-times fas a:c_acc-2 c_white"></i><span class="a:c_acc-2 c_white">&nbsp;Menu</span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarLoginContent">
+			<ul class="navbar-nav font_1">
+				<li class="nav-item"><a class="nav-link" href="#">Latest In Cardiology</a></li>
+			</ul>
+		</div>
+	</nav>
+	<nav class="flex_shrink navbar navbar-expand navbar-dark bg_primary p-y_2 absolute r_0  font_1">
+		<ul class="navbar-nav m-t_1">
+			<li class="nav-item dropdown">
+				<a 	class="nav-link is-active_toggle-function"
+					id="myACCDropdown"
+					role="button"
+					data-toggle="dropdown"
+					aria-haspopup="true"
+					aria-expanded="false"><i class="far icon-toggle_chevron-up-down"></i> My ACC</a>
+				<div class="dropdown-menu br_none br_solid:lg m-x_0:lg m-x_n4 m-t_0 m-t_2:lg font_0" aria-labelledby="navbarDropdown">
+					<div class="flex flex_column flex_row:md p-x_2:lg m-x_n1 m-x_0:lg">
+						<div class="flex_auto p-x_2 p-y_0 p-y_3:md">
+							<ul class="ul_none m_0">
+								<li>
+										<a class="dropdown-item transition_4 wrap nowrap:lg" href="/my-acc/my-profile">My Profile</a>
+								</li>
+								<li>
+										<a class="dropdown-item transition_4 wrap nowrap:lg" href="/my-acc/my-training-program">My Training Programs</a>
+								</li>
+								<li>
+										<a class="dropdown-item transition_4 wrap nowrap:lg" href="/my-acc/my-membership">My Membership</a>
+								</li>
+								<li>
+										<a class="dropdown-item transition_4 wrap nowrap:lg" href="/my-acc/my-library">My Library</a>
+								</li>
+								<li>
+										<a class="dropdown-item transition_4 wrap nowrap:lg" href="http://edu.acc.org/diweb/dashboard">My Learning Dashboard</a>
+								</li>
+								<li>
+										<a class="dropdown-item transition_4 wrap nowrap:lg" href="http://edu.acc.org/diweb/grades">My Transcript</a>
+								</li>
+								<li>
+										<a class="dropdown-item transition_4 wrap nowrap:lg" href="/my-acc/ncdr-physician-dashboard">NCDR Physician Dashboard</a>
+								</li>
+								<li>
+										<a class="dropdown-item transition_4 wrap nowrap:lg" href="/my-acc/my-communication-preferences">My Communication Preferences</a>
+								</li>
+								<li>
+										<a class="dropdown-item transition_4 wrap nowrap:lg" href="https://memberhub.acc.org/">ACC Member Hub</a>
+								</li>
+								<li>
+										<a class="dropdown-item transition_4 wrap nowrap:lg" href="/my-acc/my-purchase-history">My Purchases</a>
+								</li>
+								<li>
+										<a class="dropdown-item transition_4 wrap nowrap:lg" href="/my-acc/personalization">Personalize ACC.org</a>
+								</li>
+								<div class="dropdown-divider m-y_3"></div>
+							<li class="">
+								<a class="dropdown-item transition_4 wrap nowrap:lg" href="/RemoteLogOff"> Logout</a>
+							</li>
+						</ul>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li class="nav-item">
+				<a class=" nav-link" href="#"><i class="far fa-shopping-cart"></i></a>
+			</li>
+			<li class="nav-item">
+				<a class=" nav-link" href="#"><i class="fas fa-sign-out-alt"></i></a>
+			</li>
+		</ul>
+	</nav>
 </div>
 
 
