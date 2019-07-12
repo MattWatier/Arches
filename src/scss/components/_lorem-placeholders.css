@@ -152,13 +152,13 @@ markup:
   <div class="card-section card-body">
     <h4>This is a card.</h4>
 	 <p>It has an easy to override visual style, and is appropriately subdued.</p>
-	 <a href="#" class="exapnded-click-area button btn btn-primary">I am so clickable</a>
+	 <a href="#" class="expanded-click-area button btn btn-primary">I am so clickable</a>
   </div>
 </div>
 
 Styleguide InteractiveExtras.Expanded Click Area
 */
-.exapnded-click-area::after {
+.expanded-click-area::after {
   position: absolute;
   top: 0;
   right: 0;

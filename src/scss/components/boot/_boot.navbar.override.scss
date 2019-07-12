@@ -71,7 +71,7 @@ $navbar-color_secondary: map-get($theme-palette, accent);
 	}
 }
 .dropdown-item {
-	color: map-get($theme-palette, primary);
+	color: get-themecolor(primary, -1);
 	&:hover {
 		color: white;
 	}

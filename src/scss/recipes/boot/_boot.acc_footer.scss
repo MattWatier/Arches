@@ -399,7 +399,9 @@ Markup:
 <!-- /subfooter -->
 </div>
 
-	Styleguide Recipes.ACC.Footer
+Weight: -1
+
+Styleguide Recipes.ACC.Footer
 
 */
 @media only screen and (min-width: 640px) {
@@ -442,6 +444,8 @@ Markup:
         <li class="flex_auto m-r_2"><a href="https://apps.apple.com/us/developer/american-college-of-cardiology/id502174543#see-all/i-phonei-pad-apps" target="_blank" class="linkedin social-bar--button br_radius block m-b_0 p_2 c_white-8 h:c_white text_center opacity_8 h:opacity"><i class="fab fa-apple"></i></a></li>
     </ul>
 </section>
+
+Weight: 10
 
 Styleguide Recipes.ACC.Footer.Social Links
 
