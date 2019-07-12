@@ -3474,30 +3474,28 @@ Styleguide Typography
   font-style: italic !important;
 }
 
-.lh_0 {
-  line-height: 1;
-}
+/*
+Font Color
 
-.lh_1 {
-  line-height: 1.125;
-}
+You can change the color of the text with some simple use classes.
 
-.lh_2 {
-  line-height: 1.35;
-}
+.c_white - text that's white
+.c_black -  text that's black
+.c_primary -  text that's primary
+.c_alert -  text that's alert
+.c_info -  text that's info
+.c_warning -  text that's warning the user
+.c_inherit - text that inherits from its parent
 
-.lh_3 {
-  line-height: 1.5;
-}
+markup:
+<div class="{{modifier_class}} font_normal font_2 font_bold bg_secondary-4 p_3">
+  <div class="text-lowercase">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
+  <div class="text-uppercase">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
+</div>
 
-.lh_4 {
-  line-height: 1.65;
-}
 
-.lh_5 {
-  line-height: 2.5;
-}
-
+Styleguide Typography.Font.Color
+ */
 .c_primary {
   color: #198dae !important;
 }
@@ -3978,6 +3976,77 @@ Styleguide Typography
   color: #00101e !important;
 }
 
+/*
+Font Black and White Tranparency
+
+black and white fonts can be modified to have levels of transparency between 0-9.
+
+.c_white - text that's white
+.c_black -  text that's black
+
+
+markup:
+<div class="font_normal font_2 bg_primary font_ui">
+  <div class="{{modifier_class}} p_3">
+    <div class="font_3 font_bold">{{modifier_class}} </div>
+    <div class="text-lowercase">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
+    <div class="text-uppercase">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
+  </div>
+    <div class="{{modifier_class}}-0 p_3">
+    <div class="font_3 font_bold">{{modifier_class}}-0 </div>
+    <div class="text-lowercase">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
+    <div class="text-uppercase">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
+  </div>
+    <div class="{{modifier_class}}-1 p_3">
+    <div class="font_3 font_bold">{{modifier_class}}-1 </div>
+    <div class="text-lowercase">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
+    <div class="text-uppercase">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
+  </div>
+    <div class="{{modifier_class}}-2 p_3">
+    <div class="font_3 font_bold">{{modifier_class}}-2 </div>
+    <div class="text-lowercase">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
+    <div class="text-uppercase">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
+  </div>
+    <div class="{{modifier_class}}-3 p_3">
+    <div class="font_3 font_bold">{{modifier_class}}-3 </div>
+    <div class="text-lowercase">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
+    <div class="text-uppercase">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
+  </div>
+    <div class="{{modifier_class}}-4 p_3">
+    <div class="font_3 font_bold">{{modifier_class}}-4 </div>
+    <div class="text-lowercase">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
+    <div class="text-uppercase">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
+  </div>
+    <div class="{{modifier_class}}-5 p_3">
+    <div class="font_3 font_bold">{{modifier_class}}-5 </div>
+    <div class="text-lowercase">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
+    <div class="text-uppercase">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
+  </div>
+    <div class="{{modifier_class}}-9 p_3">
+    <div class="font_3 font_bold">{{modifier_class}}-6 </div>
+    <div class="text-lowercase">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
+    <div class="text-uppercase">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
+  </div>
+      <div class="{{modifier_class}}-7 p_3">
+    <div class="font_3 font_bold">{{modifier_class}}-7 </div>
+    <div class="text-lowercase">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
+    <div class="text-uppercase">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
+  </div>
+      <div class="{{modifier_class}}-8 p_3">
+    <div class="font_3 font_bold">{{modifier_class}}-8 </div>
+    <div class="text-lowercase">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
+    <div class="text-uppercase">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
+  </div>
+      <div class="{{modifier_class}}-9 p_3">
+    <div class="font_3 font_bold">{{modifier_class}}-9 </div>
+    <div class="text-lowercase">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
+    <div class="text-uppercase">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
+  </div>
+</div>
+
+
+Styleguide Typography.Font.Color Transparency
+ */
 .c_white {
   color: white !important;
 }
@@ -4085,10 +4154,11 @@ Styleguide Typography
 
   .font_light            -  Light, 100
   .font_regular          -  Regular, 400           
-  .font_bold             -  Bold, 900     
+  .font_bold             -  Bold, 700 
+  .font_xbold            -  Extra Bold, 900
 
   markup:
-  <div class="{{modifier_class}} font_normal font_2">
+  <div class="{{modifier_class}} font_normal font_2 font_ui">
     <div class="lowercase">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
     <div class="uppercase">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
   </div>
@@ -4351,6 +4421,22 @@ Styleguide Typography
     font-size: 0.401877572rem;
   }
 }
+/*
+  Text Wrap
+
+  <div class="p-b_3"><span class="bg_accent br_radius c_white inline-block font_n1 p-7_3 p-x_5 sg">Is Responsive: breakpoint modifiers</span></div>You canalter the wrapping style with these UCs.
+
+  .wrap           - alter the wrapping style to wrap
+  .pre-wrap       - alter the wrapping style to pre-wrap    
+  .nowrap         - alter the wrapping style to nowrap  
+
+  markup:
+  <div class="{{modifier_class}} font_normal max-w_1">
+    Quae sapiente reprehenderit explicabo esse consequatur error fugiat. Voluptas odit ipsam architecto quae perspiciatis nostrum autem at. Ut veritatis molestiae distinctio autem repudiandae voluptatem voluptatibus aspernatur.
+  </div>
+
+  Styleguide Typography.Text.Wrap
+ */
 .wrap {
   white-space: normal;
 }
@@ -4392,12 +4478,36 @@ Styleguide Typography
     white-space: nowrap;
   }
 }
+/*
+	Text Decoration
+
+	Decoration can be easily added to text through these UCs.  
+
+  .underline			        - solid underline the text
+  .dotted			            - dotted underline the text
+  .double                 - double underline the text
+  .dashed                 - dashed underline the text
+  .undecorated            - unset the decoration of peice of text     
+  .uppercase              - uppercase the text    
+  .lowercase              - lowercase the text
+  .capitalize             - capitalize the text
+
+	markup:
+	<div class="{{modifier_class}} p_3 br_solid font_bold br_black-1 br_1 bg bg_primary c_white">text has a decoration of {{modifier_class}} <a>I am a link also decorated</a></div>
+
+	Styleguide Typography.Text.Decoration
+
+ */
 .lowercase {
   text-transform: lowercase;
 }
 
 .uppercase {
   text-transform: uppercase;
+}
+
+.capitalize {
+  text-transform: capitalize;
 }
 
 .underline {
@@ -4419,40 +4529,10 @@ Styleguide Typography
           text-decoration: dashed;
 }
 
-.text_right {
-  text-align: right !important;
+.undecorated {
+  text-decoration: unset;
 }
 
-.text_center {
-  text-align: center !important;
-}
-
-.text_left {
-  text-align: left !important;
-}
-
-/*
-Font Color
-
-You can change the color of the text with some simple use classes.
-
-.c_white - text that's white
-.c_black -  text that's black
-.c_primary -  text that's primary
-.c_alert -  text that's alert
-.c_info -  text that's info
-.c_warning -  text that's warning the user
-.c_inherit - text that inherits from its parent
-
-markup:
-<div class="{{modifier_class}} font_normal font_2 font_bold bg_secondary-4 p_3">
-  <div class="text-lowercase">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
-  <div class="text-uppercase">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
-</div>
-
-
-Styleguide Typography.Font.Color
- */
 /*
 	Text Shadows
 
@@ -4472,23 +4552,23 @@ Styleguide Typography.Font.Color
 
  */
 .text-shadow_none {
-  text-shadow: "0px 0px 0px rgba(0, 0, 0, 0)";
+  text-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
 }
 
 .text-shadow_white-1 {
-  text-shadow: "2px 2px 2px rgba(255, 255, 255, 0.25)";
+  text-shadow: 2px 2px 2px rgba(255, 255, 255, 0.25);
 }
 
 .text-shadow_black-1 {
-  text-shadow: "2px 2px 2px rgba(0, 0, 0, 0.25)";
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
 }
 
 .text-shadow_white-n1 {
-  text-shadow: "-1px -1px 2px rgba(255, 255, 255, 0.5)";
+  text-shadow: -1px -1px 2px rgba(255, 255, 255, 0.5);
 }
 
 .text-shadow_black-n1 {
-  text-shadow: "-1px -1px 2px rgba(0, 0, 0, 0.5)";
+  text-shadow: -1px -1px 2px rgba(0, 0, 0, 0.5);
 }
 
 /*
@@ -4558,6 +4638,30 @@ Styleguide Typography.Text.Indent
 
   Styleguide Typography.Text.LineHeight
  */
+.lh_0 {
+  line-height: 1;
+}
+
+.lh_1 {
+  line-height: 1.125;
+}
+
+.lh_2 {
+  line-height: 1.35;
+}
+
+.lh_3 {
+  line-height: 1.5;
+}
+
+.lh_4 {
+  line-height: 1.65;
+}
+
+.lh_5 {
+  line-height: 2.5;
+}
+
 /*
   Alignment
 
@@ -4575,6 +4679,18 @@ Styleguide Typography.Text.Indent
 
   Styleguide Typography.Text.Alignment
  */
+.text_right {
+  text-align: right !important;
+}
+
+.text_center {
+  text-align: center !important;
+}
+
+.text_left {
+  text-align: left !important;
+}
+
 /*
   List Type
 

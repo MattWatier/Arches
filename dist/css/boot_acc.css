@@ -8017,15 +8017,16 @@ Markup:
 <div class="flex  relative">
 	<nav class="flex_auto navbar navbar-primary navbar-expand-lg navbar-dark bg_acc">
 		<button
-				class="br_white-2 is-active_toggle-function m-l_n2 m-y_3 navbar-toggler p-l_2 p-r_3 p-y_2 collapsed"
-				type="button"
-				data-toggle="collapse"
-				data-target="#navbarLoginContent"
-				aria-controls="navbarLoginContent"
-				aria-expanded="false"
-				aria-label="Toggle navigation"
-			>
-				<i class="icon-toggle_bars-times fas a:c_acc-2 c_white"></i><span class="a:c_acc-2 c_white">&nbsp;Menu</span>
+			class="br_white-2 is-active_toggle-function m-l_n2 m-y_3 navbar-toggler p-l_2 p-r_3 p-y_2 collapsed"
+			type="button"
+			data-toggle="collapse"
+			data-target="#navbarLoginContent"
+			aria-controls="navbarLoginContent"
+			aria-expanded="false"
+			aria-label="Toggle navigation"
+		>
+			<i class="icon-toggle_bars-times fas a:c_acc-2 c_white"></i
+			><span class="a:c_acc-2 c_white">&nbsp;Menu</span>
 		</button>
 		<div class="collapse navbar-collapse" id="navbarLoginContent">
 			<ul class="navbar-nav font_1">
@@ -8033,57 +8034,89 @@ Markup:
 			</ul>
 		</div>
 	</nav>
-	<nav class="flex_shrink navbar navbar-expand navbar-dark bg_primary p-y_2 absolute r_0  font_1">
+	<nav class="absolute bg_primary flex_shrink font_0 font_1:lg navbar navbar-dark navbar-expand p-y_2 r_0">
 		<ul class="navbar-nav m-t_1">
 			<li class="nav-item dropdown">
-				<a 	class="nav-link is-active_toggle-function"
+				<a
+					class="nav-link is-active_toggle-function"
 					id="myACCDropdown"
 					role="button"
 					data-toggle="dropdown"
 					aria-haspopup="true"
-					aria-expanded="false"><i class="far icon-toggle_chevron-up-down"></i> My ACC</a>
-				<div class="dropdown-menu br_none br_solid:lg m-x_0:lg m-x_n4 m-t_0 m-t_2:lg font_0" aria-labelledby="navbarDropdown">
+					aria-expanded="false"
+					><i class="far icon-toggle_chevron-up-down"></i> My ACC</a
+				>
+				<div
+					class="dropdown-menu dropdown-menu-right br_none br_solid:lg m-x_0:lg m-x_n4 m-t_0 m-t_2:lg font_0"
+					aria-labelledby="navbarDropdown"
+				>
 					<div class="flex flex_column flex_row:md p-x_2:lg m-x_n1 m-x_0:lg">
-						<div class="flex_auto p-x_2 p-y_0 p-y_3:md">
+						<div class="flex_auto p-x_2 p-y_0 ">
 							<ul class="ul_none m_0">
 								<li>
-										<a class="dropdown-item transition_4 wrap nowrap:lg" href="/my-acc/my-profile">My Profile</a>
+									<a class="dropdown-item transition_4 nowrap" href="/my-acc/my-profile"
+										>My Profile</a
+									>
 								</li>
 								<li>
-										<a class="dropdown-item transition_4 wrap nowrap:lg" href="/my-acc/my-training-program">My Training Programs</a>
+									<a class="dropdown-item transition_4 nowrap" href="/my-acc/my-training-program"
+										>My Training Programs</a
+									>
 								</li>
 								<li>
-										<a class="dropdown-item transition_4 wrap nowrap:lg" href="/my-acc/my-membership">My Membership</a>
+									<a class="dropdown-item transition_4 nowrap" href="/my-acc/my-membership"
+										>My Membership</a
+									>
 								</li>
 								<li>
-										<a class="dropdown-item transition_4 wrap nowrap:lg" href="/my-acc/my-library">My Library</a>
+									<a class="dropdown-item transition_4 nowrap" href="/my-acc/my-library"
+										>My Library</a
+									>
 								</li>
 								<li>
-										<a class="dropdown-item transition_4 wrap nowrap:lg" href="http://edu.acc.org/diweb/dashboard">My Learning Dashboard</a>
+									<a
+										class="dropdown-item transition_4 nowrap"
+										href="http://edu.acc.org/diweb/dashboard"
+										>My Learning Dashboard</a
+									>
 								</li>
 								<li>
-										<a class="dropdown-item transition_4 wrap nowrap:lg" href="http://edu.acc.org/diweb/grades">My Transcript</a>
+									<a class="dropdown-item transition_4 nowrap" href="http://edu.acc.org/diweb/grades"
+										>My Transcript</a
+									>
 								</li>
 								<li>
-										<a class="dropdown-item transition_4 wrap nowrap:lg" href="/my-acc/ncdr-physician-dashboard">NCDR Physician Dashboard</a>
+									<a class="dropdown-item transition_4 nowrap" href="/my-acc/ncdr-physician-dashboard"
+										>NCDR Physician Dashboard</a
+									>
 								</li>
 								<li>
-										<a class="dropdown-item transition_4 wrap nowrap:lg" href="/my-acc/my-communication-preferences">My Communication Preferences</a>
+									<a
+										class="dropdown-item transition_4 nowrap"
+										href="/my-acc/my-communication-preferences"
+										>My Communication Preferences</a
+									>
 								</li>
 								<li>
-										<a class="dropdown-item transition_4 wrap nowrap:lg" href="https://memberhub.acc.org/">ACC Member Hub</a>
+									<a class="dropdown-item transition_4 nowrap" href="https://memberhub.acc.org/"
+										>ACC Member Hub</a
+									>
 								</li>
 								<li>
-										<a class="dropdown-item transition_4 wrap nowrap:lg" href="/my-acc/my-purchase-history">My Purchases</a>
+									<a class="dropdown-item transition_4 nowrap" href="/my-acc/my-purchase-history"
+										>My Purchases</a
+									>
 								</li>
 								<li>
-										<a class="dropdown-item transition_4 wrap nowrap:lg" href="/my-acc/personalization">Personalize ACC.org</a>
+									<a class="dropdown-item transition_4 nowrap" href="/my-acc/personalization"
+										>Personalize ACC.org</a
+									>
 								</li>
 								<div class="dropdown-divider m-y_3"></div>
-							<li class="">
-								<a class="dropdown-item transition_4 wrap nowrap:lg" href="/RemoteLogOff"> Logout</a>
-							</li>
-						</ul>
+								<li class="">
+									<a class="dropdown-item transition_4 nowrap" href="/RemoteLogOff"> Logout</a>
+								</li>
+							</ul>
 						</div>
 					</div>
 				</div>
@@ -8098,8 +8131,7 @@ Markup:
 	</nav>
 </div>
 
-
-	Styleguide Recipes.ACC.Branded Nav Login
+Styleguide Recipes.ACC.Branded Nav Login
 
 */
 /*
@@ -8848,30 +8880,28 @@ Styleguide Typography
   font-style: italic !important;
 }
 
-.lh_0 {
-  line-height: 1;
-}
+/*
+Font Color
 
-.lh_1 {
-  line-height: 1.125;
-}
+You can change the color of the text with some simple use classes.
 
-.lh_2 {
-  line-height: 1.35;
-}
+.c_white - text that's white
+.c_black -  text that's black
+.c_primary -  text that's primary
+.c_alert -  text that's alert
+.c_info -  text that's info
+.c_warning -  text that's warning the user
+.c_inherit - text that inherits from its parent
 
-.lh_3 {
-  line-height: 1.5;
-}
+markup:
+<div class="{{modifier_class}} font_normal font_2 font_bold bg_secondary-4 p_3">
+  <div class="text-lowercase">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
+  <div class="text-uppercase">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
+</div>
 
-.lh_4 {
-  line-height: 1.65;
-}
 
-.lh_5 {
-  line-height: 2.5;
-}
-
+Styleguide Typography.Font.Color
+ */
 .c_primary {
   color: #198dae !important;
 }
@@ -9352,6 +9382,77 @@ Styleguide Typography
   color: #00101e !important;
 }
 
+/*
+Font Black and White Tranparency
+
+black and white fonts can be modified to have levels of transparency between 0-9.
+
+.c_white - text that's white
+.c_black -  text that's black
+
+
+markup:
+<div class="font_normal font_2 bg_primary font_ui">
+  <div class="{{modifier_class}} p_3">
+    <div class="font_3 font_bold">{{modifier_class}} </div>
+    <div class="text-lowercase">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
+    <div class="text-uppercase">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
+  </div>
+    <div class="{{modifier_class}}-0 p_3">
+    <div class="font_3 font_bold">{{modifier_class}}-0 </div>
+    <div class="text-lowercase">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
+    <div class="text-uppercase">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
+  </div>
+    <div class="{{modifier_class}}-1 p_3">
+    <div class="font_3 font_bold">{{modifier_class}}-1 </div>
+    <div class="text-lowercase">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
+    <div class="text-uppercase">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
+  </div>
+    <div class="{{modifier_class}}-2 p_3">
+    <div class="font_3 font_bold">{{modifier_class}}-2 </div>
+    <div class="text-lowercase">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
+    <div class="text-uppercase">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
+  </div>
+    <div class="{{modifier_class}}-3 p_3">
+    <div class="font_3 font_bold">{{modifier_class}}-3 </div>
+    <div class="text-lowercase">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
+    <div class="text-uppercase">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
+  </div>
+    <div class="{{modifier_class}}-4 p_3">
+    <div class="font_3 font_bold">{{modifier_class}}-4 </div>
+    <div class="text-lowercase">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
+    <div class="text-uppercase">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
+  </div>
+    <div class="{{modifier_class}}-5 p_3">
+    <div class="font_3 font_bold">{{modifier_class}}-5 </div>
+    <div class="text-lowercase">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
+    <div class="text-uppercase">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
+  </div>
+    <div class="{{modifier_class}}-9 p_3">
+    <div class="font_3 font_bold">{{modifier_class}}-6 </div>
+    <div class="text-lowercase">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
+    <div class="text-uppercase">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
+  </div>
+      <div class="{{modifier_class}}-7 p_3">
+    <div class="font_3 font_bold">{{modifier_class}}-7 </div>
+    <div class="text-lowercase">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
+    <div class="text-uppercase">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
+  </div>
+      <div class="{{modifier_class}}-8 p_3">
+    <div class="font_3 font_bold">{{modifier_class}}-8 </div>
+    <div class="text-lowercase">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
+    <div class="text-uppercase">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
+  </div>
+      <div class="{{modifier_class}}-9 p_3">
+    <div class="font_3 font_bold">{{modifier_class}}-9 </div>
+    <div class="text-lowercase">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
+    <div class="text-uppercase">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
+  </div>
+</div>
+
+
+Styleguide Typography.Font.Color Transparency
+ */
 .c_white {
   color: white !important;
 }
@@ -9459,10 +9560,11 @@ Styleguide Typography
 
   .font_light            -  Light, 100
   .font_regular          -  Regular, 400           
-  .font_bold             -  Bold, 900     
+  .font_bold             -  Bold, 700 
+  .font_xbold            -  Extra Bold, 900
 
   markup:
-  <div class="{{modifier_class}} font_normal font_2">
+  <div class="{{modifier_class}} font_normal font_2 font_ui">
     <div class="lowercase">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
     <div class="uppercase">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
   </div>
@@ -9725,6 +9827,22 @@ Styleguide Typography
     font-size: 0.401877572rem;
   }
 }
+/*
+  Text Wrap
+
+  <div class="p-b_3"><span class="bg_accent br_radius c_white inline-block font_n1 p-7_3 p-x_5 sg">Is Responsive: breakpoint modifiers</span></div>You canalter the wrapping style with these UCs.
+
+  .wrap           - alter the wrapping style to wrap
+  .pre-wrap       - alter the wrapping style to pre-wrap    
+  .nowrap         - alter the wrapping style to nowrap  
+
+  markup:
+  <div class="{{modifier_class}} font_normal max-w_1">
+    Quae sapiente reprehenderit explicabo esse consequatur error fugiat. Voluptas odit ipsam architecto quae perspiciatis nostrum autem at. Ut veritatis molestiae distinctio autem repudiandae voluptatem voluptatibus aspernatur.
+  </div>
+
+  Styleguide Typography.Text.Wrap
+ */
 .wrap {
   white-space: normal;
 }
@@ -9766,12 +9884,36 @@ Styleguide Typography
     white-space: nowrap;
   }
 }
+/*
+	Text Decoration
+
+	Decoration can be easily added to text through these UCs.  
+
+  .underline			        - solid underline the text
+  .dotted			            - dotted underline the text
+  .double                 - double underline the text
+  .dashed                 - dashed underline the text
+  .undecorated            - unset the decoration of peice of text     
+  .uppercase              - uppercase the text    
+  .lowercase              - lowercase the text
+  .capitalize             - capitalize the text
+
+	markup:
+	<div class="{{modifier_class}} p_3 br_solid font_bold br_black-1 br_1 bg bg_primary c_white">text has a decoration of {{modifier_class}} <a>I am a link also decorated</a></div>
+
+	Styleguide Typography.Text.Decoration
+
+ */
 .lowercase {
   text-transform: lowercase;
 }
 
 .uppercase {
   text-transform: uppercase;
+}
+
+.capitalize {
+  text-transform: capitalize;
 }
 
 .underline {
@@ -9793,40 +9935,10 @@ Styleguide Typography
           text-decoration: dashed;
 }
 
-.text_right {
-  text-align: right !important;
+.undecorated {
+  text-decoration: unset;
 }
 
-.text_center {
-  text-align: center !important;
-}
-
-.text_left {
-  text-align: left !important;
-}
-
-/*
-Font Color
-
-You can change the color of the text with some simple use classes.
-
-.c_white - text that's white
-.c_black -  text that's black
-.c_primary -  text that's primary
-.c_alert -  text that's alert
-.c_info -  text that's info
-.c_warning -  text that's warning the user
-.c_inherit - text that inherits from its parent
-
-markup:
-<div class="{{modifier_class}} font_normal font_2 font_bold bg_secondary-4 p_3">
-  <div class="text-lowercase">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
-  <div class="text-uppercase">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
-</div>
-
-
-Styleguide Typography.Font.Color
- */
 /*
 	Text Shadows
 
@@ -9846,23 +9958,23 @@ Styleguide Typography.Font.Color
 
  */
 .text-shadow_none {
-  text-shadow: "0px 0px 0px rgba(0, 0, 0, 0)";
+  text-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
 }
 
 .text-shadow_white-1 {
-  text-shadow: "2px 2px 2px rgba(255, 255, 255, 0.25)";
+  text-shadow: 2px 2px 2px rgba(255, 255, 255, 0.25);
 }
 
 .text-shadow_black-1 {
-  text-shadow: "2px 2px 2px rgba(0, 0, 0, 0.25)";
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
 }
 
 .text-shadow_white-n1 {
-  text-shadow: "-1px -1px 2px rgba(255, 255, 255, 0.5)";
+  text-shadow: -1px -1px 2px rgba(255, 255, 255, 0.5);
 }
 
 .text-shadow_black-n1 {
-  text-shadow: "-1px -1px 2px rgba(0, 0, 0, 0.5)";
+  text-shadow: -1px -1px 2px rgba(0, 0, 0, 0.5);
 }
 
 /*
@@ -9932,6 +10044,30 @@ Styleguide Typography.Text.Indent
 
   Styleguide Typography.Text.LineHeight
  */
+.lh_0 {
+  line-height: 1;
+}
+
+.lh_1 {
+  line-height: 1.125;
+}
+
+.lh_2 {
+  line-height: 1.35;
+}
+
+.lh_3 {
+  line-height: 1.5;
+}
+
+.lh_4 {
+  line-height: 1.65;
+}
+
+.lh_5 {
+  line-height: 2.5;
+}
+
 /*
   Alignment
 
@@ -9949,6 +10085,18 @@ Styleguide Typography.Text.Indent
 
   Styleguide Typography.Text.Alignment
  */
+.text_right {
+  text-align: right !important;
+}
+
+.text_center {
+  text-align: center !important;
+}
+
+.text_left {
+  text-align: left !important;
+}
+
 /*
   List Type
 
