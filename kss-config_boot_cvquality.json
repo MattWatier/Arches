@@ -1,0 +1,24 @@
+{
+	"title": "ACC & Bootstrap",
+	"mask": "boot_cvquality.css",
+	"builder": "node_modules/michelangelo/kss_styleguide/custom-template/",
+	"source": "./dist/css/",
+	"destination": "docs/boot_cvquality/",
+	"//": "relative to source.",
+	"homepage": "../../Boot_CVQuality.md",
+
+	"//": "relative to the generated style guide.",
+	"css": [
+		"../icons/css/fontawesome.css",
+		"../icons/css/solid.css",
+		"../icons/css/regular.css",
+		"../icons/css/brands.css",
+		"../icons/css/light.css",
+		"../css/styleguide_override.css",
+		"//fonts.googleapis.com/css?family=Roboto+Slab&display=swap",
+		"//fonts.googleapis.com/css?family=Muli&display=swap",
+		"//fonts.googleapis.com/css?family=Maven+Pro&display=swap",
+		"../css/boot_cvquality.min.css"
+	],
+	"js": ["../bootstrap/bootstrap.js", "../js/toggleActive.js"]
+}
