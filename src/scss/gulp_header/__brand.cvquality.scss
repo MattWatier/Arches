@@ -13,6 +13,127 @@ $acc-blue: #004176;
 $white: rgb(255, 255, 255);
 $black: rgb(19, 18, 18);
 $real-black: #000;
+/**
+ * Orange - Dark (Headers)
+ *
+ * @color 
+ * @section QII Brand
+ */
+ $orange-dark: #e87d1e;
+
+/**
+ * Orange - Light (Highlights)
+ *
+ * @color 
+ * @section QII Brand
+ */
+ $orange-light: #ffc425;
+ /**
+ * ACC Blue
+ *
+ * @color 
+ * @section QII Brand
+ */
+ $acc-blue: #004176;
+  /**
+ * Warm Grey
+ *
+ * @color 
+ * @section QII Brand
+ */
+ $warm-grey: #a1a0a4;
+  /**
+ * Warm  Grey - Light
+ *
+ * @color 
+ * @section QII Alternate Colors
+ */ 
+$warm-grey-light: #d6d4d4;
+  /**
+ * Warm  Grey - Dark
+ *
+ * @color 
+ * @section QII Alternate Colors
+ */
+ $warm-grey-dark:#6f6b6f;
+ /**
+ * Off White
+ *
+ * @color 
+ * @section QII Alternate Colors
+ */
+ $off-white: #fafafa;
+ /**
+ * Off Black
+ *
+ * @color 
+ * @section QII Alternate Colors
+ */
+ $off-black:#2f2f2f;
+ /**
+ * Soft Blue
+ *
+ * @color 
+ * @section QII Alternate Colors
+ */
+ $soft-blue: #a4cded;
+  /**
+ * Soft Grey
+ *
+ * @color 
+ * @section QII Alternate Colors
+ */
+ $soft-grey: #eceaea;
+ 
+/**
+ * Error Red
+ *
+ * @color 
+ * @section States      
+ */
+
+ $error-color:#990000;
+
+ /**
+ * Scrub Teal 
+ *
+ * @color 
+ * @section Scrub Teal	
+ */
+ $scrub-teal:#0088aa;
+ /**
+ * Scrub  Teal - Light
+ *
+ * @color 
+ * @section Scrub Teal		
+ */
+ $scrub-teal-light:#05aee5;
+
+/**
+ * ScrubTeal - Dark
+ *
+ * @color
+ * @section Scrub Teal	 	
+ */
+ $scrub-teal-dark:#047294;
+/**
+ * ScrubTeal & Orange Light 30%
+ *
+ * @color
+ * @section Blends      
+ */
+ $mix-teal_orange:#58B5A5;
+ /**
+ *  Orange Light & ScrubTeal 30%
+ *
+ * @color
+ * @section Blends      
+ */
+ $mix-orange_teal:#ACBD65;
+
+ 
+
+
 
 $gray-100: mix($white, $black, 10%);
 $gray-200: mix($white, $black, 20%);
