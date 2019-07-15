@@ -9,6 +9,7 @@ Arches is a central design system for the American College of Cardiology. This s
 -   [Arches](../)
 -   [Utility Classes Only with ACC Brand](../uconly_acc/)
 -   [Bootstrap and ACC Brand](../boot_acc/)
+-   [Bootstrap and CVQuality Brand](../boot_cvquality/)
 -   [Foundation and ACC Brand](../zurb_acc/)
 
 -   Base (helpers and defaults)

@@ -1,0 +1,109 @@
+/**  ACC Brands    *********************************/
+$teal: #198dae;
+$green-blue: #16a385;
+$dark-grey: #676a72;
+$alt-grey: #a3988c;
+$green: #078a2e;
+$orange: #da8210;
+$red: #dd1a1a;
+$blue: #2b58c0;
+$purple: #7742bd;
+$magenta: #c34198;
+$acc-blue: #004176;
+$white: rgb(255, 255, 255);
+$black: rgb(19, 18, 18);
+$real-black: #000;
+
+$gray-100: mix($white, $black, 10%);
+$gray-200: mix($white, $black, 20%);
+$gray-300: mix($white, $black, 30%);
+$gray-400: mix($white, $black, 40%);
+$gray-500: mix($white, $black, 50%);
+$gray-600: mix($white, $black, 60%);
+$gray-700: mix($white, $black, 70%);
+$gray-800: mix($white, $black, 80%);
+$gray-900: mix($white, $black, 90%);
+
+// Currently Un used in the design but part of bootstrap.
+$indigo: #6610f2;
+$pink: #e83e8c;
+$yellow: #ffc107;
+$cyan: #17a2b8;
+
+$theme-palette: map-merge(
+	(
+		primary: $teal,
+		secondary: $dark-grey,
+		success: $green,
+		warning: $orange,
+		alert: $red,
+		navigation: $blue,
+		accent: $green-blue,
+		info: $alt-grey,
+		highlight: $purple,
+		acc: $acc-blue
+	),
+	$theme-palette
+);
+
+$grays: map-merge(
+	(
+		"100": $gray-100,
+		"200": $gray-200,
+		"300": $gray-300,
+		"400": $gray-400,
+		"500": $gray-500,
+		"600": $gray-600,
+		"700": $gray-700,
+		"800": $gray-800,
+		"900": $gray-900
+	),
+	$grays
+);
+$colors: map-merge(
+	(
+		"blue": $blue,
+		"indigo": $indigo,
+		"purple": $purple,
+		"pink": $pink,
+		"red": $red,
+		"orange": $orange,
+		"yellow": $yellow,
+		"green": $green,
+		"teal": $teal,
+		"cyan": $cyan,
+		"white": $white,
+		"gray": $gray-600,
+		"gray-dark": $gray-800
+	),
+	$colors
+);
+
+$fonts: (
+	slab: (
+		name: "Roboto Slab",
+		stack: '"Roboto Slab","Times New Roman","Lucida Bright",Georgia,serif, "slab"'
+	),
+	display: (
+		name: "Maven Pro",
+		stack: '"Maven Pro","Muli","Open Sans","system",sans-serif'
+	),
+	copy: (
+		name: "Muli",
+		stack: '"Muli","Open Sans","system",sans-serif'
+	),
+	ui: (
+		name: "Open Sans",
+		stack: '"Open Sans",-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif'
+	)
+);
+
+// Reset Values of Utlity-css.vars.scss
+$value-to-unit: map-deep-set($value-to-unit, "font-family" "slab", map-deep-get($fonts, "slab", "stack"));
+$value-to-unit: map-deep-set($value-to-unit, "font-family" "display", map-deep-get($fonts, "display", "stack"));
+$value-to-unit: map-deep-set($value-to-unit, "font-family" "copy", map-deep-get($fonts, "copy", "stack"));
+
+$global-radus-on: false;
+$global-border-radius: 6px;
+$global-border-round: 25px;
+$basicSizeMultiplier: 1rem;
