@@ -1,0 +1,50 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+img {
+	display: block;
+}
+
+.clearfix {
+	&:before {
+		content: "";
+		display: table;
+	}
+	&:after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+	zoom: 1;
+	/* For IE 6/7 (trigger hasLayout) */
+}
+
+/* Smartphone resets and enhancements */
+html {
+	-webkit-font-smoothing: antialiased;
+	/*-webkit-backface-visibility: hidden; /* this breaks the sticky widget on article and landing pages */
+	/*-webkit-perspective: 1000; */
+}
+
+footer {
+	/* enables on GPU processing, per http://davidwalsh.name/translate3d */
+	transform: translate3d(0, 0, 0);
+	-webkit-transform: translate3d(0, 0, 0);
+}
+
+a {
+	&:link,
+	&:hover,
+	&:active {
+		-webkit-tap-highlight-color: rbga(0, 0, 0, 0);
+		outline: none;
+		/* prevents pink highlight color on tap */
+	}
+}
+
+span {
+	-webkit-transform: translateZ(0);
+	/* enables on GPU processing */
+}

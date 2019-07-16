@@ -4,7 +4,6 @@
 // Variables should follow the `$component-state-property-size` formula for
 // consistent naming. Ex: $nav-link-disabled-color and $modal-content-box-shadow-xs.
 
-// Color system
 
 $white:    #fff !default;
 $gray-100: #f8f9fa !default;
@@ -39,11 +38,11 @@ $blue:    #007bff !default;
 $indigo:  #6610f2 !default;
 $purple:  #6f42c1 !default;
 $pink:    #e83e8c !default;
-$red:     #dc3545 !default;
+$red:     $error-color;
 $orange:  #fd7e14 !default;
 $yellow:  #ffc107 !default;
 $green:   #28a745 !default;
-$teal:    #20c997 !default;
+$teal:   $scrub-teal;
 $cyan:    #17a2b8 !default;
 
 $colors: () !default;
@@ -67,14 +66,14 @@ $colors: map-merge(
   $colors
 );
 
-$primary:       $blue !default;
-$secondary:     $gray-600 !default;
+$primary:       $scrub-teal;
+$secondary:     $warm-grey-light;
 $success:       $green !default;
 $info:          $cyan !default;
 $warning:       $yellow !default;
 $danger:        $red !default;
-$light:         $gray-100 !default;
-$dark:          $gray-800 !default;
+$light:         $warm-grey-light,
+$dark:          $warm-grey-dark;
 
 $theme-colors: () !default;
 // stylelint-disable-next-line scss/dollar-variable-default
@@ -91,6 +90,206 @@ $theme-colors: map-merge(
   ),
   $theme-colors
 );
+
+
+//4.0 Colors
+$theme-colors: (
+  primary: $scrub-teal,
+  secondary: $warm-grey-light,
+  success: $green,
+  info: $cyan,
+  warning: $yellow,
+  danger: $red,
+  light: $warm-grey-light,
+  dark:  $warm-grey-dark
+);
+//3.3.7 Colors
+
+$gray-darker:            mix($warm-grey-dark,$off-black);
+$gray-dark:              $warm-grey-dark;   // #333
+$gray:                   $warm-grey; // #555
+$gray-light:             $warm-grey-light; // #777
+$gray-lighter:           mix($warm-grey-light,$off-white);
+
+
+$text-color: $off-black;
+
+// Radius
+$border-radius-base:        6px;
+$border-radius-large:       9px;
+$border-radius-small:       2px;
+
+
+//4.0 boootstrap variation to breakpoints
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 1024px,
+xl: 1200px,  
+xxl: 1400px
+);
+ // bootstrap 3.37 breakpoints
+ // // Extra small screen / phone
+//** Deprecated `$screen-xs` as of v3.0.1
+$screen-xs:                  320px !default;
+//** Deprecated `$screen-xs-min` as of v3.2.0
+$screen-xs-min:              $screen-xs !default;
+//** Deprecated `$screen-phone` as of v3.0.1
+$screen-phone:               $screen-xs-min !default;
+
+// Small screen / tablet
+//** Deprecated `$screen-sm` as of v3.0.1
+$screen-sm:                  576px !default;
+$screen-sm-min:              $screen-sm !default;
+//** Deprecated `$screen-tablet` as of v3.0.1
+$screen-tablet:              $screen-sm-min !default;
+
+// Medium screen / desktop
+//** Deprecated `$screen-md` as of v3.0.1
+$screen-md:                  768px !default;
+$screen-md-min:              $screen-md !default;
+//** Deprecated `$screen-desktop` as of v3.0.1
+$screen-desktop:             $screen-md-min !default;
+
+// Large screen / wide desktop
+//** Deprecated `$screen-lg` as of v3.0.1
+$screen-lg:                  1024px !default;
+$screen-lg-min:              $screen-lg !default;
+//** Deprecated `$screen-lg-desktop` as of v3.0.1
+$screen-lg-desktop:          $screen-lg-min !default;
+
+// Large screen / wide desktop
+//** Deprecated `$screen-xl` as of v3.0.1
+$screen-xl:                  1200px !default;
+$screen-xl-min:              $screen-xl !default;
+$screen-xl-desktop:          $screen-xl-min !default;
+$grid-gutter-width: ms(2);
+
+// Fonts
+//
+// Font, line-height, and color for body text, headings, and more.
+
+$font-family-sans-serif: 'Lato', Verdana, Helvetica, sans-serif;
+$font-family-serif:  'Maven Pro', Verdana, Helvetica, Arial, sans-serif;
+$font-family-monospace:  Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
+$font-family-base:       $font-family-sans-serif !default;
+
+$font-weight-normal: 400;
+$font-weight-bold: 700;
+
+$line-height-base: $baseline-modifier;
+
+$font-size-h1: ms(7);
+$font-size-h2: ms(5);
+$font-size-h3: ms(3);
+$font-size-h4: ms(2);
+$font-size-h5: ms(1);
+$font-size-h6: ms(0);
+
+$font-size-base: ms(1);
+$font-size-large: ms(2);
+$font-size-small: ms(0);
+
+$headings-font-family: 'Muli', Verdana, Helvetica, sans-serif;
+
+// cheveron content "\f054"
+$breadcrumb-padding-horiztonal: .25rem;
+$breadcrumb-padding-vertical:   .5rem;
+
+
+$breadcrumb-bg:                 #fff;
+$breadcrumb-color:              $scrub-teal;
+$breadcrumb-divider-color:      $warm-grey;
+$breadcrumb-active-color:       $warm-grey-dark;
+$breadcrumb-separator:            "\f054";
+
+// Progress bars
+
+
+$progress-bg:                   $warm-grey-light;
+$progress-bar-color:            $white;
+$progress-bar-bg:               $orange-dark;
+$progress-box-shadow:           inset 0 .1rem .1rem rgba($off-black,.25);
+
+
+// Buttons 4.0
+
+// $input-btn-padding-y:       (4/16)*1rem;
+// $input-btn-padding-x:       1rem;
+// $input-btn-line-height:     1.25;
+
+// $input-btn-padding-y-sm:    (2/16)*1rem;
+// $input-btn-padding-x-sm:    .75rem;
+// $input-btn-line-height-sm:  1.1;
+
+// $input-btn-padding-y-lg:    (6/16)*1rem;
+// $input-btn-padding-x-lg:    1.5rem;
+// $input-btn-line-height-lg:  1.5;
+
+//Buttons 3.3.7
+$padding-base-vertical:     (4/16) * $ms-base;
+$padding-base-horizontal:   1 * $ms-base;
+
+$padding-large-vertical:    (6/16) * $ms-base;
+$padding-large-horizontal:  1.5 * $ms-base;
+
+$padding-small-vertical:   (2/16) * $ms-base;
+$padding-small-horizontal:  .75 * $ms-base;
+
+$padding-xs-vertical:      (1/16) * $ms-base;
+$padding-xs-horizontal:     .5 * $ms-base;
+
+//** Tooltip max width
+$tooltip-max-width:           300px !default;
+//** Tooltip text color
+$tooltip-color:               #fff !default;
+//** Tooltip background color
+$tooltip-bg:                  $gray-darker;
+$tooltip-opacity:             .9 !default;
+
+//** Tooltip arrow width
+$tooltip-arrow-width:         5px !default;
+//** Tooltip arrow color
+$tooltip-arrow-color:         $tooltip-bg !default;
+
+//== Modals
+//
+//##
+
+//** Padding applied to the modal body
+$modal-inner-padding:         15px !default;
+
+//** Padding applied to the modal title
+$modal-title-padding:         15px !default;
+//** Modal title line-height
+$modal-title-line-height:     $line-height-base !default;
+
+//** Background color of modal content area
+$modal-content-bg:                             #fff !default;
+//** Modal content border color
+$modal-content-border-color: $scrub-teal;
+//** Modal content border color **for IE8**
+$modal-content-fallback-border-color:          #999 !default;
+
+//** Modal backdrop background color
+$modal-backdrop-bg:           $off-black;
+//** Modal backdrop opacity
+$modal-backdrop-opacity:      .5 !default;
+//** Modal header border color
+$modal-header-border-color:   $soft-blue;
+//** Modal footer border color
+$modal-footer-border-color:   $modal-header-border-color !default;
+
+$modal-lg:                    900px !default;
+$modal-md:                    600px !default;
+$modal-sm:                    300px !default;
+
+
+
+
+
 
 // Set a specific jump point for requesting color jumps
 $theme-color-interval:      10% !default;

@@ -144,3 +144,28 @@ i.icon-complete_check-circle:before {
 		content: "\f058";
 	}
 }
+
+.icon-before:before {
+	display: inline-block;
+	margin-right: 0.5em;
+	font: normal normal normal 14px/1 FontAwesome;
+	font-size: inherit;
+	text-rendering: auto;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	transform: translate(0, 0);
+	width: 1.28571429em;
+	text-align: center;
+}
+.icon-after:after {
+	display: inline-block;
+
+	font: normal normal normal 14px/1 FontAwesome;
+	font-size: inherit;
+	text-rendering: auto;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	transform: translate(0, 0);
+	width: 1.28571429em;
+	text-align: center;
+}
