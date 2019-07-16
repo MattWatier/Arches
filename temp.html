@@ -1,633 +1,176 @@
-/* Link Nav The Header Nav of ACC.org Markup:
-<nav class="navbar navbar-primary navbar-expand-lg navbar-dark bg_acc font_1">
-	<button
-		class="br_white-2 is-active_toggle-function m-l_n2 m-y_3 navbar-toggler p-l_2 p-r_3 p-y_2 collapsed"
-		type="button"
-		data-toggle="collapse"
-		data-target="#navbarSupportedContent"
-		aria-controls="navbarSupportedContent"
-		aria-expanded="false"
-		aria-label="Toggle navigation"
-	>
-		<i class="icon-toggle_bars-times fas a:c_acc-2 c_white"></i
-		><span class="a:c_acc-2 c_white">&nbsp;Menu</span>
-	</button>
-	<div class="collapse navbar-collapse" id="navbarSupportedContent">
-		<ul class="navbar-nav">
-			<li class="display_none:lg nav-item">
-				<a
-					class="nav-link"
-					href="//www.acc.org/"
-					title="Home of the American College of Cardiology"
-					><i class="fas fa-home"></i
-					><span class="display_none:lg">&nbsp;Home</span></a
-				>
-			</li>
-			<li class="display_none:lg nav-item">
-				<a
-					class="nav-link"
-					href="//www.acc.org/guidelines#doctype=Guidelines"
-					title="Access ACC guidelines and clinical policy documents as well as related resources"
-					>Guidelines</a
-				>
-			</li>
-			<li class="nav-item dropdown">
-				<a
-					class="nav-link dropdown-toggle is-active_toggle-function"
-					href="/clinical-topics"
-					id="clinicalTopicsDropdown"
-					role="button"
-					data-toggle="dropdown"
-					aria-haspopup="true"
-					aria-expanded="false"
-					><i
-						class="far faw icon-toggle_plus-minus display_none:lg m-l_n2 m-r_2"
-					></i
-					>Clinical Topics</a
-				>
-				<div
-					class="dropdown-menu br_none br_solid:lg m-x_0:lg m-x_n4 m-t_0 m-t_2:lg"
-					aria-labelledby="clinicalTopicsDropdown"
-				>
-					<div class="flex flex_column flex_row:md p-x_2:lg m-x_n1 m-x_0:lg">
-						<div class="flex_auto p-x_2 p-y_0 p-y_3:md">
-							<ul class="ul_none m_0">
-								<li>
-									<a
-										class="dropdown-item transition_4 wrap nowrap:lg"
-										href="/clinical-topics/acute-coronary-syndromes"
-										>Acute Coronary Syndromes</a
-									>
-								</li>
-								<li>
-									<a
-										class="dropdown-item transition_4 wrap nowrap:lg"
-										href="/clinical-topics/anticoagulation-management"
-										title="Anticoagulation Management"
-										>Anticoagulation Management</a
-									>
-								</li>
-								<li>
-									<a
-										class="dropdown-item transition_4 wrap nowrap:lg"
-										href="/clinical-topics/arrhythmias-and-clinical-ep"
-										>Arrhythmias and Clinical EP</a
-									>
-								</li>
-								<li>
-									<a
-										class="dropdown-item transition_4 wrap nowrap:lg"
-										href="/clinical-topics/acute-coronary-syndromes/atherosclerotic-disease-cad-pad"
-										>Atherosclerotic Disease (CAD/PAD)</a
-									>
-								</li>
-								<li>
-									<a
-										class="dropdown-item transition_4 wrap nowrap:lg"
-										href="/clinical-topics/cardiac-surgery"
-										>Cardiac Surgery</a
-									>
-								</li>
-								<li>
-									<a
-										class="dropdown-item transition_4 wrap nowrap:lg"
-										href="/clinical-topics/cardio-oncology"
-										>Cardio-Oncology</a
-									>
-								</li>
-								<li>
-									<a
-										class="dropdown-item transition_4 wrap nowrap:lg"
-										href="/clinical-topics/congenital-heart-disease-pediatric-cardiology"
-										>Congenital Heart Disease and Pediatric Cardiology</a
-									>
-								</li>
-								<li>
-									<a
-										class="dropdown-item transition_4 wrap nowrap:lg"
-										href="/clinical-topics/diabetes-and-cardiometabolic-disease"
-										>Diabetes and Cardiometabolic Disease</a
-									>
-								</li>
-								<li>
-									<a
-										class="dropdown-item transition_4 wrap nowrap:lg"
-										href="/clinical-topics/dyslipidemia"
-										title="Dyslipidemia"
-										>Dyslipidemia</a
-									>
-								</li>
-								<li>
-									<a
-										class="dropdown-item transition_4 wrap nowrap:lg"
-										href="/clinical-topics/geriatric-cardiology"
-										>Geriatric Cardiology</a
-									>
-								</li>
-								<li>
-									<a
-										class="dropdown-item transition_4 wrap nowrap:lg"
-										href="/clinical-topics/heart-failure-and-cardiomyopathies"
-										title="Heart Failure and Cardiomyopathies"
-										>Heart Failure and Cardiomyopathies</a
-									>
-								</li>
-							</ul>
-						</div>
-						<div
-							class="flex_auto p-x_2 p-y_0 p-y_3:md br-l_1 br_none br_secondary-4 br_solid:lg br_solid:md"
-						>
-							<ul class="ul_none">
-								<li>
-									<a
-										class="dropdown-item transition_4 wrap nowrap:lg"
-										href="/clinical-topics/dyslipidemia/hypertriglyceridemia"
-										>Hypertriglyceridemia</a
-									>
-								</li>
-								<li>
-									<a
-										class="dropdown-item transition_4 wrap nowrap:lg"
-										href="/clinical-topics/invasive-cardiovascular-angiography-and-intervention"
-										title="Invasive Cardiovascular Angiography and Intervention"
-										>Invasive Cardiovascular Angiography and Intervention</a
-									>
-								</li>
-								<li>
-									<a
-										class="dropdown-item transition_4 wrap nowrap:lg"
-										href="/clinical-topics/noninvasive-imaging"
-										title="Noninvasive Imaging"
-										>Noninvasive Imaging</a
-									>
-								</li>
-								<li>
-									<a
-										class="dropdown-item transition_4 wrap nowrap:lg"
-										href="/clinical-topics/pericardial-disease"
-										title="Pericardial Disease"
-										>Pericardial Disease</a
-									>
-								</li>
-								<li>
-									<a
-										class="dropdown-item transition_4 wrap nowrap:lg"
-										href="/clinical-topics/prevention"
-										title="Prevention"
-										>Prevention</a
-									>
-								</li>
-								<li>
-									<a
-										class="dropdown-item transition_4 wrap nowrap:lg"
-										href="/clinical-topics/pulmonary-hypertension-and-venous-thromboembolism"
-										>Pulmonary Hypertension and Venous Thromboembolism</a
-									>
-								</li>
-								<li>
-									<a
-										class="dropdown-item transition_4 wrap nowrap:lg"
-										href="/clinical-topics/sports-and-exercise-cardiology"
-										>Sports and Exercise Cardiology</a
-									>
-								</li>
-								<li>
-									<a
-										class="dropdown-item transition_4 wrap nowrap:lg"
-										href="/clinical-topics/stable-ischemic-heart-disease"
-										title="Stable Ischemic Heart Disease"
-										>Stable Ischemic Heart Disease</a
-									>
-								</li>
-								<li>
-									<a
-										class="dropdown-item transition_4 wrap nowrap:lg"
-										href="/clinical-topics/valvular-heart-disease"
-										>Valvular Heart Disease</a
-									>
-								</li>
-								<li>
-									<a
-										class="dropdown-item transition_4 wrap nowrap:lg"
-										href="/clinical-topics/vascular-medicine"
-										>Vascular Medicine</a
-									>
-								</li>
-							</ul>
-						</div>
-					</div>
+<link rel="stylesheet" href="https://mattwatier.github.io/Arches/css/boot_acc.min.css" />
+<link rel="stylesheet" href="https://mattwatier.github.io/Arches/icons/css/fontawesome.css" />
+<link rel="stylesheet" href="https://mattwatier.github.io/Arches/icons/css/solid.css" />
+<link rel="stylesheet" href="https://mattwatier.github.io/Arches/icons/css/regular.css" />
+<link rel="stylesheet" href="https://mattwatier.github.io/Arches/icons/css/brands.css" />
+<link rel="stylesheet" href="https://mattwatier.github.io/Arches/icons/css/light.css" />
+<div class="bg_primary-3">
+	<div class="main-content-inner max-w_4 m_auto bg_white shadow_4 font_ui font_0" role="main">
+		<img
+			class="w_100 p_4"
+			alt="Benefits of ACC Membership"
+			src="https://author.acc.org/~/media/Non-Clinical/Images/Membership/New/F19411_MbrPgsHdrs_v3-MEMBEN.jpg?la=en"
+		/>
+		<div class="p-b_2 p_4">
+			<div class="row m_4  p_4 br_radius bg_primary c_white">
+				<div class="col-sm-9">
+					<h2>Join Us</h2>
+					<p>
+						When you become a member of the American College of Cardiology, you join a global community of
+						cardiovascular professionals driven to transform cardiovascular care and improve heart health.
+						You also get access to benefits and resources designed to help you accomplish that mission.
+					</p>
 				</div>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="#">Latest In Cardiology</a>
-			</li>
-			<li class="nav-item dropdown">
-				<a
-					class="nav-link dropdown-toggle is-active_toggle-function"
-					href="#"
-					id="eduDropdown"
-					role="button"
-					data-toggle="dropdown"
-					aria-haspopup="true"
-					aria-expanded="false"
-					><i
-						class="far faw icon-toggle_plus-minus display_none:lg m-l_n2 m-r_2"
-					></i>
-					Education and Meetings
-				</a>
-				<div
-					class="dropdown-menu br_none br_solid:lg m-x_0:lg m-x_n4 m-t_0 m-t_2:lg"
-					aria-labelledby="eduDropdown"
-				>
-					<div class="flex flex_column flex_row:md p-x_2:lg m-x_n1 m-x_0:lg">
-						<div class="flex_auto p-x_2 p-y_0 p-y_3:md">
-							<ul class="ul_none">
-								<li class="">
-									<span class="toggler"></span>
-									<a
-										class="dropdown-item transition_4 wrap nowrap:lg"
-										href="/education-and-meetings/education-catalog"
-										>Online Learning Catalog</a
-									>
-									<ul class="ul_none font_n1 lh_3">
-										<li class="text-indent_1">
-											<a
-												class="dropdown-item transition_4 wrap nowrap:lg"
-												href="/earncredit"
-												>Earn Credit</a
-											>
-										</li>
-										<li class="text-indent_1">
-											<a
-												class="dropdown-item transition_4 wrap nowrap:lg"
-												href="/education-and-meetings/products-and-resources/board-prep-offerings"
-												title="Board Prep Offerings"
-												>Board Prep Offerings</a
-											>
-										</li>
-										<li class="text-indent_1">
-											<a
-												class="dropdown-item transition_4 wrap nowrap:lg"
-												href="/education-and-meetings/education-catalog"
-												>View the Entire Catalog</a
-											>
-										</li>
-									</ul>
-								</li>
-								<li class="">
-									<span class="toggler"></span>
-									<a
-										class="dropdown-item transition_4 wrap nowrap:lg"
-										href="/education-and-meetings/education-catalog"
-										>Products</a
-									>
-									<ul class="ul_none font_n1 lh_3">
-										<li class="text-indent_1">
-											<a
-												class="dropdown-item transition_4 wrap nowrap:lg"
-												href="/education-and-meetings/products-and-resources/accsap"
-												>ACCSAP</a
-											>
-										</li>
-										<li class="text-indent_1">
-											<a
-												class="dropdown-item transition_4 wrap nowrap:lg"
-												href="/education-and-meetings/products-and-resources/accel-audio"
-												>ACCEL</a
-											>
-										</li>
-										<li class="text-indent_1">
-											<a
-												class="dropdown-item transition_4 wrap nowrap:lg"
-												href="/education-and-meetings/products-and-resources/cardiosource-plus"
-												>CardioSource Plus for Institutions and Practices</a
-											>
-										</li>
-										<li class="text-indent_1">
-											<a
-												class="dropdown-item transition_4 wrap nowrap:lg"
-												href="/education-and-meetings/products-and-resources/cathsap"
-												>CathSAP</a
-											>
-										</li>
-										<li class="text-indent_1">
-											<a
-												class="dropdown-item transition_4 wrap nowrap:lg"
-												href="/education-and-meetings/products-and-resources/ecg-drill-and-practice"
-												title="ECG Drill and Practice"
-												>ECG Drill and Practice</a
-											>
-										</li>
-										<li class="text-indent_1">
-											<a
-												class="dropdown-item transition_4 wrap nowrap:lg"
-												href="/education-and-meetings/products-and-resources/echosap"
-												>EchoSAP</a
-											>
-										</li>
-										<li class="text-indent_1">
-											<a
-												class="dropdown-item transition_4 wrap nowrap:lg"
-												href="/education-and-meetings/products-and-resources/epsap"
-												>EP SAP</a
-											>
-										</li>
-										<li class="text-indent_1">
-											<a
-												class="dropdown-item transition_4 wrap nowrap:lg"
-												href="/education-and-meetings/products-and-resources/heart-songs-5"
-												>Heart Songs</a
-											>
-										</li>
-										<li class="text-indent_1">
-											<a
-												class="dropdown-item transition_4 wrap nowrap:lg"
-												href="/education-and-meetings/products-and-resources/iscience"
-												>iScience</a
-											>
-										</li>
-										<li class="text-indent_1">
-											<a
-												class="dropdown-item transition_4 wrap nowrap:lg"
-												href="/education-and-meetings/products-and-resources/recent-advances-in-clinical-nuclear-cardiology-and-cardiac-ct-mod"
-												>Nuclear Cardiology and Cardiac CT Meeting on Demand</a
-											>
-										</li>
-										<li class="text-indent_1">
-											<a
-												class="dropdown-item transition_4 wrap nowrap:lg"
-												href="/education-and-meetings/products-and-resources/rightsteps-optimizing-medical-therapy-for-chronic-heart-failure"
-												>RightSTEPS Optimizing Medical Therapy for Chronic Heart
-												Failure</a
-											>
-										</li>
-									</ul>
-								</li>
-							</ul>
-						</div>
-						<div
-							class="flex_auto p-x_2 p-y_0 p-y_3:md br-l_1 br_none br_secondary-4 br_solid:lg br_solid:md"
+				<div class="col-sm-3">
+					<p>
+						<a
+							href="https://memberapp.acc.org/"
+							class="bg_white br_radius btn btn-block btn-lg c_primary font_bold m-t_5"
+							>Join Now</a
 						>
-							<ul class="ul_none m_0">
-								<li>
-									<a
-										class="dropdown-item transition_4 wrap nowrap:lg"
-										href="/education-and-meetings/products-and-resources"
-										>Resources</a
-									>
-								</li>
-								<li>
-									<a
-										class="dropdown-item transition_4 wrap nowrap:lg"
-										href="/education-and-meetings/products-and-resources/guideline-education"
-										>Guideline Education</a
-									>
-								</li>
-								<li>
-									<a
-										class="dropdown-item transition_4 wrap nowrap:lg"
-										href="/education-and-meetings/maintenance-of-certification-information-hub"
-										>Understanding MOC</a
-									>
-								</li>
-								<li>
-									<a
-										class="dropdown-item transition_4 wrap nowrap:lg"
-										href="/education-and-meetings/image-and-slide-gallery"
-										>Image and Slide Gallery</a
-									>
-								</li>
-								<li class="">
-									<span class="toggler"></span>
-									<a
-										class="dropdown-item transition_4 wrap nowrap:lg"
-										href="/education-and-meetings/meetings"
-										>Meetings</a
-									>
-									<ul class="ul_none font_n1 lh_3">
-										<li class="text-indent_1">
-											<a
-												class="dropdown-item transition_4 wrap nowrap:lg"
-												href="http://accscientificsession.acc.org"
-												class="new-window-icon"
-												target="_blank"
-												>Annual Scientific Session and Related Events</a
-											>
-										</li>
-										<li class="text-indent_1">
-											<a
-												class="dropdown-item transition_4 wrap nowrap:lg"
-												href="http://www.acc.org/education-and-meetings/meetings?w_nav=MN#type=Chapter Meetings"
-												>Chapter Meetings</a
-											>
-										</li>
-										<li class="text-indent_1">
-											<a
-												class="dropdown-item transition_4 wrap nowrap:lg"
-												href="http://www.acc.org/education-and-meetings/meetings?w_nav=MN#type=Live Meetings"
-												class="lvl2"
-												>Live Meetings</a
-											>
-										</li>
-										<li class="text-indent_1">
-											<a
-												class="dropdown-item transition_4 wrap nowrap:lg"
-												href="/education-and-meetings/meetings#type=Webinars - Live"
-												class="lvl2"
-												>Webinars - Live</a
-											>
-										</li>
-										<li class="text-indent_1">
-											<a
-												class="dropdown-item transition_4 wrap nowrap:lg"
-												href="/education-and-meetings/meetings?view=archive&amp;#type=Webinars - OnDemand"
-												>Webinars - OnDemand</a
-											>
-										</li>
-									</ul>
-								</li>
-							</ul>
-						</div>
-					</div>
+					</p>
+					<ul class="c_white-6 font_n2 lh_2 m-r_3 m-t_n3 text_right ul_none">
+						<li>Already a member</li>
+						<li>Access your profile</li>
+						<li>Renew your membership</li>
+						<li>Personalize your Acc.org</li>
+					</ul>
 				</div>
-			</li>
-			<li class="nav-item dropdown">
-				<a
-					class="nav-link dropdown-toggle is-active_toggle-function"
-					href="#"
-					id="toolDropdown"
-					role="button"
-					data-toggle="dropdown"
-					aria-haspopup="true"
-					aria-expanded="false"
-					><i
-						class="far faw icon-toggle_plus-minus display_none:lg m-l_n2 m-r_2"
-					></i
-					>Tools &amp; Practice Support
-				</a>
-				<div
-					class="dropdown-menu m-x_0:lg m-x_n4 m-t_0 m-t_2:lg"
-					aria-labelledby="toolDropdown"
-				>
-					<div class="flex flex_column flex_row:md p-x_2:lg m-x_n1 m-x_0:lg">
-						<div class="flex_auto p-x_2 p-y_0 p-y_3:md order_2 order_1:md">
-							<ul class="ul_none">
-								<li class="relative m-x_2:md m-x_4">
-									<a
-										href="http://cvquality.acc.org/?_ga=2.33577825.159963902.1562853382-843642371.1562007133"
-										target="_blank"
-										class="exapnded-click-area"
-										><img
-											src="https://www.acc.org/~/media/Non-Clinical/Images/External%20Site%20Logos/ACC_QII_logo.png"
-											alt="QII"
-									/></a>
-								</li>
-								<li class="relative m-x_2:md m-x_4">
-									<a
-										href="http://cvquality.acc.org/NCDR-Home.aspx?_ga=2.91395290.159963902.1562853382-843642371.1562007133"
-										target="_blank"
-										class="exapnded-click-area"
-										><img
-											src="https://www.acc.org/~/media/Non-Clinical/Images/External Site Logos/ACC_NCDR_logo.png"
-											alt="NCDR"
-									/></a>
-								</li>
-							</ul>
-						</div>
-						<div
-							class="flex_auto p-x_2 p-y_0 p-y_3:md br-l_1 br_none br_secondary-4 br_solid:lg br_solid:md order_1 order_2:md"
-						>
-							<ul class="ul_none">
-								<li>
-									<a
-										class="dropdown-item transition_4 wrap nowrap:lg"
-										href="/tools-and-practice-support/advocacy-at-the-acc"
-										>Advocacy at the ACC</a
-									>
-									<ul class="ul_none font_n1 lh_3">
-										<li class="text-indent_1">
-											<a
-												class="dropdown-item transition_4 wrap nowrap:lg"
-												href="/tools-and-practice-support/advocacy-at-the-acc/advocacy-action"
-												>Advocacy Action</a
-											>
-										</li>
-										<li class="text-indent_1">
-											<a
-												class="dropdown-item transition_4 wrap nowrap:lg"
-												href="/tools-and-practice-support/advocacy-at-the-acc/health-policy-issue-center/alternative-payment-model-framework"
-												>Alternative Payment Model Framework</a
-											>
-										</li>
-										<li class="text-indent_1">
-											<a
-												class="dropdown-item transition_4 wrap nowrap:lg"
-												href="/tools-and-practice-support/advocacy-at-the-acc/acc-legislative-conference"
-												>Legislative Conference</a
-											>
-										</li>
-										<li class="text-indent_1">
-											<a
-												class="dropdown-item transition_4 wrap nowrap:lg"
-												href="http://www.acc.org/macra/index.html"
-												target="_blank"
-												>MACRA/QPP Hub</a
-											>
-										</li>
-										<li class="text-indent_1">
-											<a
-												class="dropdown-item transition_4 wrap nowrap:lg"
-												href="/tools-and-practice-support/advocacy-at-the-acc/acc-political-action-committee"
-												>ACC Political Action Committee</a
-											>
-										</li>
-									</ul>
-								</li>
-								<li>
-									<a
-										class="dropdown-item transition_4 wrap nowrap:lg"
-										href="http://www.healthecareers.com/acc"
-										class="new-window-icon"
-										target="_blank"
-										>Cardiology Careers</a
-									>
-								</li>
-								<li>
-									<a
-										class="dropdown-item transition_4 wrap nowrap:lg"
-										href="/tools-and-practice-support/clinical-toolkits"
-										>Clinical Toolkits</a
-									>
-								</li>
-								<li>
-									<a
-										class="dropdown-item transition_4 wrap nowrap:lg"
-										href="/tools-and-practice-support/expert-consensus-decision-pathways"
-										>Expert Consensus Decision Pathways</a
-									>
-								</li>
-								<li>
-									<a
-										class="dropdown-item transition_4 wrap nowrap:lg"
-										href="/tools-and-practice-support/infographics"
-										>Infographics</a
-									>
-								</li>
-								<li>
-									<a
-										class="dropdown-item transition_4 wrap nowrap:lg"
-										href="/tools-and-practice-support/mobile-resources"
-										>Mobile Apps</a
-									>
-								</li>
-								<li>
-									<a
-										class="dropdown-item transition_4 wrap nowrap:lg"
-										href="/tools-and-practice-support/quality-programs"
-										>Quality Programs</a
-									>
-								</li>
-							</ul>
-						</div>
-					</div>
+			</div>
+		</div>
+		<div class="br-t_1 br_dotted br_primary m-t_4 m-x_4 p-b_3 p-t_4 p-x_4">
+			<div class="p-x_4 row">
+				<div class="col-sm-12 m-b_2 m-x_n4">
+					<h2>Benefits</h2>
 				</div>
-			</li>
-			<li class="display_none:lg nav-item">
-				<a
-					class="nav-link"
-					href="//www.acc.org/membership"
-					title="Access exclusive member features and groups or learn about ACC membership"
-					>Membership</a
-				>
-			</li>
-			<li class="display_none:lg nav-item">
-				<a
-					class="nav-link"
-					href="//www.acc.org/about-acc"
-					title="Learn about the ACC organization"
-					>About ACC</a
-				>
-			</li>
-			<li class="display_none:lg nav-item">
-				<a
-					class="nav-link"
-					href="http://www.onlinejacc.org/"
-					target="_blank"
-					title="JACC.org"
-					>JACC</a
-				>
-			</li>
-			<li class="display_none:lg nav-item">
-				<a
-					class="nav-link"
-					href="http://accscientificsession.acc.org"
-					target="_blank"
-					title="ACC Annual Scientific Session Website"
-					>ACC.19</a
-				>
-			</li>
-		</ul>
-	</div>
-</nav>
+				<div class="col-sm-6 font_1">
+					<p class="p-l_5 m-l_3 text-indent_n1">
+						<i class="fas font_2 fa-newspaper" aria-hidden="true"></i>
+						&nbsp;Multiplatform access to the entire family of <em>JACC</em> Journals
+					</p>
+					<p class="p-l_5 m-l_3 text-indent_n1">
+						<i class="fas font_2 fa-calendar" aria-hidden="true"></i>
+						&nbsp;Discounts on live meetings – including the Annual Scientific Session – and educational
+						products
+					</p>
+				</div>
+				<div class="col-sm-6 font_1">
+					<p class="p-l_5 m-l_3 text-indent_n1">
+						<i class="fas font_2 fa-certificate" aria-hidden="true"></i>
+						&nbsp;Free CME/CE and MOC
+					</p>
+					<p class="p-l_5 m-l_3 text-indent_n1">
+						<i class="fab fa-connectdevelop"></i>
+						&nbsp;Connect with over 52,000 CV professionals in 21+ specialty Member Sections
+					</p>
+				</div>
+				<div class="col-sm-12">
+					<a class="bg_secondary-4 block br_radius btn btn-small m-t_3 m_auto w_40">Explore All Benefits</a>
+				</div>
+			</div>
+		</div>
+		<div class="br-t_1 br_dotted br_primary m-t_4 m-x_4 p-t_4 p-x_4">
+			<div class="flex">
+				<div class="w_70 flex_auto">
+					<h2 class="">Become a Member</h2>
+					<p class="">
+						Find your member type
+					</p>
+				</div>
+				<div class="flex_auto self_center vertical-align_middle">
+					<a href="https://memberapp.acc.org/" class="btn br_radius btn-primary btn-lg btn-block">Join Now</a>
+				</div>
+			</div>
+		</div>
+		<div class="br-t_1 br_dotted br_primary m-t_4 m-x_4 p_4 ">
+			<div class="row p-x_3 p-y_4 br_radius bg_black-1">
+				<div class="col-sm-4">
+					<h3 class="font_1 font_display font_bold c_acc">Fellow of the ACC</h3>
+				</div>
 
-Styleguide Recipes.ACC.Branded Nav */
+				<div class="col-sm-8">
+					<p>
+						Academic and Clinical Cardiologists (US and International), Fellows Completing Training.
+						<a href="" class="underline c_primary nowrap block"
+							>Learn More <i class="far font_0 fa-chevron-double-right"></i
+						></a>
+					</p>
+				</div>
+			</div>
+			<div class="row p-x_3 p-y_4 br_radius">
+				<div class="col-sm-4">
+					<h3 class="font_1 font_display font_bold c_acc">Associate of the ACC / Cardiovascular (CV) Team</h3>
+				</div>
+
+				<div class="col-sm-8">
+					<p>
+						Advanced Practice Nurses, PAs, Clinical Pharmacists, Registered Nurses, CV Technologists,
+						Cardiac Rehabilitation Professionals, Genetic Counselors.
+						<a href="" class="underline c_primary nowrap block"
+							>Learn More <i class="far font_0 fa-chevron-double-right"></i
+						></a>
+					</p>
+				</div>
+			</div>
+			<div class="row p-x_3 p-y_4 br_radius bg_black-1">
+				<div class="col-sm-4">
+					<h3 class="font_1 font_display font_bold c_acc">Cardiovascular Administrator</h3>
+				</div>
+
+				<div class="col-sm-8">
+					<p>
+						Service Line Administrators, Practice Managers, Executives.
+						<a href="" class="underline c_primary nowrap block"
+							>Learn More <i class="far font_0 fa-chevron-double-right"></i
+						></a>
+					</p>
+				</div>
+			</div>
+			<div class="row p-x_3 p-y_4 br_radius">
+				<div class="col-sm-4">
+					<h3 class="font_1 font_display font_bold c_acc">
+						Trainees and Students (Complimentary Membership)
+					</h3>
+				</div>
+
+				<div class="col-sm-8">
+					<p>
+						Fellows in Training, Medical Residents, CV Team Students, Medical Students
+						<a href="" class="underline c_primary nowrap block"
+							>Learn More <i class="far font_0 fa-chevron-double-right"></i
+						></a>
+					</p>
+				</div>
+			</div>
+			<div class="row p-x_3 p-y_4 br_radius bg_black-1">
+				<div class="col-sm-4">
+					<h3 class="font_1 font_display font_bold c_acc">International</h3>
+				</div>
+
+				<div class="col-sm-8">
+					<p>
+						CV Professionals Practicing Outside the US and Canada.
+						<a href="" class="underline c_primary nowrap block"
+							>Learn More <i class="far font_0 fa-chevron-double-right"></i
+						></a>
+					</p>
+				</div>
+			</div>
+			<div class="row p-x_3 p-y_4 br_radius">
+				<div class="col-sm-4">
+					<h3 class="font_1 font_display font_bold c_acc">Affiliate</h3>
+				</div>
+
+				<div class="col-sm-8">
+					<p>
+						Training Program Administrators, Geriatricians, Health IT Managers, EMS Professionals, CV
+						Veterinarians.
+						<a href="" class="underline c_primary nowrap block"
+							>Learn More <i class="far font_0 fa-chevron-double-right"></i
+						></a>
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

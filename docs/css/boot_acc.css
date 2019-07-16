@@ -6371,13 +6371,13 @@ markup:
   <div class="card-section card-body">
     <h4>This is a card.</h4>
 	 <p>It has an easy to override visual style, and is appropriately subdued.</p>
-	 <a href="#" class="exapnded-click-area button btn btn-primary">I am so clickable</a>
+	 <a href="#" class="expanded-click-area button btn btn-primary">I am so clickable</a>
   </div>
 </div>
 
 Styleguide InteractiveExtras.Expanded Click Area
 */
-.exapnded-click-area::after {
+.expanded-click-area::after {
   z-index: 1;
   position: absolute;
   top: 0;
@@ -6884,21 +6884,21 @@ Icons: Font Icons
 
  markup:
 <ul class="ul_none list m_0 p_0 flex flex_wrap justify-start items-start">
-    <li class="relative br_secondary-4 br_solid br_1 flex_auto w-grid_3"><div class="flex"><div class="font_5 cell w-grid_3 text_center p_3 no-underline c_inherit flex_shrink justify_center h:bg_navigation-n3 h:c_white bg_secondary-5 exapnded-click-area"><i class="fas fa-award"></i></div><div class="flex_auto p_4 p-y_2 self_center"><span class="c_secondary h:c_secondary-n2 text font_bold font_display">award</span></div></div></li>
-    <li class="relative br_secondary-4 br_solid br_1 flex_auto w-grid_3"><div class="flex"><div class="font_5 cell w-grid_3 text_center p_3 no-underline c_inherit flex_shrink justify_center h:bg_navigation-n3 h:c_white bg_secondary-5 exapnded-click-area"><i class="fas fa-ban"></i></div><div class="flex_auto p_4 p-y_2 self_center"><span class="c_secondary h:c_secondary-n2 text font_bold font_display">ban</span></div></div></li>
-	<li class="relative br_secondary-4 br_solid br_1 flex_auto w-grid_3"><div class="flex"><div class="font_5 cell w-grid_3 text_center p_3 no-underline c_inherit flex_shrink justify_center h:bg_navigation-n3 h:c_white bg_secondary-5 exapnded-click-area"><i class="fas fa-barcode"></i></div><div class="flex_auto p_4 p-y_2 self_center"><span class="c_secondary h:c_secondary-n2 text font_bold font_display">barcode</span></div></div></li>
-    <li class="relative br_secondary-4 br_solid br_1 flex_auto w-grid_3"><div class="flex"><div class="font_5 cell w-grid_3 text_center p_3 no-underline c_inherit flex_shrink justify_center h:bg_navigation-n3 h:c_white bg_secondary-5 exapnded-click-area"><i class="fas fa-bars"></i></div><div class="flex_auto p_4 p-y_2 self_center"><span class="c_secondary h:c_secondary-n2 text font_bold font_display">bars</span></div></div></li>
-    <li class="relative br_secondary-4 br_solid br_1 flex_auto w-grid_3"><div class="flex"><div class="font_5 cell w-grid_3 text_center p_3 no-underline c_inherit flex_shrink justify_center h:bg_navigation-n3 h:c_white bg_secondary-5 exapnded-click-area"><i class="fas fa-beer"></i></div><div class="flex_auto p_4 p-y_2 self_center"><span class="c_secondary h:c_secondary-n2 text font_bold font_display">beer</span></div></div></li>
-    <li class="relative br_secondary-4 br_solid br_1 flex_auto w-grid_3"><div class="flex"><div class="font_5 cell w-grid_3 text_center p_3 no-underline c_inherit flex_shrink justify_center h:bg_navigation-n3 h:c_white bg_secondary-5 exapnded-click-area"><i class="fas fa-bell"></i></div><div class="flex_auto p_4 p-y_2 self_center"><span class="c_secondary h:c_secondary-n2 text font_bold font_display">bell</span></div></div></li>
-	<li class="relative br_secondary-4 br_solid br_1 flex_auto w-grid_3"><div class="flex"><div class="font_5 cell w-grid_3 text_center p_3 no-underline c_inherit flex_shrink justify_center h:bg_navigation-n3 h:c_white bg_secondary-5 exapnded-click-area"><i class="fas fa-bell"></i></div><div class="flex_auto p_4 p-y_2 self_center"><span class="c_secondary h:c_secondary-n2 text font_bold font_display">bell</span></div></div></li>
-    <li class="relative br_secondary-4 br_solid br_1 flex_auto w-grid_3"><div class="flex"><div class="font_5 cell w-grid_3 text_center p_3 no-underline c_inherit flex_shrink justify_center h:bg_navigation-n3 h:c_white bg_secondary-5 exapnded-click-area"><i class="fas fa-bell-slash"></i></div><div class="flex_auto p_4 p-y_2 self_center"><span class="c_secondary h:c_secondary-n2 text font_bold font_display">bell-slash</span></div></div></li>
-    <li class="relative br_secondary-4 br_solid br_1 flex_auto w-grid_3"><div class="flex"><div class="font_5 cell w-grid_3 text_center p_3 no-underline c_inherit flex_shrink justify_center h:bg_navigation-n3 h:c_white bg_secondary-5 exapnded-click-area"><i class="fas fa-bell-slash"></i></div><div class="flex_auto p_4 p-y_2 self_center"><span class="c_secondary h:c_secondary-n2 text font_bold font_display">bell-slash</span></div></div></li>
-    <li class="relative br_secondary-4 br_solid br_1 flex_auto w-grid_3"><div class="flex"><div class="font_5 cell w-grid_3 text_center p_3 no-underline c_inherit flex_shrink justify_center h:bg_navigation-n3 h:c_white bg_secondary-5 exapnded-click-area"><i class="fas fa-bug"></i></div><div class="flex_auto p_4 p-y_2 self_center"><span class="c_secondary h:c_secondary-n2 text font_bold font_display">bug</span></div></div></li>
-    <li class="relative br_secondary-4 br_solid br_1 flex_auto w-grid_3"><div class="flex"><div class="font_5 cell w-grid_3 text_center p_3 no-underline c_inherit flex_shrink justify_center h:bg_navigation-n3 h:c_white bg_secondary-5 exapnded-click-area"><i class="fas fa-bullhorn"></i></div><div class="flex_auto p_4 p-y_2 self_center"><span class="c_secondary h:c_secondary-n2 text font_bold font_display">bullhorn</span></div></div></li>
-    <li class="relative br_secondary-4 br_solid br_1 flex_auto w-grid_3"><div class="flex"><div class="font_5 cell w-grid_3 text_center p_3 no-underline c_inherit flex_shrink justify_center h:bg_navigation-n3 h:c_white bg_secondary-5 exapnded-click-area"><i class="fas fa-bullseye"></i></div><div class="flex_auto p_4 p-y_2 self_center"><span class="c_secondary h:c_secondary-n2 text font_bold font_display">bullseye</span></div></div></li>
-    <li class="relative br_secondary-4 br_solid br_1 flex_auto w-grid_3"><div class="flex"><div class="font_5 cell w-grid_3 text_center p_3 no-underline c_inherit flex_shrink justify_center h:bg_navigation-n3 h:c_white bg_secondary-5 exapnded-click-area"><i class="fas fa-calculator"></i></div><div class="flex_auto p_4 p-y_2 self_center"><span class="c_secondary h:c_secondary-n2 text font_bold font_display">calculator</span></div></div></li>
-    <li class="relative br_secondary-4 br_solid br_1 flex_auto w-grid_3"><div class="flex"><div class="font_5 cell w-grid_3 text_center p_3 no-underline c_inherit flex_shrink justify_center h:bg_navigation-n3 h:c_white bg_secondary-5 exapnded-click-area"><i class="fas fa-calendar"></i></div><div class="flex_auto p_4 p-y_2 self_center"><span class="c_secondary h:c_secondary-n2 text font_bold font_display">calendar</span></div></div></li>
-    <li class="relative br_secondary-4 br_solid br_1 flex_auto w-grid_3"><div class="flex"><div class="font_5 cell w-grid_3 text_center p_3 no-underline c_inherit flex_shrink justify_center h:bg_navigation-n3 h:c_white bg_secondary-5 exapnded-click-area"><i class="fas fa-calendar"></i></div><div class="flex_auto p_4 p-y_2 self_center"><span class="c_secondary h:c_secondary-n2 text font_bold font_display">calendar</span></div></div></li>
+    <li class="relative br_secondary-4 br_solid br_1 flex_auto w-grid_3"><div class="flex"><div class="font_5 cell w-grid_3 text_center p_3 no-underline c_inherit flex_shrink justify_center h:bg_navigation-n3 h:c_white bg_secondary-5 expanded-click-area"><i class="fas fa-award"></i></div><div class="flex_auto p_4 p-y_2 self_center"><span class="c_secondary h:c_secondary-n2 text font_bold font_display">award</span></div></div></li>
+    <li class="relative br_secondary-4 br_solid br_1 flex_auto w-grid_3"><div class="flex"><div class="font_5 cell w-grid_3 text_center p_3 no-underline c_inherit flex_shrink justify_center h:bg_navigation-n3 h:c_white bg_secondary-5 expanded-click-area"><i class="fas fa-ban"></i></div><div class="flex_auto p_4 p-y_2 self_center"><span class="c_secondary h:c_secondary-n2 text font_bold font_display">ban</span></div></div></li>
+	<li class="relative br_secondary-4 br_solid br_1 flex_auto w-grid_3"><div class="flex"><div class="font_5 cell w-grid_3 text_center p_3 no-underline c_inherit flex_shrink justify_center h:bg_navigation-n3 h:c_white bg_secondary-5 expanded-click-area"><i class="fas fa-barcode"></i></div><div class="flex_auto p_4 p-y_2 self_center"><span class="c_secondary h:c_secondary-n2 text font_bold font_display">barcode</span></div></div></li>
+    <li class="relative br_secondary-4 br_solid br_1 flex_auto w-grid_3"><div class="flex"><div class="font_5 cell w-grid_3 text_center p_3 no-underline c_inherit flex_shrink justify_center h:bg_navigation-n3 h:c_white bg_secondary-5 expanded-click-area"><i class="fas fa-bars"></i></div><div class="flex_auto p_4 p-y_2 self_center"><span class="c_secondary h:c_secondary-n2 text font_bold font_display">bars</span></div></div></li>
+    <li class="relative br_secondary-4 br_solid br_1 flex_auto w-grid_3"><div class="flex"><div class="font_5 cell w-grid_3 text_center p_3 no-underline c_inherit flex_shrink justify_center h:bg_navigation-n3 h:c_white bg_secondary-5 expanded-click-area"><i class="fas fa-beer"></i></div><div class="flex_auto p_4 p-y_2 self_center"><span class="c_secondary h:c_secondary-n2 text font_bold font_display">beer</span></div></div></li>
+    <li class="relative br_secondary-4 br_solid br_1 flex_auto w-grid_3"><div class="flex"><div class="font_5 cell w-grid_3 text_center p_3 no-underline c_inherit flex_shrink justify_center h:bg_navigation-n3 h:c_white bg_secondary-5 expanded-click-area"><i class="fas fa-bell"></i></div><div class="flex_auto p_4 p-y_2 self_center"><span class="c_secondary h:c_secondary-n2 text font_bold font_display">bell</span></div></div></li>
+	<li class="relative br_secondary-4 br_solid br_1 flex_auto w-grid_3"><div class="flex"><div class="font_5 cell w-grid_3 text_center p_3 no-underline c_inherit flex_shrink justify_center h:bg_navigation-n3 h:c_white bg_secondary-5 expanded-click-area"><i class="fas fa-bell"></i></div><div class="flex_auto p_4 p-y_2 self_center"><span class="c_secondary h:c_secondary-n2 text font_bold font_display">bell</span></div></div></li>
+    <li class="relative br_secondary-4 br_solid br_1 flex_auto w-grid_3"><div class="flex"><div class="font_5 cell w-grid_3 text_center p_3 no-underline c_inherit flex_shrink justify_center h:bg_navigation-n3 h:c_white bg_secondary-5 expanded-click-area"><i class="fas fa-bell-slash"></i></div><div class="flex_auto p_4 p-y_2 self_center"><span class="c_secondary h:c_secondary-n2 text font_bold font_display">bell-slash</span></div></div></li>
+    <li class="relative br_secondary-4 br_solid br_1 flex_auto w-grid_3"><div class="flex"><div class="font_5 cell w-grid_3 text_center p_3 no-underline c_inherit flex_shrink justify_center h:bg_navigation-n3 h:c_white bg_secondary-5 expanded-click-area"><i class="fas fa-bell-slash"></i></div><div class="flex_auto p_4 p-y_2 self_center"><span class="c_secondary h:c_secondary-n2 text font_bold font_display">bell-slash</span></div></div></li>
+    <li class="relative br_secondary-4 br_solid br_1 flex_auto w-grid_3"><div class="flex"><div class="font_5 cell w-grid_3 text_center p_3 no-underline c_inherit flex_shrink justify_center h:bg_navigation-n3 h:c_white bg_secondary-5 expanded-click-area"><i class="fas fa-bug"></i></div><div class="flex_auto p_4 p-y_2 self_center"><span class="c_secondary h:c_secondary-n2 text font_bold font_display">bug</span></div></div></li>
+    <li class="relative br_secondary-4 br_solid br_1 flex_auto w-grid_3"><div class="flex"><div class="font_5 cell w-grid_3 text_center p_3 no-underline c_inherit flex_shrink justify_center h:bg_navigation-n3 h:c_white bg_secondary-5 expanded-click-area"><i class="fas fa-bullhorn"></i></div><div class="flex_auto p_4 p-y_2 self_center"><span class="c_secondary h:c_secondary-n2 text font_bold font_display">bullhorn</span></div></div></li>
+    <li class="relative br_secondary-4 br_solid br_1 flex_auto w-grid_3"><div class="flex"><div class="font_5 cell w-grid_3 text_center p_3 no-underline c_inherit flex_shrink justify_center h:bg_navigation-n3 h:c_white bg_secondary-5 expanded-click-area"><i class="fas fa-bullseye"></i></div><div class="flex_auto p_4 p-y_2 self_center"><span class="c_secondary h:c_secondary-n2 text font_bold font_display">bullseye</span></div></div></li>
+    <li class="relative br_secondary-4 br_solid br_1 flex_auto w-grid_3"><div class="flex"><div class="font_5 cell w-grid_3 text_center p_3 no-underline c_inherit flex_shrink justify_center h:bg_navigation-n3 h:c_white bg_secondary-5 expanded-click-area"><i class="fas fa-calculator"></i></div><div class="flex_auto p_4 p-y_2 self_center"><span class="c_secondary h:c_secondary-n2 text font_bold font_display">calculator</span></div></div></li>
+    <li class="relative br_secondary-4 br_solid br_1 flex_auto w-grid_3"><div class="flex"><div class="font_5 cell w-grid_3 text_center p_3 no-underline c_inherit flex_shrink justify_center h:bg_navigation-n3 h:c_white bg_secondary-5 expanded-click-area"><i class="fas fa-calendar"></i></div><div class="flex_auto p_4 p-y_2 self_center"><span class="c_secondary h:c_secondary-n2 text font_bold font_display">calendar</span></div></div></li>
+    <li class="relative br_secondary-4 br_solid br_1 flex_auto w-grid_3"><div class="flex"><div class="font_5 cell w-grid_3 text_center p_3 no-underline c_inherit flex_shrink justify_center h:bg_navigation-n3 h:c_white bg_secondary-5 expanded-click-area"><i class="fas fa-calendar"></i></div><div class="flex_auto p_4 p-y_2 self_center"><span class="c_secondary h:c_secondary-n2 text font_bold font_display">calendar</span></div></div></li>
 </ul>
 
 
@@ -6912,15 +6912,15 @@ Icons: Solid
 
  markup:
 <ul class="ul_none list m_0 p_0 flex flex_wrap justify-start items-start">
-    <li class="relative br_secondary-4 br_solid br_1 flex_auto w-grid_3"><div class="flex"><div class="font_5 cell w-grid_3 text_center p_3 no-underline c_inherit flex_shrink justify_center h:bg_navigation-n3 h:c_white bg_secondary-5 exapnded-click-area"><i class="fas fa-award"></i></div><div class="flex_auto p_4 p-y_2 self_center"><span class="c_secondary h:c_secondary-n2 text font_bold font_display">award</span></div></div></li>
-	<li class="relative br_secondary-4 br_solid br_1 flex_auto w-grid_3"><div class="flex"><div class="font_5 cell w-grid_3 text_center p_3 no-underline c_inherit flex_shrink justify_center h:bg_navigation-n3 h:c_white bg_secondary-5 exapnded-click-area"><i class="fas fa-ban"></i></div><div class="flex_auto p_4 p-y_2 self_center"><span class="c_secondary h:c_secondary-n2 text font_bold font_display">ban</span></div></div></li>
-	<li class="relative br_secondary-4 br_solid br_1 flex_auto w-grid_3"><div class="flex"><div class="font_5 cell w-grid_3 text_center p_3 no-underline c_inherit flex_shrink justify_center h:bg_navigation-n3 h:c_white bg_secondary-5 exapnded-click-area"><i class="fas fa-barcode"></i></div><div class="flex_auto p_4 p-y_2 self_center"><span class="c_secondary h:c_secondary-n2 text font_bold font_display">barcode</span></div></div></li>
-    <li class="relative br_secondary-4 br_solid br_1 flex_auto w-grid_3"><div class="flex"><div class="font_5 cell w-grid_3 text_center p_3 no-underline c_inherit flex_shrink justify_center h:bg_navigation-n3 h:c_white bg_secondary-5 exapnded-click-area"><i class="fas fa-bars"></i></div><div class="flex_auto p_4 p-y_2 self_center"><span class="c_secondary h:c_secondary-n2 text font_bold font_display">bars</span></div></div></li>
-    <li class="relative br_secondary-4 br_solid br_1 flex_auto w-grid_3"><div class="flex"><div class="font_5 cell w-grid_3 text_center p_3 no-underline c_inherit flex_shrink justify_center h:bg_navigation-n3 h:c_white bg_secondary-5 exapnded-click-area"><i class="fas fa-beer"></i></div><div class="flex_auto p_4 p-y_2 self_center"><span class="c_secondary h:c_secondary-n2 text font_bold font_display">beer</span></div></div></li>
-    <li class="relative br_secondary-4 br_solid br_1 flex_auto w-grid_3"><div class="flex"><div class="font_5 cell w-grid_3 text_center p_3 no-underline c_inherit flex_shrink justify_center h:bg_navigation-n3 h:c_white bg_secondary-5 exapnded-click-area"><i class="fas fa-bell"></i></div><div class="flex_auto p_4 p-y_2 self_center"><span class="c_secondary h:c_secondary-n2 text font_bold font_display">bell</span></div></div></li>
-	<li class="relative br_secondary-4 br_solid br_1 flex_auto w-grid_3"><div class="flex"><div class="font_5 cell w-grid_3 text_center p_3 no-underline c_inherit flex_shrink justify_center h:bg_navigation-n3 h:c_white bg_secondary-5 exapnded-click-area"><i class="fas fa-bell"></i></div><div class="flex_auto p_4 p-y_2 self_center"><span class="c_secondary h:c_secondary-n2 text font_bold font_display">bell</span></div></div></li>
-    <li class="relative br_secondary-4 br_solid br_1 flex_auto w-grid_3"><div class="flex"><div class="font_5 cell w-grid_3 text_center p_3 no-underline c_inherit flex_shrink justify_center h:bg_navigation-n3 h:c_white bg_secondary-5 exapnded-click-area"><i class="fas fa-bell-slash"></i></div><div class="flex_auto p_4 p-y_2 self_center"><span class="c_secondary h:c_secondary-n2 text font_bold font_display">bell-slash</span></div></div></li>
-    <li class="relative br_secondary-4 br_solid br_1 flex_auto w-grid_3"><div class="flex"><div class="font_5 cell w-grid_3 text_center p_3 no-underline c_inherit flex_shrink justify_center h:bg_navigation-n3 h:c_white bg_secondary-5 exapnded-click-area"><i class="fas fa-bell-slash"></i></div><div class="flex_auto p_4 p-y_2 self_center"><span class="c_secondary h:c_secondary-n2 text font_bold font_display">bell-slash</span></div></div></li>
+    <li class="relative br_secondary-4 br_solid br_1 flex_auto w-grid_3"><div class="flex"><div class="font_5 cell w-grid_3 text_center p_3 no-underline c_inherit flex_shrink justify_center h:bg_navigation-n3 h:c_white bg_secondary-5 expanded-click-area"><i class="fas fa-award"></i></div><div class="flex_auto p_4 p-y_2 self_center"><span class="c_secondary h:c_secondary-n2 text font_bold font_display">award</span></div></div></li>
+	<li class="relative br_secondary-4 br_solid br_1 flex_auto w-grid_3"><div class="flex"><div class="font_5 cell w-grid_3 text_center p_3 no-underline c_inherit flex_shrink justify_center h:bg_navigation-n3 h:c_white bg_secondary-5 expanded-click-area"><i class="fas fa-ban"></i></div><div class="flex_auto p_4 p-y_2 self_center"><span class="c_secondary h:c_secondary-n2 text font_bold font_display">ban</span></div></div></li>
+	<li class="relative br_secondary-4 br_solid br_1 flex_auto w-grid_3"><div class="flex"><div class="font_5 cell w-grid_3 text_center p_3 no-underline c_inherit flex_shrink justify_center h:bg_navigation-n3 h:c_white bg_secondary-5 expanded-click-area"><i class="fas fa-barcode"></i></div><div class="flex_auto p_4 p-y_2 self_center"><span class="c_secondary h:c_secondary-n2 text font_bold font_display">barcode</span></div></div></li>
+    <li class="relative br_secondary-4 br_solid br_1 flex_auto w-grid_3"><div class="flex"><div class="font_5 cell w-grid_3 text_center p_3 no-underline c_inherit flex_shrink justify_center h:bg_navigation-n3 h:c_white bg_secondary-5 expanded-click-area"><i class="fas fa-bars"></i></div><div class="flex_auto p_4 p-y_2 self_center"><span class="c_secondary h:c_secondary-n2 text font_bold font_display">bars</span></div></div></li>
+    <li class="relative br_secondary-4 br_solid br_1 flex_auto w-grid_3"><div class="flex"><div class="font_5 cell w-grid_3 text_center p_3 no-underline c_inherit flex_shrink justify_center h:bg_navigation-n3 h:c_white bg_secondary-5 expanded-click-area"><i class="fas fa-beer"></i></div><div class="flex_auto p_4 p-y_2 self_center"><span class="c_secondary h:c_secondary-n2 text font_bold font_display">beer</span></div></div></li>
+    <li class="relative br_secondary-4 br_solid br_1 flex_auto w-grid_3"><div class="flex"><div class="font_5 cell w-grid_3 text_center p_3 no-underline c_inherit flex_shrink justify_center h:bg_navigation-n3 h:c_white bg_secondary-5 expanded-click-area"><i class="fas fa-bell"></i></div><div class="flex_auto p_4 p-y_2 self_center"><span class="c_secondary h:c_secondary-n2 text font_bold font_display">bell</span></div></div></li>
+	<li class="relative br_secondary-4 br_solid br_1 flex_auto w-grid_3"><div class="flex"><div class="font_5 cell w-grid_3 text_center p_3 no-underline c_inherit flex_shrink justify_center h:bg_navigation-n3 h:c_white bg_secondary-5 expanded-click-area"><i class="fas fa-bell"></i></div><div class="flex_auto p_4 p-y_2 self_center"><span class="c_secondary h:c_secondary-n2 text font_bold font_display">bell</span></div></div></li>
+    <li class="relative br_secondary-4 br_solid br_1 flex_auto w-grid_3"><div class="flex"><div class="font_5 cell w-grid_3 text_center p_3 no-underline c_inherit flex_shrink justify_center h:bg_navigation-n3 h:c_white bg_secondary-5 expanded-click-area"><i class="fas fa-bell-slash"></i></div><div class="flex_auto p_4 p-y_2 self_center"><span class="c_secondary h:c_secondary-n2 text font_bold font_display">bell-slash</span></div></div></li>
+    <li class="relative br_secondary-4 br_solid br_1 flex_auto w-grid_3"><div class="flex"><div class="font_5 cell w-grid_3 text_center p_3 no-underline c_inherit flex_shrink justify_center h:bg_navigation-n3 h:c_white bg_secondary-5 expanded-click-area"><i class="fas fa-bell-slash"></i></div><div class="flex_auto p_4 p-y_2 self_center"><span class="c_secondary h:c_secondary-n2 text font_bold font_display">bell-slash</span></div></div></li>
 </ul>
 
 	Styleguide DesignBase.Icons.Solid
@@ -6933,15 +6933,15 @@ Icons: Light
 
  markup:
 <ul class="ul_none list m_0 p_0 flex flex_wrap justify-start items-start">
-    <li class="relative br_secondary-4 br_solid br_1 flex_auto w-grid_3"><div class="flex"><div class="font_5 cell w-grid_3 text_center p_3 no-underline c_inherit flex_shrink justify_center h:bg_navigation-n3 h:c_white bg_secondary-5 exapnded-click-area"><i class="fal fa-award"></i></div><div class="flex_auto p_4 p-y_2 self_center"><span class="c_secondary h:c_secondary-n2 text font_bold font_display">award</span></div></div></li>
-    <li class="relative br_secondary-4 br_solid br_1 flex_auto w-grid_3"><div class="flex"><div class="font_5 cell w-grid_3 text_center p_3 no-underline c_inherit flex_shrink justify_center h:bg_navigation-n3 h:c_white bg_secondary-5 exapnded-click-area"><i class="fal fa-ban"></i></div><div class="flex_auto p_4 p-y_2 self_center"><span class="c_secondary h:c_secondary-n2 text font_bold font_display">ban</span></div></div></li>
-	<li class="relative br_secondary-4 br_solid br_1 flex_auto w-grid_3"><div class="flex"><div class="font_5 cell w-grid_3 text_center p_3 no-underline c_inherit flex_shrink justify_center h:bg_navigation-n3 h:c_white bg_secondary-5 exapnded-click-area"><i class="fal fa-barcode"></i></div><div class="flex_auto p_4 p-y_2 self_center"><span class="c_secondary h:c_secondary-n2 text font_bold font_display">barcode</span></div></div></li>
-    <li class="relative br_secondary-4 br_solid br_1 flex_auto w-grid_3"><div class="flex"><div class="font_5 cell w-grid_3 text_center p_3 no-underline c_inherit flex_shrink justify_center h:bg_navigation-n3 h:c_white bg_secondary-5 exapnded-click-area"><i class="fal fa-bars"></i></div><div class="flex_auto p_4 p-y_2 self_center"><span class="c_secondary h:c_secondary-n2 text font_bold font_display">bars</span></div></div></li>
-    <li class="relative br_secondary-4 br_solid br_1 flex_auto w-grid_3"><div class="flex"><div class="font_5 cell w-grid_3 text_center p_3 no-underline c_inherit flex_shrink justify_center h:bg_navigation-n3 h:c_white bg_secondary-5 exapnded-click-area"><i class="fal fa-beer"></i></div><div class="flex_auto p_4 p-y_2 self_center"><span class="c_secondary h:c_secondary-n2 text font_bold font_display">beer</span></div></div></li>
-    <li class="relative br_secondary-4 br_solid br_1 flex_auto w-grid_3"><div class="flex"><div class="font_5 cell w-grid_3 text_center p_3 no-underline c_inherit flex_shrink justify_center h:bg_navigation-n3 h:c_white bg_secondary-5 exapnded-click-area"><i class="fal fa-bell"></i></div><div class="flex_auto p_4 p-y_2 self_center"><span class="c_secondary h:c_secondary-n2 text font_bold font_display">bell</span></div></div></li>
-	<li class="relative br_secondary-4 br_solid br_1 flex_auto w-grid_3"><div class="flex"><div class="font_5 cell w-grid_3 text_center p_3 no-underline c_inherit flex_shrink justify_center h:bg_navigation-n3 h:c_white bg_secondary-5 exapnded-click-area"><i class="fal fa-bell"></i></div><div class="flex_auto p_4 p-y_2 self_center"><span class="c_secondary h:c_secondary-n2 text font_bold font_display">bell</span></div></div></li>
-    <li class="relative br_secondary-4 br_solid br_1 flex_auto w-grid_3"><div class="flex"><div class="font_5 cell w-grid_3 text_center p_3 no-underline c_inherit flex_shrink justify_center h:bg_navigation-n3 h:c_white bg_secondary-5 exapnded-click-area"><i class="fal fa-bell-slash"></i></div><div class="flex_auto p_4 p-y_2 self_center"><span class="c_secondary h:c_secondary-n2 text font_bold font_display">bell-slash</span></div></div></li>
-    <li class="relative br_secondary-4 br_solid br_1 flex_auto w-grid_3"><div class="flex"><div class="font_5 cell w-grid_3 text_center p_3 no-underline c_inherit flex_shrink justify_center h:bg_navigation-n3 h:c_white bg_secondary-5 exapnded-click-area"><i class="fal fa-bell-slash"></i></div><div class="flex_auto p_4 p-y_2 self_center"><span class="c_secondary h:c_secondary-n2 text font_bold font_display">bell-slash</span></div></div></li>
+    <li class="relative br_secondary-4 br_solid br_1 flex_auto w-grid_3"><div class="flex"><div class="font_5 cell w-grid_3 text_center p_3 no-underline c_inherit flex_shrink justify_center h:bg_navigation-n3 h:c_white bg_secondary-5 expanded-click-area"><i class="fal fa-award"></i></div><div class="flex_auto p_4 p-y_2 self_center"><span class="c_secondary h:c_secondary-n2 text font_bold font_display">award</span></div></div></li>
+    <li class="relative br_secondary-4 br_solid br_1 flex_auto w-grid_3"><div class="flex"><div class="font_5 cell w-grid_3 text_center p_3 no-underline c_inherit flex_shrink justify_center h:bg_navigation-n3 h:c_white bg_secondary-5 expanded-click-area"><i class="fal fa-ban"></i></div><div class="flex_auto p_4 p-y_2 self_center"><span class="c_secondary h:c_secondary-n2 text font_bold font_display">ban</span></div></div></li>
+	<li class="relative br_secondary-4 br_solid br_1 flex_auto w-grid_3"><div class="flex"><div class="font_5 cell w-grid_3 text_center p_3 no-underline c_inherit flex_shrink justify_center h:bg_navigation-n3 h:c_white bg_secondary-5 expanded-click-area"><i class="fal fa-barcode"></i></div><div class="flex_auto p_4 p-y_2 self_center"><span class="c_secondary h:c_secondary-n2 text font_bold font_display">barcode</span></div></div></li>
+    <li class="relative br_secondary-4 br_solid br_1 flex_auto w-grid_3"><div class="flex"><div class="font_5 cell w-grid_3 text_center p_3 no-underline c_inherit flex_shrink justify_center h:bg_navigation-n3 h:c_white bg_secondary-5 expanded-click-area"><i class="fal fa-bars"></i></div><div class="flex_auto p_4 p-y_2 self_center"><span class="c_secondary h:c_secondary-n2 text font_bold font_display">bars</span></div></div></li>
+    <li class="relative br_secondary-4 br_solid br_1 flex_auto w-grid_3"><div class="flex"><div class="font_5 cell w-grid_3 text_center p_3 no-underline c_inherit flex_shrink justify_center h:bg_navigation-n3 h:c_white bg_secondary-5 expanded-click-area"><i class="fal fa-beer"></i></div><div class="flex_auto p_4 p-y_2 self_center"><span class="c_secondary h:c_secondary-n2 text font_bold font_display">beer</span></div></div></li>
+    <li class="relative br_secondary-4 br_solid br_1 flex_auto w-grid_3"><div class="flex"><div class="font_5 cell w-grid_3 text_center p_3 no-underline c_inherit flex_shrink justify_center h:bg_navigation-n3 h:c_white bg_secondary-5 expanded-click-area"><i class="fal fa-bell"></i></div><div class="flex_auto p_4 p-y_2 self_center"><span class="c_secondary h:c_secondary-n2 text font_bold font_display">bell</span></div></div></li>
+	<li class="relative br_secondary-4 br_solid br_1 flex_auto w-grid_3"><div class="flex"><div class="font_5 cell w-grid_3 text_center p_3 no-underline c_inherit flex_shrink justify_center h:bg_navigation-n3 h:c_white bg_secondary-5 expanded-click-area"><i class="fal fa-bell"></i></div><div class="flex_auto p_4 p-y_2 self_center"><span class="c_secondary h:c_secondary-n2 text font_bold font_display">bell</span></div></div></li>
+    <li class="relative br_secondary-4 br_solid br_1 flex_auto w-grid_3"><div class="flex"><div class="font_5 cell w-grid_3 text_center p_3 no-underline c_inherit flex_shrink justify_center h:bg_navigation-n3 h:c_white bg_secondary-5 expanded-click-area"><i class="fal fa-bell-slash"></i></div><div class="flex_auto p_4 p-y_2 self_center"><span class="c_secondary h:c_secondary-n2 text font_bold font_display">bell-slash</span></div></div></li>
+    <li class="relative br_secondary-4 br_solid br_1 flex_auto w-grid_3"><div class="flex"><div class="font_5 cell w-grid_3 text_center p_3 no-underline c_inherit flex_shrink justify_center h:bg_navigation-n3 h:c_white bg_secondary-5 expanded-click-area"><i class="fal fa-bell-slash"></i></div><div class="flex_auto p_4 p-y_2 self_center"><span class="c_secondary h:c_secondary-n2 text font_bold font_display">bell-slash</span></div></div></li>
 </ul>
 
 	Styleguide DesignBase.Icons.Light
@@ -6954,15 +6954,15 @@ Icons: Regular
 
  markup:
 <ul class="ul_none list m_0 p_0 flex flex_wrap justify-start items-start">
-    <li class="relative br_secondary-4 br_solid br_1 flex_auto w-grid_3"><div class="flex"><div class="font_5 cell w-grid_3 text_center p_3 no-underline c_inherit flex_shrink justify_center h:bg_navigation-n3 h:c_white bg_secondary-5 exapnded-click-area"><i class="far fa-award"></i></div><div class="flex_auto p_4 p-y_2 self_center"><span class="c_secondary h:c_secondary-n2 text font_bold font_display">award</span></div></div></li>
-    <li class="relative br_secondary-4 br_solid br_1 flex_auto w-grid_3"><div class="flex"><div class="font_5 cell w-grid_3 text_center p_3 no-underline c_inherit flex_shrink justify_center h:bg_navigation-n3 h:c_white bg_secondary-5 exapnded-click-area"><i class="far fa-ban"></i></div><div class="flex_auto p_4 p-y_2 self_center"><span class="c_secondary h:c_secondary-n2 text font_bold font_display">ban</span></div></div></li>
-	<li class="relative br_secondary-4 br_solid br_1 flex_auto w-grid_3"><div class="flex"><div class="font_5 cell w-grid_3 text_center p_3 no-underline c_inherit flex_shrink justify_center h:bg_navigation-n3 h:c_white bg_secondary-5 exapnded-click-area"><i class="far fa-barcode"></i></div><div class="flex_auto p_4 p-y_2 self_center"><span class="c_secondary h:c_secondary-n2 text font_bold font_display">barcode</span></div></div></li>
-    <li class="relative br_secondary-4 br_solid br_1 flex_auto w-grid_3"><div class="flex"><div class="font_5 cell w-grid_3 text_center p_3 no-underline c_inherit flex_shrink justify_center h:bg_navigation-n3 h:c_white bg_secondary-5 exapnded-click-area"><i class="far fa-bars"></i></div><div class="flex_auto p_4 p-y_2 self_center"><span class="c_secondary h:c_secondary-n2 text font_bold font_display">bars</span></div></div></li>
-    <li class="relative br_secondary-4 br_solid br_1 flex_auto w-grid_3"><div class="flex"><div class="font_5 cell w-grid_3 text_center p_3 no-underline c_inherit flex_shrink justify_center h:bg_navigation-n3 h:c_white bg_secondary-5 exapnded-click-area"><i class="far fa-beer"></i></div><div class="flex_auto p_4 p-y_2 self_center"><span class="c_secondary h:c_secondary-n2 text font_bold font_display">beer</span></div></div></li>
-    <li class="relative br_secondary-4 br_solid br_1 flex_auto w-grid_3"><div class="flex"><div class="font_5 cell w-grid_3 text_center p_3 no-underline c_inherit flex_shrink justify_center h:bg_navigation-n3 h:c_white bg_secondary-5 exapnded-click-area"><i class="far fa-bell"></i></div><div class="flex_auto p_4 p-y_2 self_center"><span class="c_secondary h:c_secondary-n2 text font_bold font_display">bell</span></div></div></li>
-	<li class="relative br_secondary-4 br_solid br_1 flex_auto w-grid_3"><div class="flex"><div class="font_5 cell w-grid_3 text_center p_3 no-underline c_inherit flex_shrink justify_center h:bg_navigation-n3 h:c_white bg_secondary-5 exapnded-click-area"><i class="far fa-bell"></i></div><div class="flex_auto p_4 p-y_2 self_center"><span class="c_secondary h:c_secondary-n2 text font_bold font_display">bell</span></div></div></li>
-    <li class="relative br_secondary-4 br_solid br_1 flex_auto w-grid_3"><div class="flex"><div class="font_5 cell w-grid_3 text_center p_3 no-underline c_inherit flex_shrink justify_center h:bg_navigation-n3 h:c_white bg_secondary-5 exapnded-click-area"><i class="far fa-bell-slash"></i></div><div class="flex_auto p_4 p-y_2 self_center"><span class="c_secondary h:c_secondary-n2 text font_bold font_display">bell-slash</span></div></div></li>
-    <li class="relative br_secondary-4 br_solid br_1 flex_auto w-grid_3"><div class="flex"><div class="font_5 cell w-grid_3 text_center p_3 no-underline c_inherit flex_shrink justify_center h:bg_navigation-n3 h:c_white bg_secondary-5 exapnded-click-area"><i class="far fa-bell-slash"></i></div><div class="flex_auto p_4 p-y_2 self_center"><span class="c_secondary h:c_secondary-n2 text font_bold font_display">bell-slash</span></div></div></li>
+    <li class="relative br_secondary-4 br_solid br_1 flex_auto w-grid_3"><div class="flex"><div class="font_5 cell w-grid_3 text_center p_3 no-underline c_inherit flex_shrink justify_center h:bg_navigation-n3 h:c_white bg_secondary-5 expanded-click-area"><i class="far fa-award"></i></div><div class="flex_auto p_4 p-y_2 self_center"><span class="c_secondary h:c_secondary-n2 text font_bold font_display">award</span></div></div></li>
+    <li class="relative br_secondary-4 br_solid br_1 flex_auto w-grid_3"><div class="flex"><div class="font_5 cell w-grid_3 text_center p_3 no-underline c_inherit flex_shrink justify_center h:bg_navigation-n3 h:c_white bg_secondary-5 expanded-click-area"><i class="far fa-ban"></i></div><div class="flex_auto p_4 p-y_2 self_center"><span class="c_secondary h:c_secondary-n2 text font_bold font_display">ban</span></div></div></li>
+	<li class="relative br_secondary-4 br_solid br_1 flex_auto w-grid_3"><div class="flex"><div class="font_5 cell w-grid_3 text_center p_3 no-underline c_inherit flex_shrink justify_center h:bg_navigation-n3 h:c_white bg_secondary-5 expanded-click-area"><i class="far fa-barcode"></i></div><div class="flex_auto p_4 p-y_2 self_center"><span class="c_secondary h:c_secondary-n2 text font_bold font_display">barcode</span></div></div></li>
+    <li class="relative br_secondary-4 br_solid br_1 flex_auto w-grid_3"><div class="flex"><div class="font_5 cell w-grid_3 text_center p_3 no-underline c_inherit flex_shrink justify_center h:bg_navigation-n3 h:c_white bg_secondary-5 expanded-click-area"><i class="far fa-bars"></i></div><div class="flex_auto p_4 p-y_2 self_center"><span class="c_secondary h:c_secondary-n2 text font_bold font_display">bars</span></div></div></li>
+    <li class="relative br_secondary-4 br_solid br_1 flex_auto w-grid_3"><div class="flex"><div class="font_5 cell w-grid_3 text_center p_3 no-underline c_inherit flex_shrink justify_center h:bg_navigation-n3 h:c_white bg_secondary-5 expanded-click-area"><i class="far fa-beer"></i></div><div class="flex_auto p_4 p-y_2 self_center"><span class="c_secondary h:c_secondary-n2 text font_bold font_display">beer</span></div></div></li>
+    <li class="relative br_secondary-4 br_solid br_1 flex_auto w-grid_3"><div class="flex"><div class="font_5 cell w-grid_3 text_center p_3 no-underline c_inherit flex_shrink justify_center h:bg_navigation-n3 h:c_white bg_secondary-5 expanded-click-area"><i class="far fa-bell"></i></div><div class="flex_auto p_4 p-y_2 self_center"><span class="c_secondary h:c_secondary-n2 text font_bold font_display">bell</span></div></div></li>
+	<li class="relative br_secondary-4 br_solid br_1 flex_auto w-grid_3"><div class="flex"><div class="font_5 cell w-grid_3 text_center p_3 no-underline c_inherit flex_shrink justify_center h:bg_navigation-n3 h:c_white bg_secondary-5 expanded-click-area"><i class="far fa-bell"></i></div><div class="flex_auto p_4 p-y_2 self_center"><span class="c_secondary h:c_secondary-n2 text font_bold font_display">bell</span></div></div></li>
+    <li class="relative br_secondary-4 br_solid br_1 flex_auto w-grid_3"><div class="flex"><div class="font_5 cell w-grid_3 text_center p_3 no-underline c_inherit flex_shrink justify_center h:bg_navigation-n3 h:c_white bg_secondary-5 expanded-click-area"><i class="far fa-bell-slash"></i></div><div class="flex_auto p_4 p-y_2 self_center"><span class="c_secondary h:c_secondary-n2 text font_bold font_display">bell-slash</span></div></div></li>
+    <li class="relative br_secondary-4 br_solid br_1 flex_auto w-grid_3"><div class="flex"><div class="font_5 cell w-grid_3 text_center p_3 no-underline c_inherit flex_shrink justify_center h:bg_navigation-n3 h:c_white bg_secondary-5 expanded-click-area"><i class="far fa-bell-slash"></i></div><div class="flex_auto p_4 p-y_2 self_center"><span class="c_secondary h:c_secondary-n2 text font_bold font_display">bell-slash</span></div></div></li>
 </ul>
 
 
@@ -8318,14 +8318,14 @@ Markup:
 									<a
 										href="http://cvquality.acc.org/?_ga=2.33577825.159963902.1562853382-843642371.1562007133"
 										target="_blank"
-										class="exapnded-click-area"
+										class="expanded-click-area transition_1 h:opacity opacity_8"
 										><img
 											src="https://www.acc.org/~/media/Non-Clinical/Images/External%20Site%20Logos/ACC_QII_logo.png"
 											alt="QII"
 									/></a>
 								</li>
 								<li class="relative m-x_2:md m-x_4">
-									<a href="http://cvquality.acc.org/NCDR-Home.aspx?_ga=2.91395290.159963902.1562853382-843642371.1562007133" target="_blank" class="exapnded-click-area"><img src="https://www.acc.org/~/media/Non-Clinical/Images/External Site Logos/ACC_NCDR_logo.png" alt="NCDR"></a>
+									<a href="http://cvquality.acc.org/NCDR-Home.aspx?_ga=2.91395290.159963902.1562853382-843642371.1562007133" target="_blank" class="expanded-click-area transition_1 h:opacity opacity_8"><img src="https://www.acc.org/~/media/Non-Clinical/Images/External Site Logos/ACC_NCDR_logo.png" alt="NCDR"></a>
 								</li>
 							</ul>
 						</div>
@@ -8887,7 +8887,7 @@ Markup:
 									<a
 										href="http://cvquality.acc.org/?_ga=2.33577825.159963902.1562853382-843642371.1562007133"
 										target="_blank"
-										class="exapnded-click-area"
+										class="expanded-click-area transition_1 h:opacity opacity_8"
 										><img
 											src="https://www.acc.org/~/media/Non-Clinical/Images/External%20Site%20Logos/ACC_QII_logo.png"
 											alt="QII"
@@ -8897,7 +8897,7 @@ Markup:
 									<a
 										href="http://cvquality.acc.org/NCDR-Home.aspx?_ga=2.91395290.159963902.1562853382-843642371.1562007133"
 										target="_blank"
-										class="exapnded-click-area"
+										class="expanded-click-area transition_1 h:opacity opacity_8"
 										><img
 											src="https://www.acc.org/~/media/Non-Clinical/Images/External Site Logos/ACC_NCDR_logo.png"
 											alt="NCDR"
@@ -9101,6 +9101,181 @@ Markup:
 	</div>
 
 Styleguide Recipes.ACC.Branded Nav
+
+*/
+/*
+ACC.org Footer
+
+Member Pages 
+
+Markup:
+<div class="bg_primary-3">
+	<div class="main-content-inner max-w_4 m_auto bg_white shadow_4 font_ui font_0" role="main">
+		<img
+			class="w_100 p_4"
+			alt="Benefits of ACC Membership"
+			src="https://author.acc.org/~/media/Non-Clinical/Images/Membership/New/F19411_MbrPgsHdrs_v3-MEMBEN.jpg?la=en"
+		/>
+		<div class="p-b_2 p_4">
+			<div class="row m_4  p_4 br_radius bg_primary c_white">
+				<div class="col-sm-9">
+					<h2>Join Us</h2>
+					<p>
+						When you become a member of the American College of Cardiology, you join a global community of
+						cardiovascular professionals driven to transform cardiovascular care and improve heart health.
+						You also get access to benefits and resources designed to help you accomplish that mission.
+					</p>
+				</div>
+				<div class="col-sm-3">
+					<p>
+						<a
+							href="https://memberapp.acc.org/"
+							class="bg_white br_radius btn btn-block btn-lg c_primary font_bold m-t_5"
+							>Join Now</a
+						>
+					</p>
+					<ul class="c_white-6 font_n2 lh_2 m-r_3 m-t_n3 text_right ul_none">
+						<li>Already a member</li>
+						<li>Access your profile</li>
+						<li>Renew your membership</li>
+						<li>Personalize your Acc.org</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="br-t_1 br_dotted br_primary m-t_4 m-x_4 p-b_3 p-t_4 p-x_4">
+			<div class="p-x_4 row">
+				<div class="col-sm-12 m-b_2 m-x_n4">
+					<h2>Benefits</h2>
+				</div>
+				<div class="col-sm-6 font_1">
+					<p class="p-l_5 m-l_3 text-indent_n1">
+						<i class="fas font_2 fa-newspaper" aria-hidden="true"></i>
+						&nbsp;Multiplatform access to the entire family of <em>JACC</em> Journals
+					</p>
+					<p class="p-l_5 m-l_3 text-indent_n1">
+						<i class="fas font_2 fa-calendar" aria-hidden="true"></i>
+						&nbsp;Discounts on live meetings – including the Annual Scientific Session – and educational
+						products
+					</p>
+				</div>
+				<div class="col-sm-6 font_1">
+					<p class="p-l_5 m-l_3 text-indent_n1">
+						<i class="fas font_2 fa-certificate" aria-hidden="true"></i>
+						&nbsp;Free CME/CE and MOC
+					</p>
+					<p class="p-l_5 m-l_3 text-indent_n1">
+						<i class="fab fa-connectdevelop"></i>
+						&nbsp;Connect with over 52,000 CV professionals in 21+ specialty Member Sections
+					</p>
+				</div>
+				<div class="col-sm-12">
+					<a class="bg_secondary-4 block br_radius btn btn-small m-t_3 m_auto w_40">Explore All Benefits</a>
+				</div>
+			</div>
+		</div>
+		<div class="br-t_1 br_dotted br_primary m-t_4 m-x_4 p-t_4 p-x_4">
+			<div class="flex">
+				<div class="w_70 flex_auto">
+					<h2 class="">Become a Member</h2>
+					<p class="">
+						Find your member type
+					</p>
+				</div>
+				<div class="flex_auto self_center vertical-align_middle">
+					<a href="https://memberapp.acc.org/" class="btn br_radius btn-primary btn-lg btn-block">Join Now</a>
+				</div>
+			</div>
+		</div>
+		<div class="br-t_1 br_dotted br_primary m-t_4 m-x_4 p_4 ">
+			<div class="row p-x_3 p-y_4 br_radius bg_black-1">
+				<div class="col-sm-4">
+					<h3 class="font_1 font_display font_bold c_acc">Fellow of the ACC</h3>
+				</div>
+				<div class="col-sm-8">
+					<p>
+						Academic and Clinical Cardiologists (US and International), Fellows Completing Training.
+						<a href="" class="underline c_primary nowrap block"
+							>Learn More <i class="far font_0 fa-chevron-double-right"></i
+						></a>
+					</p>
+				</div>
+			</div>
+			<div class="row p-x_3 p-y_4 br_radius">
+				<div class="col-sm-4">
+					<h3 class="font_1 font_display font_bold c_acc">Associate of the ACC / Cardiovascular (CV) Team</h3>
+				</div>
+				<div class="col-sm-8">
+					<p>
+						Advanced Practice Nurses, PAs, Clinical Pharmacists, Registered Nurses, CV Technologists,
+						Cardiac Rehabilitation Professionals, Genetic Counselors.
+						<a href="" class="underline c_primary nowrap block"
+							>Learn More <i class="far font_0 fa-chevron-double-right"></i
+						></a>
+					</p>
+				</div>
+			</div>
+			<div class="row p-x_3 p-y_4 br_radius bg_black-1">
+				<div class="col-sm-4">
+					<h3 class="font_1 font_display font_bold c_acc">Cardiovascular Administrator</h3>
+				</div>
+				<div class="col-sm-8">
+					<p>
+						Service Line Administrators, Practice Managers, Executives.
+						<a href="" class="underline c_primary nowrap block"
+							>Learn More <i class="far font_0 fa-chevron-double-right"></i
+						></a>
+					</p>
+				</div>
+			</div>
+			<div class="row p-x_3 p-y_4 br_radius">
+				<div class="col-sm-4">
+					<h3 class="font_1 font_display font_bold c_acc">
+						Trainees and Students (Complimentary Membership)
+					</h3>
+				</div>
+				<div class="col-sm-8">
+					<p>
+						Fellows in Training, Medical Residents, CV Team Students, Medical Students
+						<a href="" class="underline c_primary nowrap block"
+							>Learn More <i class="far font_0 fa-chevron-double-right"></i
+						></a>
+					</p>
+				</div>
+			</div>
+			<div class="row p-x_3 p-y_4 br_radius bg_black-1">
+				<div class="col-sm-4">
+					<h3 class="font_1 font_display font_bold c_acc">International</h3>
+				</div>
+				<div class="col-sm-8">
+					<p>
+						CV Professionals Practicing Outside the US and Canada.
+						<a href="" class="underline c_primary nowrap block"
+							>Learn More <i class="far font_0 fa-chevron-double-right"></i
+						></a>
+					</p>
+				</div>
+			</div>
+			<div class="row p-x_3 p-y_4 br_radius">
+				<div class="col-sm-4">
+					<h3 class="font_1 font_display font_bold c_acc">Affiliate</h3>
+				</div>
+				<div class="col-sm-8">
+					<p>
+						Training Program Administrators, Geriatricians, Health IT Managers, EMS Professionals, CV
+						Veterinarians.
+						<a href="" class="underline c_primary nowrap block"
+							>Learn More <i class="far font_0 fa-chevron-double-right"></i
+						></a>
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+Styleguide Recipes.ACC.member
 
 */
 /**  Utility Classes    *********************************/
