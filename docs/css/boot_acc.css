@@ -6,6 +6,53 @@
  */
 /**  Pre Header - modular scale default break points utility    *********************************/
 /**  Version: 1.1.0    *********************************/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+}
+
+.clearfix {
+  zoom: 1;
+  /* For IE 6/7 (trigger hasLayout) */
+}
+.clearfix:before {
+  display: table;
+  content: "";
+}
+.clearfix:after {
+  display: table;
+  clear: both;
+  content: "";
+}
+
+/* Smartphone resets and enhancements */
+html {
+  -webkit-font-smoothing: antialiased;
+  /*-webkit-backface-visibility: hidden; /* this breaks the sticky widget on article and landing pages */
+  /*-webkit-perspective: 1000; */
+}
+
+footer {
+  -webkit-transform: translate3d(0, 0, 0);
+  /* enables on GPU processing, per http://davidwalsh.name/translate3d */
+  transform: translate3d(0, 0, 0);
+}
+
+a:link, a:hover, a:active {
+  -webkit-tap-highlight-color: rbga(0, 0, 0, 0);
+  outline: none;
+  /* prevents pink highlight color on tap */
+}
+
+span {
+  -webkit-transform: translateZ(0);
+  /* enables on GPU processing */
+}
+
 /** Utility Class Only With Basic ACC Branding **/
 /**  ACC Brands    *********************************/
 /**  Default Brands    *********************************/
@@ -14,7 +61,7 @@
 
 ACC's Blue
 
-$acc-blue            - #00386b; acc
+$acc-blue            -  #004176; acc
 
 Styleguide DesignBase.Colors.ACC
 */
@@ -24,11 +71,11 @@ Theme Colors
 
 Colors are based off of the ACC Scrub Colors.
 
-$teal                - #198dae; primary
-$grey-dark           - #676a72; secondary
-$green-blue  	      - #16a385; accent
-$grey-alt            - #a3988c; info
-$purple              - #7742bd; highlight
+map-get($theme-palette, primary)              -  #198dae; primary
+map-get($theme-palette, secondary)            -  #676a72; secondary
+map-get($theme-palette, accent)               -  #16a385;  accent
+map-get($theme-palette, info)                 -  #a3988c; info
+map-get($theme-palette, highlight)            -  #7742bd; highlight
 
 Styleguide DesignBase.Colors
  */
@@ -36,16 +83,15 @@ Styleguide DesignBase.Colors
 
 Action Colors  
 
-Colors are based off of the ACC Scrub Colors.
+Actionable colors used to respond to user inputs and messaging.
 
-$red                 - #dd1a1a; alert
-$orange              - #da8210; warning
-$green               - #06a022; success
-$blue                - #2b58c0; navigation
+map-get($theme-palette, alert)                -  #dd1a1a; alert
+map-get($theme-palette, warning)              -  #da8210; warning
+map-get($theme-palette, success)               -  #078a2e;  success
+map-get($theme-palette, navigation)           -  #2b58c0; navigation
 
 Styleguide DesignBase.Colors.Actions
-
- */
+*/
 /*
 
 Color Coding  
@@ -136,6 +182,49 @@ Weight: -1
 Styleguide DesignBase.Colors.ColorCoding.Pathways
 
 */
+.twitter {
+  background-color: #00aced !important;
+}
+
+.facebook {
+  background-color: #3b5998 !important;
+}
+
+.linkedin {
+  background-color: #0077b5 !important;
+}
+
+.google-play {
+  background-color: #ef6c00 !important;
+}
+
+.apple-store {
+  background-color: #ea4cc0 !important;
+}
+
+.youtube {
+  background-color: #bb0000 !important;
+}
+
+/*
+
+Clinical Pathway Colors  
+
+Each of the clinical pathways has a distinctive color.  These colors are used to give a distinct theme to our clinical apps, marketing, pdf's and tools.
+
+$twitter            -   #00aced;  twitter     
+$facebook           -   #3b5998;  facebook    
+$linkedin           -   #007bb6;  linkedin    
+$apple-store        -   #ea4cc0;  apple-store 
+$google-play        -   #689f38;  google-play 
+$youtube            -   #bb0000;  youtube     
+
+
+Weight: 100
+
+Styleguide DesignBase.Colors.Social Networks
+
+*/
 /**  Fonts  **/
 /* Robto Slab Regular */
 @font-face {
@@ -213,7 +302,7 @@ div[class*=texture_] {
 	.texture_cross            					- A mostly transparent cross texture used for alternating rows of content when a little extra texture is needed.
 	.texture_disabled              				- This texture is used to paint disabled buttons and ui items giving it a greyed and X'ed out appearand. 
 
-	markup:
+	Markup:
 	<div class="{{modifier_class}} p_5 border-c_black-8 border-width_1 border_solid text_center bg_primary-4">{{modifier_class}} with a light primary color background</div>
 
 	Styleguide DesignBase.Textures
@@ -2217,8 +2306,8 @@ select.form-control:focus::-ms-value {
 
 .form-control-lg {
   height: calc(1.5em + 1rem + 2px);
-  padding: 8px 16px;
-  padding: 0.5rem 1rem;
+  padding: 8px 4px;
+  padding: 0.5rem 0.25rem;
   font-size: 23.04px;
   font-size: 1.44rem;
   line-height: 1.5;
@@ -3053,8 +3142,8 @@ fieldset:disabled a.btn {
 }
 
 .btn-lg, .btn-group-lg > .btn {
-  padding: 8px 16px;
-  padding: 0.5rem 1rem;
+  padding: 8px 4px;
+  padding: 0.5rem 0.25rem;
   border-radius: 0;
   font-size: 23.04px;
   font-size: 1.44rem;
@@ -3413,10 +3502,10 @@ input[type=button].btn-block {
 }
 
 .btn-lg + .dropdown-toggle-split, .btn-group-lg > .btn + .dropdown-toggle-split {
-  padding-right: 12px;
-  padding-right: 0.75rem;
-  padding-left: 12px;
-  padding-left: 0.75rem;
+  padding-right: 3px;
+  padding-right: 0.1875rem;
+  padding-left: 3px;
+  padding-left: 0.1875rem;
 }
 
 .btn-group-vertical {
@@ -3551,8 +3640,8 @@ input[type=button].btn-block {
 .input-group-lg > .input-group-append > .input-group-text,
 .input-group-lg > .input-group-prepend > .btn,
 .input-group-lg > .input-group-append > .btn {
-  padding: 8px 16px;
-  padding: 0.5rem 1rem;
+  padding: 8px 4px;
+  padding: 0.5rem 0.25rem;
   font-size: 23.04px;
   font-size: 1.44rem;
   line-height: 1.5;
@@ -3787,8 +3876,8 @@ input[type=button].btn-block {
   padding-top: 0.5rem;
   padding-bottom: 8px;
   padding-bottom: 0.5rem;
-  padding-left: 16px;
-  padding-left: 1rem;
+  padding-left: 4px;
+  padding-left: 0.25rem;
   font-size: 23.04px;
   font-size: 1.44rem;
 }
@@ -6077,7 +6166,43 @@ a.close.disabled {
   height: 1rem;
 }
 
-h1, h2, h3, h4, h5, h6, p, td, th {
+/*
+
+Basic Typography
+
+Basic Typography with this variation of Arches. Please note that typography can have a different base design depending on the brand or the framework underpinning.  
+
+Markup:
+<h1>Lorem ipsum dolor sit amet consectetuer adipiscing 
+elit</h1>
+<h2>Aenean commodo ligula eget dolor aenean massa</h2>
+<h3>Cum sociis natoque penatibus et magnis dis 
+parturient montes nascetur ridiculus mus</h3>
+<h4>Donec quam felis ultricies nec pellentesque eu 
+pretium quis sem nlla consequat massa quis enim</h4>
+<h5>Donec pede justo fringilla vel aliquet nec vulputate 
+eget arcu</h5>
+<h6>In enim justo rhoncus ut imperdiet a venenatis vitae 
+justo</h6>
+<p>Lorem ipsum dolor sit amet, consectetuer adipiscing 
+elit. Aenean commodo ligula eget dolor. Aenean massa. 
+Cum sociis natoque penatibus et magnis dis parturient 
+montes, nascetur ridiculus mus. Donec quam felis, 
+ultricies nec, pellentesque eu, pretium quis, sem.</p>
+
+
+Styleguide HTML.Typography
+
+*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+td,
+th {
   /* Safari */
   transition: line-height 1s;
   /* Safari */
@@ -6094,17 +6219,418 @@ h1, h2, h3, h4, h5, h6, p, td, th {
 }
 
 /*
+Scrollable Table
+
+Sometimes you have a table that will need a scrable comparison. 
+
+Markup:
+<table class="data">
+  <tr>
+    <th>Entry Header 1</th>
+    <th>Entry Header 2</th>
+    <th>Entry Header 3</th>
+    <th>Entry Header 4</th>
+  </tr>
+  <tr>
+    <td>Entry First Line 1</td>
+    <td>Entry First Line 2</td>
+    <td>Entry First Line 3</td>
+    <td>Entry First Line 4</td>
+  </tr>
+  <tr>
+    <td>Entry Line 1</td>
+    <td>Entry Line 2</td>
+    <td>Entry Line 3</td>
+    <td>Entry Line 4</td>
+  </tr>
+  <tr>
+    <td>Entry Last Line 1</td>
+    <td>Entry Last Line 2</td>
+    <td>Entry Last Line 3</td>
+    <td>Entry Last Line 4</td>
+  </tr>
+</table>
+
+Styleguide HTML.Table
+*/
+/*
+Scrollable Table
+
+Sometimes you have a table that will need a scrable comparison. 
+
+Markup:
+<div class="table-scrollable-container">
+<div class="instructions"> <i class="fa fa-long-arrow-left"></i> Scroll For Software Companies  <i class="fa fa-long-arrow-right"></i> </div>
+    <table class="table-scrollable">
+        <thead>
+            <tr>
+                <th>Certified NCDR Software Vendor</th>
+                <th>IMPACT Registry</th>
+                <th>ACTION Registry</th>
+                <th>PVI Registry</th>
+                <th>CathPCI Registry</th>
+                <th>ICD Registry</th>
+                <th>AFib Registry</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><a href="#157" class="parent-cell">ARMUS Corporation</a></td>
+                <td>Certified 04/21/2017</td>
+                <td>Certified 12/23/14</td>
+                <td>Certified October 18, 2017
+                </td>
+                <td>Certified - Interoperable with ACTION v2 07/14/10</td>
+                <td>Certified 08/05/2016</td>
+                <td>Certified 08/05/2016</td>
+            </tr>
+            <tr>
+                <td><a href="#101" class="parent-cell">Axis Clinical Software, Inc.</a></td>
+                <td>Certified 08/24/2016</td>
+                <td>Interoperable with CathPCI and ICD v4 01/13/15</td>
+                <td>Certified 11/07/2014</td>
+                <td>Certified Interoperable with ACTION v2 10/28/11 and ICD v2 04/13/12
+                    <br><b>*Metric License </b></td>
+                <td>Certified 05/27/16
+                    <br><b>*Metric License </b></td>
+                <td>Certified 07/29/2016</td>
+            </tr>
+            <tr>
+                <td><a href="#127" class="parent-cell">BayaTree, LLC</a></td>
+                <td>&nbsp;
+                </td>
+                <td>Certified 07/12/2017</td>
+                <td>&nbsp;
+                </td>
+                <td>Certified 08/18/2009</td>
+                <td>Certified 05/24/16</td>
+                <td>Certified 09/09/2016</td>
+            </tr>
+            <tr>
+                <td><a href="#179" class="parent-cell">CardioAccess, Inc.</a></td>
+                <td>Certified 06/03/2016</td>
+                <td>&nbsp;
+                </td>
+                <td>&nbsp;
+                </td>
+                <td>&nbsp;
+                </td>
+                <td>&nbsp;
+                </td>
+                <td>&nbsp;
+                </td>
+            </tr>
+            <tr>
+                <td><a href="#110" class="parent-cell">CardioPulse</a></td>
+                <td>&nbsp;
+                </td>
+                <td>Interoperable with CathPCI v4 and ICD v2 04/10/15</td>
+                <td>&nbsp;
+                </td>
+                <td>Interoperable with ICD v2 and ACTION v2 9/6/11</td>
+                <td>Certified 09/08/2016</td>
+                <td>Certified 10/18/2017</td>
+            </tr>
+            <tr>
+                <td><a href="#103" class="parent-cell">Cedaron Medical, Inc.</a></td>
+                <td>Certified 01/15/2016</td>
+                <td>Interoperable with CathPCI and ICD v4 11/24/14
+                    <br><b>*Metric License </b></td>
+                <td>Certified 06/03/2014
+                    <br><b>*Metric License </b></td>
+                <td>Certified Interoperable with ACTION v2 05/04/10
+                    <br><b>*Metric License </b></td>
+                <td>Certified 05/25/16
+                    <br><b>*Metric License </b></td>
+                <td>Certified 07/13/2016</td>
+            </tr>
+            <tr>
+                <td><a href="#140" class="parent-cell">Epic</a></td>
+                <td>&nbsp;
+                </td>
+                <td>&nbsp;
+                </td>
+                <td>&nbsp;
+                </td>
+                <td>Certified 06/09/2009</td>
+                <td>Certified 04/28/2016</td>
+                <td>Certified 04/12/2017</td>
+            </tr>
+            <tr>
+                <td><a href="#205" class="parent-cell">Flexible Informatics</a></td>
+                <td>&nbsp;
+                </td>
+                <td>&nbsp;
+                </td>
+                <td>&nbsp;
+                </td>
+                <td>&nbsp;
+                </td>
+                <td>Certified 07/13/2017</td>
+                <td>Certified 07/25/2017</td>
+            </tr>
+            <tr>
+                <td><a href="#105" class="parent-cell">GE Healthcare</a></td>
+                <td>&nbsp;
+                </td>
+                <td>&nbsp;
+                </td>
+                <td>&nbsp;
+                </td>
+                <td>Certified 03/06/2009</td>
+                <td>Certified 07/07/16</td>
+                <td>Certified 07/12/2016</td>
+            </tr>
+            <tr>
+                <td><a href="#200" class="parent-cell">Health Level</a></td>
+                <td>&nbsp;
+                </td>
+                <td>&nbsp;
+                </td>
+                <td>&nbsp;
+                </td>
+                <td>Certified v4.4 12/07/2016</td>
+                <td>&nbsp;
+                </td>
+                <td>&nbsp;
+                </td>
+            </tr>
+            <tr>
+                <td><a href="#108" class="parent-cell">heartbase</a></td>
+                <td>&nbsp;
+                </td>
+                <td>Interoperable with CathPCI and ICD 05/01/15</td>
+                <td>Certified 06/18/2014</td>
+                <td>Interoperable with ACTION v2 and ICD v2 03/29/13
+                    <br><b>*Metric License </b></td>
+                <td>Certified 06/08/16</td>
+                <td>Certified 08/03/2016</td>
+            </tr>
+            <tr>
+                <td><a href="#118" class="parent-cell">Juniper Consulting Group</a></td>
+                <td>&nbsp;
+                </td>
+                <td>&nbsp;
+                </td>
+                <td>&nbsp;
+                </td>
+                <td>Certified 06/22/2009</td>
+                <td>Certified 05/24/16</td>
+                <td>Certified 11/10/2016</td>
+            </tr>
+            <tr>
+                <td><a href="#111" class="parent-cell">LUMEDX</a></td>
+                <td>Certified 03/17/2016
+                    <br><b>*Metric License </b></td>
+                <td>Interoperable with CathPCI and ICD v4 02/05/15</td>
+                <td>Certified 05/11/2015</td>
+                <td>Interoperable with ACTION v2</td>
+                <td>Certified 08/10/16
+                    <br><b>*Metric License </b></td>
+                <td>Certified 12/22/2016</td>
+            </tr>
+            <tr>
+                <td><a href="#183" class="parent-cell">Navion Healthcare Solutions</a></td>
+                <td>&nbsp;
+                </td>
+                <td>Certified 01/23/15
+                    <br><b>*Metric License </b></td>
+                <td>&nbsp;
+                </td>
+                <td>Certified 04/01/2013
+                    <br><b>*Metric License </b></td>
+                <td>Certified 08/09/16
+                    <br><b>*Metric License </b></td>
+                <td>Certified 04/19/2017</td>
+            </tr>
+            <tr>
+                <td><a href="#199" class="parent-cell">Q-Centrix</a></td>
+                <td>&nbsp;
+                </td>
+                <td>Certified v2.4 05/17/2016
+                    <br><b>*Metric License </b></td>
+                <td>&nbsp;
+                </td>
+                <td>Certified 04/28/16
+                    <br><b>*Metric License </b></td>
+                <td>Certified 11/22/2016</td>
+                <td>Certified 10/12/2017</td>
+            </tr>
+            <tr>
+                <td><a href="#138" class="parent-cell">Quantros, Inc.</a></td>
+                <td>&nbsp;
+                </td>
+                <td>&nbsp;
+                </td>
+                <td>&nbsp;
+                </td>
+                <td>Certified 09/30/2009</td>
+                <td>&nbsp;
+                </td>
+                <td>&nbsp;
+                </td>
+            </tr>
+            <tr>
+                <td><a href="#153" class="parent-cell">Quintiles</a></td>
+                <td>&nbsp;
+                </td>
+                <td>Certified 03/10/15</td>
+                <td>&nbsp;
+                </td>
+                <td>&nbsp;
+                </td>
+                <td>&nbsp;
+                </td>
+                <td>&nbsp;
+                </td>
+            </tr>
+            <tr>
+                <td><a href="#176" class="parent-cell">Scientific Software Solutions, Inc.</a></td>
+                <td>Certified 02/05/2016</td>
+                <td>&nbsp;
+                </td>
+                <td>&nbsp;
+                </td>
+                <td>&nbsp;
+                </td>
+                <td>&nbsp;
+                </td>
+                <td>&nbsp;
+                </td>
+            </tr>
+            <tr>
+                <td><a href="#174" class="parent-cell">SoftLink International Inc.</a></td>
+                <td>&nbsp;
+                </td>
+                <td>&nbsp;
+                </td>
+                <td>&nbsp;
+                </td>
+                <td>Certified 05/02/2012</td>
+                <td>Certified 05/26/2016</td>
+                <td>Certified 05/26/2016</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+Styleguide HTML.Table.Scrollable
+*/
+.table-scrollable-container:after {
+  display: table;
+  clear: both;
+  content: "";
+}
+.table-scrollable-container table {
+  display: block;
+  position: relative;
+  border-top: 0 none transparent;
+}
+.table-scrollable-container thead,
+.table-scrollable-container tbody {
+  display: block;
+}
+.table-scrollable-container thead {
+  z-index: 2;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40%;
+}
+.table-scrollable-container thead tr {
+  display: block;
+  width: 100%;
+}
+.table-scrollable-container thead th {
+  display: block;
+  height: 112px;
+  height: 7rem;
+  font-size: 1.2em;
+}
+.table-scrollable-container tbody {
+  padding-left: 40%;
+  overflow-x: scroll;
+  white-space: nowrap;
+}
+.table-scrollable-container tbody tr {
+  display: inline-block;
+  width: 90%;
+  margin-right: -0.125em;
+  white-space: normal;
+}
+.table-scrollable-container tbody td {
+  display: block;
+  width: 100%;
+  height: 112px;
+  height: 7rem;
+}
+.table-scrollable-container th,
+.table-scrollable-container td {
+  padding: 8px 16px 4px 16px;
+  padding: 0.5rem 1rem 0.25rem 1rem;
+}
+.table-scrollable-container .instructions {
+  display: block;
+  width: 100%;
+  padding: 4px 16px;
+  padding: 0.25rem 1rem;
+  font-size: 0.8333333333em;
+  text-align: center;
+}
+.table-scrollable-container .instructions .fa {
+  margin: 0 4px;
+  margin: 0 0.25rem;
+}
+
+.table-scrollable .parent-cell {
+  font-size: 1.2em;
+}
+@media print {
+  .table-scrollable-container .table-scrollable .parent-cell {
+    padding: 1em;
+  }
+  .table-scrollable-container .instructions {
+    display: none;
+  }
+  .table-scrollable-container table {
+    display: table;
+    position: relative;
+    width: 100%;
+    clear: both;
+  }
+  .table-scrollable-container table * {
+    position: relative;
+    width: auto;
+    height: auto;
+    margin: 0;
+    padding: 0;
+  }
+  .table-scrollable-container table thead,
+.table-scrollable-container table tbody,
+.table-scrollable-container table tfoot {
+    display: table-row-group;
+  }
+  .table-scrollable-container table tr {
+    display: table-row;
+  }
+  .table-scrollable-container table td,
+.table-scrollable-container table th {
+    display: table-cell;
+    padding: 5px;
+  }
+}
+/*
 Logos
 
 Logos in the design come in 4 variations the primary logo, the condensed logo, and alte version which are the reverse of primary and reversed.  All logos are controled by the width and will maintain there aspect ratios to respond to the container they are in.  For 508 compliance please place the brand name in the logo.
 
-.logo_primary	            - Primary Logo great for desktop displays best used for when the logo can be taller then 80px.
-.logo_primary-alt 	            - Primary Logo reversed for dark background situations.
-.logo_condensed.max-w_1             - Smaller Mobile Friendly Logo these logos and be readable between 40px to 80px in height. 
-.logo_condensed-alt.max-w_1                - Smaller Logo Reversed.
+.logo_primary	            		-   	Primary Logo great for desktop displays best used for when the logo can be taller then 80px.
+.logo_primary-alt 	            	-   	Primary Logo reversed for dark background situations.
+.logo_condensed.max-w_1             -  	 	Smaller Mobile Friendly Logo these logos and be readable between 40px to 80px in height. 
+.logo_condensed-alt.max-w_1         -  	 	Smaller Logo Reversed.
 
-markup:
-   <div class="bg_secondary-2 max-w_3"><div class="{{modifier_class}}"><span class="alt">{{modifier_class}}</span></div></div>
+Markup:
+<div class="bg_secondary-2 max-w_3"><div class="{{modifier_class}}"><span class="alt">{{modifier_class}}</span></div></div>
 
 Styleguide DesignBase.Logos
 
@@ -6159,8 +6685,8 @@ Seals in the design come in 3 variations the default, small, and tiny.  All Seal
 .seal_tiny	            - Smallest of the seals best used for icons when seal is 40px and bellow
 
 
-markup:
-   <div class="bg_secondary-2 max-w_1"><div class="{{modifier_class}} m_auto"><span class="alt">{{modifier_class}}</span></div></div>
+Markup:
+<div class="bg_secondary-2 max-w_1"><div class="{{modifier_class}} m_auto"><span class="alt">{{modifier_class}}</span></div></div>
 
 Styleguide DesignBase.Seals
 
@@ -6207,7 +6733,7 @@ Seals in the design come in 3 variations the default, small, and tiny.  All Seal
 .bg_right	          - cardnial left
 .bg_bottom           - cardnial left
 
-markup:
+Markup:
    <div class="bg_secondary-2 max-w_1 br_solid br_primary br_1"><div class="{{modifier_class}} seal_tiny" style="background-size:10%;width:200px; height:20px"><span class="alt">{{modifier_class}}</span></div></div>
 
 Styleguide Background.Image Positon
@@ -6239,7 +6765,7 @@ Lorem Text Loader
 
 It is often we need to have space held for a return of details or text.  
 
-markup:
+Markup:
 <div class="max-w_3">
    <h1 class="lorem-loader font_3 m-y_3">&nbsp;</h1>
    <p class="m-y_2 font_0 lorem-loader">&nbsp;</p>
@@ -6264,7 +6790,7 @@ To create an image placeholder use the lorem-loader plus an aspect of the intend
 .aspect_21x9		- lock image to a 21 to 9 ratio 
 .aspect_4x1			- lock image to a 4 to 1 ratio 
 
-markup:
+Markup:
 <div class="grid-w_2 max-w_1">
    <div class="m-y_2 lorem-loader {{modifier_class}} ">&nbsp;</div>
 </div>
@@ -6362,7 +6888,7 @@ Expanded Click Area
 
 allows for a relative container to be clickable by the link. 
 
-markup:
+Markup:
 <div class="card shadow_2 cell small-6 large-4 max-w_3" >
   <div class=" font_slab border-top-left-square c_white font_3 p_4 texture_dust card-divider bg_primary card-header">
     This is a header
@@ -6395,6 +6921,91 @@ Styleguide InteractiveExtras.Expanded Click Area
   transition-timing-function: ease;
 }
 
+/*
+Link Decorator
+
+Links with the `.link` will auto decorate with an icon of the corresponding file type
+
+.pdf Portable Document Format
+.doc Word Documents
+.txt Text Documents
+.ppt Power Points
+mailto: email links
+tel: Telephone 
+fax: Fax 
+_blank External Link icons will appear after any link that has target blank, or the href begins with http, or https
+
+Markup:
+ <a class="link" href="abc.pdf">A link that is a Pdf Document</a><br/>
+ <a class="link" href="abc.doc">A link that is a Word Document</a><br/>
+ <a class="link" href="https://www.abc.ppt">An External link that is a Power Point Document</a><br/>
+ <a class="link" href="tel:1-555-555-5555">1-555-555-5555</a><br/>
+ <a class="link" href="mailto:test@abc.org">test@abc.org</a><br/>
+ <a class="link" href="xyz.zip">A link that is a Zip Document</a><br/>
+
+ Styleguide InteractiveExtras.Links
+ */
+.icon-before:before, a.link:before,
+.icon-after:after,
+a.link[target=_blank]:after,
+a.link[href^=http]:after,
+a.link[href^=https]:after {
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  font-family: "Font Awesome 5 Pro";
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 900;
+  line-height: 1;
+  text-rendering: auto;
+}
+
+.icon-before:before, a.link:before {
+  width: 1.28571429em;
+  margin-right: 0.5em;
+  text-align: center;
+}
+
+.icon-after:after, a.link[target=_blank]:after, a.link[href^=http]:after, a.link[href^=https]:after {
+  width: 1.28571429em;
+  margin-left: 0.5em;
+  text-align: center;
+}
+
+a.link[href$=".pdf"]:before {
+  content: "";
+}
+a.link[href$=".doc"]:before, a.link[href$=".docx"]:before, a.link[href$=".txt"]:before {
+  content: "";
+}
+a.link[href$=".zip"]:before {
+  content: "";
+}
+a.link[href*=".ppt"]:before, a.link[href*=".pptx"]:before {
+  content: "";
+}
+a.link[href$=".csv"]:before, a.link[href$=".xls"]:before, a.link[href$=".xlsx"]:before {
+  content: "";
+}
+a.link[href$=".mp4"]:before, a.link[href$=".mov"]:before {
+  content: "";
+}
+a.link[target=_blank]:after, a.link[href^=http]:after, a.link[href^=https]:after {
+  content: "";
+}
+a.link[href^="mailto:"]:before {
+  content: "";
+}
+a.link[href^="tel:"]:before {
+  content: "";
+}
+a.link[href^="fax:"]:before {
+  content: "";
+}
+a.link:hover {
+  text-decoration: underline;
+}
+
 i.icon-complete_check-circle:before, .is-complete i.icon-complete_check:before, i.icon-toggle_arrow-circle:before, i.icon-toggle_caret-circle-right-down:before, i.icon-toggle_chevron-double-left-right:before, i.icon-toggle_chevron-double-up-down:before, i.icon-toggle_chevron-up-down:before, i.icon-toggle_plus-minus:before, i.icon-toggle_bars-times:before {
   margin: 0 4px;
   margin: 0 0.25rem;
@@ -6413,7 +7024,7 @@ Many momment there are needs for toggles of icon when the parent is in the state
 .icon-toggle_bars-times 					-  Toggle between bars and times
 .icon-toggle_bars-times 					-  Toggle between bars and times
 
-markup:
+Markup:
 <ul class="ul_none m_0 p_0">
 	<li class="m-t_1 is-active_toggle-function is-active c_white a:c_black flex p-x_3 p-y_2 a:bg_secondary-3 font_1 bg_success-n1">	
 			<span class="">FA Solid {{ modifier_class }}</span>
@@ -6492,7 +7103,7 @@ This variation of the icon toggle responds to `is-complete` and not is `is-activ
 .icon-complete_check					- Toggle a check mark to show.
 .icon-complete_check-circle		- Toggle a check mark to show.
 
-markup:
+Markup:
 <ul class="ul_none">
 <li class="br_solid br_secondary-5 p_3 br_1">
 	<div class="">FA Solid {{modifier_class}}</div>
@@ -6541,7 +7152,7 @@ Animated Loading Dots
 white              - text color modified light to dark
 black              - text color modified light to dark
 
-markup:
+Markup:
 <div class="p_5 bg_primary texture_medium clearboth"> 
 <div class="lds-grid">
 		<div class="dot bg_{{modifier_class}}-6 br_solid br_2 br_{{modifier_class}} br_circle"></div>
@@ -6678,7 +7289,7 @@ Scrollbar Mini
 
 Give a mini scroll bar to a content area. 
 
-markup:
+Markup:
 <div class="card shadow_2 cell small-6 large-4 max-w_3" >
     <div class=" font_slab border-top-left-square c_white font_3 p_4 texture_dust card-divider bg_primary card-header">
     This is a header
@@ -6726,45 +7337,75 @@ Styleguide InteractiveExtras.Scrollbar
 }
 
 /*
-	Social
+Social Links
 
-	The social networks that the acc is a part of 
+The social links From the Footer.
 
-	markup:
-    <div class="texture-dark">
-        <h4 class="font_slab c_white">Stay Connected</h4>
-        <ul class="flex social-bar ul_none c_white h:c_white m_0">
-            <li class="flex_auto m-r_2"><a href="https://twitter.com/accintouch" target="_blank" class="twitter social-bar--button block m-b_0 p-x_5 p-y_3 c_white-8 h:c_white text_right h:bg_primary-n1"><i class="fab fa-twitter-square font_2"></i></a></li>
-            <li class="flex_auto m-r_2"><a href="https://www.facebook.com/AmericanCollegeofCardiology" target="_blank" class="facebook social-bar--button block m-b_0 p-x_5 p-y_3 c_white-8 h:c_white text_right h:bg_primary-n1"><i class="fab fa-facebook-square font_2"></i></a></li>
-            <li class="flex_auto m-r_2"><a href="https://www.linkedin.com/groups/732607/profile" target="_blank" class="linkedin social-bar--button block m-b_0 p-x_5 p-y_3 c_white-8 h:c_white text_right h:bg_primary-n1"><i class="fab fa-linkedin font_2"></i></a></li>
-            <li class="flex_auto m-r_2"><a href="https://plus.google.com/118164094874227618578" target="_blank" class="google-plus social-bar--button block m-b_0 p-x_5 p-y_3 c_white-8 h:c_white text_right h:bg_primary-n1"><i class="fab fa-google-plus font_2"></i></a></li>
-            <li class="flex_auto m-r_2"><a href="http://www.youtube.com/user/ACCinTouch" target="_blank" class="youtube social-bar--button block m-b_0 p-x_5 p-y_3 c_white-8 h:c_white text_right h:bg_primary-n1"><i class="fab fa-youtube font_2"></i></a></li>
-        </ul>
-    </div>
 
-	Styleguide Recipe.Footer.Social Buttons
+Markup:
+<section class="social p_4 m-y_2 bg_secondary-n3 font_2">
+    <ul class="flex social-bar ul_none c_white h:c_white m_0">
+        <li class="flex_auto m-r_2"><a href="https://twitter.com/accintouch" target="_blank" class="twitter social-bar--button block m-b_0 p_3 c_white text_center opacity_7 h:opacity"><i class="fab fa-twitter-square"></i></a></li>
+        <li class="flex_auto m-r_2"><a href="https://www.facebook.com/AmericanCollegeofCardiology" target="_blank" class="facebook social-bar--button block m-b_0 p_3 c_white text_center opacity_7 h:opacity"><i class="fab fa-facebook-square"></i></a></li>
+        <li class="flex_auto m-r_2"><a href="https://www.linkedin.com/company/american-college-of-cardiology/" target="_blank" class="linkedin social-bar--button block m-b_0 p_3 c_white text_center opacity_7 h:opacity"><i class="fab fa-linkedin"></i></a></li>
+        <li class="flex_auto m-r_2"><a href="http://www.youtube.com/user/ACCinTouch" target="_blank" class="youtube social-bar--button block m-b_0 p_3 c_white text_center opacity_7 h:opacity"><i class="fab fa-youtube"></i></a></li>
+        <li class="flex_auto m-r_2"><a href="https://play.google.com/store/apps/dev?id=5189912010956845696&hl=en_US" target="_blank" class="google-play social-bar--button block m-b_0 p_3 c_white text_center opacity_7 h:opacity"><i class="fab fa-google-play"></i></a></li>
+        <li class="flex_auto m-r_2"><a href="https://apps.apple.com/us/developer/american-college-of-cardiology/id502174543#see-all/i-phonei-pad-apps" target="_blank" class="apple-store social-bar--button block m-b_0 p_3 c_white text_center opacity_7 h:opacity"><i class="fab fa-apple"></i></a></li>
+    </ul>
+</section>
+
+
+
+
+Styleguide Recipes.ACC.Social Links
 
 */
-.twitter {
-  background-color: #00aced;
-}
+/*
+Social Links Monochrome
 
-.facebook {
-  background-color: #3b5998;
-}
+The social links can be restyled to be smaller.
 
-.linkedin {
-  background-color: #007bb6;
-}
 
-.google-plus {
-  background-color: #dd4b39;
-}
+Markup:
+<section class="social p_4 m-y_2 font_n1 max-w_1 bg_white">
+    <ul class="flex social-bar ul_none m_0">
+        <li class="flex_shrink m-r_2"><a href="https://twitter.com/accintouch" target="_blank" class="twitter bg_secondary-n1 block c_secondary-n4 h:bg_accent h:c_white m-b_0 p-x_3 p_2 social-bar--button text_center transition_0 "><i class="fab fa-twitter-square"></i></a></li>
+        <li class="flex_shrink m-r_2"><a href="https://www.facebook.com/AmericanCollegeofCardiology" target="_blank" class="facebook bg_secondary-n1 block c_secondary-n4 h:bg_accent h:c_white m-b_0 p-x_3 p_2 social-bar--button text_center transition_0 "><i class="fab fa-facebook-square"></i></a></li>
+        <li class="flex_shrink m-r_2"><a href="https://www.linkedin.com/company/american-college-of-cardiology/" target="_blank" class="linkedin bg_secondary-n1 block c_secondary-n4 h:bg_accent h:c_white m-b_0 p-x_3 p_2 social-bar--button text_center transition_0 "><i class="fab fa-linkedin"></i></a></li>
+        <li class="flex_shrink m-r_2"><a href="http://www.youtube.com/user/ACCinTouch" target="_blank" class="youtube bg_secondary-n1 block c_secondary-n4 h:bg_accent h:c_white m-b_0 p-x_3 p_2 social-bar--button text_center transition_0 "><i class="fab fa-youtube"></i></a></li>
+        <li class="flex_shrink m-r_2"><a href="https://play.google.com/store/apps/dev?id=5189912010956845696&hl=en_US" target="_blank" class="google-play bg_secondary-n1 block c_secondary-n4 h:bg_accent h:c_white m-b_0 p-x_3 p_2 social-bar--button text_center transition_0 "><i class="fab fa-google-play"></i></a></li>
+        <li class="flex_shrink m-r_2"><a href="https://apps.apple.com/us/developer/american-college-of-cardiology/id502174543#see-all/i-phonei-pad-apps" target="_blank" class="apple-store bg_secondary-n1 block c_secondary-n4 h:bg_accent h:c_white m-b_0 p-x_3 p_2 social-bar--button text_center transition_0 "><i class="fab fa-apple"></i></a></li>
+    </ul>
+</section>
 
-.youtube {
-  background-color: #bb0000;
-}
 
+
+
+Styleguide Recipes.ACC.Social Links.Mono Chrome
+
+*/
+/*
+Social Links Smaller
+
+The social links can be restyled to be smaller.
+
+
+Markup:
+<section class="social p_4 m-y_2 font_0 max-w_1  bg_white">
+    <ul class="flex social-bar ul_none c_white m_0">
+        <li class="flex_auto m-r_2"><a href="https://twitter.com/accintouch" target="_blank" class="twitter social-bar--button br_radius block m-b_0 p_2 c_white-8 h:c_white text_center h:bg_primary-n3"><i class="fab fa-twitter-square"></i></a></li>
+        <li class="flex_auto m-r_2"><a href="https://www.facebook.com/AmericanCollegeofCardiology" target="_blank" class="facebook social-bar--button br_radius block m-b_0 p_2 c_white-8 h:c_white text_center opacity_8 h:opacity"><i class="fab fa-facebook-square"></i></a></li>
+        <li class="flex_auto m-r_2"><a href="https://www.linkedin.com/company/american-college-of-cardiology/" target="_blank" class="linkedin social-bar--button br_radius block m-b_0 p_2 c_white-8 h:c_white text_center opacity_8 h:opacity"><i class="fab fa-linkedin"></i></a></li>
+        <li class="flex_auto m-r_2"><a href="http://www.youtube.com/user/ACCinTouch" target="_blank" class="youtube social-bar--button br_radius block m-b_0 p_2 c_white-8 h:c_white text_center opacity_8 h:opacity"><i class="fab fa-youtube"></i></a></li>
+        <li class="flex_auto m-r_2"><a href="https://play.google.com/store/apps/dev?id=5189912010956845696&hl=en_US" target="_blank" class="google-play social-bar--button br_radius block m-b_0 p_2 c_white-8 h:c_white text_center opacity_8 h:opacity"><i class="fab fa-google-play"></i></a></li>
+        <li class="flex_auto m-r_2"><a href="https://apps.apple.com/us/developer/american-college-of-cardiology/id502174543#see-all/i-phonei-pad-apps" target="_blank" class="apple-store social-bar--button br_radius block m-b_0 p_2 c_white-8 h:c_white text_center opacity_8 h:opacity"><i class="fab fa-apple"></i></a></li>
+    </ul>
+</section>
+
+
+Styleguide Recipes.ACC.Social Links.Smaller
+
+*/
 /*
  Design Base
 
@@ -6788,7 +7429,7 @@ Roboto Slab
 
  A beuatiful slab font that shows a complexity and texture to the fonts used in the design. 
 
- markup:
+ Markup:
 	<div class="font_slab">
 		<h2 class="font_slab group-divide-bottom font--name small-12">
 			Roboto Slab
@@ -6816,7 +7457,7 @@ Maven Pro
 
  A Slick font that has a slight interest used for headers and UI. 
 
- markup:
+ Markup:
 	<div class="font_display">
 		<h2 class="font_display group-divide-bottom font--name small-12">
 			Maven Pro
@@ -6844,7 +7485,7 @@ Muli
 
  A clean font for content and text of none UI elements. 
 
- markup:
+ Markup:
 	<div class="font_copy">
 		<h2 class=" group-divide-bottom font--name small-12">
 			Muli
@@ -6882,7 +7523,7 @@ Icons: Font Icons
 
  Font Awesome Pro
 
- markup:
+ Markup:
 <ul class="ul_none list m_0 p_0 flex flex_wrap justify-start items-start">
     <li class="relative br_secondary-4 br_solid br_1 flex_auto w-grid_3"><div class="flex"><div class="font_5 cell w-grid_3 text_center p_3 no-underline c_inherit flex_shrink justify_center h:bg_navigation-n3 h:c_white bg_secondary-5 expanded-click-area"><i class="fas fa-award"></i></div><div class="flex_auto p_4 p-y_2 self_center"><span class="c_secondary h:c_secondary-n2 text font_bold font_display">award</span></div></div></li>
     <li class="relative br_secondary-4 br_solid br_1 flex_auto w-grid_3"><div class="flex"><div class="font_5 cell w-grid_3 text_center p_3 no-underline c_inherit flex_shrink justify_center h:bg_navigation-n3 h:c_white bg_secondary-5 expanded-click-area"><i class="fas fa-ban"></i></div><div class="flex_auto p_4 p-y_2 self_center"><span class="c_secondary h:c_secondary-n2 text font_bold font_display">ban</span></div></div></li>
@@ -6910,7 +7551,7 @@ Icons: Solid
 
  Font Awesome Pro Solid use `fas` when applying the icon to make it solid or bold
 
- markup:
+ Markup:
 <ul class="ul_none list m_0 p_0 flex flex_wrap justify-start items-start">
     <li class="relative br_secondary-4 br_solid br_1 flex_auto w-grid_3"><div class="flex"><div class="font_5 cell w-grid_3 text_center p_3 no-underline c_inherit flex_shrink justify_center h:bg_navigation-n3 h:c_white bg_secondary-5 expanded-click-area"><i class="fas fa-award"></i></div><div class="flex_auto p_4 p-y_2 self_center"><span class="c_secondary h:c_secondary-n2 text font_bold font_display">award</span></div></div></li>
 	<li class="relative br_secondary-4 br_solid br_1 flex_auto w-grid_3"><div class="flex"><div class="font_5 cell w-grid_3 text_center p_3 no-underline c_inherit flex_shrink justify_center h:bg_navigation-n3 h:c_white bg_secondary-5 expanded-click-area"><i class="fas fa-ban"></i></div><div class="flex_auto p_4 p-y_2 self_center"><span class="c_secondary h:c_secondary-n2 text font_bold font_display">ban</span></div></div></li>
@@ -6931,7 +7572,7 @@ Icons: Light
 
  Font Awesome Pro Light use `fal` when applying the icon to make it light
 
- markup:
+ Markup:
 <ul class="ul_none list m_0 p_0 flex flex_wrap justify-start items-start">
     <li class="relative br_secondary-4 br_solid br_1 flex_auto w-grid_3"><div class="flex"><div class="font_5 cell w-grid_3 text_center p_3 no-underline c_inherit flex_shrink justify_center h:bg_navigation-n3 h:c_white bg_secondary-5 expanded-click-area"><i class="fal fa-award"></i></div><div class="flex_auto p_4 p-y_2 self_center"><span class="c_secondary h:c_secondary-n2 text font_bold font_display">award</span></div></div></li>
     <li class="relative br_secondary-4 br_solid br_1 flex_auto w-grid_3"><div class="flex"><div class="font_5 cell w-grid_3 text_center p_3 no-underline c_inherit flex_shrink justify_center h:bg_navigation-n3 h:c_white bg_secondary-5 expanded-click-area"><i class="fal fa-ban"></i></div><div class="flex_auto p_4 p-y_2 self_center"><span class="c_secondary h:c_secondary-n2 text font_bold font_display">ban</span></div></div></li>
@@ -6952,7 +7593,7 @@ Icons: Regular
 
  Font Awesome Pro Light use `fal` when applying the icon to make it light
 
- markup:
+ Markup:
 <ul class="ul_none list m_0 p_0 flex flex_wrap justify-start items-start">
     <li class="relative br_secondary-4 br_solid br_1 flex_auto w-grid_3"><div class="flex"><div class="font_5 cell w-grid_3 text_center p_3 no-underline c_inherit flex_shrink justify_center h:bg_navigation-n3 h:c_white bg_secondary-5 expanded-click-area"><i class="far fa-award"></i></div><div class="flex_auto p_4 p-y_2 self_center"><span class="c_secondary h:c_secondary-n2 text font_bold font_display">award</span></div></div></li>
     <li class="relative br_secondary-4 br_solid br_1 flex_auto w-grid_3"><div class="flex"><div class="font_5 cell w-grid_3 text_center p_3 no-underline c_inherit flex_shrink justify_center h:bg_navigation-n3 h:c_white bg_secondary-5 expanded-click-area"><i class="far fa-ban"></i></div><div class="flex_auto p_4 p-y_2 self_center"><span class="c_secondary h:c_secondary-n2 text font_bold font_display">ban</span></div></div></li>
@@ -6981,7 +7622,7 @@ Interactions can be enhanced with toggle icons or loading graphics to show the s
 
  Arches is strongly based on utility classes styling everything so it commonly just builds on either the base of the browser defaults or the defaults of the framework that is built on. This is a kitchen sink of html elements so you can see how this variation will effect html. There is No basic styling around the pure DOM with the utlity class only.  To get full brand styling use a framework based version of arches.  
 
-markup:
+Markup:
 <main><section><hgroup><h1>h1 HTML5 Kitchen Sink</h1><h2>h2 Back in my quaint <a href="#">garden</a></h2><h3>h3 Jaunty <a href="#">zinnias</a> vie with flaunting phlox</h3><h4>h4 Five or six big jet planes zoomed quickly by the new tower.</h4><h5>h5 Expect skilled signwriters to use many jazzy, quaint old alphabets effectively.</h5><h6>h6 Pack my box with five dozen liquor jugs.</h6></hgroup></section><hr><section><header><nav><ul><li><a href="#">Home</a></li><li><a href="#">About</a></li><li><a href="#">Contact</a></li></ul></nav></header><article><p>This paragraph is nested inside an article. It contains many different, sometimes useful, <a href="https://www.w3schools.com/tags/">HTML5 tags</a>. Of course there are classics like <em>emphasis</em>, <strong>strong</strong>, and <small>small</small> but there are many others as well. Hover the following text for abbreviation tag: <abbr title="abbreviation">abbr</abbr>. Similarly, you can use acronym tag like this: <acronym title="For The Win">ftw</acronym>. You can define <del>deleted text</del> which often gets replaced with <ins>inserted</ins> text.</p><p>You can also use <kbd>keyboard text</kbd>, which sometimes is styled similarly to the <code>&lt;code&gt;</code> or <samp>samp</samp> tags. Even more specifically, there is a tag just for <var>variables</var>. Not to be mistaken with blockquotes below, the quote tag lets you denote something as <q>quoted text</q>. Lastly don't forget the sub (H<sub>2</sub>O) and sup (E = MC<sup>2</sup>) tags.</p></article><aside>This is an aside.</aside><footer>This is footer for this section</footer></section><hr><section><blockquote><p>Blockquote: I quickly explained that many big jobs involve few hazards</p></blockquote><blockquote><p>This is a mult-line blockquote with a cite reference. People think focus means saying yes to the thing you’ve got to focus on. But that’s not what it means at all. It means saying no to the hundred other good ideas that there are. You have to pick carefully. I’m actually as proud of the things we haven’tdone as the things I have done. Innovation is saying no to 1,000 things. <cite>Steve Jobs – Apple Worldwide Developers’ Conference, 1997</cite></p></blockquote></section><hr><section><table><caption>Tables can have captions now.</caption><tbody><tr><th>Person</th><th>Number</th><th>Third Column</th></tr><tr><td>Someone Lastname</td><td>900</td><td>Nullam quis risus eget urna mollis ornare vel eu leo.</td></tr><tr><td><a href="#">Person Name</a></td><td>1200</td><td>Vestibulum id ligula porta felis euismod semper. Donec ullamcorper nulla non metus auctor fringilla.</td></tr><tr><td>Another Person</td><td>1500</td><td>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Nullam id dolor id nibh ultricies vehicula ut id elit.</td></tr><tr><td>Last One</td><td>2800</td><td>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</td></tr></tbody></table></section><hr><section><dl><dt>Definition List Title</dt><dd>Definition list division.</dd><dt>Kitchen Sink</dt><dd>Used in expressions to describe work in which all conceivable (and some inconceivable) sources have been mined. In this case, a bunch of markup.</dd><dt>aside</dt><dd>Defines content aside from the page content</dd><dt>blockquote</dt><dd>Defines a section that is quoted from another source</dd></dl></section><hr><section><ul><li>Unordered List item one<ul><li>Nested list item<ul><li>Level 3, item one</li><li>Level 3, item two</li><li>Level 3, item three</li><li>Level 3, item four</li></ul></li><li>List item two</li><li>List item three</li><li>List item four</li></ul></li><li>List item two</li><li>List item three</li><li>List item four</li></ul><hr><ol><li>List item one<ol><li>List item one<ol><li>List item one</li><li>List item two</li><li>List item three</li><li>List item four</li></ol></li><li>List item two</li><li>List item three</li><li>List item four</li></ol></li><li>List item two</li><li>List item three</li><li>List item four</li></ol></section><hr><section><address>1 Infinite Loop<br>Cupertino, CA 95014<br>United States</address></section><hr><section><pre>
 pre {
   display: block;
@@ -7092,11 +7733,65 @@ pre {
 }
 
 /*
+	Bootstrap Recipes
+
+	Combination of UCs and Base Components from the Bootstrap can make an infinate amount of alterations to designs and layouts. Bellow are some alteratoins to the Bootstrap Components with the Utiltity Classes. 
+
+	Styleguide Recipes.Bootstrap
+
+*/
+/*
+Basic Bootstrap
+
+Bootstrap nav un styled from the bootstrap documentation found here. <a href="https://getbootstrap.com/docs/4.0/components/navbar/">Bootstrap 4: Nav</a>
+
+Markup:
+<nav class="bg_secondary-2 navbar navbar-expand-lg navbar-light p-y_2">
+  <a class="navbar-brand" href="#">Navbar</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dropdown
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#">Disabled</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+
+Weight: -1
+
+Styleguide Recipes.Boot.BootNav
+
+*/
+/*
 	ACC.org Recipes
 
-	Combination of UCs and Base Components from the Framework can make an infinate amount of alterations to designs and layouts. Bellow are some alteratoins to the Bootstrap Components with the Utiltity Classes. 
+	The use of Utiltiy Class give us the ablitiy to create much of the UI needed for ACC.org without expanding on the base of the styles that are written.  Included are patterns to create some of the complex UI inside of ACC.org
 
-	Styleguide Recipes
+	Styleguide Recipes.ACC
 
 */
 /*
@@ -7356,7 +8051,7 @@ Markup:
 	<!-- column 4 -->
 	<div class="flex_auto p-x_3 p-y_4:lg w-grid_3:lg w-grid_6:md relative">
 		<section class="acc-websites m-y_3">
-			<nav class="clearfix block font_bold font_ui">
+			<nav class="clearfix block font_bold font_ui w_100">
 				<ul class="font_1 lh_4 ul_none">
 					<li class="c_white">
 						<a target="_blank" class="c_white block h:bg_black-2 h:c_white" href="http://www.acc.org">
@@ -7436,24 +8131,16 @@ Markup:
 			</div>
 		</section>
 		<section class="l_0 r_0 social m-t_4 relative absolute:md  b_4">
-				<ul class="flex social-bar ul_none c_white h:c_white m_0">
-					<li class="flex_auto m-r_2">
-						<a href="https://twitter.com/accintouch" target="_blank" class="twitter social-bar--button block m-b_0 p_3 c_white-8 h:c_white text_center opacity_6 h:opacity"><i class="fab fa-twitter-square font_2"></i></a>
-					</li>
-					<li class="flex_auto m-r_2">
-						<a href="https://www.facebook.com/AmericanCollegeofCardiology" target="_blank" class="facebook social-bar--button block m-b_0 p_3 c_white-8 h:c_white text_center opacity_6 h:opacity"><i class="fab fa-facebook-square font_2"></i></a>
-					</li>
-					<li class="flex_auto m-r_2">
-						<a href="http://www.youtube.com/user/ACCinTouch" target="_blank" class="youtube social-bar--button block m-b_0 p_3 c_white-8 h:c_white text_center opacity_6 h:opacity"><i class="fab fa-youtube font_2"></i></a>
-					</li>
-				<li class="flex_auto m-r_2">
-						<a href="https://play.google.com/store/apps/dev?id=5189912010956845696&hl=en_US" target="_blank" class="google-plus social-bar--button block m-b_0 p_3 c_white-8 h:c_white text_center opacity_6 h:opacity"><i class="fab fa-google-play font_2"></i></a>
-					</li><li class="flex_auto m-r_2">
-						<a href="https://apps.apple.com/us/developer/american-college-of-cardiology/id502174543#see-all/i-phonei-pad-apps" target="_blank" class="linkedin social-bar--button block m-b_0 p_3 c_white-8 h:c_white text_center opacity_6 h:opacity"><i class="fab fa-apple font_2"></i></a>
-					</li>
-					</ul>
-			</section>
-		</div>
+			<ul class="flex social-bar ul_none c_white h:c_white m_0">
+				<li class="flex_auto m-r_2"><a href="https://twitter.com/accintouch" target="_blank" class="twitter social-bar--button block m-b_0 p_3 c_white text_center opacity_7 h:opacity"><i class="fab fa-twitter-square"></i></a></li>
+				<li class="flex_auto m-r_2"><a href="https://www.facebook.com/AmericanCollegeofCardiology" target="_blank" class="facebook social-bar--button block m-b_0 p_3 c_white text_center opacity_7 h:opacity"><i class="fab fa-facebook-square"></i></a></li>
+				<li class="flex_auto m-r_2"><a href="https://www.linkedin.com/company/american-college-of-cardiology/" target="_blank" class="linkedin social-bar--button block m-b_0 p_3 c_white text_center opacity_7 h:opacity"><i class="fab fa-linkedin"></i></a></li>
+				<li class="flex_auto m-r_2"><a href="http://www.youtube.com/user/ACCinTouch" target="_blank" class="youtube social-bar--button block m-b_0 p_3 c_white text_center opacity_7 h:opacity"><i class="fab fa-youtube"></i></a></li>
+				<li class="flex_auto m-r_2"><a href="https://play.google.com/store/apps/dev?id=5189912010956845696&hl=en_US" target="_blank" class="google-play social-bar--button block m-b_0 p_3 c_white text_center opacity_7 h:opacity"><i class="fab fa-google-play"></i></a></li>
+				<li class="flex_auto m-r_2"><a href="https://apps.apple.com/us/developer/american-college-of-cardiology/id502174543#see-all/i-phonei-pad-apps" target="_blank" class="apple-store social-bar--button block m-b_0 p_3 c_white text_center opacity_7 h:opacity"><i class="fab fa-apple"></i></a></li>
+			</ul>
+		</section>
+	</div>
 </div>
 <!-- / footer -->
 <div id="subfooter bg_primary-n1 c_white" class="bg_primary c_white font_n1 p-x_4 p-y_4">
@@ -7520,83 +8207,6 @@ Styleguide Recipes.ACC.Footer
     content: "";
   }
 }
-/*
-ACC.org Social Links
-
-The social links of the footer can be resizes to fit area other then the footer by modifying the font size on the root.
-
-
-Markup:
-<section class="social p_4 m-y_2 bg_secondary-n3 font_2">
-    <ul class="flex social-bar ul_none c_white h:c_white m_0">
-        <li class="flex_auto m-r_2"><a href="https://twitter.com/accintouch" target="_blank" class="twitter social-bar--button block m-b_0 p_3 c_white-8 h:c_white text_center opacity_6 h:opacity"><i class="fab fa-twitter-square"></i></a></li>
-        <li class="flex_auto m-r_2"><a href="https://www.facebook.com/AmericanCollegeofCardiology" target="_blank" class="facebook social-bar--button block m-b_0 p_3 c_white-8 h:c_white text_center opacity_6 h:opacity"><i class="fab fa-facebook-square"></i></a></li>
-        <li class="flex_auto m-r_2"><a href="http://www.youtube.com/user/ACCinTouch" target="_blank" class="youtube social-bar--button block m-b_0 p_3 c_white-8 h:c_white text_center opacity_6 h:opacity"><i class="fab fa-youtube"></i></a></li>
-        <li class="flex_auto m-r_2"><a href="https://play.google.com/store/apps/dev?id=5189912010956845696&hl=en_US" target="_blank" class="google-plus social-bar--button block m-b_0 p_3 c_white-8 h:c_white text_center opacity_6 h:opacity"><i class="fab fa-google-play"></i></a></li>
-        <li class="flex_auto m-r_2"><a href="https://apps.apple.com/us/developer/american-college-of-cardiology/id502174543#see-all/i-phonei-pad-apps" target="_blank" class="linkedin social-bar--button block m-b_0 p_3 c_white-8 h:c_white text_center opacity_6 h:opacity"><i class="fab fa-apple"></i></a></li>
-    </ul>
-</section>
-<section class="social p_4 m-y_2 font_0 max-w_1">
-    <ul class="flex social-bar ul_none c_white h:c_white m_0">
-        <li class="flex_auto m-r_2"><a href="https://twitter.com/accintouch" target="_blank" class="twitter social-bar--button br_radius block m-b_0 p_2 c_white-8 h:c_white text_center opacity_8 h:opacity"><i class="fab fa-twitter-square"></i></a></li>
-        <li class="flex_auto m-r_2"><a href="https://www.facebook.com/AmericanCollegeofCardiology" target="_blank" class="facebook social-bar--button br_radius block m-b_0 p_2 c_white-8 h:c_white text_center opacity_8 h:opacity"><i class="fab fa-facebook-square"></i></a></li>
-        <li class="flex_auto m-r_2"><a href="http://www.youtube.com/user/ACCinTouch" target="_blank" class="youtube social-bar--button br_radius block m-b_0 p_2 c_white-8 h:c_white text_center opacity_8 h:opacity"><i class="fab fa-youtube"></i></a></li>
-        <li class="flex_auto m-r_2"><a href="https://play.google.com/store/apps/dev?id=5189912010956845696&hl=en_US" target="_blank" class="google-plus social-bar--button br_radius block m-b_0 p_2 c_white-8 h:c_white text_center opacity_8 h:opacity"><i class="fab fa-google-play"></i></a></li>
-        <li class="flex_auto m-r_2"><a href="https://apps.apple.com/us/developer/american-college-of-cardiology/id502174543#see-all/i-phonei-pad-apps" target="_blank" class="linkedin social-bar--button br_radius block m-b_0 p_2 c_white-8 h:c_white text_center opacity_8 h:opacity"><i class="fab fa-apple"></i></a></li>
-    </ul>
-</section>
-
-Weight: 10
-
-Styleguide Recipes.ACC.Footer.Social Links
-
-*/
-/*
-Basic Bootstrap
-
-Bootstrap nav un styled from the bootstrap documentation found here. <a href="https://getbootstrap.com/docs/4.0/components/navbar/">Bootstrap 4: Nav</a>
-
-Markup:
-<nav class="bg_secondary-2 navbar navbar-expand-lg navbar-light p-y_2">
-  <a class="navbar-brand" href="#">Navbar</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Dropdown
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Something else here</a>
-        </div>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link disabled" href="#">Disabled</a>
-      </li>
-    </ul>
-    <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-    </form>
-  </div>
-</nav>
-
-Weight: -1
-
-Styleguide Recipes.ACC.BootNav
-
-*/
 /*
 Login Nav
 
@@ -9104,7 +9714,7 @@ Styleguide Recipes.ACC.Branded Nav
 
 */
 /*
-ACC.org Footer
+ACC.org Member
 
 Member Pages 
 
@@ -9127,13 +9737,7 @@ Markup:
 					</p>
 				</div>
 				<div class="col-sm-3">
-					<p>
-						<a
-							href="https://memberapp.acc.org/"
-							class="bg_white br_radius btn btn-block btn-lg c_primary font_bold m-t_5"
-							>Join Now</a
-						>
-					</p>
+						<a href="https://memberapp.acc.org/" class="bg_white br_radius btn btn-block btn-lg c_primary font_bold h:bg_white-3 h:c_white m-t_5 transition_1">Join Now</a>
 					<ul class="c_white-6 font_n2 lh_2 m-r_3 m-t_n3 text_right ul_none">
 						<li>Already a member</li>
 						<li>Access your profile</li>
@@ -9170,7 +9774,7 @@ Markup:
 					</p>
 				</div>
 				<div class="col-sm-12">
-					<a class="bg_secondary-4 block br_radius btn btn-small m-t_3 m_auto w_40">Explore All Benefits</a>
+					<a class="bg_secondary-4 block br_radius btn btn-small h:bg_secondary-n2 h:c_white m-t_3 m_auto transition_0 w_40">Explore All Benefits</a>
 				</div>
 			</div>
 		</div>
@@ -9295,7 +9899,7 @@ Anatomy
 <h2>Anatomy of a Utility Class Name</h2>
 The breakdown of the names for UCs follow a structured patter for easy muscle memory learning. 
 
-  markup:
+  Markup:
   <p class="font_2">All of the Class Names follow this ordered pattern of construction.</p>
   <ol class="font_1 font_bold m_4 br_solid br_1 br_secondary-4 lh_4" style="list-style-position: inside;">
         <li class="p_2 bg_success-3">State - Hover <em>(Optional)</em></li>
@@ -9400,7 +10004,7 @@ Styleguide Typography
   .font_ui          -  Font Normal:  Used components like navs and dense ui elements            
   .font_mono         - Used is quotes or data or code       
 
-  markup:
+  Markup:
   <div class="{{modifier_class}} font_3">
     <div class="lowercase">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
     <div class="uppercase">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
@@ -9436,7 +10040,7 @@ Styleguide Typography
   .font_normal            - Sets font style to normal
   .font_italic            - Sets font style to italic      
 
-  markup:
+  Markup:
   <div class="{{modifier_class}} font_normal font_2">
     <div class="lowercase">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
     <div class="uppercase">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
@@ -9465,7 +10069,7 @@ You can change the color of the text with some simple use classes.
 .c_warning -  text that's warning the user
 .c_inherit - text that inherits from its parent
 
-markup:
+Markup:
 <div class="{{modifier_class}} font_normal font_2 font_bold bg_secondary-4 p_3">
   <div class="text-lowercase">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
   <div class="text-uppercase">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
@@ -9963,7 +10567,7 @@ black and white fonts can be modified to have levels of transparency between 0-9
 .c_black -  text that's black
 
 
-markup:
+Markup:
 <div class="font_normal font_2 bg_primary font_ui">
   <div class="{{modifier_class}} p_3">
     <div class="font_3 font_bold">{{modifier_class}} </div>
@@ -10135,7 +10739,7 @@ Styleguide Typography.Font.Color Transparency
   .font_bold             -  Bold, 700 
   .font_xbold            -  Extra Bold, 900
 
-  markup:
+  Markup:
   <div class="{{modifier_class}} font_normal font_2 font_ui">
     <div class="lowercase">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
     <div class="uppercase">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
@@ -10181,7 +10785,7 @@ Styleguide Typography.Font.Color Transparency
   .font_n4 - even smaller
   .font_n5 - smallest
 
-  markup:
+  Markup:
   <div class="{{modifier_class}} font_normal">
     <div class="lowercase pre-wrap">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
     <div class="uppercase pre-wrap">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
@@ -10408,7 +11012,7 @@ Styleguide Typography.Font.Color Transparency
   .pre-wrap       - alter the wrapping style to pre-wrap    
   .nowrap         - alter the wrapping style to nowrap  
 
-  markup:
+  Markup:
   <div class="{{modifier_class}} font_normal max-w_1">
     Quae sapiente reprehenderit explicabo esse consequatur error fugiat. Voluptas odit ipsam architecto quae perspiciatis nostrum autem at. Ut veritatis molestiae distinctio autem repudiandae voluptatem voluptatibus aspernatur.
   </div>
@@ -10470,7 +11074,7 @@ Styleguide Typography.Font.Color Transparency
   .lowercase              - lowercase the text
   .capitalize             - capitalize the text
 
-	markup:
+	Markup:
 	<div class="{{modifier_class}} p_3 br_solid font_bold br_black-1 br_1 bg bg_primary c_white">text has a decoration of {{modifier_class}} <a>I am a link also decorated</a></div>
 
 	Styleguide Typography.Text.Decoration
@@ -10523,7 +11127,7 @@ Styleguide Typography.Font.Color Transparency
 	.text-shadow_none			- no shadow
 
 
-	markup:
+	Markup:
 	<div class="{{modifier_class}} p_3 br_solid font_bold br_black-1 br_1 bg bg_primary c_white">text has shadow of {{modifier_class}}</div>
 
 	Styleguide Typography.Text.Shadow
@@ -10554,7 +11158,7 @@ Text Indent
 
 indent text needs to have a mondifier to like `text-indent_2
 
-markup:
+Markup:
 <div class="font_normal font_1 m-x_5 br_solid br-l_1 br_black-4">
 <p class="text-indent_n3">text that has an indent magnitude of n3 </p>
 <p class="text-indent_n2">text that has an indent magnitude of n2 </p>
@@ -10608,7 +11212,7 @@ Styleguide Typography.Text.Indent
   .lh_4             -  1.75     
   .lh_5             -  2.5     
 
-  markup:
+  Markup:
   <div class="font_normal font_1 p_3">
     <h3 class="font_2 font_bold c_secondary_3 p-b_3">{{modifier_class}}</h3>
     <p class="{{modifier_class}}">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
@@ -10649,7 +11253,7 @@ Styleguide Typography.Text.Indent
   .text_center             -  center alignment           
   .text_left             -  left alignment      
 
-  markup:
+  Markup:
   <div class="font_normal font_1 p_3">
     <h3 class="font_2 font_bold c_secondary_3 p-b_3 {{modifier_class}}">{{modifier_class}}</h3>
     <p class="{{modifier_class}} lh_2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
@@ -10678,7 +11282,7 @@ Styleguide Typography.Text.Indent
   .ul_bullet          -  bullet          
   .ul_square          -  square      
 
-  markup:
+  Markup:
   <div class="font_normal font_1 p_3">
     <h3 class="font_2 font_bold c_secondary_3 p-b_3">{{modifier_class}}</h3>
     <ul class="{{modifier_class}}">
@@ -10754,7 +11358,7 @@ Margin
 .m-l_n4 				- Left margin set to negative  global margin
 .m-b_n4 				- Bottom margin set to negative  global margin
 
-markup:
+Markup:
 <div class="bg_warning-3 d-block br_1 br_solid">
 	<div class="{{modifier_class}} p_2 bg_primary text_center c_white cell auto opacity_5 d-block">Container With Margins</div>
 </div>
@@ -11848,7 +12452,7 @@ Padding
 .p-l_4         - Left padding set to global padding
 .p-b_4       - Bottom padding set to global padding
 
-markup:
+Markup:
 <div class="{{modifier_class}} br_solid br_transparent bg_alert-3  text_center">
 	<div class="bg_primary-5 text_center">Content With Padding</div>
 </div>
@@ -12449,7 +13053,7 @@ sticky   		- sticky positioned block
 
 
 
-markup:
+Markup:
 <div class="br_solid br_transparent bg_accent-3 relative p_5" style="height:200px;">
 	<div class="bg_primary-5 text_center {{modifier_class}}">Position {{modifier_class}}</div>
 </div>
@@ -12559,7 +13163,7 @@ Position Location
 .l_5 - modify right of an absolute positioned block 
 
 
-markup:
+Markup:
 <div class=" br_solid br_transparent bg_accent-3 relative p_5" style="height:200px;">
 	<div class="bg_primary-5 text_center absolute {{modifier_class}}">Position Absolute {{modifier_class}}</div>
 </div>
@@ -13284,7 +13888,7 @@ Float
 .float_right - modify float of a block 
 
 
-markup:
+Markup:
 <div class=" br_solid br_transparent bg_accent-3 relative p_5" style="height:200px;">
 	<div class="bg_primary-5 text_center {{modifier_class}}">Position Absolute {{modifier_class}}</div>
 </div>
@@ -13365,7 +13969,7 @@ Styleguide display
 	.flex-inline            - the element is now flex-inline
 	.display_none             		- the element is now display none
 
-	markup:
+	Markup:
 	<div class="br_solid br_transparent bg_alert-3  text_center">
 		<div class="bg_primary-5 text_center {{modifier_class}}">Content</div>
 	</div>
@@ -13470,7 +14074,7 @@ Styleguide display
 	.vertical-align_baseline          		- the child is aligned to the top
 
 
-	markup:
+	Markup:
 	<div class="br_solid br_transparent bg_alert-3 text_center table-cell w_100 {{modifier_class}} " style="height:100px;">
 		<div class="bg_primary-5 text_center inline-block ">Content</div>
 	</div>
@@ -13504,7 +14108,7 @@ Styleguide display
 	.flex_row-reverse              		- flex_column-reverse
 	.flex_column-reverse              		- flex_row-reverse
 
-	markup:
+	Markup:
 	<div class="flex {{modifier_class}} br_solid br_transparent bg_alert-3  text_center  p_3 bg_warning-3"> 
 		<div class="bg_primary-5 text_center flex_auto p_3 br_solid br_1 m_2 br_black">Auto 1</div>
 		<div class="bg_primary-5 text_center flex_shrink p_3 br_solid br_1 m_2 br_black">Shrink 2</div>
@@ -14117,7 +14721,7 @@ Control some basics of how content overflows.
 .overflow_ellipsis    - ellipsis
 .overflow_unset   - unset
 
-	markup:
+	Markup:
 	<div class="br_solid br_transparent bg_alert-3 max-w_1 {{modifier_class}}">
 		<p class="nowrap">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore quisquam vero, accusamus repellendus rerum sed dolorem quidem harum, neque odit dolor minima, quia et recusandae voluptatibus similique! Earum, unde laborum.</p>
 	</div>
@@ -14177,7 +14781,7 @@ Control the width either with 12 x grid messurments or by 10% increments.
 .w_90 - Grid Width of 90% out of 100%
 
 
-markup:
+Markup:
 <div class=" br_solid br_transparent bg_alert-5 p_5">
 	<div class="bg_white text-left {{modifier_class}}">{{modifier_class}} </div>
 </div>
@@ -14196,7 +14800,7 @@ Control the width either with 12 x grid messurments or by 10% increments.
 .w-grid_9 - Grid Width of 9 columns of 12 columns 
 
 
-markup:
+Markup:
 <div class=" br_solid br_transparent bg_alert-5 p_5">
 	<div class="bg_white text-left {{modifier_class}}">{{modifier_class}} </div>
 </div>
@@ -14571,7 +15175,7 @@ Control the max width by 10% increments or by readable which is 65em
 .max-w_5.lh_4 - large screen format of 1280px #198dae
 
 
-markup:
+Markup:
 <div class=" br_solid br_transparent bg_alert-3 p_5">
 	<div class="bg_white text-left {{ modifier_class }}">
 		<strong>{{ modifier_class }}</strong> Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
@@ -14605,7 +15209,7 @@ Styleguide Width.MaxWidth
 	.shadow_4		- box shadow
 	.shadow_5		- box shadow
 
-	markup:
+	Markup:
 	<div class="{{modifier_class}} p_3 br_solid br_black-1 br_1 c_whtie">container has shadow of {{modifier_class}}</div>
 
 	Weight: 100
@@ -14682,7 +15286,7 @@ Styleguide Background
 
   Weight: -100
 
-  markup:
+  Markup:
   <div class="{{modifier_class}} p_3 c_white">Background Color of {{modifier_class}}</div>
 
   Styleguide Background.Color
@@ -14705,7 +15309,7 @@ bg_alert                  - background color modified light to dark
 bg_acc                    - background color modified light to dark
 
 
-markup:
+Markup:
 <div class="flex">
   <div class="bg_white flex_auto text_center p_2 p-y_5 ">white</div>
   <div class="{{modifier_class}}-5 flex_auto text_center  p_2 p-y_5">5</div>
@@ -15310,7 +15914,7 @@ Styleguide Background.Color.Shades
   black              - background color of black modified with alphas
   white              - background color of white modified with alphas
 
-  markup:
+  Markup:
   <div class="flex p_4 bg_primary">
     <div class="bg_{{modifier_class}}-0 flex_auto text_center c_white  p_2 p-y_5">{{modifier_class}}-0</div>
     <div class="bg_{{modifier_class}}-1 flex_auto text_center c_white  p_2 p-y_5">{{modifier_class}}-1</div>
@@ -15340,7 +15944,7 @@ All textures in the Arches design are a subtle variation of transparent.   Allow
 .texture_cross            					- A mostly transparent cross texture used for alternating rows of content when a little extra texture is needed.
 .texture_disabled              				- This texture is used to paint disabled buttons and ui items giving it a greyed and X'ed out appearand. 
 
-markup:
+Markup:
 <div class="{{modifier_class}} p_5 br_black-8 br_1 br_solid text_center">{{modifier_class}}</div>
 
 Styleguide Background.Textures
@@ -15395,7 +15999,7 @@ Styleguide Background.Textures
 	.texture_cross.bg_alert             		- textures are slightly transparent so they can be colored with background-color classess
 	.texture_disabled.bg_alert             	- textures are slightly transparent so they can be colored with background-color classess
 
-	markup:
+	Markup:
 	<div class="{{modifier_class}} p_5 br_black-8 br_1 br_solid text_center">{{modifier_class}}</div>
 
 	Styleguide Background.Textures.BackgroundColor
@@ -15417,7 +16021,7 @@ Styleguide Background.Textures
 	.texture_cross.bg_warning             		- textures are slightly transparent so they can be colored with background-color classess
 	.texture_disabled.bg_warning             	- textures are slightly transparent so they can be colored with background-color classess
 
-	markup:
+	Markup:
 	<div class="flex">
 		<div class="{{modifier_class}}-n3 p_3 flex_auto text_center c_white">n3</div>
 		<div class="{{modifier_class}}-n1 p_3 flex_auto text_center c_white">n1</div>
@@ -15459,7 +16063,7 @@ Depends on base border module in _borders.css
 .br_dashed         - makes a border dashed
 .br_solid          - makes a border solid
 
-markup:
+Markup:
 <div class="{{modifier_class}} br_black bw_1 p_3">{{modifier_class}} border</div>
 
 Styleguide Borders.Style
@@ -15528,7 +16132,7 @@ br_info                 - border color
 br_highlight            - border color
 
 
-markup:
+Markup:
 <div class="{{modifier_class}} p_3 br_solid bw_3">{{modifier_class}} border</div>
 
 Styleguide Borders.Colors
@@ -15551,7 +16155,7 @@ br_black-7             - border black with alpha of 70%
 br_black-8             - border black with alpha of 80%
 br_black-9             - border black with alpha of 90%
 
-markup:
+Markup:
 <div class="{{modifier_class}} p_3 br_solid br_5 bg_primary-1 white">{{modifier_class}} border</div>
 
 Styleguide Borders.Colors.Black
@@ -15574,7 +16178,7 @@ Styleguide Borders.Colors.Black
   br_white-8             - border white with alpha of 20%
   br_white-9             - border white with alpha of 10%
 
-  markup:
+  Markup:
   <div class="{{modifier_class}} p_3 br_solid br_5 bg_primary-1 c_white">{{modifier_class}} border</div>
 
   Styleguide Borders.Colors.White
@@ -15691,7 +16295,7 @@ Styleguide Borders.Colors.Black
 	br-bl_circle          - bottom left corders at 100%
 
 
-	markup:
+	Markup:
 	<div class="{{modifier_class}} p_3 br_black br_solid br_2">{{modifier_class}} border</div>
 
 	Styleguide Borders.Radius
@@ -15818,7 +16422,7 @@ Styleguide Borders.Colors.Black
   br_primary-n4             - border color mixed with black
   br_primary-n5             - border color mixed with black 
 
-  markup:
+  Markup:
   <div class="{{modifier_class}} p_3 br_solid br_5 bg_secondary c_white">{{modifier_class}} border</div>
 
   Styleguide Borders.Colors.Modifiers
@@ -16323,7 +16927,7 @@ Styleguide Borders.Colors.Black
     br-l_5.br_1            	- left borders with rem
 
 
-    markup:
+    Markup:
     <div class="{{modifier_class}} p_3 br_solid br_black c_black">{{modifier_class}} border</div>
 
     Styleguide Borders.Width
@@ -16514,7 +17118,7 @@ Styleguide opacity
 	.opacity_9                        - Opacity of 90%
 	.opacity_none                     - No Opacity
 
-	markup:
+	Markup:
 	<div class="p_4 bg_primary">
 		<div class="{{modifier_class}} br_1 br_solid br_white p_2 bg_warning c_white">{{modifier_class}}</div>
 	</div>
@@ -16590,7 +17194,7 @@ Styleguide hover
   bg_success              - background color modified light to dark
   bg_warning              - background color modified light to dark
 
-  markup:
+  Markup:
   <div class="flex m_5">
     <div class="h:{{modifier_class}}-5 flex_auto text_center br_1 br_solid br_secondary-4 p_2">5</div>
     <div class="h:{{modifier_class}}-4 flex_auto text_center br_1 br_solid br_secondary-4 p_2">4</div>
@@ -17604,7 +18208,7 @@ a:focus {
   c_warning              - text color modified light to dark
   c_alert              - text color modified light to dark
 
-  markup:
+  Markup:
   <div class="flex m_5">
     <div class="h:{{modifier_class}}-5 flex_auto font_bold bg_secondary-3 font_4 font_slab text_center br_1 br_solid br_secondary-4 p_1">5</div>
     <div class="h:{{modifier_class}}-4 flex_auto font_bold bg_secondary-3 font_4 font_slab text_center br_1 br_solid br_secondary-4 p_1">4</div>
@@ -17677,7 +18281,7 @@ a:focus {
   double.c_highlight - extra loud underlines for the really important links or modals
   dashed.c_accent - extra loud dots for info and hint texts reveals.
 
-  markup:
+  Markup:
   <p class="font_1">
     Lorem ipsum dolor sit amet, 
     <span class="h:{{modifier_class}} h:c_primary-n3">consectetur</span>
@@ -17800,7 +18404,7 @@ black and white overlays can be added to hovers easily by adding `hover:` in fro
 bg_white              - text color modified light to dark
 bg_black              - text color modified light to dark
 
-markup:
+Markup:
 <div class="flex m_5 bg_primary m_5">
   <div class="h:{{modifier_class}}-0  p-y_3 p-x_4 flex_auto font_bold font_2 font_slab text_center br_1 br_solid br_secondary-4">0</div>
   <div class="h:{{modifier_class}}-1  p-y_3 p-x_4 flex_auto font_bold font_2 font_slab text_center br_1 br_solid br_secondary-4">1</div>
@@ -17831,7 +18435,7 @@ Set the Opacity of an object to 100% while hovered.
 .opacity_5                        - Opacity of 50%
 .opacity_9                        - Opacity of 95%
 
-markup:
+Markup:
 <div class="p_4 bg_primary">
   <div class="{{modifier_class}} h:opacity  br_1 br_solid br_white p_2 bg_warning c_white">hover me to bring me to full opacity</div>
 </div>
@@ -17859,7 +18463,7 @@ soften the harshness of transitions of color by adding transitions.
 4              - .5 second transition
 5              - .5 second transition
 
-markup:
+Markup:
 <div class="flex m_5 bg_primary m_5">
   <div class="transition_{{modifier_class}} h:bg_black-0  p-y_3 p-x_4 flex_auto font_bold font_2 font_slab text_center br_1 br_solid br_secondary-4">0</div>
   <div class="transition_{{modifier_class}} h:bg_black-1  p-y_3 p-x_4 flex_auto font_bold font_2 font_slab text_center br_1 br_solid br_secondary-4">1</div>
@@ -17918,7 +18522,7 @@ Is-active to Full Opacity
 
 <div class="p-b_3"><span class="bg_highlight br_radius c_white inline-block font_n1 p-7_3 p-x_5 sg">Click the areas below to toggle the "is-active" state.</span></div><strong>`.is-acitve .a:opacity`</strong> Set the Opacity of an objects children to 100% when it has the class is-active. 
 
-markup:
+Markup:
 <div class="flex p_4 bg_primary is-active_toggle-function ">
   <div class="flex_auto opacity_0 a:opacity br_1 br_solid br_white p_2 bg_warning c_white"> 0 </div>
   <div class="flex_auto opacity_1 a:opacity br_1 br_solid br_white p_2 bg_warning c_white"> 1 </div>
@@ -17945,7 +18549,7 @@ Is-active Black n White
 bg_white              - text color modified light to dark
 bg_black              - text color modified light to dark
 
-markup:
+Markup:
 <div class="flex p_5 bg_primary m_5 is-active_toggle-function">
   <div class="flex_auto a:{{modifier_class}} bg_{{modifier_class}}-0 p-y_3 p-x_4 font_bold font_2 font_slab c_secondary text_center br_1 br_solid br_secondary-4">0</div>
   <div class="flex_auto a:{{modifier_class}} bg_{{modifier_class}}-1 p-y_3 p-x_4 font_bold font_2 font_slab c_secondary text_center br_1 br_solid br_secondary-4">1</div>
@@ -17978,7 +18582,7 @@ Styleguide is-active.black and white
   c_warning              - text color modified light to dark
   c_alert              - text color modified light to dark
 
-  markup:
+  Markup:
   <div class="flex p_5 is-active_toggle-function c_white">
     <div class="flex_auto a:{{modifier_class}}-5 font_bold bg_secondary-n3 font_5 font_slab text_center br_1 br_solid br_secondary-4 p_1">5</div>
     <div class="flex_auto a:{{modifier_class}}-4 font_bold bg_secondary-n3 font_5 font_slab text_center br_1 br_solid br_secondary-4 p_1">4</div>
@@ -18011,7 +18615,7 @@ Styleguide is-active.black and white
   bg_warning              - text color modified light to dark
   bg_alert              - text color modified light to dark
 
-  markup:
+  Markup:
   <div class="flex p_5 is-active_toggle-function">
     <div class="flex_auto a:{{modifier_class}}-5 bg_secondary-2 font_3  text_center br_1 br_solid br_secondary-4 p_1">5</div>
     <div class="flex_auto a:{{modifier_class}}-4 bg_secondary-2 font_3  text_center br_1 br_solid br_secondary-4 p_1">4</div>
@@ -18042,7 +18646,7 @@ Styleguide is-active.black and white
   fa-bug              - toggle the bug icon
 
 
-  markup:
+  Markup:
   <div class="flex is-active_toggle-function">
     <div class="flex_auto a:bg_accent bg_secondary-2 font_3 text_center br_1 br_solid br_secondary-4 p_3"><i class="fas font_4 {{modifier_class}} a:icon-show"></i> Show When Active</div>
     <div class="flex_auto a:bg_accent bg_secondary-2 font_3 text_center br_1 br_solid br_secondary-4 p_3"><i class="fas font_4 {{modifier_class}} a:icon-hide"></i> Hide when Active</div>
@@ -19298,7 +19902,7 @@ inline-block           -  make the display inline-block when parent is-active
 block          -  make the display block when parent is-active
 
 
-markup:
+Markup:
 <div class="p_5 is-active_toggle-function">
   <span class="a:bg_accent bg_secondary-2 font_4 text_center br_1 br_solid br_secondary-4 p_4">Click to Toggle parent is-active</span>
   <span class="a:{{modifier_class}} a:bg_accent bg_secondary-2 font_4 text_center br_1 br_solid br_secondary-4 p_4">Span with display:{{modifier_class}} when parent is active</span>
@@ -19325,7 +19929,7 @@ Styleguide counters
 
 	Counter can be incremented by the `counter_increment` class.  
 
-	markup:
+	Markup:
     <div class="counter_reset">
         <div class="bg_primary-2 p_3 m_3"><span class="font_bold counter counter_increment">:</span> Item, Object, or Section</div>
         <div class="bg_primary-2 p_3 m_3"><span class="font_bold counter counter_increment">:</span> Item, Object, or Section</div>
@@ -19354,7 +19958,7 @@ Styleguide counters
 
 	Counter Subs can be nested inside of counters
 
-	markup:
+	Markup:
     <div class="counter_reset ">
         <div class="bg_primary-2 p_3 m_3"><span class="font_bold counter counter_increment counter_upper-alpha"></span> Item, Object, or Section</div>
             <div class="counter-sub_reset">
@@ -19388,7 +19992,7 @@ Styleguide counters
 	counter_lower-roman         - Lowercase Roman Listing
 	counter_upper-roman         - Uppercase Roman Listing
 
-	markup:
+	Markup:
 	<div class="counter_reset">
 			<div class="m_3 p_3 bg_primary-2"><span class="{{modifier_class}} font_bold counter_increment"></span> Item, Object, or Section</div>
 			<div class="m_3 p_3 bg_primary-2"><span class="{{modifier_class}} font_bold counter_increment"></span> Item, Object, or Section</div>
@@ -19440,7 +20044,7 @@ Styleguide counters
 	Quickly decorate the counter with a circle.  Change the  bgground and font color with utility classes to acheive different effects.
 
 
-	markup:
+	Markup:
     <div class="counter_reset">
         <div class="m_3 p_3"><span class="font_bold counter counter_increment order-marker bg_primary-2"></span> Item, Object, or Section</div>
         <div class="m_3 p_3"><span class="font_bold counter counter_increment order-marker font_10 br-tr_round br-br_round bg_highlight-2"></span> Item, Object, or Section</div>
@@ -19470,22 +20074,22 @@ Styleguide counters
 
 /**  No Framework Recipes    *********************************/
 /*
-	Utility Class Recipes
+	Recipes
 
 	Combination of UCs can make complex and rich UI elements.  Here is a collection of curated UI that can be used in projects by just following these patterns.
 
 	Weight: 900
 
-	Styleguide Recipe
+	Styleguide Recipes
 
 */
-/* Nav Recipe.00x */
+/* Nav Recipes.00x */
 /*
     Mobile Footer Nav
 
     Placed in applications used for navigation in mobile apps.
 
-    markup:
+    Markup:
     <div class="texture-medium bg_secondary-3 relative" style="max-width:412px;max-height:732px;width:100vw;height:100vh">
     <div id="nav" class="bg_acc c_white shadow_3 font_2 flex sticky b_0 l_0 r_0 w_100">
         <a href="#/" class="text_center p_2 flex_auto center clear c_secondary-5 c_white hover-text_primary-4 m-bottom_0 router-link-exact-active router-link-active"><i class="fas m_2 fa-sign-out-alt"></i></a>
@@ -19496,144 +20100,145 @@ Styleguide counters
     </div>
     </div>
 
-    Styleguide Recipe.mobile nav
+    Styleguide Recipes.mobile nav
 */
-/* Nav Recipe.04x */
+/* Nav Recipes.04x */
 /*
     Footer
 
 
     This defines the web footer 
 
-    markup:
+    Markup:
         <div class="footer">
-        <div class="p-t_3 p-b_3 p_4 flex br_0 br-t_3  br_solid br_secondary-n1 c_secondary-1 texture_light bg_secondary-1">
-            <div class="logo_condensed max-w_1"><span class="alt">logo_condensed-alt max-w_1</span></div>
-        </div>
-        <div class="flex texture_dark p_5-large p_4 p-b_3">
-            <div class="flex_auto w_50:md p-l_4:md p-r_5:md">
-                <!-- Address -->
-                <section class="address c_white">
-                    <h3 class="font_slab font_1 m-b_0 font_normal font_regular">American College of Cardiology</h3>
-                    <address>
-                        <!-- http://microformats.org/wiki/hcard -->
-                        <h4 class="m-b_0 font_bold font_copy font_normal font_1 m-t_4">Heart House</h4>
-                        <div class="flex font_copy font_0">
-                        <div class="flex_shrink p-r_5 m-r_5">
-                            <ul class="ul_none  lh_2">
-                                <li class="m-b_1 m-b_3:md font_normal">
-                                    <span class="street-address">2400 N. St. NW</span>
-                                </li>
-                                <li class="m-b_1 m-b_3:md font_normal">
-                                    <span class="locality ">Washington</span>,
-                                    <span class="city-name ">
-                                <abbr title="District of Colombia">DC</abbr>
-                                </span>
-                                    <span class="postal-code">20037</span>
-                                </li>
-                                <li class="m-b_1 m-b_3:md font_normal">
-                                    <a href="mailto:resource@acc.org" class="email c_white text_underline  h:c_white ">
-                                        <strong class="p-r_2 inline block:md inline:lg">Email:</strong>
-                                        <span class="inline block:md inline:lg">resource@acc.org</span></a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="flex_auto grid-w_6">
-                        <ul class="ul_none lh_2">
+    <div class="p-t_3 p-b_3 p_4 flex br_0 br-t_3  br_solid br_secondary-n1 c_secondary-1 texture_light bg_secondary-1">
+        <div class="logo_condensed max-w_1"><span class="alt">logo_condensed-alt max-w_1</span></div>
+    </div>
+    <div class="flex justify_between p_4 p_5-large texture_dark" style="
+">
+        <div class="flex_auto max-w_3 p-l_4:md p-r_5:md">
+            <!-- Address -->
+            <section class="address c_white">
+                <h3 class="font_slab font_1 m-b_0 font_normal font_regular">American College of Cardiology</h3>
+                <address>
+                    <!-- http://microformats.org/wiki/hcard -->
+                    <h4 class="m-b_0 font_bold font_copy font_normal font_1 m-t_4">Heart House</h4>
+                    <div class="flex font_copy font_0">
+                    <div class="flex_shrink p-r_5 m-r_5">
+                        <ul class="ul_none  lh_2">
                             <li class="m-b_1 m-b_3:md font_normal">
-                                <a tel="+12023756000" href="tel:+12023756000" class="tel c_white h:c_white h:underline">
-                                <strong class="p-r_2 block:md inline:lg">Phone:</strong><span class=" block:md inline:lg">(202) 375-6000, ext. 5603</span></a>
+                                <span class="street-address">2400 N. St. NW</span>
                             </li>
                             <li class="m-b_1 m-b_3:md font_normal">
-                                <a tel="+18002574737" href="tel:+18002534636.5603" class="tel c_white h:c_white h:underline">
-                                <strong class="p-r_2 block:md inline:lg">Toll Free:</strong><span class=" block:md inline:lg">(800) 253-4636, ext. 5603</span></a>
+                                <span class="locality ">Washington</span>,
+                                <span class="city-name ">
+                            <abbr title="District of Colombia">DC</abbr>
+                            </span>
+                                <span class="postal-code">20037</span>
                             </li>
                             <li class="m-b_1 m-b_3:md font_normal">
-                                <a fax="+12023757000" href="fax:+12023757000" class="fax c_white h:c_white h:underline">
-                                <strong class="p-r_2 block:md inline:lg">Fax:</strong>
-                                <span class="block:md inline:lg">(202) 375-7000</span>
-                                </a>
+                                <a href="mailto:resource@acc.org" class="email c_white text_underline  h:c_white ">
+                                    <strong class="p-r_2 inline block:md inline:lg">Email:</strong>
+                                    <span class="inline block:md inline:lg">resource@acc.org</span></a>
                             </li>
                         </ul>
-                        </div>
-                        </div>
-                    </address>
-                </section>
-                <!-- /Address -->
-                <!-- Social -->
-                <h4 class="font_slab c_white font_regular">Stay Connected</h4>
-                <ul class="flex social-bar ul_none c_white h:c_white">
-                    <li class="flex_auto m-r_2"><a href="https://twitter.com/accintouch" target="_blank" class="twitter social-bar--button block m-b_0 p-x_5 p-y_3 c_white-8 h:c_white text_right h:bg_primary-n1"><i class="fab fa-twitter-square font_2"></i></a></li>
-                    <li class="flex_auto m-r_2"><a href="https://www.facebook.com/AmericanCollegeofCardiology" target="_blank" class="facebook social-bar--button block m-b_0 p-x_5 p-y_3 c_white-8 h:c_white text_right h:bg_primary-n1"><i class="fab fa-facebook-square font_2"></i></a></li>
-                    <li class="flex_auto m-r_2"><a href="https://www.linkedin.com/groups/732607/profile" target="_blank" class="linkedin social-bar--button block m-b_0 p-x_5 p-y_3 c_white-8 h:c_white text_right h:bg_primary-n1"><i class="fab fa-linkedin font_2"></i></a></li>
-                    <li class="flex_auto m-r_2"><a href="https://plus.google.com/118164094874227618578" target="_blank" class="google-plus social-bar--button block m-b_0 p-x_5 p-y_3 c_white-8 h:c_white text_right h:bg_primary-n1"><i class="fab fa-google-plus font_2"></i></a></li>
-                    <li class="flex_auto m-r_2"><a href="http://www.youtube.com/user/ACCinTouch" target="_blank" class="youtube social-bar--button block m-b_0 p-x_5 p-y_3 c_white-8 h:c_white text_right h:bg_primary-n1"><i class="fab fa-youtube font_2"></i></a></li>
-                </ul>
-                <!-- Social -->
-            </div>
-            <div class="flex_auto p-l_4:md p-r_4:md">
-                <!-- Footer External Links -->
-                <section class="acc-websites row c_white p-x_3">
-                    <h3 class="font_slab font_regular">Improving Cardiovascular Care</h3>
-                    <nav class="font_copy block clearfix">
-                        <ul class="ul_none lh_2 font_0">
-                            <li class="c_white br_solid  br_0 br-b_1  br_white-5">
-                                <a target="_blank" class="h:bg_black-2  h:c_white c_white p-x_2 p_3 block" href="http://www.acc.org">
-                                <span class="inline-block p-l_3">Acc</span>
-                                <i class="float_right fas p-r_3 c_white h:c_white fa-external-link-square "></i>
-                                </a>
-                            </li>
-                            <li class="c_white br_solid br_0 br-b_1  br_white-5">
-                                <a target="_blank" class="h:bg_black-2  h:c_white c_white p-x_2 p_3 block" href="https://cvquality.acc.org/Accreditation?">
-                                <span class="inline-block p-l_3">Accreditation Services</span>
-                                <i class="float_right fas p-r_3 c_white h:c_white fa-external-link-square "></i>
-                                </a>
-                            </li>
-                            <li class="c_white br_solid br_0 br-b_1  br_white-5">
-                                <a target="_blank" class="h:bg_black-2  h:c_white c_white p-x_2 p_3 block" href="http://www.ncdr.com">
-                                <span class="inline-block p-l_3">NCDR</span>
-                                <i class="float_right fas p-r_3 c_white h:c_white fa-external-link-square "></i>
-                                </a>
-                            </li>
-                            <li class="c_white br_solid br_0 br-b_1  br_white-5">
-                                <a target="_blank" class="h:bg_black-2  h:c_white c_white p-x_2 p_3 block" href="http://www.cardiosmart.org">
-                                <span class="inline-block p-l_3">CardioSmart</span>
-                                <i class="float_right fas p-r_3 c_white h:c_white fa-external-link-square "></i>
-                                </a>
-                            </li>
-                            <li class="c_white">
-                                <a target="_blank" class="h:bg_black-2  h:c_white c_white p-x_2 p_3 block" href="http://www.onlinejacc.org/">
-                                <span class="inline-block p-l_3">JACC</span>
-                                <i class="float_right fas p-r_3 c_white fa-external-link-square "></i>
-                                </a>
-                            </li>
-                        </ul>
-                    </nav>
-                </section>	
-                <!-- /Footer External Links -->
-            </div>
+                    </div>
+                    <div class="flex_auto grid-w_6">
+                    <ul class="ul_none lh_2">
+                        <li class="m-b_1 m-b_3:md font_normal">
+                            <a tel="+12023756000" href="tel:+12023756000" class="tel c_white h:c_white h:underline">
+                            <strong class="p-r_2 block:md inline:lg">Phone:</strong><span class=" block:md inline:lg">(202) 375-6000, ext. 5603</span></a>
+                        </li>
+                        <li class="m-b_1 m-b_3:md font_normal">
+                            <a tel="+18002574737" href="tel:+18002534636.5603" class="tel c_white h:c_white h:underline">
+                            <strong class="p-r_2 block:md inline:lg">Toll Free:</strong><span class=" block:md inline:lg">(800) 253-4636, ext. 5603</span></a>
+                        </li>
+                        <li class="m-b_1 m-b_3:md font_normal">
+                            <a fax="+12023757000" href="fax:+12023757000" class="fax c_white h:c_white h:underline">
+                            <strong class="p-r_2 block:md inline:lg">Fax:</strong>
+                            <span class="block:md inline:lg">(202) 375-7000</span>
+                            </a>
+                        </li>
+                    </ul>
+                    </div>
+                    </div>
+                </address>
+            </section>
+            <!-- /Address -->
+            <!-- Social -->
+            <h4 class="font_slab c_white font_regular">Stay Connected</h4>
+            <ul class="flex social-bar ul_none c_white h:c_white m_0">
+                <li class="flex_auto m-r_2"><a href="https://twitter.com/accintouch" target="_blank" class="twitter social-bar--button block m-b_0 p_3 c_white-8 h:c_white text_center opacity_6 h:opacity"><i class="fab fa-twitter-square"></i></a></li>
+                <li class="flex_auto m-r_2"><a href="https://www.facebook.com/AmericanCollegeofCardiology" target="_blank" class="facebook social-bar--button block m-b_0 p_3 c_white-8 h:c_white text_center opacity_6 h:opacity"><i class="fab fa-facebook-square"></i></a></li>
+                <li class="flex_auto m-r_2"><a href="http://www.youtube.com/user/ACCinTouch" target="_blank" class="youtube social-bar--button block m-b_0 p_3 c_white-8 h:c_white text_center opacity_6 h:opacity"><i class="fab fa-youtube"></i></a></li>
+                <li class="flex_auto m-r_2"><a href="https://play.google.com/store/apps/dev?id=5189912010956845696&amp;hl=en_US" target="_blank" class="google-play social-bar--button block m-b_0 p_3 c_white-8 h:c_white text_center opacity_6 h:opacity"><i class="fab fa-google-play"></i></a></li>
+                <li class="flex_auto m-r_2"><a href="https://apps.apple.com/us/developer/american-college-of-cardiology/id502174543#see-all/i-phonei-pad-apps" target="_blank" class="apple-store social-bar--button block m-b_0 p_3 c_white-8 h:c_white text_center opacity_6 h:opacity"><i class="fab fa-apple"></i></a></li>
+            </ul>
+            <!-- Social -->
         </div>
-        <!-- Cite -->
-        <div class="texture_light bg_secondary-1 p_4">
-            <cite class="c_secondary-1 font_italic font_bold font_n1 p_3 lh_2">&copy; 2015 American College of Cardiology</cite>
+        <div class="flex_shrink p-l_4:md p-r_4:md self_end">
+            <!-- Footer External Links -->
+            <section class="acc-websites c_white max-w_1 p-x_3 row">
+                <h3 class="font_regular font_slab w_100">Improving Cardiovascular Care</h3>
+                <nav class="block clearfix font_copy w_100">
+                    <ul class="ul_none lh_2 font_0">
+                        <li class="c_white br_solid  br_0 br-b_1  br_white-5">
+                            <a target="_blank" class="h:bg_black-2  h:c_white c_white p-x_2 p_3 block" href="http://www.acc.org">
+                            <span class="inline-block p-l_3">Acc</span>
+                            <i class="float_right fas p-r_3 c_white h:c_white fa-external-link-square "></i>
+                            </a>
+                        </li>
+                        <li class="c_white br_solid br_0 br-b_1  br_white-5">
+                            <a target="_blank" class="h:bg_black-2  h:c_white c_white p-x_2 p_3 block" href="https://cvquality.acc.org/Accreditation?">
+                            <span class="inline-block p-l_3">Accreditation Services</span>
+                            <i class="float_right fas p-r_3 c_white h:c_white fa-external-link-square "></i>
+                            </a>
+                        </li>
+                        <li class="c_white br_solid br_0 br-b_1  br_white-5">
+                            <a target="_blank" class="h:bg_black-2  h:c_white c_white p-x_2 p_3 block" href="http://www.ncdr.com">
+                            <span class="inline-block p-l_3">NCDR</span>
+                            <i class="float_right fas p-r_3 c_white h:c_white fa-external-link-square "></i>
+                            </a>
+                        </li>
+                        <li class="c_white br_solid br_0 br-b_1  br_white-5">
+                            <a target="_blank" class="h:bg_black-2  h:c_white c_white p-x_2 p_3 block" href="http://www.cardiosmart.org">
+                            <span class="inline-block p-l_3">CardioSmart</span>
+                            <i class="float_right fas p-r_3 c_white h:c_white fa-external-link-square "></i>
+                            </a>
+                        </li>
+                        <li class="c_white">
+                            <a target="_blank" class="h:bg_black-2  h:c_white c_white p-x_2 p_3 block" href="http://www.onlinejacc.org/">
+                            <span class="inline-block p-l_3">JACC</span>
+                            <i class="float_right fas p-r_3 c_white fa-external-link-square "></i>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </section>
+            <!-- /Footer External Links -->
         </div>
-        <!-- /Cite -->
-        </div>
+    </div>
+    <!-- Cite -->
+    <div class="texture_light bg_secondary-1 p_4">
+        <cite class="c_secondary-1 font_italic font_bold font_n1 p_3 lh_2">© 2015 American College of Cardiology</cite>
+    </div>
+    <!-- /Cite -->
+    </div>
 
-    Styleguide Recipe.Footer
+    Styleguide Recipes.Footer
 */
 /*
-	Cite and Copywrite
+	Cite and Copyright
 
 	Contains copy right 
 
-	markup:
+	Markup:
     <div class="texture_light bg_secondary-1 p_4">
         <cite class="c_secondary-1 font_italic font_bold font_n1 p_3 lh_2">&copy; 2015 American College of Cardiology</cite>
     </div>
 
 
-	Styleguide Recipe.Footer.Cite
+	Styleguide Recipes.Footer.Cite
 
 */
 /*
@@ -19641,11 +20246,11 @@ Styleguide counters
 
 	Links to acc-websites
 
-    markup:
+    Markup:
     <div class="texture_dark p_4">
         <section class="acc-websites c_white p-x_3">
             <h4 class="font_slab font_regular">Improving Cardiovascular Care</h4>
-            <nav class="block clearfix font_copy">
+            <nav class="block clearfix font_copy w_100">
                 <ul class="ul_none lh_2 font_0">
                     <li class="c_white br_solid  br_0 br-b_1  br_white-5">
                         <a target="_blank" class="h:bg_black-2  h:c_white c_white p-x_2 p_3 block" href="http://www.acc.org">
@@ -19682,7 +20287,7 @@ Styleguide counters
         </section>	
     </div>                   
 
-	Styleguide Recipe.Footer.External Nav
+	Styleguide Recipes.Footer.External Nav
 
 */
 /*
@@ -19690,7 +20295,7 @@ Styleguide counters
 
 	Address and contact information for Heart House
 
-    markup:
+    Markup:
     <div class="texture_dark p_4">
         <section class="address c_white">
             <h3 class="font_slab font_1 m-b_0 font_normal font_regular">American College of Cardiology</h3>
@@ -19740,20 +20345,20 @@ Styleguide counters
         </section>
  	</div>
 
-	Styleguide Recipe.Footer.Address
+	Styleguide Recipes.Footer.Address
 
 */
 .address {
   font-style: unset;
 }
 
-/* content Recipe.100 */
+/* content Recipes.100 */
 /*
 Ordered Cards
 
 Having cards order on page to help users find there way through steps can some times be very helpful. 
 
-markup:
+Markup:
 <div class="flex texture_medium counter_reset p_5">
    <div class="card texture_light bg_white shadow_2 flex_auto m-x_3">
       <div class="flex font_slab  font_3 br-t_square c_white font_3 texture_dust bg_alert">
@@ -19787,9 +20392,9 @@ markup:
    </div>
 </div>
 
-Styleguide Recipe.Ordered Cards
+Styleguide Recipes.Ordered Cards
 */
-/* content Recipe.250 */
+/* content Recipes.250 */
 /*
     Guideline Result
 
@@ -19798,7 +20403,7 @@ Styleguide Recipe.Ordered Cards
     section - basic layout of a result which returns a paragraph as a result
 
 
-    markup:
+    Markup:
     <div class="p_5 p-y_4 bg_secondary-3 texture_medium">
     <article class="result {{modifier_class}} grid-container br_solid br_1 br_secondary-3 bg_white p_3">
         <header class="flex font_1 font_display">
@@ -19844,7 +20449,7 @@ Styleguide Recipe.Ordered Cards
     </article>
 </div>
 
-    Styleguide Recipe.Guideline.Result
+    Styleguide Recipes.Guideline.Result
 */
 /*
     RECIPE: Guidline Section
@@ -19852,7 +20457,7 @@ Styleguide Recipe.Ordered Cards
     Results from the guideline search tool can have variations of content type but the shells have the basic content layout. 
 
 
-    markup:
+    Markup:
     <div class="p_5 p-t_3 p-b_3 bg_secondary-5">
         <article class="result {{modifier_class}} grid-container br_solid br_1 br_secondary-3 bg_white p_3">
             <header class="flex font_1 font_display">
@@ -19896,6 +20501,6 @@ Styleguide Recipe.Ordered Cards
         </article>
     </div>
 
-    Styleguide Recipe.Guideline.ResultAlt
+    Styleguide Recipes.Guideline.ResultAlt
 */
 /*# sourceMappingURL=maps/boot_acc.css.map */

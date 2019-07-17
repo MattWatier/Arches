@@ -4,7 +4,7 @@
 
     secondary - default decoration when there is no validation run on the input.
 
-    markup:
+    Markup:
     <div class="question required {{modifier_class}}">
     <label for="input-x" class="label-holder grid-x c_{{modifier_class}} font_1">
         <span class="text cell shrink">Question Text</span>
@@ -55,7 +55,7 @@
     info - sometimes inputs show extra informaiton when an item is selected or when a value is entered.
     success - On rare occations it is needed for a success response on an input.
 
-    markup:
+    Markup:
     <div class="question required {{modifier_class}}">
     <label for="input-x" class="label-holder grid-x c_{{modifier_class}} font_1">
         <span class="text cell shrink">Question Text</span>
@@ -168,7 +168,7 @@
     info - sometimes inputs show extra informaiton when an item is selected or when a value is entered.
     success - On rare occations it is needed for a success response on an input.
 
-    markup:
+    Markup:
     <div class="question required {{modifier_class}}">
         <label for="input-x" class="label-holder grid-x c_{{modifier_class}} font_1">
         <span class="text cell shrink">Question Text</span>
@@ -217,7 +217,7 @@
     secondary - default decoration when there is no validation run on the input.
     alert - alerts show up when errors are validated from the input.
 
-    markup:
+    Markup:
     <div class="question required {{modifier_class}}">
         <label for="input-x" class="label-holder grid-x c_{{modifier_class}} font_1">
             <span class="text cell shrink">Question Text</span>
@@ -275,7 +275,7 @@
     warning - warning decoration for when required is missing. 
     info - sometimes inputs show extra informaiton when an item is selected or when a value is entered.
 
-    markup:
+    Markup:
     <div class="question required {{modifier_class}}">
         <label for="tinySwitch_{{modifier_class}}" class="grid-x c_{{modifier_class}} font_1 label-holder">
             <span class="text cell shrink">Question Text</span>

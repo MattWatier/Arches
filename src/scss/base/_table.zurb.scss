@@ -3,7 +3,7 @@
 
   There is a basic styling around the pure DOM of a table.   But to get full brand styling alter the parent tag to <table class='table'>.
 
-  markup:
+  Markup:
   <table>
     <thead>
       <tr>
@@ -44,7 +44,7 @@ Table Styled
 
 <table class='table'> will style the table with the generic branded coloring and spacing. 
 
-markup:
+Markup:
 <table class="table">
   <thead class="thead">
     <tr>
@@ -111,7 +111,7 @@ Table Column Shaded
 
 
 
-markup:
+Markup:
 <table class="table column-shaded">
   <thead>
     <tr>
@@ -176,7 +176,7 @@ Table Unshaded
 
 `<table class="table unshaded"> removes the shadding for rows and footer giving a cleaner table. This table type is great for small data sets and removes the 100% wide table that is default in all other tables.  
 
-markup:
+Markup:
 <table class="table unshaded">
   <thead>
     <tr>
@@ -240,7 +240,7 @@ Table shading can be much more dynamic and varied if you are willing to build wi
 .info             - column colored variations of info 
 .accent      - column colored variations of highlighted 
 
-markup:
+Markup:
 <table class="table">
   <thead>
     <tr>
@@ -282,7 +282,7 @@ Table Cell States: RECIPE
 States can be easily applied to the tables using UC's
 
 
-markup:
+Markup:
 <table class="table">
   <tr>
     <td class="bg_alert-4 border_solid border-width_1 border_alert font-weight_bold text_center">
@@ -334,7 +334,7 @@ Styling seperators on tables is now completely controled by utility classes givi
 
 
 
-markup:
+Markup:
 <table class="table stripped">
   <thead>
     <tr>

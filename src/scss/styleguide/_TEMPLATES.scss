@@ -24,7 +24,7 @@ default		- Default Design
 .alert       - A highlight indicating you’ve already given a star.
 
 
- markup:
+ Markup:
  <li class="{{modifier_class}}">List Item</li>
 
  sg-wrapper:
@@ -63,7 +63,7 @@ default		- Default Design
 .alert       - Alert State.
 .warning	- Warning State
 
- markup:
+ Markup:
  <div class="message {{modifier_class}}"> Validation Message </div>
 
  sg-wrapper:

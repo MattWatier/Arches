@@ -56,6 +56,14 @@ $value-to-unit: (
 		4: 1 * $basicSizeMultiplier,
 		5: 2 * $basicSizeMultiplier
 	),
+	size-ui: (
+		0: 0,
+		1: 0.25 * $basicSizeMultiplier,
+		2: 0.375 * $basicSizeMultiplier,
+		3: 0.5 * $basicSizeMultiplier,
+		4: 0.75 * $basicSizeMultiplier,
+		5: 1 * $basicSizeMultiplier
+	),
 	sizeAlt: (
 		100: 100%,
 		auto: auto,

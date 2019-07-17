@@ -1,0 +1,99 @@
+/*
+Link Decorator
+
+Links with the `.link` will auto decorate with an icon of the corresponding file type
+
+.pdf Portable Document Format
+.doc Word Documents
+.txt Text Documents
+.ppt Power Points
+mailto: email links
+tel: Telephone 
+fax: Fax 
+_blank External Link icons will appear after any link that has target blank, or the href begins with http, or https
+
+Markup:
+ <a class="link" href="abc.pdf">A link that is a Pdf Document</a><br/>
+ <a class="link" href="abc.doc">A link that is a Word Document</a><br/>
+ <a class="link" href="https://www.abc.ppt">An External link that is a Power Point Document</a><br/>
+ <a class="link" href="tel:1-555-555-5555">1-555-555-5555</a><br/>
+ <a class="link" href="mailto:test@abc.org">test@abc.org</a><br/>
+ <a class="link" href="xyz.zip">A link that is a Zip Document</a><br/>
+
+ Styleguide InteractiveExtras.Links
+ */
+.icon-before:before,
+.icon-after:after {
+	-webkit-font-smoothing: antialiased;
+	display: inline-block;
+	font-style: normal;
+	font-variant: normal;
+	text-rendering: auto;
+	line-height: 1;
+	font-family: "Font Awesome 5 Pro";
+	font-weight: 900;
+}
+.icon-before:before {
+	margin-right: 0.5em;
+	width: 1.28571429em;
+	text-align: center;
+}
+.icon-after:after {
+	margin-left: 0.5em;
+	width: 1.28571429em;
+	text-align: center;
+}
+
+a.link {
+	@extend .icon-before;
+	&[href$=".pdf"]:before {
+		content: "\f1c1";
+	}
+	&[href$=".doc"]:before,
+	&[href$=".docx"]:before,
+	&[href$=".txt"]:before {
+		content: "\f1c2";
+	}
+
+	&[href$=".zip"]:before {
+		content: "\f1c6";
+	}
+
+	&[href*=".ppt"]:before,
+	&[href*=".pptx"]:before {
+		content: "\f685";
+	}
+	&[href$=".csv"]:before,
+	&[href$=".xls"]:before,
+	&[href$=".xlsx"]:before {
+		content: "\f0ce";
+	}
+
+	&[href$=".mp4"]:before,
+	&[href$=".mov"]:before {
+		content: "\f03d";
+	}
+
+	&[target="_blank"]:after,
+	&[href^="http"]:after,
+	&[href^="https"]:after {
+		@extend .icon-after;
+		content: "\f14c";
+	}
+
+	&[href^="mailto:"]:before {
+		content: "\f1fa";
+	}
+
+	&[href^="tel:"]:before {
+		content: "\f095";
+	}
+
+	&[href^="fax:"]:before {
+		content: "\f1ac";
+	}
+
+	&:hover {
+		text-decoration: underline;
+	}
+}

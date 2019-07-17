@@ -3,13 +3,13 @@ Logos
 
 Logos in the design come in 4 variations the primary logo, the condensed logo, and alte version which are the reverse of primary and reversed.  All logos are controled by the width and will maintain there aspect ratios to respond to the container they are in.  For 508 compliance please place the brand name in the logo.
 
-.logo_primary	            - Primary Logo great for desktop displays best used for when the logo can be taller then 80px.
-.logo_primary-alt 	            - Primary Logo reversed for dark background situations.
-.logo_condensed.max-w_1             - Smaller Mobile Friendly Logo these logos and be readable between 40px to 80px in height. 
-.logo_condensed-alt.max-w_1                - Smaller Logo Reversed.
+.logo_primary	            		-   	Primary Logo great for desktop displays best used for when the logo can be taller then 80px.
+.logo_primary-alt 	            	-   	Primary Logo reversed for dark background situations.
+.logo_condensed.max-w_1             -  	 	Smaller Mobile Friendly Logo these logos and be readable between 40px to 80px in height. 
+.logo_condensed-alt.max-w_1         -  	 	Smaller Logo Reversed.
 
-markup:
-   <div class="bg_secondary-2 max-w_3"><div class="{{modifier_class}}"><span class="alt">{{modifier_class}}</span></div></div>
+Markup:
+<div class="bg_secondary-2 max-w_3"><div class="{{modifier_class}}"><span class="alt">{{modifier_class}}</span></div></div>
 
 Styleguide DesignBase.Logos
 
@@ -62,8 +62,8 @@ Seals in the design come in 3 variations the default, small, and tiny.  All Seal
 .seal_tiny	            - Smallest of the seals best used for icons when seal is 40px and bellow
 
 
-markup:
-   <div class="bg_secondary-2 max-w_1"><div class="{{modifier_class}} m_auto"><span class="alt">{{modifier_class}}</span></div></div>
+Markup:
+<div class="bg_secondary-2 max-w_1"><div class="{{modifier_class}} m_auto"><span class="alt">{{modifier_class}}</span></div></div>
 
 Styleguide DesignBase.Seals
 
@@ -109,7 +109,7 @@ Seals in the design come in 3 variations the default, small, and tiny.  All Seal
 .bg_right	          - cardnial left
 .bg_bottom           - cardnial left
 
-markup:
+Markup:
    <div class="bg_secondary-2 max-w_1 br_solid br_primary br_1"><div class="{{modifier_class}} seal_tiny" style="background-size:10%;width:200px; height:20px"><span class="alt">{{modifier_class}}</span></div></div>
 
 Styleguide Background.Image Positon

@@ -21,7 +21,7 @@ Styleguide display
 	.flex-inline            - the element is now flex-inline
 	.display_none             		- the element is now display none
 
-	markup:
+	Markup:
 	<div class="br_solid br_transparent bg_alert-3  text_center">
 		<div class="bg_primary-5 text_center {{modifier_class}}">Content</div>
 	</div>
@@ -50,7 +50,7 @@ Styleguide display
 	.vertical-align_baseline          		- the child is aligned to the top
 
 
-	markup:
+	Markup:
 	<div class="br_solid br_transparent bg_alert-3 text_center table-cell w_100 {{modifier_class}} " style="height:100px;">
 		<div class="bg_primary-5 text_center inline-block ">Content</div>
 	</div>

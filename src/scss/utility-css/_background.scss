@@ -23,7 +23,7 @@ Styleguide Background
 
   Weight: -100
 
-  markup:
+  Markup:
   <div class="{{modifier_class}} p_3 c_white">Background Color of {{modifier_class}}</div>
  
   Styleguide Background.Color
@@ -46,7 +46,7 @@ bg_alert                  - background color modified light to dark
 bg_acc                    - background color modified light to dark
 
 
-markup:
+Markup:
 <div class="flex">
   <div class="bg_white flex_auto text_center p_2 p-y_5 ">white</div>
   <div class="{{modifier_class}}-5 flex_auto text_center  p_2 p-y_5">5</div>
@@ -100,7 +100,7 @@ Styleguide Background.Color.Shades
   black              - background color of black modified with alphas
   white              - background color of white modified with alphas
 
-  markup:
+  Markup:
   <div class="flex p_4 bg_primary">
     <div class="bg_{{modifier_class}}-0 flex_auto text_center c_white  p_2 p-y_5">{{modifier_class}}-0</div>
     <div class="bg_{{modifier_class}}-1 flex_auto text_center c_white  p_2 p-y_5">{{modifier_class}}-1</div>

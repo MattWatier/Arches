@@ -4,7 +4,7 @@ Lorem Text Loader
 
 It is often we need to have space held for a return of details or text.  
 
-markup:
+Markup:
 <div class="max-w_3">
    <h1 class="lorem-loader font_3 m-y_3">&nbsp;</h1>
    <p class="m-y_2 font_0 lorem-loader">&nbsp;</p>
@@ -30,7 +30,7 @@ To create an image placeholder use the lorem-loader plus an aspect of the intend
 .aspect_21x9		- lock image to a 21 to 9 ratio 
 .aspect_4x1			- lock image to a 4 to 1 ratio 
 
-markup:
+Markup:
 <div class="grid-w_2 max-w_1">
    <div class="m-y_2 lorem-loader {{modifier_class}} ">&nbsp;</div>
 </div>
@@ -131,7 +131,7 @@ Expanded Click Area
 
 allows for a relative container to be clickable by the link. 
 
-markup:
+Markup:
 <div class="card shadow_2 cell small-6 large-4 max-w_3" >
   <div class=" font_slab border-top-left-square c_white font_3 p_4 texture_dust card-divider bg_primary card-header">
     This is a header

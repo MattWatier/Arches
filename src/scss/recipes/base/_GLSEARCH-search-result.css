@@ -7,7 +7,7 @@
     section - basic layout of a result which returns a paragraph as a result
 
 
-    markup:
+    Markup:
     <div class="p_5 p-y_4 bg_secondary-3 texture_medium">
     <article class="result {{modifier_class}} grid-container br_solid br_1 br_secondary-3 bg_white p_3">
         <header class="flex font_1 font_display">
@@ -53,7 +53,7 @@
     </article>
 </div>
         
-    Styleguide Recipe.Guideline.Result
+    Styleguide Recipes.Guideline.Result
 */
 /*
     RECIPE: Guidline Section
@@ -61,7 +61,7 @@
     Results from the guideline search tool can have variations of content type but the shells have the basic content layout. 
 
 
-    markup:
+    Markup:
     <div class="p_5 p-t_3 p-b_3 bg_secondary-5">
         <article class="result {{modifier_class}} grid-container br_solid br_1 br_secondary-3 bg_white p_3">
             <header class="flex font_1 font_display">
@@ -105,5 +105,5 @@
         </article>
     </div>
         
-    Styleguide Recipe.Guideline.ResultAlt
+    Styleguide Recipes.Guideline.ResultAlt
 */

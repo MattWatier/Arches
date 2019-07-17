@@ -4,7 +4,7 @@
 
     This defines the web footer 
 
-    markup:
+    Markup:
         <div class="footer">
         <div class="p-t_3 p-b_3 p_4 flex br_0 br-t_3  br_solid br_secondary-n1 c_secondary-1 texture_light bg_secondary-1">
             <div class="logo_condensed max-w_1"><span class="alt">logo_condensed-alt max-w_1</span></div>
@@ -119,20 +119,20 @@
         <!-- /Cite -->
         </div>
 
-    Styleguide Recipe.Footer
+    Styleguide Recipes.Footer
 */
 /*
 	Cite and Copywrite
 
 	Contains copy right 
 
-	markup:
+	Markup:
     <div class="texture_light bg_secondary-1 p_4">
         <cite class="c_secondary-1 font_italic font_bold font_n1 p_3 lh_2">&copy; 2015 American College of Cardiology</cite>
     </div>
 	
 
-	Styleguide Recipe.Footer.Cite
+	Styleguide Recipes.Footer.Cite
 
 */
 /*
@@ -140,7 +140,7 @@
 
 	Links to acc-websites
 
-    markup:
+    Markup:
     <div class="texture_dark p_4">
         <section class="acc-websites c_white p-x_3">
             <h4 class="font_slab font_regular">Improving Cardiovascular Care</h4>
@@ -181,7 +181,7 @@
         </section>	
     </div>                   
 
-	Styleguide Recipe.Footer.External Nav
+	Styleguide Recipes.Footer.External Nav
 
 */
 /*
@@ -189,7 +189,7 @@
 
 	Address and contact information for Heart House
 
-    markup:
+    Markup:
     <div class="texture_dark p_4">
         <section class="address c_white">
             <h3 class="font_slab font_1 m-b_0 font_normal font_regular">American College of Cardiology</h3>
@@ -239,9 +239,9 @@
         </section>
  	</div>
 
-	Styleguide Recipe.Footer.Address
+	Styleguide Recipes.Footer.Address
 
 */
 .address {
-  font-style: unset;
+	font-style: unset;
 }

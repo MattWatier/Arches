@@ -1,5 +1,5 @@
 /**  ACC Brands    *********************************/
-$teal: #198dae;
+$teal: #0088aa;
 $green-blue: #16a385;
 $dark-grey: #676a72;
 $alt-grey: #a3988c;
@@ -13,26 +13,56 @@ $acc-blue: #004176;
 $white: rgb(255, 255, 255);
 $black: rgb(19, 18, 18);
 $real-black: #000;
-
+/**  CV Quality Colors  **/
 $orange-dark: #e87d1e;
 $orange-light: #ffc425;
 $warm-grey: #a1a0a4;
 $warm-grey-light: #d6d4d4;
-$warm-grey-dark:#6f6b6f;
+$warm-grey-dark: #6f6b6f;
 $off-white: #fafafa;
-$off-black:$black;
+$off-black: $black;
 $soft-blue: #a4cded;
 $soft-grey: #eceaea;
-$error-color:#990000;
-$scrub-teal:#0088aa;
-$scrub-teal-light:#05aee5;
-$scrub-teal-dark:#047294;
-$mix-teal_orange:#58B5A5;
-$mix-orange_teal:#ACBD65;
+$error-color: #990000;
+$scrub-teal: #0088aa;
+$scrub-teal-light: #05aee5;
+$scrub-teal-dark: #047294;
+$mix-teal_orange: #58b5a5;
+$mix-orange_teal: #acbd65;
 
- 
+// Currently Un used in the design but part of bootstrap.
+$indigo: #6610f2 !default;
+$pink: #e83e8c !default;
+$yellow: #ffc107 !default;
+$cyan: #17a2b8 !default;
 
+/*
 
+CVqualtiy Full Pallete 
+
+Credit Types in the ACC have a specific color coding.
+
+$orange-dark   			  -   #e87d1e;  	Orange Dark   	
+$orange-light   		  -   #ffc425;  	Orange Light   
+$warm-grey   			    -   #a1a0a4;  	Warm Grey   	
+$warm-grey-light   		-   #d6d4d4;  	Warm Grey Light  
+$warm-grey-dark   		-  #6f6b6f;  	Warm Grey Dark   
+$off-white   			    -   #fafafa;  	Off White   	
+$off-black   			    -  #{$black};  	Off Black   	
+$soft-blue   			    -   #a4cded;  	Soft Blue   	
+$soft-grey   			    -   #eceaea;  	Soft Grey   	
+$error-color   			  -  #990000;  	Error Color   	
+$scrub-teal   			  -  #0088aa;  	Scrub  Teal   	
+$scrub-teal-light   	-  #05aee5;  	Scrub Teal Light 
+$scrub-teal-dark   		-  #047294;  	Scrub Teal Dark  
+$mix-teal_orange   		-  #58B5A5;  	Mix of 60% Teal And 40% Orange  
+$mix-orange_teal   		-  #ACBD65;  	Mix of 60% Orange and 40% Teal  
+
+Weight: 1
+
+Styleguide DesignBase.Colors.Full Pallate
+
+*/
 
 $gray-100: mix($white, $black, 10%);
 $gray-200: mix($white, $black, 20%);
@@ -47,28 +77,27 @@ $gray-900: mix($white, $black, 90%);
 $theme-palette: map-merge(
 	(
 		primary: $teal,
-		secondary: $warm-grey-light,
+		secondary: $warm-grey-dark,
 		success: $green,
-		warning: $orange,
+		warning: $orange-light,
 		alert: $error-color,
 		navigation: $blue,
-		accent: $green-blue,
+		accent: $orange-dark,
 		info: $alt-grey,
-		highlight: $purple,
+		highlight: $scrub-teal-light,
 		acc: $acc-blue
 	),
 	$theme-palette
 );
 
-$primary:       $scrub-teal;
-$secondary:     $warm-grey-light;
-$success:       $green !default;
-$info:          $cyan !default;
-$warning:       $yellow !default;
-$danger:        $red !default;
-$light:         $warm-grey-light,
-$dark:          $warm-grey-dark;
-
+$primary: $scrub-teal;
+$secondary: $warm-grey-dark;
+$success: $green;
+$info: $alt-grey;
+$warning: $orange-light;
+$danger: $error-color;
+$light: $warm-grey-light;
+$dark: $warm-grey-dark;
 
 $grays: map-merge(
 	(
@@ -105,29 +134,70 @@ $colors: map-merge(
 
 $fonts: (
 	slab: (
-		name: "Roboto Slab",
-		stack: '"Roboto Slab","Times New Roman","Lucida Bright",Georgia,serif, "slab"'
-	),
-	display: (
 		name: "Maven Pro",
 		stack: '"Maven Pro","Muli","Open Sans","system",sans-serif'
 	),
-	copy: (
+	display: (
 		name: "Muli",
 		stack: '"Muli","Open Sans","system",sans-serif'
 	),
+	copy: (
+		name: "Lato",
+		stack: '"Lato",Verdana,Helvetica,sans-serif;'
+	),
 	ui: (
-		name: "Open Sans",
-		stack: '"Open Sans",-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif'
+		name: "Lato",
+		stack: '"Lato",Verdana,Helvetica,sans-serif;'
 	)
 );
 
 // Reset Values of Utlity-css.vars.scss
-$value-to-unit: map-deep-set($value-to-unit, "font-family" "slab", map-deep-get($fonts, "slab", "stack"));
-$value-to-unit: map-deep-set($value-to-unit, "font-family" "display", map-deep-get($fonts, "display", "stack"));
-$value-to-unit: map-deep-set($value-to-unit, "font-family" "copy", map-deep-get($fonts, "copy", "stack"));
+$value-to-unit: map-deep-set(
+	$value-to-unit,
+	"font-family" "slab",
+	map-deep-get($fonts, "slab", "stack")
+);
+$value-to-unit: map-deep-set(
+	$value-to-unit,
+	"font-family" "display",
+	map-deep-get($fonts, "display", "stack")
+);
+$value-to-unit: map-deep-set(
+	$value-to-unit,
+	"font-family" "copy",
+	map-deep-get($fonts, "copy", "stack")
+);
 
 $global-radus-on: false;
 $global-border-radius: 6px;
 $global-border-round: 25px;
 $basicSizeMultiplier: 1rem;
+
+$grid-breakpoints: (
+	xs: 0,
+	sm: 576px,
+	md: 768px,
+	lg: 1024px,
+	xl: 1200px,
+	xxl: 1400px
+);
+
+$container-max-widths: (
+	md: 720px,
+	lg: 960px,
+	xl: 1140px,
+	xxl: 1350px
+);
+
+$tooltip-bg: $dark;
+
+$h1-font-size: map-deep-get($value-to-unit, font-size, 7);
+$h2-font-size: map-deep-get($value-to-unit, font-size, 5);
+$h3-font-size: map-deep-get($value-to-unit, font-size, 3);
+$h4-font-size: map-deep-get($value-to-unit, font-size, 2);
+$h5-font-size: map-deep-get($value-to-unit, font-size, 1);
+$h6-font-size: map-deep-get($value-to-unit, font-size, 0);
+
+$font-size-base: $base-font-size-rem; // Assumes the browser default, typically `16px`
+$font-size-lg: map-deep-get($value-to-unit, font-size, 2);
+$font-size-sm: map-deep-get($value-to-unit, font-size, 0);

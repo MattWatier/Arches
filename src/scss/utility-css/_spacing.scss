@@ -32,7 +32,7 @@ Margin
 .m-l_n4 				- Left margin set to negative  global margin
 .m-b_n4 				- Bottom margin set to negative  global margin
 
-markup:
+Markup:
 <div class="bg_warning-3 d-block br_1 br_solid">
 	<div class="{{modifier_class}} p_2 bg_primary text_center c_white cell auto opacity_5 d-block">Container With Margins</div>
 </div>
@@ -91,7 +91,7 @@ Padding
 .p-l_4         - Left padding set to global padding
 .p-b_4       - Bottom padding set to global padding
 
-markup:
+Markup:
 <div class="{{modifier_class}} br_solid br_transparent bg_alert-3  text_center">
 	<div class="bg_primary-5 text_center">Content With Padding</div>
 </div>
@@ -143,7 +143,7 @@ sticky   		- sticky positioned block
 
 
 
-markup:
+Markup:
 <div class="br_solid br_transparent bg_accent-3 relative p_5" style="height:200px;">
 	<div class="bg_primary-5 text_center {{modifier_class}}">Position {{modifier_class}}</div>
 </div>
@@ -175,7 +175,7 @@ Position Location
 #{class-name-constructor(left,5)} - modify right of an absolute positioned block 
 
 
-markup:
+Markup:
 <div class=" br_solid br_transparent bg_accent-3 relative p_5" style="height:200px;">
 	<div class="bg_primary-5 text_center absolute {{modifier_class}}">Position Absolute {{modifier_class}}</div>
 </div>
@@ -213,7 +213,7 @@ Float
 #{class-name-constructor(float,right)} - modify float of a block 
 
 
-markup:
+Markup:
 <div class=" br_solid br_transparent bg_accent-3 relative p_5" style="height:200px;">
 	<div class="bg_primary-5 text_center {{modifier_class}}">Position Absolute {{modifier_class}}</div>
 </div>

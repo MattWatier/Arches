@@ -32,7 +32,7 @@ $black: rgb(19, 18, 18) !default;
   .font_ui          -  Font Normal:  Used components like navs and dense ui elements            
   .font_mono         - Used is quotes or data or code       
 
-  markup:
+  Markup:
   <div class="{{modifier_class}} font_3">
     <div class="lowercase">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
     <div class="uppercase">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
@@ -51,7 +51,7 @@ $black: rgb(19, 18, 18) !default;
   .font_normal            - Sets font style to normal
   .font_italic            - Sets font style to italic      
 
-  markup:
+  Markup:
   <div class="{{modifier_class}} font_normal font_2">
     <div class="lowercase">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
     <div class="uppercase">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
@@ -80,7 +80,7 @@ You can change the color of the text with some simple use classes.
 .c_warning -  text that's warning the user
 .c_inherit - text that inherits from its parent
 
-markup:
+Markup:
 <div class="{{modifier_class}} font_normal font_2 font_bold bg_secondary-4 p_3">
   <div class="text-lowercase">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
   <div class="text-uppercase">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
@@ -103,7 +103,7 @@ black and white fonts can be modified to have levels of transparency between 0-9
 .c_black -  text that's black
 
 
-markup:
+Markup:
 <div class="font_normal font_2 bg_primary font_ui">
   <div class="{{modifier_class}} p_3">
     <div class="font_3 font_bold">{{modifier_class}} </div>
@@ -191,7 +191,7 @@ Styleguide Typography.Font.Color Transparency
   .font_bold             -  Bold, 700 
   .font_xbold            -  Extra Bold, 900
 
-  markup:
+  Markup:
   <div class="{{modifier_class}} font_normal font_2 font_ui">
     <div class="lowercase">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
     <div class="uppercase">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
@@ -237,7 +237,7 @@ Styleguide Typography.Font.Color Transparency
   .font_n4 - even smaller
   .font_n5 - smallest
 
-  markup:
+  Markup:
   <div class="{{modifier_class}} font_normal">
     <div class="lowercase pre-wrap">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
     <div class="uppercase pre-wrap">a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
@@ -265,7 +265,7 @@ Styleguide Typography.Font.Color Transparency
   .pre-wrap       - alter the wrapping style to pre-wrap    
   .nowrap         - alter the wrapping style to nowrap  
 
-  markup:
+  Markup:
   <div class="{{modifier_class}} font_normal max-w_1">
     Quae sapiente reprehenderit explicabo esse consequatur error fugiat. Voluptas odit ipsam architecto quae perspiciatis nostrum autem at. Ut veritatis molestiae distinctio autem repudiandae voluptatem voluptatibus aspernatur.
   </div>
@@ -330,7 +330,7 @@ Styleguide Typography.Font.Color Transparency
   .lowercase              - lowercase the text
   .capitalize             - capitalize the text
 
-	markup:
+	Markup:
 	<div class="{{modifier_class}} p_3 br_solid font_bold br_black-1 br_1 bg bg_primary c_white">text has a decoration of {{modifier_class}} <a>I am a link also decorated</a></div>
 
 	Styleguide Typography.Text.Decoration
@@ -379,7 +379,7 @@ Styleguide Typography.Font.Color Transparency
 	.text-shadow_none			- no shadow
 
 
-	markup:
+	Markup:
 	<div class="{{modifier_class}} p_3 br_solid font_bold br_black-1 br_1 bg bg_primary c_white">text has shadow of {{modifier_class}}</div>
 
 	Styleguide Typography.Text.Shadow
@@ -392,7 +392,7 @@ Text Indent
 
 indent text needs to have a mondifier to like `text-indent_2
 
-markup:
+Markup:
 <div class="font_normal font_1 m-x_5 br_solid br-l_1 br_black-4">
 <p class="text-indent_n3">text that has an indent magnitude of n3 </p>
 <p class="text-indent_n2">text that has an indent magnitude of n2 </p>
@@ -421,7 +421,7 @@ Styleguide Typography.Text.Indent
   .lh_4             -  1.75     
   .lh_5             -  2.5     
 
-  markup:
+  Markup:
   <div class="font_normal font_1 p_3">
     <h3 class="font_2 font_bold c_secondary_3 p-b_3">{{modifier_class}}</h3>
     <p class="{{modifier_class}}">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
@@ -439,7 +439,7 @@ Styleguide Typography.Text.Indent
   .text_center             -  center alignment           
   .text_left             -  left alignment      
 
-  markup:
+  Markup:
   <div class="font_normal font_1 p_3">
     <h3 class="font_2 font_bold c_secondary_3 p-b_3 {{modifier_class}}">{{modifier_class}}</h3>
     <p class="{{modifier_class}} lh_2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
@@ -468,7 +468,7 @@ Styleguide Typography.Text.Indent
   .ul_bullet          -  bullet          
   .ul_square          -  square      
 
-  markup:
+  Markup:
   <div class="font_normal font_1 p_3">
     <h3 class="font_2 font_bold c_secondary_3 p-b_3">{{modifier_class}}</h3>
     <ul class="{{modifier_class}}">

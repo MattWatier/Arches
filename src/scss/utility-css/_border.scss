@@ -29,7 +29,7 @@ Depends on base border module in _borders.css
 #{ class-name-constructor(border-style,dashed)}         - makes a border #{ map-deep-get($style-definition,border-style,unit,dashed)}
 #{ class-name-constructor(border-style,solid)}          - makes a border #{ map-deep-get($style-definition,border-style,unit,solid)}
   
-markup:
+Markup:
 <div class="{{modifier_class}} br_black bw_1 p_3">{{modifier_class}} border</div>
 
 Styleguide Borders.Style
@@ -58,7 +58,7 @@ br_info                 - border color
 br_highlight            - border color
 
 
-markup:
+Markup:
 <div class="{{modifier_class}} p_3 br_solid bw_3">{{modifier_class}} border</div>
 
 Styleguide Borders.Colors
@@ -82,7 +82,7 @@ br_black-7             - border black with alpha of 70%
 br_black-8             - border black with alpha of 80%
 br_black-9             - border black with alpha of 90%
 
-markup:
+Markup:
 <div class="{{modifier_class}} p_3 br_solid br_5 bg_primary-1 white">{{modifier_class}} border</div>
 
 Styleguide Borders.Colors.Black
@@ -106,7 +106,7 @@ Styleguide Borders.Colors.Black
   br_white-8             - border white with alpha of 20%
   br_white-9             - border white with alpha of 10%
   
-  markup:
+  Markup:
   <div class="{{modifier_class}} p_3 br_solid br_5 bg_primary-1 c_white">{{modifier_class}} border</div>
   
   Styleguide Borders.Colors.White
@@ -139,7 +139,7 @@ Styleguide Borders.Colors.Black
 	br-bl_circle          - bottom left corders at 100%
   
   
-	markup:
+	Markup:
 	<div class="{{modifier_class}} p_3 br_black br_solid br_2">{{modifier_class}} border</div>
   
 	Styleguide Borders.Radius
@@ -179,7 +179,7 @@ Styleguide Borders.Colors.Black
   br_primary-n4             - border color mixed with black
   br_primary-n5             - border color mixed with black 
   
-  markup:
+  Markup:
   <div class="{{modifier_class}} p_3 br_solid br_5 bg_secondary c_white">{{modifier_class}} border</div>
   
   Styleguide Borders.Colors.Modifiers
@@ -209,7 +209,7 @@ Styleguide Borders.Colors.Black
     br-l_5.br_1            	- left borders with rem
   
   
-    markup:
+    Markup:
     <div class="{{modifier_class}} p_3 br_solid br_black c_black">{{modifier_class}} border</div>
   
     Styleguide Borders.Width

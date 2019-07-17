@@ -15,7 +15,7 @@ Styleguide counters
 
 	Counter can be incremented by the `counter_increment` class.  
 
-	markup:
+	Markup:
     <div class="counter_reset">
         <div class="bg_primary-2 p_3 m_3"><span class="font_bold counter counter_increment">:</span> Item, Object, or Section</div>
         <div class="bg_primary-2 p_3 m_3"><span class="font_bold counter counter_increment">:</span> Item, Object, or Section</div>
@@ -43,7 +43,7 @@ Styleguide counters
 
 	Counter Subs can be nested inside of counters
 
-	markup:
+	Markup:
     <div class="counter_reset ">
         <div class="bg_primary-2 p_3 m_3"><span class="font_bold counter counter_increment counter_upper-alpha"></span> Item, Object, or Section</div>
             <div class="counter-sub_reset">
@@ -76,7 +76,7 @@ Styleguide counters
 	counter_lower-roman         - Lowercase Roman Listing
 	counter_upper-roman         - Uppercase Roman Listing
 
-	markup:
+	Markup:
 	<div class="counter_reset">
 			<div class="m_3 p_3 bg_primary-2"><span class="{{modifier_class}} font_bold counter_increment"></span> Item, Object, or Section</div>
 			<div class="m_3 p_3 bg_primary-2"><span class="{{modifier_class}} font_bold counter_increment"></span> Item, Object, or Section</div>
@@ -125,7 +125,7 @@ Styleguide counters
 	Quickly decorate the counter with a circle.  Change the  bgground and font color with utility classes to acheive different effects.
 
 
-	markup:
+	Markup:
     <div class="counter_reset">
         <div class="m_3 p_3"><span class="font_bold counter counter_increment order-marker bg_primary-2"></span> Item, Object, or Section</div>
         <div class="m_3 p_3"><span class="font_bold counter counter_increment order-marker font_10 br-tr_round br-br_round bg_highlight-2"></span> Item, Object, or Section</div>

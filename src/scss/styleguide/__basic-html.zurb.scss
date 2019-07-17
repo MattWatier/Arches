@@ -2,7 +2,7 @@
 
   Switches
 
-  markup:
+  Markup:
   <div class="switch tiny switch_radius p_5">
     <input class="switch-input" id="tinySwitch" type="checkbox" name="exampleSwitch">
     <label class="switch-paddle" for="tinySwitch">
@@ -29,7 +29,7 @@
 
   Progress Bars
 
-  markup:
+  Markup:
 <div class="row">
   <div class="primary progress" role="progressbar" tabindex="0" aria-valuenow="25" aria-valuemin="0" aria-valuetext="25 percent" aria-valuemax="100">
     <div class="progress-meter" style="width: 25%">
@@ -66,7 +66,7 @@
 
   Call Out Example
 
-  markup:
+  Markup:
   <div class="callout" data-closable>
     <button class="close-button" aria-label="Close alert" type="button" data-close>
       <span aria-hidden="true"><i class="fas fa-times"></i></span>
@@ -86,7 +86,7 @@
   
   You can see how on the third accordian how utility classes can be added to tranform the look and feel, and you can add toggle icons as well
 
-  markup:
+  Markup:
   <ul class="accordion" data-accordion>
     <li class="accordion-item is-active" data-accordion-item>
       <a href="#" class="accordion-title">Accordion 1</a>
@@ -117,7 +117,7 @@
 /*
     Tabs
 
-    markup:
+    Markup:
     <ul class="texture_light tabs"data-active-collapse="true"data-tabs id="collapsing-tabs">
         <li class="tabs-title is-active"><a href="#panel1c"aria-selected="true">Tab 1</a></li>
         <li class="tabs-title"><a href="#panel2c">Tab 2</a></li>
@@ -146,7 +146,7 @@
 /*
     Tabs Inset Area
 
-    markup:
+    Markup:
     <div class="bg_white br_1 br_secondary-4 br_solid p_4">
         hello this is some text
     </div>
@@ -180,7 +180,7 @@
 
     Use Case: When content of a card needs to be toggled rather then a whole section of a page.
 
-    markup:
+    Markup:
         <div class="card shadow_2 cell small-6 large-4" style="max-width: 500px;">
       <div class="font_slab border-top-left-square c_white font_3 p_4 texture_dust bg_primary">
       This is a header

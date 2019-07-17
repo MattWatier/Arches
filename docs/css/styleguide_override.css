@@ -4,6 +4,53 @@
  * @link https://github.com/MattWatier/Arches#readme
  */
 /**  Pre Header - modular scale default break points utility    *********************************/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+}
+
+.clearfix {
+  zoom: 1;
+  /* For IE 6/7 (trigger hasLayout) */
+}
+.clearfix:before {
+  display: table;
+  content: "";
+}
+.clearfix:after {
+  display: table;
+  clear: both;
+  content: "";
+}
+
+/* Smartphone resets and enhancements */
+html {
+  -webkit-font-smoothing: antialiased;
+  /*-webkit-backface-visibility: hidden; /* this breaks the sticky widget on article and landing pages */
+  /*-webkit-perspective: 1000; */
+}
+
+footer {
+  -webkit-transform: translate3d(0, 0, 0);
+  /* enables on GPU processing, per http://davidwalsh.name/translate3d */
+  transform: translate3d(0, 0, 0);
+}
+
+a:link, a:hover, a:active {
+  -webkit-tap-highlight-color: rbga(0, 0, 0, 0);
+  outline: none;
+  /* prevents pink highlight color on tap */
+}
+
+span {
+  -webkit-transform: translateZ(0);
+  /* enables on GPU processing */
+}
+
 /** Utility Class Only With Basic ACC Branding **/
 /**  ACC Brands    *********************************/
 /**  Default Brands    *********************************/
@@ -12,7 +59,7 @@
 
 ACC's Blue
 
-$acc-blue            - #00386b; acc
+$acc-blue            -  #00386b; acc
 
 Styleguide DesignBase.Colors.ACC
 */
@@ -22,11 +69,11 @@ Theme Colors
 
 Colors are based off of the ACC Scrub Colors.
 
-$teal                - #198dae; primary
-$grey-dark           - #676a72; secondary
-$green-blue  	      - #16a385; accent
-$grey-alt            - #a3988c; info
-$purple              - #7742bd; highlight
+map-get($theme-palette, primary)              -  #198dae; primary
+map-get($theme-palette, secondary)            -  #676a72; secondary
+map-get($theme-palette, accent)               -  #16a385;  accent
+map-get($theme-palette, info)                 -  #a3988c; info
+map-get($theme-palette, highlight)            -  #7742bd; highlight
 
 Styleguide DesignBase.Colors
  */
@@ -34,16 +81,15 @@ Styleguide DesignBase.Colors
 
 Action Colors  
 
-Colors are based off of the ACC Scrub Colors.
+Actionable colors used to respond to user inputs and messaging.
 
-$red                 - #dd1a1a; alert
-$orange              - #da8210; warning
-$green               - #06a022; success
-$blue                - #2b58c0; navigation
+map-get($theme-palette, alert)                -  #dd1a1a; alert
+map-get($theme-palette, warning)              -  #da8210; warning
+map-get($theme-palette, success)               -  #078a2e;  success
+map-get($theme-palette, navigation)           -  #2b58c0; navigation
 
 Styleguide DesignBase.Colors.Actions
-
- */
+*/
 /*
 
 Color Coding  
@@ -134,6 +180,49 @@ Weight: -1
 Styleguide DesignBase.Colors.ColorCoding.Pathways
 
 */
+.twitter {
+  background-color: #00aced !important;
+}
+
+.facebook {
+  background-color: #3b5998 !important;
+}
+
+.linkedin {
+  background-color: #0077b5 !important;
+}
+
+.google-play {
+  background-color: #ef6c00 !important;
+}
+
+.apple-store {
+  background-color: #ea4cc0 !important;
+}
+
+.youtube {
+  background-color: #bb0000 !important;
+}
+
+/*
+
+Clinical Pathway Colors  
+
+Each of the clinical pathways has a distinctive color.  These colors are used to give a distinct theme to our clinical apps, marketing, pdf's and tools.
+
+$twitter            -   #00aced;  twitter     
+$facebook           -   #3b5998;  facebook    
+$linkedin           -   #007bb6;  linkedin    
+$apple-store        -   #ea4cc0;  apple-store 
+$google-play        -   #689f38;  google-play 
+$youtube            -   #bb0000;  youtube     
+
+
+Weight: 100
+
+Styleguide DesignBase.Colors.Social Networks
+
+*/
 /**  Fonts  **/
 /* Robto Slab Regular */
 @font-face {
@@ -211,7 +300,7 @@ div[class*=texture_] {
 	.texture_cross            					- A mostly transparent cross texture used for alternating rows of content when a little extra texture is needed.
 	.texture_disabled              				- This texture is used to paint disabled buttons and ui items giving it a greyed and X'ed out appearand. 
 
-	markup:
+	Markup:
 	<div class="{{modifier_class}} p_5 border-c_black-8 border-width_1 border_solid text_center bg_primary-4">{{modifier_class}} with a light primary color background</div>
 
 	Styleguide DesignBase.Textures

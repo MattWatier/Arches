@@ -275,9 +275,9 @@ $font-family-monospace:       #{map-deep-get($value-to-unit, font-family, mono)}
 $font-family-base:            $font-family-sans-serif;
 // stylelint-enable value-keyword-case
 
-$font-size-base:              $base-font-size-rem; // Assumes the browser default, typically `16px`
-$font-size-lg:                map-deep-get($value-to-unit, font-size, 2);
-$font-size-sm:                map-deep-get($value-to-unit, font-size, n1);
+$font-size-base:              $base-font-size-rem  !default; // Assumes the browser default, typically `16px`
+$font-size-lg:                map-deep-get($value-to-unit, font-size, 2)  !default;
+$font-size-sm:                map-deep-get($value-to-unit, font-size, n1)  !default;
 
 $font-weight-lighter:         lighter !default;
 $font-weight-light:           300 !default;
@@ -288,12 +288,12 @@ $font-weight-bolder:          bolder !default;
 $font-weight-base:            $font-weight-normal !default;
 $line-height-base:            $baseline-modifier;
 
-$h1-font-size:                map-deep-get($value-to-unit, font-size, 5);
-$h2-font-size:                map-deep-get($value-to-unit, font-size, 4);
-$h3-font-size:                map-deep-get($value-to-unit, font-size, 3);
-$h4-font-size:                map-deep-get($value-to-unit, font-size, 2);
-$h5-font-size:                map-deep-get($value-to-unit, font-size, 1);
-$h6-font-size:                map-deep-get($value-to-unit, font-size, 0);
+$h1-font-size:                map-deep-get($value-to-unit, font-size, 5) !default;
+$h2-font-size:                map-deep-get($value-to-unit, font-size, 4) !default;
+$h3-font-size:                map-deep-get($value-to-unit, font-size, 3) !default;
+$h4-font-size:                map-deep-get($value-to-unit, font-size, 2) !default;
+$h5-font-size:                map-deep-get($value-to-unit, font-size, 1) !default;
+$h6-font-size:                map-deep-get($value-to-unit, font-size, 0) !default;
 
 $headings-margin-bottom:      $spacer / 2 !default;
 $headings-font-family:        #{map-deep-get($value-to-unit, font-family, display)};
@@ -380,8 +380,8 @@ $table-border-level:          -6 !default;
 //
 // Shared variables that are reassigned to `$input-` and `$btn-` specific variables.
 
-$input-btn-padding-y:         .375rem !default;
-$input-btn-padding-x:         .75rem !default;
+$input-btn-padding-y:         map-deep-get($value-to-unit, size-ui, 2);  //.375rem;
+$input-btn-padding-x:         map-deep-get($value-to-unit, size-ui, 4);  //.75rem;
 $input-btn-font-family:       null !default;
 $input-btn-font-size:         $font-size-base !default;
 $input-btn-line-height:       $line-height-base !default;
@@ -390,13 +390,13 @@ $input-btn-focus-width:       .2rem !default;
 $input-btn-focus-color:       rgba($component-active-bg, .25) !default;
 $input-btn-focus-box-shadow:  0 0 0 $input-btn-focus-width $input-btn-focus-color !default;
 
-$input-btn-padding-y-sm:      .25rem !default;
-$input-btn-padding-x-sm:      .5rem !default;
+$input-btn-padding-y-sm:      map-deep-get($value-to-unit, size-ui, 1);//.25rem;
+$input-btn-padding-x-sm:      map-deep-get($value-to-unit, size-ui, 3);//.5rem;
 $input-btn-font-size-sm:      $font-size-sm !default;
 $input-btn-line-height-sm:    $line-height-sm !default;
 
-$input-btn-padding-y-lg:      .5rem !default;
-$input-btn-padding-x-lg:      1rem !default;
+$input-btn-padding-y-lg:      map-deep-get($value-to-unit, size-ui, 3); //.5rem;
+$input-btn-padding-x-lg:      map-deep-get($value-to-unit, size-ui, 1); //1rem;
 $input-btn-font-size-lg:      $font-size-lg !default;
 $input-btn-line-height-lg:    $line-height-lg !default;
 

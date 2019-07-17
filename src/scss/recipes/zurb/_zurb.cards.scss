@@ -9,7 +9,7 @@ bg_highlight 		- textures are slightly transparent so they can be colored with b
 bg_warning			- textures are slightly transparent so they can be colored with background-color classess
 bg_alert			- textures are slightly transparent so they can be colored with background-color classess
 
-markup:
+Markup:
 <div class="p_4 texture_light bg_secondary-4">
 	<div class="card shadow_2 max-w_1:md">
 		<div class="card-divider font_slab border-top-left-square c_white font_3 p_4 texture_dust {{modifier_class}}">
@@ -39,7 +39,7 @@ highlight 		- This page message is used for X
 warning				- This page message is used for X
 alert					- This page message is used for X
 
-markup:
+Markup:
 <div class="p_5 texture_light bg_secondary-4">
 	<div class="card shadow_2 bg_{{modifier_class}}-5">
 		<div class=" font_slab br-tl_square c_white font_3 p_4 texture_dust bg_{{modifier_class}}">
@@ -70,7 +70,7 @@ User Card
 
 Member Cards Used in the CSTool give a great represendation on how complex the UI can be with a combination of UCs
 
-markup:
+Markup:
 <div class="p_5 p-t_3 p-b_3 texture_light bg_secondary-4">
 <div class="user-card shadow br_solid br_black-1 bg_white">
    <div class="grid-x">
@@ -128,5 +128,5 @@ markup:
 </div>
 </div>
 
-Styleguide Recipe.Zurb.User Card
+Styleguide Recipes.Zurb.User Card
 */

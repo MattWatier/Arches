@@ -31,6 +31,12 @@ $white: rgb(255, 255, 255);
 $black: rgb(19, 18, 18);
 $real-black: #000;
 
+// Currently Un used in the design but part of bootstrap.
+$indigo: #6610f2 !default;
+$pink: #e83e8c !default;
+$yellow: #ffc107 !default;
+$cyan: #17a2b8 !default;
+
 $gray-100: mix($white, $black, 10%);
 $gray-200: mix($white, $black, 20%);
 $gray-300: mix($white, $black, 30%);
@@ -40,12 +46,6 @@ $gray-600: mix($white, $black, 60%);
 $gray-700: mix($white, $black, 70%);
 $gray-800: mix($white, $black, 80%);
 $gray-900: mix($white, $black, 90%);
-
-// Currently Un used in the design but part of bootstrap.
-$indigo: #6610f2;
-$pink: #e83e8c;
-$yellow: #ffc107;
-$cyan: #17a2b8;
 
 $theme-palette: map-merge(
 	(
@@ -138,8 +138,20 @@ $global-radus-on: false;
 $global-border-radius: 6px;
 $global-border-round: 25px;
 $basicSizeMultiplier: 1rem;
+
+$h1-font-size: map-deep-get($value-to-unit, font-size, 5);
+$h2-font-size: map-deep-get($value-to-unit, font-size, 4);
+$h3-font-size: map-deep-get($value-to-unit, font-size, 3);
+$h4-font-size: map-deep-get($value-to-unit, font-size, 2);
+$h5-font-size: map-deep-get($value-to-unit, font-size, 1);
+$h6-font-size: map-deep-get($value-to-unit, font-size, 0);
+
+$font-size-base: $base-font-size-rem; // Assumes the browser default, typically `16px`
+$font-size-lg: map-deep-get($value-to-unit, font-size, 2);
+$font-size-sm: map-deep-get($value-to-unit, font-size, n1);
 /**  Default Brands    *********************************/
 /**  Colors  **/
+
 @import "config/colors";
 /**  Fonts  **/
 @import "config/fonts";
@@ -192,11 +204,6 @@ $basicSizeMultiplier: 1rem;
 @import "components/logo";
 
 @import "components/interactive-extras";
-@import "components/lorem-placeholders";
-@import "components/icon-toggle";
-@import "components/loading-grid";
-@import "components/scrollbar";
-@import "components/social-nav";
 
 @import "styleguide/styleguide";
 @import "styleguide/__basic-html.base";
@@ -205,16 +212,25 @@ $basicSizeMultiplier: 1rem;
 @import "styleguide/__basic-html.boot";
 @import "components/boot/boot.navbar.override";
 /*
-	ACC.org Recipes
+	Bootstrap Recipes
 
-	Combination of UCs and Base Components from the Framework can make an infinate amount of alterations to designs and layouts. Bellow are some alteratoins to the Bootstrap Components with the Utiltity Classes. 
+	Combination of UCs and Base Components from the Bootstrap can make an infinate amount of alterations to designs and layouts. Bellow are some alteratoins to the Bootstrap Components with the Utiltity Classes. 
 
-	Styleguide Recipes
+	Styleguide Recipes.Bootstrap
 
 */
-@import "recipes/boot/boot.acc_footer";
-@import "recipes/boot/boot.basic_nav";
-@import "recipes/boot/boot.member";
+@import "recipes/boot/_boot.basic_nav";
+/*
+	ACC.org Recipes
+
+	The use of Utiltiy Class give us the ablitiy to create much of the UI needed for ACC.org without expanding on the base of the styles that are written.  Included are patterns to create some of the complex UI inside of ACC.org
+
+	Styleguide Recipes.ACC
+
+*/
+@import "recipes/acc/_acc._footer";
+@import "recipes/acc/_acc.boot._header-nav";
+@import "recipes/acc/_acc._marketing";
 /**  Utility Classes    *********************************/
 @import "utility-css/utility-css";
 

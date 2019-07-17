@@ -21,7 +21,7 @@ default		            - Medium buttons (default)
 .xlarge		            - Large buttons
 .disabled	            - Disabled buttons
 
-markup:
+Markup:
 <a class="button {{modifier_class}}">{{modifier_class}} button</a>
 
  Styleguide HTML.Buttons

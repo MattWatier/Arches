@@ -3,7 +3,7 @@ $acc-blue: #004176 !default;
 
 ACC's Blue
 
-$acc-blue            - #00386b; acc
+$acc-blue            -  #{$acc-blue}; acc
 
 Styleguide DesignBase.Colors.ACC
 */
@@ -21,6 +21,12 @@ $magenta: #c34198 !default;
 
 $white: rgb(255, 255, 255) !default;
 $black: rgb(19, 18, 18) !default;
+
+// Currently Un used in the design but part of bootstrap.
+$indigo: #6610f2 !default;
+$pink: #e83e8c !default;
+$yellow: #ffc107 !default;
+$cyan: #17a2b8 !default;
 
 $theme-palette: () !default;
 // stylelint-disable-next-line scss/dollar-variable-default
@@ -54,11 +60,11 @@ Theme Colors
 
 Colors are based off of the ACC Scrub Colors.
 
-$teal                - #198dae; primary
-$grey-dark           - #676a72; secondary
-$green-blue  	      - #16a385; accent
-$grey-alt            - #a3988c; info
-$purple              - #7742bd; highlight
+map-get($theme-palette, primary)              -  #{ map-get($theme-palette, primary)}; primary
+map-get($theme-palette, secondary)            -  #{ map-get($theme-palette, secondary)}; secondary
+map-get($theme-palette, accent)               -  #{ map-get($theme-palette, accent)};  accent
+map-get($theme-palette, info)                 -  #{ map-get($theme-palette, info)}; info
+map-get($theme-palette, highlight)            -  #{ map-get($theme-palette, highlight)}; highlight
 
 Styleguide DesignBase.Colors
  */
@@ -67,16 +73,15 @@ Styleguide DesignBase.Colors
 
 Action Colors  
 
-Colors are based off of the ACC Scrub Colors.
+Actionable colors used to respond to user inputs and messaging.
 
-$red                 - #dd1a1a; alert
-$orange              - #da8210; warning
-$green               - #06a022; success
-$blue                - #2b58c0; navigation
+map-get($theme-palette, alert)                -  #{ map-get($theme-palette, alert)}; alert
+map-get($theme-palette, warning)              -  #{ map-get($theme-palette, warning)}; warning
+map-get($theme-palette, success)               -  #{ map-get($theme-palette, success)};  success
+map-get($theme-palette, navigation)           -  #{ map-get($theme-palette, navigation)}; navigation
 
 Styleguide DesignBase.Colors.Actions
-
- */
+*/
 
 // Other Color Collections from the college
 
@@ -270,5 +275,55 @@ $pathway-special 										- #{$pathway-special};  Special
 Weight: -1
 
 Styleguide DesignBase.Colors.ColorCoding.Pathways
+
+*/
+
+$twitter: #00aced;
+$facebook: #3b5998;
+$linkedin: #0077b5;
+$apple-store: #ea4cc0;
+$google-play: #ef6c00;
+$youtube: #bb0000;
+
+.twitter {
+	background-color: $twitter !important;
+}
+
+.facebook {
+	background-color: $facebook !important;
+}
+
+.linkedin {
+	background-color: $linkedin !important;
+}
+
+.google-play {
+	background-color: $google-play !important;
+}
+
+.apple-store {
+	background-color: $apple-store !important;
+}
+.youtube {
+	background-color: $youtube !important;
+}
+
+/*
+
+Clinical Pathway Colors  
+
+Each of the clinical pathways has a distinctive color.  These colors are used to give a distinct theme to our clinical apps, marketing, pdf's and tools.
+
+$twitter            -   #00aced;  twitter     
+$facebook           -   #3b5998;  facebook    
+$linkedin           -   #007bb6;  linkedin    
+$apple-store        -   #ea4cc0;  apple-store 
+$google-play        -   #689f38;  google-play 
+$youtube            -   #bb0000;  youtube     
+
+
+Weight: 100
+
+Styleguide DesignBase.Colors.Social Networks
 
 */
