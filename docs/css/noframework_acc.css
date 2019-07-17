@@ -12480,7 +12480,7 @@ Markup:
 
 Weight: 50
 
-Styleguide hover.opacity
+Styleguide hover.opacity.whiteblack
 
  */
 /*
@@ -12489,14 +12489,18 @@ Opacity: Hover to Full Opacity
 Set the Opacity of an object to 100% while hovered.
 
 
-.opacity_0                        - Opacity of 0%
-.opacity_1                        - Opacity of 5%
-.opacity_5                        - Opacity of 50%
-.opacity_9                        - Opacity of 95%
-
 Markup:
-<div class="p_4 bg_primary">
-  <div class="{{modifier_class}} h:opacity  br_1 br_solid br_white p_2 bg_warning c_white">hover me to bring me to full opacity</div>
+<div class="flex m_5 bg_primary m_5">
+  <div class="h:opacity opacity-0  p-y_3 p-x_4 flex_auto font_bold font_2 font_slab text_center br_1 br_solid br_secondary-4">0</div>
+  <div class="h:opacity opacity-1  p-y_3 p-x_4 flex_auto font_bold font_2 font_slab text_center br_1 br_solid br_secondary-4">1</div>
+  <div class="h:opacity opacity-2  p-y_3 p-x_4 flex_auto font_bold font_2 font_slab text_center br_1 br_solid br_secondary-4">2</div>
+  <div class="h:opacity opacity-3  p-y_3 p-x_4 flex_auto font_bold font_2 font_slab text_center br_1 br_solid br_secondary-4">3</div>
+  <div class="h:opacity opacity-4  p-y_3 p-x_4 flex_auto font_bold font_2 font_slab text_center br_1 br_solid br_secondary-4">4</div>
+  <div class="h:opacity opacity-5  p-y_3 p-x_4 flex_auto font_bold font_2 font_slab text_center br_1 br_solid br_secondary-4">5</div>
+  <div class="h:opacity opacity-6  p-y_3 p-x_4 flex_auto font_bold font_2 font_slab text_center br_1 br_solid br_secondary-4 ">6</div>
+  <div class="h:opacity opacity-7  p-y_3 p-x_4 flex_auto font_bold font_2 font_slab text_center br_1 br_solid br_secondary-4 ">7</div>
+  <div class="h:opacity opacity-8  p-y_3 p-x_4 flex_auto font_bold font_2 font_slab text_center br_1 br_solid br_secondary-4 ">8</div>
+  <div class="h:opacity opacity-9  p-y_3 p-x_4 flex_auto font_bold font_2 font_slab text_center br_1 br_solid br_secondary-4 ">9</div>
 </div>
 
 Weight: 60
@@ -12511,9 +12515,9 @@ Styleguide hover.opacity
 }
 
 /*
-Hover: Transition 
+Transition on Hover 
 
-soften the harshness of transitions of color by adding transitions.
+soften the harshness of the switch of the style by adding transitions to the changed decorators.
 
 0              - 0 second transition
 1              - .1 second transition
