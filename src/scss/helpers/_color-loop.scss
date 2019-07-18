@@ -91,10 +91,9 @@ $debug-trace: true !default;
 			#{$style}: mix(black, $color, $val) !important;
 		}
 	}
-
-	@if $debug-trace {
-		@debug "Color Loop for #{$key} painting it with #{$color-name}";
-	}
+}
+@if $debug-trace {
+	@debug "Color Loop for #{$key} painting it with #{$color-name}";
 }
 
 @mixin hover-loop($key, $color-name, $color) {
@@ -151,7 +150,6 @@ $debug-trace: true !default;
 	@if $debug-trace {
 		@debug "Looping Style With Transparent Colors #{$key} #{$color}";
 	}
-
 	@each $unit, $val in $sizes {
 		$seperator: "";
 

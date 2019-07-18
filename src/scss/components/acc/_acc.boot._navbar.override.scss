@@ -1,3 +1,82 @@
+$navbar-font_primary: $font_slab !default;
+$navbar-font_secondary: $font_ui !default;
+$navbar-color_primary: map-get($theme-palette, acc);
+$navbar-color_secondary: map-get($theme-palette, accent);
+
+.navbar {
+	font-family: $navbar-font_primary;
+}
+.dropdown-menu {
+	font-family: $navbar-font_secondary;
+}
+.nav-link {
+	padding-left: $padding_2;
+	padding-right: $padding_2;
+}
+.navbar-primary .dropdown-toggle:after {
+	display: none;
+}
+.navbar-primary.navbar-expand-md .nav-item {
+	@media #{$medium-up} {
+		border-top: $border-width_3 $navbar-color_primary solid;
+		border-bottom: $border-width_3 $navbar-color_primary solid;
+		&.active,
+		&.show,
+		&:hover {
+			border-top-color: $navbar-color_secondary;
+			border-bottom-color: #fff;
+			background-color: #fff;
+			.nav-link {
+				color: $navbar-color_primary;
+			}
+		}
+	}
+}
+.navbar-primary.navbar-expand-lg .nav-item {
+	@media #{$large-up} {
+		border-top: $border-width_3 $navbar-color_primary solid;
+		border-bottom: $border-width_3 $navbar-color_primary solid;
+		&.active,
+		&.show,
+		&:hover {
+			border-top-color: $navbar-color_secondary;
+			border-bottom-color: #fff;
+			background-color: #fff;
+			.nav-link {
+				color: $navbar-color_primary;
+			}
+		}
+	}
+}
+
+.dropdown {
+	&:hover {
+		& > .dropdown-menu {
+			.navbar-expand-sm & {
+				@media #{$small-up} {
+					display: block;
+				}
+			}
+			.navbar-expand-md & {
+				@media #{$medium-up} {
+					display: block;
+				}
+			}
+			.navbar-expand-lg & {
+				@media #{$large-up} {
+					display: block;
+				}
+			}
+		}
+	}
+}
+.dropdown-item {
+	color: get-themecolor(primary, -1);
+	&:hover {
+		color: white;
+	}
+}
+
 /*
 Login Nav
 

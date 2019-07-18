@@ -459,6 +459,34 @@ Styleguide Typography.Text.Indent
 	text-align: left !important;
 }
 
+@media #{$medium-up} {
+	.text_right\:md {
+		text-align: right !important;
+	}
+
+	.text_center\:md {
+		text-align: center !important;
+	}
+
+	.text_left\:md {
+		text-align: left !important;
+	}
+}
+
+@media #{$large-up} {
+	.text_right\:lg {
+		text-align: right !important;
+	}
+
+	.text_center\:lg {
+		text-align: center !important;
+	}
+
+	.text_left\:lg {
+		text-align: left !important;
+	}
+}
+
 /*
   List Type
 

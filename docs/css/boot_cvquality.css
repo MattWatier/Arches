@@ -56,6 +56,74 @@ span {
 /** Utility Class Only With Basic ACC Branding **/
 /**  ACC Brands    *********************************/
 /**  CV Quality Colors  **/
+.c_accent-alt {
+  color: #ffc425 !important;
+}
+
+.c_mix-teal-orange {
+  color: #58b5a5 !important;
+}
+
+.c_mix-orange-teal {
+  color: #acbd65 !important;
+}
+
+.br_accent-alt {
+  border-color: #ffc425 !important;
+}
+
+.br_mix-teal-orange {
+  border-color: #58b5a5 !important;
+}
+
+.br_mix-orange-teal {
+  border-color: #acbd65 !important;
+}
+
+.bg_accent-alt {
+  background-color: #ffc425 !important;
+}
+
+.bg_mix-teal-orange {
+  background-color: #58b5a5 !important;
+}
+
+.bg_mix-orange-teal {
+  background-color: #acbd65 !important;
+}
+
+/*
+	Background Colors Alt
+
+	These Alternate colors are single use to embelish a design. These colors <strong>DO NOT</strong> have extra modifiers.    
+
+	.bg_accent-alt            	- light orange
+	.bg_mix-teal-orange			-	Mix of 60% Teal And 40% Orange 
+	.bg_mix-orange-teal				-	Mix of 60% Orange and 40% Teal 	
+
+
+	Markup:
+	<div class="{{modifier_class}} p_3 c_white">Background Color of {{modifier_class}}</div>
+
+	Styleguide Background.Color.Alt
+
+*/
+/*
+	Border Colors Alt
+
+	These Alternate colors are single use to embelish a design. These colors <strong>DO NOT</strong> have extra modifiers.    
+
+	.br_accent-alt            	- light orange
+	.br_mix-teal-orange			-	Mix of 60% Teal And 40% Orange 
+	.br_mix-orange-teal				-	Mix of 60% Orange and 40% Teal 	
+
+
+	Markup:
+	<div class="{{modifier_class}} br_solid br_4">Border Color of {{modifier_class}}</div>
+
+	Styleguide Border.Color.Alt
+
+*/
 /*
 
 CVqualtiy Full Pallete 
@@ -83,6 +151,126 @@ Weight: 1
 Styleguide DesignBase.Colors.Full Pallate
 
 */
+.gradient_teal {
+  background: #047294;
+  /* Old browsers */
+  /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzA1YWVlNSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMjgzYWIiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+  /* FF3.6+ */
+  /* Chrome,Safari4+ */
+  /* Chrome10+,Safari5.1+ */
+  /* Opera 11.10+ */
+  /* IE10+ */
+  background: linear-gradient(to bottom, #05aee5 0%, #047294 100%);
+  /* W3C */
+}
+
+.gradient_teal-reverse {
+  background: #047294;
+  /* Old browsers */
+  /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzA1YWVlNSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMjgzYWIiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+  /* FF3.6+ */
+  /* Chrome,Safari4+ */
+  /* Chrome10+,Safari5.1+ */
+  /* Opera 11.10+ */
+  /* IE10+ */
+  background: linear-gradient(to bottom, #047294 0%, #0088aa 100%);
+  /* W3C */
+}
+
+.gradient_grey {
+  background: #a1a0a4;
+  /* Old browsers */
+  /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzA1YWVlNSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMjgzYWIiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+  /* FF3.6+ */
+  /* Chrome,Safari4+ */
+  /* Chrome10+,Safari5.1+ */
+  /* Opera 11.10+ */
+  /* IE10+ */
+  background: linear-gradient(to bottom, #a1a0a4 0%, #6f6b6f 100%);
+  /* W3C */
+}
+
+.gradient_grey-reverse {
+  background: #6f6b6f;
+  /* Old browsers */
+  /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzA1YWVlNSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMjgzYWIiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+  /* FF3.6+ */
+  /* Chrome,Safari4+ */
+  /* Chrome10+,Safari5.1+ */
+  /* Opera 11.10+ */
+  /* IE10+ */
+  background: linear-gradient(to bottom, #6f6b6f 0%, #a1a0a4 100%);
+  /* W3C */
+}
+
+.gradient_lightblue {
+  background: #a4cded;
+  /* Old browsers */
+  background-attachment: fixed;
+  /* FF3.6+ */
+  /* Chrome,Safari4+ */
+  /* Chrome10+,Safari5.1+ */
+  /* Opera 11.10+ */
+  /* IE10+ */
+  background-image: linear-gradient(to bottom, #fafafa 1%, #a4cded 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=" $off-white", endColorstr="$soft-blue", GradientType=0);
+  /* IE6-9 */
+}
+
+.gradient_lightgrey {
+  background: #ffffff;
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNlY2VhZWEiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+  background: linear-gradient(to bottom, #ffffff 0%, #eceaea 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#ffffff", endColorstr=" $soft-grey", GradientType=0);
+}
+
+.gradient_warmgrey {
+  background: #a1a0a4;
+  /* Old browsers */
+  /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzA1YWVlNSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMjgzYWIiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+  /* FF3.6+ */
+  /* Chrome,Safari4+ */
+  /* Chrome10+,Safari5.1+ */
+  /* Opera 11.10+ */
+  /* IE10+ */
+  background: linear-gradient(to bottom, #d6d4d4 0%, #a1a0a4 100%);
+  /* W3C */
+}
+
+.gradient_orange {
+  background: #a1a0a4;
+  /* Old browsers */
+  /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzA1YWVlNSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMjgzYWIiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+  /* FF3.6+ */
+  /* Chrome,Safari4+ */
+  /* Chrome10+,Safari5.1+ */
+  /* Opera 11.10+ */
+  /* IE10+ */
+  background: linear-gradient(to bottom, #e87d1e 0%, #f4a122 100%);
+  /* W3C */
+}
+
+.gradient_warmgrey-reverse {
+  background: #a1a0a4;
+  /* Old browsers */
+  /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzA1YWVlNSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMjgzYWIiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+  /* FF3.6+ */
+  /* Chrome,Safari4+ */
+  /* Chrome10+,Safari5.1+ */
+  /* Opera 11.10+ */
+  /* IE10+ */
+  background: linear-gradient(to bottom, #a1a0a4 0%, #d6d4d4 100%);
+  /* W3C */
+}
+
 /**  Default Brands    *********************************/
 /**  Colors  **/
 /*
@@ -394,7 +582,7 @@ div[class*=texture_] {
   --breakpoint-lg: 1024px;
   --breakpoint-xl: 1200px;
   --breakpoint-xxl: 1400px;
-  --font-family-sans-serif: "Lato",Verdana,Helvetica,sans-serif;;
+  --font-family-sans-serif: "Muli","Open Sans","system",sans-serif;
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
 }
 
@@ -419,8 +607,8 @@ body {
   margin: 0;
   background-color: white;
   color: #000;
-  font-family: "Lato",Verdana,Helvetica,sans-serif;;
-  font-size: 16px;;
+  font-family: "Muli","Open Sans","system",sans-serif;
+  font-size: 16px;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -737,7 +925,7 @@ h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   margin-bottom: 8px;
   margin-bottom: 0.5rem;
-  font-family: "Muli","Open Sans","system",sans-serif;
+  font-family: "Lato",Verdana,Helvetica,sans-serif;;
   font-weight: 300;
   line-height: 1.35;
 }
@@ -5911,9 +6099,9 @@ a.close.disabled {
   z-index: 1070;
   position: absolute;
   margin: 0;
-  font-family: "Lato",Verdana,Helvetica,sans-serif;
+  font-family: "Muli","Open Sans","system",sans-serif;
   font-size: 16px;
-  font-size: 1rem;;
+  font-size: 1rem;
   font-style: normal;
   font-weight: 400;
   letter-spacing: normal;
@@ -6031,9 +6219,9 @@ a.close.disabled {
   border: 1px solid rgba(19, 18, 18, 0.2);
   background-clip: padding-box;
   background-color: white;
-  font-family: "Lato",Verdana,Helvetica,sans-serif;
+  font-family: "Muli","Open Sans","system",sans-serif;
   font-size: 16px;
-  font-size: 1rem;;
+  font-size: 1rem;
   font-style: normal;
   font-weight: 400;
   letter-spacing: normal;
@@ -7654,12 +7842,12 @@ The social links can be restyled to be smaller.
 Markup:
 <section class="social p_4 m-y_2 font_n1 max-w_1 bg_white">
     <ul class="flex social-bar ul_none m_0">
-        <li class="flex_shrink m-r_2"><a href="https://twitter.com/accintouch" target="_blank" class="twitter bg_secondary-n1 block c_secondary-n4 h:bg_accent h:c_white m-b_0 p-x_3 p_2 social-bar--button text_center transition_0 "><i class="fab fa-twitter-square"></i></a></li>
-        <li class="flex_shrink m-r_2"><a href="https://www.facebook.com/AmericanCollegeofCardiology" target="_blank" class="facebook bg_secondary-n1 block c_secondary-n4 h:bg_accent h:c_white m-b_0 p-x_3 p_2 social-bar--button text_center transition_0 "><i class="fab fa-facebook-square"></i></a></li>
-        <li class="flex_shrink m-r_2"><a href="https://www.linkedin.com/company/american-college-of-cardiology/" target="_blank" class="linkedin bg_secondary-n1 block c_secondary-n4 h:bg_accent h:c_white m-b_0 p-x_3 p_2 social-bar--button text_center transition_0 "><i class="fab fa-linkedin"></i></a></li>
-        <li class="flex_shrink m-r_2"><a href="http://www.youtube.com/user/ACCinTouch" target="_blank" class="youtube bg_secondary-n1 block c_secondary-n4 h:bg_accent h:c_white m-b_0 p-x_3 p_2 social-bar--button text_center transition_0 "><i class="fab fa-youtube"></i></a></li>
-        <li class="flex_shrink m-r_2"><a href="https://play.google.com/store/apps/dev?id=5189912010956845696&hl=en_US" target="_blank" class="google-play bg_secondary-n1 block c_secondary-n4 h:bg_accent h:c_white m-b_0 p-x_3 p_2 social-bar--button text_center transition_0 "><i class="fab fa-google-play"></i></a></li>
-        <li class="flex_shrink m-r_2"><a href="https://apps.apple.com/us/developer/american-college-of-cardiology/id502174543#see-all/i-phonei-pad-apps" target="_blank" class="apple-store bg_secondary-n1 block c_secondary-n4 h:bg_accent h:c_white m-b_0 p-x_3 p_2 social-bar--button text_center transition_0 "><i class="fab fa-apple"></i></a></li>
+        <li class="flex_shrink m-r_2"><a href="https://twitter.com/accintouch" target="_blank" class="twitterbg_secondary-3 block c_secondary-n4 h:bg_accent h:c_white m-b_0 p-x_3 p_2 social-bar--button text_center transition_0"><i class="fab fa-twitter-square"></i></a></li>
+        <li class="flex_shrink m-r_2"><a href="https://www.facebook.com/AmericanCollegeofCardiology" target="_blank" class="facebookbg_secondary-3 block c_secondary-n4 h:bg_accent h:c_white m-b_0 p-x_3 p_2 social-bar--button text_center transition_0"><i class="fab fa-facebook-square"></i></a></li>
+        <li class="flex_shrink m-r_2"><a href="https://www.linkedin.com/company/american-college-of-cardiology/" target="_blank" class="linkedinbg_secondary-3 block c_secondary-n4 h:bg_accent h:c_white m-b_0 p-x_3 p_2 social-bar--button text_center transition_0"><i class="fab fa-linkedin"></i></a></li>
+        <li class="flex_shrink m-r_2"><a href="http://www.youtube.com/user/ACCinTouch" target="_blank" class="youtubebg_secondary-3 block c_secondary-n4 h:bg_accent h:c_white m-b_0 p-x_3 p_2 social-bar--button text_center transition_0"><i class="fab fa-youtube"></i></a></li>
+        <li class="flex_shrink m-r_2"><a href="https://play.google.com/store/apps/dev?id=5189912010956845696&hl=en_US" target="_blank" class="google-playbg_secondary-3 block c_secondary-n4 h:bg_accent h:c_white m-b_0 p-x_3 p_2 social-bar--button text_center transition_0"><i class="fab fa-google-play"></i></a></li>
+        <li class="flex_shrink m-r_2"><a href="https://apps.apple.com/us/developer/american-college-of-cardiology/id502174543#see-all/i-phonei-pad-apps" target="_blank" class="apple-storebg_secondary-3 block c_secondary-n4 h:bg_accent h:c_white m-b_0 p-x_3 p_2 social-bar--button text_center transition_0"><i class="fab fa-apple"></i></a></li>
     </ul>
 </section>
 
@@ -7932,7 +8120,7 @@ pre {
 }
 
 .table {
-  font-family: "Lato",Verdana,Helvetica,sans-serif;;
+  font-family: "Muli","Open Sans","system",sans-serif;
 }
 .table td,
 .table th {
@@ -7946,11 +8134,11 @@ pre {
 }
 
 .navbar {
-  font-family: Roboto Slab, Times New Roman, Lucida Bright, Georgia, serif;
+  font-family: Maven Pro, Open Sans, Helvetica Neue, Helvetica, Helvetica, Arial, sans-serif;
 }
 
 .dropdown-menu {
-  font-family: Open Sans, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  font-family: Maven Pro, Open Sans, Helvetica Neue, Helvetica, Helvetica, Arial, sans-serif;
 }
 
 .nav-link {
@@ -7962,36 +8150,6 @@ pre {
 
 .navbar-primary .dropdown-toggle:after {
   display: none;
-}
-
-@media only screen and (min-width : 640px) {
-  .navbar-primary.navbar-expand-md .nav-item {
-    border-top: 5px #004176 solid;
-    border-bottom: 5px #004176 solid;
-  }
-  .navbar-primary.navbar-expand-md .nav-item.active, .navbar-primary.navbar-expand-md .nav-item.show, .navbar-primary.navbar-expand-md .nav-item:hover {
-    border-top-color: #e87d1e;
-    border-bottom-color: #fff;
-    background-color: #fff;
-  }
-  .navbar-primary.navbar-expand-md .nav-item.active .nav-link, .navbar-primary.navbar-expand-md .nav-item.show .nav-link, .navbar-primary.navbar-expand-md .nav-item:hover .nav-link {
-    color: #004176;
-  }
-}
-
-@media only screen and (min-width : 1024px) {
-  .navbar-primary.navbar-expand-lg .nav-item {
-    border-top: 5px #004176 solid;
-    border-bottom: 5px #004176 solid;
-  }
-  .navbar-primary.navbar-expand-lg .nav-item.active, .navbar-primary.navbar-expand-lg .nav-item.show, .navbar-primary.navbar-expand-lg .nav-item:hover {
-    border-top-color: #e87d1e;
-    border-bottom-color: #fff;
-    background-color: #fff;
-  }
-  .navbar-primary.navbar-expand-lg .nav-item.active .nav-link, .navbar-primary.navbar-expand-lg .nav-item.show .nav-link, .navbar-primary.navbar-expand-lg .nav-item:hover .nav-link {
-    color: #004176;
-  }
 }
 
 @media only screen and (min-width : 480px) {
@@ -8017,6 +8175,89 @@ pre {
   color: white;
 }
 
+/* 
+
+Branded Nav 
+
+The Header Nav of ACC.org 
+
+Markup:
+<div class="flex relative br_solid br_0 br-t_3 br_accent-alt">
+	<nav class="bg_secondary-2 flex_auto font_0 font_1:lg font_display navbar navbar-dark navbar-expand-lg navbar-primary p-x_0 uppercase">
+		<button class="br_white-2 flex is-active_toggle-function m-l_3 m-l_n2 m-y_2 navbar-toggler p-l_2 p-r_3 p-y_2 collapsed" type="button" data-toggle="collapse" data-target="#navbarLoginContent" aria-controls="navbarLoginContent" aria-expanded="false" aria-label="Toggle navigation">
+			<i class="a:c_acc-2 c_white fas flex_shrink font_0 icon-toggle_bars-times self_center"></i><span class="a:c_acc-2 c_white flex_auto self_center">&nbsp;Menu</span>
+		</button>
+		<div class="navbar-collapse collapse" id="navbarLoginContent" style="">
+			<ul class="expand expanded flex flex_column flex_row:lg nav text_center:lg text_left w_100">
+				<li class="nav-item flex_shrink">
+					<a class="active c_white h:bg_secondary nav-link p-x_4 p-x_5:lg" href="//www.acc.org/guidelines#doctype=Guidelines" title="Access ACC guidelines and clinical policy documents as well as related resources"><i class="fas fa-home"></i><span class="display_none:lg p-x_3">Home</span></a>
+				</li>
+				<li class="nav-item flex_auto dropdown">
+					<a class="c_white dropdown-toggle h:bg_secondary is-active_toggle-function nav-link p-x_4" href="/NCDR-Home" target="_self" data-delay="300" data-close-others="false" id="clinicalTopicsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="far faw icon-toggle_plus-minus display_none:lg m-l_n2 m-r_2"></i>Clinical Topics</a>
+					<div class="absolute:lg br_1 br_none br_secondary-3 br_solid:lg c_white dropdown-menu font_bold l_0 m-t_0 m-x_0 m-x_0:lg p_0 r_0 relative w_100" aria-labelledby="clinicalTopicsDropdown">
+						<ul class="bg_secondary-5 font_0 font_bold lh_1 ul_none">
+							<li class="nav-item"><a class="c_secondary-2 dropdown-item h:bg_secondary-1 h:c_secondary-5 nav-link p-x_5 text-indent_n1 wrap" href="/NCDR-Home/about-ncdr" target="_self">About NCDR</a></li>
+							<li class="nav-item"><a class="c_secondary-2 dropdown-item h:bg_secondary-1 h:c_secondary-5 nav-link p-x_5 text-indent_n1 wrap" href="/NCDR-Home/registries" target="_self">Registries</a></li>
+							<li class="nav-item"><a class="c_secondary-2 dropdown-item h:bg_secondary-1 h:c_secondary-5 nav-link p-x_5 text-indent_n1 wrap" href="/NCDR-Home/data-collection" target="_self">Data Collection</a></li>
+							<li class="nav-item"><a class="c_secondary-2 dropdown-item h:bg_secondary-1 h:c_secondary-5 nav-link p-x_5 text-indent_n1 wrap" href="/NCDR-Home/reports" target="_self">Reports</a></li>
+							<li class="nav-item"><a class="c_secondary-2 dropdown-item h:bg_secondary-1 h:c_secondary-5 nav-link p-x_5 text-indent_n1 wrap" href="/NCDR-Home/quality-payment-program" target="_self">Quality Payment Program</a></li>
+							<li class="nav-item"><a class="c_secondary-2 dropdown-item h:bg_secondary-1 h:c_secondary-5 nav-link p-x_5 text-indent_n1 wrap" href="/NCDR-Home/research" target="_self">Research</a></li>
+							<li class="nav-item"><a class="c_secondary-2 dropdown-item h:bg_secondary-1 h:c_secondary-5 nav-link p-x_5 text-indent_n1 wrap" href="/NCDR-Home/analytics" target="_self">Analytics</a></li>
+							<li class="nav-item"><a class="c_secondary-2 dropdown-item h:bg_secondary-1 h:c_secondary-5 nav-link p-x_5 text-indent_n1 wrap" href="/NCDR-Home/annual-conference" target="_self">ACC Quality Summit</a></li>
+							<li class="nav-item"><a class="c_secondary-2 dropdown-item h:bg_secondary-1 h:c_secondary-5 nav-link p-x_5 text-indent_n1 wrap" href="/NCDR-Home/ncdr-learning-center" target="_self">NCDR Learning Center</a></li>
+							<li class="nav-item"><a class="c_secondary-2 dropdown-item h:bg_secondary-1 h:c_secondary-5 nav-link p-x_5 text-indent_n1 wrap" href="/NCDR-Home/transform-ldl-c-risk" target="_self">TRANSFORM LDL C Risk</a></li>
+							<li class="nav-item"><a class="c_secondary-2 dropdown-item h:bg_secondary-1 h:c_secondary-5 nav-link p-x_5 text-indent_n1 wrap" href="/NCDR-Home/participant-directory" target="_self">Participant Directory</a></li>
+							<li class="nav-item"><a class="c_secondary-2 dropdown-item h:bg_secondary-1 h:c_secondary-5 nav-link p-x_5 text-indent_n1 wrap" href="/NCDR-Home/acc-public-reporting" target="_self">ACC Public Reporting</a></li>
+							<li class="nav-item"><a class="c_secondary-2 dropdown-item h:bg_secondary-1 h:c_secondary-5 nav-link p-x_5 text-indent_n1 wrap" href="/NCDR-Home/clinical-quality-coach" target="_self">NCDR Clinical Quality Coach Practice Dashboard</a></li>
+							<li class="nav-item"><a class="c_secondary-2 dropdown-item h:bg_secondary-1 h:c_secondary-5 nav-link p-x_5 text-indent_n1 wrap" href="https://www.ncdr.com/webncdr/Login?ReturnUrl=/webncdr/home/registry-selection" target="_self">Registry Participant Login</a></li>
+							<li class="nav-item"><a class="c_secondary-2 dropdown-item h:bg_secondary-1 h:c_secondary-5 nav-link p-x_5 text-indent_n1 wrap" href="/NCDR-Home/join-a-registry" target="_self">Join a Registry</a></li>
+						</ul>
+					</div>
+				</li>
+				<li class="nav-item flex_auto">
+					<a class="nav-link active h:bg_secondary c_white p-x_4" href="#">deserunt</a>
+				</li>
+				<li class="nav-item flex_auto">
+					<a class="nav-link h:bg_secondary c_white p-x_4" href="#">sit dolor commodo</a>
+				</li>
+				<li class="nav-item flex_auto">
+					<a class="nav-link h:bg_secondary c_white p-x_4" href="#">adipisicing</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+	<nav class="absolute bg_accent flex_shrink font_0 font_1:lg navbar navbar-dark navbar-expand p-b_1 p_0 r_0 relative:lg">
+		<ul class="navbar-nav">
+			<li class="nav-item dropdown">
+				<a class="block is-active is-active_toggle-function nav-link p-x_5:lg" id="myACCDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="far icon-toggle_chevron-up-down"></i> Sign In</a>
+				<div class="br_none br_solid:lg dropdown-menu dropdown-menu-right font_0 m-t_n1 p_0 r_0" aria-labelledby="navbarDropdown">
+					<ul class="ul_none">
+						<li class="nav-item">
+							<a class="dropdown-item nav-link bg_accent h:bg_accent-n2 c_white flex" href="#">
+								<span class="flex_auto inline-block p-l_2 p-r_4 uppercase">CV Quality </span>
+								<span class="c_white-7 flex-shrink font_n1 p-x_3 self_center">Log Out <i class="fas fa-sign-out"></i></span></a>
+						</li>
+						<li class="nav-item">
+							<a class="dropdown-item nav-link flex bg_primary-n1 h:bg_primary-n3 c_white" href="#"><span class="flex_auto inline-block p-l_2 p-r_4 uppercase">Accreditation</span>
+								<span class="c_white-7 flex-shrink font_n1 p-x_3 self_center">Log In <i class="fas fa-sign-in"></i></span></a>
+						</li>
+						<li class="nav-item">
+							<a class="dropdown-item nav-link flex bg_primary-n1 h:bg_primary-n3 c_white" href="#"><span class="flex_auto inline-block p-l_2 p-r_4 uppercase">NCDR</span>
+								<span class="c_white-7 flex-shrink font_n1 p-x_3 self_center">Log In <i class="fas fa-sign-in"></i></span></a>
+						</li>
+					</ul>
+				</div>
+			</li>
+			<li class="br-l_1 br_solid br_white-3 nav-item">
+				<a class=" nav-link" href="#" title="Sign Out of all Systems"><i class="fas fa-sign-out-alt"></i></a>
+			</li>
+		</ul>
+	</nav>
+</div>
+
+Styleguide Recipes.CVQUALITY.TEMP
+
+*/
 /*
 	Bootstrap Recipes
 
@@ -8709,50 +8950,6 @@ Styleguide Typography.Font.Color
 
 .c_acc {
   color: #004176 !important;
-}
-
-.c_acc-0 {
-  color: #004176 !important;
-}
-
-.c_acc-1 {
-  color: #265e8b !important;
-}
-
-.c_acc-2 {
-  color: #5e87a9 !important;
-}
-
-.c_acc-3 {
-  color: #99b3c8 !important;
-}
-
-.c_acc-4 {
-  color: #c7d5e1 !important;
-}
-
-.c_acc-5 {
-  color: #e6ecf1 !important;
-}
-
-.c_acc-n1 {
-  color: #003b6a !important;
-}
-
-.c_acc-n2 {
-  color: #003159 !important;
-}
-
-.c_acc-n3 {
-  color: #002441 !important;
-}
-
-.c_acc-n4 {
-  color: #001a2f !important;
-}
-
-.c_acc-n5 {
-  color: #00101e !important;
 }
 
 /*
@@ -9470,6 +9667,32 @@ Styleguide Typography.Text.Indent
   text-align: left !important;
 }
 
+@media only screen and (min-width : 640px) {
+  .text_right\:md {
+    text-align: right !important;
+  }
+
+  .text_center\:md {
+    text-align: center !important;
+  }
+
+  .text_left\:md {
+    text-align: left !important;
+  }
+}
+@media only screen and (min-width : 1024px) {
+  .text_right\:lg {
+    text-align: right !important;
+  }
+
+  .text_center\:lg {
+    text-align: center !important;
+  }
+
+  .text_left\:lg {
+    text-align: left !important;
+  }
+}
 /*
   List Type
 
@@ -13963,50 +14186,6 @@ Styleguide Background.Color.Shades
   background-color: #004176 !important;
 }
 
-.bg_acc-0 {
-  background-color: #004176 !important;
-}
-
-.bg_acc-1 {
-  background-color: #265e8b !important;
-}
-
-.bg_acc-2 {
-  background-color: #5e87a9 !important;
-}
-
-.bg_acc-3 {
-  background-color: #99b3c8 !important;
-}
-
-.bg_acc-4 {
-  background-color: #c7d5e1 !important;
-}
-
-.bg_acc-5 {
-  background-color: #e6ecf1 !important;
-}
-
-.bg_acc-n1 {
-  background-color: #003b6a !important;
-}
-
-.bg_acc-n2 {
-  background-color: #003159 !important;
-}
-
-.bg_acc-n3 {
-  background-color: #002441 !important;
-}
-
-.bg_acc-n4 {
-  background-color: #001a2f !important;
-}
-
-.bg_acc-n5 {
-  background-color: #00101e !important;
-}
-
 .bg_white {
   background-color: white;
 }
@@ -15059,50 +15238,6 @@ Styleguide Borders.Colors.Black
 
 .br_acc {
   border-color: #004176 !important;
-}
-
-.br_acc-0 {
-  border-color: #004176 !important;
-}
-
-.br_acc-1 {
-  border-color: #265e8b !important;
-}
-
-.br_acc-2 {
-  border-color: #5e87a9 !important;
-}
-
-.br_acc-3 {
-  border-color: #99b3c8 !important;
-}
-
-.br_acc-4 {
-  border-color: #c7d5e1 !important;
-}
-
-.br_acc-5 {
-  border-color: #e6ecf1 !important;
-}
-
-.br_acc-n1 {
-  border-color: #003b6a !important;
-}
-
-.br_acc-n2 {
-  border-color: #003159 !important;
-}
-
-.br_acc-n3 {
-  border-color: #002441 !important;
-}
-
-.br_acc-n4 {
-  border-color: #001a2f !important;
-}
-
-.br_acc-n5 {
-  border-color: #00101e !important;
 }
 
 /*

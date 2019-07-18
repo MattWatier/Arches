@@ -47,6 +47,66 @@ $scrub-teal-dark: #047294;
 $mix-teal_orange: #58b5a5;
 $mix-orange_teal: #acbd65;
 
+.c_accent-alt {
+	color: $orange-light !important;
+}
+.c_mix-teal-orange {
+	color: $mix-teal_orange !important;
+}
+.c_mix-orange-teal {
+	color: $mix-orange_teal !important;
+}
+.br_accent-alt {
+	border-color: $orange-light !important;
+}
+.br_mix-teal-orange {
+	border-color: $mix-teal_orange !important;
+}
+.br_mix-orange-teal {
+	border-color: $mix-orange_teal !important;
+}
+.bg_accent-alt {
+	background-color: $orange-light !important;
+}
+.bg_mix-teal-orange {
+	background-color: $mix-teal_orange !important;
+}
+.bg_mix-orange-teal {
+	background-color: $mix-orange_teal !important;
+}
+/*
+	Background Colors Alt
+
+	These Alternate colors are single use to embelish a design. These colors <strong>DO NOT</strong> have extra modifiers.    
+
+	.bg_accent-alt            	- light orange
+	.bg_mix-teal-orange			-	Mix of 60% Teal And 40% Orange 
+	.bg_mix-orange-teal				-	Mix of 60% Orange and 40% Teal 	
+
+
+	Markup:
+	<div class="{{modifier_class}} p_3 c_white">Background Color of {{modifier_class}}</div>
+
+	Styleguide Background.Color.Alt
+
+*/
+/*
+	Border Colors Alt
+
+	These Alternate colors are single use to embelish a design. These colors <strong>DO NOT</strong> have extra modifiers.    
+
+	.br_accent-alt            	- light orange
+	.br_mix-teal-orange			-	Mix of 60% Teal And 40% Orange 
+	.br_mix-orange-teal				-	Mix of 60% Orange and 40% Teal 	
+
+
+	Markup:
+	<div class="{{modifier_class}} br_solid br_4">Border Color of {{modifier_class}}</div>
+
+	Styleguide Border.Color.Alt
+
+*/
+
 // Currently Un used in the design but part of bootstrap.
 $indigo: #6610f2 !default;
 $pink: #e83e8c !default;
@@ -155,12 +215,12 @@ $fonts: (
 		stack: '"Maven Pro","Muli","Open Sans","system",sans-serif'
 	),
 	display: (
-		name: "Muli",
-		stack: '"Muli","Open Sans","system",sans-serif'
-	),
-	copy: (
 		name: "Lato",
 		stack: '"Lato",Verdana,Helvetica,sans-serif;'
+	),
+	copy: (
+		name: "Muli",
+		stack: '"Muli","Open Sans","system",sans-serif'
 	),
 	ui: (
 		name: "Lato",
@@ -169,21 +229,9 @@ $fonts: (
 );
 
 // Reset Values of Utlity-css.vars.scss
-$value-to-unit: map-deep-set(
-	$value-to-unit,
-	"font-family" "slab",
-	map-deep-get($fonts, "slab", "stack")
-);
-$value-to-unit: map-deep-set(
-	$value-to-unit,
-	"font-family" "display",
-	map-deep-get($fonts, "display", "stack")
-);
-$value-to-unit: map-deep-set(
-	$value-to-unit,
-	"font-family" "copy",
-	map-deep-get($fonts, "copy", "stack")
-);
+$value-to-unit: map-deep-set($value-to-unit, "font-family" "slab", map-deep-get($fonts, "slab", "stack"));
+$value-to-unit: map-deep-set($value-to-unit, "font-family" "display", map-deep-get($fonts, "display", "stack"));
+$value-to-unit: map-deep-set($value-to-unit, "font-family" "copy", map-deep-get($fonts, "copy", "stack"));
 
 $global-radus-on: false;
 $global-border-radius: 6px;
@@ -218,6 +266,8 @@ $h6-font-size: map-deep-get($value-to-unit, font-size, 0);
 $font-size-base: $base-font-size-rem; // Assumes the browser default, typically `16px`
 $font-size-lg: map-deep-get($value-to-unit, font-size, 2);
 $font-size-sm: map-deep-get($value-to-unit, font-size, 0);
+
+@import "config/cvquality/cvquality.gradients";
 /**  Default Brands    *********************************/
 /**  Colors  **/
 
@@ -284,7 +334,7 @@ h3 {
 @import "structures/structures";
 @import "base/table.boot";
 @import "styleguide/__basic-html.boot";
-@import "components/boot/boot.navbar.override";
+@import "components/cvquality/cvquality.boot._navbar.override";
 /*
 	Bootstrap Recipes
 

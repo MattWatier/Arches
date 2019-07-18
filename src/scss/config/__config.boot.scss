@@ -273,6 +273,7 @@ $embed-responsive-aspect-ratios: join(
 $font-family-sans-serif:      #{map-deep-get($value-to-unit, font-family, copy)};
 $font-family-monospace:       #{map-deep-get($value-to-unit, font-family, mono)};
 $font-family-base:            $font-family-sans-serif;
+$headings-font-family:#{map-deep-get($value-to-unit, font-family, display)};;
 // stylelint-enable value-keyword-case
 
 $font-size-base:              $base-font-size-rem  !default; // Assumes the browser default, typically `16px`

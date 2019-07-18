@@ -1,0 +1,10 @@
+/*
+	CVquality Recipes
+
+	The use of Utiltiy Class give us the ablitiy to create much of the UI needed for CV Quality without expanding on the base of the styles that are written.  Included are patterns to create some of the complex UI inside of CV Quality.
+
+	Styleguide Recipes.CVQUALITY
+
+*/
+
+@import "recipes/cvquality/_cvquality._footer";

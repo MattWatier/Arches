@@ -1,0 +1,150 @@
+$navbar-font_primary: $font_display !default;
+$navbar-font_secondary: $font_display !default;
+$navbar-color_primary: map-get($theme-palette, acc);
+$navbar-color_secondary: map-get($theme-palette, accent);
+
+.navbar {
+	font-family: $navbar-font_primary;
+}
+.dropdown-menu {
+	font-family: $navbar-font_secondary;
+}
+.nav-link {
+	padding-left: $padding_2;
+	padding-right: $padding_2;
+}
+.navbar-primary .dropdown-toggle:after {
+	display: none;
+}
+.navbar-primary.navbar-expand-md .nav-item {
+	@media #{$medium-up} {
+		&.active,
+		&.show,
+		&:hover {
+			.nav-link {
+			}
+		}
+	}
+}
+.navbar-primary.navbar-expand-lg .nav-item {
+	@media #{$large-up} {
+		&.active,
+		&.show,
+		&:hover {
+			.nav-link {
+			}
+		}
+	}
+}
+
+.dropdown {
+	&:hover {
+		& > .dropdown-menu {
+			.navbar-expand-sm & {
+				@media #{$small-up} {
+					display: block;
+				}
+			}
+			.navbar-expand-md & {
+				@media #{$medium-up} {
+					display: block;
+				}
+			}
+			.navbar-expand-lg & {
+				@media #{$large-up} {
+					display: block;
+				}
+			}
+		}
+	}
+}
+.dropdown-item {
+	color: get-themecolor(primary, -1);
+	&:hover {
+		color: white;
+	}
+}
+
+/* 
+
+Branded Nav 
+
+The Header Nav of ACC.org 
+
+Markup:
+<div class="flex relative br_solid br_0 br-t_3 br_accent-alt">
+	<nav class="bg_secondary-2 flex_auto font_0 font_1:lg font_display navbar navbar-dark navbar-expand-lg navbar-primary p-x_0 uppercase">
+		<button class="br_white-2 flex is-active_toggle-function m-l_3 m-l_n2 m-y_2 navbar-toggler p-l_2 p-r_3 p-y_2 collapsed" type="button" data-toggle="collapse" data-target="#navbarLoginContent" aria-controls="navbarLoginContent" aria-expanded="false" aria-label="Toggle navigation">
+			<i class="a:c_acc-2 c_white fas flex_shrink font_0 icon-toggle_bars-times self_center"></i><span class="a:c_acc-2 c_white flex_auto self_center">&nbsp;Menu</span>
+		</button>
+		<div class="navbar-collapse collapse" id="navbarLoginContent" style="">
+			<ul class="expand expanded flex flex_column flex_row:lg nav text_center:lg text_left w_100">
+				<li class="nav-item flex_shrink">
+					<a class="active c_white h:bg_secondary nav-link p-x_4 p-x_5:lg" href="//www.acc.org/guidelines#doctype=Guidelines" title="Access ACC guidelines and clinical policy documents as well as related resources"><i class="fas fa-home"></i><span class="display_none:lg p-x_3">Home</span></a>
+				</li>
+				<li class="nav-item flex_auto dropdown">
+					<a class="c_white dropdown-toggle h:bg_secondary is-active_toggle-function nav-link p-x_4" href="/NCDR-Home" target="_self" data-delay="300" data-close-others="false" id="clinicalTopicsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="far faw icon-toggle_plus-minus display_none:lg m-l_n2 m-r_2"></i>Clinical Topics</a>
+					<div class="absolute:lg br_1 br_none br_secondary-3 br_solid:lg c_white dropdown-menu font_bold l_0 m-t_0 m-x_0 m-x_0:lg p_0 r_0 relative w_100" aria-labelledby="clinicalTopicsDropdown">
+						<ul class="bg_secondary-5 font_0 font_bold lh_1 ul_none">
+							<li class="nav-item"><a class="c_secondary-2 dropdown-item h:bg_secondary-1 h:c_secondary-5 nav-link p-x_5 text-indent_n1 wrap" href="/NCDR-Home/about-ncdr" target="_self">About NCDR</a></li>
+							<li class="nav-item"><a class="c_secondary-2 dropdown-item h:bg_secondary-1 h:c_secondary-5 nav-link p-x_5 text-indent_n1 wrap" href="/NCDR-Home/registries" target="_self">Registries</a></li>
+							<li class="nav-item"><a class="c_secondary-2 dropdown-item h:bg_secondary-1 h:c_secondary-5 nav-link p-x_5 text-indent_n1 wrap" href="/NCDR-Home/data-collection" target="_self">Data Collection</a></li>
+							<li class="nav-item"><a class="c_secondary-2 dropdown-item h:bg_secondary-1 h:c_secondary-5 nav-link p-x_5 text-indent_n1 wrap" href="/NCDR-Home/reports" target="_self">Reports</a></li>
+							<li class="nav-item"><a class="c_secondary-2 dropdown-item h:bg_secondary-1 h:c_secondary-5 nav-link p-x_5 text-indent_n1 wrap" href="/NCDR-Home/quality-payment-program" target="_self">Quality Payment Program</a></li>
+							<li class="nav-item"><a class="c_secondary-2 dropdown-item h:bg_secondary-1 h:c_secondary-5 nav-link p-x_5 text-indent_n1 wrap" href="/NCDR-Home/research" target="_self">Research</a></li>
+							<li class="nav-item"><a class="c_secondary-2 dropdown-item h:bg_secondary-1 h:c_secondary-5 nav-link p-x_5 text-indent_n1 wrap" href="/NCDR-Home/analytics" target="_self">Analytics</a></li>
+							<li class="nav-item"><a class="c_secondary-2 dropdown-item h:bg_secondary-1 h:c_secondary-5 nav-link p-x_5 text-indent_n1 wrap" href="/NCDR-Home/annual-conference" target="_self">ACC Quality Summit</a></li>
+							<li class="nav-item"><a class="c_secondary-2 dropdown-item h:bg_secondary-1 h:c_secondary-5 nav-link p-x_5 text-indent_n1 wrap" href="/NCDR-Home/ncdr-learning-center" target="_self">NCDR Learning Center</a></li>
+							<li class="nav-item"><a class="c_secondary-2 dropdown-item h:bg_secondary-1 h:c_secondary-5 nav-link p-x_5 text-indent_n1 wrap" href="/NCDR-Home/transform-ldl-c-risk" target="_self">TRANSFORM LDL C Risk</a></li>
+							<li class="nav-item"><a class="c_secondary-2 dropdown-item h:bg_secondary-1 h:c_secondary-5 nav-link p-x_5 text-indent_n1 wrap" href="/NCDR-Home/participant-directory" target="_self">Participant Directory</a></li>
+							<li class="nav-item"><a class="c_secondary-2 dropdown-item h:bg_secondary-1 h:c_secondary-5 nav-link p-x_5 text-indent_n1 wrap" href="/NCDR-Home/acc-public-reporting" target="_self">ACC Public Reporting</a></li>
+							<li class="nav-item"><a class="c_secondary-2 dropdown-item h:bg_secondary-1 h:c_secondary-5 nav-link p-x_5 text-indent_n1 wrap" href="/NCDR-Home/clinical-quality-coach" target="_self">NCDR Clinical Quality Coach Practice Dashboard</a></li>
+							<li class="nav-item"><a class="c_secondary-2 dropdown-item h:bg_secondary-1 h:c_secondary-5 nav-link p-x_5 text-indent_n1 wrap" href="https://www.ncdr.com/webncdr/Login?ReturnUrl=/webncdr/home/registry-selection" target="_self">Registry Participant Login</a></li>
+							<li class="nav-item"><a class="c_secondary-2 dropdown-item h:bg_secondary-1 h:c_secondary-5 nav-link p-x_5 text-indent_n1 wrap" href="/NCDR-Home/join-a-registry" target="_self">Join a Registry</a></li>
+						</ul>
+					</div>
+				</li>
+				<li class="nav-item flex_auto">
+					<a class="nav-link active h:bg_secondary c_white p-x_4" href="#">deserunt</a>
+				</li>
+				<li class="nav-item flex_auto">
+					<a class="nav-link h:bg_secondary c_white p-x_4" href="#">sit dolor commodo</a>
+				</li>
+				<li class="nav-item flex_auto">
+					<a class="nav-link h:bg_secondary c_white p-x_4" href="#">adipisicing</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+	<nav class="absolute bg_accent flex_shrink font_0 font_1:lg navbar navbar-dark navbar-expand p-b_1 p_0 r_0 relative:lg">
+		<ul class="navbar-nav">
+			<li class="nav-item dropdown">
+				<a class="block is-active is-active_toggle-function nav-link p-x_5:lg" id="myACCDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="far icon-toggle_chevron-up-down"></i> Sign In</a>
+				<div class="br_none br_solid:lg dropdown-menu dropdown-menu-right font_0 m-t_n1 p_0 r_0" aria-labelledby="navbarDropdown">
+					<ul class="ul_none">
+						<li class="nav-item">
+							<a class="dropdown-item nav-link bg_accent h:bg_accent-n2 c_white flex" href="#">
+								<span class="flex_auto inline-block p-l_2 p-r_4 uppercase">CV Quality </span>
+								<span class="c_white-7 flex-shrink font_n1 p-x_3 self_center">Log Out <i class="fas fa-sign-out"></i></span></a>
+						</li>
+						<li class="nav-item">
+							<a class="dropdown-item nav-link flex bg_primary-n1 h:bg_primary-n3 c_white" href="#"><span class="flex_auto inline-block p-l_2 p-r_4 uppercase">Accreditation</span>
+								<span class="c_white-7 flex-shrink font_n1 p-x_3 self_center">Log In <i class="fas fa-sign-in"></i></span></a>
+						</li>
+						<li class="nav-item">
+							<a class="dropdown-item nav-link flex bg_primary-n1 h:bg_primary-n3 c_white" href="#"><span class="flex_auto inline-block p-l_2 p-r_4 uppercase">NCDR</span>
+								<span class="c_white-7 flex-shrink font_n1 p-x_3 self_center">Log In <i class="fas fa-sign-in"></i></span></a>
+						</li>
+					</ul>
+				</div>
+			</li>
+			<li class="br-l_1 br_solid br_white-3 nav-item">
+				<a class=" nav-link" href="#" title="Sign Out of all Systems"><i class="fas fa-sign-out-alt"></i></a>
+			</li>
+		</ul>
+	</nav>
+</div>
+
+Styleguide Recipes.CVQUALITY.TEMP
+
+*/
