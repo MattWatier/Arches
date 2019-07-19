@@ -3,12 +3,12 @@ $navbar-font_secondary: $font_display !default;
 $navbar-color_primary: map-get($theme-palette, acc);
 $navbar-color_secondary: map-get($theme-palette, accent);
 
-.navbar {
-	font-family: $navbar-font_primary;
-}
-.dropdown-menu {
-	font-family: $navbar-font_secondary;
-}
+// .navbar {
+// 	font-family: $navbar-font_primary;
+// }
+// .dropdown-menu {
+// 	font-family: $navbar-font_secondary;
+// }
 .nav-link {
 	padding-left: $padding_2;
 	padding-right: $padding_2;

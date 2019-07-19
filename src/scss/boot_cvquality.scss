@@ -18,6 +18,7 @@ $theme-palette: ();
 /** Utility Class Only With Basic ACC Branding **//**  ACC Brands    *********************************/
 $teal: #0088aa;
 $green-blue: #16a385;
+$grey-secondary: #696668;
 $dark-grey: #676a72;
 $alt-grey: #a3988c;
 $green: #078a2e;
@@ -35,7 +36,7 @@ $orange-dark: #e87d1e;
 $orange-light: #ffc425;
 $warm-grey: #a1a0a4;
 $warm-grey-light: #d6d4d4;
-$warm-grey-dark: #6f6b6f;
+$warm-grey-dark: #696668;
 $off-white: #fafafa;
 $off-black: $black;
 $soft-blue: #a4cded;
@@ -154,7 +155,7 @@ $gray-900: mix($white, $black, 90%);
 $theme-palette: map-merge(
 	(
 		primary: $teal,
-		secondary: $warm-grey-dark,
+		secondary: $grey-secondary,
 		success: $green,
 		warning: $orange-light,
 		alert: $error-color,
@@ -210,10 +211,6 @@ $colors: map-merge(
 );
 
 $fonts: (
-	slab: (
-		name: "Maven Pro",
-		stack: '"Maven Pro","Muli","Open Sans","system",sans-serif'
-	),
 	display: (
 		name: "Lato",
 		stack: '"Lato",Verdana,Helvetica,sans-serif;'
@@ -223,15 +220,44 @@ $fonts: (
 		stack: '"Muli","Open Sans","system",sans-serif'
 	),
 	ui: (
-		name: "Lato",
-		stack: '"Lato",Verdana,Helvetica,sans-serif;'
+		name: "Muli",
+		stack: '"Muli","Open Sans","system",sans-serif'
 	)
 );
 
 // Reset Values of Utlity-css.vars.scss
-$value-to-unit: map-deep-set($value-to-unit, "font-family" "slab", map-deep-get($fonts, "slab", "stack"));
-$value-to-unit: map-deep-set($value-to-unit, "font-family" "display", map-deep-get($fonts, "display", "stack"));
-$value-to-unit: map-deep-set($value-to-unit, "font-family" "copy", map-deep-get($fonts, "copy", "stack"));
+
+$value-to-unit: map-deep-set(
+	$value-to-unit,
+	"font-family" "display",
+	map-deep-get($fonts, "display", "stack")
+);
+$value-to-unit: map-deep-set(
+	$value-to-unit,
+	"font-family" "copy",
+	map-deep-get($fonts, "copy", "stack")
+);
+$value-to-unit: map-deep-set(
+	$value-to-unit,
+	"font-family" "ui",
+	map-deep-get($fonts, "ui", "stack")
+);
+
+$style-definition: map-deep-set(
+	$style-definition,
+	"font-family" "unit" "display",
+	unquote(map-deep-get($value-to-unit, "font-family", "display"))
+);
+$style-definition: map-deep-set(
+	$style-definition,
+	"font-family" "unit" "copy",
+	unquote(map-deep-get($value-to-unit, "font-family", "copy"))
+);
+$style-definition: map-deep-set(
+	$style-definition,
+	"font-family" "unit" "ui",
+	unquote(map-deep-get($value-to-unit, "font-family", "ui"))
+);
 
 $global-radus-on: false;
 $global-border-radius: 6px;
@@ -352,6 +378,7 @@ h3 {
 	Styleguide Recipes.CVQUALITY
 
 */
+@import "recipes/cvquality/_cvquality._footer";
 /**  Utility Classes    *********************************/
 @import "utility-css/utility-css";
 

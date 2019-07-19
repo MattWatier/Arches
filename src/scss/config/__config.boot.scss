@@ -273,8 +273,9 @@ $embed-responsive-aspect-ratios: join(
 $font-family-sans-serif:      #{map-deep-get($value-to-unit, font-family, copy)};
 $font-family-monospace:       #{map-deep-get($value-to-unit, font-family, mono)};
 $font-family-base:            $font-family-sans-serif;
-$headings-font-family:#{map-deep-get($value-to-unit, font-family, display)};;
+$headings-font-family:        #{map-deep-get($value-to-unit, font-family, display)};
 // stylelint-enable value-keyword-case
+@debug "#{$headings-font-family}";
 
 $font-size-base:              $base-font-size-rem  !default; // Assumes the browser default, typically `16px`
 $font-size-lg:                map-deep-get($value-to-unit, font-size, 2)  !default;

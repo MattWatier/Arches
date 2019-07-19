@@ -134,6 +134,28 @@ $value-to-unit: map-deep-set(
 	map-deep-get($fonts, "copy", "stack")
 );
 
+// reset all the references for the fonts
+$style-definition: map-deep-set(
+	$style-definition,
+	"font-family" "unit" "slab",
+	unquote(map-deep-get($value-to-unit, "font-family", "slab"))
+);
+$style-definition: map-deep-set(
+	$style-definition,
+	"font-family" "unit" "display",
+	unquote(map-deep-get($value-to-unit, "font-family", "display"))
+);
+$style-definition: map-deep-set(
+	$style-definition,
+	"font-family" "unit" "copy",
+	unquote(map-deep-get($value-to-unit, "font-family", "copy"))
+);
+$style-definition: map-deep-set(
+	$style-definition,
+	"font-family" "unit" "ui",
+	unquote(map-deep-get($value-to-unit, "font-family", "ui"))
+);
+
 $global-radus-on: false;
 $global-border-radius: 6px;
 $global-border-round: 25px;

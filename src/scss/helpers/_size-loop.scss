@@ -13,7 +13,7 @@ $debug-trace: true !default;
 			}
 		}
 		@if $debug-trace {
-			@debug "My Name is  #{$name}";
+			@debug "My Name is  #{$names} for style = #{$styles}";
 		}
 	}
 }

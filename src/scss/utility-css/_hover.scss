@@ -49,7 +49,7 @@ a:focus {
 %hover_transition,
 *[class*=" hover:"],
 *[class*=" h\:"] {
-	transition: all ease-out 0.75s; // used for backgrounds
+	transition: all ease-out 0.2s; // used for backgrounds
 	cursor: pointer;
 	&:focus {
 		background: inherit;
@@ -58,7 +58,7 @@ a:focus {
 	}
 }
 %hover_transition-in {
-	transition: all ease-in 0.5s; // used for text
+	transition: all ease-in 0.2s; // used for text
 }
 
 *[class*="hover:c"],
@@ -119,9 +119,17 @@ a:focus {
 		text-decoration: underline;
 	}
 }
+
 .hover\:underline,
 .h\:underline {
 	@extend %hover_text-decoration;
+}
+.hover\:underline-none,
+.h\:underline-none {
+	@extend %hover_text-decoration;
+	&:hover {
+		text-decoration-style: none;
+	}
 }
 .hover\:dashed,
 .h\:dashed {

@@ -151,7 +151,8 @@ Weight: 1
 Styleguide DesignBase.Colors.Full Pallate
 
 */
-.gradient_teal {
+.gradient_teal,
+.h\:gradient_teal:hover {
   background: #047294;
   /* Old browsers */
   /* IE9 SVG, needs conditional override of 'filter' to 'none' */
@@ -165,7 +166,8 @@ Styleguide DesignBase.Colors.Full Pallate
   /* W3C */
 }
 
-.gradient_teal-reverse {
+.gradient_teal-reverse,
+.h\:gradient_teal-reverse:hover {
   background: #047294;
   /* Old browsers */
   /* IE9 SVG, needs conditional override of 'filter' to 'none' */
@@ -179,7 +181,8 @@ Styleguide DesignBase.Colors.Full Pallate
   /* W3C */
 }
 
-.gradient_grey {
+.gradient_grey,
+.h\:gradient_grey-reverse:hover {
   background: #a1a0a4;
   /* Old browsers */
   /* IE9 SVG, needs conditional override of 'filter' to 'none' */
@@ -189,12 +192,13 @@ Styleguide DesignBase.Colors.Full Pallate
   /* Chrome10+,Safari5.1+ */
   /* Opera 11.10+ */
   /* IE10+ */
-  background: linear-gradient(to bottom, #a1a0a4 0%, #6f6b6f 100%);
+  background: linear-gradient(to bottom, #a1a0a4 0%, #696668 100%);
   /* W3C */
 }
 
-.gradient_grey-reverse {
-  background: #6f6b6f;
+.gradient_grey-reverse,
+.h\:gradient_grey-reverse:hover {
+  background: #696668;
   /* Old browsers */
   /* IE9 SVG, needs conditional override of 'filter' to 'none' */
   background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzA1YWVlNSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMjgzYWIiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
@@ -203,7 +207,7 @@ Styleguide DesignBase.Colors.Full Pallate
   /* Chrome10+,Safari5.1+ */
   /* Opera 11.10+ */
   /* IE10+ */
-  background: linear-gradient(to bottom, #6f6b6f 0%, #a1a0a4 100%);
+  background: linear-gradient(to bottom, #696668 0%, #a1a0a4 100%);
   /* W3C */
 }
 
@@ -229,20 +233,6 @@ Styleguide DesignBase.Colors.Full Pallate
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#ffffff", endColorstr=" $soft-grey", GradientType=0);
 }
 
-.gradient_warmgrey {
-  background: #a1a0a4;
-  /* Old browsers */
-  /* IE9 SVG, needs conditional override of 'filter' to 'none' */
-  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzA1YWVlNSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMjgzYWIiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
-  /* FF3.6+ */
-  /* Chrome,Safari4+ */
-  /* Chrome10+,Safari5.1+ */
-  /* Opera 11.10+ */
-  /* IE10+ */
-  background: linear-gradient(to bottom, #d6d4d4 0%, #a1a0a4 100%);
-  /* W3C */
-}
-
 .gradient_orange {
   background: #a1a0a4;
   /* Old browsers */
@@ -257,7 +247,23 @@ Styleguide DesignBase.Colors.Full Pallate
   /* W3C */
 }
 
-.gradient_warmgrey-reverse {
+.gradient_warmgrey,
+.h\:gradient_warmgrey-reverse:hover {
+  background: #a1a0a4;
+  /* Old browsers */
+  /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzA1YWVlNSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMjgzYWIiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+  /* FF3.6+ */
+  /* Chrome,Safari4+ */
+  /* Chrome10+,Safari5.1+ */
+  /* Opera 11.10+ */
+  /* IE10+ */
+  background: linear-gradient(to bottom, #d6d4d4 0%, #a1a0a4 100%);
+  /* W3C */
+}
+
+.gradient_warmgrey-reverse,
+.h\:gradient_warmgrey-reverse:hover {
   background: #a1a0a4;
   /* Old browsers */
   /* IE9 SVG, needs conditional override of 'filter' to 'none' */
@@ -288,7 +294,7 @@ Theme Colors
 Colors are based off of the ACC Scrub Colors.
 
 map-get($theme-palette, primary)              -  #0088aa; primary
-map-get($theme-palette, secondary)            -  #6f6b6f; secondary
+map-get($theme-palette, secondary)            -  #696668; secondary
 map-get($theme-palette, accent)               -  #e87d1e;  accent
 map-get($theme-palette, info)                 -  #a3988c; info
 map-get($theme-palette, highlight)            -  #05aee5; highlight
@@ -569,13 +575,13 @@ div[class*=texture_] {
   --gray: #a1a0a0;
   --gray-dark: #d0d0d0;
   --primary: #0088aa;
-  --secondary: #6f6b6f;
+  --secondary: #696668;
   --success: #078a2e;
   --info: #a3988c;
   --warning: #ffc425;
   --danger: #990000;
   --light: #d6d4d4;
-  --dark: #6f6b6f;
+  --dark: #696668;
   --breakpoint-xs: 0;
   --breakpoint-sm: 576px;
   --breakpoint-md: 768px;
@@ -2346,21 +2352,21 @@ pre code {
 .table-secondary,
 .table-secondary > th,
 .table-secondary > td {
-  background-color: #f1f0f1;
+  background-color: #f0f0f0;
 }
 .table-secondary th,
 .table-secondary td,
 .table-secondary thead th,
 .table-secondary tbody + tbody {
-  border-color: #c5c4c5;
+  border-color: #c3c2c3;
 }
 
 .table-hover .table-secondary:hover {
-  background-color: #e5e3e5;
+  background-color: #e3e3e3;
 }
 .table-hover .table-secondary:hover > td,
 .table-hover .table-secondary:hover > th {
-  background-color: #e5e3e5;
+  background-color: #e3e3e3;
 }
 
 .table-success,
@@ -2466,21 +2472,21 @@ pre code {
 .table-dark,
 .table-dark > th,
 .table-dark > td {
-  background-color: #f1f0f1;
+  background-color: #f0f0f0;
 }
 .table-dark th,
 .table-dark td,
 .table-dark thead th,
 .table-dark tbody + tbody {
-  border-color: #c5c4c5;
+  border-color: #c3c2c3;
 }
 
 .table-hover .table-dark:hover {
-  background-color: #e5e3e5;
+  background-color: #e3e3e3;
 }
 .table-hover .table-dark:hover > td,
 .table-hover .table-dark:hover > th {
-  background-color: #e5e3e5;
+  background-color: #e3e3e3;
 }
 
 .table-active,
@@ -3145,30 +3151,30 @@ fieldset:disabled a.btn {
 }
 
 .btn-secondary {
-  border-color: #6f6b6f;
-  background-color: #6f6b6f;
+  border-color: #696668;
+  background-color: #696668;
   color: white;
 }
 .btn-secondary:hover {
-  border-color: #555255;
-  background-color: #5c585c;
+  border-color: #4f4d4e;
+  background-color: #565355;
   color: white;
 }
 .btn-secondary:focus, .btn-secondary.focus {
-  box-shadow: 0 0 0 0.2rem rgba(133, 129, 133, 0.5);
+  box-shadow: 0 0 0 0.2rem rgba(128, 125, 127, 0.5);
 }
 .btn-secondary.disabled, .btn-secondary:disabled {
-  border-color: #6f6b6f;
-  background-color: #6f6b6f;
+  border-color: #696668;
+  background-color: #696668;
   color: white;
 }
 .btn-secondary:not(:disabled):not(.disabled):active, .btn-secondary:not(:disabled):not(.disabled).active, .show > .btn-secondary.dropdown-toggle {
-  border-color: #4f4c4f;
-  background-color: #555255;
+  border-color: #494748;
+  background-color: #4f4d4e;
   color: white;
 }
 .btn-secondary:not(:disabled):not(.disabled):active:focus, .btn-secondary:not(:disabled):not(.disabled).active:focus, .show > .btn-secondary.dropdown-toggle:focus {
-  box-shadow: 0 0 0 0.2rem rgba(133, 129, 133, 0.5);
+  box-shadow: 0 0 0 0.2rem rgba(128, 125, 127, 0.5);
 }
 
 .btn-success {
@@ -3307,30 +3313,30 @@ fieldset:disabled a.btn {
 }
 
 .btn-dark {
-  border-color: #6f6b6f;
-  background-color: #6f6b6f;
+  border-color: #696668;
+  background-color: #696668;
   color: white;
 }
 .btn-dark:hover {
-  border-color: #555255;
-  background-color: #5c585c;
+  border-color: #4f4d4e;
+  background-color: #565355;
   color: white;
 }
 .btn-dark:focus, .btn-dark.focus {
-  box-shadow: 0 0 0 0.2rem rgba(133, 129, 133, 0.5);
+  box-shadow: 0 0 0 0.2rem rgba(128, 125, 127, 0.5);
 }
 .btn-dark.disabled, .btn-dark:disabled {
-  border-color: #6f6b6f;
-  background-color: #6f6b6f;
+  border-color: #696668;
+  background-color: #696668;
   color: white;
 }
 .btn-dark:not(:disabled):not(.disabled):active, .btn-dark:not(:disabled):not(.disabled).active, .show > .btn-dark.dropdown-toggle {
-  border-color: #4f4c4f;
-  background-color: #555255;
+  border-color: #494748;
+  background-color: #4f4d4e;
   color: white;
 }
 .btn-dark:not(:disabled):not(.disabled):active:focus, .btn-dark:not(:disabled):not(.disabled).active:focus, .show > .btn-dark.dropdown-toggle:focus {
-  box-shadow: 0 0 0 0.2rem rgba(133, 129, 133, 0.5);
+  box-shadow: 0 0 0 0.2rem rgba(128, 125, 127, 0.5);
 }
 
 .btn-outline-primary {
@@ -3359,28 +3365,28 @@ fieldset:disabled a.btn {
 }
 
 .btn-outline-secondary {
-  border-color: #6f6b6f;
-  color: #6f6b6f;
+  border-color: #696668;
+  color: #696668;
 }
 .btn-outline-secondary:hover {
-  border-color: #6f6b6f;
-  background-color: #6f6b6f;
+  border-color: #696668;
+  background-color: #696668;
   color: white;
 }
 .btn-outline-secondary:focus, .btn-outline-secondary.focus {
-  box-shadow: 0 0 0 0.2rem rgba(111, 107, 111, 0.5);
+  box-shadow: 0 0 0 0.2rem rgba(105, 102, 104, 0.5);
 }
 .btn-outline-secondary.disabled, .btn-outline-secondary:disabled {
   background-color: transparent;
-  color: #6f6b6f;
+  color: #696668;
 }
 .btn-outline-secondary:not(:disabled):not(.disabled):active, .btn-outline-secondary:not(:disabled):not(.disabled).active, .show > .btn-outline-secondary.dropdown-toggle {
-  border-color: #6f6b6f;
-  background-color: #6f6b6f;
+  border-color: #696668;
+  background-color: #696668;
   color: white;
 }
 .btn-outline-secondary:not(:disabled):not(.disabled):active:focus, .btn-outline-secondary:not(:disabled):not(.disabled).active:focus, .show > .btn-outline-secondary.dropdown-toggle:focus {
-  box-shadow: 0 0 0 0.2rem rgba(111, 107, 111, 0.5);
+  box-shadow: 0 0 0 0.2rem rgba(105, 102, 104, 0.5);
 }
 
 .btn-outline-success {
@@ -3509,28 +3515,28 @@ fieldset:disabled a.btn {
 }
 
 .btn-outline-dark {
-  border-color: #6f6b6f;
-  color: #6f6b6f;
+  border-color: #696668;
+  color: #696668;
 }
 .btn-outline-dark:hover {
-  border-color: #6f6b6f;
-  background-color: #6f6b6f;
+  border-color: #696668;
+  background-color: #696668;
   color: white;
 }
 .btn-outline-dark:focus, .btn-outline-dark.focus {
-  box-shadow: 0 0 0 0.2rem rgba(111, 107, 111, 0.5);
+  box-shadow: 0 0 0 0.2rem rgba(105, 102, 104, 0.5);
 }
 .btn-outline-dark.disabled, .btn-outline-dark:disabled {
   background-color: transparent;
-  color: #6f6b6f;
+  color: #696668;
 }
 .btn-outline-dark:not(:disabled):not(.disabled):active, .btn-outline-dark:not(:disabled):not(.disabled).active, .show > .btn-outline-dark.dropdown-toggle {
-  border-color: #6f6b6f;
-  background-color: #6f6b6f;
+  border-color: #696668;
+  background-color: #696668;
   color: white;
 }
 .btn-outline-dark:not(:disabled):not(.disabled):active:focus, .btn-outline-dark:not(:disabled):not(.disabled).active:focus, .show > .btn-outline-dark.dropdown-toggle:focus {
-  box-shadow: 0 0 0 0.2rem rgba(111, 107, 111, 0.5);
+  box-shadow: 0 0 0 0.2rem rgba(105, 102, 104, 0.5);
 }
 
 .btn-link {
@@ -5274,16 +5280,16 @@ a.badge-primary:focus, a.badge-primary.focus {
 }
 
 .badge-secondary {
-  background-color: #6f6b6f;
+  background-color: #696668;
   color: white;
 }
 a.badge-secondary:hover, a.badge-secondary:focus {
-  background-color: #555255;
+  background-color: #4f4d4e;
   color: white;
 }
 a.badge-secondary:focus, a.badge-secondary.focus {
   outline: 0;
-  box-shadow: 0 0 0 0.2rem rgba(111, 107, 111, 0.5);
+  box-shadow: 0 0 0 0.2rem rgba(105, 102, 104, 0.5);
 }
 
 .badge-success {
@@ -5352,16 +5358,16 @@ a.badge-light:focus, a.badge-light.focus {
 }
 
 .badge-dark {
-  background-color: #6f6b6f;
+  background-color: #696668;
   color: white;
 }
 a.badge-dark:hover, a.badge-dark:focus {
-  background-color: #555255;
+  background-color: #4f4d4e;
   color: white;
 }
 a.badge-dark:focus, a.badge-dark.focus {
   outline: 0;
-  box-shadow: 0 0 0 0.2rem rgba(111, 107, 111, 0.5);
+  box-shadow: 0 0 0 0.2rem rgba(105, 102, 104, 0.5);
 }
 
 .jumbotron {
@@ -5425,15 +5431,15 @@ a.badge-dark:focus, a.badge-dark.focus {
 }
 
 .alert-secondary {
-  border-color: #f1f0f1;
+  border-color: #f0f0f0;
   background-color: white;
-  color: #383637;
+  color: #353434;
 }
 .alert-secondary hr {
-  border-top-color: #e5e3e5;
+  border-top-color: #e3e3e3;
 }
 .alert-secondary .alert-link {
-  color: #1e1d1e;
+  color: #1b1b1b;
 }
 
 .alert-success {
@@ -5497,15 +5503,15 @@ a.badge-dark:focus, a.badge-dark.focus {
 }
 
 .alert-dark {
-  border-color: #f1f0f1;
+  border-color: #f0f0f0;
   background-color: white;
-  color: #383637;
+  color: #353434;
 }
 .alert-dark hr {
-  border-top-color: #e5e3e5;
+  border-top-color: #e3e3e3;
 }
 .alert-dark .alert-link {
-  color: #1e1d1e;
+  color: #1b1b1b;
 }
 
 @-webkit-keyframes progress-bar-stripes {
@@ -5724,16 +5730,16 @@ a.badge-dark:focus, a.badge-dark.focus {
 }
 
 .list-group-item-secondary {
-  background-color: #f1f0f1;
-  color: #383637;
+  background-color: #f0f0f0;
+  color: #353434;
 }
 .list-group-item-secondary.list-group-item-action:hover, .list-group-item-secondary.list-group-item-action:focus {
-  background-color: #e5e3e5;
-  color: #383637;
+  background-color: #e3e3e3;
+  color: #353434;
 }
 .list-group-item-secondary.list-group-item-action.active {
-  border-color: #383637;
-  background-color: #383637;
+  border-color: #353434;
+  background-color: #353434;
   color: white;
 }
 
@@ -5808,16 +5814,16 @@ a.badge-dark:focus, a.badge-dark.focus {
 }
 
 .list-group-item-dark {
-  background-color: #f1f0f1;
-  color: #383637;
+  background-color: #f0f0f0;
+  color: #353434;
 }
 .list-group-item-dark.list-group-item-action:hover, .list-group-item-dark.list-group-item-action:focus {
-  background-color: #e5e3e5;
-  color: #383637;
+  background-color: #e3e3e3;
+  color: #353434;
 }
 .list-group-item-dark.list-group-item-action.active {
-  border-color: #383637;
-  background-color: #383637;
+  border-color: #353434;
+  background-color: #353434;
   color: white;
 }
 
@@ -6146,7 +6152,7 @@ a.close.disabled {
   top: 0;
   border-width: 6.4px 6.4px 0;
   border-width: 0.4rem 0.4rem 0;
-  border-top-color: #6f6b6f;
+  border-top-color: #696668;
 }
 
 .bs-tooltip-right, .bs-tooltip-auto[x-placement^=right] {
@@ -6164,7 +6170,7 @@ a.close.disabled {
   right: 0;
   border-width: 6.4px 6.4px 6.4px 0;
   border-width: 0.4rem 0.4rem 0.4rem 0;
-  border-right-color: #6f6b6f;
+  border-right-color: #696668;
 }
 
 .bs-tooltip-bottom, .bs-tooltip-auto[x-placement^=bottom] {
@@ -6178,7 +6184,7 @@ a.close.disabled {
   bottom: 0;
   border-width: 0 6.4px 6.4px;
   border-width: 0 0.4rem 0.4rem;
-  border-bottom-color: #6f6b6f;
+  border-bottom-color: #696668;
 }
 
 .bs-tooltip-left, .bs-tooltip-auto[x-placement^=left] {
@@ -6196,14 +6202,14 @@ a.close.disabled {
   left: 0;
   border-width: 6.4px 0 6.4px 6.4px;
   border-width: 0.4rem 0 0.4rem 0.4rem;
-  border-left-color: #6f6b6f;
+  border-left-color: #696668;
 }
 
 .tooltip-inner {
   max-width: 200px;
   padding: 4px 8px;
   padding: 0.25rem 0.5rem;
-  background-color: #6f6b6f;
+  background-color: #696668;
   color: white;
   text-align: center;
 }
@@ -7327,7 +7333,7 @@ div[class*=aspect_]:after,
 .lorem-loader {
   -webkit-animation: Gradient 4s ease infinite;
   -moz-animation: Gradient 4s ease infinite;
-  background: linear-gradient(-45deg, #77e4ff, #c6c4c6);
+  background: linear-gradient(-45deg, #77e4ff, #c3c2c3);
   background-size: 400% 400%;
   color: #fff;
   animation: Gradient 4s ease infinite;
@@ -7830,7 +7836,7 @@ Markup:
 
 
 
-Styleguide Recipes.ACC.Social Links
+Styleguide Recipes.Social Links
 
 */
 /*
@@ -7842,19 +7848,19 @@ The social links can be restyled to be smaller.
 Markup:
 <section class="social p_4 m-y_2 font_n1 max-w_1 bg_white">
     <ul class="flex social-bar ul_none m_0">
-        <li class="flex_shrink m-r_2"><a href="https://twitter.com/accintouch" target="_blank" class="twitterbg_secondary-3 block c_secondary-n4 h:bg_accent h:c_white m-b_0 p-x_3 p_2 social-bar--button text_center transition_0"><i class="fab fa-twitter-square"></i></a></li>
-        <li class="flex_shrink m-r_2"><a href="https://www.facebook.com/AmericanCollegeofCardiology" target="_blank" class="facebookbg_secondary-3 block c_secondary-n4 h:bg_accent h:c_white m-b_0 p-x_3 p_2 social-bar--button text_center transition_0"><i class="fab fa-facebook-square"></i></a></li>
-        <li class="flex_shrink m-r_2"><a href="https://www.linkedin.com/company/american-college-of-cardiology/" target="_blank" class="linkedinbg_secondary-3 block c_secondary-n4 h:bg_accent h:c_white m-b_0 p-x_3 p_2 social-bar--button text_center transition_0"><i class="fab fa-linkedin"></i></a></li>
-        <li class="flex_shrink m-r_2"><a href="http://www.youtube.com/user/ACCinTouch" target="_blank" class="youtubebg_secondary-3 block c_secondary-n4 h:bg_accent h:c_white m-b_0 p-x_3 p_2 social-bar--button text_center transition_0"><i class="fab fa-youtube"></i></a></li>
-        <li class="flex_shrink m-r_2"><a href="https://play.google.com/store/apps/dev?id=5189912010956845696&hl=en_US" target="_blank" class="google-playbg_secondary-3 block c_secondary-n4 h:bg_accent h:c_white m-b_0 p-x_3 p_2 social-bar--button text_center transition_0"><i class="fab fa-google-play"></i></a></li>
-        <li class="flex_shrink m-r_2"><a href="https://apps.apple.com/us/developer/american-college-of-cardiology/id502174543#see-all/i-phonei-pad-apps" target="_blank" class="apple-storebg_secondary-3 block c_secondary-n4 h:bg_accent h:c_white m-b_0 p-x_3 p_2 social-bar--button text_center transition_0"><i class="fab fa-apple"></i></a></li>
+        <li class="flex_shrink m-r_2"><a href="https://twitter.com/accintouch" target="_blank" class="twitter bg_secondary-3 block c_secondary-n4 h:bg_accent h:c_white m-b_0 p-x_3 p_2 social-bar--button text_center transition_0"><i class="fab fa-twitter-square"></i></a></li>
+        <li class="flex_shrink m-r_2"><a href="https://www.facebook.com/AmericanCollegeofCardiology" target="_blank" class="facebook bg_secondary-3 block c_secondary-n4 h:bg_accent h:c_white m-b_0 p-x_3 p_2 social-bar--button text_center transition_0"><i class="fab fa-facebook-square"></i></a></li>
+        <li class="flex_shrink m-r_2"><a href="https://www.linkedin.com/company/american-college-of-cardiology/" target="_blank" class="linkedin bg_secondary-3 block c_secondary-n4 h:bg_accent h:c_white m-b_0 p-x_3 p_2 social-bar--button text_center transition_0"><i class="fab fa-linkedin"></i></a></li>
+        <li class="flex_shrink m-r_2"><a href="http://www.youtube.com/user/ACCinTouch" target="_blank" class="youtube bg_secondary-3 block c_secondary-n4 h:bg_accent h:c_white m-b_0 p-x_3 p_2 social-bar--button text_center transition_0"><i class="fab fa-youtube"></i></a></li>
+        <li class="flex_shrink m-r_2"><a href="https://play.google.com/store/apps/dev?id=5189912010956845696&hl=en_US" target="_blank" class="google-play bg_secondary-3 block c_secondary-n4 h:bg_accent h:c_white m-b_0 p-x_3 p_2 social-bar--button text_center transition_0"><i class="fab fa-google-play"></i></a></li>
+        <li class="flex_shrink m-r_2"><a href="https://apps.apple.com/us/developer/american-college-of-cardiology/id502174543#see-all/i-phonei-pad-apps" target="_blank" class="apple-store bg_secondary-3 block c_secondary-n4 h:bg_accent h:c_white m-b_0 p-x_3 p_2 social-bar--button text_center transition_0"><i class="fab fa-apple"></i></a></li>
     </ul>
 </section>
 
 
 
 
-Styleguide Recipes.ACC.Social Links.Mono Chrome
+Styleguide Recipes.Social Links.Mono Chrome
 
 */
 /*
@@ -7876,7 +7882,7 @@ Markup:
 </section>
 
 
-Styleguide Recipes.ACC.Social Links.Smaller
+Styleguide Recipes.Social Links.Smaller
 
 */
 /*
@@ -8127,18 +8133,10 @@ pre {
   text-align: left;
 }
 .table tbody tr:nth-of-type(odd) {
-  background-color: #f1f0f1;
+  background-color: #f0f0f0;
 }
 .table.unshaded tbody tr:nth-of-type(odd) {
   background-color: unset;
-}
-
-.navbar {
-  font-family: Maven Pro, Open Sans, Helvetica Neue, Helvetica, Helvetica, Arial, sans-serif;
-}
-
-.dropdown-menu {
-  font-family: Maven Pro, Open Sans, Helvetica Neue, Helvetica, Helvetica, Arial, sans-serif;
 }
 
 .nav-link {
@@ -8320,6 +8318,288 @@ Styleguide Recipes.Boot.BootNav
 	Styleguide Recipes.CVQUALITY
 
 */
+/*
+CVQuality.org Footer
+
+The Footer of CVquality
+
+Markup:
+<div id="footer-wrap" class="max-w_5">
+<!-- ********************************** breadcrumbs ********************************** -->
+<div id="breadcrumbs" class="br-b_3 br-t_1 br_0 br_accent br_solid br_t_3 breadcrumbs-container c_secondary font_0 font_ui p-x_4 p_3">
+	<b class="breadcrumbs-title">YOU ARE HERE: </b>
+	Home
+</div>
+<!-- This is the inner footer that we cache -->
+<div id="footer" role="contentinfo" class="bg_secondary-2 flex flex_column flex_inline flex_row:md flex_wrap p-x_3 p-y_0:lg p-y_4 w_100">
+	<div class="flex_auto p-x_3 p-y_4:lg w-grid_3:lg w-grid_6:md font_ui order-1">
+		<h2 class="br-b_1 br_dotted br_white-6 font_0 font_1 font_display m-b_0:md m-b_2 m-b_2:lg m-t_4:md p-b_3 c_secondary-n4">
+			Quality Improvement for Institutions:
+		</h2>
+		<ul class="block:md display_none font_ui font_0:lg font_n1 m-b_4 ul_none">
+			<li class="text-indent_n1 p-l_4 p-l_r">
+				<a class="nav-link c_white h:underline p-y_0" href="/home" id="msFooter_rptQii_hypLnk_0" target="_top">
+					Home
+				</a>
+			</li>
+			<li class="text-indent_n1 p-l_4 p-l_r">
+				<a class="nav-link c_white h:underline p-y_0" href="/About-QII" id="msFooter_rptQii_hypLnk_1" target="_top">
+					About
+				</a>
+			</li>
+			<li class="text-indent_n1 p-l_4 p-l_r">
+				<a class="nav-link c_white h:underline p-y_0" href="/Get-Started" id="msFooter_rptQii_hypLnk_2" target="_top">
+					Get Started
+				</a>
+			</li>
+			<li class="text-indent_n1 p-l_4 p-l_r">
+				<a class="nav-link c_white h:underline p-y_0" href="/News" id="msFooter_rptQii_hypLnk_3" target="_top">
+					News
+				</a>
+			</li>
+		</ul>
+	</div>
+	<div class="flex_auto p-x_3 p-y_4:lg w-grid_3:lg w-grid_6:md font_ui order-1">
+		<h2 class="br-b_1 br_dotted br_white-6 font_0 font_1 font_display m-b_0:md m-b_2 m-b_2:lg m-t_4:md p-b_3 c_secondary-n5">
+			Quality Improvement for Institutions:
+		</h2>
+		<ul class="block:md display_none font_ui font_0:lg font_n1 m-b_4 ul_none">
+			<li class="text-indent_n1 p-l_4 p-l_r">
+				<a class="nav-link c_white h:underline p-y_0" href="/home" id="msFooter_rptQii_hypLnk_0" target="_top">
+					Home
+				</a>
+			</li>
+			<li class="text-indent_n1 p-l_4 p-l_r">
+				<a class="nav-link c_white h:underline p-y_0" href="/About-QII" id="msFooter_rptQii_hypLnk_1" target="_top">
+					About
+				</a>
+			</li>
+			<li class="text-indent_n1 p-l_4 p-l_r">
+				<a class="nav-link c_white h:underline p-y_0" href="/Get-Started" id="msFooter_rptQii_hypLnk_2" target="_top">
+					Get Started
+				</a>
+			</li>
+			<li class="text-indent_n1 p-l_4 p-l_r">
+				<a class="nav-link c_white h:underline p-y_0" href="/News" id="msFooter_rptQii_hypLnk_3" target="_top">
+					News
+				</a>
+			</li>
+		</ul>
+	</div>
+	<div class="flex_auto p-x_3 p-y_4:lg w-grid_3:lg w-grid_6:md font_ui order-1">
+		<h2 class="br-b_1 br_dotted br_white-6 font_0 font_1 font_display m-b_0:md m-b_2 m-b_2:lg m-t_4:md p-b_3 c_secondary-n5">
+			Quality Improvement for Institutions:
+		</h2>
+		<ul class="block:md display_none font_ui font_0:lg font_n1 m-b_4 ul_none">
+			<li class="text-indent_n1 p-l_4 p-l_r">
+				<a class="nav-link c_white h:underline p-y_0" href="/home" id="msFooter_rptQii_hypLnk_0" target="_top">
+					Home
+				</a>
+			</li>
+			<li class="text-indent_n1 p-l_4 p-l_r">
+				<a class="nav-link c_white h:underline p-y_0" href="/About-QII" id="msFooter_rptQii_hypLnk_1" target="_top">
+					About
+				</a>
+			</li>
+			<li class="text-indent_n1 p-l_4 p-l_r">
+				<a class="nav-link c_white h:underline p-y_0" href="/Get-Started" id="msFooter_rptQii_hypLnk_2" target="_top">
+					Get Started
+				</a>
+			</li>
+			<li class="text-indent_n1 p-l_4 p-l_r">
+				<a class="nav-link c_white h:underline p-y_0" href="/News" id="msFooter_rptQii_hypLnk_3" target="_top">
+					News
+				</a>
+			</li>
+		</ul>
+	</div>
+	<div class="flex_auto p-x_3 p-y_4:lg w-grid_3:lg w-grid_6:md font_ui order-1">
+		<h2 class="br-b_1 br_dotted br_white-6 font_0 font_1 font_display m-b_0:md m-b_2 m-b_2:lg m-t_4:md p-b_3 c_secondary-n5">
+			Quality Improvement for Institutions:
+		</h2>
+		<ul class="block:md display_none font_ui font_0:lg font_n1 m-b_4 ul_none">
+			<li class="text-indent_n1 p-l_4 p-l_r">
+				<a class="nav-link c_white h:underline p-y_0" href="/home" id="msFooter_rptQii_hypLnk_0" target="_top">
+					Home
+				</a>
+			</li>
+			<li class="text-indent_n1 p-l_4 p-l_r">
+				<a class="nav-link c_white h:underline p-y_0" href="/About-QII" id="msFooter_rptQii_hypLnk_1" target="_top">
+					About
+				</a>
+			</li>
+			<li class="text-indent_n1 p-l_4 p-l_r">
+				<a class="nav-link c_white h:underline p-y_0" href="/Get-Started" id="msFooter_rptQii_hypLnk_2" target="_top">
+					Get Started
+				</a>
+			</li>
+			<li class="text-indent_n1 p-l_4 p-l_r">
+				<a class="nav-link c_white h:underline p-y_0" href="/News" id="msFooter_rptQii_hypLnk_3" target="_top">
+					News
+				</a>
+			</li>
+		</ul>
+	</div>
+	<!-- column 4 -->
+	<div class="flex_auto p-x_3 p-y_4:lg w-grid_3:lg w-grid_6:md relative order-0">
+		<div class="bg_left logo_primary" style="height: 80px;">
+				<span class="alt">logo_condensed-alt max-w_1</span>
+			</div><section class="address c_secondary-n3">
+			<address>
+				<!-- http://microformats.org/wiki/hcard -->
+				<h4 class="m-b_0 font_bold font_copy font_normal font_1 m-t_4:md">Heart House</h4>
+				<div class="font_ui font_0">
+					<ul class="ul_none  lh_2">
+						<li class="m-b_1 m-b_3:md font_normal">
+							<span class="street-address">2400 N. St. NW</span>
+						</li>
+						<li class="m-b_1 m-b_3:md font_normal">
+							<span class="locality ">Washington</span>,
+							<span class="city-name ">
+								<abbr title="District of Colombia">DC</abbr>
+							</span>
+							<span class="postal-code">20037</span>
+						</li>
+						<li class="m-b_1 m-b_3:md font_normal">
+							<a href="mailto:resource@acc.org" class="email c_white text_underline  h:c_white ">
+								<strong class="p-r_2 inline block:md inline:lg">Email:</strong>
+								<span class="inline block:md inline:lg">resource@acc.org</span></a>
+						</li>
+					</ul>
+					<ul class="ul_none lh_2">
+						<li class="m-b_1 m-b_3:md font_normal">
+							<a tel="+12023756000" href="tel:+12023756000" class="tel c_secondary-n3 h:c_secondary-n4 h:underline">
+								<strong class="p-r_2 block:md inline:lg">Phone:</strong><span class=" block:md inline:lg">(202) 375-6000, ext. 5603</span></a>
+						</li>
+						<li class="m-b_1 m-b_3:md font_normal">
+							<a tel="+18002574737" href="tel:+18002534636.5603" class="tel c_secondary-n3 h:c_secondary-n4 h:underline">
+								<strong class="p-r_2 block:md inline:lg">Toll Free:</strong><span class=" block:md inline:lg">(800) 253-4636, ext. 5603</span></a>
+						</li>
+						<li class="m-b_1 m-b_3:md font_normal">
+							<a fax="+12023757000" href="fax:+12023757000" class="fax c_secondary-n3 h:c_secondary-n4 h:underline">
+								<strong class="p-r_2 block:md inline:lg">Fax:</strong>
+								<span class="block:md inline:lg">(202) 375-7000</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</address>		
+		</section>
+	</div>
+	<div class="flex_auto p-x_3 p-y_4:lg w-grid_3:lg w-grid_6:md relative order-10">
+		<section class="acc-websites m-y_3">
+			<nav class="font_ui w_100 font_0">
+				<ul class="lh_4 ul_none">
+					<li class="c_secondary-n3">
+						<a target="_blank" class="c_secondary-n3 block h:bg_black-2 h:c_secondary-n3" href="http://www.acc.org">
+							<span class="inline-block">Acc</span>
+							<i class="float_right fas p-r_3 c_secondary-n3 h:c_secondary-n3 fa-external-link-square "></i>
+						</a>
+					</li>
+					<li class="c_secondary-n3">
+						<a target="_blank" class="c_secondary-n3 block h:bg_black-2 h:c_secondary-n3" href="https://cvquality.acc.org/Accreditation?">
+							<span class="inline-block">Accreditation Services</span>
+							<i class="float_right fas p-r_3 c_secondary-n3 h:c_secondary-n3 fa-external-link-square "></i>
+						</a>
+					</li>
+					<li class="c_secondary-n3">
+						<a target="_blank" class="c_secondary-n3 block h:bg_black-2 h:c_secondary-n3" href="http://www.ncdr.com">
+							<span class="inline-block">NCDR</span>
+							<i class="float_right fas p-r_3 c_secondary-n3 h:c_secondary-n3 fa-external-link-square "></i>
+						</a>
+					</li>
+					<li class="c_secondary-n3">
+						<a target="_blank" class="c_secondary-n3 block h:bg_black-2 h:c_secondary-n3" href="http://www.cardiosmart.org">
+							<span class="inline-block">CardioSmart</span>
+							<i class="float_right fas p-r_3 c_secondary-n3 h:c_secondary-n3 fa-external-link-square "></i>
+						</a>
+					</li>
+					<li class="c_secondary-n3">
+						<a target="_blank" class="c_secondary-n3 block h:bg_black-2 h:c_secondary-n3" href="http://www.onlinejacc.org/">
+							<span class="inline-block">JACC</span>
+							<i class="float_right fas p-r_3 c_secondary-n3 fa-external-link-square "></i>
+						</a>
+					</li>
+				</ul>
+			</nav>
+		</section>	
+		<section class="l_0 r_0 social m-t_4 relative absolute:md  b_4">
+			<ul class="flex social-bar ul_none c_white h:c_white m_0">
+				<li class="flex_auto m-r_2"><a href="https://twitter.com/accintouch" target="_blank" class="twitter social-bar--button block m-b_0 p_3 c_white text_center opacity_7 h:opacity"><i class="fab fa-twitter-square"></i></a></li>
+				<li class="flex_auto m-r_2"><a href="https://www.facebook.com/AmericanCollegeofCardiology" target="_blank" class="facebook social-bar--button block m-b_0 p_3 c_white text_center opacity_7 h:opacity"><i class="fab fa-facebook-square"></i></a></li>
+				<li class="flex_auto m-r_2"><a href="https://www.linkedin.com/company/american-college-of-cardiology/" target="_blank" class="linkedin social-bar--button block m-b_0 p_3 c_white text_center opacity_7 h:opacity"><i class="fab fa-linkedin"></i></a></li>
+				<li class="flex_auto m-r_2"><a href="http://www.youtube.com/user/ACCinTouch" target="_blank" class="youtube social-bar--button block m-b_0 p_3 c_white text_center opacity_7 h:opacity"><i class="fab fa-youtube"></i></a></li>
+				<li class="flex_auto m-r_2"><a href="https://play.google.com/store/apps/dev?id=5189912010956845696&amp;hl=en_US" target="_blank" class="google-play social-bar--button block m-b_0 p_3 c_white text_center opacity_7 h:opacity"><i class="fab fa-google-play"></i></a></li>
+				<li class="flex_auto m-r_2"><a href="https://apps.apple.com/us/developer/american-college-of-cardiology/id502174543#see-all/i-phonei-pad-apps" target="_blank" class="apple-store social-bar--button block m-b_0 p_3 c_white text_center opacity_7 h:opacity"><i class="fab fa-apple"></i></a></li>
+			</ul>
+		</section>
+	</div>
+</div>
+<!-- / footer -->
+<div id="subfooter" class="bg_secondary-n1 br-b_2 br_0 br_accent-n1 br_solid c_white font_n1 p-x_4 p-y_4">
+	<ul class="block footer-bottom-links ul_none">
+		<li class="inline p_2">
+			<a href="//www.acc.org/footer-pages/media-center" class="c_white-6 h:c_white">Media Center</a>
+		</li>
+		<li class="inline p_2">
+			<a href="//www.acc.org/footer-pages/quick-start-guide" class="c_white-6 h:c_white">ACC.org Quick Start Guide</a>
+		</li>
+		<li class="inline p_2">
+			<a class="c_white-6 h:c_white" href="//www.acc.org/footer-pages/advertising-and-sponsorship-policy">Advertising &amp; Sponsorship Policy</a>
+		</li>
+		<li class="inline p_2">
+			<a class="c_white-6 h:c_white" href="//www.acc.org/footer-pages/clinical-content-disclaimer">Clinical Content Disclaimer</a>
+		</li>
+		<li class="inline p_2">
+			<a class="c_white-6 h:c_white" href="//www.acc.org/footer-pages/editorial-board">Editorial Board</a>
+		</li>
+		<li class="inline p_2">
+			<a class="c_white-6 h:c_white" href="//www.acc.org/footer-pages/privacy-policy">Privacy Policy</a>
+		</li>
+		<li class="inline p_2">
+			<a class="c_white-6 h:c_white" href="//www.acc.org/footer-pages/registered-user-agreement">Registered User Agreement</a>
+		</li>
+		<li class="inline p_2">
+			<a class="c_white-6 h:c_white" href="//www.acc.org/footer-pages/terms-and-conditions">Terms of Service</a>
+		</li>
+		<li class="inline p_2">
+			<a class="c_white-6 h:c_white" href="//www.acc.org/footer-pages/cookie-policy">Cookie Policy</a>
+		</li>
+		<li class="inline p_2">
+			<a class="c_white-6 h:c_white" href="//www.acc.org/footer-pages/member-hub-terms-of-use">Member Hub Terms of Use</a>
+		</li>
+		<li class="inline p_2">
+			<a class="c_white-6 h:c_white" href="//www.acc.org/sitemap-acc.xml">Site Map</a>
+		</li>
+	</ul>
+	<!-- /footer-bottom-links -->
+	<p class="c_white-5 font_italic font_n2 legal m-b_2 m-t_3">
+		© 2019 American College of Cardiology Foundation. All rights reserved.
+	</p>
+</div>
+<!-- /subfooter -->
+</div>
+
+Weight: -1
+
+Styleguide Recipes.CVQuality.Footer
+
+*/
+@media only screen and (min-width: 640px) {
+  .reverse-indent {
+    display: inline-block;
+    width: 100%;
+    margin-left: 1em;
+    padding-right: 1em;
+    text-indent: -1em;
+  }
+
+  .reverse-indent:after {
+    display: table;
+    clear: both;
+    content: "";
+  }
+}
 /**  Utility Classes    *********************************/
 /*
 UC: Introduction
@@ -8455,15 +8735,15 @@ Styleguide Typography
 }
 
 .font_display {
-  font-family: Maven Pro, Open Sans, Helvetica Neue, Helvetica, Helvetica, Arial, sans-serif;
+  font-family: "Lato",Verdana,Helvetica,sans-serif;;
 }
 
 .font_copy {
-  font-family: Muli, Open Sans, Helvetica Neue, Helvetica, Helvetica, Arial, sans-serif;
+  font-family: "Muli","Open Sans","system",sans-serif;
 }
 
 .font_ui {
-  font-family: Open Sans, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  font-family: "Muli","Open Sans","system",sans-serif;
 }
 
 .font_mono {
@@ -8565,51 +8845,51 @@ Styleguide Typography.Font.Color
 }
 
 .c_secondary {
-  color: #6f6b6f !important;
+  color: #696668 !important;
 }
 
 .c_secondary-0 {
-  color: #6f6b6f !important;
+  color: #696668 !important;
 }
 
 .c_secondary-1 {
-  color: #858185 !important;
+  color: #807d7f !important;
 }
 
 .c_secondary-2 {
-  color: #a4a2a4 !important;
+  color: #a19fa0 !important;
 }
 
 .c_secondary-3 {
-  color: #c5c4c5 !important;
+  color: #c3c2c3 !important;
 }
 
 .c_secondary-4 {
-  color: #dfdedf !important;
+  color: #deddde !important;
 }
 
 .c_secondary-5 {
-  color: #f1f0f1 !important;
+  color: #f0f0f0 !important;
 }
 
 .c_secondary-n1 {
-  color: #646064 !important;
+  color: #5f5c5e !important;
 }
 
 .c_secondary-n2 {
-  color: #535053 !important;
+  color: #4f4d4e !important;
 }
 
 .c_secondary-n3 {
-  color: #3d3b3d !important;
+  color: #3a3839 !important;
 }
 
 .c_secondary-n4 {
-  color: #2c2b2c !important;
+  color: #2a292a !important;
 }
 
 .c_secondary-n5 {
-  color: #1c1b1c !important;
+  color: #1a1a1a !important;
 }
 
 .c_success {
@@ -8950,6 +9230,50 @@ Styleguide Typography.Font.Color
 
 .c_acc {
   color: #004176 !important;
+}
+
+.c_acc-0 {
+  color: #004176 !important;
+}
+
+.c_acc-1 {
+  color: #265e8b !important;
+}
+
+.c_acc-2 {
+  color: #5e87a9 !important;
+}
+
+.c_acc-3 {
+  color: #99b3c8 !important;
+}
+
+.c_acc-4 {
+  color: #c7d5e1 !important;
+}
+
+.c_acc-5 {
+  color: #e6ecf1 !important;
+}
+
+.c_acc-n1 {
+  color: #003b6a !important;
+}
+
+.c_acc-n2 {
+  color: #003159 !important;
+}
+
+.c_acc-n3 {
+  color: #002441 !important;
+}
+
+.c_acc-n4 {
+  color: #001a2f !important;
+}
+
+.c_acc-n5 {
+  color: #00101e !important;
 }
 
 /*
@@ -13799,51 +14123,51 @@ Styleguide Background.Color.Shades
 }
 
 .bg_secondary {
-  background-color: #6f6b6f !important;
+  background-color: #696668 !important;
 }
 
 .bg_secondary-0 {
-  background-color: #6f6b6f !important;
+  background-color: #696668 !important;
 }
 
 .bg_secondary-1 {
-  background-color: #858185 !important;
+  background-color: #807d7f !important;
 }
 
 .bg_secondary-2 {
-  background-color: #a4a2a4 !important;
+  background-color: #a19fa0 !important;
 }
 
 .bg_secondary-3 {
-  background-color: #c5c4c5 !important;
+  background-color: #c3c2c3 !important;
 }
 
 .bg_secondary-4 {
-  background-color: #dfdedf !important;
+  background-color: #deddde !important;
 }
 
 .bg_secondary-5 {
-  background-color: #f1f0f1 !important;
+  background-color: #f0f0f0 !important;
 }
 
 .bg_secondary-n1 {
-  background-color: #646064 !important;
+  background-color: #5f5c5e !important;
 }
 
 .bg_secondary-n2 {
-  background-color: #535053 !important;
+  background-color: #4f4d4e !important;
 }
 
 .bg_secondary-n3 {
-  background-color: #3d3b3d !important;
+  background-color: #3a3839 !important;
 }
 
 .bg_secondary-n4 {
-  background-color: #2c2b2c !important;
+  background-color: #2a292a !important;
 }
 
 .bg_secondary-n5 {
-  background-color: #1c1b1c !important;
+  background-color: #1a1a1a !important;
 }
 
 .bg_success {
@@ -14184,6 +14508,50 @@ Styleguide Background.Color.Shades
 
 .bg_acc {
   background-color: #004176 !important;
+}
+
+.bg_acc-0 {
+  background-color: #004176 !important;
+}
+
+.bg_acc-1 {
+  background-color: #265e8b !important;
+}
+
+.bg_acc-2 {
+  background-color: #5e87a9 !important;
+}
+
+.bg_acc-3 {
+  background-color: #99b3c8 !important;
+}
+
+.bg_acc-4 {
+  background-color: #c7d5e1 !important;
+}
+
+.bg_acc-5 {
+  background-color: #e6ecf1 !important;
+}
+
+.bg_acc-n1 {
+  background-color: #003b6a !important;
+}
+
+.bg_acc-n2 {
+  background-color: #003159 !important;
+}
+
+.bg_acc-n3 {
+  background-color: #002441 !important;
+}
+
+.bg_acc-n4 {
+  background-color: #001a2f !important;
+}
+
+.bg_acc-n5 {
+  background-color: #00101e !important;
 }
 
 .bg_white {
@@ -14853,51 +15221,51 @@ Styleguide Borders.Colors.Black
 }
 
 .br_secondary {
-  border-color: #6f6b6f !important;
+  border-color: #696668 !important;
 }
 
 .br_secondary-0 {
-  border-color: #6f6b6f !important;
+  border-color: #696668 !important;
 }
 
 .br_secondary-1 {
-  border-color: #858185 !important;
+  border-color: #807d7f !important;
 }
 
 .br_secondary-2 {
-  border-color: #a4a2a4 !important;
+  border-color: #a19fa0 !important;
 }
 
 .br_secondary-3 {
-  border-color: #c5c4c5 !important;
+  border-color: #c3c2c3 !important;
 }
 
 .br_secondary-4 {
-  border-color: #dfdedf !important;
+  border-color: #deddde !important;
 }
 
 .br_secondary-5 {
-  border-color: #f1f0f1 !important;
+  border-color: #f0f0f0 !important;
 }
 
 .br_secondary-n1 {
-  border-color: #646064 !important;
+  border-color: #5f5c5e !important;
 }
 
 .br_secondary-n2 {
-  border-color: #535053 !important;
+  border-color: #4f4d4e !important;
 }
 
 .br_secondary-n3 {
-  border-color: #3d3b3d !important;
+  border-color: #3a3839 !important;
 }
 
 .br_secondary-n4 {
-  border-color: #2c2b2c !important;
+  border-color: #2a292a !important;
 }
 
 .br_secondary-n5 {
-  border-color: #1c1b1c !important;
+  border-color: #1a1a1a !important;
 }
 
 .br_success {
@@ -15240,6 +15608,50 @@ Styleguide Borders.Colors.Black
   border-color: #004176 !important;
 }
 
+.br_acc-0 {
+  border-color: #004176 !important;
+}
+
+.br_acc-1 {
+  border-color: #265e8b !important;
+}
+
+.br_acc-2 {
+  border-color: #5e87a9 !important;
+}
+
+.br_acc-3 {
+  border-color: #99b3c8 !important;
+}
+
+.br_acc-4 {
+  border-color: #c7d5e1 !important;
+}
+
+.br_acc-5 {
+  border-color: #e6ecf1 !important;
+}
+
+.br_acc-n1 {
+  border-color: #003b6a !important;
+}
+
+.br_acc-n2 {
+  border-color: #003159 !important;
+}
+
+.br_acc-n3 {
+  border-color: #002441 !important;
+}
+
+.br_acc-n4 {
+  border-color: #001a2f !important;
+}
+
+.br_acc-n5 {
+  border-color: #00101e !important;
+}
+
 /*
     Border Width
 
@@ -15553,7 +15965,7 @@ a:focus {
 *[class*=" hover:"],
 *[class*=" h:"] {
   cursor: pointer;
-  transition: all ease-out 0.75s;
+  transition: all ease-out 0.2s;
 }
 *[class*=" hover:"]:focus,
 *[class*=" h:"]:focus {
@@ -15564,7 +15976,7 @@ a:focus {
 
 *[class*="hover:c"],
 *[class*=" h:c"] {
-  transition: all ease-in 0.5s;
+  transition: all ease-in 0.2s;
 }
 
 .h\:bg_primary:hover {
@@ -15664,99 +16076,99 @@ a:focus {
 }
 
 .h\:bg_secondary:hover {
-  background-color: #6f6b6f !important;
+  background-color: #696668 !important;
 }
 
 .h\:bg_secondary-0:hover {
-  background-color: #6f6b6f !important;
+  background-color: #696668 !important;
 }
 
 .h\:bg_secondary-1:hover {
-  background-color: #858185 !important;
+  background-color: #807d7f !important;
 }
 
 .h\:bg_secondary-2:hover {
-  background-color: #a4a2a4 !important;
+  background-color: #a19fa0 !important;
 }
 
 .h\:bg_secondary-3:hover {
-  background-color: #c5c4c5 !important;
+  background-color: #c3c2c3 !important;
 }
 
 .h\:bg_secondary-4:hover {
-  background-color: #dfdedf !important;
+  background-color: #deddde !important;
 }
 
 .h\:bg_secondary-5:hover {
-  background-color: #f1f0f1 !important;
+  background-color: #f0f0f0 !important;
 }
 
 .h\:bg_secondary-n1:hover {
-  background-color: #646064 !important;
+  background-color: #5f5c5e !important;
 }
 
 .h\:bg_secondary-n2:hover {
-  background-color: #535053 !important;
+  background-color: #4f4d4e !important;
 }
 
 .h\:bg_secondary-n3:hover {
-  background-color: #3d3b3d !important;
+  background-color: #3a3839 !important;
 }
 
 .h\:bg_secondary-n4:hover {
-  background-color: #2c2b2c !important;
+  background-color: #2a292a !important;
 }
 
 .h\:bg_secondary-n5:hover {
-  background-color: #1c1b1c !important;
+  background-color: #1a1a1a !important;
 }
 
 .h\:c_secondary:hover {
-  color: #6f6b6f !important;
+  color: #696668 !important;
 }
 
 .h\:c_secondary-0:hover {
-  color: #6f6b6f !important;
+  color: #696668 !important;
 }
 
 .h\:c_secondary-1:hover {
-  color: #858185 !important;
+  color: #807d7f !important;
 }
 
 .h\:c_secondary-2:hover {
-  color: #a4a2a4 !important;
+  color: #a19fa0 !important;
 }
 
 .h\:c_secondary-3:hover {
-  color: #c5c4c5 !important;
+  color: #c3c2c3 !important;
 }
 
 .h\:c_secondary-4:hover {
-  color: #dfdedf !important;
+  color: #deddde !important;
 }
 
 .h\:c_secondary-5:hover {
-  color: #f1f0f1 !important;
+  color: #f0f0f0 !important;
 }
 
 .h\:c_secondary-n1:hover {
-  color: #646064 !important;
+  color: #5f5c5e !important;
 }
 
 .h\:c_secondary-n2:hover {
-  color: #535053 !important;
+  color: #4f4d4e !important;
 }
 
 .h\:c_secondary-n3:hover {
-  color: #3d3b3d !important;
+  color: #3a3839 !important;
 }
 
 .h\:c_secondary-n4:hover {
-  color: #2c2b2c !important;
+  color: #2a292a !important;
 }
 
 .h\:c_secondary-n5:hover {
-  color: #1c1b1c !important;
+  color: #1a1a1a !important;
 }
 
 .h\:bg_success:hover {
@@ -16573,16 +16985,24 @@ a:focus {
 .hover\:dotted,
 .h\:dotted, .hover\:double,
 .h\:double, .hover\:dashed,
-.h\:dashed, .hover\:underline,
+.h\:dashed, .hover\:underline-none,
+.h\:underline-none, .hover\:underline,
 .h\:underline {
   text-decoration: none;
 }
 .hover\:dotted:hover,
 .h\:dotted:hover, .hover\:double:hover,
 .h\:double:hover, .hover\:dashed:hover,
-.h\:dashed:hover, .hover\:underline:hover,
+.h\:dashed:hover, .hover\:underline-none:hover,
+.h\:underline-none:hover, .hover\:underline:hover,
 .h\:underline:hover {
   text-decoration: underline;
+}
+
+.hover\:underline-none:hover,
+.h\:underline-none:hover {
+  -webkit-text-decoration-style: none;
+          text-decoration-style: none;
 }
 
 .hover\:dashed:hover,
@@ -17115,122 +17535,122 @@ Styleguide is-active.black and white
 
 .is-active.a\:bg_secondary,
 .is-active > .a\:bg_secondary {
-  background-color: #6f6b6f !important;
+  background-color: #696668 !important;
 }
 
 .is-active.a\:bg_secondary-0,
 .is-active > .a\:bg_secondary-0 {
-  background-color: #6f6b6f !important;
+  background-color: #696668 !important;
 }
 
 .is-active.a\:bg_secondary-1,
 .is-active > .a\:bg_secondary-1 {
-  background-color: #858185 !important;
+  background-color: #807d7f !important;
 }
 
 .is-active.a\:bg_secondary-2,
 .is-active > .a\:bg_secondary-2 {
-  background-color: #a4a2a4 !important;
+  background-color: #a19fa0 !important;
 }
 
 .is-active.a\:bg_secondary-3,
 .is-active > .a\:bg_secondary-3 {
-  background-color: #c5c4c5 !important;
+  background-color: #c3c2c3 !important;
 }
 
 .is-active.a\:bg_secondary-4,
 .is-active > .a\:bg_secondary-4 {
-  background-color: #dfdedf !important;
+  background-color: #deddde !important;
 }
 
 .is-active.a\:bg_secondary-5,
 .is-active > .a\:bg_secondary-5 {
-  background-color: #f1f0f1 !important;
+  background-color: #f0f0f0 !important;
 }
 
 .is-active.a\:bg_secondary-n1,
 .is-active > .a\:bg_secondary-n1 {
-  background-color: #646064 !important;
+  background-color: #5f5c5e !important;
 }
 
 .is-active.a\:bg_secondary-n2,
 .is-active > .a\:bg_secondary-n2 {
-  background-color: #535053 !important;
+  background-color: #4f4d4e !important;
 }
 
 .is-active.a\:bg_secondary-n3,
 .is-active > .a\:bg_secondary-n3 {
-  background-color: #3d3b3d !important;
+  background-color: #3a3839 !important;
 }
 
 .is-active.a\:bg_secondary-n4,
 .is-active > .a\:bg_secondary-n4 {
-  background-color: #2c2b2c !important;
+  background-color: #2a292a !important;
 }
 
 .is-active.a\:bg_secondary-n5,
 .is-active > .a\:bg_secondary-n5 {
-  background-color: #1c1b1c !important;
+  background-color: #1a1a1a !important;
 }
 
 .is-active.a\:c_secondary,
 .is-active > .a\:c_secondary {
-  color: #6f6b6f !important;
+  color: #696668 !important;
 }
 
 .is-active.a\:c_secondary-0,
 .is-active > .a\:c_secondary-0 {
-  color: #6f6b6f !important;
+  color: #696668 !important;
 }
 
 .is-active.a\:c_secondary-1,
 .is-active > .a\:c_secondary-1 {
-  color: #858185 !important;
+  color: #807d7f !important;
 }
 
 .is-active.a\:c_secondary-2,
 .is-active > .a\:c_secondary-2 {
-  color: #a4a2a4 !important;
+  color: #a19fa0 !important;
 }
 
 .is-active.a\:c_secondary-3,
 .is-active > .a\:c_secondary-3 {
-  color: #c5c4c5 !important;
+  color: #c3c2c3 !important;
 }
 
 .is-active.a\:c_secondary-4,
 .is-active > .a\:c_secondary-4 {
-  color: #dfdedf !important;
+  color: #deddde !important;
 }
 
 .is-active.a\:c_secondary-5,
 .is-active > .a\:c_secondary-5 {
-  color: #f1f0f1 !important;
+  color: #f0f0f0 !important;
 }
 
 .is-active.a\:c_secondary-n1,
 .is-active > .a\:c_secondary-n1 {
-  color: #646064 !important;
+  color: #5f5c5e !important;
 }
 
 .is-active.a\:c_secondary-n2,
 .is-active > .a\:c_secondary-n2 {
-  color: #535053 !important;
+  color: #4f4d4e !important;
 }
 
 .is-active.a\:c_secondary-n3,
 .is-active > .a\:c_secondary-n3 {
-  color: #3d3b3d !important;
+  color: #3a3839 !important;
 }
 
 .is-active.a\:c_secondary-n4,
 .is-active > .a\:c_secondary-n4 {
-  color: #2c2b2c !important;
+  color: #2a292a !important;
 }
 
 .is-active.a\:c_secondary-n5,
 .is-active > .a\:c_secondary-n5 {
-  color: #1c1b1c !important;
+  color: #1a1a1a !important;
 }
 
 .is-active.a\:bg_success,
@@ -18440,7 +18860,7 @@ Styleguide counters
 */
 /* Nav Recipes.04x */
 /*
-    Footer
+    Generic Footer
 
 
     This defines the web footer 
@@ -18504,11 +18924,11 @@ Styleguide counters
             <!-- Social -->
             <h4 class="font_slab c_white font_regular">Stay Connected</h4>
             <ul class="flex social-bar ul_none c_white h:c_white m_0">
-                <li class="flex_auto m-r_2"><a href="https://twitter.com/accintouch" target="_blank" class="twitter social-bar--button block m-b_0 p_3 c_white-8 h:c_white text_center opacity_6 h:opacity"><i class="fab fa-twitter-square"></i></a></li>
-                <li class="flex_auto m-r_2"><a href="https://www.facebook.com/AmericanCollegeofCardiology" target="_blank" class="facebook social-bar--button block m-b_0 p_3 c_white-8 h:c_white text_center opacity_6 h:opacity"><i class="fab fa-facebook-square"></i></a></li>
-                <li class="flex_auto m-r_2"><a href="http://www.youtube.com/user/ACCinTouch" target="_blank" class="youtube social-bar--button block m-b_0 p_3 c_white-8 h:c_white text_center opacity_6 h:opacity"><i class="fab fa-youtube"></i></a></li>
-                <li class="flex_auto m-r_2"><a href="https://play.google.com/store/apps/dev?id=5189912010956845696&amp;hl=en_US" target="_blank" class="google-play social-bar--button block m-b_0 p_3 c_white-8 h:c_white text_center opacity_6 h:opacity"><i class="fab fa-google-play"></i></a></li>
-                <li class="flex_auto m-r_2"><a href="https://apps.apple.com/us/developer/american-college-of-cardiology/id502174543#see-all/i-phonei-pad-apps" target="_blank" class="apple-store social-bar--button block m-b_0 p_3 c_white-8 h:c_white text_center opacity_6 h:opacity"><i class="fab fa-apple"></i></a></li>
+                <li class="flex_auto m-r_2"><a href="https://twitter.com/accintouch" target="_blank" class="twitter social-bar--button block m-b_0 p_3 c_white-8 h:c_white text_center h:bg_primary-n1"><i class="fab fa-twitter-square"></i></a></li>
+                <li class="flex_auto m-r_2"><a href="https://www.facebook.com/AmericanCollegeofCardiology" target="_blank" class="facebook social-bar--button block m-b_0 p_3 c_white-8 h:c_white text_center h:bg_primary-n1"><i class="fab fa-facebook-square"></i></a></li>
+                <li class="flex_auto m-r_2"><a href="http://www.youtube.com/user/ACCinTouch" target="_blank" class="youtube social-bar--button block m-b_0 p_3 c_white-8 h:c_white text_center h:bg_primary-n1"><i class="fab fa-youtube"></i></a></li>
+                <li class="flex_auto m-r_2"><a href="https://play.google.com/store/apps/dev?id=5189912010956845696&amp;hl=en_US" target="_blank" class="google-play social-bar--button block m-b_0 p_3 c_white-8 h:c_white text_center h:bg_primary-n1"><i class="fab fa-google-play"></i></a></li>
+                <li class="flex_auto m-r_2"><a href="https://apps.apple.com/us/developer/american-college-of-cardiology/id502174543#see-all/i-phonei-pad-apps" target="_blank" class="apple-store social-bar--button block m-b_0 p_3 c_white-8 h:c_white text_center h:bg_primary-n1"><i class="fab fa-apple"></i></a></li>
             </ul>
             <!-- Social -->
         </div>

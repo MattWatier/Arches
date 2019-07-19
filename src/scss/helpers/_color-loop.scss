@@ -137,7 +137,13 @@ $debug-trace: true !default;
 	}
 }
 
-@mixin loop-transparent($key, $color: black, $breakpoint: "", $important: "", $hover: false) {
+@mixin loop-transparent(
+	$key,
+	$color: black,
+	$breakpoint: "",
+	$important: "",
+	$hover: false
+) {
 	$styles: get-css-style($key);
 	$sizes: get-css-unit($key);
 	$hex: $color;
@@ -171,7 +177,7 @@ $debug-trace: true !default;
 		}
 
 		@if $debug-trace {
-			@debug "My Name is  #{$name}";
+			@debug "My Name is  #{$names}";
 		}
 	}
 }
@@ -181,7 +187,12 @@ $debug-trace: true !default;
 	$black-mix: map-get($value-to-unit, percent-negative);
 	$unit: $color-name;
 	$breakpoint: "" !default;
-	$name-self: class-name-constructor($key, $unit, $breakpoint, "is-active-self");
+	$name-self: class-name-constructor(
+		$key,
+		$unit,
+		$breakpoint,
+		"is-active-self"
+	);
 	$name-child: class-name-constructor($key, $unit, $breakpoint, "is-active");
 	$styles: get-css-style($key);
 
@@ -194,7 +205,12 @@ $debug-trace: true !default;
 
 	@each $val-name, $val in $white-mix {
 		$unit: #{$color-name}-#{$val-name};
-		$name-self: class-name-constructor($key, $unit, $breakpoint, "is-active-self");
+		$name-self: class-name-constructor(
+			$key,
+			$unit,
+			$breakpoint,
+			"is-active-self"
+		);
 		$name-child: class-name-constructor($key, $unit, $breakpoint, "is-active");
 
 		#{$name-self},
@@ -207,7 +223,12 @@ $debug-trace: true !default;
 
 	@each $val-name, $val in $black-mix {
 		$unit: #{$color-name}-#{$val-name};
-		$name-self: class-name-constructor($key, $unit, $breakpoint, "is-active-self");
+		$name-self: class-name-constructor(
+			$key,
+			$unit,
+			$breakpoint,
+			"is-active-self"
+		);
 		$name-child: class-name-constructor($key, $unit, $breakpoint, "is-active");
 
 		#{$name-self},

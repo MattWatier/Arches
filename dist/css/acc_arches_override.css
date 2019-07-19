@@ -2755,7 +2755,7 @@
 
 
 
-  Styleguide Recipes.ACC.Social Links
+  Styleguide Recipes.Social Links
 
   */
   /*
@@ -2767,19 +2767,19 @@
   Markup:
   <section class="social p_4 m-y_2 font_n1 max-w_1 bg_white">
       <ul class="flex social-bar ul_none m_0">
-          <li class="flex_shrink m-r_2"><a href="https://twitter.com/accintouch" target="_blank" class="twitterbg_secondary-3 block c_secondary-n4 h:bg_accent h:c_white m-b_0 p-x_3 p_2 social-bar--button text_center transition_0"><i class="fab fa-twitter-square"></i></a></li>
-          <li class="flex_shrink m-r_2"><a href="https://www.facebook.com/AmericanCollegeofCardiology" target="_blank" class="facebookbg_secondary-3 block c_secondary-n4 h:bg_accent h:c_white m-b_0 p-x_3 p_2 social-bar--button text_center transition_0"><i class="fab fa-facebook-square"></i></a></li>
-          <li class="flex_shrink m-r_2"><a href="https://www.linkedin.com/company/american-college-of-cardiology/" target="_blank" class="linkedinbg_secondary-3 block c_secondary-n4 h:bg_accent h:c_white m-b_0 p-x_3 p_2 social-bar--button text_center transition_0"><i class="fab fa-linkedin"></i></a></li>
-          <li class="flex_shrink m-r_2"><a href="http://www.youtube.com/user/ACCinTouch" target="_blank" class="youtubebg_secondary-3 block c_secondary-n4 h:bg_accent h:c_white m-b_0 p-x_3 p_2 social-bar--button text_center transition_0"><i class="fab fa-youtube"></i></a></li>
-          <li class="flex_shrink m-r_2"><a href="https://play.google.com/store/apps/dev?id=5189912010956845696&hl=en_US" target="_blank" class="google-playbg_secondary-3 block c_secondary-n4 h:bg_accent h:c_white m-b_0 p-x_3 p_2 social-bar--button text_center transition_0"><i class="fab fa-google-play"></i></a></li>
-          <li class="flex_shrink m-r_2"><a href="https://apps.apple.com/us/developer/american-college-of-cardiology/id502174543#see-all/i-phonei-pad-apps" target="_blank" class="apple-storebg_secondary-3 block c_secondary-n4 h:bg_accent h:c_white m-b_0 p-x_3 p_2 social-bar--button text_center transition_0"><i class="fab fa-apple"></i></a></li>
+          <li class="flex_shrink m-r_2"><a href="https://twitter.com/accintouch" target="_blank" class="twitter bg_secondary-3 block c_secondary-n4 h:bg_accent h:c_white m-b_0 p-x_3 p_2 social-bar--button text_center transition_0"><i class="fab fa-twitter-square"></i></a></li>
+          <li class="flex_shrink m-r_2"><a href="https://www.facebook.com/AmericanCollegeofCardiology" target="_blank" class="facebook bg_secondary-3 block c_secondary-n4 h:bg_accent h:c_white m-b_0 p-x_3 p_2 social-bar--button text_center transition_0"><i class="fab fa-facebook-square"></i></a></li>
+          <li class="flex_shrink m-r_2"><a href="https://www.linkedin.com/company/american-college-of-cardiology/" target="_blank" class="linkedin bg_secondary-3 block c_secondary-n4 h:bg_accent h:c_white m-b_0 p-x_3 p_2 social-bar--button text_center transition_0"><i class="fab fa-linkedin"></i></a></li>
+          <li class="flex_shrink m-r_2"><a href="http://www.youtube.com/user/ACCinTouch" target="_blank" class="youtube bg_secondary-3 block c_secondary-n4 h:bg_accent h:c_white m-b_0 p-x_3 p_2 social-bar--button text_center transition_0"><i class="fab fa-youtube"></i></a></li>
+          <li class="flex_shrink m-r_2"><a href="https://play.google.com/store/apps/dev?id=5189912010956845696&hl=en_US" target="_blank" class="google-play bg_secondary-3 block c_secondary-n4 h:bg_accent h:c_white m-b_0 p-x_3 p_2 social-bar--button text_center transition_0"><i class="fab fa-google-play"></i></a></li>
+          <li class="flex_shrink m-r_2"><a href="https://apps.apple.com/us/developer/american-college-of-cardiology/id502174543#see-all/i-phonei-pad-apps" target="_blank" class="apple-store bg_secondary-3 block c_secondary-n4 h:bg_accent h:c_white m-b_0 p-x_3 p_2 social-bar--button text_center transition_0"><i class="fab fa-apple"></i></a></li>
       </ul>
   </section>
 
 
 
 
-  Styleguide Recipes.ACC.Social Links.Mono Chrome
+  Styleguide Recipes.Social Links.Mono Chrome
 
   */
   /*
@@ -2801,7 +2801,7 @@
   </section>
 
 
-  Styleguide Recipes.ACC.Social Links.Smaller
+  Styleguide Recipes.Social Links.Smaller
 
   */
   /*
@@ -4765,7 +4765,7 @@
   */
   /* Nav Recipes.04x */
   /*
-      Footer
+      Generic Footer
 
 
       This defines the web footer 
@@ -4829,11 +4829,11 @@
               <!-- Social -->
               <h4 class="font_slab c_white font_regular">Stay Connected</h4>
               <ul class="flex social-bar ul_none c_white h:c_white m_0">
-                  <li class="flex_auto m-r_2"><a href="https://twitter.com/accintouch" target="_blank" class="twitter social-bar--button block m-b_0 p_3 c_white-8 h:c_white text_center opacity_6 h:opacity"><i class="fab fa-twitter-square"></i></a></li>
-                  <li class="flex_auto m-r_2"><a href="https://www.facebook.com/AmericanCollegeofCardiology" target="_blank" class="facebook social-bar--button block m-b_0 p_3 c_white-8 h:c_white text_center opacity_6 h:opacity"><i class="fab fa-facebook-square"></i></a></li>
-                  <li class="flex_auto m-r_2"><a href="http://www.youtube.com/user/ACCinTouch" target="_blank" class="youtube social-bar--button block m-b_0 p_3 c_white-8 h:c_white text_center opacity_6 h:opacity"><i class="fab fa-youtube"></i></a></li>
-                  <li class="flex_auto m-r_2"><a href="https://play.google.com/store/apps/dev?id=5189912010956845696&amp;hl=en_US" target="_blank" class="google-play social-bar--button block m-b_0 p_3 c_white-8 h:c_white text_center opacity_6 h:opacity"><i class="fab fa-google-play"></i></a></li>
-                  <li class="flex_auto m-r_2"><a href="https://apps.apple.com/us/developer/american-college-of-cardiology/id502174543#see-all/i-phonei-pad-apps" target="_blank" class="apple-store social-bar--button block m-b_0 p_3 c_white-8 h:c_white text_center opacity_6 h:opacity"><i class="fab fa-apple"></i></a></li>
+                  <li class="flex_auto m-r_2"><a href="https://twitter.com/accintouch" target="_blank" class="twitter social-bar--button block m-b_0 p_3 c_white-8 h:c_white text_center h:bg_primary-n1"><i class="fab fa-twitter-square"></i></a></li>
+                  <li class="flex_auto m-r_2"><a href="https://www.facebook.com/AmericanCollegeofCardiology" target="_blank" class="facebook social-bar--button block m-b_0 p_3 c_white-8 h:c_white text_center h:bg_primary-n1"><i class="fab fa-facebook-square"></i></a></li>
+                  <li class="flex_auto m-r_2"><a href="http://www.youtube.com/user/ACCinTouch" target="_blank" class="youtube social-bar--button block m-b_0 p_3 c_white-8 h:c_white text_center h:bg_primary-n1"><i class="fab fa-youtube"></i></a></li>
+                  <li class="flex_auto m-r_2"><a href="https://play.google.com/store/apps/dev?id=5189912010956845696&amp;hl=en_US" target="_blank" class="google-play social-bar--button block m-b_0 p_3 c_white-8 h:c_white text_center h:bg_primary-n1"><i class="fab fa-google-play"></i></a></li>
+                  <li class="flex_auto m-r_2"><a href="https://apps.apple.com/us/developer/american-college-of-cardiology/id502174543#see-all/i-phonei-pad-apps" target="_blank" class="apple-store social-bar--button block m-b_0 p_3 c_white-8 h:c_white text_center h:bg_primary-n1"><i class="fab fa-apple"></i></a></li>
               </ul>
               <!-- Social -->
           </div>
@@ -5867,13 +5867,13 @@
   white-space: unset;
 }
 #acc_arches_override .font_slab {
-  font-family: Roboto Slab, Times New Roman, Lucida Bright, Georgia, serif;
+  font-family: "Roboto Slab","Times New Roman","Lucida Bright",Georgia,serif, "slab";
 }
 #acc_arches_override .font_display {
-  font-family: Maven Pro, Open Sans, Helvetica Neue, Helvetica, Helvetica, Arial, sans-serif;
+  font-family: "Maven Pro","Muli","Open Sans","system",sans-serif;
 }
 #acc_arches_override .font_copy {
-  font-family: Muli, Open Sans, Helvetica Neue, Helvetica, Helvetica, Arial, sans-serif;
+  font-family: "Muli","Open Sans","system",sans-serif;
 }
 #acc_arches_override .font_ui {
   font-family: Open Sans, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
@@ -6213,6 +6213,39 @@
 }
 #acc_arches_override .c_acc {
   color: #004176 !important;
+}
+#acc_arches_override .c_acc-0 {
+  color: #004176 !important;
+}
+#acc_arches_override .c_acc-1 {
+  color: #265e8b !important;
+}
+#acc_arches_override .c_acc-2 {
+  color: #5e87a9 !important;
+}
+#acc_arches_override .c_acc-3 {
+  color: #99b3c8 !important;
+}
+#acc_arches_override .c_acc-4 {
+  color: #c7d5e1 !important;
+}
+#acc_arches_override .c_acc-5 {
+  color: #e6ecf1 !important;
+}
+#acc_arches_override .c_acc-n1 {
+  color: #003b6a !important;
+}
+#acc_arches_override .c_acc-n2 {
+  color: #003159 !important;
+}
+#acc_arches_override .c_acc-n3 {
+  color: #002441 !important;
+}
+#acc_arches_override .c_acc-n4 {
+  color: #001a2f !important;
+}
+#acc_arches_override .c_acc-n5 {
+  color: #00101e !important;
 }
 #acc_arches_override .c_white {
   color: white !important;
@@ -9755,6 +9788,39 @@
 #acc_arches_override .bg_acc {
   background-color: #004176 !important;
 }
+#acc_arches_override .bg_acc-0 {
+  background-color: #004176 !important;
+}
+#acc_arches_override .bg_acc-1 {
+  background-color: #265e8b !important;
+}
+#acc_arches_override .bg_acc-2 {
+  background-color: #5e87a9 !important;
+}
+#acc_arches_override .bg_acc-3 {
+  background-color: #99b3c8 !important;
+}
+#acc_arches_override .bg_acc-4 {
+  background-color: #c7d5e1 !important;
+}
+#acc_arches_override .bg_acc-5 {
+  background-color: #e6ecf1 !important;
+}
+#acc_arches_override .bg_acc-n1 {
+  background-color: #003b6a !important;
+}
+#acc_arches_override .bg_acc-n2 {
+  background-color: #003159 !important;
+}
+#acc_arches_override .bg_acc-n3 {
+  background-color: #002441 !important;
+}
+#acc_arches_override .bg_acc-n4 {
+  background-color: #001a2f !important;
+}
+#acc_arches_override .bg_acc-n5 {
+  background-color: #00101e !important;
+}
 #acc_arches_override .bg_white {
   background-color: white;
 }
@@ -10376,6 +10442,39 @@
 #acc_arches_override .br_acc {
   border-color: #004176 !important;
 }
+#acc_arches_override .br_acc-0 {
+  border-color: #004176 !important;
+}
+#acc_arches_override .br_acc-1 {
+  border-color: #265e8b !important;
+}
+#acc_arches_override .br_acc-2 {
+  border-color: #5e87a9 !important;
+}
+#acc_arches_override .br_acc-3 {
+  border-color: #99b3c8 !important;
+}
+#acc_arches_override .br_acc-4 {
+  border-color: #c7d5e1 !important;
+}
+#acc_arches_override .br_acc-5 {
+  border-color: #e6ecf1 !important;
+}
+#acc_arches_override .br_acc-n1 {
+  border-color: #003b6a !important;
+}
+#acc_arches_override .br_acc-n2 {
+  border-color: #003159 !important;
+}
+#acc_arches_override .br_acc-n3 {
+  border-color: #002441 !important;
+}
+#acc_arches_override .br_acc-n4 {
+  border-color: #001a2f !important;
+}
+#acc_arches_override .br_acc-n5 {
+  border-color: #00101e !important;
+}
 #acc_arches_override .br-t_0,
 #acc_arches_override .br-t_1,
 #acc_arches_override .br-t_2,
@@ -10541,7 +10640,7 @@
 #acc_arches_override *[class*=" hover:"],
 #acc_arches_override *[class*=" h:"] {
   cursor: pointer;
-  transition: all ease-out 0.75s;
+  transition: all ease-out 0.2s;
 }
 #acc_arches_override *[class*=" hover:"]:focus,
 #acc_arches_override *[class*=" h:"]:focus {
@@ -10551,7 +10650,7 @@
 }
 #acc_arches_override *[class*="hover:c"],
 #acc_arches_override *[class*=" h:c"] {
-  transition: all ease-in 0.5s;
+  transition: all ease-in 0.2s;
 }
 #acc_arches_override .h\:bg_primary:hover {
   background-color: #198dae !important;
@@ -11284,16 +11383,23 @@
 #acc_arches_override .hover\:dotted,
 #acc_arches_override .h\:dotted, #acc_arches_override .hover\:double,
 #acc_arches_override .h\:double, #acc_arches_override .hover\:dashed,
-#acc_arches_override .h\:dashed, #acc_arches_override .hover\:underline,
+#acc_arches_override .h\:dashed, #acc_arches_override .hover\:underline-none,
+#acc_arches_override .h\:underline-none, #acc_arches_override .hover\:underline,
 #acc_arches_override .h\:underline {
   text-decoration: none;
 }
 #acc_arches_override .hover\:dotted:hover,
 #acc_arches_override .h\:dotted:hover, #acc_arches_override .hover\:double:hover,
 #acc_arches_override .h\:double:hover, #acc_arches_override .hover\:dashed:hover,
-#acc_arches_override .h\:dashed:hover, #acc_arches_override .hover\:underline:hover,
+#acc_arches_override .h\:dashed:hover, #acc_arches_override .hover\:underline-none:hover,
+#acc_arches_override .h\:underline-none:hover, #acc_arches_override .hover\:underline:hover,
 #acc_arches_override .h\:underline:hover {
   text-decoration: underline;
+}
+#acc_arches_override .hover\:underline-none:hover,
+#acc_arches_override .h\:underline-none:hover {
+  -webkit-text-decoration-style: none;
+          text-decoration-style: none;
 }
 #acc_arches_override .hover\:dashed:hover,
 #acc_arches_override .h\:dashed:hover {
