@@ -4,255 +4,118 @@ CVQuality.org Footer
 The Footer of CVquality
 
 Markup:
-<div id="footer-wrap" class="max-w_5">
+<div id="footer-wrap" class="">
 	<!-- ********************************** breadcrumbs ********************************** -->
-	<div
-		id="breadcrumbs"
-		class="br-b_3 br-t_1 br_0 br_accent br_solid br_t_3 breadcrumbs-container c_secondary font_0 font_ui p-x_4 p_3"
-	>
+	<div id="breadcrumbs" class="br-b_3 br-t_1 br_0 br_accent br_solid br_t_3 breadcrumbs-container c_secondary font_0 font_ui p-x_4 p_3">
 		<b class="breadcrumbs-title">YOU ARE HERE: </b>
 		Home
 	</div>
 	<!-- This is the inner footer that we cache -->
-	<div
-		id="footer"
-		role="contentinfo"
-		class="bg_secondary-2 flex flex_column flex_inline flex_row:md flex_wrap p-x_3 p-y_0:lg p-y_4 w_100"
-	>
-		<div
-			class="flex_auto p-x_3 p-y_4:lg w-grid_3:lg w-grid_6:md font_ui order-1"
-		>
-			<h2
-				class="br-b_1 br_dotted br_white-6 font_0 font_1 font_display m-b_0:md m-b_2 m-b_2:lg m-t_4:md p-b_3 c_secondary-n4"
-			>
+	<div id="footer" role="contentinfo" class="bg_secondary-2 flex flex_column flex_inline flex_row:md flex_wrap p-x_3 p-y_0:lg p-y_4 w_100">
+		<div class="br-l_1 br_so br_solid:lg br_white-3 flex_auto font_ui m-l_4:lg m-y_4:lg order-1 p-l_3:md p-l_4:lg p-y_4:md p-x_0 p-x_3 p-y_4:lg w-grid_2:lg w-grid_6:md">
+			<h2 class="br-b_1 br_dotted:md br_white-6 c_secondary-n4 font_0:md font_1 font_bold font_display m-b_0:md m-b_2 m-b_2:lg m-t_4:md p-b_3 table-cell vertical-align_bottom w_10" style="height: 4rem;">
 				Quality Improvement for Institutions:
 			</h2>
-			<ul class="block:md display_none font_ui font_0:lg font_n1 m-b_4 ul_none">
+			<ul class="font_n1:lg font_0 font_ui m-b_4 p-t_2 ul_none">
 				<li class="text-indent_n1 p-l_4 p-l_r">
-					<a
-						class="nav-link c_white h:underline p-y_0"
-						href="/home"
-						id="msFooter_rptQii_hypLnk_0"
-						target="_top"
-					>
+					<a class="nav-link c_white h:underline p-y_0" href="/home" id="msFooter_rptQii_hypLnk_0" target="_top">
 						Home
 					</a>
 				</li>
 				<li class="text-indent_n1 p-l_4 p-l_r">
-					<a
-						class="nav-link c_white h:underline p-y_0"
-						href="/About-QII"
-						id="msFooter_rptQii_hypLnk_1"
-						target="_top"
-					>
+					<a class="nav-link c_white h:underline p-y_0" href="/About-QII" id="msFooter_rptQii_hypLnk_1" target="_top">
 						About
 					</a>
 				</li>
 				<li class="text-indent_n1 p-l_4 p-l_r">
-					<a
-						class="nav-link c_white h:underline p-y_0"
-						href="/Get-Started"
-						id="msFooter_rptQii_hypLnk_2"
-						target="_top"
-					>
+					<a class="nav-link c_white h:underline p-y_0" href="/Get-Started" id="msFooter_rptQii_hypLnk_2" target="_top">
 						Get Started
 					</a>
 				</li>
 				<li class="text-indent_n1 p-l_4 p-l_r">
-					<a
-						class="nav-link c_white h:underline p-y_0"
-						href="/News"
-						id="msFooter_rptQii_hypLnk_3"
-						target="_top"
-					>
+					<a class="nav-link c_white h:underline p-y_0" href="/News" id="msFooter_rptQii_hypLnk_3" target="_top">
 						News
 					</a>
 				</li>
 			</ul>
 		</div>
-		<div
-			class="flex_auto p-x_3 p-y_4:lg w-grid_3:lg w-grid_6:md font_ui order-1"
-		>
-			<h2
-				class="br-b_1 br_dotted br_white-6 font_0 font_1 font_display m-b_0:md m-b_2 m-b_2:lg m-t_4:md p-b_3 c_secondary-n5"
-			>
-				Offerings:
-			</h2>
-			<ul class="block:md display_none font_ui font_0:lg font_n1 m-b_4 ul_none">
+		<div class="br-r_1 br_0 br_solid:lg br_white-3 flex_auto font_ui m-r_4:lg m-y_4:lg order-1 p-r_4:lg p-x_3 p-y_4:md w-grid_2:lg w-grid_6:md">
+			<h2 class="br-b_1 br_dotted:md font_1 br_white-6 c_secondary-n5 font_0:md font_bold font_display m-b_0 m-b_2:lg m-t_4:md nowrap p-b_3 table-cell vertical-align_bottom w_10" style="height: 4rem;">
+<span class="inline-block w_100 w_100%">				Offerings:
+    </span>		</h2>
+			<ul class="font_n1:lg font_0 font_ui m-b_4 p-t_2 ul_none">
 				<li class="nav-item text-indent_n1 p-l_4 p-l_r">
-					<a
-						class="nav-link c_white h:underline p-y_0"
-						href="/NCDR-Home"
-						id="msFooter_rptOfferings_hypLnk_0"
-						target="_top"
-					>
+					<a class="nav-link c_white h:underline p-y_0" href="/NCDR-Home" id="msFooter_rptOfferings_hypLnk_0" target="_top">
 						NCDR
 					</a>
 				</li>
 				<li class="nav-item text-indent_n1 p-l_4 p-l_r">
-					<a
-						class="nav-link c_white h:underline p-y_0"
-						href="/Initiatives"
-						id="msFooter_rptOfferings_hypLnk_1"
-						target="_top"
-					>
+					<a class="nav-link c_white h:underline p-y_0" href="/Initiatives" id="msFooter_rptOfferings_hypLnk_1" target="_top">
 						Initiatives
 					</a>
 				</li>
 				<li class="nav-item text-indent_n1 p-l_4 p-l_r">
-					<a
-						class="nav-link c_white h:underline p-y_0"
-						href="/qi-communications-kit"
-						id="msFooter_rptOfferings_hypLnk_2"
-						target="_top"
-					>
+					<a class="nav-link c_white h:underline p-y_0" href="/qi-communications-kit" id="msFooter_rptOfferings_hypLnk_2" target="_top">
 						QI Participation Kit
 					</a>
 				</li>
 				<li class="nav-item text-indent_n1 p-l_4 p-l_r">
-					<a
-						class="nav-link c_white h:underline p-y_0"
-						href="/Clinical-Toolkits"
-						id="msFooter_rptOfferings_hypLnk_3"
-						target="_top"
-					>
+					<a class="nav-link c_white h:underline p-y_0" href="/Clinical-Toolkits" id="msFooter_rptOfferings_hypLnk_3" target="_top">
 						Clinical Toolkits
 					</a>
 				</li>
 				<li class="nav-item text-indent_n1 p-l_4 p-l_r">
-					<a
-						class="nav-link c_white h:underline p-y_0"
-						href="/accreditation"
-						target="_self"
-					>
+					<a class="nav-link c_white h:underline p-y_0" href="/accreditation" target="_self">
 						Accreditation
 					</a>
 				</li>
 			</ul>
 		</div>
-		<div
-			class="flex_auto p-x_3 p-y_4:lg w-grid_3:lg w-grid_6:md font_ui order-1"
-		>
-			<h2
-				class="br-b_1 br_dotted br_white-6 font_0 font_1 font_display m-b_0:md m-b_2 m-b_2:lg m-t_4:md p-b_3 c_secondary-n5"
-			>
-				Clinical Tools:
-			</h2>
-			<ul class="block:md display_none font_ui font_0:lg font_n1 m-b_4 ul_none">
-				<li class="text-indent_n1 p-l_4 p-l_r">
-					<a
-						class="nav-link c_white h:underline p-y_0"
-						href="/home"
-						id="msFooter_rptQii_hypLnk_0"
-						target="_top"
-					>
-						Home
-					</a>
-				</li>
-				<li class="text-indent_n1 p-l_4 p-l_r">
-					<a
-						class="nav-link c_white h:underline p-y_0"
-						href="/About-QII"
-						id="msFooter_rptQii_hypLnk_1"
-						target="_top"
-					>
-						About
-					</a>
-				</li>
-				<li class="text-indent_n1 p-l_4 p-l_r">
-					<a
-						class="nav-link c_white h:underline p-y_0"
-						href="/Get-Started"
-						id="msFooter_rptQii_hypLnk_2"
-						target="_top"
-					>
-						Get Started
-					</a>
-				</li>
-				<li class="text-indent_n1 p-l_4 p-l_r">
-					<a
-						class="nav-link c_white h:underline p-y_0"
-						href="/News"
-						id="msFooter_rptQii_hypLnk_3"
-						target="_top"
-					>
-						News
-					</a>
-				</li>
-			</ul>
-		</div>
 		<!-- column 4 -->
-		<div
-			class="flex_auto p-x_3 p-y_4:lg w-grid_3:lg w-grid_6:md relative order-0"
-		>
-			<div class="bg_left logo_primary" style="height: 80px;">
+		<div class="flex_auto order_0:md order_last p-x_3 p-y_4:lg relative w-grid:12:md w-grid_12 w-grid_3:lg">
+			<div class="bg_left block display_none:md logo_condensed seal_primary" style="height: 80px;">
 				<span class="alt">logo_condensed-alt max-w_1</span>
 			</div>
-			<section class="address c_secondary-n3">
+<div class="bg_left block:md display_none logo_primary" style="height: 100px;">
+				<span class="alt">logo_condensed-alt max-w_1</span>
+			</div>
+			<section class="address c_secondary-n4 p-l_0:md p-y_0:md p-y_3">
 				<address>
 					<!-- http://microformats.org/wiki/hcard -->
-					<h4 class="m-b_0 font_bold font_copy font_normal font_1 m-t_4:md">
+					<h4 class="m-b_0 font_bold m-b_2:md font_copy font_normal font_1:md font_2 m-t_4:md">
 						Heart House
 					</h4>
-					<div class="font_ui font_0">
-						<ul class="ul_none  lh_2">
-							<li class="m-b_1 m-b_3:md font_normal">
+					<div class="flex flex_column flex_column:lg flex_row:md font_0 font_ui">
+						<ul class="flex_auto p-r_4 ul_none w_10:md w_100:lg">
+							<li class="m-b_1 m-b_2:md font_normal">
 								<span class="street-address">2400 N. St. NW</span>
 							</li>
-							<li class="m-b_1 m-b_3:md font_normal">
+							<li class="m-b_1 m-b_2:md font_normal">
 								<span class="locality ">Washington</span>,
 								<span class="city-name ">
 									<abbr title="District of Colombia">DC</abbr>
 								</span>
 								<span class="postal-code">20037</span>
 							</li>
-							<li class="m-b_1 m-b_3:md font_normal">
-								<a
-									href="mailto:resource@acc.org"
-									class="email c_secondary-n3 h:c_secondary-n4 h:underline"
-								>
-									<strong class="p-r_2 inline block:md inline:lg"
-										>Email:</strong
-									>
-									<span class="inline block:md inline:lg"
-										>resource@acc.org</span
-									></a
-								>
+							<li class="m-b_1 m-b_2:md font_normal">
+								<a href="mailto:resource@acc.org" class="email c_secondary-n3 h:c_secondary-n4 h:underline">
+									<strong class="p-r_2">Email:</strong>
+									<span class="">resource@acc.org</span></a>
 							</li>
 						</ul>
-						<ul class="ul_none lh_2">
-							<li class="m-b_1 m-b_3:md font_normal">
-								<a
-									tel="+12023756000"
-									href="tel:+12023756000"
-									class="tel c_secondary-n3 h:c_secondary-n4 h:underline"
-								>
-									<strong class="p-r_2 block:md inline:lg">Phone:</strong
-									><span class=" block:md inline:lg"
-										>(202) 375-6000, ext. 5603</span
-									></a
-								>
+						<ul class="flex_auto p-l_0:lg p-l_4:md ul_none w_100:lg w_50:md">
+							<li class="m-b_1 m-b_2:md font_normal">
+								<a tel="+12023756000" href="tel:+12023756000" class="tel c_secondary-n3 h:c_secondary-n4 h:underline">
+									<strong class="p-r_2">Phone:</strong><span class="">(202) 375-6000, ext. 5603</span></a>
 							</li>
-							<li class="m-b_1 m-b_3:md font_normal">
-								<a
-									tel="+18002574737"
-									href="tel:+18002534636.5603"
-									class="tel c_secondary-n3 h:c_secondary-n4 h:underline"
-								>
-									<strong class="p-r_2 block:md inline:lg">Toll Free:</strong
-									><span class=" block:md inline:lg"
-										>(800) 253-4636, ext. 5603</span
-									></a
-								>
+							<li class="m-b_1 m-b_2:md font_normal">
+								<a tel="+18002574737" href="tel:+18002534636.5603" class="tel c_secondary-n3 h:c_secondary-n4 h:underline">
+									<strong class="p-r_2">Toll Free:</strong><span class="">(800) 253-4636, ext. 5603</span></a>
 							</li>
-							<li class="m-b_1 m-b_3:md font_normal">
-								<a
-									fax="+12023757000"
-									href="fax:+12023757000"
-									class="fax c_secondary-n3 h:c_secondary-n4 h:underline"
-								>
-									<strong class="p-r_2 block:md inline:lg">Fax:</strong>
-									<span class="block:md inline:lg">(202) 375-7000</span>
+							<li class="m-b_1 m-b_2:md font_normal">
+								<a fax="+12023757000" href="fax:+12023757000" class="fax c_secondary-n3 h:c_secondary-n4 h:underline">
+									<strong class="p-r_2">Fax:</strong>
+									<span class="">(202) 375-7000</span>
 								</a>
 							</li>
 						</ul>
@@ -260,209 +123,102 @@ Markup:
 				</address>
 			</section>
 		</div>
-		<div
-			class="flex_auto p-x_3 p-y_4:lg w-grid_3:lg w-grid_6:md relative order-10"
-		>
+		<div class="flex_auto order-10 order_last p-x_3 p-y_4:lg relative w-grid_3:lg w-grid_6:md">
 			<section class="acc-websites m-y_3">
-				<nav class="font_ui w_100 font_0">
+				<nav class="font_ui w_100 font_0"><h3 class="br-b_1 br_dotted br_white-4 c_secondary-n4 font_1 font_bold font_display m-b_2 p-b_3 w_100">Improving Cardiovascular Care</h3>
 					<ul class="lh_4 ul_none">
-						<li class="c_secondary-n3">
-							<a
-								target="_blank"
-								class="c_secondary-n3 block h:bg_black-2 h:c_secondary-n3"
-								href="http://www.acc.org"
-							>
-								<span class="inline-block">Acc</span>
-								<i
-									class="float_right fas p-r_3 c_secondary-n3 h:c_secondary-n3 fa-external-link-square "
-								></i>
+						<li class="">
+							<a target="_blank" class="block c_secondary-5 h:bg_black-2 h:c_white flex" href="http://www.acc.org">
+								<span class="flex_auto m-l_2">Acc</span>
+								<i class="fa-external-link-square fas flex_shrink  p-r_3 self_center"></i>
 							</a>
 						</li>
-						<li class="c_secondary-n3">
-							<a
-								target="_blank"
-								class="c_secondary-n3 block h:bg_black-2 h:c_secondary-n3"
-								href="https://cvquality.acc.org/Accreditation?"
-							>
-								<span class="inline-block">Accreditation Services</span>
-								<i
-									class="float_right fas p-r_3 c_secondary-n3 h:c_secondary-n3 fa-external-link-square "
-								></i>
+						<li class="">
+							<a target="_blank" class="c_secondary-5 block h:bg_black-2 h:c_white flex" href="https://cvquality.acc.org/Accreditation?">
+								<span class="flex_auto m-l_2 self_center">Accreditation Services</span>
+								<i class=" fa-external-link-square fas flex_shrink p-r_3 self_center"></i>
 							</a>
 						</li>
-						<li class="c_secondary-n3">
-							<a
-								target="_blank"
-								class="c_secondary-n3 block h:bg_black-2 h:c_secondary-n3"
-								href="http://www.ncdr.com"
-							>
-								<span class="inline-block">NCDR</span>
-								<i
-									class="float_right fas p-r_3 c_secondary-n3 h:c_secondary-n3 fa-external-link-square "
-								></i>
+						<li class="">
+							<a target="_blank" class="c_secondary-5 block h:bg_black-2 h:c_white flex" href="http://www.ncdr.com">
+								<span class="flex_auto inline-block m-l_2 self_center">NCDR</span>
+								<i class=" fa-external-link-square fas flex_shrink p-r_3 self_center"></i>
 							</a>
 						</li>
-						<li class="c_secondary-n3">
-							<a
-								target="_blank"
-								class="c_secondary-n3 block h:bg_black-2 h:c_secondary-n3"
-								href="http://www.cardiosmart.org"
-							>
-								<span class="inline-block">CardioSmart</span>
-								<i
-									class="float_right fas p-r_3 c_secondary-n3 h:c_secondary-n3 fa-external-link-square "
-								></i>
+						<li class="">
+							<a target="_blank" class="c_secondary-5 block h:bg_black-2 h:c_white flex" href="http://www.cardiosmart.org">
+								<span class="flex_auto inline-block m-l_2 self_center">CardioSmart</span>
+								<i class=" fa-external-link-square fas flex_shrink p-r_3 self_center"></i>
 							</a>
 						</li>
-						<li class="c_secondary-n3">
-							<a
-								target="_blank"
-								class="c_secondary-n3 block h:bg_black-2 h:c_secondary-n3"
-								href="http://www.onlinejacc.org/"
-							>
-								<span class="inline-block">JACC</span>
-								<i
-									class="float_right fas p-r_3 c_secondary-n3 fa-external-link-square "
-								></i>
+						<li class="">
+							<a target="_blank" class="c_secondary-5 block h:bg_black-2 h:c_white flex" href="http://www.onlinejacc.org/">
+								<span class="flex_auto inline-block m-l_2 self_center">JACC</span>
+								<i class=" fa-external-link-square fas flex_shrink p-r_3 self_center"></i>
 							</a>
 						</li>
 					</ul>
 				</nav>
 			</section>
-			<section class="l_0 r_0 social m-t_4 relative absolute:md  b_4">
+			<section class="absolute:lg b_4 l_0 m-t_4 p-t_5 r_0 relative social">
 				<ul class="flex social-bar ul_none c_white h:c_white m_0">
 					<li class="flex_auto m-r_2">
-						<a
-							href="https://twitter.com/accintouch"
-							target="_blank"
-							class="twitter social-bar--button block m-b_0 p_3 c_white text_center opacity_7 h:opacity"
-							><i class="fab fa-twitter-square"></i
-						></a>
+						<a href="https://twitter.com/accintouch" target="_blank" class="twitter social-bar--button block m-b_0 p_3 c_white text_center opacity_7 h:opacity"><i class="fab fa-twitter-square"></i></a>
 					</li>
 					<li class="flex_auto m-r_2">
-						<a
-							href="https://www.facebook.com/AmericanCollegeofCardiology"
-							target="_blank"
-							class="facebook social-bar--button block m-b_0 p_3 c_white text_center opacity_7 h:opacity"
-							><i class="fab fa-facebook-square"></i
-						></a>
+						<a href="https://www.facebook.com/AmericanCollegeofCardiology" target="_blank" class="facebook social-bar--button block m-b_0 p_3 c_white text_center opacity_7 h:opacity"><i class="fab fa-facebook-square"></i></a>
 					</li>
 					<li class="flex_auto m-r_2">
-						<a
-							href="https://www.linkedin.com/company/american-college-of-cardiology/"
-							target="_blank"
-							class="linkedin social-bar--button block m-b_0 p_3 c_white text_center opacity_7 h:opacity"
-							><i class="fab fa-linkedin"></i
-						></a>
+						<a href="https://www.linkedin.com/company/american-college-of-cardiology/" target="_blank" class="linkedin social-bar--button block m-b_0 p_3 c_white text_center opacity_7 h:opacity"><i class="fab fa-linkedin"></i></a>
 					</li>
 					<li class="flex_auto m-r_2">
-						<a
-							href="http://www.youtube.com/user/ACCinTouch"
-							target="_blank"
-							class="youtube social-bar--button block m-b_0 p_3 c_white text_center opacity_7 h:opacity"
-							><i class="fab fa-youtube"></i
-						></a>
+						<a href="http://www.youtube.com/user/ACCinTouch" target="_blank" class="youtube social-bar--button block m-b_0 p_3 c_white text_center opacity_7 h:opacity"><i class="fab fa-youtube"></i></a>
 					</li>
 					<li class="flex_auto m-r_2">
-						<a
-							href="https://play.google.com/store/apps/dev?id=5189912010956845696&amp;hl=en_US"
-							target="_blank"
-							class="google-play social-bar--button block m-b_0 p_3 c_white text_center opacity_7 h:opacity"
-							><i class="fab fa-google-play"></i
-						></a>
+						<a href="https://play.google.com/store/apps/dev?id=5189912010956845696&amp;hl=en_US" target="_blank" class="google-play social-bar--button block m-b_0 p_3 c_white text_center opacity_7 h:opacity"><i class="fab fa-google-play"></i></a>
 					</li>
 					<li class="flex_auto m-r_2">
-						<a
-							href="https://apps.apple.com/us/developer/american-college-of-cardiology/id502174543#see-all/i-phonei-pad-apps"
-							target="_blank"
-							class="apple-store social-bar--button block m-b_0 p_3 c_white text_center opacity_7 h:opacity"
-							><i class="fab fa-apple"></i
-						></a>
+						<a href="https://apps.apple.com/us/developer/american-college-of-cardiology/id502174543#see-all/i-phonei-pad-apps" target="_blank" class="apple-store social-bar--button block m-b_0 p_3 c_white text_center opacity_7 h:opacity"><i class="fab fa-apple"></i></a>
 					</li>
 				</ul>
 			</section>
 		</div>
 	</div>
 	<!-- / footer -->
-	<div
-		id="subfooter"
-		class="bg_secondary-n1 br-b_2 br_0 br_accent-n1 br_solid c_white font_n1 p-x_4 p-y_4"
-	>
+	<div id="subfooter" class="bg_secondary-n1 br-b_2 br_0 br_accent-n1 br_solid c_white font_n1 p-x_4 p-y_4">
 		<ul class="block footer-bottom-links ul_none">
 			<li class="inline p_2">
-				<a
-					href="//www.acc.org/footer-pages/media-center"
-					class="c_white-6 h:c_white"
-					>Media Center</a
-				>
+				<a href="//www.acc.org/footer-pages/media-center" class="c_white-6 h:c_white">Media Center</a>
 			</li>
 			<li class="inline p_2">
-				<a
-					href="//www.acc.org/footer-pages/quick-start-guide"
-					class="c_white-6 h:c_white"
-					>ACC.org Quick Start Guide</a
-				>
+				<a href="//www.acc.org/footer-pages/quick-start-guide" class="c_white-6 h:c_white">ACC.org Quick Start Guide</a>
 			</li>
 			<li class="inline p_2">
-				<a
-					class="c_white-6 h:c_white"
-					href="//www.acc.org/footer-pages/advertising-and-sponsorship-policy"
-					>Advertising &amp; Sponsorship Policy</a
-				>
+				<a class="c_white-6 h:c_white" href="//www.acc.org/footer-pages/advertising-and-sponsorship-policy">Advertising &amp; Sponsorship Policy</a>
 			</li>
 			<li class="inline p_2">
-				<a
-					class="c_white-6 h:c_white"
-					href="//www.acc.org/footer-pages/clinical-content-disclaimer"
-					>Clinical Content Disclaimer</a
-				>
+				<a class="c_white-6 h:c_white" href="//www.acc.org/footer-pages/clinical-content-disclaimer">Clinical Content Disclaimer</a>
 			</li>
 			<li class="inline p_2">
-				<a
-					class="c_white-6 h:c_white"
-					href="//www.acc.org/footer-pages/editorial-board"
-					>Editorial Board</a
-				>
+				<a class="c_white-6 h:c_white" href="//www.acc.org/footer-pages/editorial-board">Editorial Board</a>
 			</li>
 			<li class="inline p_2">
-				<a
-					class="c_white-6 h:c_white"
-					href="//www.acc.org/footer-pages/privacy-policy"
-					>Privacy Policy</a
-				>
+				<a class="c_white-6 h:c_white" href="//www.acc.org/footer-pages/privacy-policy">Privacy Policy</a>
 			</li>
 			<li class="inline p_2">
-				<a
-					class="c_white-6 h:c_white"
-					href="//www.acc.org/footer-pages/registered-user-agreement"
-					>Registered User Agreement</a
-				>
+				<a class="c_white-6 h:c_white" href="//www.acc.org/footer-pages/registered-user-agreement">Registered User Agreement</a>
 			</li>
 			<li class="inline p_2">
-				<a
-					class="c_white-6 h:c_white"
-					href="//www.acc.org/footer-pages/terms-and-conditions"
-					>Terms of Service</a
-				>
+				<a class="c_white-6 h:c_white" href="//www.acc.org/footer-pages/terms-and-conditions">Terms of Service</a>
 			</li>
 			<li class="inline p_2">
-				<a
-					class="c_white-6 h:c_white"
-					href="//www.acc.org/footer-pages/cookie-policy"
-					>Cookie Policy</a
-				>
+				<a class="c_white-6 h:c_white" href="//www.acc.org/footer-pages/cookie-policy">Cookie Policy</a>
 			</li>
 			<li class="inline p_2">
-				<a
-					class="c_white-6 h:c_white"
-					href="//www.acc.org/footer-pages/member-hub-terms-of-use"
-					>Member Hub Terms of Use</a
-				>
+				<a class="c_white-6 h:c_white" href="//www.acc.org/footer-pages/member-hub-terms-of-use">Member Hub Terms of Use</a>
 			</li>
 			<li class="inline p_2">
-				<a class="c_white-6 h:c_white" href="//www.acc.org/sitemap-acc.xml"
-					>Site Map</a
-				>
+				<a class="c_white-6 h:c_white" href="//www.acc.org/sitemap-acc.xml">Site Map</a>
 			</li>
 		</ul>
 		<!-- /footer-bottom-links -->

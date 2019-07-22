@@ -1,0 +1,20 @@
+/**
+Breadcrumbs 
+
+Breadcrumbs used in cvquality.
+
+Markup:
+<ol class="bg_white-0 breadcrumb font_bold font_n2 font_ui">
+ <li class="breadcrumb-item"><a href="#">et esse</a></li>
+ <li class="breadcrumb-item"><a href="#">reprehenderit dolor</a></li>
+ <li class="active breadcrumb-item">deserunt ea</li>
+</ol>
+
+Styleguide Recipes.CVQuality.Nav.Breadcrumbs
+*/
+
+.breadcrumb-item + .breadcrumb-item::before {
+	@extend %font-awesome-pro;
+	content: "\f054";
+	color: get-themecolor(secondary, 3);
+}

@@ -5607,11 +5607,7 @@
   transition-property: all;
   transition-timing-function: ease;
 }
-#acc_arches_override .icon-before:before, #acc_arches_override a.link:before,
-#acc_arches_override .icon-after:after,
-#acc_arches_override a.link[target=_blank]:after,
-#acc_arches_override a.link[href^=http]:after,
-#acc_arches_override a.link[href^=https]:after {
+#acc_arches_override .icon-after:after, #acc_arches_override a.link[target=_blank]:after, #acc_arches_override a.link[href^=http]:after, #acc_arches_override a.link[href^=https]:after, #acc_arches_override .icon-before:before, #acc_arches_override a.link:before {
   -webkit-font-smoothing: antialiased;
   display: inline-block;
   font-family: "Font Awesome 5 Pro";
@@ -5834,7 +5830,7 @@
   box-shadow: inset 1px 1px 4px 0.5px rgba(0, 0, 0, 0.2);
 }
 #acc_arches_override .scrollbar-mini::-webkit-scrollbar-thumb {
-  border-radius: 25px;
+  border-radius: 1rem;
   background: #157894;
   box-shadow: inset 1px 1px 4px 0.5px rgba(0, 0, 0, 0.2);
 }
@@ -10039,10 +10035,10 @@
   border-radius: 0px;
 }
 #acc_arches_override .br_radius {
-  border-radius: 6px;
+  border-radius: 0.3333333333rem;
 }
 #acc_arches_override .br_round {
-  border-radius: 25px;
+  border-radius: 1rem;
 }
 #acc_arches_override .br_circle {
   border-radius: 100%;
@@ -10051,10 +10047,12 @@
   border-top-right-radius: 0px;
 }
 #acc_arches_override .br-tr_radius {
-  border-top-right-radius: 6px;
+  border-top-right-radius: 5.333px;
+  border-top-right-radius: 0.3333333333rem;
 }
 #acc_arches_override .br-tr_round {
-  border-top-right-radius: 25px;
+  border-top-right-radius: 16px;
+  border-top-right-radius: 1rem;
 }
 #acc_arches_override .br-tr_circle {
   border-top-right-radius: 100%;
@@ -10063,10 +10061,12 @@
   border-top-left-radius: 0px;
 }
 #acc_arches_override .br-tl_radius {
-  border-top-left-radius: 6px;
+  border-top-left-radius: 5.333px;
+  border-top-left-radius: 0.3333333333rem;
 }
 #acc_arches_override .br-tl_round {
-  border-top-left-radius: 25px;
+  border-top-left-radius: 16px;
+  border-top-left-radius: 1rem;
 }
 #acc_arches_override .br-tl_circle {
   border-top-left-radius: 100%;
@@ -10075,10 +10075,12 @@
   border-bottom-right-radius: 0px;
 }
 #acc_arches_override .br-br_radius {
-  border-bottom-right-radius: 6px;
+  border-bottom-right-radius: 5.333px;
+  border-bottom-right-radius: 0.3333333333rem;
 }
 #acc_arches_override .br-br_round {
-  border-bottom-right-radius: 25px;
+  border-bottom-right-radius: 16px;
+  border-bottom-right-radius: 1rem;
 }
 #acc_arches_override .br-br_circle {
   border-bottom-right-radius: 100%;
@@ -10087,10 +10089,12 @@
   border-bottom-left-radius: 0px;
 }
 #acc_arches_override .br-bl_radius {
-  border-bottom-left-radius: 6px;
+  border-bottom-left-radius: 5.333px;
+  border-bottom-left-radius: 0.3333333333rem;
 }
 #acc_arches_override .br-bl_round {
-  border-bottom-left-radius: 25px;
+  border-bottom-left-radius: 16px;
+  border-bottom-left-radius: 1rem;
 }
 #acc_arches_override .br-bl_circle {
   border-bottom-left-radius: 100%;
@@ -10103,12 +10107,12 @@
 #acc_arches_override .radius,
 #acc_arches_override .radius .switch-paddle,
 #acc_arches_override .radius .switch-paddle::after {
-  border-radius: 6px;
+  border-radius: 0.3333333333rem;
 }
 #acc_arches_override .round,
 #acc_arches_override .round .switch-paddle,
 #acc_arches_override .round .switch-paddle::after {
-  border-radius: 25px;
+  border-radius: 1rem;
 }
 #acc_arches_override .circle,
 #acc_arches_override .circle .switch-paddle,

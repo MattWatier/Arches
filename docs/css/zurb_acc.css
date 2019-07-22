@@ -8203,11 +8203,7 @@ Markup:
 
  Styleguide InteractiveExtras.Links
  */
-.icon-before:before, a.link:before,
-.icon-after:after,
-a.link[target=_blank]:after,
-a.link[href^=http]:after,
-a.link[href^=https]:after {
+.icon-after:after, a.link[target=_blank]:after, a.link[href^=http]:after, a.link[href^=https]:after, .icon-before:before, a.link:before {
   -webkit-font-smoothing: antialiased;
   display: inline-block;
   font-family: "Font Awesome 5 Pro";
@@ -8581,7 +8577,7 @@ Styleguide InteractiveExtras.Scrollbar
 
 /* Handle */
 .scrollbar-mini::-webkit-scrollbar-thumb {
-  border-radius: 25px;
+  border-radius: 1rem;
   background: #157894;
   box-shadow: inset 1px 1px 4px 0.5px rgba(0, 0, 0, 0.2);
 }
@@ -16692,11 +16688,11 @@ Styleguide Borders.Colors.Black
 }
 
 .br_radius {
-  border-radius: 6px;
+  border-radius: 0.3333333333rem;
 }
 
 .br_round {
-  border-radius: 25px;
+  border-radius: 1rem;
 }
 
 .br_circle {
@@ -16708,11 +16704,13 @@ Styleguide Borders.Colors.Black
 }
 
 .br-tr_radius {
-  border-top-right-radius: 6px;
+  border-top-right-radius: 5.333px;
+  border-top-right-radius: 0.3333333333rem;
 }
 
 .br-tr_round {
-  border-top-right-radius: 25px;
+  border-top-right-radius: 16px;
+  border-top-right-radius: 1rem;
 }
 
 .br-tr_circle {
@@ -16724,11 +16722,13 @@ Styleguide Borders.Colors.Black
 }
 
 .br-tl_radius {
-  border-top-left-radius: 6px;
+  border-top-left-radius: 5.333px;
+  border-top-left-radius: 0.3333333333rem;
 }
 
 .br-tl_round {
-  border-top-left-radius: 25px;
+  border-top-left-radius: 16px;
+  border-top-left-radius: 1rem;
 }
 
 .br-tl_circle {
@@ -16740,11 +16740,13 @@ Styleguide Borders.Colors.Black
 }
 
 .br-br_radius {
-  border-bottom-right-radius: 6px;
+  border-bottom-right-radius: 5.333px;
+  border-bottom-right-radius: 0.3333333333rem;
 }
 
 .br-br_round {
-  border-bottom-right-radius: 25px;
+  border-bottom-right-radius: 16px;
+  border-bottom-right-radius: 1rem;
 }
 
 .br-br_circle {
@@ -16756,11 +16758,13 @@ Styleguide Borders.Colors.Black
 }
 
 .br-bl_radius {
-  border-bottom-left-radius: 6px;
+  border-bottom-left-radius: 5.333px;
+  border-bottom-left-radius: 0.3333333333rem;
 }
 
 .br-bl_round {
-  border-bottom-left-radius: 25px;
+  border-bottom-left-radius: 16px;
+  border-bottom-left-radius: 1rem;
 }
 
 .br-bl_circle {
@@ -16776,13 +16780,13 @@ Styleguide Borders.Colors.Black
 .radius,
 .radius .switch-paddle,
 .radius .switch-paddle::after {
-  border-radius: 6px;
+  border-radius: 0.3333333333rem;
 }
 
 .round,
 .round .switch-paddle,
 .round .switch-paddle::after {
-  border-radius: 25px;
+  border-radius: 1rem;
 }
 
 .circle,

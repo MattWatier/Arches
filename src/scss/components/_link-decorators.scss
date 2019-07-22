@@ -22,8 +22,7 @@ Markup:
 
  Styleguide InteractiveExtras.Links
  */
-.icon-before:before,
-.icon-after:after {
+%font-awesome-pro {
 	-webkit-font-smoothing: antialiased;
 	display: inline-block;
 	font-style: normal;
@@ -34,11 +33,13 @@ Markup:
 	font-weight: 900;
 }
 .icon-before:before {
+	@extend %font-awesome-pro;
 	margin-right: 0.5em;
 	width: 1.28571429em;
 	text-align: center;
 }
 .icon-after:after {
+	@extend %font-awesome-pro;
 	margin-left: 0.5em;
 	width: 1.28571429em;
 	text-align: center;

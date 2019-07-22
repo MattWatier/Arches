@@ -368,7 +368,7 @@ pre code.hljs {
 
 /* Handle */
 .kss-section__markup > pre.language-markup::-webkit-scrollbar-thumb {
-  border-radius: 25px;
+  border-radius: 1rem;
   background: #157894;
   box-shadow: inset 1px 1px 4px 0.5px rgba(0, 0, 0, 0.2);
 }

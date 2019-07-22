@@ -33,8 +33,8 @@ $container-max-widths: (
 	xl: 1140px
 );
 
-$global-border-radius: 6px;
-$global-border-round: 25px;
+$global-border-radius: 1rem/3;
+$global-border-round: 1rem;
 $basicSizeMultiplier: 1rem;
 
 $bp-label_small: "\\3A sm";
