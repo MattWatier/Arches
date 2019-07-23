@@ -6,6 +6,7 @@ $lineheight-normal: 1.5;
 $lineheight-loose: 1.65;
 $lineheight-airy: 2.5;
 $baseline-modifier: 1.5;
+$active-class-name: "is-active" !default;
 
 $ms-base: 1em;
 $base-font-size: $ms-base;
@@ -158,7 +159,8 @@ $value-to-unit: (
 		n4: 60%,
 		n5: 75%
 	),
-	percent-perfect: (
+	width-percent: (
+		auto: auto,
 		0: 0%,
 		10: 10%,
 		20: 20%,
@@ -559,19 +561,19 @@ $style-definition: (
 		unit: map-get($value-to-unit, "hover")
 	),
 	is-active: (
-		short-name: "is-active>.a\\3A ",
+		short-name: "#{$active-class-name}>.a\\3A ",
 		css-style: (
 			"background-color"
 		),
-		long-name: "is-active>.is-active\\3A ",
+		long-name: "#{$active-class-name}>.#{$active-class-name}\\3A ",
 		unit: map-get($value-to-unit, "active")
 	),
 	is-active-self: (
-		short-name: "is-active.a\\3A ",
+		short-name: "#{$active-class-name}.a\\3A ",
 		css-style: (
 			"background-color"
 		),
-		long-name: "is-active.is-active\\3A ",
+		long-name: "#{$active-class-name}.#{$active-class-name}\\3A ",
 		unit: map-get($value-to-unit, "active")
 	),
 	active: (
@@ -858,7 +860,7 @@ $style-definition: (
 			"width"
 		),
 		long-name: ".width",
-		unit: map-get($value-to-unit, percent-perfect),
+		unit: map-get($value-to-unit, width-percent),
 		alt: "none"
 	),
 	max-width: (

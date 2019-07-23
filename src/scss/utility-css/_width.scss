@@ -50,19 +50,19 @@ Styleguide Width.Grid
 
  */
 @include loop-style(max-width, "", "!important");
-@include loop-style(width, "", "");
-@include loop-style(grid-width, "", "");
+@include loop-style(width, "", "!important");
+@include loop-style(grid-width, "", "!important");
 
 @media #{$medium-up} {
 	@include loop-style(max-width, $bp-label_medium, "!important");
-	@include loop-style(width, $bp-label_medium, "");
-	@include loop-style(grid-width, $bp-label_medium, "");
+	@include loop-style(width, $bp-label_medium, "!important");
+	@include loop-style(grid-width, $bp-label_medium, "!important");
 }
 
 @media #{$large-up} {
 	@include loop-style(max-width, $bp-label_large, "!important");
-	@include loop-style(width, $bp-label_large, "");
-	@include loop-style(grid-width, $bp-label_large, "");
+	@include loop-style(width, $bp-label_large, "!important");
+	@include loop-style(grid-width, $bp-label_large, "!important");
 }
 
 /*

@@ -15,7 +15,9 @@ $theme-palette: ();
 @import "vendor/modular-scale";
 @import "config/utility-css.vars";
 @import "helpers/breakpoint";
-/** Utility Class Only With Basic ACC Branding **//**  ACC Brands    *********************************/
+/** Utility Class Built on top of Bootstrap 4.3 with ACC Branding **//**Set Active Class for Bootstrap **/ 
+ $active-class-name: 'active';
+/**  ACC Brands    *********************************/
 $teal: #198dae;
 $green-blue: #16a385;
 $dark-grey: #676a72;
@@ -239,16 +241,21 @@ $font-size-sm: map-deep-get($value-to-unit, font-size, n1);
 
 	Combination of UCs and Base Components from the Bootstrap can make an infinate amount of alterations to designs and layouts. Bellow are some alteratoins to the Bootstrap Components with the Utiltity Classes. 
 
-	Styleguide Recipes.Bootstrap
+	Weight: 1000
+
+Styleguide  Recipes Bootstrap
 
 */
+
 @import "recipes/boot/_boot.basic_nav";
 /*
 	ACC.org Recipes
 
 	The use of Utiltiy Class give us the ablitiy to create much of the UI needed for ACC.org without expanding on the base of the styles that are written.  Included are patterns to create some of the complex UI inside of ACC.org
 
-	Styleguide Recipes.ACC
+	Weight: 2000
+
+	Styleguide Recipes ACC
 
 */
 @import "recipes/acc/_acc._footer";

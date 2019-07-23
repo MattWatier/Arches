@@ -53,7 +53,8 @@ span {
   /* enables on GPU processing */
 }
 
-/** Utility Class Only With Basic ACC Branding **/
+/** Utility Class Built on top of Bootstrap 4.3 with ACC Branding **/
+/**Set Active Class for Bootstrap **/
 /**  ACC Brands    *********************************/
 /**  Default Brands    *********************************/
 /**  Colors  **/
@@ -7672,46 +7673,37 @@ Markup:
 <div
 	id="carouselExampleFade"
 	class="carousel carousel-alt slide no-controls text-indicators chevron-on"
-	data-ride="carousel"
 >
 	<ol class="carousel-indicators">
-		<li data-target="#carouselExampleFade" data-slide-to="0" class="active">
+		<li data-target="#carouselExampleFade" data-slide-to="0" class="wrap" >
 			quaerat odit assumenda
 		</li>
-		<li data-target="#carouselExampleFade" data-slide-to="1">
+		<li data-target="#carouselExampleFade" data-slide-to="1" class=" wrap">
 			delectus sunt optio
 		</li>
-		<li data-target="#carouselExampleFade" data-slide-to="2">
-			qui rerum voluptatem
-		</li>
-		<li data-target="#carouselExampleFade" data-slide-to="3">
-			doloremque veritatis molestiae
+		<li data-target="#carouselExampleFade" data-slide-to="2" class=" wrap">
+			deserunt quia quasi
 		</li>
 	</ol>
 	<!-- Wrapper for slides -->
 	<div class="carousel-inner" role="listbox">
 		<div class="carousel-item active">
-			<a><img class="d-block w-100" src="http://lorempixel.com/630/420/nature" alt="..."/></a>
-			<div class="carousel-caption">
-				<span class="title">faquasi eos laborum</span> Voluptatem eum doloribus.
+			<a><img class="block w_100" src="http://lorempixel.com/630/420/animals" alt="..."/></a>
+			<div class="carousel-caption bg_black-7 text-shadow_black-1 text_center text_left:md font_2:md c_white p_3:lg p-b_4:lg p-y_3 lh_1 b_0 r_0 l_0">
+                    <span class="title  font_display block m-b_2 font_4:md m-b_3:md">Cardiac Syncope Program Launches!</span>
+                    <p><strong>NEW</strong>&nbsp;|&nbsp;Hear from an expert panel and complete four patient cases to test your knowledge on our Syncope Program! <a href="http://edu.acc.org/diweb/catalog/item/eid/SYNCOPE2019" title="" class="" target="_blank"><strong>Find out more!</strong></a></p>
+                </div>
+		</div>
+		<div class="carousel-item">
+			<a><img class="block w_100" src="http://lorempixel.com/630/420/nature" alt="..."/></a>
+			<div class="carousel-caption bg_black-7 text-shadow_black-1 text_center text_left:md font_2:md c_white p_3:lg p-b_4:lg p-y_3 lh_1 b_0 r_0 l_0">
+				<span class="title font_display block m-b_2 font_4:md m-b_3:md">sint explicabo sequi</span> Earum nihil omnis.
 			</div>
 		</div>
 		<div class="carousel-item">
-			<a><img class="d-block w-100" src="http://lorempixel.com/630/420/nature" alt="..."/></a>
-			<div class="carousel-caption">
-				<span class="title">sint explicabo sequi</span> Earum nihil omnis.
-			</div>
-		</div>
-		<div class="carousel-item">
-			<a><img class="d-block w-100" src="http://lorempixel.com/630/420/nature" alt="..."/></a>
-			<div class="carousel-caption">
-				<span class="title">ad aut expedita</span> Et aut nihil eveniet sint cupiditate atque ut minima.
-			</div>
-		</div>
-		<div class="carousel-item">
-			<a><img class="d-block w-100" src="http://lorempixel.com/630/420/nightlife" alt="..."/></a>
-			<div class="carousel-caption">
-				<span class="title">aut ullam provident</span> Odio quod doloribus libero eaque et.
+			<a><img class="block w_100" src="http://lorempixel.com/630/420/food" alt="..."/></a>
+			<div class="carousel-caption bg_black-7 text-shadow_black-1 text_center text_left:md font_2:md c_white p_3:lg p-b_4:lg p-y_3 lh_1 b_0 r_0 l_0">
+				<span class="title font_display block m-b_2 font_4:md m-b_3:md">sint explicabo sequi</span> Earum nihil omnis.
 			</div>
 		</div>
 	</div>
@@ -7735,72 +7727,7 @@ Markup:
 		<span class="sr-only">Next</span>
 	</a>
 </div>
-<div
-	id="carouselExampleFade"
-	class="carousel slide no-controls text-indicators chevron-on"
-	data-ride="carousel"
->
-	<ol class="carousel-indicators">
-		<li data-target="#carouselExampleFade" data-slide-to="0" class="active">
-			quaerat odit assumenda
-		</li>
-		<li data-target="#carouselExampleFade" data-slide-to="1">
-			delectus sunt optio
-		</li>
-		<li data-target="#carouselExampleFade" data-slide-to="2">
-			qui rerum voluptatem
-		</li>
-		<li data-target="#carouselExampleFade" data-slide-to="3">
-			doloremque veritatis molestiae
-		</li>
-	</ol>
-	<!-- Wrapper for slides -->
-	<div class="carousel-inner" role="listbox">
-		<div class="carousel-item active">
-			<a><img class="d-block w-100" src="http://lorempixel.com/630/420/nature" alt="..."/></a>
-			<div class="carousel-caption">
-				<span class="title">faquasi eos laborum</span> Voluptatem eum doloribus.
-			</div>
-		</div>
-		<div class="carousel-item">
-			<a><img class="d-block w-100" src="http://lorempixel.com/630/420/nature" alt="..."/></a>
-			<div class="carousel-caption">
-				<span class="title">sint explicabo sequi</span> Earum nihil omnis.
-			</div>
-		</div>
-		<div class="carousel-item">
-			<a><img class="d-block w-100" src="http://lorempixel.com/630/420/nature" alt="..."/></a>
-			<div class="carousel-caption">
-				<span class="title">ad aut expedita</span> Et aut nihil eveniet sint cupiditate atque ut minima.
-			</div>
-		</div>
-		<div class="carousel-item">
-			<a><img class="d-block w-100" src="http://lorempixel.com/630/420/nightlife" alt="..."/></a>
-			<div class="carousel-caption">
-				<span class="title">aut ullam provident</span> Odio quod doloribus libero eaque et.
-			</div>
-		</div>
-	</div>
-	<!-- Controls -->
-	<a
-		class="left carousel-control-prev"
-		href="#carouselExampleFade"
-		role="button"
-		data-slide="prev"
-	>
-		<i class="fas fa-chevron-left"></i>
-		<span class="sr-only">Previous</span>
-	</a>
-	<a
-		class="right carousel-control-next"
-		href="#carouselExampleFade"
-		role="button"
-		data-slide="next"
-	>
-		<i class="fas fa-chevron-right"></i>
-		<span class="sr-only">Next</span>
-	</a>
-</div>
+
 
 Styleguide  Recipes Bootstrap.Carousel
 
@@ -7837,33 +7764,19 @@ Styleguide  Recipes Bootstrap.Carousel
 }
 .carousel-alt .carousel-indicators li {
   overflow: hidden;
+  border-radius: 25px;
+  border-color: #f0f0f1;
   text-indent: -9999px;
 }
-.carousel-alt .carousel-caption {
-  right: 0;
-  bottom: 0;
-  left: 0;
-  padding: 10px 1em 25px;
-  background-color: rgba(0, 0, 0, 0.75);
-  font-size: 1em;
-  text-align: center;
-}
-@media only screen and (min-width : 640px) {
-  .carousel-alt .carousel-caption {
-    font-size: 1.44em;
-    text-align: left;
-  }
-}
-.carousel-alt .carousel-caption .title {
-  display: block;
-  margin-bottom: 0.25em;
-  color: white;
-  font-size: 1.728em;
+.carousel-alt .carousel-indicators li.active {
+  border-color: get-themcolor(accent);
+  background-color: get-themcolor(accent);
 }
 .carousel-alt.chevron-on .carousel-indicators li.active:before {
   top: 4px;
   left: 4px;
   padding-top: 5px;
+  color: #16a385;
   font-size: 2.0736em;
   content: "";
 }
@@ -7881,6 +7794,11 @@ Styleguide  Recipes Bootstrap.Carousel
     width: 100%;
     height: 100%;
     overflow: hidden;
+  }
+  .carousel-alt.text-indicators .carousel-inner > .carousel-item:before {
+    display: block;
+    padding-top: 66%;
+    content: "";
   }
   .carousel-alt.text-indicators a[class^=carousel-control].right {
     right: 30%;
@@ -7903,10 +7821,13 @@ Styleguide  Recipes Bootstrap.Carousel
     position: relative;
     flex: 1 1 20%;
     flex-direction: column;
-    width: 100%;
+    width: auto;
     height: auto;
-    padding: 0.5em 16px 0.5px 16px;
+    margin: 0;
+    padding: 0.5rem 1rem;
+    border: 1px solid #c1c3c7;
     border-radius: 0;
+    background-color: #dddee0;
     font-size: 1.2em;
     text-align: left;
     text-indent: 0;
@@ -7920,12 +7841,10 @@ Styleguide  Recipes Bootstrap.Carousel
   }
   .carousel-alt.text-indicators .carousel-indicators li.active {
     padding-right: 10px;
+    border-right: #16a385 10px solid;
+    background-color: gget-themecolor(secondary, -1);
     color: white;
   }
-}
-
-.carousel.text-indicators.chevron-on .carousel-indicators li {
-  padding: 0.5em 16px 0.5px 32px;
 }
 
 .carousel-control-prev,
@@ -7938,6 +7857,7 @@ Styleguide  Recipes Bootstrap.Carousel
   min-width: 48px;
   min-width: 3rem;
   background-color: rgba(0, 0, 0, 0);
+  font-size: 1.2em;
   text-align: center;
 }
 @media only screen and (min-width : 640px) {
@@ -7962,6 +7882,7 @@ Styleguide  Recipes Bootstrap.Carousel
 .carousel-control-next:hover,
 .carousel-control-next:focus {
   outline: 0;
+  color: #16a385;
   text-decoration: none;
 }
 .carousel-control-prev .fa,
@@ -7987,6 +7908,23 @@ Styleguide  Recipes Bootstrap.Carousel
   margin-right: -10px;
 }
 
+@media only screen and (min-width : 640px) {
+  .carousel-control-prev .fas,
+.carousel-control-next .fas {
+    width: 1.8em;
+    height: 1.8em;
+    margin-top: -0.6em;
+    font-size: 1.8em;
+  }
+
+  .carousel-control-prev .fa {
+    margin-left: -0.6em;
+  }
+
+  .carousel-control-next .fa {
+    margin-right: -0.6em;
+  }
+}
 .navbar {
   font-family: Roboto Slab, Times New Roman, Lucida Bright, Georgia, serif;
 }
@@ -8182,7 +8120,7 @@ Markup:
 
 Weight: 100
 
-Styleguide Recipes.ACC.Branded Nav.Login
+Styleguide Recipes ACCBranded Nav.Login
 
 */
 /*
@@ -8253,7 +8191,7 @@ Markup:
 
 Weight: 1
 
-Styleguide Recipes.ACC.Branded Nav.Simple
+Styleguide Recipes ACCBranded Nav.Simple
 
 */
 /*
@@ -8479,7 +8417,7 @@ Markup:
 
 Weight: 1
 
-	Styleguide Recipes.ACC.Branded Nav.Dropdowns.Simple
+	Styleguide Recipes ACCBranded Nav.Dropdowns.Simple
 
 */
 /*
@@ -8738,7 +8676,7 @@ Markup:
 
 Weight: 2
 
-Styleguide Recipes.ACC.Branded Nav.Dropdowns.Sublinks
+Styleguide Recipes ACCBranded Nav.Dropdowns.Sublinks
 
 */
 /*
@@ -8861,7 +8799,7 @@ Markup:
 
 Weight: 3
 
-Styleguide Recipes.ACC.Branded Nav.Dropdowns.Alt Content
+Styleguide Recipes ACCBranded Nav.Dropdowns.Alt Content
 
 */
 /* 
@@ -9562,7 +9500,7 @@ Markup:
 	</nav>
 	</div>
 
-Styleguide Recipes.ACC.Branded Nav
+Styleguide Recipes ACCBranded Nav
 
 */
 /*
@@ -9570,7 +9508,9 @@ Styleguide Recipes.ACC.Branded Nav
 
 	Combination of UCs and Base Components from the Bootstrap can make an infinate amount of alterations to designs and layouts. Bellow are some alteratoins to the Bootstrap Components with the Utiltity Classes. 
 
-	Styleguide Recipes.Bootstrap
+	Weight: 1000
+
+Styleguide  Recipes Bootstrap
 
 */
 /*
@@ -9624,7 +9564,9 @@ Styleguide  Recipes Bootstrap.BootNav
 
 	The use of Utiltiy Class give us the ablitiy to create much of the UI needed for ACC.org without expanding on the base of the styles that are written.  Included are patterns to create some of the complex UI inside of ACC.org
 
-	Styleguide Recipes.ACC
+	Weight: 2000
+
+	Styleguide Recipes ACC
 
 */
 /*
@@ -10022,7 +9964,7 @@ Markup:
 
 Weight: -1
 
-Styleguide Recipes.ACC.Footer
+Styleguide Recipes ACCFooter
 
 */
 @media only screen and (min-width: 640px) {
@@ -10206,7 +10148,7 @@ Markup:
 </div>
 
 
-Styleguide Recipes.ACC.member
+Styleguide Recipes ACCmember
 
 */
 /**  Utility Classes    *********************************/
@@ -15190,96 +15132,100 @@ Styleguide Width.Grid
   max-width: 80rem !important;
 }
 
+.w_auto {
+  width: auto !important;
+}
+
 .w_0 {
-  width: 0%;
+  width: 0% !important;
 }
 
 .w_10 {
-  width: 10%;
+  width: 10% !important;
 }
 
 .w_20 {
-  width: 20%;
+  width: 20% !important;
 }
 
 .w_30 {
-  width: 30%;
+  width: 30% !important;
 }
 
 .w_40 {
-  width: 40%;
+  width: 40% !important;
 }
 
 .w_50 {
-  width: 50%;
+  width: 50% !important;
 }
 
 .w_60 {
-  width: 60%;
+  width: 60% !important;
 }
 
 .w_70 {
-  width: 70%;
+  width: 70% !important;
 }
 
 .w_80 {
-  width: 80%;
+  width: 80% !important;
 }
 
 .w_90 {
-  width: 90%;
+  width: 90% !important;
 }
 
 .w_100 {
-  width: 100%;
+  width: 100% !important;
 }
 
 .w-grid_1 {
-  width: 8.3333333333%;
+  width: 8.3333333333% !important;
 }
 
 .w-grid_2 {
-  width: 16.6666666667%;
+  width: 16.6666666667% !important;
 }
 
 .w-grid_3 {
-  width: 25%;
+  width: 25% !important;
 }
 
 .w-grid_4 {
-  width: 33.3333333333%;
+  width: 33.3333333333% !important;
 }
 
 .w-grid_5 {
-  width: 41.6666666667%;
+  width: 41.6666666667% !important;
 }
 
 .w-grid_6 {
-  width: 50%;
+  width: 50% !important;
 }
 
 .w-grid_7 {
-  width: 58.3333333333%;
+  width: 58.3333333333% !important;
 }
 
 .w-grid_8 {
-  width: 66.6666666667%;
+  width: 66.6666666667% !important;
 }
 
 .w-grid_9 {
-  width: 75%;
+  width: 75% !important;
 }
 
 .w-grid_10 {
-  width: 83.3333333333%;
+  width: 83.3333333333% !important;
 }
 
 .w-grid_11 {
-  width: 91.6666666667%;
+  width: 91.6666666667% !important;
 }
 
 .w-grid_12 {
-  width: 100%;
+  width: 100% !important;
 }
 
 @media only screen and (min-width : 640px) {
@@ -15307,96 +15253,100 @@ Styleguide Width.Grid
     max-width: 80rem !important;
   }
 
+  .w_auto\:md {
+    width: auto !important;
+  }
+
   .w_0\:md {
-    width: 0%;
+    width: 0% !important;
   }
 
   .w_10\:md {
-    width: 10%;
+    width: 10% !important;
   }
 
   .w_20\:md {
-    width: 20%;
+    width: 20% !important;
   }
 
   .w_30\:md {
-    width: 30%;
+    width: 30% !important;
   }
 
   .w_40\:md {
-    width: 40%;
+    width: 40% !important;
   }
 
   .w_50\:md {
-    width: 50%;
+    width: 50% !important;
   }
 
   .w_60\:md {
-    width: 60%;
+    width: 60% !important;
   }
 
   .w_70\:md {
-    width: 70%;
+    width: 70% !important;
   }
 
   .w_80\:md {
-    width: 80%;
+    width: 80% !important;
   }
 
   .w_90\:md {
-    width: 90%;
+    width: 90% !important;
   }
 
   .w_100\:md {
-    width: 100%;
+    width: 100% !important;
   }
 
   .w-grid_1\:md {
-    width: 8.3333333333%;
+    width: 8.3333333333% !important;
   }
 
   .w-grid_2\:md {
-    width: 16.6666666667%;
+    width: 16.6666666667% !important;
   }
 
   .w-grid_3\:md {
-    width: 25%;
+    width: 25% !important;
   }
 
   .w-grid_4\:md {
-    width: 33.3333333333%;
+    width: 33.3333333333% !important;
   }
 
   .w-grid_5\:md {
-    width: 41.6666666667%;
+    width: 41.6666666667% !important;
   }
 
   .w-grid_6\:md {
-    width: 50%;
+    width: 50% !important;
   }
 
   .w-grid_7\:md {
-    width: 58.3333333333%;
+    width: 58.3333333333% !important;
   }
 
   .w-grid_8\:md {
-    width: 66.6666666667%;
+    width: 66.6666666667% !important;
   }
 
   .w-grid_9\:md {
-    width: 75%;
+    width: 75% !important;
   }
 
   .w-grid_10\:md {
-    width: 83.3333333333%;
+    width: 83.3333333333% !important;
   }
 
   .w-grid_11\:md {
-    width: 91.6666666667%;
+    width: 91.6666666667% !important;
   }
 
   .w-grid_12\:md {
-    width: 100%;
+    width: 100% !important;
   }
 }
 @media only screen and (min-width : 1024px) {
@@ -15424,96 +15374,100 @@ Styleguide Width.Grid
     max-width: 80rem !important;
   }
 
+  .w_auto\:lg {
+    width: auto !important;
+  }
+
   .w_0\:lg {
-    width: 0%;
+    width: 0% !important;
   }
 
   .w_10\:lg {
-    width: 10%;
+    width: 10% !important;
   }
 
   .w_20\:lg {
-    width: 20%;
+    width: 20% !important;
   }
 
   .w_30\:lg {
-    width: 30%;
+    width: 30% !important;
   }
 
   .w_40\:lg {
-    width: 40%;
+    width: 40% !important;
   }
 
   .w_50\:lg {
-    width: 50%;
+    width: 50% !important;
   }
 
   .w_60\:lg {
-    width: 60%;
+    width: 60% !important;
   }
 
   .w_70\:lg {
-    width: 70%;
+    width: 70% !important;
   }
 
   .w_80\:lg {
-    width: 80%;
+    width: 80% !important;
   }
 
   .w_90\:lg {
-    width: 90%;
+    width: 90% !important;
   }
 
   .w_100\:lg {
-    width: 100%;
+    width: 100% !important;
   }
 
   .w-grid_1\:lg {
-    width: 8.3333333333%;
+    width: 8.3333333333% !important;
   }
 
   .w-grid_2\:lg {
-    width: 16.6666666667%;
+    width: 16.6666666667% !important;
   }
 
   .w-grid_3\:lg {
-    width: 25%;
+    width: 25% !important;
   }
 
   .w-grid_4\:lg {
-    width: 33.3333333333%;
+    width: 33.3333333333% !important;
   }
 
   .w-grid_5\:lg {
-    width: 41.6666666667%;
+    width: 41.6666666667% !important;
   }
 
   .w-grid_6\:lg {
-    width: 50%;
+    width: 50% !important;
   }
 
   .w-grid_7\:lg {
-    width: 58.3333333333%;
+    width: 58.3333333333% !important;
   }
 
   .w-grid_8\:lg {
-    width: 66.6666666667%;
+    width: 66.6666666667% !important;
   }
 
   .w-grid_9\:lg {
-    width: 75%;
+    width: 75% !important;
   }
 
   .w-grid_10\:lg {
-    width: 83.3333333333%;
+    width: 83.3333333333% !important;
   }
 
   .w-grid_11\:lg {
-    width: 91.6666666667%;
+    width: 91.6666666667% !important;
   }
 
   .w-grid_12\:lg {
-    width: 100%;
+    width: 100% !important;
   }
 }
 /*
@@ -18883,7 +18837,7 @@ Styleguide hover.transition
 /*
 UC: Is-active 
 
-A common class name given to the parent container can effect the color, background and opacity of the children.  
+A common class name given to the parent container can effect the color, background and opacity of the children.  The active class is different depending if you are using Bootstrap or Foundation. <h1>This Variation of Arches uses <strong>"active"</strong></h1>  
 
 Weight: 135
 
@@ -18945,7 +18899,7 @@ Styleguide is-active.black and white
 /*
   Is active font color
 
-  <div class="p-b_3"><span class="bg_highlight br_radius c_white inline-block font_n1 p-7_3 p-x_5 sg">Click the areas below to toggle the "is-active" state.</span></div> Set the font color of the child by setting the parent to .is-active. `a:c_primary`
+  <div class="p-b_3"><span class="bg_highlight br_radius c_white inline-block font_n1 p-7_3 p-x_5 sg">Click the areas below to toggle the "is-active" state.</span></div> Set the font color of the child by setting the parent to .active. `a:c_primary`
 
   c_primary              - text color modified light to dark
   c_secondary              - text color modified light to dark
@@ -18978,7 +18932,7 @@ Styleguide is-active.black and white
 /*
   Is active font color
 
-  <div class="p-b_3"><span class="bg_highlight br_radius c_white inline-block font_n1 p-7_3 p-x_5 sg">Click the areas below to toggle the "is-active" state.</span></div> Set the font color of the child by setting the parent to .is-active. `a:c_primary`
+  <div class="p-b_3"><span class="bg_highlight br_radius c_white inline-block font_n1 p-7_3 p-x_5 sg">Click the areas below to toggle the "is-active" state.</span></div> Set the font color of the child by setting the parent to .active. `a:c_primary`
 
   bg_primary              - text color modified light to dark
   bg_secondary              - text color modified light to dark
@@ -20231,13 +20185,13 @@ Styleguide is-active.black and white
 }
 
 .a\:icon-show,
-.is-active.a\:icon-hide,
-.is-active > .a\:icon-hide {
+.active.a\:icon-hide,
+.active > .a\:icon-hide {
   display: none !important;
 }
 
-.is-active > .a\:icon-show,
-.is-active.a\:icon-show {
+.active > .a\:icon-show,
+.active.a\:icon-show {
   display: inline-block !important;
 }
 
@@ -20267,12 +20221,12 @@ Styleguide is-active.black and white
 /*
 Is active Display
 
-<div class="p-b_3"><span class="bg_highlight br_radius c_white inline-block font_n1 p-7_3 p-x_5 sg"> Click the areas below to toggle the "is-active" state.</span></div>Toggle the display type of an object when it's parent is-active
+<div class="p-b_3"><span class="bg_highlight br_radius c_white inline-block font_n1 p-7_3 p-x_5 sg"> Click the areas below to toggle the "is-active" state.</span></div>Toggle the display type of an object when it's parent 'active'
 
-none           -  make the display none when parent is-active
-inline           -  make the display inline when parent is-active
-inline-block           -  make the display inline-block when parent is-active
-block          -  make the display block when parent is-active
+none            -  make the display none when parent is-active
+inline          -  make the display inline when parent is-active
+inline-block    -  make the display inline-block when parent is-active
+block           -  make the display block when parent is-active
 
 
 Markup:

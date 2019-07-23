@@ -1,7 +1,7 @@
 /*
 UC: Is-active 
 
-A common class name given to the parent container can effect the color, background and opacity of the children.  
+A common class name given to the parent container can effect the color, background and opacity of the children.  The active class is different depending if you are using Bootstrap or Foundation. <h1>This Variation of Arches uses <strong>"#{$active-class-name}"</strong></h1>  
 
 Weight: 135
 
@@ -65,7 +65,7 @@ Styleguide is-active.black and white
 /*
   Is active font color
  
-  <div class="p-b_3"><span class="bg_highlight br_radius c_white inline-block font_n1 p-7_3 p-x_5 sg">Click the areas below to toggle the "is-active" state.</span></div> Set the font color of the child by setting the parent to .is-active. `a:c_primary`
+  <div class="p-b_3"><span class="bg_highlight br_radius c_white inline-block font_n1 p-7_3 p-x_5 sg">Click the areas below to toggle the "is-active" state.</span></div> Set the font color of the child by setting the parent to .#{$active-class-name}. `a:c_primary`
 
   c_primary              - text color modified light to dark
   c_secondary              - text color modified light to dark
@@ -98,7 +98,7 @@ Styleguide is-active.black and white
 /*
   Is active font color
  
-  <div class="p-b_3"><span class="bg_highlight br_radius c_white inline-block font_n1 p-7_3 p-x_5 sg">Click the areas below to toggle the "is-active" state.</span></div> Set the font color of the child by setting the parent to .is-active. `a:c_primary`
+  <div class="p-b_3"><span class="bg_highlight br_radius c_white inline-block font_n1 p-7_3 p-x_5 sg">Click the areas below to toggle the "is-active" state.</span></div> Set the font color of the child by setting the parent to .#{$active-class-name}. `a:c_primary`
 
   bg_primary              - text color modified light to dark
   bg_secondary              - text color modified light to dark
@@ -158,12 +158,12 @@ Styleguide is-active.black and white
 }
 
 .a\:icon-show,
-.is-active.a\:icon-hide,
-.is-active > .a\:icon-hide {
+.#{$active-class-name}.a\:icon-hide,
+.#{$active-class-name} > .a\:icon-hide {
 	display: none !important;
 }
-.is-active > .a\:icon-show,
-.is-active.a\:icon-show {
+.#{$active-class-name} > .a\:icon-show,
+.#{$active-class-name}.a\:icon-show {
 	display: inline-block !important;
 }
 
@@ -190,12 +190,12 @@ Styleguide is-active.black and white
 /*
 Is active Display
 
-<div class="p-b_3"><span class="bg_highlight br_radius c_white inline-block font_n1 p-7_3 p-x_5 sg"> Click the areas below to toggle the "is-active" state.</span></div>Toggle the display type of an object when it's parent is-active
+<div class="p-b_3"><span class="bg_highlight br_radius c_white inline-block font_n1 p-7_3 p-x_5 sg"> Click the areas below to toggle the "is-active" state.</span></div>Toggle the display type of an object when it's parent '#{$active-class-name}'
 
-none           -  make the display none when parent is-active
-inline           -  make the display inline when parent is-active
-inline-block           -  make the display inline-block when parent is-active
-block          -  make the display block when parent is-active
+none            -  make the display none when parent is-active
+inline          -  make the display inline when parent is-active
+inline-block    -  make the display inline-block when parent is-active
+block           -  make the display block when parent is-active
 
 
 Markup:

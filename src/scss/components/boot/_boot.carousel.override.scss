@@ -11,46 +11,37 @@ Markup:
 <div
 	id="carouselExampleFade"
 	class="carousel carousel-alt slide no-controls text-indicators chevron-on"
-	data-ride="carousel"
 >
 	<ol class="carousel-indicators">
-		<li data-target="#carouselExampleFade" data-slide-to="0" class="active">
+		<li data-target="#carouselExampleFade" data-slide-to="0" class="wrap" >
 			quaerat odit assumenda
 		</li>
-		<li data-target="#carouselExampleFade" data-slide-to="1">
+		<li data-target="#carouselExampleFade" data-slide-to="1" class=" wrap">
 			delectus sunt optio
 		</li>
-		<li data-target="#carouselExampleFade" data-slide-to="2">
-			qui rerum voluptatem
-		</li>
-		<li data-target="#carouselExampleFade" data-slide-to="3">
-			doloremque veritatis molestiae
+		<li data-target="#carouselExampleFade" data-slide-to="2" class=" wrap">
+			deserunt quia quasi
 		</li>
 	</ol>
 	<!-- Wrapper for slides -->
 	<div class="carousel-inner" role="listbox">
 		<div class="carousel-item active">
-			<a><img class="d-block w-100" src="http://lorempixel.com/630/420/nature" alt="..."/></a>
-			<div class="carousel-caption">
-				<span class="title">faquasi eos laborum</span> Voluptatem eum doloribus.
+			<a><img class="block w_100" src="http://lorempixel.com/630/420/animals" alt="..."/></a>
+			<div class="carousel-caption bg_black-7 text-shadow_black-1 text_center text_left:md font_2:md c_white p_3:lg p-b_4:lg p-y_3 lh_1 b_0 r_0 l_0">
+                    <span class="title  font_display block m-b_2 font_4:md m-b_3:md">Cardiac Syncope Program Launches!</span>
+                    <p><strong>NEW</strong>&nbsp;|&nbsp;Hear from an expert panel and complete four patient cases to test your knowledge on our Syncope Program! <a href="http://edu.acc.org/diweb/catalog/item/eid/SYNCOPE2019" title="" class="" target="_blank"><strong>Find out more!</strong></a></p>
+                </div>
+		</div>
+		<div class="carousel-item">
+			<a><img class="block w_100" src="http://lorempixel.com/630/420/nature" alt="..."/></a>
+			<div class="carousel-caption bg_black-7 text-shadow_black-1 text_center text_left:md font_2:md c_white p_3:lg p-b_4:lg p-y_3 lh_1 b_0 r_0 l_0">
+				<span class="title font_display block m-b_2 font_4:md m-b_3:md">sint explicabo sequi</span> Earum nihil omnis.
 			</div>
 		</div>
 		<div class="carousel-item">
-			<a><img class="d-block w-100" src="http://lorempixel.com/630/420/nature" alt="..."/></a>
-			<div class="carousel-caption">
-				<span class="title">sint explicabo sequi</span> Earum nihil omnis.
-			</div>
-		</div>
-		<div class="carousel-item">
-			<a><img class="d-block w-100" src="http://lorempixel.com/630/420/nature" alt="..."/></a>
-			<div class="carousel-caption">
-				<span class="title">ad aut expedita</span> Et aut nihil eveniet sint cupiditate atque ut minima.
-			</div>
-		</div>
-		<div class="carousel-item">
-			<a><img class="d-block w-100" src="http://lorempixel.com/630/420/nightlife" alt="..."/></a>
-			<div class="carousel-caption">
-				<span class="title">aut ullam provident</span> Odio quod doloribus libero eaque et.
+			<a><img class="block w_100" src="http://lorempixel.com/630/420/food" alt="..."/></a>
+			<div class="carousel-caption bg_black-7 text-shadow_black-1 text_center text_left:md font_2:md c_white p_3:lg p-b_4:lg p-y_3 lh_1 b_0 r_0 l_0">
+				<span class="title font_display block m-b_2 font_4:md m-b_3:md">sint explicabo sequi</span> Earum nihil omnis.
 			</div>
 		</div>
 	</div>
@@ -74,77 +65,12 @@ Markup:
 		<span class="sr-only">Next</span>
 	</a>
 </div>
-<div
-	id="carouselExampleFade"
-	class="carousel slide no-controls text-indicators chevron-on"
-	data-ride="carousel"
->
-	<ol class="carousel-indicators">
-		<li data-target="#carouselExampleFade" data-slide-to="0" class="active">
-			quaerat odit assumenda
-		</li>
-		<li data-target="#carouselExampleFade" data-slide-to="1">
-			delectus sunt optio
-		</li>
-		<li data-target="#carouselExampleFade" data-slide-to="2">
-			qui rerum voluptatem
-		</li>
-		<li data-target="#carouselExampleFade" data-slide-to="3">
-			doloremque veritatis molestiae
-		</li>
-	</ol>
-	<!-- Wrapper for slides -->
-	<div class="carousel-inner" role="listbox">
-		<div class="carousel-item active">
-			<a><img class="d-block w-100" src="http://lorempixel.com/630/420/nature" alt="..."/></a>
-			<div class="carousel-caption">
-				<span class="title">faquasi eos laborum</span> Voluptatem eum doloribus.
-			</div>
-		</div>
-		<div class="carousel-item">
-			<a><img class="d-block w-100" src="http://lorempixel.com/630/420/nature" alt="..."/></a>
-			<div class="carousel-caption">
-				<span class="title">sint explicabo sequi</span> Earum nihil omnis.
-			</div>
-		</div>
-		<div class="carousel-item">
-			<a><img class="d-block w-100" src="http://lorempixel.com/630/420/nature" alt="..."/></a>
-			<div class="carousel-caption">
-				<span class="title">ad aut expedita</span> Et aut nihil eveniet sint cupiditate atque ut minima.
-			</div>
-		</div>
-		<div class="carousel-item">
-			<a><img class="d-block w-100" src="http://lorempixel.com/630/420/nightlife" alt="..."/></a>
-			<div class="carousel-caption">
-				<span class="title">aut ullam provident</span> Odio quod doloribus libero eaque et.
-			</div>
-		</div>
-	</div>
-	<!-- Controls -->
-	<a
-		class="left carousel-control-prev"
-		href="#carouselExampleFade"
-		role="button"
-		data-slide="prev"
-	>
-		<i class="fas fa-chevron-left"></i>
-		<span class="sr-only">Previous</span>
-	</a>
-	<a
-		class="right carousel-control-next"
-		href="#carouselExampleFade"
-		role="button"
-		data-slide="next"
-	>
-		<i class="fas fa-chevron-right"></i>
-		<span class="sr-only">Next</span>
-	</a>
-</div>
+
 
 Styleguide  Recipes Bootstrap.Carousel
 
 */
-
+$carousel-control-font-size: ms(1);
 .carousel-alt {
 	max-width: 630px;
 	position: relative;
@@ -167,11 +93,6 @@ Styleguide  Recipes Bootstrap.Carousel
 		left: 0;
 	}
 
-	// .carousel-inner > .carousel-item > img,
-	// .carousel-inner > .carousel-item > a > img {
-	//   width: 100%;
-	//   }
-
 	.carousel-indicators {
 		background-color: rgba(0, 0, 0, 0.6);
 		bottom: auto;
@@ -184,51 +105,22 @@ Styleguide  Recipes Bootstrap.Carousel
 		li {
 			text-indent: -9999px;
 			overflow: hidden;
-			// border-color: $off-white;
+			border-color: get-themecolor(secondary, 5);
+			border-radius: $global-border-round;
 
 			&.active {
-				// border-color: $primary-color-light;
-				// background-color: $primary-color-light;
+				border-color: get-themcolor(accent);
+				background-color: get-themcolor(accent);
 			}
 		}
 	}
 
 	.carousel-caption {
-		bottom: 0;
-		left: 0;
-		right: 0;
-		background-color: rgba(black, 0.75);
-		// line-height: $tight;
-
-		// @include font-display(300);
-
-		font-size: ms(0);
-		padding: 10px 1em 25px;
-		text-align: center;
-		@media #{$medium-up} {
-			text-align: left;
-			font-size: ms(2);
-		}
-
-		.title {
-			color: white;
-			margin-bottom: 0.25em;
-			font-size: ms(3);
-			display: block;
-
-			// @include font-display(100);
-
-			// line-height: $crunched;
-
-			@media #{$medium-up} {
-				//     font-size: ms(6);
-			}
-		}
 	}
 	&.chevron-on .carousel-indicators li.active:before {
 		@extend %font-awesome-pro;
 		content: "\f054";
-		//   color: $primary-color-light;
+		color: get-themecolor(accent);
 		font-size: ms(4);
 		padding-top: 5px;
 		top: 4px;
@@ -250,6 +142,11 @@ Styleguide  Recipes Bootstrap.Carousel
 					width: 100%;
 					height: 100%;
 					overflow: hidden;
+					&:before {
+						padding-top: 66%;
+						content: "";
+						display: block;
+					}
 				}
 			}
 
@@ -268,23 +165,24 @@ Styleguide  Recipes Bootstrap.Carousel
 				left: auto;
 
 				li {
+					width: auto;
 					flex: 1 1 20%;
 					text-indent: 0;
 					border-radius: 0;
-					// background-color: $warm-grey;
+					background-color: get-themecolor(secondary, 4);
 					display: block;
 					position: relative;
-					width: 100%;
+
 					height: auto;
-					padding: 0.5em 16px 0.5px 16px;
+					padding: $padding_3 $padding_4;
 					flex-direction: column;
 					transition: background-color 0.25s ease-out;
 					-moz-transition: background-color 0.25s ease-out;
 					-webkit-transition: background-color 0.25s ease-out;
-					// border: 1px solid $warm-grey-light;
+					border: 1px solid get-themecolor(secondary, 3);
 					text-align: left;
 					font-size: ms(1);
-
+					margin: 0;
 					&:first-child {
 						border-top: 0;
 					}
@@ -294,18 +192,15 @@ Styleguide  Recipes Bootstrap.Carousel
 					}
 
 					&.active {
-						// background-color: $warm-grey-dark;
+						background-color: gget-themecolor(secondary, -1);
 						color: white;
-						// border-right: $primary-color-dark 10px solid;
+						border-right: get-themecolor(accent, 0) 10px solid;
 						padding-right: 10px;
 					}
 				}
 			}
 		}
 	}
-}
-.carousel.text-indicators.chevron-on .carousel-indicators li {
-	padding: 0.5em 16px 0.5px 32px;
 }
 .carousel-control-prev,
 .carousel-control-next {
@@ -320,10 +215,8 @@ Styleguide  Recipes Bootstrap.Carousel
 	left: 0;
 	bottom: 0;
 	width: 20%;
-	// font-size: $carousel-control-font-size;
-	// color: $carousel-control-color;
+	font-size: $carousel-control-font-size;
 	text-align: center;
-	// text-shadow: $carousel-text-shadow;
 	background-color: rgba(0, 0, 0, 0);
 	@media #{$medium-up} {
 		width: 10%;
@@ -331,16 +224,12 @@ Styleguide  Recipes Bootstrap.Carousel
 	@media #{$large-up} {
 		width: 5%;
 	}
-	// @include opacity($carousel-control-opacity);
-
 	// Hover/focus state
 	&:hover,
 	&:focus {
 		outline: 0;
-		// color: $primary-color-light;
+		color: get-themecolor(accent, 0);
 		text-decoration: none;
-
-		// @include opacity(0.9);
 	}
 
 	// Toggles
@@ -375,19 +264,19 @@ Styleguide  Recipes Bootstrap.Carousel
 	// Scale up the controls a smidge
 	.carousel-control-prev,
 	.carousel-control-next {
-		.fa {
-			// width: $carousel-control-font-size * 1.5;
-			// height: $carousel-control-font-size * 1.5;
-			// margin-top: $carousel-control-font-size / -2;
-			// font-size: $carousel-control-font-size * 1.5;
+		.fas {
+			width: $carousel-control-font-size * 1.5;
+			height: $carousel-control-font-size * 1.5;
+			margin-top: $carousel-control-font-size / -2;
+			font-size: $carousel-control-font-size * 1.5;
 		}
 	}
 
 	.carousel-control-prev .fa {
-		// margin-left: $carousel-control-font-size / -2;
+		margin-left: $carousel-control-font-size / -2;
 	}
 
 	.carousel-control-next .fa {
-		// margin-right: $carousel-control-font-size / -2;
+		margin-right: $carousel-control-font-size / -2;
 	}
 }

@@ -8764,96 +8764,100 @@ Styleguide Width.Grid
   max-width: 80rem !important;
 }
 
+.w_auto {
+  width: auto !important;
+}
+
 .w_0 {
-  width: 0%;
+  width: 0% !important;
 }
 
 .w_10 {
-  width: 10%;
+  width: 10% !important;
 }
 
 .w_20 {
-  width: 20%;
+  width: 20% !important;
 }
 
 .w_30 {
-  width: 30%;
+  width: 30% !important;
 }
 
 .w_40 {
-  width: 40%;
+  width: 40% !important;
 }
 
 .w_50 {
-  width: 50%;
+  width: 50% !important;
 }
 
 .w_60 {
-  width: 60%;
+  width: 60% !important;
 }
 
 .w_70 {
-  width: 70%;
+  width: 70% !important;
 }
 
 .w_80 {
-  width: 80%;
+  width: 80% !important;
 }
 
 .w_90 {
-  width: 90%;
+  width: 90% !important;
 }
 
 .w_100 {
-  width: 100%;
+  width: 100% !important;
 }
 
 .w-grid_1 {
-  width: 8.3333333333%;
+  width: 8.3333333333% !important;
 }
 
 .w-grid_2 {
-  width: 16.6666666667%;
+  width: 16.6666666667% !important;
 }
 
 .w-grid_3 {
-  width: 25%;
+  width: 25% !important;
 }
 
 .w-grid_4 {
-  width: 33.3333333333%;
+  width: 33.3333333333% !important;
 }
 
 .w-grid_5 {
-  width: 41.6666666667%;
+  width: 41.6666666667% !important;
 }
 
 .w-grid_6 {
-  width: 50%;
+  width: 50% !important;
 }
 
 .w-grid_7 {
-  width: 58.3333333333%;
+  width: 58.3333333333% !important;
 }
 
 .w-grid_8 {
-  width: 66.6666666667%;
+  width: 66.6666666667% !important;
 }
 
 .w-grid_9 {
-  width: 75%;
+  width: 75% !important;
 }
 
 .w-grid_10 {
-  width: 83.3333333333%;
+  width: 83.3333333333% !important;
 }
 
 .w-grid_11 {
-  width: 91.6666666667%;
+  width: 91.6666666667% !important;
 }
 
 .w-grid_12 {
-  width: 100%;
+  width: 100% !important;
 }
 
 @media only screen and (min-width : 640px) {
@@ -8881,96 +8885,100 @@ Styleguide Width.Grid
     max-width: 80rem !important;
   }
 
+  .w_auto\:md {
+    width: auto !important;
+  }
+
   .w_0\:md {
-    width: 0%;
+    width: 0% !important;
   }
 
   .w_10\:md {
-    width: 10%;
+    width: 10% !important;
   }
 
   .w_20\:md {
-    width: 20%;
+    width: 20% !important;
   }
 
   .w_30\:md {
-    width: 30%;
+    width: 30% !important;
   }
 
   .w_40\:md {
-    width: 40%;
+    width: 40% !important;
   }
 
   .w_50\:md {
-    width: 50%;
+    width: 50% !important;
   }
 
   .w_60\:md {
-    width: 60%;
+    width: 60% !important;
   }
 
   .w_70\:md {
-    width: 70%;
+    width: 70% !important;
   }
 
   .w_80\:md {
-    width: 80%;
+    width: 80% !important;
   }
 
   .w_90\:md {
-    width: 90%;
+    width: 90% !important;
   }
 
   .w_100\:md {
-    width: 100%;
+    width: 100% !important;
   }
 
   .w-grid_1\:md {
-    width: 8.3333333333%;
+    width: 8.3333333333% !important;
   }
 
   .w-grid_2\:md {
-    width: 16.6666666667%;
+    width: 16.6666666667% !important;
   }
 
   .w-grid_3\:md {
-    width: 25%;
+    width: 25% !important;
   }
 
   .w-grid_4\:md {
-    width: 33.3333333333%;
+    width: 33.3333333333% !important;
   }
 
   .w-grid_5\:md {
-    width: 41.6666666667%;
+    width: 41.6666666667% !important;
   }
 
   .w-grid_6\:md {
-    width: 50%;
+    width: 50% !important;
   }
 
   .w-grid_7\:md {
-    width: 58.3333333333%;
+    width: 58.3333333333% !important;
   }
 
   .w-grid_8\:md {
-    width: 66.6666666667%;
+    width: 66.6666666667% !important;
   }
 
   .w-grid_9\:md {
-    width: 75%;
+    width: 75% !important;
   }
 
   .w-grid_10\:md {
-    width: 83.3333333333%;
+    width: 83.3333333333% !important;
   }
 
   .w-grid_11\:md {
-    width: 91.6666666667%;
+    width: 91.6666666667% !important;
   }
 
   .w-grid_12\:md {
-    width: 100%;
+    width: 100% !important;
   }
 }
 @media only screen and (min-width : 1024px) {
@@ -8998,96 +9006,100 @@ Styleguide Width.Grid
     max-width: 80rem !important;
   }
 
+  .w_auto\:lg {
+    width: auto !important;
+  }
+
   .w_0\:lg {
-    width: 0%;
+    width: 0% !important;
   }
 
   .w_10\:lg {
-    width: 10%;
+    width: 10% !important;
   }
 
   .w_20\:lg {
-    width: 20%;
+    width: 20% !important;
   }
 
   .w_30\:lg {
-    width: 30%;
+    width: 30% !important;
   }
 
   .w_40\:lg {
-    width: 40%;
+    width: 40% !important;
   }
 
   .w_50\:lg {
-    width: 50%;
+    width: 50% !important;
   }
 
   .w_60\:lg {
-    width: 60%;
+    width: 60% !important;
   }
 
   .w_70\:lg {
-    width: 70%;
+    width: 70% !important;
   }
 
   .w_80\:lg {
-    width: 80%;
+    width: 80% !important;
   }
 
   .w_90\:lg {
-    width: 90%;
+    width: 90% !important;
   }
 
   .w_100\:lg {
-    width: 100%;
+    width: 100% !important;
   }
 
   .w-grid_1\:lg {
-    width: 8.3333333333%;
+    width: 8.3333333333% !important;
   }
 
   .w-grid_2\:lg {
-    width: 16.6666666667%;
+    width: 16.6666666667% !important;
   }
 
   .w-grid_3\:lg {
-    width: 25%;
+    width: 25% !important;
   }
 
   .w-grid_4\:lg {
-    width: 33.3333333333%;
+    width: 33.3333333333% !important;
   }
 
   .w-grid_5\:lg {
-    width: 41.6666666667%;
+    width: 41.6666666667% !important;
   }
 
   .w-grid_6\:lg {
-    width: 50%;
+    width: 50% !important;
   }
 
   .w-grid_7\:lg {
-    width: 58.3333333333%;
+    width: 58.3333333333% !important;
   }
 
   .w-grid_8\:lg {
-    width: 66.6666666667%;
+    width: 66.6666666667% !important;
   }
 
   .w-grid_9\:lg {
-    width: 75%;
+    width: 75% !important;
   }
 
   .w-grid_10\:lg {
-    width: 83.3333333333%;
+    width: 83.3333333333% !important;
   }
 
   .w-grid_11\:lg {
-    width: 91.6666666667%;
+    width: 91.6666666667% !important;
   }
 
   .w-grid_12\:lg {
-    width: 100%;
+    width: 100% !important;
   }
 }
 /*
@@ -12457,7 +12469,7 @@ Styleguide hover.transition
 /*
 UC: Is-active 
 
-A common class name given to the parent container can effect the color, background and opacity of the children.  
+A common class name given to the parent container can effect the color, background and opacity of the children.  The active class is different depending if you are using Bootstrap or Foundation. <h1>This Variation of Arches uses <strong>"is-active"</strong></h1>  
 
 Weight: 135
 
@@ -13841,12 +13853,12 @@ Styleguide is-active.black and white
 /*
 Is active Display
 
-<div class="p-b_3"><span class="bg_highlight br_radius c_white inline-block font_n1 p-7_3 p-x_5 sg"> Click the areas below to toggle the "is-active" state.</span></div>Toggle the display type of an object when it's parent is-active
+<div class="p-b_3"><span class="bg_highlight br_radius c_white inline-block font_n1 p-7_3 p-x_5 sg"> Click the areas below to toggle the "is-active" state.</span></div>Toggle the display type of an object when it's parent 'is-active'
 
-none           -  make the display none when parent is-active
-inline           -  make the display inline when parent is-active
-inline-block           -  make the display inline-block when parent is-active
-block          -  make the display block when parent is-active
+none            -  make the display none when parent is-active
+inline          -  make the display inline when parent is-active
+inline-block    -  make the display inline-block when parent is-active
+block           -  make the display block when parent is-active
 
 
 Markup:
