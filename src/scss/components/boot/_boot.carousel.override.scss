@@ -1,0 +1,393 @@
+/*
+Carousel
+
+A slide-show component for cycling through groups of images and text.
+.no-controls            Will remove left and right arrow
+.text-indicators        Converts the circle indicators to text tabs that lock to the right side of the images.
+.chevron-on             Adds a light orange chevron on the '.active' indicator to increase its impact.
+
+
+Markup:
+<div
+	id="carouselExampleFade"
+	class="carousel carousel-alt slide no-controls text-indicators chevron-on"
+	data-ride="carousel"
+>
+	<ol class="carousel-indicators">
+		<li data-target="#carouselExampleFade" data-slide-to="0" class="active">
+			quaerat odit assumenda
+		</li>
+		<li data-target="#carouselExampleFade" data-slide-to="1">
+			delectus sunt optio
+		</li>
+		<li data-target="#carouselExampleFade" data-slide-to="2">
+			qui rerum voluptatem
+		</li>
+		<li data-target="#carouselExampleFade" data-slide-to="3">
+			doloremque veritatis molestiae
+		</li>
+	</ol>
+	<!-- Wrapper for slides -->
+	<div class="carousel-inner" role="listbox">
+		<div class="carousel-item active">
+			<a><img class="d-block w-100" src="http://lorempixel.com/630/420/nature" alt="..."/></a>
+			<div class="carousel-caption">
+				<span class="title">faquasi eos laborum</span> Voluptatem eum doloribus.
+			</div>
+		</div>
+		<div class="carousel-item">
+			<a><img class="d-block w-100" src="http://lorempixel.com/630/420/nature" alt="..."/></a>
+			<div class="carousel-caption">
+				<span class="title">sint explicabo sequi</span> Earum nihil omnis.
+			</div>
+		</div>
+		<div class="carousel-item">
+			<a><img class="d-block w-100" src="http://lorempixel.com/630/420/nature" alt="..."/></a>
+			<div class="carousel-caption">
+				<span class="title">ad aut expedita</span> Et aut nihil eveniet sint cupiditate atque ut minima.
+			</div>
+		</div>
+		<div class="carousel-item">
+			<a><img class="d-block w-100" src="http://lorempixel.com/630/420/nightlife" alt="..."/></a>
+			<div class="carousel-caption">
+				<span class="title">aut ullam provident</span> Odio quod doloribus libero eaque et.
+			</div>
+		</div>
+	</div>
+	<!-- Controls -->
+	<a
+		class="left carousel-control-prev"
+		href="#carouselExampleFade"
+		role="button"
+		data-slide="prev"
+	>
+		<i class="fas fa-chevron-left"></i>
+		<span class="sr-only">Previous</span>
+	</a>
+	<a
+		class="right carousel-control-next"
+		href="#carouselExampleFade"
+		role="button"
+		data-slide="next"
+	>
+		<i class="fas fa-chevron-right"></i>
+		<span class="sr-only">Next</span>
+	</a>
+</div>
+<div
+	id="carouselExampleFade"
+	class="carousel slide no-controls text-indicators chevron-on"
+	data-ride="carousel"
+>
+	<ol class="carousel-indicators">
+		<li data-target="#carouselExampleFade" data-slide-to="0" class="active">
+			quaerat odit assumenda
+		</li>
+		<li data-target="#carouselExampleFade" data-slide-to="1">
+			delectus sunt optio
+		</li>
+		<li data-target="#carouselExampleFade" data-slide-to="2">
+			qui rerum voluptatem
+		</li>
+		<li data-target="#carouselExampleFade" data-slide-to="3">
+			doloremque veritatis molestiae
+		</li>
+	</ol>
+	<!-- Wrapper for slides -->
+	<div class="carousel-inner" role="listbox">
+		<div class="carousel-item active">
+			<a><img class="d-block w-100" src="http://lorempixel.com/630/420/nature" alt="..."/></a>
+			<div class="carousel-caption">
+				<span class="title">faquasi eos laborum</span> Voluptatem eum doloribus.
+			</div>
+		</div>
+		<div class="carousel-item">
+			<a><img class="d-block w-100" src="http://lorempixel.com/630/420/nature" alt="..."/></a>
+			<div class="carousel-caption">
+				<span class="title">sint explicabo sequi</span> Earum nihil omnis.
+			</div>
+		</div>
+		<div class="carousel-item">
+			<a><img class="d-block w-100" src="http://lorempixel.com/630/420/nature" alt="..."/></a>
+			<div class="carousel-caption">
+				<span class="title">ad aut expedita</span> Et aut nihil eveniet sint cupiditate atque ut minima.
+			</div>
+		</div>
+		<div class="carousel-item">
+			<a><img class="d-block w-100" src="http://lorempixel.com/630/420/nightlife" alt="..."/></a>
+			<div class="carousel-caption">
+				<span class="title">aut ullam provident</span> Odio quod doloribus libero eaque et.
+			</div>
+		</div>
+	</div>
+	<!-- Controls -->
+	<a
+		class="left carousel-control-prev"
+		href="#carouselExampleFade"
+		role="button"
+		data-slide="prev"
+	>
+		<i class="fas fa-chevron-left"></i>
+		<span class="sr-only">Previous</span>
+	</a>
+	<a
+		class="right carousel-control-next"
+		href="#carouselExampleFade"
+		role="button"
+		data-slide="next"
+	>
+		<i class="fas fa-chevron-right"></i>
+		<span class="sr-only">Next</span>
+	</a>
+</div>
+
+Styleguide  Recipes Bootstrap.Carousel
+
+*/
+
+.carousel-alt {
+	max-width: 630px;
+	position: relative;
+	background: url("http://cdn.backgroundhost.com/backgrounds/subtlepatterns/subtle_surface.png");
+	background-repeat: repeat;
+	margin: 0 auto 1rem;
+
+	&:before {
+		display: block;
+		content: "";
+		width: 100%;
+		padding-top: 2 / 3 * 100%;
+	}
+
+	> .carousel-inner {
+		position: absolute;
+		top: 0px;
+		right: 0;
+		bottom: 0;
+		left: 0;
+	}
+
+	// .carousel-inner > .carousel-item > img,
+	// .carousel-inner > .carousel-item > a > img {
+	//   width: 100%;
+	//   }
+
+	.carousel-indicators {
+		background-color: rgba(0, 0, 0, 0.6);
+		bottom: auto;
+		width: 100%;
+		top: 0;
+		left: 0;
+		right: 0;
+		margin: 0;
+
+		li {
+			text-indent: -9999px;
+			overflow: hidden;
+			// border-color: $off-white;
+
+			&.active {
+				// border-color: $primary-color-light;
+				// background-color: $primary-color-light;
+			}
+		}
+	}
+
+	.carousel-caption {
+		bottom: 0;
+		left: 0;
+		right: 0;
+		background-color: rgba(black, 0.75);
+		// line-height: $tight;
+
+		// @include font-display(300);
+
+		font-size: ms(0);
+		padding: 10px 1em 25px;
+		text-align: center;
+		@media #{$medium-up} {
+			text-align: left;
+			font-size: ms(2);
+		}
+
+		.title {
+			color: white;
+			margin-bottom: 0.25em;
+			font-size: ms(3);
+			display: block;
+
+			// @include font-display(100);
+
+			// line-height: $crunched;
+
+			@media #{$medium-up} {
+				//     font-size: ms(6);
+			}
+		}
+	}
+	&.chevron-on .carousel-indicators li.active:before {
+		@extend %font-awesome-pro;
+		content: "\f054";
+		//   color: $primary-color-light;
+		font-size: ms(4);
+		padding-top: 5px;
+		top: 4px;
+		left: 4px;
+	}
+
+	&.text-indicators {
+		@media #{$medium-up} {
+			max-width: 900px;
+
+			&:before {
+				padding-top: 7 / 15 * 100%;
+			}
+
+			.carousel-inner {
+				width: 70%;
+
+				> .carousel-item {
+					width: 100%;
+					height: 100%;
+					overflow: hidden;
+				}
+			}
+
+			a[class^="carousel-control"].right {
+				right: 30%;
+			}
+			.carousel-indicators {
+				display: flex;
+				flex-direction: column;
+				height: 100%;
+				bottom: 0;
+				top: 0;
+				right: 0;
+				max-width: 300px;
+				width: 30%;
+				left: auto;
+
+				li {
+					flex: 1 1 20%;
+					text-indent: 0;
+					border-radius: 0;
+					// background-color: $warm-grey;
+					display: block;
+					position: relative;
+					width: 100%;
+					height: auto;
+					padding: 0.5em 16px 0.5px 16px;
+					flex-direction: column;
+					transition: background-color 0.25s ease-out;
+					-moz-transition: background-color 0.25s ease-out;
+					-webkit-transition: background-color 0.25s ease-out;
+					// border: 1px solid $warm-grey-light;
+					text-align: left;
+					font-size: ms(1);
+
+					&:first-child {
+						border-top: 0;
+					}
+
+					&:last-child {
+						border-bottom: 0;
+					}
+
+					&.active {
+						// background-color: $warm-grey-dark;
+						color: white;
+						// border-right: $primary-color-dark 10px solid;
+						padding-right: 10px;
+					}
+				}
+			}
+		}
+	}
+}
+.carousel.text-indicators.chevron-on .carousel-indicators li {
+	padding: 0.5em 16px 0.5px 32px;
+}
+.carousel-control-prev,
+.carousel-control-next {
+	.no-controls & {
+		@media #{$medium-up} {
+			display: none;
+		}
+	}
+	min-width: 3rem;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	width: 20%;
+	// font-size: $carousel-control-font-size;
+	// color: $carousel-control-color;
+	text-align: center;
+	// text-shadow: $carousel-text-shadow;
+	background-color: rgba(0, 0, 0, 0);
+	@media #{$medium-up} {
+		width: 10%;
+	}
+	@media #{$large-up} {
+		width: 5%;
+	}
+	// @include opacity($carousel-control-opacity);
+
+	// Hover/focus state
+	&:hover,
+	&:focus {
+		outline: 0;
+		// color: $primary-color-light;
+		text-decoration: none;
+
+		// @include opacity(0.9);
+	}
+
+	// Toggles
+	.fa {
+		position: absolute;
+		top: 50%;
+		margin-top: -10px;
+		z-index: 5;
+		display: inline-block;
+	}
+}
+.carousel-control-prev {
+	// // @include gradient-horizontal($start-color: rgba(0, 0, 0, 0.5), $end-color: rgba(0, 0, 0, 0.0001));
+	.fa {
+		left: 50%;
+		margin-left: -10px;
+	}
+}
+
+.carousel-control-next {
+	// // @include gradient-horizontal($start-color: rgba(0, 0, 0, 0.0001), $end-color: rgba(0, 0, 0, 0.5));
+	left: auto;
+	right: 0;
+	.fa {
+		right: 50%;
+		margin-right: -10px;
+	}
+}
+
+// Scale up controls for tablets and up
+@media #{$medium-up} {
+	// Scale up the controls a smidge
+	.carousel-control-prev,
+	.carousel-control-next {
+		.fa {
+			// width: $carousel-control-font-size * 1.5;
+			// height: $carousel-control-font-size * 1.5;
+			// margin-top: $carousel-control-font-size / -2;
+			// font-size: $carousel-control-font-size * 1.5;
+		}
+	}
+
+	.carousel-control-prev .fa {
+		// margin-left: $carousel-control-font-size / -2;
+	}
+
+	.carousel-control-next .fa {
+		// margin-right: $carousel-control-font-size / -2;
+	}
+}

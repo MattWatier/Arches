@@ -8,11 +8,6 @@ Styleguide Templates.0
 */
 /* No styleguide reference. */
 
-
-
-
-
-
 /*
  Item With Modifiers Template
 
@@ -35,18 +30,20 @@ default		- Default Design
  Styleguide Templates.3
 */
 
-li{
-.templateDocumentation &{	
-background-color: yellow;
-	&.warning{background-color: orange;}
-	&.alert{background-color: red;}
+li {
+	.templateDocumentation & {
+		background-color: yellow;
+		&.warning {
+			background-color: orange;
+		}
+		&.alert {
+			background-color: red;
+		}
+	}
 }
-}
-
-
 
 /*
- Item With Validation Tabel
+ Item With Validation Table
 
 Many Objects have modifiers like psudo classes and classes applied to make them look different.
 
@@ -72,12 +69,15 @@ default		- Default Design
  Styleguide Templates.4
 */
 
-
-.templateDocumentation .message{	
-background-color: yellow;
-	&.warning{background-color: orange;}
-	&.alert{background-color: red;}
-	&.success{background-color: green;}
+.templateDocumentation .message {
+	background-color: yellow;
+	&.warning {
+		background-color: orange;
+	}
+	&.alert {
+		background-color: red;
+	}
+	&.success {
+		background-color: green;
+	}
 }
-
-

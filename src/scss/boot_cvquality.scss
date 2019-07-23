@@ -360,6 +360,7 @@ h3 {
 @import "structures/structures";
 @import "base/table.boot";
 @import "styleguide/__basic-html.boot";
+@import "components/boot/_boot.carousel.override";
 @import "components/cvquality/cvquality.boot._navbar.override";
 @import "components/cvquality/cvquality.jumbotron.scss";
 /*

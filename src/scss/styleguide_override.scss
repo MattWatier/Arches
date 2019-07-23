@@ -98,7 +98,8 @@ $colors: map-merge(
 $fonts: (
 	slab: (
 		name: "Roboto Slab",
-		stack: '"Roboto Slab","Times New Roman","Lucida Bright",Georgia,serif, "slab"'
+		stack:
+			'"Roboto Slab","Times New Roman","Lucida Bright",Georgia,serif, "slab"'
 	),
 	display: (
 		name: "Maven Pro",
@@ -110,14 +111,27 @@ $fonts: (
 	),
 	ui: (
 		name: "Open Sans",
-		stack: '"Open Sans",-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif'
+		stack:
+			'"Open Sans",-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif'
 	)
 );
 
 // Reset Values of Utlity-css.vars.scss
-$value-to-unit: map-deep-set($value-to-unit, "font-family" "slab", map-deep-get($fonts, "slab", "stack"));
-$value-to-unit: map-deep-set($value-to-unit, "font-family" "display", map-deep-get($fonts, "display", "stack"));
-$value-to-unit: map-deep-set($value-to-unit, "font-family" "copy", map-deep-get($fonts, "copy", "stack"));
+$value-to-unit: map-deep-set(
+	$value-to-unit,
+	"font-family" "slab",
+	map-deep-get($fonts, "slab", "stack")
+);
+$value-to-unit: map-deep-set(
+	$value-to-unit,
+	"font-family" "display",
+	map-deep-get($fonts, "display", "stack")
+);
+$value-to-unit: map-deep-set(
+	$value-to-unit,
+	"font-family" "copy",
+	map-deep-get($fonts, "copy", "stack")
+);
 
 $global-radus-on: false;
 $global-border-radius: 6px;
@@ -167,9 +181,46 @@ pre code.hljs {
 	background: get-themecolor(primary, -1);
 	box-shadow: make-shadow(2, "inset", #000, 0.2);
 }
-.kss-section__markup > pre.language-markup::-webkit-scrollbar-thumb:window-inactive {
+.kss-section__markup
+	> pre.language-markup::-webkit-scrollbar-thumb:window-inactive {
 	background: rgba(get-themecolor(primary, -1), 0.1);
 }
-.kss-section__markup > pre.language-markup::-webkit-scrollbar-track:window-inactive {
+.kss-section__markup
+	> pre.language-markup::-webkit-scrollbar-track:window-inactive {
 	background: rgba(get-themecolor(primary, -3), 0.1);
+}
+
+.kss-section__description {
+	table {
+		min-width: 50%;
+		border: 1px solid #808080;
+		margin: $margin_3 0 $margin_4;
+	}
+	border-spacing: 0;
+	.thead,
+	thead {
+		background-color: $white;
+
+		th,
+		td {
+			border-bottom: 2px solid get-themecolor(primary, 1);
+		}
+	}
+	tbody > tr + tr {
+		border-top: solid get-themecolor(secondary, 5) 1px;
+	}
+	.tfoot,
+	tfoot {
+		background-color: get-themecolor(secondary, 5);
+
+		th,
+		td {
+			border-top: 1px solid get-themecolor(secondary, 1);
+			font-style: italic;
+		}
+	}
+	th,
+	td {
+		padding: $padding_2 $padding_3;
+	}
 }

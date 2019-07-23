@@ -380,4 +380,43 @@ pre code.hljs {
 .kss-section__markup > pre.language-markup::-webkit-scrollbar-track:window-inactive {
   background: rgba(10, 56, 70, 0.1);
 }
+
+.kss-section__description {
+  border-spacing: 0;
+}
+.kss-section__description table {
+  min-width: 50%;
+  margin: 8px 0 16px;
+  margin: 0.5rem 0 1rem;
+  border: 1px solid #808080;
+}
+.kss-section__description .thead,
+.kss-section__description thead {
+  background-color: white;
+}
+.kss-section__description .thead th,
+.kss-section__description .thead td,
+.kss-section__description thead th,
+.kss-section__description thead td {
+  border-bottom: 2px solid #1faed7;
+}
+.kss-section__description tbody > tr + tr {
+  border-top: solid #f0f0f1 1px;
+}
+.kss-section__description .tfoot,
+.kss-section__description tfoot {
+  background-color: #f0f0f1;
+}
+.kss-section__description .tfoot th,
+.kss-section__description .tfoot td,
+.kss-section__description tfoot th,
+.kss-section__description tfoot td {
+  border-top: 1px solid #7c8089;
+  font-style: italic;
+}
+.kss-section__description th,
+.kss-section__description td {
+  padding: 4px 8px;
+  padding: 0.25rem 0.5rem;
+}
 /*# sourceMappingURL=maps/styleguide_override.css.map */

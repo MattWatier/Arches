@@ -67,7 +67,7 @@ $navbar-color_secondary: map-get($theme-palette, accent);
 
 /* 
 
-Branded Nav 
+Primary Nav 
 
 The Header Nav of ACC.org 
 
@@ -116,11 +116,11 @@ Markup:
 			</ul>
 		</div>
 	</nav>
-	<nav class="absolute bg_accent flex_shrink font_0 font_1:lg navbar navbar-dark navbar-expand p-b_1 p_0 r_0 relative:lg">
+	<nav class="absolute flex_shrink font_0 font_1:lg gradient_teal navbar navbar-dark navbar-expand p-b_1 p_0 r_0 relative:lg">
 		<ul class="navbar-nav">
-			<li class="nav-item dropdown">
-				<a class="block is-active is-active_toggle-function nav-link p-x_5:lg" id="myACCDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="far icon-toggle_chevron-up-down"></i> Sign In</a>
-				<div class="br_none br_solid:lg dropdown-menu dropdown-menu-right font_0 m-t_n1 p_0 r_0" aria-labelledby="navbarDropdown">
+			<li class="dropdown h:gradient_teal-reverse nav-item show">
+				<a class="block is-active_toggle-function nav-link p-x_5:lg" id="myACCDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><i class="far icon-toggle_chevron-up-down"></i> Sign In</a>
+				<div class="br_none br_solid:lg dropdown-menu dropdown-menu-right font_0 m-t_n1 p_0 r_0 show" aria-labelledby="navbarDropdown">
 					<ul class="ul_none">
 						<li class="nav-item">
 							<a class="dropdown-item nav-link bg_accent h:bg_accent-n2 c_white flex" href="#">
@@ -138,13 +138,15 @@ Markup:
 					</ul>
 				</div>
 			</li>
-			<li class="br-l_1 br_solid br_white-3 nav-item">
+			<li class="br-l_1 br_solid br_white-3 h:gradient_teal-reverse nav-item">
 				<a class=" nav-link" href="#" title="Sign Out of all Systems"><i class="fas fa-sign-out-alt"></i></a>
 			</li>
 		</ul>
 	</nav>
 </div>
 
-Styleguide Recipes.CVQUALITY.TEMP
+Weight: -100 
+
+Styleguide Recipes.CVQUALITY.Primary Nav
 
 */

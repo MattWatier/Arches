@@ -7427,7 +7427,7 @@ Markup:
 
  Styleguide InteractiveExtras.Links
  */
-.icon-after:after, a.link[target=_blank]:after, a.link[href^=http]:after, a.link[href^=https]:after, .icon-before:before, a.link:before {
+.carousel-alt.chevron-on .carousel-indicators li.active:before, .icon-after:after, a.link[target=_blank]:after, a.link[href^=http]:after, a.link[href^=https]:after, .icon-before:before, a.link:before {
   -webkit-font-smoothing: antialiased;
   display: inline-block;
   font-family: "Font Awesome 5 Pro";
@@ -7847,12 +7847,12 @@ The social links can be restyled to be smaller.
 Markup:
 <section class="social p_4 m-y_2 font_n1 max-w_1 bg_white">
     <ul class="flex social-bar ul_none m_0">
-        <li class="flex_shrink m-r_2"><a href="https://twitter.com/accintouch" target="_blank" class="twitter bg_secondary-3 block c_secondary-n4 h:bg_accent h:c_white m-b_0 p-x_3 p_2 social-bar--button text_center transition_0"><i class="fab fa-twitter-square"></i></a></li>
-        <li class="flex_shrink m-r_2"><a href="https://www.facebook.com/AmericanCollegeofCardiology" target="_blank" class="facebook bg_secondary-3 block c_secondary-n4 h:bg_accent h:c_white m-b_0 p-x_3 p_2 social-bar--button text_center transition_0"><i class="fab fa-facebook-square"></i></a></li>
-        <li class="flex_shrink m-r_2"><a href="https://www.linkedin.com/company/american-college-of-cardiology/" target="_blank" class="linkedin bg_secondary-3 block c_secondary-n4 h:bg_accent h:c_white m-b_0 p-x_3 p_2 social-bar--button text_center transition_0"><i class="fab fa-linkedin"></i></a></li>
-        <li class="flex_shrink m-r_2"><a href="http://www.youtube.com/user/ACCinTouch" target="_blank" class="youtube bg_secondary-3 block c_secondary-n4 h:bg_accent h:c_white m-b_0 p-x_3 p_2 social-bar--button text_center transition_0"><i class="fab fa-youtube"></i></a></li>
-        <li class="flex_shrink m-r_2"><a href="https://play.google.com/store/apps/dev?id=5189912010956845696&hl=en_US" target="_blank" class="google-play bg_secondary-3 block c_secondary-n4 h:bg_accent h:c_white m-b_0 p-x_3 p_2 social-bar--button text_center transition_0"><i class="fab fa-google-play"></i></a></li>
-        <li class="flex_shrink m-r_2"><a href="https://apps.apple.com/us/developer/american-college-of-cardiology/id502174543#see-all/i-phonei-pad-apps" target="_blank" class="apple-store bg_secondary-3 block c_secondary-n4 h:bg_accent h:c_white m-b_0 p-x_3 p_2 social-bar--button text_center transition_0"><i class="fab fa-apple"></i></a></li>
+        <li class="flex_shrink m-r_2"><a href="https://twitter.com/accintouch" target="_blank" class="twitter c_secondary-n2 bg_secondary-4 block h:bg_accent h:c_white m-b_0 p-x_3 p_2 social-bar--button text_center transition_0"><i class="fab fa-twitter-square"></i></a></li>
+        <li class="flex_shrink m-r_2"><a href="https://www.facebook.com/AmericanCollegeofCardiology" target="_blank" class="facebook c_secondary-n2 bg_secondary-4 block h:bg_accent h:c_white m-b_0 p-x_3 p_2 social-bar--button text_center transition_0"><i class="fab fa-facebook-square"></i></a></li>
+        <li class="flex_shrink m-r_2"><a href="https://www.linkedin.com/company/american-college-of-cardiology/" target="_blank" class="linkedin c_secondary-n2 bg_secondary-4 block h:bg_accent h:c_white m-b_0 p-x_3 p_2 social-bar--button text_center transition_0"><i class="fab fa-linkedin"></i></a></li>
+        <li class="flex_shrink m-r_2"><a href="http://www.youtube.com/user/ACCinTouch" target="_blank" class="youtube c_secondary-n2 bg_secondary-4 block h:bg_accent h:c_white m-b_0 p-x_3 p_2 social-bar--button text_center transition_0"><i class="fab fa-youtube"></i></a></li>
+        <li class="flex_shrink m-r_2"><a href="https://play.google.com/store/apps/dev?id=5189912010956845696&hl=en_US" target="_blank" class="google-play c_secondary-n2 bg_secondary-4 block h:bg_accent h:c_white m-b_0 p-x_3 p_2 social-bar--button text_center transition_0"><i class="fab fa-google-play"></i></a></li>
+        <li class="flex_shrink m-r_2"><a href="https://apps.apple.com/us/developer/american-college-of-cardiology/id502174543#see-all/i-phonei-pad-apps" target="_blank" class="apple-store c_secondary-n2 bg_secondary-4 block h:bg_accent h:c_white m-b_0 p-x_3 p_2 social-bar--button text_center transition_0"><i class="fab fa-apple"></i></a></li>
     </ul>
 </section>
 
@@ -7871,7 +7871,7 @@ The social links can be restyled to be smaller.
 Markup:
 <section class="social p_4 m-y_2 font_0 max-w_1  bg_white">
     <ul class="flex social-bar ul_none c_white m_0">
-        <li class="flex_auto m-r_2"><a href="https://twitter.com/accintouch" target="_blank" class="twitter social-bar--button br_radius block m-b_0 p_2 c_white-8 h:c_white text_center h:bg_primary-n3"><i class="fab fa-twitter-square"></i></a></li>
+        <li class="flex_auto m-r_2"><a href="https://twitter.com/accintouch" target="_blank" class="twitter social-bar--button br_radius block m-b_0 p_2 c_white-8 h:c_white text_center opacity_8 h:opacity"><i class="fab fa-twitter-square"></i></a></li>
         <li class="flex_auto m-r_2"><a href="https://www.facebook.com/AmericanCollegeofCardiology" target="_blank" class="facebook social-bar--button br_radius block m-b_0 p_2 c_white-8 h:c_white text_center opacity_8 h:opacity"><i class="fab fa-facebook-square"></i></a></li>
         <li class="flex_auto m-r_2"><a href="https://www.linkedin.com/company/american-college-of-cardiology/" target="_blank" class="linkedin social-bar--button br_radius block m-b_0 p_2 c_white-8 h:c_white text_center opacity_8 h:opacity"><i class="fab fa-linkedin"></i></a></li>
         <li class="flex_auto m-r_2"><a href="http://www.youtube.com/user/ACCinTouch" target="_blank" class="youtube social-bar--button br_radius block m-b_0 p_2 c_white-8 h:c_white text_center opacity_8 h:opacity"><i class="fab fa-youtube"></i></a></li>
@@ -8138,6 +8138,334 @@ pre {
   background-color: unset;
 }
 
+/*
+Carousel
+
+A slide-show component for cycling through groups of images and text.
+.no-controls            Will remove left and right arrow
+.text-indicators        Converts the circle indicators to text tabs that lock to the right side of the images.
+.chevron-on             Adds a light orange chevron on the '.active' indicator to increase its impact.
+
+
+Markup:
+<div
+	id="carouselExampleFade"
+	class="carousel carousel-alt slide no-controls text-indicators chevron-on"
+	data-ride="carousel"
+>
+	<ol class="carousel-indicators">
+		<li data-target="#carouselExampleFade" data-slide-to="0" class="active">
+			quaerat odit assumenda
+		</li>
+		<li data-target="#carouselExampleFade" data-slide-to="1">
+			delectus sunt optio
+		</li>
+		<li data-target="#carouselExampleFade" data-slide-to="2">
+			qui rerum voluptatem
+		</li>
+		<li data-target="#carouselExampleFade" data-slide-to="3">
+			doloremque veritatis molestiae
+		</li>
+	</ol>
+	<!-- Wrapper for slides -->
+	<div class="carousel-inner" role="listbox">
+		<div class="carousel-item active">
+			<a><img class="d-block w-100" src="http://lorempixel.com/630/420/nature" alt="..."/></a>
+			<div class="carousel-caption">
+				<span class="title">faquasi eos laborum</span> Voluptatem eum doloribus.
+			</div>
+		</div>
+		<div class="carousel-item">
+			<a><img class="d-block w-100" src="http://lorempixel.com/630/420/nature" alt="..."/></a>
+			<div class="carousel-caption">
+				<span class="title">sint explicabo sequi</span> Earum nihil omnis.
+			</div>
+		</div>
+		<div class="carousel-item">
+			<a><img class="d-block w-100" src="http://lorempixel.com/630/420/nature" alt="..."/></a>
+			<div class="carousel-caption">
+				<span class="title">ad aut expedita</span> Et aut nihil eveniet sint cupiditate atque ut minima.
+			</div>
+		</div>
+		<div class="carousel-item">
+			<a><img class="d-block w-100" src="http://lorempixel.com/630/420/nightlife" alt="..."/></a>
+			<div class="carousel-caption">
+				<span class="title">aut ullam provident</span> Odio quod doloribus libero eaque et.
+			</div>
+		</div>
+	</div>
+	<!-- Controls -->
+	<a
+		class="left carousel-control-prev"
+		href="#carouselExampleFade"
+		role="button"
+		data-slide="prev"
+	>
+		<i class="fas fa-chevron-left"></i>
+		<span class="sr-only">Previous</span>
+	</a>
+	<a
+		class="right carousel-control-next"
+		href="#carouselExampleFade"
+		role="button"
+		data-slide="next"
+	>
+		<i class="fas fa-chevron-right"></i>
+		<span class="sr-only">Next</span>
+	</a>
+</div>
+<div
+	id="carouselExampleFade"
+	class="carousel slide no-controls text-indicators chevron-on"
+	data-ride="carousel"
+>
+	<ol class="carousel-indicators">
+		<li data-target="#carouselExampleFade" data-slide-to="0" class="active">
+			quaerat odit assumenda
+		</li>
+		<li data-target="#carouselExampleFade" data-slide-to="1">
+			delectus sunt optio
+		</li>
+		<li data-target="#carouselExampleFade" data-slide-to="2">
+			qui rerum voluptatem
+		</li>
+		<li data-target="#carouselExampleFade" data-slide-to="3">
+			doloremque veritatis molestiae
+		</li>
+	</ol>
+	<!-- Wrapper for slides -->
+	<div class="carousel-inner" role="listbox">
+		<div class="carousel-item active">
+			<a><img class="d-block w-100" src="http://lorempixel.com/630/420/nature" alt="..."/></a>
+			<div class="carousel-caption">
+				<span class="title">faquasi eos laborum</span> Voluptatem eum doloribus.
+			</div>
+		</div>
+		<div class="carousel-item">
+			<a><img class="d-block w-100" src="http://lorempixel.com/630/420/nature" alt="..."/></a>
+			<div class="carousel-caption">
+				<span class="title">sint explicabo sequi</span> Earum nihil omnis.
+			</div>
+		</div>
+		<div class="carousel-item">
+			<a><img class="d-block w-100" src="http://lorempixel.com/630/420/nature" alt="..."/></a>
+			<div class="carousel-caption">
+				<span class="title">ad aut expedita</span> Et aut nihil eveniet sint cupiditate atque ut minima.
+			</div>
+		</div>
+		<div class="carousel-item">
+			<a><img class="d-block w-100" src="http://lorempixel.com/630/420/nightlife" alt="..."/></a>
+			<div class="carousel-caption">
+				<span class="title">aut ullam provident</span> Odio quod doloribus libero eaque et.
+			</div>
+		</div>
+	</div>
+	<!-- Controls -->
+	<a
+		class="left carousel-control-prev"
+		href="#carouselExampleFade"
+		role="button"
+		data-slide="prev"
+	>
+		<i class="fas fa-chevron-left"></i>
+		<span class="sr-only">Previous</span>
+	</a>
+	<a
+		class="right carousel-control-next"
+		href="#carouselExampleFade"
+		role="button"
+		data-slide="next"
+	>
+		<i class="fas fa-chevron-right"></i>
+		<span class="sr-only">Next</span>
+	</a>
+</div>
+
+Styleguide  Recipes Bootstrap.Carousel
+
+*/
+.carousel-alt {
+  position: relative;
+  max-width: 630px;
+  margin: 0 auto 16px;
+  margin: 0 auto 1rem;
+  background: url("http://cdn.backgroundhost.com/backgrounds/subtlepatterns/subtle_surface.png");
+  background-repeat: repeat;
+}
+.carousel-alt:before {
+  display: block;
+  width: 100%;
+  padding-top: 66.6666666667%;
+  content: "";
+}
+.carousel-alt > .carousel-inner {
+  position: absolute;
+  top: 0px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.carousel-alt .carousel-indicators {
+  top: 0;
+  right: 0;
+  bottom: auto;
+  left: 0;
+  width: 100%;
+  margin: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.carousel-alt .carousel-indicators li {
+  overflow: hidden;
+  text-indent: -9999px;
+}
+.carousel-alt .carousel-caption {
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 10px 1em 25px;
+  background-color: rgba(0, 0, 0, 0.75);
+  font-size: 1em;
+  text-align: center;
+}
+@media only screen and (min-width : 640px) {
+  .carousel-alt .carousel-caption {
+    font-size: 1.44em;
+    text-align: left;
+  }
+}
+.carousel-alt .carousel-caption .title {
+  display: block;
+  margin-bottom: 0.25em;
+  color: white;
+  font-size: 1.728em;
+}
+.carousel-alt.chevron-on .carousel-indicators li.active:before {
+  top: 4px;
+  left: 4px;
+  padding-top: 5px;
+  font-size: 2.0736em;
+  content: "";
+}
+@media only screen and (min-width : 640px) {
+  .carousel-alt.text-indicators {
+    max-width: 900px;
+  }
+  .carousel-alt.text-indicators:before {
+    padding-top: 46.6666666667%;
+  }
+  .carousel-alt.text-indicators .carousel-inner {
+    width: 70%;
+  }
+  .carousel-alt.text-indicators .carousel-inner > .carousel-item {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  .carousel-alt.text-indicators a[class^=carousel-control].right {
+    right: 30%;
+  }
+  .carousel-alt.text-indicators .carousel-indicators {
+    display: flex;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: auto;
+    flex-direction: column;
+    width: 30%;
+    max-width: 300px;
+    height: 100%;
+  }
+  .carousel-alt.text-indicators .carousel-indicators li {
+    -moz-transition: background-color 0.25s ease-out;
+    -webkit-transition: background-color 0.25s ease-out;
+    display: block;
+    position: relative;
+    flex: 1 1 20%;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    padding: 0.5em 16px 0.5px 16px;
+    border-radius: 0;
+    font-size: 1.2em;
+    text-align: left;
+    text-indent: 0;
+    transition: background-color 0.25s ease-out;
+  }
+  .carousel-alt.text-indicators .carousel-indicators li:first-child {
+    border-top: 0;
+  }
+  .carousel-alt.text-indicators .carousel-indicators li:last-child {
+    border-bottom: 0;
+  }
+  .carousel-alt.text-indicators .carousel-indicators li.active {
+    padding-right: 10px;
+    color: white;
+  }
+}
+
+.carousel.text-indicators.chevron-on .carousel-indicators li {
+  padding: 0.5em 16px 0.5px 32px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 20%;
+  min-width: 48px;
+  min-width: 3rem;
+  background-color: rgba(0, 0, 0, 0);
+  text-align: center;
+}
+@media only screen and (min-width : 640px) {
+  .no-controls .carousel-control-prev,
+.no-controls .carousel-control-next {
+    display: none;
+  }
+}
+@media only screen and (min-width : 640px) {
+  .carousel-control-prev,
+.carousel-control-next {
+    width: 10%;
+  }
+}
+@media only screen and (min-width : 1024px) {
+  .carousel-control-prev,
+.carousel-control-next {
+    width: 5%;
+  }
+}
+.carousel-control-prev:hover, .carousel-control-prev:focus,
+.carousel-control-next:hover,
+.carousel-control-next:focus {
+  outline: 0;
+  text-decoration: none;
+}
+.carousel-control-prev .fa,
+.carousel-control-next .fa {
+  display: inline-block;
+  z-index: 5;
+  position: absolute;
+  top: 50%;
+  margin-top: -10px;
+}
+
+.carousel-control-prev .fa {
+  left: 50%;
+  margin-left: -10px;
+}
+
+.carousel-control-next {
+  right: 0;
+  left: auto;
+}
+.carousel-control-next .fa {
+  right: 50%;
+  margin-right: -10px;
+}
+
 .nav-link {
   padding-right: 4px;
   padding-right: 0.25rem;
@@ -8174,7 +8502,7 @@ pre {
 
 /* 
 
-Branded Nav 
+Primary Nav 
 
 The Header Nav of ACC.org 
 
@@ -8223,11 +8551,11 @@ Markup:
 			</ul>
 		</div>
 	</nav>
-	<nav class="absolute bg_accent flex_shrink font_0 font_1:lg navbar navbar-dark navbar-expand p-b_1 p_0 r_0 relative:lg">
+	<nav class="absolute flex_shrink font_0 font_1:lg gradient_teal navbar navbar-dark navbar-expand p-b_1 p_0 r_0 relative:lg">
 		<ul class="navbar-nav">
-			<li class="nav-item dropdown">
-				<a class="block is-active is-active_toggle-function nav-link p-x_5:lg" id="myACCDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="far icon-toggle_chevron-up-down"></i> Sign In</a>
-				<div class="br_none br_solid:lg dropdown-menu dropdown-menu-right font_0 m-t_n1 p_0 r_0" aria-labelledby="navbarDropdown">
+			<li class="dropdown h:gradient_teal-reverse nav-item show">
+				<a class="block is-active_toggle-function nav-link p-x_5:lg" id="myACCDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><i class="far icon-toggle_chevron-up-down"></i> Sign In</a>
+				<div class="br_none br_solid:lg dropdown-menu dropdown-menu-right font_0 m-t_n1 p_0 r_0 show" aria-labelledby="navbarDropdown">
 					<ul class="ul_none">
 						<li class="nav-item">
 							<a class="dropdown-item nav-link bg_accent h:bg_accent-n2 c_white flex" href="#">
@@ -8245,37 +8573,48 @@ Markup:
 					</ul>
 				</div>
 			</li>
-			<li class="br-l_1 br_solid br_white-3 nav-item">
+			<li class="br-l_1 br_solid br_white-3 h:gradient_teal-reverse nav-item">
 				<a class=" nav-link" href="#" title="Sign Out of all Systems"><i class="fas fa-sign-out-alt"></i></a>
 			</li>
 		</ul>
 	</nav>
 </div>
 
-Styleguide Recipes.CVQUALITY.TEMP
+Weight: -100 
+
+Styleguide Recipes.CVQUALITY.Primary Nav
 
 */
 /*
 Jumbotron
 
-Jumbotron are hero places that can have larger marketing text with a colored background. By default Jumbotron is dark text on a light grey background the modifiers add some predefined colored backgrounds using the brand colors. The backgrounds were generated here https://qrohlf.com/trianglify-generator/.
+Jumbotron are hero content areas. Larger marketing text with a colored backgrounds to grab the user or mark the page as important. By default Jumbotron is dark text on a light grey background the UC's add some predefined colored backgrounds allow for modificaiton of the area. The backgrounds were generated by this online generator https://qrohlf.com/trianglify-generator/.
+| Class        | Effect                                               |
+| ------------ | ---------------------------------------------------- |
+| .orange-blue | orange to blue background                            |
+| .orange-grey | orange to grey background                            |
+| .blue-grey   | blue to grey background                              |
+| .soft        | softens the edges of the triangles in the background |
+| .blur        | blurs the back to a smooth gradient                  |
 
-.orange-blue 		      - orange to blue background
-.orange-grey 		      - orange to grey background
-.blue-grey 			      - blue to grey background
-.soft				         - softens the edges of the triangles in the background 
-.blur 				      - blurs the back to a smooth gradient
+.orange-blue 		      - 	orange to blue background
+.orange-grey 		      - 	orange to grey background
+.blue-grey 			      - 	blue to grey background
+.soft				      - 	softens the edges of the triangles in the background 
+.blur.blue-grey 	      - 	blurs the back to a smooth gradient
 
-Markup:
+ Markup:
 <div class="jumbotron relative overflow_hidden br_round {{modifier_class}}">
-   <div class="container p-x_4 max-w_4 w_auto">
+   <div class="container p-x_4 max-w_4 w_auto m_auto">
          <h1 class="c_black font_10:lg font_6 font_8:md">I am a Jumbotron!</h1>
          <p class="font_1 font_1:md font_3:lg">Doloribus omnis facere voluptatibus beatae.</p>
          <div><a class="br_radius btn btn-primary gradient_teal h:gradient_teal-reverse" href="#" role="button">Learn more</a></div>
    </div>
 </div>
 
-Styleguide Recipes.CVQuality.Jumbotron
+Weight: 50
+
+Styleguide Recipes.CVQuality.Containers.Jumbotron
 
 */
 .jumbotron:before {
@@ -8379,7 +8718,7 @@ Markup:
 
 Weight: -1
 
-Styleguide Recipes.Boot.BootNav
+Styleguide  Recipes Bootstrap.BootNav
 
 */
 /*
@@ -8391,9 +8730,9 @@ Styleguide Recipes.Boot.BootNav
 
 */
 /*
-CVQuality.org Footer
+Footer
 
-The Footer of CVquality
+The Footer of CVQuality.org 
 
 Markup:
 <div id="footer-wrap" class="">
@@ -8621,7 +8960,7 @@ Markup:
 	<!-- /subfooter -->
 </div>
 
-Weight: -1
+Weight: -50
 
 Styleguide Recipes.CVQuality.Footer
 

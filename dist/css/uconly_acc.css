@@ -3506,12 +3506,12 @@ The social links can be restyled to be smaller.
 Markup:
 <section class="social p_4 m-y_2 font_n1 max-w_1 bg_white">
     <ul class="flex social-bar ul_none m_0">
-        <li class="flex_shrink m-r_2"><a href="https://twitter.com/accintouch" target="_blank" class="twitter bg_secondary-3 block c_secondary-n4 h:bg_accent h:c_white m-b_0 p-x_3 p_2 social-bar--button text_center transition_0"><i class="fab fa-twitter-square"></i></a></li>
-        <li class="flex_shrink m-r_2"><a href="https://www.facebook.com/AmericanCollegeofCardiology" target="_blank" class="facebook bg_secondary-3 block c_secondary-n4 h:bg_accent h:c_white m-b_0 p-x_3 p_2 social-bar--button text_center transition_0"><i class="fab fa-facebook-square"></i></a></li>
-        <li class="flex_shrink m-r_2"><a href="https://www.linkedin.com/company/american-college-of-cardiology/" target="_blank" class="linkedin bg_secondary-3 block c_secondary-n4 h:bg_accent h:c_white m-b_0 p-x_3 p_2 social-bar--button text_center transition_0"><i class="fab fa-linkedin"></i></a></li>
-        <li class="flex_shrink m-r_2"><a href="http://www.youtube.com/user/ACCinTouch" target="_blank" class="youtube bg_secondary-3 block c_secondary-n4 h:bg_accent h:c_white m-b_0 p-x_3 p_2 social-bar--button text_center transition_0"><i class="fab fa-youtube"></i></a></li>
-        <li class="flex_shrink m-r_2"><a href="https://play.google.com/store/apps/dev?id=5189912010956845696&hl=en_US" target="_blank" class="google-play bg_secondary-3 block c_secondary-n4 h:bg_accent h:c_white m-b_0 p-x_3 p_2 social-bar--button text_center transition_0"><i class="fab fa-google-play"></i></a></li>
-        <li class="flex_shrink m-r_2"><a href="https://apps.apple.com/us/developer/american-college-of-cardiology/id502174543#see-all/i-phonei-pad-apps" target="_blank" class="apple-store bg_secondary-3 block c_secondary-n4 h:bg_accent h:c_white m-b_0 p-x_3 p_2 social-bar--button text_center transition_0"><i class="fab fa-apple"></i></a></li>
+        <li class="flex_shrink m-r_2"><a href="https://twitter.com/accintouch" target="_blank" class="twitter c_secondary-n2 bg_secondary-4 block h:bg_accent h:c_white m-b_0 p-x_3 p_2 social-bar--button text_center transition_0"><i class="fab fa-twitter-square"></i></a></li>
+        <li class="flex_shrink m-r_2"><a href="https://www.facebook.com/AmericanCollegeofCardiology" target="_blank" class="facebook c_secondary-n2 bg_secondary-4 block h:bg_accent h:c_white m-b_0 p-x_3 p_2 social-bar--button text_center transition_0"><i class="fab fa-facebook-square"></i></a></li>
+        <li class="flex_shrink m-r_2"><a href="https://www.linkedin.com/company/american-college-of-cardiology/" target="_blank" class="linkedin c_secondary-n2 bg_secondary-4 block h:bg_accent h:c_white m-b_0 p-x_3 p_2 social-bar--button text_center transition_0"><i class="fab fa-linkedin"></i></a></li>
+        <li class="flex_shrink m-r_2"><a href="http://www.youtube.com/user/ACCinTouch" target="_blank" class="youtube c_secondary-n2 bg_secondary-4 block h:bg_accent h:c_white m-b_0 p-x_3 p_2 social-bar--button text_center transition_0"><i class="fab fa-youtube"></i></a></li>
+        <li class="flex_shrink m-r_2"><a href="https://play.google.com/store/apps/dev?id=5189912010956845696&hl=en_US" target="_blank" class="google-play c_secondary-n2 bg_secondary-4 block h:bg_accent h:c_white m-b_0 p-x_3 p_2 social-bar--button text_center transition_0"><i class="fab fa-google-play"></i></a></li>
+        <li class="flex_shrink m-r_2"><a href="https://apps.apple.com/us/developer/american-college-of-cardiology/id502174543#see-all/i-phonei-pad-apps" target="_blank" class="apple-store c_secondary-n2 bg_secondary-4 block h:bg_accent h:c_white m-b_0 p-x_3 p_2 social-bar--button text_center transition_0"><i class="fab fa-apple"></i></a></li>
     </ul>
 </section>
 
@@ -3530,7 +3530,7 @@ The social links can be restyled to be smaller.
 Markup:
 <section class="social p_4 m-y_2 font_0 max-w_1  bg_white">
     <ul class="flex social-bar ul_none c_white m_0">
-        <li class="flex_auto m-r_2"><a href="https://twitter.com/accintouch" target="_blank" class="twitter social-bar--button br_radius block m-b_0 p_2 c_white-8 h:c_white text_center h:bg_primary-n3"><i class="fab fa-twitter-square"></i></a></li>
+        <li class="flex_auto m-r_2"><a href="https://twitter.com/accintouch" target="_blank" class="twitter social-bar--button br_radius block m-b_0 p_2 c_white-8 h:c_white text_center opacity_8 h:opacity"><i class="fab fa-twitter-square"></i></a></li>
         <li class="flex_auto m-r_2"><a href="https://www.facebook.com/AmericanCollegeofCardiology" target="_blank" class="facebook social-bar--button br_radius block m-b_0 p_2 c_white-8 h:c_white text_center opacity_8 h:opacity"><i class="fab fa-facebook-square"></i></a></li>
         <li class="flex_auto m-r_2"><a href="https://www.linkedin.com/company/american-college-of-cardiology/" target="_blank" class="linkedin social-bar--button br_radius block m-b_0 p_2 c_white-8 h:c_white text_center opacity_8 h:opacity"><i class="fab fa-linkedin"></i></a></li>
         <li class="flex_auto m-r_2"><a href="http://www.youtube.com/user/ACCinTouch" target="_blank" class="youtube social-bar--button br_radius block m-b_0 p_2 c_white-8 h:c_white text_center opacity_8 h:opacity"><i class="fab fa-youtube"></i></a></li>
