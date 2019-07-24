@@ -143,9 +143,16 @@ $carousel-control-font-size: ms(1);
 					height: 100%;
 					overflow: hidden;
 					&:before {
-						padding-top: 66%;
+						display: inline-block;
+						/* width: 100%; */
+						width: 1px;
+						margin-left: -1px;
+						padding-top: 66.6666666667%;
+						float: left;
 						content: "";
-						display: block;
+					}
+					a {
+						float: left;
 					}
 				}
 			}
