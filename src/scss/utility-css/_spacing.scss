@@ -221,11 +221,61 @@ Markup:
 Styleguide Spacing.Location
 
  */
+/*
+Clear
+
+<div class="p-b_3"><span class="bg_accent br_radius c_white inline-block font_n1 p-7_3 p-x_5 sg">Is Responsive: breakpoint modifiers</span></div>Quickly alter the position type and location of an object with 'absolute' and 'top'
+
+unset  		- unset positioned block 
+inital  		- inital positioned block 
+inherit  		- inherit positioned block 
+relative  		- relative positioned block 
+absolute   		- absolute positioned block
+fixed   			- fixed positioned block 
+sticky   		- sticky positioned block
+
+
+
+Markup:
+<div class="br_solid br_transparent bg_accent-3 relative p_5" style="height:200px;">
+	<div class="bg_primary-5 text_center {{modifier_class}}">Position {{modifier_class}}</div>
+</div>
+
+Styleguide Spacing.Position
+
+ */
+.clear_both {
+	clear: both;
+}
+.clear_left {
+	clear: left;
+}
+.clear_right {
+	clear: right;
+}
 @include loop-style(float, "", "");
 @media #{$medium-up} {
 	@include loop-style(float, $bp-label_medium, "");
+	.clear_both\:md {
+		clear: both;
+	}
+	.clear_left\:md {
+		clear: left;
+	}
+	.clear_right\:md {
+		clear: right;
+	}
 }
 
 @media #{$large-up} {
 	@include loop-style(float, $bp-label_large, "");
+	.clear_both\:lg {
+		clear: both;
+	}
+	.clear_left\:lg {
+		clear: left;
+	}
+	.clear_right\:lg {
+		clear: right;
+	}
 }

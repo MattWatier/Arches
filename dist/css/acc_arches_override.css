@@ -3724,6 +3724,29 @@
 
    */
   /*
+  Clear
+
+  <div class="p-b_3"><span class="bg_accent br_radius c_white inline-block font_n1 p-7_3 p-x_5 sg">Is Responsive: breakpoint modifiers</span></div>Quickly alter the position type and location of an object with 'absolute' and 'top'
+
+  unset  		- unset positioned block 
+  inital  		- inital positioned block 
+  inherit  		- inherit positioned block 
+  relative  		- relative positioned block 
+  absolute   		- absolute positioned block
+  fixed   			- fixed positioned block 
+  sticky   		- sticky positioned block
+
+
+
+  Markup:
+  <div class="br_solid br_transparent bg_accent-3 relative p_5" style="height:200px;">
+  	<div class="bg_primary-5 text_center {{modifier_class}}">Position {{modifier_class}}</div>
+  </div>
+
+  Styleguide Spacing.Position
+
+   */
+  /*
   UC: Display & Flex
 
   Control the display of objects with control of break points, and the layout functions of flex easily by adding utlity classes. 
@@ -8564,6 +8587,15 @@
     right: 2rem;
   }
 }
+#acc_arches_override .clear_both {
+  clear: both;
+}
+#acc_arches_override .clear_left {
+  clear: left;
+}
+#acc_arches_override .clear_right {
+  clear: right;
+}
 #acc_arches_override .float_unset {
   float: unset;
 }
@@ -8589,6 +8621,15 @@
   #acc_arches_override .float_right\:md {
     float: right;
   }
+  #acc_arches_override .clear_both\:md {
+    clear: both;
+  }
+  #acc_arches_override .clear_left\:md {
+    clear: left;
+  }
+  #acc_arches_override .clear_right\:md {
+    clear: right;
+  }
 }
 @media only screen and (min-width : 1024px) {
   #acc_arches_override .float_unset\:lg {
@@ -8602,6 +8643,15 @@
   }
   #acc_arches_override .float_right\:lg {
     float: right;
+  }
+  #acc_arches_override .clear_both\:lg {
+    clear: both;
+  }
+  #acc_arches_override .clear_left\:lg {
+    clear: left;
+  }
+  #acc_arches_override .clear_right\:lg {
+    clear: right;
   }
 }
 #acc_arches_override .display_none {
@@ -9465,6 +9515,9 @@
 }
 #acc_arches_override .shadow_n5 {
   box-shadow: inset 2px 2px 8px 1px rgba(0, 0, 0, 0.65);
+}
+#acc_arches_override .bg_tansparent {
+  background-color: transparent !important;
 }
 #acc_arches_override .bg_primary {
   background-color: #198dae !important;

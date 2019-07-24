@@ -1,0 +1,90 @@
+/*
+Triangles
+
+Colored Triangles are used through out the cvquality design.  To add triangle that adhears to the side of a container and takes on the color of the border color of the container. 
+
+.triangle_left   -  left placed triangle.
+.triangle_right   -  right placed triangle.
+.triangle_bottom   -  bottom placed triangle.
+.triangle_top   -  top placed triangle.
+
+Markup:
+<div class="bg_primary-5 br_1 br_secondary-4 br_radius card highlighted shadow_1 ">
+ <div class="{{modifier_class}} br_secondary-4"><h2 class="bg_tansparent br-b_0 c_accent c_secondary-n4 card-header font_1 font_2:md font_bold font_display p-b_3 p-x_3 p-x_3:md p-x_4:lg uppercase">Highlighted Card</h2>
+  <div class="card-body font_0 font_1:md font_ui lh_2 p-b_0 p-x_3 p-x_3:md p-x_4:lg p-y_0">
+    <p>Repudiandae adipisci illum omnis et suscipit at amet ex. Error magni laborum autem et rerum porro asperiores sunt. Et veritatis rerum voluptas hic eum sint. Ipsa labore eos autem cupiditate ut molestiae sit fugiat. Rerum sit dolorem veritatis est quia nesciunt tenetur ut. Animi earum illo sed incidunt fuga.</p>
+  </div>
+   <div class="bg_tansparent br-t_0 card-footer p-t_0 p-x_3 p-x_3:md p-x_4:lg"> <a href="#" class="btn btn-block btn-primary font_0:md font_n1">Action</a></div></div>
+</div>
+
+Styleguide Recipes CVQualtiy.Decorator.Triangles
+*/
+
+*[class*="triangle"] {
+	position: relative;
+}
+
+*[class*="triangle"]::before {
+	content: "";
+	width: 0;
+	height: 0;
+	border-style: solid;
+	position: absolute;
+}
+.triangle_left::before,
+.triangle_right::before {
+	top: 50%;
+	margin-top: -0.5em;
+}
+.triangle_top::before,
+.triangle_bottom::before {
+	left: 50%;
+	margin-left: -0.5em;
+}
+.triangle_left {
+	margin-left: 0.75em;
+}
+.triangle_right {
+	margin-right: 0.75em;
+}
+.triangle_top {
+	margin-top: 0.75em;
+}
+.triangle_bottom {
+	margin-bottom: 0.75em;
+}
+.triangle_left::before {
+	left: -0.75em;
+	border-width: 0.5em 0 0.5em 0.75em;
+	border-left-color: inherit;
+	border-right-color: #0000;
+	border-bottom-color: #0000;
+	border-top-color: #0000;
+}
+
+.triangle_right::before {
+	right: -0.75em;
+	border-width: 0.5em 0.75em 0.5em 0;
+	border-left-color: #0000;
+	border-right-color: inherit;
+	border-bottom-color: #0000;
+	border-top-color: #0000;
+}
+
+.triangle_top::before {
+	top: -0.75em;
+	border-width: 0.75em 0.5em 0 0.5em;
+	border-left-color: #0000;
+	border-right-color: #0000;
+	border-bottom-color: #0000;
+	border-top-color: inherit;
+}
+
+.triangle_bottom::before {
+	bottom: -0.75em;
+	border-width: 0 0.5em 0.75em 0.5em;
+	border-left-color: #0000;
+	border-right-color: #0000;
+	border-bottom-color: inherit;
+	border-top-color: #0000;
+}

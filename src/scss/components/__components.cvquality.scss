@@ -1,2 +1,19 @@
 @import "components/cvquality/cvquality.boot._navbar.override";
-@import "components/cvquality/cvquality.jumbotron.scss";
+@import "components/cvquality/cvquality.jumbotron";
+@import "components/cvquality/cvquality.triangle";
+.btn-primary {
+	@extend .br_0;
+	@extend .br_radius;
+	@extend .gradient_teal;
+	&:hover {
+		@extend .gradient_teal-reverse;
+	}
+}
+.btn-secondary {
+	@extend .br_0;
+	@extend .br_radius;
+	@extend .gradient_grey;
+	&:hover {
+		@extend .gradient_grey-reverse;
+	}
+}
