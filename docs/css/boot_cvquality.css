@@ -81,6 +81,10 @@ span {
   border-color: #acbd65 !important;
 }
 
+.bg_primary-alt {
+  background-color: #d2e6f6 !important;
+}
+
 .bg_accent-alt {
   background-color: #ffc425 !important;
 }
@@ -221,7 +225,7 @@ Styleguide DesignBase.Colors.Full Pallate
   /* Chrome10+,Safari5.1+ */
   /* Opera 11.10+ */
   /* IE10+ */
-  background-image: linear-gradient(to bottom, #fafafa 1%, #a4cded 100%);
+  background-image: linear-gradient(to bottom, #fafafa 1%, #d2e6f6 100%);
   /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=" $off-white", endColorstr="$soft-blue", GradientType=0);
   /* IE6-9 */
@@ -589,7 +593,7 @@ div[class*=texture_] {
   --breakpoint-lg: 1024px;
   --breakpoint-xl: 1200px;
   --breakpoint-xxl: 1400px;
-  --font-family-sans-serif: "Muli","Open Sans","system",sans-serif;
+  --font-family-sans-serif: "Lato","Open Sans","system-ui",sans-serif;
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
 }
 
@@ -614,7 +618,7 @@ body {
   margin: 0;
   background-color: white;
   color: #000;
-  font-family: "Muli","Open Sans","system",sans-serif;
+  font-family: "Lato","Open Sans","system-ui",sans-serif;
   font-size: 16px;
   font-size: 1rem;
   font-weight: 400;
@@ -932,7 +936,7 @@ h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   margin-bottom: 8px;
   margin-bottom: 0.5rem;
-  font-family: "Lato",Verdana,Helvetica,sans-serif;;
+  font-family: "Maven Pro",Verdana,Helvetica,sans-serif;;
   font-weight: 300;
   line-height: 1.35;
 }
@@ -6106,7 +6110,7 @@ a.close.disabled {
   z-index: 1070;
   position: absolute;
   margin: 0;
-  font-family: "Muli","Open Sans","system",sans-serif;
+  font-family: "Lato","Open Sans","system-ui",sans-serif;
   font-size: 16px;
   font-size: 1rem;
   font-style: normal;
@@ -6226,7 +6230,7 @@ a.close.disabled {
   border: 1px solid rgba(19, 18, 18, 0.2);
   background-clip: padding-box;
   background-color: white;
-  font-family: "Muli","Open Sans","system",sans-serif;
+  font-family: "Lato","Open Sans","system-ui",sans-serif;
   font-size: 16px;
   font-size: 1rem;
   font-style: normal;
@@ -8126,7 +8130,7 @@ pre {
 }
 
 .table {
-  font-family: "Muli","Open Sans","system",sans-serif;
+  font-family: "Lato","Open Sans","system-ui",sans-serif;
 }
 .table td,
 .table th {
@@ -8140,7 +8144,7 @@ pre {
 }
 
 /*
-Carousel
+Carousel ALT
 
 A slide-show component for cycling through groups of images and text.
 .no-controls            Will remove left and right arrow
@@ -8242,9 +8246,14 @@ Styleguide  Recipes Bootstrap.Carousel
   background-color: rgba(0, 0, 0, 0.6);
 }
 .carousel-alt .carousel-indicators li {
+  box-sizing: content-box;
+  width: 12px;
+  height: 12px;
+  margin-top: 5px;
+  margin-bottom: 5px;
   overflow: hidden;
+  border: none;
   border-radius: 25px;
-  border-color: #f0f0f0;
   text-indent: -9999px;
 }
 .carousel-alt .carousel-indicators li.active {
@@ -8275,9 +8284,16 @@ Styleguide  Recipes Bootstrap.Carousel
     overflow: hidden;
   }
   .carousel-alt.text-indicators .carousel-inner > .carousel-item:before {
-    display: block;
-    padding-top: 66%;
+    display: inline-block;
+    /* width: 100%; */
+    width: 1px;
+    margin-left: -1px;
+    padding-top: 66.6666666667%;
+    float: left;
     content: "";
+  }
+  .carousel-alt.text-indicators .carousel-inner > .carousel-item a {
+    float: left;
   }
   .carousel-alt.text-indicators a[class^=carousel-control].right {
     right: 30%;
@@ -8321,7 +8337,7 @@ Styleguide  Recipes Bootstrap.Carousel
   .carousel-alt.text-indicators .carousel-indicators li.active {
     padding-right: 10px;
     border-right: #e87d1e 10px solid;
-    background-color: gget-themecolor(secondary, -1);
+    background-color: #595758;
     color: white;
   }
 }
@@ -8520,7 +8536,7 @@ Markup:
 
 Weight: -100 
 
-Styleguide Recipes CVQualtiyPrimary Nav
+Styleguide Recipes CVQualtiy.Navs.Primary
 
 */
 /*
@@ -8763,9 +8779,9 @@ Styleguide  Recipes Bootstrap.BootNav
 
 	The use of Utiltiy Class give us the ablitiy to create much of the UI needed for CV Quality without expanding on the base of the styles that are written.  Included are patterns to create some of the complex UI inside of CV Quality.
 
-	Weight: 2000
+	Weight: 3000
 
-	Styleguide Recipes.CVQUALITY
+	Styleguide Recipes CVQualtiy
 
 */
 /*
@@ -8781,9 +8797,9 @@ Markup:
 		Home
 	</div>
 	<!-- This is the inner footer that we cache -->
-	<div id="footer" role="contentinfo" class="bg_secondary-2 flex flex_column flex_inline flex_row:md flex_wrap p-x_3 p-y_0:lg p-y_4 w_100">
+	<div id="footer" role="contentinfo" class="bg_secondary-1 flex flex_column flex_inline flex_row:md flex_wrap p-x_3 p-y_0:lg p-y_4 w_100">
 		<div class="br-l_1 br_so br_solid:lg br_white-3 flex_auto font_ui m-l_4:lg m-y_4:lg order-1 p-l_3:md p-l_4:lg p-y_4:md p-x_0 p-x_3 p-y_4:lg w-grid_2:lg w-grid_6:md">
-			<h2 class="br-b_1 br_dotted:md br_white-6 c_secondary-n4 font_0:md font_1 font_bold font_display m-b_0:md m-b_2 m-b_2:lg m-t_4:md p-b_3 table-cell vertical-align_bottom w_10" style="height: 4rem;">
+			<h2 class="br-b_1 br_dotted:md br_white-6 c_secondary-n4 font_0:md font_1 font_display m-b_0:md m-b_2 m-b_2:lg m-t_4:md p-b_3 table-cell vertical-align_bottom w_10" style="height: 4rem;">
 				Quality Improvement for Institutions:
 			</h2>
 			<ul class="font_n1:lg font_0 font_ui m-b_4 p-t_2 ul_none">
@@ -8810,7 +8826,7 @@ Markup:
 			</ul>
 		</div>
 		<div class="br-r_1 br_0 br_solid:lg br_white-3 flex_auto font_ui m-r_4:lg m-y_4:lg order-1 p-r_4:lg p-x_3 p-y_4:md w-grid_2:lg w-grid_6:md">
-			<h2 class="br-b_1 br_dotted:md font_1 br_white-6 c_secondary-n5 font_0:md font_bold font_display m-b_0 m-b_2:lg m-t_4:md nowrap p-b_3 table-cell vertical-align_bottom w_10" style="height: 4rem;">
+			<h2 class="br-b_1 br_dotted:md font_1 br_white-6 c_secondary-n5 font_0:md font_display m-b_0 m-b_2:lg m-t_4:md nowrap p-b_3 table-cell vertical-align_bottom w_10" style="height: 4rem;">
 <span class="inline-block w_100 w_100%">				Offerings:
     </span>		</h2>
 			<ul class="font_n1:lg font_0 font_ui m-b_4 p-t_2 ul_none">
@@ -8855,8 +8871,8 @@ Markup:
 					<h4 class="m-b_0 font_bold m-b_2:md font_copy font_normal font_1:md font_2 m-t_4:md">
 						Heart House
 					</h4>
-					<div class="flex flex_column flex_column:lg flex_row:md font_0 font_ui">
-						<ul class="flex_auto p-r_4 ul_none w_10:md w_100:lg">
+					<div class="flex flex_column flex_row:md font_n1 lh_1 font_ui">
+						<ul class="flex_auto p-r_4 ul_none w_10:md w_50:lg">
 							<li class="m-b_1 m-b_2:md font_normal">
 								<span class="street-address">2400 N. St. NW</span>
 							</li>
@@ -8868,22 +8884,22 @@ Markup:
 								<span class="postal-code">20037</span>
 							</li>
 							<li class="m-b_1 m-b_2:md font_normal">
-								<a href="mailto:resource@acc.org" class="email c_secondary-n3 h:c_secondary-n4 h:underline">
+								<a href="mailto:resource@acc.org" class="email c_secondary-n4 h:c_secondary-n5 h:underline">
 									<strong class="p-r_2">Email:</strong>
 									<span class="">resource@acc.org</span></a>
 							</li>
 						</ul>
-						<ul class="flex_auto p-l_0:lg p-l_4:md ul_none w_100:lg w_50:md">
+						<ul class="flex_auto p-l_0:lg p-l_4:md ul_none w_50:lg w_50:md">
 							<li class="m-b_1 m-b_2:md font_normal">
-								<a tel="+12023756000" href="tel:+12023756000" class="tel c_secondary-n3 h:c_secondary-n4 h:underline">
+								<a tel="+12023756000" href="tel:+12023756000" class="tel c_secondary-n4 h:c_secondary-n5 h:underline">
 									<strong class="p-r_2">Phone:</strong><span class="">(202) 375-6000, ext. 5603</span></a>
 							</li>
 							<li class="m-b_1 m-b_2:md font_normal">
-								<a tel="+18002574737" href="tel:+18002534636.5603" class="tel c_secondary-n3 h:c_secondary-n4 h:underline">
+								<a tel="+18002574737" href="tel:+18002534636.5603" class="tel c_secondary-n4 h:c_secondary-n5 h:underline">
 									<strong class="p-r_2">Toll Free:</strong><span class="">(800) 253-4636, ext. 5603</span></a>
 							</li>
 							<li class="m-b_1 m-b_2:md font_normal">
-								<a fax="+12023757000" href="fax:+12023757000" class="fax c_secondary-n3 h:c_secondary-n4 h:underline">
+								<a fax="+12023757000" href="fax:+12023757000" class="fax c_secondary-n4 h:c_secondary-n5 h:underline">
 									<strong class="p-r_2">Fax:</strong>
 									<span class="">(202) 375-7000</span>
 								</a>
@@ -8895,7 +8911,7 @@ Markup:
 		</div>
 		<div class="flex_auto order-10 order_last p-x_3 p-y_4:lg relative w-grid_3:lg w-grid_6:md">
 			<section class="acc-websites m-y_3">
-				<nav class="font_ui w_100 font_0"><h3 class="br-b_1 br_dotted br_white-4 c_secondary-n4 font_1 font_bold font_display m-b_2 p-b_3 w_100">Improving Cardiovascular Care</h3>
+				<nav class="font_ui w_100 font_0"><h3 class="br-b_1 br_dotted br_white-4 c_secondary-n4 font_1 font_display m-b_2 p-b_3 w_100">Improving Cardiovascular Care</h3>
 					<ul class="lh_4 ul_none">
 						<li class="">
 							<a target="_blank" class="block c_secondary-5 h:bg_black-2 h:c_white flex" href="http://www.acc.org">
@@ -9001,7 +9017,7 @@ Markup:
 
 Weight: -50
 
-Styleguide Recipes CVQualtiy.Footer
+Styleguide Recipes CVQualtiy.Navs.Footer
 
 */
 /*
@@ -9027,8 +9043,8 @@ Highlighted Cards are stylized cards with a soft blue background and changes all
 
 
 Markup:
-<div class="bg_primary-5 br_1 br_primary-4 br_radius card highlighted shadow_1">
- <h2 class="bg_tansparent br-b_0 c_accent c_secondary-n4 card-header font_1 font_2:md font_bold font_display p-b_3 p-x_3 p-x_3:md p-x_4:lg uppercase">Highlighted Card</h2>
+<div class="bg_primary-5 br_primary-4 br_radius card highlighted">
+ <h2 class="bg_tansparent br-b_0 c_accent c_secondary-n4 card-header font_1 font_2:md font_3:lg p-b_3 p-x_3 p-x_3:md p-x_4:lg uppercase">Highlighted Card</h2>
   <div class="card-body font_0 font_1:md font_ui lh_2 p-b_0 p-x_3 p-x_3:md p-x_4:lg p-y_0">
     <p>Repudiandae adipisci illum omnis et suscipit at amet ex. Error magni laborum autem et rerum porro asperiores sunt. Et veritatis rerum voluptas hic eum sint. Ipsa labore eos autem cupiditate ut molestiae sit fugiat. Rerum sit dolorem veritatis est quia nesciunt tenetur ut. Animi earum illo sed incidunt fuga.</p>
   </div>
@@ -9052,8 +9068,8 @@ Placing cards inside of content areas is needed within the design.  Placing some
 
 
 Markup:
-<div class="bg_primary-5 br_1 br_primary-4 br_radius card highlighted shadow_1 max-w_1 clear_right float_right w_50 w_40\:md w_20\:lg ">
- <h2 class="bg_tansparent br-b_0 c_accent c_secondary-n4 card-header font_1 font_2:md font_bold font_display p-b_3 p-x_3 p-x_3:md p-x_4:lg uppercase">Positioned Small Right</h2>
+<div class="bg_primary-alt br_1 br_primary-4 br_radius card highlighted shadow_1 max-w_1 clear_right float_right w_50 w_40\:md w_20\:lg ">
+ <h2 class="bg_tansparent br-b_0 c_accent c_secondary-n4 card-header font_1 font_2:md font_display p-b_3 p-x_3 p-x_3:md p-x_4:lg uppercase">Positioned Small Right</h2>
   <div class="card-body font_0 font_1:md font_ui lh_2 p-b_0 p-x_3 p-x_3:md p-x_4:lg p-y_0">
   <p class=" font_n2"> Container Classes:max-w_1 clear_right float_right w_50 w_40:md w_20:lg</p>  
   <p>Repudiandae adipisci illum omnis et suscipit at amet ex. Error magni laborum autem et rerum porro asperiores sunt. Et veritatis rerum voluptas hic eum sint. Ipsa labore eos autem cupiditate ut molestiae sit fugiat. Rerum sit dolorem veritatis est quia nesciunt tenetur ut. Animi earum illo sed incidunt fuga.</p>
@@ -9070,7 +9086,7 @@ Info Cards are stylized cards with a warm grey background and changes all header
 
 Markup:
 <div class="bg_secondary-4 br_radius card info shadow_n1 br_0">
- <h2 class="bg_tansparent br-b_0 c_secondary-n4 card-header font_1 font_2:md font_bold font_display p-b_3 p-x_3 p-x_3:md p-x_4:lg">Info Card</h2>
+ <h2 class="bg_tansparent br-b_0 c_secondary-n4 card-header font_1 font_2:md font_display p-b_3 p-x_3 p-x_3:md p-x_4:lg">Info Card</h2>
   <div class="card-body font_0 font_1:md font_ui lh_2 p-b_0 p-x_3 p-x_3:md p-x_4:lg p-y_0">
     <p>aliqua mollit consectetur labore ipsum velit officia nulla anim magna est id elit irure qui dolor exercitation incididunt exercitation proident anim officia veniam reprehenderit laboris incididunt irure enim amet esse</p>
   </div>
@@ -9078,6 +9094,72 @@ Markup:
 </div>
 
 Styleguide Recipes CVQualtiy.Cards.Info
+*/
+/*
+Notice Card
+
+Notice Cards are side notes usually associated with an action button.
+
+Markup:
+<div class="bg_primary-alt br_1  br_secondary-4 card info text_center">
+ <h2 class="bg_tansparent br-b_0 br_secondary-4 c_primary-n2 card-header font_1 font_2:md font_3:lg font_display p-b_3 p-x_3 p-x_3:md p-x_4:lg triangle_left">Notice Card</h2>
+  <div class="card-body font_0 font_1:md font_ui lh_2 p-b_0 p-x_3 p-x_3:md p-x_4:lg p-y_0">
+    <p>aliqua mollit consectetur labore ipsum velit officia nulla anim magna est id elit irure qui dolor exercitation incididunt exercitation proident anim officia veniam reprehenderit laboris incididunt irure enim amet esse</p>
+  </div>
+   <div class="bg_tansparent br-t_0 card-footer p-t_0 p-x_3 p-x_3:md p-x_4:lg"> <a href="#" class="btn btn-block btn-primary font_0:md font_n1">Action</a></div>
+</div>
+
+Styleguide Recipes CVQualtiy.Cards.Notice
+*/
+/*
+Notice Card Alt
+
+Notice Cards are side notes usually associated with an action button.
+
+Markup:
+<div class="bg_secondary-4 br_0   card info text_center">
+ <h2 class="bg_tansparent br-b_0 br_accent-alt c_accent card-header font_1 font_2:md font_3:lg font_display p-b_3 p-x_3 p-x_3:md p-x_4:lg triangle_left">Notice Card</h2>
+  <div class="card-body font_0 font_1:md font_ui lh_2 p-b_0 p-x_3 p-x_3:md p-x_4:lg p-y_0">
+    <p>aliqua mollit consectetur labore ipsum velit officia nulla anim magna est id elit irure qui dolor exercitation incididunt exercitation proident anim officia veniam reprehenderit laboris incididunt irure enim amet esse</p>
+  </div>
+   <div class="bg_tansparent br-t_0 card-footer p-t_0 p-x_3 p-x_3:md p-x_4:lg"> <a href="#" class="btn btn-block btn-secondary font_0:md font_n1">Action</a></div>
+</div>
+
+Styleguide Recipes CVQualtiy.Cards.Notice Alt
+*/
+/*
+Decorators
+
+The Cvquality design employs a collection of unique decorators that are either accomplished by styles added on top of Arches or are collections of Utility Classes to make the effect. Bellow are the list of standardized decorators in the design. 
+
+
+Styleguide Recipes CVQualtiy.Decorator
+*/
+/*
+Dividers
+
+There are many dividers in the design. Bellow are the types and how to create them. 
+| Style Combo     | Effect                                                            | Classes                       |
+| --------------- | ----------------------------------------------------------------- | ----------------------------- |
+| item-divider    | dividing items from eachother like between paragraphs.            | br_secondary-4 br_dashed br_1 |
+| group-divider   | A mid weight divider to show the differnce between grouped items. | br_accent br_dotted br_1      |
+| section-divider | A strong division between Secotions of a page                     | br_primary br_solid br_2      |
+| spacer          | No decoration but adds space between objects                      | br_0                          |
+
+
+
+Markup:
+<hr class="divider br_dotted br_accent">
+<p>Est veniam anim duis ex irure occaecat velit voluptate. Exercitation incididunt ea esse duis voluptate esse veniam est officia id voluptate. In labore cupidatat do nulla anim labore. Esse ipsum velit sunt eu eiusmod fugiat sit culpa. Qui occaecat adipisicing minim minim minim ipsum esse ut id adipisicing duis duis. Esse esse ut amet ullamco. Est excepteur sunt laboris anim.</p>
+<hr class="divider  br_dashed br_secondary-4">
+<strong>There is a spacer between the two sentences</strong>
+<p>Cupidatat id incididunt tempor magna consectetur laboris cillum laborum. Enim non reprehenderit eiusmod nisi velit veniam ea eiusmod esse aute proident. Laborum pariatur consequat cillum est officia exercitation esse et consectetur ea ad sint. Sunt esse do cupidatat laborum. Deserunt occaecat id tempor consectetur velit pariatur nulla fugiat sit laboris ipsum.</p>
+<hr class="br_none"/>
+<p>Est veniam anim duis ex irure occaecat velit voluptate. Exercitation incididunt ea esse duis voluptate esse veniam est officia id voluptate. In labore cupidatat do nulla anim labore. Esse ipsum velit sunt eu eiusmod fugiat sit culpa. Qui occaecat adipisicing minim minim minim ipsum esse ut id adipisicing duis duis. Esse esse ut amet ullamco. Est excepteur sunt laboris anim.</p>
+<hr class="br_2 br_primary br_solid">
+<p>Est veniam anim duis ex irure occaecat velit voluptate. Exercitation incididunt ea esse duis voluptate esse veniam est officia id voluptate. In labore cupidatat do nulla anim labore. Esse ipsum velit sunt eu eiusmod fugiat sit culpa. Qui occaecat adipisicing minim minim minim ipsum esse ut id adipisicing duis duis. Esse esse ut amet ullamco. Est excepteur sunt laboris anim.</p>
+
+Styleguide Recipes CVQualtiy.Decorator.Dividers
 */
 /**  Utility Classes    *********************************/
 /*
@@ -9214,15 +9296,15 @@ Styleguide Typography
 }
 
 .font_display {
-  font-family: "Lato",Verdana,Helvetica,sans-serif;;
+  font-family: "Maven Pro",Verdana,Helvetica,sans-serif;;
 }
 
 .font_copy {
-  font-family: "Muli","Open Sans","system",sans-serif;
+  font-family: "Lato","Open Sans","system-ui",sans-serif;
 }
 
 .font_ui {
-  font-family: "Muli","Open Sans","system",sans-serif;
+  font-family: "Lato","Open Sans","system-ui",sans-serif;
 }
 
 .font_mono {

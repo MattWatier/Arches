@@ -3,41 +3,11 @@
 
 	The use of Utiltiy Class give us the ablitiy to create much of the UI needed for CV Quality without expanding on the base of the styles that are written.  Included are patterns to create some of the complex UI inside of CV Quality.
 
-	Weight: 2000
+	Weight: 3000
 
-	Styleguide Recipes.CVQUALITY
+	Styleguide Recipes CVQualtiy
 
 */
 @import "recipes/cvquality/_cvquality._footer";
 @import "recipes/cvquality/_cvquality._cards";
-
-/*
-Decorators
-
-The Cvquality design employs a collection of unique decorators that are either accomplished by styles added on top of Arches or are collections of Utility Classes to make the effect. Bellow are the list of standardized decorators in the design. 
-
-
-Styleguide Recipes CVQualtiy.Decorator
-*/
-
-/*
-Dividers
-
-There are many divi. 
-
-.triangle_left   -  left placed triangle.
-.triangle_right   -  right placed triangle.
-.triangle_bottom   -  bottom placed triangle.
-.triangle_top   -  top placed triangle.
-
-Markup:
-<div class="bg_primary-5 br_1 br_secondary-4 br_radius card highlighted shadow_1 ">
- <div class="{{modifier_class}} br_secondary-4"><h2 class="bg_tansparent br-b_0 c_accent c_secondary-n4 card-header font_1 font_2:md font_bold font_display p-b_3 p-x_3 p-x_3:md p-x_4:lg uppercase">Highlighted Card</h2>
-  <div class="card-body font_0 font_1:md font_ui lh_2 p-b_0 p-x_3 p-x_3:md p-x_4:lg p-y_0">
-    <p>Repudiandae adipisci illum omnis et suscipit at amet ex. Error magni laborum autem et rerum porro asperiores sunt. Et veritatis rerum voluptas hic eum sint. Ipsa labore eos autem cupiditate ut molestiae sit fugiat. Rerum sit dolorem veritatis est quia nesciunt tenetur ut. Animi earum illo sed incidunt fuga.</p>
-  </div>
-   <div class="bg_tansparent br-t_0 card-footer p-t_0 p-x_3 p-x_3:md p-x_4:lg"> <a href="#" class="btn btn-block btn-primary font_0:md font_n1">Action</a></div></div>
-</div>
-
-Styleguide Recipes CVQualtiy.Decorator.Triangles
-*/
+@import "recipes/cvquality/_cvquality._decorators";

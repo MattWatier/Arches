@@ -22,8 +22,8 @@ Highlighted Cards are stylized cards with a soft blue background and changes all
 
 
 Markup:
-<div class="bg_primary-5 br_1 br_primary-4 br_radius card highlighted shadow_1">
- <h2 class="bg_tansparent br-b_0 c_accent c_secondary-n4 card-header font_1 font_2:md font_bold font_display p-b_3 p-x_3 p-x_3:md p-x_4:lg uppercase">Highlighted Card</h2>
+<div class="bg_primary-5 br_primary-4 br_radius card highlighted">
+ <h2 class="bg_tansparent br-b_0 c_accent c_secondary-n4 card-header font_1 font_2:md font_3:lg p-b_3 p-x_3 p-x_3:md p-x_4:lg uppercase">Highlighted Card</h2>
   <div class="card-body font_0 font_1:md font_ui lh_2 p-b_0 p-x_3 p-x_3:md p-x_4:lg p-y_0">
     <p>Repudiandae adipisci illum omnis et suscipit at amet ex. Error magni laborum autem et rerum porro asperiores sunt. Et veritatis rerum voluptas hic eum sint. Ipsa labore eos autem cupiditate ut molestiae sit fugiat. Rerum sit dolorem veritatis est quia nesciunt tenetur ut. Animi earum illo sed incidunt fuga.</p>
   </div>
@@ -48,8 +48,8 @@ Placing cards inside of content areas is needed within the design.  Placing some
 
 
 Markup:
-<div class="bg_primary-5 br_1 br_primary-4 br_radius card highlighted shadow_1 max-w_1 clear_right float_right w_50 w_40\:md w_20\:lg ">
- <h2 class="bg_tansparent br-b_0 c_accent c_secondary-n4 card-header font_1 font_2:md font_bold font_display p-b_3 p-x_3 p-x_3:md p-x_4:lg uppercase">Positioned Small Right</h2>
+<div class="bg_primary-alt br_1 br_primary-4 br_radius card highlighted shadow_1 max-w_1 clear_right float_right w_50 w_40\:md w_20\:lg ">
+ <h2 class="bg_tansparent br-b_0 c_accent c_secondary-n4 card-header font_1 font_2:md font_display p-b_3 p-x_3 p-x_3:md p-x_4:lg uppercase">Positioned Small Right</h2>
   <div class="card-body font_0 font_1:md font_ui lh_2 p-b_0 p-x_3 p-x_3:md p-x_4:lg p-y_0">
   <p class=" font_n2"> Container Classes:max-w_1 clear_right float_right w_50 w_40:md w_20:lg</p>  
   <p>Repudiandae adipisci illum omnis et suscipit at amet ex. Error magni laborum autem et rerum porro asperiores sunt. Et veritatis rerum voluptas hic eum sint. Ipsa labore eos autem cupiditate ut molestiae sit fugiat. Rerum sit dolorem veritatis est quia nesciunt tenetur ut. Animi earum illo sed incidunt fuga.</p>
@@ -67,7 +67,7 @@ Info Cards are stylized cards with a warm grey background and changes all header
 
 Markup:
 <div class="bg_secondary-4 br_radius card info shadow_n1 br_0">
- <h2 class="bg_tansparent br-b_0 c_secondary-n4 card-header font_1 font_2:md font_bold font_display p-b_3 p-x_3 p-x_3:md p-x_4:lg">Info Card</h2>
+ <h2 class="bg_tansparent br-b_0 c_secondary-n4 card-header font_1 font_2:md font_display p-b_3 p-x_3 p-x_3:md p-x_4:lg">Info Card</h2>
   <div class="card-body font_0 font_1:md font_ui lh_2 p-b_0 p-x_3 p-x_3:md p-x_4:lg p-y_0">
     <p>aliqua mollit consectetur labore ipsum velit officia nulla anim magna est id elit irure qui dolor exercitation incididunt exercitation proident anim officia veniam reprehenderit laboris incididunt irure enim amet esse</p>
   </div>
@@ -75,4 +75,38 @@ Markup:
 </div>
 
 Styleguide Recipes CVQualtiy.Cards.Info
+*/
+
+/*
+Notice Card
+
+Notice Cards are side notes usually associated with an action button.
+
+Markup:
+<div class="bg_primary-alt br_1  br_secondary-4 card info text_center">
+ <h2 class="bg_tansparent br-b_0 br_secondary-4 c_primary-n2 card-header font_1 font_2:md font_3:lg font_display p-b_3 p-x_3 p-x_3:md p-x_4:lg triangle_left">Notice Card</h2>
+  <div class="card-body font_0 font_1:md font_ui lh_2 p-b_0 p-x_3 p-x_3:md p-x_4:lg p-y_0">
+    <p>aliqua mollit consectetur labore ipsum velit officia nulla anim magna est id elit irure qui dolor exercitation incididunt exercitation proident anim officia veniam reprehenderit laboris incididunt irure enim amet esse</p>
+  </div>
+   <div class="bg_tansparent br-t_0 card-footer p-t_0 p-x_3 p-x_3:md p-x_4:lg"> <a href="#" class="btn btn-block btn-primary font_0:md font_n1">Action</a></div>
+</div>
+
+Styleguide Recipes CVQualtiy.Cards.Notice
+*/
+
+/*
+Notice Card Alt
+
+Notice Cards are side notes usually associated with an action button.
+
+Markup:
+<div class="bg_secondary-4 br_0   card info text_center">
+ <h2 class="bg_tansparent br-b_0 br_accent-alt c_accent card-header font_1 font_2:md font_3:lg font_display p-b_3 p-x_3 p-x_3:md p-x_4:lg triangle_left">Notice Card</h2>
+  <div class="card-body font_0 font_1:md font_ui lh_2 p-b_0 p-x_3 p-x_3:md p-x_4:lg p-y_0">
+    <p>aliqua mollit consectetur labore ipsum velit officia nulla anim magna est id elit irure qui dolor exercitation incididunt exercitation proident anim officia veniam reprehenderit laboris incididunt irure enim amet esse</p>
+  </div>
+   <div class="bg_tansparent br-t_0 card-footer p-t_0 p-x_3 p-x_3:md p-x_4:lg"> <a href="#" class="btn btn-block btn-secondary font_0:md font_n1">Action</a></div>
+</div>
+
+Styleguide Recipes CVQualtiy.Cards.Notice Alt
 */

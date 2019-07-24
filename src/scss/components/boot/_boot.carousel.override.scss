@@ -1,5 +1,5 @@
 /*
-Carousel
+Carousel ALT
 
 A slide-show component for cycling through groups of images and text.
 .no-controls            Will remove left and right arrow
@@ -105,9 +105,13 @@ $carousel-control-font-size: ms(1);
 		li {
 			text-indent: -9999px;
 			overflow: hidden;
-			border-color: get-themecolor(secondary, 5);
+			border: none;
 			border-radius: $global-border-round;
-
+			box-sizing: content-box;
+			width: 12px;
+			height: 12px;
+			margin-top: 5px;
+			margin-bottom: 5px;
 			&.active {
 				border-color: get-themcolor(accent);
 				background-color: get-themcolor(accent);
@@ -199,7 +203,7 @@ $carousel-control-font-size: ms(1);
 					}
 
 					&.active {
-						background-color: gget-themecolor(secondary, -1);
+						background-color: get-themecolor(secondary, -1);
 						color: white;
 						border-right: get-themecolor(accent, 0) 10px solid;
 						padding-right: 10px;

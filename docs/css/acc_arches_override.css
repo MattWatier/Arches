@@ -10169,12 +10169,12 @@
 #acc_arches_override .radius,
 #acc_arches_override .radius .switch-paddle,
 #acc_arches_override .radius .switch-paddle::after {
-  border-radius: 0.3333333333rem;
+  border-radius: 6px;
 }
 #acc_arches_override .round,
 #acc_arches_override .round .switch-paddle,
 #acc_arches_override .round .switch-paddle::after {
-  border-radius: 1rem;
+  border-radius: 25px;
 }
 #acc_arches_override .circle,
 #acc_arches_override .circle .switch-paddle,

@@ -11,9 +11,9 @@ Markup:
 		Home
 	</div>
 	<!-- This is the inner footer that we cache -->
-	<div id="footer" role="contentinfo" class="bg_secondary-2 flex flex_column flex_inline flex_row:md flex_wrap p-x_3 p-y_0:lg p-y_4 w_100">
+	<div id="footer" role="contentinfo" class="bg_secondary-1 flex flex_column flex_inline flex_row:md flex_wrap p-x_3 p-y_0:lg p-y_4 w_100">
 		<div class="br-l_1 br_so br_solid:lg br_white-3 flex_auto font_ui m-l_4:lg m-y_4:lg order-1 p-l_3:md p-l_4:lg p-y_4:md p-x_0 p-x_3 p-y_4:lg w-grid_2:lg w-grid_6:md">
-			<h2 class="br-b_1 br_dotted:md br_white-6 c_secondary-n4 font_0:md font_1 font_bold font_display m-b_0:md m-b_2 m-b_2:lg m-t_4:md p-b_3 table-cell vertical-align_bottom w_10" style="height: 4rem;">
+			<h2 class="br-b_1 br_dotted:md br_white-6 c_secondary-n4 font_0:md font_1 font_display m-b_0:md m-b_2 m-b_2:lg m-t_4:md p-b_3 table-cell vertical-align_bottom w_10" style="height: 4rem;">
 				Quality Improvement for Institutions:
 			</h2>
 			<ul class="font_n1:lg font_0 font_ui m-b_4 p-t_2 ul_none">
@@ -40,7 +40,7 @@ Markup:
 			</ul>
 		</div>
 		<div class="br-r_1 br_0 br_solid:lg br_white-3 flex_auto font_ui m-r_4:lg m-y_4:lg order-1 p-r_4:lg p-x_3 p-y_4:md w-grid_2:lg w-grid_6:md">
-			<h2 class="br-b_1 br_dotted:md font_1 br_white-6 c_secondary-n5 font_0:md font_bold font_display m-b_0 m-b_2:lg m-t_4:md nowrap p-b_3 table-cell vertical-align_bottom w_10" style="height: 4rem;">
+			<h2 class="br-b_1 br_dotted:md font_1 br_white-6 c_secondary-n5 font_0:md font_display m-b_0 m-b_2:lg m-t_4:md nowrap p-b_3 table-cell vertical-align_bottom w_10" style="height: 4rem;">
 <span class="inline-block w_100 w_100%">				Offerings:
     </span>		</h2>
 			<ul class="font_n1:lg font_0 font_ui m-b_4 p-t_2 ul_none">
@@ -85,8 +85,8 @@ Markup:
 					<h4 class="m-b_0 font_bold m-b_2:md font_copy font_normal font_1:md font_2 m-t_4:md">
 						Heart House
 					</h4>
-					<div class="flex flex_column flex_column:lg flex_row:md font_0 font_ui">
-						<ul class="flex_auto p-r_4 ul_none w_10:md w_100:lg">
+					<div class="flex flex_column flex_row:md font_n1 lh_1 font_ui">
+						<ul class="flex_auto p-r_4 ul_none w_10:md w_50:lg">
 							<li class="m-b_1 m-b_2:md font_normal">
 								<span class="street-address">2400 N. St. NW</span>
 							</li>
@@ -98,22 +98,22 @@ Markup:
 								<span class="postal-code">20037</span>
 							</li>
 							<li class="m-b_1 m-b_2:md font_normal">
-								<a href="mailto:resource@acc.org" class="email c_secondary-n3 h:c_secondary-n4 h:underline">
+								<a href="mailto:resource@acc.org" class="email c_secondary-n4 h:c_secondary-n5 h:underline">
 									<strong class="p-r_2">Email:</strong>
 									<span class="">resource@acc.org</span></a>
 							</li>
 						</ul>
-						<ul class="flex_auto p-l_0:lg p-l_4:md ul_none w_100:lg w_50:md">
+						<ul class="flex_auto p-l_0:lg p-l_4:md ul_none w_50:lg w_50:md">
 							<li class="m-b_1 m-b_2:md font_normal">
-								<a tel="+12023756000" href="tel:+12023756000" class="tel c_secondary-n3 h:c_secondary-n4 h:underline">
+								<a tel="+12023756000" href="tel:+12023756000" class="tel c_secondary-n4 h:c_secondary-n5 h:underline">
 									<strong class="p-r_2">Phone:</strong><span class="">(202) 375-6000, ext. 5603</span></a>
 							</li>
 							<li class="m-b_1 m-b_2:md font_normal">
-								<a tel="+18002574737" href="tel:+18002534636.5603" class="tel c_secondary-n3 h:c_secondary-n4 h:underline">
+								<a tel="+18002574737" href="tel:+18002534636.5603" class="tel c_secondary-n4 h:c_secondary-n5 h:underline">
 									<strong class="p-r_2">Toll Free:</strong><span class="">(800) 253-4636, ext. 5603</span></a>
 							</li>
 							<li class="m-b_1 m-b_2:md font_normal">
-								<a fax="+12023757000" href="fax:+12023757000" class="fax c_secondary-n3 h:c_secondary-n4 h:underline">
+								<a fax="+12023757000" href="fax:+12023757000" class="fax c_secondary-n4 h:c_secondary-n5 h:underline">
 									<strong class="p-r_2">Fax:</strong>
 									<span class="">(202) 375-7000</span>
 								</a>
@@ -125,7 +125,7 @@ Markup:
 		</div>
 		<div class="flex_auto order-10 order_last p-x_3 p-y_4:lg relative w-grid_3:lg w-grid_6:md">
 			<section class="acc-websites m-y_3">
-				<nav class="font_ui w_100 font_0"><h3 class="br-b_1 br_dotted br_white-4 c_secondary-n4 font_1 font_bold font_display m-b_2 p-b_3 w_100">Improving Cardiovascular Care</h3>
+				<nav class="font_ui w_100 font_0"><h3 class="br-b_1 br_dotted br_white-4 c_secondary-n4 font_1 font_display m-b_2 p-b_3 w_100">Improving Cardiovascular Care</h3>
 					<ul class="lh_4 ul_none">
 						<li class="">
 							<a target="_blank" class="block c_secondary-5 h:bg_black-2 h:c_white flex" href="http://www.acc.org">
@@ -231,6 +231,6 @@ Markup:
 
 Weight: -50
 
-Styleguide Recipes CVQualtiy.Footer
+Styleguide Recipes CVQualtiy.Navs.Footer
 
 */

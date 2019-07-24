@@ -22,7 +22,7 @@ $warm-grey-light: #d6d4d4;
 $warm-grey-dark: #696668;
 $off-white: #fafafa;
 $off-black: $black;
-$soft-blue: #a4cded;
+$soft-blue: #d2e6f6;
 $soft-grey: #eceaea;
 $error-color: #990000;
 $scrub-teal: #0088aa;
@@ -48,6 +48,9 @@ $mix-orange_teal: #acbd65;
 }
 .br_mix-orange-teal {
 	border-color: $mix-orange_teal !important;
+}
+.bg_primary-alt {
+	background-color: $soft-blue !important;
 }
 .bg_accent-alt {
 	background-color: $orange-light !important;
@@ -195,24 +198,36 @@ $colors: map-merge(
 
 $fonts: (
 	display: (
-		name: "Lato",
-		stack: '"Lato",Verdana,Helvetica,sans-serif;'
+		name: "Maven Pro",
+		stack: '"Maven Pro",Verdana,Helvetica,sans-serif;'
 	),
 	copy: (
-		name: "Muli",
-		stack: '"Muli","Open Sans","system",sans-serif'
+		name: "Lato",
+		stack: '"Lato","Open Sans","system-ui",sans-serif'
 	),
 	ui: (
-		name: "Muli",
-		stack: '"Muli","Open Sans","system",sans-serif'
+		name: "Lato",
+		stack: '"Lato","Open Sans","system-ui",sans-serif'
 	)
 );
 
 // Reset Values of Utlity-css.vars.scss
 
-$value-to-unit: map-deep-set($value-to-unit, "font-family" "display", map-deep-get($fonts, "display", "stack"));
-$value-to-unit: map-deep-set($value-to-unit, "font-family" "copy", map-deep-get($fonts, "copy", "stack"));
-$value-to-unit: map-deep-set($value-to-unit, "font-family" "ui", map-deep-get($fonts, "ui", "stack"));
+$value-to-unit: map-deep-set(
+	$value-to-unit,
+	"font-family" "display",
+	map-deep-get($fonts, "display", "stack")
+);
+$value-to-unit: map-deep-set(
+	$value-to-unit,
+	"font-family" "copy",
+	map-deep-get($fonts, "copy", "stack")
+);
+$value-to-unit: map-deep-set(
+	$value-to-unit,
+	"font-family" "ui",
+	map-deep-get($fonts, "ui", "stack")
+);
 
 $style-definition: map-deep-set(
 	$style-definition,

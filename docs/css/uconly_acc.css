@@ -10400,13 +10400,13 @@ Styleguide Borders.Colors.Black
 .radius,
 .radius .switch-paddle,
 .radius .switch-paddle::after {
-  border-radius: 0.3333333333rem;
+  border-radius: 6px;
 }
 
 .round,
 .round .switch-paddle,
 .round .switch-paddle::after {
-  border-radius: 1rem;
+  border-radius: 25px;
 }
 
 .circle,

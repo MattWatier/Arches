@@ -141,7 +141,17 @@ $style-definition: map-deep-set(
 
 $global-radus-on: false;
 $global-border-radius: 6px;
+$value-to-unit: map-deep-set(
+	$value-to-unit,
+	"radius" "radius",
+	$global-border-radius
+);
 $global-border-round: 25px;
+$value-to-unit: map-deep-set(
+	$value-to-unit,
+	"radius" "round",
+	$global-border-round
+);
 $basicSizeMultiplier: 1rem;
 
 $h1-font-size: map-deep-get($value-to-unit, font-size, 5);
