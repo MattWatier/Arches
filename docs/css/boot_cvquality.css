@@ -152,7 +152,7 @@ Weight: 1
 Styleguide DesignBase.Colors.Full Pallate
 
 */
-.gradient_teal,
+.gradient_teal, .btn-primary,
 .h\:gradient_teal:hover {
   background: #047294;
   /* Old browsers */
@@ -167,7 +167,7 @@ Styleguide DesignBase.Colors.Full Pallate
   /* W3C */
 }
 
-.gradient_teal-reverse,
+.gradient_teal-reverse, .btn-primary:hover,
 .h\:gradient_teal-reverse:hover {
   background: #047294;
   /* Old browsers */
@@ -182,7 +182,7 @@ Styleguide DesignBase.Colors.Full Pallate
   /* W3C */
 }
 
-.gradient_grey,
+.gradient_grey, .btn-secondary,
 .h\:gradient_grey-reverse:hover {
   background: #a1a0a4;
   /* Old browsers */
@@ -197,7 +197,7 @@ Styleguide DesignBase.Colors.Full Pallate
   /* W3C */
 }
 
-.gradient_grey-reverse,
+.gradient_grey-reverse, .btn-secondary:hover,
 .h\:gradient_grey-reverse:hover {
   background: #696668;
   /* Old browsers */
@@ -8552,7 +8552,7 @@ Jumbotron are hero content areas. Larger marketing text with a colored backgroun
 
 Weight: 50
 
-Styleguide Recipes CVQualtiyContainers.Jumbotron
+Styleguide Recipes CVQualtiy.Containers.Jumbotron
 
 */
 .jumbotron:before {
@@ -8603,6 +8603,103 @@ Styleguide Recipes CVQualtiyContainers.Jumbotron
 }
 .jumbotron .container {
   z-index: 3;
+}
+
+/*
+Triangles
+
+Colored Triangles are used through out the cvquality design.  To add triangle that adhears to the side of a container and takes on the color of the border color of the container. 
+
+.triangle_left   -  left placed triangle.
+.triangle_right   -  right placed triangle.
+.triangle_bottom   -  bottom placed triangle.
+.triangle_top   -  top placed triangle.
+
+Markup:
+<div class="bg_primary-5 br_1 br_secondary-4 br_radius card highlighted shadow_1 ">
+ <div class="{{modifier_class}} br_secondary-4"><h2 class="bg_tansparent br-b_0 c_accent c_secondary-n4 card-header font_1 font_2:md font_bold font_display p-b_3 p-x_3 p-x_3:md p-x_4:lg uppercase">Highlighted Card</h2>
+  <div class="card-body font_0 font_1:md font_ui lh_2 p-b_0 p-x_3 p-x_3:md p-x_4:lg p-y_0">
+    <p>Repudiandae adipisci illum omnis et suscipit at amet ex. Error magni laborum autem et rerum porro asperiores sunt. Et veritatis rerum voluptas hic eum sint. Ipsa labore eos autem cupiditate ut molestiae sit fugiat. Rerum sit dolorem veritatis est quia nesciunt tenetur ut. Animi earum illo sed incidunt fuga.</p>
+  </div>
+   <div class="bg_tansparent br-t_0 card-footer p-t_0 p-x_3 p-x_3:md p-x_4:lg"> <a href="#" class="btn btn-block btn-primary font_0:md font_n1">Action</a></div></div>
+</div>
+
+Styleguide Recipes CVQualtiy.Decorator.Triangles
+*/
+*[class*=triangle] {
+  position: relative;
+}
+
+*[class*=triangle]::before {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  content: "";
+}
+
+.triangle_left::before,
+.triangle_right::before {
+  top: 50%;
+  margin-top: -0.5em;
+}
+
+.triangle_top::before,
+.triangle_bottom::before {
+  left: 50%;
+  margin-left: -0.5em;
+}
+
+.triangle_left {
+  margin-left: 0.75em;
+}
+
+.triangle_right {
+  margin-right: 0.75em;
+}
+
+.triangle_top {
+  margin-top: 0.75em;
+}
+
+.triangle_bottom {
+  margin-bottom: 0.75em;
+}
+
+.triangle_left::before {
+  left: -0.75em;
+  border-width: 0.5em 0 0.5em 0.75em;
+  border-top-color: #0000;
+  border-right-color: #0000;
+  border-bottom-color: #0000;
+  border-left-color: inherit;
+}
+
+.triangle_right::before {
+  right: -0.75em;
+  border-width: 0.5em 0.75em 0.5em 0;
+  border-top-color: #0000;
+  border-right-color: inherit;
+  border-bottom-color: #0000;
+  border-left-color: #0000;
+}
+
+.triangle_top::before {
+  top: -0.75em;
+  border-width: 0.75em 0.5em 0 0.5em;
+  border-top-color: inherit;
+  border-right-color: #0000;
+  border-bottom-color: #0000;
+  border-left-color: #0000;
+}
+
+.triangle_bottom::before {
+  bottom: -0.75em;
+  border-width: 0 0.5em 0.75em 0.5em;
+  border-top-color: #0000;
+  border-right-color: #0000;
+  border-bottom-color: inherit;
+  border-left-color: #0000;
 }
 
 /*
@@ -8665,6 +8762,8 @@ Styleguide  Recipes Bootstrap.BootNav
 	CVquality Recipes
 
 	The use of Utiltiy Class give us the ablitiy to create much of the UI needed for CV Quality without expanding on the base of the styles that are written.  Included are patterns to create some of the complex UI inside of CV Quality.
+
+	Weight: 2000
 
 	Styleguide Recipes.CVQUALITY
 
@@ -8902,8 +9001,83 @@ Markup:
 
 Weight: -50
 
-Styleguide Recipes CVQualtiyFooter
+Styleguide Recipes CVQualtiy.Footer
 
+*/
+/*
+Cards
+
+Basic Cards
+
+Markup:
+<div class="card">
+ <h3 class="card-header">Basic Card</h3>
+  <div class="card-body">
+    <p>cupidatat eu dolor dolor aliquip aliqua velit esse magna culpa qui fugiat ad culpa consectetur sint tempor elit dolor eu anim nisi quis consectetur laborum laboris proident consectetur mollit esse</p>
+  </div>
+   <div class="card-footer"> <a href="#" class="btn btn-primary btn-block">Action</a></div>
+</div>
+
+Styleguide Recipes CVQualtiy.Cards
+*/
+/*
+Highlighted Card
+
+Highlighted Cards are stylized cards with a soft blue background and changes all header sizes and text to a bit larger. These cards are used as hero area or for extra interest.
+
+
+Markup:
+<div class="bg_primary-5 br_1 br_primary-4 br_radius card highlighted shadow_1">
+ <h2 class="bg_tansparent br-b_0 c_accent c_secondary-n4 card-header font_1 font_2:md font_bold font_display p-b_3 p-x_3 p-x_3:md p-x_4:lg uppercase">Highlighted Card</h2>
+  <div class="card-body font_0 font_1:md font_ui lh_2 p-b_0 p-x_3 p-x_3:md p-x_4:lg p-y_0">
+    <p>Repudiandae adipisci illum omnis et suscipit at amet ex. Error magni laborum autem et rerum porro asperiores sunt. Et veritatis rerum voluptas hic eum sint. Ipsa labore eos autem cupiditate ut molestiae sit fugiat. Rerum sit dolorem veritatis est quia nesciunt tenetur ut. Animi earum illo sed incidunt fuga.</p>
+  </div>
+   <div class="bg_tansparent br-t_0 card-footer p-t_0 p-x_3 p-x_3:md p-x_4:lg"> <a href="#" class="btn btn-block btn-primary font_0:md font_n1">Action</a></div>
+</div>
+
+Styleguide Recipes CVQualtiy.Cards.Highlight
+*/
+/*
+Card Positions
+
+Placing cards inside of content areas is needed within the design.  Placing some utility classes will acomplish this with a responsive toggle. 
+| Style Combo       | Effect                                          | Classes                                                   |
+| ----------------- | ----------------------------------------------- | --------------------------------------------------------- |
+| position-right-lg | floats the card when the veiwport is large up.  | max-w_1 clear_right\:lg float_right\:lg w_20:lg           |
+| position-right-md | floats the card when the veiwport is medium up. | max-w_1 clear_right\:md float_right\:md w_40\:md w_20\:lg |
+| position-right-sm | floats the card when the veiwport is small up.  | max-w_1 clear_right float_right w_50 w_40\:md w_20\:lg    |
+| position-left-lg  | floats the card when the veiwport is small up.  | max-w_1 clear_left\:lg float_left\:lg w_20:lg             |
+| position-left-md  | floats the card when the veiwport is medium up. | max-w_1 clear_left\:md float_left\:md w_40\:md w_20\:lg   |
+| position-left-sm  | floats the card when the veiwport is large up.  | max-w_1 clear_left float_left w_50 w_40\:md w_20\:lg      |
+
+
+Markup:
+<div class="bg_primary-5 br_1 br_primary-4 br_radius card highlighted shadow_1 max-w_1 clear_right float_right w_50 w_40\:md w_20\:lg ">
+ <h2 class="bg_tansparent br-b_0 c_accent c_secondary-n4 card-header font_1 font_2:md font_bold font_display p-b_3 p-x_3 p-x_3:md p-x_4:lg uppercase">Positioned Small Right</h2>
+  <div class="card-body font_0 font_1:md font_ui lh_2 p-b_0 p-x_3 p-x_3:md p-x_4:lg p-y_0">
+  <p class=" font_n2"> Container Classes:max-w_1 clear_right float_right w_50 w_40:md w_20:lg</p>  
+  <p>Repudiandae adipisci illum omnis et suscipit at amet ex. Error magni laborum autem et rerum porro asperiores sunt. Et veritatis rerum voluptas hic eum sint. Ipsa labore eos autem cupiditate ut molestiae sit fugiat. Rerum sit dolorem veritatis est quia nesciunt tenetur ut. Animi earum illo sed incidunt fuga.</p>
+  </div>
+   <div class="bg_tansparent br-t_0 card-footer p-t_0 p-x_3 p-x_3:md p-x_4:lg"> <a href="#" class="btn btn-block btn-primary font_0:md font_n1">Action</a></div>
+</div>
+
+Styleguide Recipes CVQualtiy.Cards.Positon
+*/
+/*
+Info Card
+
+Info Cards are stylized cards with a warm grey background and changes all headers to bold.  These cards are side notes to the main content
+
+Markup:
+<div class="bg_secondary-4 br_radius card info shadow_n1 br_0">
+ <h2 class="bg_tansparent br-b_0 c_secondary-n4 card-header font_1 font_2:md font_bold font_display p-b_3 p-x_3 p-x_3:md p-x_4:lg">Info Card</h2>
+  <div class="card-body font_0 font_1:md font_ui lh_2 p-b_0 p-x_3 p-x_3:md p-x_4:lg p-y_0">
+    <p>aliqua mollit consectetur labore ipsum velit officia nulla anim magna est id elit irure qui dolor exercitation incididunt exercitation proident anim officia veniam reprehenderit laboris incididunt irure enim amet esse</p>
+  </div>
+   <div class="bg_tansparent br-t_0 card-footer p-t_0 p-x_3 p-x_3:md p-x_4:lg"> <a href="#" class="btn btn-block btn-primary font_0:md font_n1">Action</a></div>
+</div>
+
+Styleguide Recipes CVQualtiy.Cards.Info
 */
 /**  Utility Classes    *********************************/
 /*
@@ -12945,6 +13119,41 @@ Markup:
 Styleguide Spacing.Location
 
  */
+/*
+Clear
+
+<div class="p-b_3"><span class="bg_accent br_radius c_white inline-block font_n1 p-7_3 p-x_5 sg">Is Responsive: breakpoint modifiers</span></div>Quickly alter the position type and location of an object with 'absolute' and 'top'
+
+unset  		- unset positioned block 
+inital  		- inital positioned block 
+inherit  		- inherit positioned block 
+relative  		- relative positioned block 
+absolute   		- absolute positioned block
+fixed   			- fixed positioned block 
+sticky   		- sticky positioned block
+
+
+
+Markup:
+<div class="br_solid br_transparent bg_accent-3 relative p_5" style="height:200px;">
+	<div class="bg_primary-5 text_center {{modifier_class}}">Position {{modifier_class}}</div>
+</div>
+
+Styleguide Spacing.Position
+
+ */
+.clear_both {
+  clear: both;
+}
+
+.clear_left {
+  clear: left;
+}
+
+.clear_right {
+  clear: right;
+}
+
 .float_unset {
   float: unset;
 }
@@ -12977,6 +13186,18 @@ Styleguide Spacing.Location
   .float_right\:md {
     float: right;
   }
+
+  .clear_both\:md {
+    clear: both;
+  }
+
+  .clear_left\:md {
+    clear: left;
+  }
+
+  .clear_right\:md {
+    clear: right;
+  }
 }
 @media only screen and (min-width : 1024px) {
   .float_unset\:lg {
@@ -12993,6 +13214,18 @@ Styleguide Spacing.Location
 
   .float_right\:lg {
     float: right;
+  }
+
+  .clear_both\:lg {
+    clear: both;
+  }
+
+  .clear_left\:lg {
+    clear: left;
+  }
+
+  .clear_right\:lg {
+    clear: right;
   }
 }
 /*
@@ -14391,6 +14624,10 @@ Markup:
 Styleguide Background.Color.Shades
 
  */
+.bg_tansparent {
+  background-color: transparent !important;
+}
+
 .bg_primary {
   background-color: #0088aa !important;
 }
@@ -15366,7 +15603,7 @@ Styleguide Borders.Colors.Black
   border-radius: 0px;
 }
 
-.br_radius {
+.br_radius, .btn-primary, .btn-secondary {
   border-radius: 0.3333333333rem;
 }
 
@@ -16029,7 +16266,7 @@ Styleguide Borders.Colors.Black
   border-width: 0;
 }
 
-.br_0 {
+.br_0, .btn-primary, .btn-secondary {
   border-width: 0px;
 }
 

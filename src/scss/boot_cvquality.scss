@@ -229,21 +229,9 @@ $fonts: (
 
 // Reset Values of Utlity-css.vars.scss
 
-$value-to-unit: map-deep-set(
-	$value-to-unit,
-	"font-family" "display",
-	map-deep-get($fonts, "display", "stack")
-);
-$value-to-unit: map-deep-set(
-	$value-to-unit,
-	"font-family" "copy",
-	map-deep-get($fonts, "copy", "stack")
-);
-$value-to-unit: map-deep-set(
-	$value-to-unit,
-	"font-family" "ui",
-	map-deep-get($fonts, "ui", "stack")
-);
+$value-to-unit: map-deep-set($value-to-unit, "font-family" "display", map-deep-get($fonts, "display", "stack"));
+$value-to-unit: map-deep-set($value-to-unit, "font-family" "copy", map-deep-get($fonts, "copy", "stack"));
+$value-to-unit: map-deep-set($value-to-unit, "font-family" "ui", map-deep-get($fonts, "ui", "stack"));
 
 $style-definition: map-deep-set(
 	$style-definition,
@@ -262,7 +250,7 @@ $style-definition: map-deep-set(
 );
 
 $global-radus-on: false;
-$global-border-radius: 6px;
+$global-border-radius: 5px;
 $global-border-round: 25px;
 $basicSizeMultiplier: 1rem;
 
@@ -364,7 +352,24 @@ h3 {
 @import "styleguide/__basic-html.boot";
 @import "components/boot/_boot.carousel.override";
 @import "components/cvquality/cvquality.boot._navbar.override";
-@import "components/cvquality/cvquality.jumbotron.scss";
+@import "components/cvquality/cvquality.jumbotron";
+@import "components/cvquality/cvquality.triangle";
+.btn-primary {
+	@extend .br_0;
+	@extend .br_radius;
+	@extend .gradient_teal;
+	&:hover {
+		@extend .gradient_teal-reverse;
+	}
+}
+.btn-secondary {
+	@extend .br_0;
+	@extend .br_radius;
+	@extend .gradient_grey;
+	&:hover {
+		@extend .gradient_grey-reverse;
+	}
+}
 /*
 	Bootstrap Recipes
 
@@ -382,10 +387,13 @@ Styleguide  Recipes Bootstrap
 
 	The use of Utiltiy Class give us the ablitiy to create much of the UI needed for CV Quality without expanding on the base of the styles that are written.  Included are patterns to create some of the complex UI inside of CV Quality.
 
+	Weight: 2000
+
 	Styleguide Recipes.CVQUALITY
 
 */
 @import "recipes/cvquality/_cvquality._footer";
+@import "recipes/cvquality/_cvquality._cards";
 /**  Utility Classes    *********************************/
 @import "utility-css/utility-css";
 

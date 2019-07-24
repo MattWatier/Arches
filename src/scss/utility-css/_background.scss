@@ -67,7 +67,9 @@ Markup:
 Styleguide Background.Color.Shades
  
  */
-
+.bg_tansparent {
+	background-color: transparent !important;
+}
 @each $color-name, $color in $theme-palette {
 	@include color-loop(background-color, $color-name, $color);
 }
@@ -78,20 +80,8 @@ Styleguide Background.Color.Shades
 #{ class-name-constructor(background-color, black)} {
 	background-color: $black;
 }
-@include loop-transparent(
-	background-transparent,
-	black,
-	"",
-	"!important",
-	false
-);
-@include loop-transparent(
-	background-transparent,
-	white,
-	"",
-	"!important",
-	false
-);
+@include loop-transparent(background-transparent, black, "", "!important", false);
+@include loop-transparent(background-transparent, white, "", "!important", false);
 /*
   Background Colors Alpha
  
