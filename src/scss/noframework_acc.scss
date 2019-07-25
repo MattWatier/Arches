@@ -528,7 +528,8 @@ Styleguide Credit Colors.#{$color-name-alt }
 @import "styleguide/__basic-html.base";
 @import "structures/structures";
 /* content Recipes.200 */
-@import "recipes/no_frame/noframe.ebiz";
+@import "recipes/layout-demos/noframe.ebiz";
+@import "recipes/layout-demos/_noframe.eduCollectionPage.scss";
 /**  Utility Classes    *********************************/
 @import "utility-css/utility-css";
 
