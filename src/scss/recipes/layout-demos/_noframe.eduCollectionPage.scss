@@ -157,25 +157,41 @@ Markup:
 				</ul>
 			</div>
 		</div>
-		<p class="bg_acc c_white font_display m-b_0 m-x_n5 p_5">
-			<strong
-				>We are grateful to these distinguished Members of the American College of Cardiology who contributed to
-				this collection.<br /><br />Pamela B. Morris, MD, FACC, FAHA, FASPC, FNLA (Chair)</strong
-			><br />Director, Seinsheimer Cardiovascular Health Program<br />Co-Director, Women's Heart Care<br />Medical
-			University of South Carolina<br /><br /><strong>Kim K. Birtcher, PharmD, MS, AACC, FNLA</strong
-			><br />Clinical Professor<br />University of Houston College of Pharmacy<br /><br /><strong
-				>Roger S. Blumenthal, MD, FACC</strong
-			><br />Director, Ciccarone div for the Prevention of Cardiovascular Disease<br />Johns Hopkins Hospital<br /><br /><strong
-				>Carl E. Orringer, MD, FACC</strong
-			><br />Associate Professor of Medicine<br />Director, Preventive Cardiovascular Medicine<br />Cardiovascular
-			Division<br />University of Miami Miller School of Medicine<br /><br />
-		</p>
-
-		<p class="bg_secondary-n1 br-bl_radius br-br_radius c_white font_display m--y_0 m-x_n5 m-y_0 p_5">
+		<div class="bg_acc c_white font_display m-b_0 m-x_n5 p_5">
+	<strong>We are grateful to these distinguished Members of the American College of Cardiology who contributed to this
+		collection.</strong>
+	<ul class="flex flex_wrap ul_none">
+		<li class="flex_auto m-y_4 p-r_5 w_50" style="
+    box-sizing: border-box;
+">
+			<strong class="block font_bold">Pamela B. Morris, MD, FACC, FAHA, FASPC, FNLA (Chair)</strong>
+			<span class="block">Director, Seinsheimer Cardiovascular Health Program</span>
+			<span class="block">Co-Director, Women's Heart Care</span>
+			<span class="block font_italic">Medical University of South Carolina</span>
+		</li>
+		<li class="flex_auto m-y_4 w_50">
+			<strong class="block font_bold">Kim K. Birtcher, PharmD, MS, AACC, FNLA</strong>
+			<span class="block">Clinical Professor</span>
+			<span class="block font_italic">University of Houston College of Pharmacy</span>
+		</li>
+		<li class="flex_auto m-y_4 w_50">
+			<strong class="block font_bold">Roger S. Blumenthal, MD, FACC</strong>
+			<span class="block">Director, Ciccarone div for the Prevention of Cardiovascular Disease</span>
+			<span class="block font_italic">Johns Hopkins Hospital</span>
+		</li>
+		<li class="flex_auto m-y_4 w_50">
+			<strong class="block font_bold">Carl E. Orringer, MD, FACC</strong>
+			<span class="block">Associate Professor of Medicine</span>
+			<span class="block">Director, Preventive Cardiovascular Medicine Cardiovascular Division</span>
+			<span class="block font_italic">University of Miami Miller School of Medicine</span>
+		</li>
+	</ul>
+</div>
+		<div class="bg_secondary-n1 br-bl_radius br-br_radius c_white font_display m--y_0 m-x_n5 m-y_0 p_5">
 			This initiative is a part of multi-project series developed by the ACC using data analytics, ACC clinical
 			algorithms, and the PINNACLE Registry to focus and TRANSFORM the delivery of care for patients.<br /><br />TRANSFORM
 			LDL-C Risk is funded by Sanofi and Regeneron in partnership with the American College of Cardiology.
-		</p>
+		</div>
 	</div>
 </div>
 

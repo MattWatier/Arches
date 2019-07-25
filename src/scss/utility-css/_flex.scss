@@ -18,7 +18,9 @@
 	Styleguide display.flex
 
  */
-
+.flex > * {
+	box-sizing: border-box;
+}
 .flex {
 	display: flex;
 }
