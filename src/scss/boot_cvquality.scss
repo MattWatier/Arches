@@ -20,7 +20,7 @@ $theme-palette: ();
 /**  ACC Brands    *********************************/
 $teal: #0088aa;
 $green-blue: #16a385;
-$grey-secondary: #696668;
+$warm-grey-dark: #817c7b;
 $dark-grey: #676a72;
 $alt-grey: #a3988c;
 $green: #078a2e;
@@ -38,7 +38,7 @@ $orange-dark: #e87d1e;
 $orange-light: #ffc425;
 $warm-grey: #a1a0a4;
 $warm-grey-light: #d6d4d4;
-$warm-grey-dark: #696668;
+$warm-grey-dark: #817c7b;
 $off-white: #fafafa;
 $off-black: $black;
 $soft-blue: #d2e6f6;
@@ -232,21 +232,9 @@ $fonts: (
 
 // Reset Values of Utlity-css.vars.scss
 
-$value-to-unit: map-deep-set(
-	$value-to-unit,
-	"font-family" "display",
-	map-deep-get($fonts, "display", "stack")
-);
-$value-to-unit: map-deep-set(
-	$value-to-unit,
-	"font-family" "copy",
-	map-deep-get($fonts, "copy", "stack")
-);
-$value-to-unit: map-deep-set(
-	$value-to-unit,
-	"font-family" "ui",
-	map-deep-get($fonts, "ui", "stack")
-);
+$value-to-unit: map-deep-set($value-to-unit, "font-family" "display", map-deep-get($fonts, "display", "stack"));
+$value-to-unit: map-deep-set($value-to-unit, "font-family" "copy", map-deep-get($fonts, "copy", "stack"));
+$value-to-unit: map-deep-set($value-to-unit, "font-family" "ui", map-deep-get($fonts, "ui", "stack"));
 
 $style-definition: map-deep-set(
 	$style-definition,
