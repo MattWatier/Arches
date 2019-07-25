@@ -18,7 +18,7 @@ var merge = require("merge-stream");
 var header = require("gulp-header");
 var fs = require("fs");
 var pkg = require("./package.json");
-var run = require("gulp-run-command").default;
+var run = require('gulp-run');
 
 var banner = [
 	"/**",
@@ -56,11 +56,11 @@ var PATHS = {
 };
 
 // Style Tasks
-gulp.task("style", function() {
+gulp.task("style", function () {
 	console.log("Gulp Style Tasks");
 	console.log("Gulp: I am making this pretty.");
 	var plugins = [
-		postcssNormalize(/* pluginOptions */),
+		postcssNormalize( /* pluginOptions */ ),
 		pixrem(),
 		cssDeclarationSorter({
 			order: "smacss"
@@ -77,7 +77,7 @@ gulp.task("style", function() {
 	var min = css
 		.pipe(clone())
 		.pipe(
-			rename(function(path) {
+			rename(function (path) {
 				path.extname = ".min.css";
 			})
 		)
@@ -90,7 +90,7 @@ gulp.task("style", function() {
 		.pipe(gulp.dest(SOURCE.DIST + SOURCE.CSS));
 });
 
-gulp.task("fontawesome", function() {
+gulp.task("fontawesome", function () {
 	console.log("Gulp Font Awesome Tasks");
 	console.log("Gulp: Going to the store node_modules to pick up some fonts.");
 	return gulp
@@ -101,7 +101,7 @@ gulp.task("fontawesome", function() {
 		.pipe(gulp.dest(SOURCE.DIST + "/icons"));
 });
 
-gulp.task("dist", function() {
+gulp.task("dist", function () {
 	console.log("Gulp Dist Package");
 	console.log(
 		"Gulp: Gosh my back is tired. Moving boxes from Assets to the styleguide"
@@ -112,14 +112,14 @@ gulp.task("dist", function() {
 		})
 		.pipe(gulp.dest(SOURCE.DIST));
 });
-gulp.task("copy", function() {
+gulp.task("copy", function () {
 	console.log("Gulp Copy Dist Package to Docs");
 	console.log(
 		"Gulp: Gosh my back is tired. Moving boxes from Assets to the styleguide"
 	);
 	return gulp.src("./dist/**/*").pipe(gulp.dest(SOURCE.DOCS));
 });
-gulp.task("construct", function() {
+gulp.task("construct", function () {
 	var base = gulp
 		.src(PATHS.SCSS + "/gulp_header/__utilityclasses.scss")
 		.pipe(rename("uc_base.scss"));
@@ -128,8 +128,7 @@ gulp.task("construct", function() {
 		.pipe(rename("noframework_acc.scss"))
 		.pipe(
 			header(
-				fs.readFileSync(PATHS.SCSS + "/recipes/__recipes.noframe.scss", "utf8"),
-				{
+				fs.readFileSync(PATHS.SCSS + "/recipes/__recipes.noframe.scss", "utf8"), {
 					pkg: pkg
 				}
 			)
@@ -139,8 +138,7 @@ gulp.task("construct", function() {
 				fs.readFileSync(
 					PATHS.SCSS + "/components/__components.uc_only.scss",
 					"utf8"
-				),
-				{
+				), {
 					pkg: pkg
 				}
 			)
@@ -150,40 +148,35 @@ gulp.task("construct", function() {
 				fs.readFileSync(
 					PATHS.SCSS + "/components/__components.base.scss",
 					"utf8"
-				),
-				{
+				), {
 					pkg: pkg
 				}
 			)
 		)
 		.pipe(
 			header(
-				fs.readFileSync(PATHS.SCSS + "/styleguide/_color-codes.scss", "utf8"),
-				{
+				fs.readFileSync(PATHS.SCSS + "/styleguide/_color-codes.scss", "utf8"), {
 					pkg: pkg
 				}
 			)
 		)
 		.pipe(
 			header(
-				fs.readFileSync(PATHS.SCSS + "/gulp_header/__setup.base.scss", "utf8"),
-				{
+				fs.readFileSync(PATHS.SCSS + "/gulp_header/__setup.base.scss", "utf8"), {
 					pkg: pkg
 				}
 			)
 		)
 		.pipe(
 			header(
-				fs.readFileSync(PATHS.SCSS + "/gulp_header/__brand.base.scss", "utf8"),
-				{
+				fs.readFileSync(PATHS.SCSS + "/gulp_header/__brand.base.scss", "utf8"), {
 					pkg: pkg
 				}
 			)
 		)
 		.pipe(
 			header(
-				fs.readFileSync(PATHS.SCSS + "/gulp_header/__brand.acc.scss", "utf8"),
-				{
+				fs.readFileSync(PATHS.SCSS + "/gulp_header/__brand.acc.scss", "utf8"), {
 					pkg: pkg
 				}
 			)
@@ -201,8 +194,7 @@ gulp.task("construct", function() {
 				fs.readFileSync(
 					PATHS.SCSS + "/components/__components.uc_only.scss",
 					"utf8"
-				),
-				{
+				), {
 					pkg: pkg
 				}
 			)
@@ -212,40 +204,35 @@ gulp.task("construct", function() {
 				fs.readFileSync(
 					PATHS.SCSS + "/components/__components.base.scss",
 					"utf8"
-				),
-				{
+				), {
 					pkg: pkg
 				}
 			)
 		)
 		.pipe(
 			header(
-				fs.readFileSync(PATHS.SCSS + "/styleguide/_color-codes.scss", "utf8"),
-				{
+				fs.readFileSync(PATHS.SCSS + "/styleguide/_color-codes.scss", "utf8"), {
 					pkg: pkg
 				}
 			)
 		)
 		.pipe(
 			header(
-				fs.readFileSync(PATHS.SCSS + "/gulp_header/__setup.base.scss", "utf8"),
-				{
+				fs.readFileSync(PATHS.SCSS + "/gulp_header/__setup.base.scss", "utf8"), {
 					pkg: pkg
 				}
 			)
 		)
 		.pipe(
 			header(
-				fs.readFileSync(PATHS.SCSS + "/gulp_header/__brand.base.scss", "utf8"),
-				{
+				fs.readFileSync(PATHS.SCSS + "/gulp_header/__brand.base.scss", "utf8"), {
 					pkg: pkg
 				}
 			)
 		)
 		.pipe(
 			header(
-				fs.readFileSync(PATHS.SCSS + "/gulp_header/__brand.acc.scss", "utf8"),
-				{
+				fs.readFileSync(PATHS.SCSS + "/gulp_header/__brand.acc.scss", "utf8"), {
 					pkg: pkg
 				}
 			)
@@ -261,8 +248,7 @@ gulp.task("construct", function() {
 		.pipe(rename("zurb_acc.scss"))
 		.pipe(
 			header(
-				fs.readFileSync(PATHS.SCSS + "/recipes/__recipes.zurb.scss", "utf8"),
-				{
+				fs.readFileSync(PATHS.SCSS + "/recipes/__recipes.zurb.scss", "utf8"), {
 					pkg: pkg
 				}
 			)
@@ -272,8 +258,7 @@ gulp.task("construct", function() {
 				fs.readFileSync(
 					PATHS.SCSS + "/components/__components.zurb.scss",
 					"utf8"
-				),
-				{
+				), {
 					pkg: pkg
 				}
 			)
@@ -283,32 +268,28 @@ gulp.task("construct", function() {
 				fs.readFileSync(
 					PATHS.SCSS + "/components/__components.base.scss",
 					"utf8"
-				),
-				{
+				), {
 					pkg: pkg
 				}
 			)
 		)
 		.pipe(
 			header(
-				fs.readFileSync(PATHS.SCSS + "/gulp_header/__setup.zurb.scss", "utf8"),
-				{
+				fs.readFileSync(PATHS.SCSS + "/gulp_header/__setup.zurb.scss", "utf8"), {
 					pkg: pkg
 				}
 			)
 		)
 		.pipe(
 			header(
-				fs.readFileSync(PATHS.SCSS + "/gulp_header/__brand.base.scss", "utf8"),
-				{
+				fs.readFileSync(PATHS.SCSS + "/gulp_header/__brand.base.scss", "utf8"), {
 					pkg: pkg
 				}
 			)
 		)
 		.pipe(
 			header(
-				fs.readFileSync(PATHS.SCSS + "/gulp_header/__brand.acc.scss", "utf8"),
-				{
+				fs.readFileSync(PATHS.SCSS + "/gulp_header/__brand.acc.scss", "utf8"), {
 					pkg: pkg
 				}
 			)
@@ -324,16 +305,14 @@ gulp.task("construct", function() {
 		.pipe(rename("boot_acc.scss"))
 		.pipe(
 			header(
-				fs.readFileSync(PATHS.SCSS + "/recipes/__recipes.acc.scss", "utf8"),
-				{
+				fs.readFileSync(PATHS.SCSS + "/recipes/__recipes.acc.scss", "utf8"), {
 					pkg: pkg
 				}
 			)
 		)
 		.pipe(
 			header(
-				fs.readFileSync(PATHS.SCSS + "/recipes/__recipes.boot.scss", "utf8"),
-				{
+				fs.readFileSync(PATHS.SCSS + "/recipes/__recipes.boot.scss", "utf8"), {
 					pkg: pkg
 				}
 			)
@@ -343,8 +322,7 @@ gulp.task("construct", function() {
 				fs.readFileSync(
 					PATHS.SCSS + "/components/__components.acc.scss",
 					"utf8"
-				),
-				{
+				), {
 					pkg: pkg
 				}
 			)
@@ -354,8 +332,7 @@ gulp.task("construct", function() {
 				fs.readFileSync(
 					PATHS.SCSS + "/components/__components.boot.scss",
 					"utf8"
-				),
-				{
+				), {
 					pkg: pkg
 				}
 			)
@@ -365,48 +342,42 @@ gulp.task("construct", function() {
 				fs.readFileSync(
 					PATHS.SCSS + "/components/__components.base.scss",
 					"utf8"
-				),
-				{
+				), {
 					pkg: pkg
 				}
 			)
 		)
 		.pipe(
 			header(
-				fs.readFileSync(PATHS.SCSS + "/gulp_header/__setup.boot.scss", "utf8"),
-				{
+				fs.readFileSync(PATHS.SCSS + "/gulp_header/__setup.boot.scss", "utf8"), {
 					pkg: pkg
 				}
 			)
 		)
 		.pipe(
 			header(
-				fs.readFileSync(PATHS.SCSS + "/gulp_header/__brand.base.scss", "utf8"),
-				{
+				fs.readFileSync(PATHS.SCSS + "/gulp_header/__brand.base.scss", "utf8"), {
 					pkg: pkg
 				}
 			)
 		)
 		.pipe(
 			header(
-				fs.readFileSync(PATHS.SCSS + "/gulp_header/__brand.acc.scss", "utf8"),
-				{
+				fs.readFileSync(PATHS.SCSS + "/gulp_header/__brand.acc.scss", "utf8"), {
 					pkg: pkg
 				}
 			)
 		)
 		.pipe(
 			header(
-				"/**Set Active Class for Bootstrap **/ \n $active-class-name: 'active';\n",
-				{
+				"/**Set Active Class for Bootstrap **/ \n $active-class-name: 'active';\n", {
 					pkg: pkg
 				}
 			)
 		)
 		.pipe(
 			header(
-				"/** Utility Class Built on top of Bootstrap 4.3 with ACC Branding **/",
-				{
+				"/** Utility Class Built on top of Bootstrap 4.3 with ACC Branding **/", {
 					pkg: pkg
 				}
 			)
@@ -420,16 +391,14 @@ gulp.task("construct", function() {
 				fs.readFileSync(
 					PATHS.SCSS + "/recipes/__recipes.cvquality.scss",
 					"utf8"
-				),
-				{
+				), {
 					pkg: pkg
 				}
 			)
 		)
 		.pipe(
 			header(
-				fs.readFileSync(PATHS.SCSS + "/recipes/__recipes.boot.scss", "utf8"),
-				{
+				fs.readFileSync(PATHS.SCSS + "/recipes/__recipes.boot.scss", "utf8"), {
 					pkg: pkg
 				}
 			)
@@ -439,8 +408,7 @@ gulp.task("construct", function() {
 				fs.readFileSync(
 					PATHS.SCSS + "/components/__components.cvquality.scss",
 					"utf8"
-				),
-				{
+				), {
 					pkg: pkg
 				}
 			)
@@ -450,8 +418,7 @@ gulp.task("construct", function() {
 				fs.readFileSync(
 					PATHS.SCSS + "/components/__components.boot.scss",
 					"utf8"
-				),
-				{
+				), {
 					pkg: pkg
 				}
 			)
@@ -461,32 +428,28 @@ gulp.task("construct", function() {
 				fs.readFileSync(
 					PATHS.SCSS + "/components/__components.base.scss",
 					"utf8"
-				),
-				{
+				), {
 					pkg: pkg
 				}
 			)
 		)
 		.pipe(
 			header(
-				fs.readFileSync(PATHS.SCSS + "/base/__cvquality.base.scss", "utf8"),
-				{
+				fs.readFileSync(PATHS.SCSS + "/base/__cvquality.base.scss", "utf8"), {
 					pkg: pkg
 				}
 			)
 		)
 		.pipe(
 			header(
-				fs.readFileSync(PATHS.SCSS + "/gulp_header/__setup.boot.scss", "utf8"),
-				{
+				fs.readFileSync(PATHS.SCSS + "/gulp_header/__setup.boot.scss", "utf8"), {
 					pkg: pkg
 				}
 			)
 		)
 		.pipe(
 			header(
-				fs.readFileSync(PATHS.SCSS + "/gulp_header/__brand.base.scss", "utf8"),
-				{
+				fs.readFileSync(PATHS.SCSS + "/gulp_header/__brand.base.scss", "utf8"), {
 					pkg: pkg
 				}
 			)
@@ -496,24 +459,21 @@ gulp.task("construct", function() {
 				fs.readFileSync(
 					PATHS.SCSS + "/gulp_header/__brand.cvquality.scss",
 					"utf8"
-				),
-				{
+				), {
 					pkg: pkg
 				}
 			)
 		)
 		.pipe(
 			header(
-				"/**Set Active Class for Bootstrap **/ \n $active-class-name: 'active';\n",
-				{
+				"/**Set Active Class for Bootstrap **/ \n $active-class-name: 'active';\n", {
 					pkg: pkg
 				}
 			)
 		)
 		.pipe(
 			header(
-				"/** Utility Class Built on top of Bootstrap 4.3 with CVQuality Branding **/",
-				{
+				"/** Utility Class Built on top of Bootstrap 4.3 with CVQuality Branding **/", {
 					pkg: pkg
 				}
 			)
@@ -522,8 +482,7 @@ gulp.task("construct", function() {
 	return merge(uconly, zurb_acc, boot_acc, noframe_acc, boot_cvquality)
 		.pipe(
 			header(
-				fs.readFileSync(PATHS.SCSS + "/gulp_header/__preheader.scss", "utf8"),
-				{
+				fs.readFileSync(PATHS.SCSS + "/gulp_header/__preheader.scss", "utf8"), {
 					pkg: pkg
 				}
 			)
@@ -536,7 +495,7 @@ gulp.task("construct", function() {
 		.pipe(gulp.dest(PATHS.SCSS));
 });
 
-gulp.task("watch", function() {
+gulp.task("watch", function () {
 	console.log("Gulp Watch Tasks");
 	console.log(
 		"Gulp: I will be watching you.... even when you sleep..... creapy"
@@ -549,11 +508,11 @@ gulp.task("watch", function() {
 
 gulp.task(
 	"styleguide",
-	gulp.series(
-		run(
+	function () {
+		return run(
 			"npm run index && npm run uc && npm run zurb_acc &&  npm run boot_acc &&  npm run boot_cvquality"
-		)
-	)
+		).exec();
+	}
 );
 
 gulp.task("build", gulp.series("construct", "style", "dist", "copy"));
