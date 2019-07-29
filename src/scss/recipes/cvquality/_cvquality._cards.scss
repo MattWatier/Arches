@@ -280,3 +280,128 @@ Markup:
 
     Styleguide Recipes CVQualtiy.Cards.Date Event
 */
+/*
+Testimonial Card
+
+Graphic areas that hold testimonials.
+
+Markup:
+<div class="card testimonial">
+	<header class="card-header bg_primary-alt br_primary-3 br_solid br_1">
+		<img
+			class="card-img br_raund img-thumbnail"
+			src="https://unsplash.it/200/200?random=0.08080712330559026"
+		/>
+	</header>
+	<div class="card-body">
+		<article class="blockquote">
+			<p>cillum tempor aliquip amet commodo aute qui veniam Lorem cillum sunt laboris consectetur nisi cillum</p>
+			<cite class="blockquote-cite">Someone famous</cite>
+		</article>
+	</div>
+</div>
+
+ Styleguide Recipes CVQualtiy.Cards.Testimonials
+ 
+*/
+/*
+Product Card
+
+Graphic areas that hold a snippet of a product.
+
+Markup:
+<div class="card product">
+  <header class="card-header bg_secondary-3">
+     <img class="card-img" src="https://cvquality.acc.org/images/default-source/accreditation/afbutton.jpg?sfvrsn=f32980bf_2" alt="">
+  </header>
+  <div class="card-body">
+    <article>
+     <h2 class="m-0">incididunt est culpa</h2>
+      <p>aliqua adipisicing sint exercitation nostrud pariatur amet ut est fugiat excepteur ad elit mollit cillum</p>
+      <a class="btn btn-primary" href="#">Link To Product &nbsp; <i class="fa fa-external-link-square"></i></a>
+    </article>
+  </div>
+</div>
+
+
+ Styleguide Recipes CVQualtiy.Cards.Products
+ 
+*/
+
+/*
+Webinar
+
+Graphic areas that hold a snippet of a webinar.
+| Classes          | Effect                       |
+| ---------------- | ---------------------------- |
+| .ep-webinar      | Changes the product graphic. |
+| .afib-webinar    | Changes the product graphic. |
+| .cathlab-webinar | Changes the product graphic. |
+| .cpc-webinar     | Changes the product graphic. |
+| .fsed-webinar    | Changes the product graphic. |
+| .hf-webinar      | Changes the product graphic. |
+
+.ep-webinar      	- 	 Changes the product graphic.
+.afib-webinar    	- 	 Changes the product graphic.
+.cathlab-webinar 	- 	 Changes the product graphic.
+.cpc-webinar     	- 	 Changes the product graphic.
+.fsed-webinar    	- 	 Changes the product graphic.
+.hf-webinar      	- 	 Changes the product graphic.
+
+Markup:
+<div class="card flex_row:md br_none bg_secondary-4">
+    <div class="card-header flex_shrink">
+        <div class="webinar   {{modifier_class}}"></div>
+			<div class="action">
+				<a class="btn btn-block">View Webinar <i class="fa fa-play-circle" aria-hidden="true"></i></a>
+			</div>
+    </div>
+    <div class="card-body flex_auto">
+        <div class="title">
+        	<a>labore ad nisi velit labore commodo nisi tempor occaecat fugiat anim commodo</a>
+        </div>
+        <div class="view-time"><strong>View Time:</strong>&nbsp;<span>71 minutes</span></div>
+    </div>
+</div>
+
+
+ Styleguide Recipes CVQualtiy.Cards.Webinar
+ 
+*/
+
+/*
+Webinar Buttons
+
+Graphic areas that hold a snippet of a webinar.
+| Style Combo | Effect                                                             | Classes                                      |
+| ----------- | ------------------------------------------------------------------ | -------------------------------------------- |
+| primary     | Alters the button style to a btn-primary instead of just a link.   | btn-primary c_white                          |
+| secondary   | Alters the button style to a btn-secondary instead of just a link. | btn-secondary c_white                        |
+| success     | Alters the button style to a btn-success instead of just a link.   | bg_success h:bg_success-n2 br_radius c_white |
+
+
+
+.btn-primary.c_white                            -  Alters the button style to a btn-primary instead of just a link.  
+.btn-secondary.c_white                          -  Alters the button style to a btn-secondary instead of just a link.
+.bg_success.h:bg_success-n2.br_radius.c_white   -  Alters the button style to a btn-success instead of just a link.  
+
+Markup:
+<div class="card flex_row:md br_none bg_secondary-4">
+    <div class="card-header flex_shrink">
+        <div class="webinar"></div>
+			<div class="action">
+				<a class="btn btn-block  {{modifier_class}}">View Webinar <i class="fa fa-play-circle" aria-hidden="true"></i></a>
+			</div>
+    </div>
+    <div class="card-body flex_auto">
+        <div class="title">
+        	<a>labore ad nisi velit labore commodo nisi tempor occaecat fugiat anim commodo</a>
+        </div>
+        <div class="view-time"><strong>View Time:</strong>&nbsp;<span>71 minutes</span></div>
+    </div>
+</div>
+
+
+ Styleguide Recipes CVQualtiy.Cards.Webinar
+ 
+*/

@@ -98,22 +98,3 @@ Styleguide DesignBase.Seals
 		content: map-deep-get($seal, tiny, alt);
 	}
 }
-
-/*
-Background Position
-
-Seals in the design come in 3 variations the default, small, and tiny.  All Seals will maintain their aspect ratios and will respond to the container, but seals have a max width.  For 508 compliance, please place the brand name in the seal.
-
-.bg_left	            - cardnial left
-.bg_top	            - cardnial left
-.bg_right	          - cardnial left
-.bg_bottom           - cardnial left
-
-Markup:
-   <div class="bg_secondary-2 max-w_1 br_solid br_primary br_1"><div class="{{modifier_class}} seal_tiny" style="background-size:10%;width:200px; height:20px"><span class="alt">{{modifier_class}}</span></div></div>
-
-Styleguide Background.Image Positon
-
-*/
-
-@include loop-style(background-position, "", "!important");

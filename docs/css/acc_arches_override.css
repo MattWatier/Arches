@@ -2513,22 +2513,6 @@
 
   */
   /*
-  Background Position
-
-  Seals in the design come in 3 variations the default, small, and tiny.  All Seals will maintain their aspect ratios and will respond to the container, but seals have a max width.  For 508 compliance, please place the brand name in the seal.
-
-  .bg_left	            - cardnial left
-  .bg_top	            - cardnial left
-  .bg_right	          - cardnial left
-  .bg_bottom           - cardnial left
-
-  Markup:
-     <div class="bg_secondary-2 max-w_1 br_solid br_primary br_1"><div class="{{modifier_class}} seal_tiny" style="background-size:10%;width:200px; height:20px"><span class="alt">{{modifier_class}}</span></div></div>
-
-  Styleguide Background.Image Positon
-
-  */
-  /*
 
   Lorem Text Loader
 
@@ -4240,6 +4224,57 @@
 
    */
   /*
+  Background Position
+
+  For many images you will need top place background images in to a cardnial location.
+
+  .bg_left	            - cardnial left
+  .bg_top	            - cardnial top
+  .bg_right	          - cardnial right
+  .bg_bottom           - cardnial bottom
+  .bg_center           - cardnial center center
+
+  Markup:
+     <div class="bg_secondary-2 max-w_1 br_solid br_primary br_1"><div class="{{modifier_class}} seal_tiny" style="background-size:10%;width:200px; height:20px"><span class="alt">{{modifier_class}}</span></div></div>
+
+  Styleguide Background.Image Positon
+
+  */
+  /*
+  Background Size
+
+  For many images you will need top place background images in to a cardnial location.
+
+  .bg_unset	            - removes any css background size 
+  .bg_auto           - auto
+  .bg_cover	            - cover
+  .bg_contain	          - contain
+
+
+  Markup:
+     <div class="bg_secondary-2 max-w_1 br_solid br_primary br_1"><div class="{{modifier_class}} seal_tiny" style="background-size:10%;width:200px; height:20px"><span class="alt">{{modifier_class}}</span></div></div>
+
+  Styleguide Background.Image Positon
+
+  */
+  /*
+  Background Size
+
+  For many images you will need top place background images in to a cardnial location.
+
+  .bg_unset	            - removes any css background size 
+  .bg_auto           - auto
+  .bg_cover	            - cover
+  .bg_contain	          - contain
+
+
+  Markup:
+     <div class="bg_secondary-2 max-w_1 br_solid br_primary br_1"><div class="{{modifier_class}} seal_tiny" style="background-size:10%;width:200px; height:20px"><span class="alt">{{modifier_class}}</span></div></div>
+
+  Styleguide Background.Image Positon
+
+  */
+  /*
   Textures
 
   All textures in the Arches design are a subtle variation of transparent.   Allowing for colors to bleed through from behind.  Different textures have intentions or are reserved for certain usagaes.  It is easy to apply textures using the texture utlities. 
@@ -5723,21 +5758,6 @@
 }
 #acc_arches_override .seal_tiny > span.alt-text:before {
   content: "Seal of the American College Of Cardiology";
-}
-#acc_arches_override .bg_left {
-  background-position: left center !important;
-}
-#acc_arches_override .bg_right {
-  background-position: right center !important;
-}
-#acc_arches_override .bg_top {
-  background-position: center top !important;
-}
-#acc_arches_override .bg_bottom {
-  background-position: center bottom !important;
-}
-#acc_arches_override .bg_center {
-  background-position: center center !important;
 }
 #acc_arches_override div[class*=aspect_],
 #acc_arches_override .lorem-loader {
@@ -8787,6 +8807,11 @@
     right: 2rem;
   }
 }
+#acc_arches_override .clear_fix:after {
+  display: table;
+  clear: both;
+  content: "";
+}
 #acc_arches_override .clear_both {
   clear: both;
 }
@@ -10153,6 +10178,48 @@
 }
 #acc_arches_override .bg_white-none {
   background-color: white !important;
+}
+#acc_arches_override .bg_left {
+  background-position: left center !important;
+}
+#acc_arches_override .bg_right {
+  background-position: right center !important;
+}
+#acc_arches_override .bg_top {
+  background-position: center top !important;
+}
+#acc_arches_override .bg_bottom {
+  background-position: center bottom !important;
+}
+#acc_arches_override .bg_center {
+  background-position: center center !important;
+}
+#acc_arches_override .bg_unset {
+  background-size: unset;
+}
+#acc_arches_override .bg_auto {
+  background-size: auto;
+}
+#acc_arches_override .bg_cover {
+  background-size: cover;
+}
+#acc_arches_override .bg_contain {
+  background-size: contain;
+}
+#acc_arches_override .bg_no-repeat {
+  background-repeat: no-repeat;
+}
+#acc_arches_override .bg_repeat {
+  background-repeat: repeat;
+}
+#acc_arches_override .bg_repeat-x {
+  background-repeat: no-repeat;
+}
+#acc_arches_override .bg_repeat-y {
+  background-repeat: no-repeat;
+}
+#acc_arches_override .bg_space {
+  background-repeat: space;
 }
 #acc_arches_override .texture_light {
   background-image: url("../img/whisper.png");

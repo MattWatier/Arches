@@ -11,9 +11,9 @@ Markup:
 		Home
 	</div>
 	<!-- This is the inner footer that we cache -->
-	<div id="footer" role="contentinfo" class="bg_secondary-1 flex flex_column flex_inline flex_row:md flex_wrap p-x_3 p-y_0:lg p-y_4 w_100">
+	<div id="footer" role="contentinfo" class="bg_secondary-2 flex flex_column flex_inline flex_row:md flex_wrap p-x_3 p-y_0:lg p-y_4 w_100">
 		<div class="br-l_1 br_so br_solid:lg br_white-3 flex_auto font_ui m-l_4:lg m-y_4:lg order-1 p-l_3:md p-l_4:lg p-y_4:md p-x_0 p-x_3 p-y_4:lg w-grid_2:lg w-grid_6:md">
-			<h2 class="br-b_1 br_dotted:md br_white-6 c_secondary-n4 font_0:md font_1 font_display m-b_0:md m-b_2 m-b_2:lg m-t_4:md p-b_3 table-cell vertical-align_bottom w_10" style="height: 4rem;">
+			<h2 class="br-b_1 br_dotted:md br_dotted:lg br_white-6 c_secondary-n4 font_0:md font_1 font_ui font_bold m-b_0:md m-b_2 m-b_2:lg m-t_4:md p-b_3 table-cell vertical-align_bottom w_10" style="height: 4rem;">
 				Quality Improvement for Institutions:
 			</h2>
 			<ul class="font_n1:lg font_0 font_ui m-b_4 p-t_2 ul_none">
@@ -40,9 +40,7 @@ Markup:
 			</ul>
 		</div>
 		<div class="br-r_1 br_0 br_solid:lg br_white-3 flex_auto font_ui m-r_4:lg m-y_4:lg order-1 p-r_4:lg p-x_3 p-y_4:md w-grid_2:lg w-grid_6:md">
-			<h2 class="br-b_1 br_dotted:md font_1 br_white-6 c_secondary-n5 font_0:md font_display m-b_0 m-b_2:lg m-t_4:md nowrap p-b_3 table-cell vertical-align_bottom w_10" style="height: 4rem;">
-<span class="inline-block w_100 w_100%">				Offerings:
-    </span>		</h2>
+			<h2 class="br-b_1 br_dotted:md br_dotted:lg font_1 br_white-6 c_secondary-n5 font_0:md font_ui font_bold m-b_0 m-b_2:lg m-t_4:md nowrap p-b_3 table-cell vertical-align_bottom w_10" style="height: 4rem;">Offerings:</h2>
 			<ul class="font_n1:lg font_0 font_ui m-b_4 p-t_2 ul_none">
 				<li class="nav-item text-indent_n1 p-l_4 p-l_r">
 					<a class="nav-link c_white h:underline p-y_0" href="/NCDR-Home" id="msFooter_rptOfferings_hypLnk_0" target="_top">
@@ -125,7 +123,7 @@ Markup:
 		</div>
 		<div class="flex_auto order-10 order_last p-x_3 p-y_4:lg relative w-grid_3:lg w-grid_6:md">
 			<section class="acc-websites m-y_3">
-				<nav class="font_ui w_100 font_0"><h3 class="br-b_1 br_dotted br_white-4 c_secondary-n4 font_1 font_display m-b_2 p-b_3 w_100">Improving Cardiovascular Care</h3>
+				<nav class="font_ui w_100 font_0"><h3 class="br-b_1 br_dotted br_white-4 c_secondary-n4 font_0 font_ui font_bold m-b_2 p-b_3 w_100">Improving Cardiovascular Care</h3>
 					<ul class="lh_4 ul_none">
 						<li class="">
 							<a target="_blank" class="block c_secondary-5 h:bg_black-2 h:c_white flex" href="http://www.acc.org">
@@ -160,7 +158,7 @@ Markup:
 					</ul>
 				</nav>
 			</section>
-			<section class="absolute:lg b_4 l_0 m-t_4 p-t_5 r_0 relative social">
+			<section class="b_4 l_0 m-t_4 p-t_5 r_0 social">
 				<ul class="flex social-bar ul_none c_white h:c_white m_0">
 					<li class="flex_auto m-r_2">
 						<a href="https://twitter.com/accintouch" target="_blank" class="twitter social-bar--button block m-b_0 p_3 c_white text_center opacity_7 h:opacity"><i class="fab fa-twitter-square"></i></a>

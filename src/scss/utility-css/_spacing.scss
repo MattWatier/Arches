@@ -244,6 +244,12 @@ Markup:
 Styleguide Spacing.Position
 
  */
+.clear_fix:after {
+	content: "";
+	clear: both;
+	display: table;
+}
+
 .clear_both {
 	clear: both;
 }

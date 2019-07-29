@@ -108,3 +108,86 @@ Styleguide Background.Color.Shades
   Styleguide Background.Color.With Alphas
  
  */
+
+/*
+Background Position
+
+For many images you will need top place background images in to a cardnial location.
+
+.bg_left	            - cardnial left
+.bg_top	            - cardnial top
+.bg_right	          - cardnial right
+.bg_bottom           - cardnial bottom
+.bg_center           - cardnial center center
+
+Markup:
+   <div class="bg_secondary-2 max-w_1 br_solid br_primary br_1"><div class="{{modifier_class}} seal_tiny" style="background-size:10%;width:200px; height:20px"><span class="alt">{{modifier_class}}</span></div></div>
+
+Styleguide Background.Image Positon
+
+*/
+
+@include loop-style(background-position, "", "!important");
+/*
+Background Size
+
+For many images you will need top place background images in to a cardnial location.
+
+.bg_unset	            - removes any css background size 
+.bg_auto           - auto
+.bg_cover	            - cover
+.bg_contain	          - contain
+
+
+Markup:
+   <div class="bg_secondary-2 max-w_1 br_solid br_primary br_1"><div class="{{modifier_class}} seal_tiny" style="background-size:10%;width:200px; height:20px"><span class="alt">{{modifier_class}}</span></div></div>
+
+Styleguide Background.Image Positon
+
+*/
+.bg_unset {
+	background-size: unset;
+}
+.bg_auto {
+	background-size: auto;
+}
+.bg_cover {
+	background-size: cover;
+}
+.bg_contain {
+	background-size: contain;
+}
+
+/*
+Background Size
+
+For many images you will need top place background images in to a cardnial location.
+
+.bg_unset	            - removes any css background size 
+.bg_auto           - auto
+.bg_cover	            - cover
+.bg_contain	          - contain
+
+
+Markup:
+   <div class="bg_secondary-2 max-w_1 br_solid br_primary br_1"><div class="{{modifier_class}} seal_tiny" style="background-size:10%;width:200px; height:20px"><span class="alt">{{modifier_class}}</span></div></div>
+
+Styleguide Background.Image Positon
+
+*/
+
+.bg_no-repeat {
+	background-repeat: no-repeat;
+}
+.bg_repeat {
+	background-repeat: repeat;
+}
+.bg_repeat-x {
+	background-repeat: no-repeat;
+}
+.bg_repeat-y {
+	background-repeat: no-repeat;
+}
+.bg_space {
+	background-repeat: space;
+}

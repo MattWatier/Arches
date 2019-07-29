@@ -1,0 +1,191 @@
+.card.testimonial {
+}
+.card.testimonial,
+.card.product {
+	border-style: solid;
+	border-width: 1px;
+	margin-top: 0;
+	padding: 0;
+
+	@media #{$medium-up} {
+		margin-top: 100px;
+	}
+
+	.card-header {
+		margin-bottom: 75px;
+		@media #{$medium-up} {
+			margin-bottom: 0;
+		}
+	}
+
+	.card-img {
+		margin: 20px auto -50px;
+		width: 100px;
+		height: 100px;
+
+		@media #{$medium-up} {
+			margin: -100px auto 20px;
+			width: 200px;
+			height: 200px;
+		}
+	}
+
+	.card-body {
+		padding: 10px 1em 1em;
+		position: relative;
+	}
+
+	.blockquote {
+		position: relative;
+		text-align: center;
+	}
+
+	.blockquote p,
+	.blockquote-cite {
+		display: block;
+		&:before,
+		&:after {
+			@extend %font-awesome-pro;
+		}
+	}
+
+	.blockquote p {
+		font-size: ms(1);
+
+		&:before,
+		&:after {
+			color: $orange-light;
+		}
+
+		&:before {
+			margin-right: 0.5em;
+			content: "\f10d";
+		}
+
+		&:after {
+			margin-left: 0.5em;
+			content: "\f10e";
+		}
+	}
+
+	.blockquote-cite {
+		font-size: ms(0);
+		position: relative;
+		right: 0;
+		color: get-themecolor(secondary, 2);
+
+		&:after {
+			margin-right: 0.5em;
+			content: "\f007";
+		}
+	}
+}
+
+/**
+* Horizontal Testimonial are compact containers for Testimonial Data Type 
+*
+* @molecule Testimonial Card (.horizontal)
+* @section Card > Testimonial
+* @flag contained
+* @markup
+*  <div class="card testimonial horizontal">
+*    <header class="card-header">
+*       <img class="card-img  img-thumbnail" src="@{image:200:200}"/>
+*    </header>
+*    <div class="card-body">
+*      <article class="blockquote">
+*        <p>@{lipsum:15:words}</p>
+*        <cite class="blockquote-cite">Someone famous</cite>
+*      </article>
+*    </div>
+*  </div>
+*
+*/
+.card.testimonial.horizontal {
+}
+.card.testimonial.horizontal,
+.card.product {
+	@media #{$medium-up} {
+		display: block;
+		margin-top: 0;
+		display: flex;
+		flex-direction: row;
+
+		.card-header,
+		.card-body {
+			flex: 0 1 auto;
+			width: unset;
+			padding: 10px;
+			margin: 0;
+			vertical-align: middle;
+			float: none;
+		}
+
+		.card-img {
+			margin: 10px;
+			height: 125px;
+			width: 125px;
+		}
+
+		.card-header {
+			min-width: 160px;
+		}
+
+		.card-body {
+			text-align: left;
+
+			.blockquote-cite {
+				float: none;
+			}
+		}
+
+		.blockquote {
+			text-align: left;
+		}
+
+		.blockquote-cite {
+			text-align: right;
+			display: block;
+		}
+	}
+}
+.card.testimonial.horizontal.undecorated,
+.card.testimonial.undecorated {
+	margin-top: 0;
+	.card-header {
+		display: none !important;
+	}
+}
+.card.testimonial.vertical-spacing {
+	margin-bottom: 120px;
+}
+
+.webinar {
+	width: 100%;
+	height: 140px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-image: url(../img/cvquality/webinar/webinar-thumbnail.jpg);
+	&.ep-webinar {
+		background-image: url(../img/cvquality/webinar/ep-webinar-thumbnail.jpg);
+	}
+	&.afib-webinar {
+		background-image: url(../img/cvquality/webinar/afib-webinar-thumbnail.jpg);
+	}
+	&.cathlab-webinar {
+		background-image: url(../img/cvquality/webinar/cathlab-webinar-thumbnail.jpg);
+	}
+
+	&.cpc-webinar {
+		background-image: url(../img/cvquality/webinar/cpc-webinar-thumbnail.jpg);
+	}
+
+	&.fsed-webinar {
+		background-image: url(../img/cvquality/webinar/fsed-webinar-thumbnail.jpg);
+	}
+
+	&.hf-webinar {
+		background-image: url(../img/cvquality/webinar/hf-webinar-thumbnail.jpg);
+	}
+}

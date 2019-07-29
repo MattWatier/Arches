@@ -1,0 +1,69 @@
+/*
+Editor Container Decorator
+
+Editor Decorators are only visible in the Sitefinity Editor
+
+Markup:
+<div class="sfPageEditor">
+     <div class="visible-authenticated-block">
+        <ul class="nav-pills nav">
+            <li class="nav-item active"><a class="nav-link">Profile</a></li>
+            <li class="nav-item"><a class="nav-link">Settings</a></li>
+            <li class="nav-item"><a class="nav-link">Logout</a></li>
+        </ul>
+     </div>
+     <div class="visible-anonymous-block">
+        <ul class="nav-pills nav">
+            <li class="nav-item active"><a class="nav-link">FAQ</a></li>
+            <li class="nav-item"><a class="nav-link">Getting Started</a></li>
+            <li class="nav-item"><a class="nav-link">Login</a></li>
+        </ul>
+     </div>
+ </div>
+
+Styleguide Sitefinity.Decorator
+*/
+
+%editor-visible {
+	display: block !important;
+	opacity: 0.75;
+	border: 2px dotted transparent;
+	margin: 5px;
+}
+%editor-visible-message {
+	display: block;
+	position: relative;
+	font-size: 12px;
+	text-align: center;
+}
+
+.sfPageEditor {
+	.visible-anonymous-block,
+	.visible-authenticated-block {
+		img {
+			display: none;
+		}
+	}
+	.visible-authenticated-block {
+		@extend %editor-visible;
+		border-color: #58b5a5;
+		background-color: #eef8f6;
+		&:after,
+		&:before {
+			content: "AUTHENTICATED CONTENT - REMBER TO CHANGE PERMISIONS OF CONTENT IN AREA - Permision/Role/Authenticated";
+			color: #047294;
+			@extend %editor-visible-message;
+		}
+	}
+	.visible-anonymous-block {
+		@extend %editor-visible;
+		border-color: #ffc425;
+		background-color: #fff9e9;
+		&:after,
+		&:before {
+			content: "ANONYMOUS CONTENT - REMBER TO CHANGE PERMISIONS OF CONTENT IN AREA - Permision/Role/Anonymous";
+			color: #e87d1e;
+			@extend %editor-visible-message;
+		}
+	}
+}
