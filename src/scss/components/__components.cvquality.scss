@@ -2,6 +2,7 @@
 @import "components/cvquality/cvquality.boot._card.override";
 @import "components/cvquality/cvquality.jumbotron";
 @import "components/cvquality/cvquality.triangle";
+@import "components/cvquality/cvquality.sitefinity.editor-decorator";
 .btn-primary {
 	@extend .br_0;
 	@extend .br_radius;

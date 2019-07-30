@@ -6522,10 +6522,10 @@
   color: rgba(19, 18, 18, 0) !important;
 }
 #acc_arches_override .c_black-1 {
-  color: rgba(19, 18, 18, 0.05) !important;
+  color: rgba(19, 18, 18, 0.025) !important;
 }
 #acc_arches_override .c_black-2 {
-  color: rgba(19, 18, 18, 0.12) !important;
+  color: rgba(19, 18, 18, 0.1) !important;
 }
 #acc_arches_override .c_black-3 {
   color: rgba(19, 18, 18, 0.25) !important;
@@ -6543,10 +6543,10 @@
   color: rgba(19, 18, 18, 0.75) !important;
 }
 #acc_arches_override .c_black-8 {
-  color: rgba(19, 18, 18, 0.88) !important;
+  color: rgba(19, 18, 18, 0.9) !important;
 }
 #acc_arches_override .c_black-9 {
-  color: rgba(19, 18, 18, 0.95) !important;
+  color: rgba(19, 18, 18, 0.975) !important;
 }
 #acc_arches_override .c_black-none {
   color: #131212 !important;
@@ -6555,10 +6555,10 @@
   color: rgba(255, 255, 255, 0) !important;
 }
 #acc_arches_override .c_white-1 {
-  color: rgba(255, 255, 255, 0.05) !important;
+  color: rgba(255, 255, 255, 0.025) !important;
 }
 #acc_arches_override .c_white-2 {
-  color: rgba(255, 255, 255, 0.12) !important;
+  color: rgba(255, 255, 255, 0.1) !important;
 }
 #acc_arches_override .c_white-3 {
   color: rgba(255, 255, 255, 0.25) !important;
@@ -6576,10 +6576,10 @@
   color: rgba(255, 255, 255, 0.75) !important;
 }
 #acc_arches_override .c_white-8 {
-  color: rgba(255, 255, 255, 0.88) !important;
+  color: rgba(255, 255, 255, 0.9) !important;
 }
 #acc_arches_override .c_white-9 {
-  color: rgba(255, 255, 255, 0.95) !important;
+  color: rgba(255, 255, 255, 0.975) !important;
 }
 #acc_arches_override .c_white-none {
   color: white !important;
@@ -10143,10 +10143,10 @@
   background-color: rgba(19, 18, 18, 0) !important;
 }
 #acc_arches_override .bg_black-1 {
-  background-color: rgba(19, 18, 18, 0.05) !important;
+  background-color: rgba(19, 18, 18, 0.025) !important;
 }
 #acc_arches_override .bg_black-2 {
-  background-color: rgba(19, 18, 18, 0.12) !important;
+  background-color: rgba(19, 18, 18, 0.1) !important;
 }
 #acc_arches_override .bg_black-3 {
   background-color: rgba(19, 18, 18, 0.25) !important;
@@ -10164,10 +10164,10 @@
   background-color: rgba(19, 18, 18, 0.75) !important;
 }
 #acc_arches_override .bg_black-8 {
-  background-color: rgba(19, 18, 18, 0.88) !important;
+  background-color: rgba(19, 18, 18, 0.9) !important;
 }
 #acc_arches_override .bg_black-9 {
-  background-color: rgba(19, 18, 18, 0.95) !important;
+  background-color: rgba(19, 18, 18, 0.975) !important;
 }
 #acc_arches_override .bg_black-none {
   background-color: #131212 !important;
@@ -10176,10 +10176,10 @@
   background-color: rgba(255, 255, 255, 0) !important;
 }
 #acc_arches_override .bg_white-1 {
-  background-color: rgba(255, 255, 255, 0.05) !important;
+  background-color: rgba(255, 255, 255, 0.025) !important;
 }
 #acc_arches_override .bg_white-2 {
-  background-color: rgba(255, 255, 255, 0.12) !important;
+  background-color: rgba(255, 255, 255, 0.1) !important;
 }
 #acc_arches_override .bg_white-3 {
   background-color: rgba(255, 255, 255, 0.25) !important;
@@ -10197,10 +10197,10 @@
   background-color: rgba(255, 255, 255, 0.75) !important;
 }
 #acc_arches_override .bg_white-8 {
-  background-color: rgba(255, 255, 255, 0.88) !important;
+  background-color: rgba(255, 255, 255, 0.9) !important;
 }
 #acc_arches_override .bg_white-9 {
-  background-color: rgba(255, 255, 255, 0.95) !important;
+  background-color: rgba(255, 255, 255, 0.975) !important;
 }
 #acc_arches_override .bg_white-none {
   background-color: white !important;
@@ -10316,10 +10316,10 @@
   border-color: rgba(19, 18, 18, 0) !important;
 }
 #acc_arches_override .br_black-1 {
-  border-color: rgba(19, 18, 18, 0.05) !important;
+  border-color: rgba(19, 18, 18, 0.025) !important;
 }
 #acc_arches_override .br_black-2 {
-  border-color: rgba(19, 18, 18, 0.12) !important;
+  border-color: rgba(19, 18, 18, 0.1) !important;
 }
 #acc_arches_override .br_black-3 {
   border-color: rgba(19, 18, 18, 0.25) !important;
@@ -10337,10 +10337,10 @@
   border-color: rgba(19, 18, 18, 0.75) !important;
 }
 #acc_arches_override .br_black-8 {
-  border-color: rgba(19, 18, 18, 0.88) !important;
+  border-color: rgba(19, 18, 18, 0.9) !important;
 }
 #acc_arches_override .br_black-9 {
-  border-color: rgba(19, 18, 18, 0.95) !important;
+  border-color: rgba(19, 18, 18, 0.975) !important;
 }
 #acc_arches_override .br_black-none {
   border-color: #131212 !important;
@@ -10349,10 +10349,10 @@
   border-color: rgba(255, 255, 255, 0) !important;
 }
 #acc_arches_override .br_white-1 {
-  border-color: rgba(255, 255, 255, 0.05) !important;
+  border-color: rgba(255, 255, 255, 0.025) !important;
 }
 #acc_arches_override .br_white-2 {
-  border-color: rgba(255, 255, 255, 0.12) !important;
+  border-color: rgba(255, 255, 255, 0.1) !important;
 }
 #acc_arches_override .br_white-3 {
   border-color: rgba(255, 255, 255, 0.25) !important;
@@ -10370,10 +10370,10 @@
   border-color: rgba(255, 255, 255, 0.75) !important;
 }
 #acc_arches_override .br_white-8 {
-  border-color: rgba(255, 255, 255, 0.88) !important;
+  border-color: rgba(255, 255, 255, 0.9) !important;
 }
 #acc_arches_override .br_white-9 {
-  border-color: rgba(255, 255, 255, 0.95) !important;
+  border-color: rgba(255, 255, 255, 0.975) !important;
 }
 #acc_arches_override .br_white-none {
   border-color: white !important;
@@ -10959,10 +10959,10 @@
   opacity: 0;
 }
 #acc_arches_override .opacity_1 {
-  opacity: 0.05;
+  opacity: 0.025;
 }
 #acc_arches_override .opacity_2 {
-  opacity: 0.12;
+  opacity: 0.1;
 }
 #acc_arches_override .opacity_3 {
   opacity: 0.25;
@@ -10980,10 +10980,10 @@
   opacity: 0.75;
 }
 #acc_arches_override .opacity_8 {
-  opacity: 0.88;
+  opacity: 0.9;
 }
 #acc_arches_override .opacity_9 {
-  opacity: 0.95;
+  opacity: 0.975;
 }
 #acc_arches_override .opacity_none {
   opacity: 1;
@@ -12138,10 +12138,10 @@
   background-color: rgba(255, 255, 255, 0) !important;
 }
 #acc_arches_override .h\:bg_white-1:hover {
-  background-color: rgba(255, 255, 255, 0.05) !important;
+  background-color: rgba(255, 255, 255, 0.025) !important;
 }
 #acc_arches_override .h\:bg_white-2:hover {
-  background-color: rgba(255, 255, 255, 0.12) !important;
+  background-color: rgba(255, 255, 255, 0.1) !important;
 }
 #acc_arches_override .h\:bg_white-3:hover {
   background-color: rgba(255, 255, 255, 0.25) !important;
@@ -12159,10 +12159,10 @@
   background-color: rgba(255, 255, 255, 0.75) !important;
 }
 #acc_arches_override .h\:bg_white-8:hover {
-  background-color: rgba(255, 255, 255, 0.88) !important;
+  background-color: rgba(255, 255, 255, 0.9) !important;
 }
 #acc_arches_override .h\:bg_white-9:hover {
-  background-color: rgba(255, 255, 255, 0.95) !important;
+  background-color: rgba(255, 255, 255, 0.975) !important;
 }
 #acc_arches_override .h\:bg_white-none:hover {
   background-color: white !important;
@@ -12175,10 +12175,10 @@
   background-color: rgba(19, 18, 18, 0) !important;
 }
 #acc_arches_override .h\:bg_black-1:hover {
-  background-color: rgba(19, 18, 18, 0.05) !important;
+  background-color: rgba(19, 18, 18, 0.025) !important;
 }
 #acc_arches_override .h\:bg_black-2:hover {
-  background-color: rgba(19, 18, 18, 0.12) !important;
+  background-color: rgba(19, 18, 18, 0.1) !important;
 }
 #acc_arches_override .h\:bg_black-3:hover {
   background-color: rgba(19, 18, 18, 0.25) !important;
@@ -12196,10 +12196,10 @@
   background-color: rgba(19, 18, 18, 0.75) !important;
 }
 #acc_arches_override .h\:bg_black-8:hover {
-  background-color: rgba(19, 18, 18, 0.88) !important;
+  background-color: rgba(19, 18, 18, 0.9) !important;
 }
 #acc_arches_override .h\:bg_black-9:hover {
-  background-color: rgba(19, 18, 18, 0.95) !important;
+  background-color: rgba(19, 18, 18, 0.975) !important;
 }
 #acc_arches_override .h\:bg_black-none:hover {
   background-color: #131212 !important;

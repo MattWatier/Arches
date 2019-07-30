@@ -10964,11 +10964,11 @@ Styleguide Typography.Font.Color Transparency
 }
 
 .c_black-1 {
-  color: rgba(19, 18, 18, 0.05) !important;
+  color: rgba(19, 18, 18, 0.025) !important;
 }
 
 .c_black-2 {
-  color: rgba(19, 18, 18, 0.12) !important;
+  color: rgba(19, 18, 18, 0.1) !important;
 }
 
 .c_black-3 {
@@ -10992,11 +10992,11 @@ Styleguide Typography.Font.Color Transparency
 }
 
 .c_black-8 {
-  color: rgba(19, 18, 18, 0.88) !important;
+  color: rgba(19, 18, 18, 0.9) !important;
 }
 
 .c_black-9 {
-  color: rgba(19, 18, 18, 0.95) !important;
+  color: rgba(19, 18, 18, 0.975) !important;
 }
 
 .c_black-none {
@@ -11008,11 +11008,11 @@ Styleguide Typography.Font.Color Transparency
 }
 
 .c_white-1 {
-  color: rgba(255, 255, 255, 0.05) !important;
+  color: rgba(255, 255, 255, 0.025) !important;
 }
 
 .c_white-2 {
-  color: rgba(255, 255, 255, 0.12) !important;
+  color: rgba(255, 255, 255, 0.1) !important;
 }
 
 .c_white-3 {
@@ -11036,11 +11036,11 @@ Styleguide Typography.Font.Color Transparency
 }
 
 .c_white-8 {
-  color: rgba(255, 255, 255, 0.88) !important;
+  color: rgba(255, 255, 255, 0.9) !important;
 }
 
 .c_white-9 {
-  color: rgba(255, 255, 255, 0.95) !important;
+  color: rgba(255, 255, 255, 0.975) !important;
 }
 
 .c_white-none {
@@ -16256,11 +16256,11 @@ Styleguide Background.Color.Shades
 }
 
 .bg_black-1 {
-  background-color: rgba(19, 18, 18, 0.05) !important;
+  background-color: rgba(19, 18, 18, 0.025) !important;
 }
 
 .bg_black-2 {
-  background-color: rgba(19, 18, 18, 0.12) !important;
+  background-color: rgba(19, 18, 18, 0.1) !important;
 }
 
 .bg_black-3 {
@@ -16284,11 +16284,11 @@ Styleguide Background.Color.Shades
 }
 
 .bg_black-8 {
-  background-color: rgba(19, 18, 18, 0.88) !important;
+  background-color: rgba(19, 18, 18, 0.9) !important;
 }
 
 .bg_black-9 {
-  background-color: rgba(19, 18, 18, 0.95) !important;
+  background-color: rgba(19, 18, 18, 0.975) !important;
 }
 
 .bg_black-none {
@@ -16300,11 +16300,11 @@ Styleguide Background.Color.Shades
 }
 
 .bg_white-1 {
-  background-color: rgba(255, 255, 255, 0.05) !important;
+  background-color: rgba(255, 255, 255, 0.025) !important;
 }
 
 .bg_white-2 {
-  background-color: rgba(255, 255, 255, 0.12) !important;
+  background-color: rgba(255, 255, 255, 0.1) !important;
 }
 
 .bg_white-3 {
@@ -16328,11 +16328,11 @@ Styleguide Background.Color.Shades
 }
 
 .bg_white-8 {
-  background-color: rgba(255, 255, 255, 0.88) !important;
+  background-color: rgba(255, 255, 255, 0.9) !important;
 }
 
 .bg_white-9 {
-  background-color: rgba(255, 255, 255, 0.95) !important;
+  background-color: rgba(255, 255, 255, 0.975) !important;
 }
 
 .bg_white-none {
@@ -16719,11 +16719,11 @@ Styleguide Borders.Colors.Black
 }
 
 .br_black-1 {
-  border-color: rgba(19, 18, 18, 0.05) !important;
+  border-color: rgba(19, 18, 18, 0.025) !important;
 }
 
 .br_black-2 {
-  border-color: rgba(19, 18, 18, 0.12) !important;
+  border-color: rgba(19, 18, 18, 0.1) !important;
 }
 
 .br_black-3 {
@@ -16747,11 +16747,11 @@ Styleguide Borders.Colors.Black
 }
 
 .br_black-8 {
-  border-color: rgba(19, 18, 18, 0.88) !important;
+  border-color: rgba(19, 18, 18, 0.9) !important;
 }
 
 .br_black-9 {
-  border-color: rgba(19, 18, 18, 0.95) !important;
+  border-color: rgba(19, 18, 18, 0.975) !important;
 }
 
 .br_black-none {
@@ -16763,11 +16763,11 @@ Styleguide Borders.Colors.Black
 }
 
 .br_white-1 {
-  border-color: rgba(255, 255, 255, 0.05) !important;
+  border-color: rgba(255, 255, 255, 0.025) !important;
 }
 
 .br_white-2 {
-  border-color: rgba(255, 255, 255, 0.12) !important;
+  border-color: rgba(255, 255, 255, 0.1) !important;
 }
 
 .br_white-3 {
@@ -16791,11 +16791,11 @@ Styleguide Borders.Colors.Black
 }
 
 .br_white-8 {
-  border-color: rgba(255, 255, 255, 0.88) !important;
+  border-color: rgba(255, 255, 255, 0.9) !important;
 }
 
 .br_white-9 {
-  border-color: rgba(255, 255, 255, 0.95) !important;
+  border-color: rgba(255, 255, 255, 0.975) !important;
 }
 
 .br_white-none {
@@ -17669,11 +17669,11 @@ Styleguide opacity
 }
 
 .opacity_1 {
-  opacity: 0.05;
+  opacity: 0.025;
 }
 
 .opacity_2 {
-  opacity: 0.12;
+  opacity: 0.1;
 }
 
 .opacity_3 {
@@ -17697,11 +17697,11 @@ Styleguide opacity
 }
 
 .opacity_8 {
-  opacity: 0.88;
+  opacity: 0.9;
 }
 
 .opacity_9 {
-  opacity: 0.95;
+  opacity: 0.975;
 }
 
 .opacity_none {
@@ -19336,11 +19336,11 @@ a:focus {
 }
 
 .h\:bg_white-1:hover {
-  background-color: rgba(255, 255, 255, 0.05) !important;
+  background-color: rgba(255, 255, 255, 0.025) !important;
 }
 
 .h\:bg_white-2:hover {
-  background-color: rgba(255, 255, 255, 0.12) !important;
+  background-color: rgba(255, 255, 255, 0.1) !important;
 }
 
 .h\:bg_white-3:hover {
@@ -19364,11 +19364,11 @@ a:focus {
 }
 
 .h\:bg_white-8:hover {
-  background-color: rgba(255, 255, 255, 0.88) !important;
+  background-color: rgba(255, 255, 255, 0.9) !important;
 }
 
 .h\:bg_white-9:hover {
-  background-color: rgba(255, 255, 255, 0.95) !important;
+  background-color: rgba(255, 255, 255, 0.975) !important;
 }
 
 .h\:bg_white-none:hover {
@@ -19385,11 +19385,11 @@ a:focus {
 }
 
 .h\:bg_black-1:hover {
-  background-color: rgba(19, 18, 18, 0.05) !important;
+  background-color: rgba(19, 18, 18, 0.025) !important;
 }
 
 .h\:bg_black-2:hover {
-  background-color: rgba(19, 18, 18, 0.12) !important;
+  background-color: rgba(19, 18, 18, 0.1) !important;
 }
 
 .h\:bg_black-3:hover {
@@ -19413,11 +19413,11 @@ a:focus {
 }
 
 .h\:bg_black-8:hover {
-  background-color: rgba(19, 18, 18, 0.88) !important;
+  background-color: rgba(19, 18, 18, 0.9) !important;
 }
 
 .h\:bg_black-9:hover {
-  background-color: rgba(19, 18, 18, 0.95) !important;
+  background-color: rgba(19, 18, 18, 0.975) !important;
 }
 
 .h\:bg_black-none:hover {
