@@ -12,20 +12,13 @@ Styleguide Templates.0
  Item With Modifiers Template
 
 Many Objects have modifiers like psudo classes and classes applied to make them look different.
- 
 
 default		- Default Design
 :hover       - Subtle hover highlight.
 .alert       - A highlight indicating you’ve already given a star.
 
-
  Markup:
  <li class="{{modifier_class}}">List Item</li>
-
- sg-wrapper:
- <div  class="templateDocumentation"><ul>
-   <sg-wrapper-content/>
- </ul></div>
 
  Styleguide Templates.3
 */

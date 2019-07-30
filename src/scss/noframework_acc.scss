@@ -5,6 +5,7 @@
  */
 /**  Pre Header - modular scale default break points utility    *********************************/
 /**  Version: 1.1.0    *********************************/
+// Consider using https://www.purgecss.com/ to remove styles not used in the project.
 $debug-trace: false !default;
 $name-mode: "SHORT" !default; // $name-mode: "SHORT","LONG","ALL"
 $ms-base: 1rem !default; // needs to be in rem's

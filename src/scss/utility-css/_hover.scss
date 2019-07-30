@@ -68,6 +68,7 @@ a:focus {
 @each $color-name, $color in $theme-palette {
 	@include hover-loop("background-color", $color-name, $color);
 	@include hover-loop("color", $color-name, $color);
+	@include hover-loop("border-color", $color-name, $color);
 }
 
 /*
@@ -185,25 +186,13 @@ a:focus {
 #{ class-name-constructor(background-color, white, "", "is-active")} {
 	background-color: $white;
 }
-@include loop-transparent(
-	background-transparent,
-	white,
-	"",
-	"!important",
-	true
-);
+@include loop-transparent(background-transparent, white, "", "!important", true);
 
 #{ class-name-constructor(background-color, black, "", "hover")},
 #{ class-name-constructor(background-color, black, "", "is-active")} {
 	background-color: $black;
 }
-@include loop-transparent(
-	background-transparent,
-	black,
-	"",
-	"!important",
-	true
-);
+@include loop-transparent(background-transparent, black, "", "!important", true);
 
 /*
 Hover: Background Black and White Opacity 
@@ -298,3 +287,49 @@ Styleguide hover.transition
  
  */
 @include loop-style(transition, "", " !important");
+
+/*
+  Hover:Border Color
+ 
+  hovers can easily effect the border style to toggle between styles.  Very useful fo toggling from a border type to none or vice versa. 
+| Class          | Effect                                                                                      |
+| -------------- | ------------------------------------------------------------------------------------------- |
+| br_none        | Border is None on Hover                                                                     |
+| br_dotted      | Border is Dotted on Hover                                                                   |
+| br_dashed      | Border is Dashed on Hover                                                                   |
+| br_solid       | Border is Solid on Hover                                                                    |
+| br_transparent | Sometimes shifting to transparent is better so as to not cause the UI to flicker and resize |
+
+Markup:
+<div class="">
+  <div class="h:br_none br_3 br_solid br_primary-2 p_2 m_2 bg_secondary-5">None</div>
+  <div class="h:br_transparent br_3 br_solid br_primary-2 p_2 m_2 bg_secondary-5">Transparent</div>
+  <div class="h:br_solid br_3 br_dotted br_primary-2 p_2 m_2 bg_secondary-5">Solid</div>
+  <div class="h:br_dashed br_3 br_solid br_primary-2 p_2 m_2 bg_secondary-5">Dashed</div>
+  <div class="h:br_dotted br_3 br_solid br_primary-2 p_2 m_2 bg_secondary-5">Dotted</div>
+</div>
+
+Weight: 40
+
+Styleguide hover.borders
+
+*/
+#{ class-name-constructor(border-style,dotted,"","hover")} {
+	border-style: dotted !important;
+}
+#{ class-name-constructor(border-style,dashed,"","hover")} {
+	border-style: dashed !important;
+}
+#{ class-name-constructor(border-style,solid,"","hover")} {
+	border-style: solid !important;
+}
+#{ class-name-constructor(border-style,none,"","hover")} {
+	border-style: none !important;
+}
+#{ class-name-constructor(border-color,transparent,"","hover")} {
+	border-color: transparent !important;
+}
+
+@each $color-name, $hex-value in $theme-palette {
+	@include color-loop(border-color, $color-name, $hex-value);
+}

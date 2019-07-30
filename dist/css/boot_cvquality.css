@@ -69,6 +69,22 @@ span {
   color: #acbd65 !important;
 }
 
+.c_primary-alt {
+  color: #d2e6f6 !important;
+}
+
+.c_accent-alt {
+  color: #ffc425 !important;
+}
+
+.h\:c_primary-alt:hover {
+  color: #d2e6f6 !important;
+}
+
+.h\:c_accent-alt:hover {
+  color: #ffc425 !important;
+}
+
 .br_accent-alt {
   border-color: #ffc425 !important;
 }
@@ -79,6 +95,10 @@ span {
 
 .br_mix-orange-teal {
   border-color: #acbd65 !important;
+}
+
+.br__primary-alt {
+  background-color: #acbd65 !important;
 }
 
 .bg_primary-alt {
@@ -10313,17 +10333,17 @@ Graphic areas that hold a snippet of a webinar.
 | .fsed-webinar    | Changes the product graphic. |
 | .hf-webinar      | Changes the product graphic. |
 
-.ep-webinar      -  Changes the product graphic.
-.afib-webinar    -  Changes the product graphic.
-.cathlab-webinar -  Changes the product graphic.
-.cpc-webinar     -  Changes the product graphic.
-.fsed-webinar    -  Changes the product graphic.
-.hf-webinar      -  Changes the product graphic.
+.ep-webinar      	- 	 Changes the product graphic.
+.afib-webinar    	- 	 Changes the product graphic.
+.cathlab-webinar 	- 	 Changes the product graphic.
+.cpc-webinar     	- 	 Changes the product graphic.
+.fsed-webinar    	- 	 Changes the product graphic.
+.hf-webinar      	- 	 Changes the product graphic.
 
 Markup:
 <div class="card flex_row:md br_none bg_secondary-4">
     <div class="card-header flex_shrink">
-        <div class="webinar {{modifier_class}}"></div>
+        <div class="webinar   {{modifier_class}}"></div>
 			<div class="action">
 				<a class="btn btn-block">View Webinar <i class="fa fa-play-circle" aria-hidden="true"></i></a>
 			</div>
@@ -10375,6 +10395,23 @@ Markup:
 
  Styleguide Recipes CVQualtiy.Cards.Webinar
 
+*/
+/*
+Map Result List
+
+Result lists is the list view of all of the pins on the map
+
+
+ Markup:
+<ul class="result-list bg_secondary-3 font_ui">
+   <li class="address relative h:bg_secondary-n2 h:c_accent-alt br-l_4 br_solid br_accent">
+         <div class="name c_primary-n2 h:c_seoncary-5 expanded-click-area">proident ad velit sit</div>
+         <div class="address-line">sunt magna ea exercitation</div>
+         <div class="address-line">nisi qui culpa labore</div>
+   </li>
+</ul>
+
+ Styleguide CVQualtiy.Lists.Map Result
 */
 /*
 Decorators
@@ -16789,16 +16826,6 @@ Styleguide Borders
 
 */
 /* No styleguide reference. */
-.br_dotted,
-.br_dashed,
-.br_solid {
-  border-width: 1px;
-}
-
-.br_none {
-  border-width: 0;
-}
-
 /*
 Border Style
 
@@ -18085,6 +18112,54 @@ a:focus {
   color: #00222b !important;
 }
 
+.h\:br_primary:hover {
+  border-color: #0088aa !important;
+}
+
+.h\:br_primary-0:hover {
+  border-color: #0088aa !important;
+}
+
+.h\:br_primary-1:hover {
+  border-color: #269ab7 !important;
+}
+
+.h\:br_primary-2:hover {
+  border-color: #5eb4c9 !important;
+}
+
+.h\:br_primary-3:hover {
+  border-color: #99cfdd !important;
+}
+
+.h\:br_primary-4:hover {
+  border-color: #c7e5ec !important;
+}
+
+.h\:br_primary-5:hover {
+  border-color: #e6f3f7 !important;
+}
+
+.h\:br_primary-n1:hover {
+  border-color: #007a99 !important;
+}
+
+.h\:br_primary-n2:hover {
+  border-color: #006680 !important;
+}
+
+.h\:br_primary-n3:hover {
+  border-color: #004b5e !important;
+}
+
+.h\:br_primary-n4:hover {
+  border-color: #003644 !important;
+}
+
+.h\:br_primary-n5:hover {
+  border-color: #00222b !important;
+}
+
 .h\:bg_secondary:hover {
   background-color: #8b8482 !important;
 }
@@ -18179,6 +18254,54 @@ a:focus {
 
 .h\:c_secondary-n5:hover {
   color: #232121 !important;
+}
+
+.h\:br_secondary:hover {
+  border-color: #8b8482 !important;
+}
+
+.h\:br_secondary-0:hover {
+  border-color: #8b8482 !important;
+}
+
+.h\:br_secondary-1:hover {
+  border-color: #9c9695 !important;
+}
+
+.h\:br_secondary-2:hover {
+  border-color: #b6b2b0 !important;
+}
+
+.h\:br_secondary-3:hover {
+  border-color: #d1cecd !important;
+}
+
+.h\:br_secondary-4:hover {
+  border-color: #e5e4e4 !important;
+}
+
+.h\:br_secondary-5:hover {
+  border-color: #f3f3f3 !important;
+}
+
+.h\:br_secondary-n1:hover {
+  border-color: #7d7775 !important;
+}
+
+.h\:br_secondary-n2:hover {
+  border-color: #686362 !important;
+}
+
+.h\:br_secondary-n3:hover {
+  border-color: #4c4948 !important;
+}
+
+.h\:br_secondary-n4:hover {
+  border-color: #383534 !important;
+}
+
+.h\:br_secondary-n5:hover {
+  border-color: #232121 !important;
 }
 
 .h\:bg_success:hover {
@@ -18277,6 +18400,54 @@ a:focus {
   color: #02230c !important;
 }
 
+.h\:br_success:hover {
+  border-color: #078a2e !important;
+}
+
+.h\:br_success-0:hover {
+  border-color: #078a2e !important;
+}
+
+.h\:br_success-1:hover {
+  border-color: #2c9c4d !important;
+}
+
+.h\:br_success-2:hover {
+  border-color: #63b57b !important;
+}
+
+.h\:br_success-3:hover {
+  border-color: #9cd0ab !important;
+}
+
+.h\:br_success-4:hover {
+  border-color: #c8e5d1 !important;
+}
+
+.h\:br_success-5:hover {
+  border-color: #e6f3ea !important;
+}
+
+.h\:br_success-n1:hover {
+  border-color: #067c29 !important;
+}
+
+.h\:br_success-n2:hover {
+  border-color: #056823 !important;
+}
+
+.h\:br_success-n3:hover {
+  border-color: #044c19 !important;
+}
+
+.h\:br_success-n4:hover {
+  border-color: #033712 !important;
+}
+
+.h\:br_success-n5:hover {
+  border-color: #02230c !important;
+}
+
 .h\:bg_warning:hover {
   background-color: #ffc425 !important;
 }
@@ -18371,6 +18542,54 @@ a:focus {
 
 .h\:c_warning-n5:hover {
   color: #403109 !important;
+}
+
+.h\:br_warning:hover {
+  border-color: #ffc425 !important;
+}
+
+.h\:br_warning-0:hover {
+  border-color: #ffc425 !important;
+}
+
+.h\:br_warning-1:hover {
+  border-color: #ffcd46 !important;
+}
+
+.h\:br_warning-2:hover {
+  border-color: #ffda76 !important;
+}
+
+.h\:br_warning-3:hover {
+  border-color: #ffe7a8 !important;
+}
+
+.h\:br_warning-4:hover {
+  border-color: #fff2cf !important;
+}
+
+.h\:br_warning-5:hover {
+  border-color: #fff9e9 !important;
+}
+
+.h\:br_warning-n1:hover {
+  border-color: #e6b021 !important;
+}
+
+.h\:br_warning-n2:hover {
+  border-color: #bf931c !important;
+}
+
+.h\:br_warning-n3:hover {
+  border-color: #8c6c14 !important;
+}
+
+.h\:br_warning-n4:hover {
+  border-color: #664e0f !important;
+}
+
+.h\:br_warning-n5:hover {
+  border-color: #403109 !important;
 }
 
 .h\:bg_alert:hover {
@@ -18469,6 +18688,54 @@ a:focus {
   color: #260000 !important;
 }
 
+.h\:br_alert:hover {
+  border-color: #990000 !important;
+}
+
+.h\:br_alert-0:hover {
+  border-color: #990000 !important;
+}
+
+.h\:br_alert-1:hover {
+  border-color: #a82626 !important;
+}
+
+.h\:br_alert-2:hover {
+  border-color: #bf5e5e !important;
+}
+
+.h\:br_alert-3:hover {
+  border-color: #d69999 !important;
+}
+
+.h\:br_alert-4:hover {
+  border-color: #e9c7c7 !important;
+}
+
+.h\:br_alert-5:hover {
+  border-color: #f5e6e6 !important;
+}
+
+.h\:br_alert-n1:hover {
+  border-color: #8a0000 !important;
+}
+
+.h\:br_alert-n2:hover {
+  border-color: #730000 !important;
+}
+
+.h\:br_alert-n3:hover {
+  border-color: #540000 !important;
+}
+
+.h\:br_alert-n4:hover {
+  border-color: #3d0000 !important;
+}
+
+.h\:br_alert-n5:hover {
+  border-color: #260000 !important;
+}
+
 .h\:bg_navigation:hover {
   background-color: #2b58c0 !important;
 }
@@ -18563,6 +18830,54 @@ a:focus {
 
 .h\:c_navigation-n5:hover {
   color: #0b1630 !important;
+}
+
+.h\:br_navigation:hover {
+  border-color: #2b58c0 !important;
+}
+
+.h\:br_navigation-0:hover {
+  border-color: #2b58c0 !important;
+}
+
+.h\:br_navigation-1:hover {
+  border-color: #4b71c9 !important;
+}
+
+.h\:br_navigation-2:hover {
+  border-color: #7996d7 !important;
+}
+
+.h\:br_navigation-3:hover {
+  border-color: #aabce6 !important;
+}
+
+.h\:br_navigation-4:hover {
+  border-color: #d0daf1 !important;
+}
+
+.h\:br_navigation-5:hover {
+  border-color: #eaeef9 !important;
+}
+
+.h\:br_navigation-n1:hover {
+  border-color: #274fad !important;
+}
+
+.h\:br_navigation-n2:hover {
+  border-color: #204290 !important;
+}
+
+.h\:br_navigation-n3:hover {
+  border-color: #18306a !important;
+}
+
+.h\:br_navigation-n4:hover {
+  border-color: #11234d !important;
+}
+
+.h\:br_navigation-n5:hover {
+  border-color: #0b1630 !important;
 }
 
 .h\:bg_accent:hover {
@@ -18661,6 +18976,54 @@ a:focus {
   color: #3a1f08 !important;
 }
 
+.h\:br_accent:hover {
+  border-color: #e87d1e !important;
+}
+
+.h\:br_accent-0:hover {
+  border-color: #e87d1e !important;
+}
+
+.h\:br_accent-1:hover {
+  border-color: #eb9140 !important;
+}
+
+.h\:br_accent-2:hover {
+  border-color: #f1ad71 !important;
+}
+
+.h\:br_accent-3:hover {
+  border-color: #f6cba5 !important;
+}
+
+.h\:br_accent-4:hover {
+  border-color: #fae2ce !important;
+}
+
+.h\:br_accent-5:hover {
+  border-color: #fdf2e9 !important;
+}
+
+.h\:br_accent-n1:hover {
+  border-color: #d1711b !important;
+}
+
+.h\:br_accent-n2:hover {
+  border-color: #ae5e17 !important;
+}
+
+.h\:br_accent-n3:hover {
+  border-color: #804511 !important;
+}
+
+.h\:br_accent-n4:hover {
+  border-color: #5d320c !important;
+}
+
+.h\:br_accent-n5:hover {
+  border-color: #3a1f08 !important;
+}
+
 .h\:bg_info:hover {
   background-color: #a3988c !important;
 }
@@ -18755,6 +19118,54 @@ a:focus {
 
 .h\:c_info-n5:hover {
   color: #292623 !important;
+}
+
+.h\:br_info:hover {
+  border-color: #a3988c !important;
+}
+
+.h\:br_info-0:hover {
+  border-color: #a3988c !important;
+}
+
+.h\:br_info-1:hover {
+  border-color: #b1a79d !important;
+}
+
+.h\:br_info-2:hover {
+  border-color: #c5beb7 !important;
+}
+
+.h\:br_info-3:hover {
+  border-color: #dad6d1 !important;
+}
+
+.h\:br_info-4:hover {
+  border-color: #ebe8e6 !important;
+}
+
+.h\:br_info-5:hover {
+  border-color: #f6f5f4 !important;
+}
+
+.h\:br_info-n1:hover {
+  border-color: #93897e !important;
+}
+
+.h\:br_info-n2:hover {
+  border-color: #7a7269 !important;
+}
+
+.h\:br_info-n3:hover {
+  border-color: #5a544d !important;
+}
+
+.h\:br_info-n4:hover {
+  border-color: #413d38 !important;
+}
+
+.h\:br_info-n5:hover {
+  border-color: #292623 !important;
 }
 
 .h\:bg_highlight:hover {
@@ -18853,6 +19264,54 @@ a:focus {
   color: #012c39 !important;
 }
 
+.h\:br_highlight:hover {
+  border-color: #05aee5 !important;
+}
+
+.h\:br_highlight-0:hover {
+  border-color: #05aee5 !important;
+}
+
+.h\:br_highlight-1:hover {
+  border-color: #2bbae9 !important;
+}
+
+.h\:br_highlight-2:hover {
+  border-color: #62ccef !important;
+}
+
+.h\:br_highlight-3:hover {
+  border-color: #9bdff5 !important;
+}
+
+.h\:br_highlight-4:hover {
+  border-color: #c8edf9 !important;
+}
+
+.h\:br_highlight-5:hover {
+  border-color: #e6f7fc !important;
+}
+
+.h\:br_highlight-n1:hover {
+  border-color: #059dce !important;
+}
+
+.h\:br_highlight-n2:hover {
+  border-color: #0483ac !important;
+}
+
+.h\:br_highlight-n3:hover {
+  border-color: #03607e !important;
+}
+
+.h\:br_highlight-n4:hover {
+  border-color: #02465c !important;
+}
+
+.h\:br_highlight-n5:hover {
+  border-color: #012c39 !important;
+}
+
 .h\:bg_acc:hover {
   background-color: #004176 !important;
 }
@@ -18947,6 +19406,54 @@ a:focus {
 
 .h\:c_acc-n5:hover {
   color: #00101e !important;
+}
+
+.h\:br_acc:hover {
+  border-color: #004176 !important;
+}
+
+.h\:br_acc-0:hover {
+  border-color: #004176 !important;
+}
+
+.h\:br_acc-1:hover {
+  border-color: #265e8b !important;
+}
+
+.h\:br_acc-2:hover {
+  border-color: #5e87a9 !important;
+}
+
+.h\:br_acc-3:hover {
+  border-color: #99b3c8 !important;
+}
+
+.h\:br_acc-4:hover {
+  border-color: #c7d5e1 !important;
+}
+
+.h\:br_acc-5:hover {
+  border-color: #e6ecf1 !important;
+}
+
+.h\:br_acc-n1:hover {
+  border-color: #003b6a !important;
+}
+
+.h\:br_acc-n2:hover {
+  border-color: #003159 !important;
+}
+
+.h\:br_acc-n3:hover {
+  border-color: #002441 !important;
+}
+
+.h\:br_acc-n4:hover {
+  border-color: #001a2f !important;
+}
+
+.h\:br_acc-n5:hover {
+  border-color: #00101e !important;
 }
 
 /*
@@ -19271,6 +19778,532 @@ Styleguide hover.transition
 
 .transition_5 {
   transition: all 1s ease-in  !important;
+}
+
+/*
+  Hover:Border Color
+
+  hovers can easily effect the border style to toggle between styles.  Very useful fo toggling from a border type to none or vice versa. 
+| Class          | Effect                                                                                      |
+| -------------- | ------------------------------------------------------------------------------------------- |
+| br_none        | Border is None on Hover                                                                     |
+| br_dotted      | Border is Dotted on Hover                                                                   |
+| br_dashed      | Border is Dashed on Hover                                                                   |
+| br_solid       | Border is Solid on Hover                                                                    |
+| br_transparent | Sometimes shifting to transparent is better so as to not cause the UI to flicker and resize |
+
+Markup:
+<div class="">
+  <div class="h:br_none br_3 br_solid br_primary-2 p_2 m_2 bg_secondary-5">None</div>
+  <div class="h:br_transparent br_3 br_solid br_primary-2 p_2 m_2 bg_secondary-5">Transparent</div>
+  <div class="h:br_solid br_3 br_dotted br_primary-2 p_2 m_2 bg_secondary-5">Solid</div>
+  <div class="h:br_dashed br_3 br_solid br_primary-2 p_2 m_2 bg_secondary-5">Dashed</div>
+  <div class="h:br_dotted br_3 br_solid br_primary-2 p_2 m_2 bg_secondary-5">Dotted</div>
+</div>
+
+Weight: 40
+
+Styleguide hover.borders
+
+*/
+.h\:br_dotted:hover {
+  border-style: dotted !important;
+}
+
+.h\:br_dashed:hover {
+  border-style: dashed !important;
+}
+
+.h\:br_solid:hover {
+  border-style: solid !important;
+}
+
+.h\:br_none:hover {
+  border-style: none !important;
+}
+
+.h\:br_transparent:hover {
+  border-color: transparent !important;
+}
+
+.br_primary {
+  border-color: #0088aa !important;
+}
+
+.br_primary-0 {
+  border-color: #0088aa !important;
+}
+
+.br_primary-1 {
+  border-color: #269ab7 !important;
+}
+
+.br_primary-2 {
+  border-color: #5eb4c9 !important;
+}
+
+.br_primary-3 {
+  border-color: #99cfdd !important;
+}
+
+.br_primary-4 {
+  border-color: #c7e5ec !important;
+}
+
+.br_primary-5 {
+  border-color: #e6f3f7 !important;
+}
+
+.br_primary-n1 {
+  border-color: #007a99 !important;
+}
+
+.br_primary-n2 {
+  border-color: #006680 !important;
+}
+
+.br_primary-n3 {
+  border-color: #004b5e !important;
+}
+
+.br_primary-n4 {
+  border-color: #003644 !important;
+}
+
+.br_primary-n5 {
+  border-color: #00222b !important;
+}
+
+.br_secondary {
+  border-color: #8b8482 !important;
+}
+
+.br_secondary-0 {
+  border-color: #8b8482 !important;
+}
+
+.br_secondary-1 {
+  border-color: #9c9695 !important;
+}
+
+.br_secondary-2 {
+  border-color: #b6b2b0 !important;
+}
+
+.br_secondary-3 {
+  border-color: #d1cecd !important;
+}
+
+.br_secondary-4 {
+  border-color: #e5e4e4 !important;
+}
+
+.br_secondary-5 {
+  border-color: #f3f3f3 !important;
+}
+
+.br_secondary-n1 {
+  border-color: #7d7775 !important;
+}
+
+.br_secondary-n2 {
+  border-color: #686362 !important;
+}
+
+.br_secondary-n3 {
+  border-color: #4c4948 !important;
+}
+
+.br_secondary-n4 {
+  border-color: #383534 !important;
+}
+
+.br_secondary-n5 {
+  border-color: #232121 !important;
+}
+
+.br_success {
+  border-color: #078a2e !important;
+}
+
+.br_success-0 {
+  border-color: #078a2e !important;
+}
+
+.br_success-1 {
+  border-color: #2c9c4d !important;
+}
+
+.br_success-2 {
+  border-color: #63b57b !important;
+}
+
+.br_success-3 {
+  border-color: #9cd0ab !important;
+}
+
+.br_success-4 {
+  border-color: #c8e5d1 !important;
+}
+
+.br_success-5 {
+  border-color: #e6f3ea !important;
+}
+
+.br_success-n1 {
+  border-color: #067c29 !important;
+}
+
+.br_success-n2 {
+  border-color: #056823 !important;
+}
+
+.br_success-n3 {
+  border-color: #044c19 !important;
+}
+
+.br_success-n4 {
+  border-color: #033712 !important;
+}
+
+.br_success-n5 {
+  border-color: #02230c !important;
+}
+
+.br_warning {
+  border-color: #ffc425 !important;
+}
+
+.br_warning-0 {
+  border-color: #ffc425 !important;
+}
+
+.br_warning-1 {
+  border-color: #ffcd46 !important;
+}
+
+.br_warning-2 {
+  border-color: #ffda76 !important;
+}
+
+.br_warning-3 {
+  border-color: #ffe7a8 !important;
+}
+
+.br_warning-4 {
+  border-color: #fff2cf !important;
+}
+
+.br_warning-5 {
+  border-color: #fff9e9 !important;
+}
+
+.br_warning-n1 {
+  border-color: #e6b021 !important;
+}
+
+.br_warning-n2 {
+  border-color: #bf931c !important;
+}
+
+.br_warning-n3 {
+  border-color: #8c6c14 !important;
+}
+
+.br_warning-n4 {
+  border-color: #664e0f !important;
+}
+
+.br_warning-n5 {
+  border-color: #403109 !important;
+}
+
+.br_alert {
+  border-color: #990000 !important;
+}
+
+.br_alert-0 {
+  border-color: #990000 !important;
+}
+
+.br_alert-1 {
+  border-color: #a82626 !important;
+}
+
+.br_alert-2 {
+  border-color: #bf5e5e !important;
+}
+
+.br_alert-3 {
+  border-color: #d69999 !important;
+}
+
+.br_alert-4 {
+  border-color: #e9c7c7 !important;
+}
+
+.br_alert-5 {
+  border-color: #f5e6e6 !important;
+}
+
+.br_alert-n1 {
+  border-color: #8a0000 !important;
+}
+
+.br_alert-n2 {
+  border-color: #730000 !important;
+}
+
+.br_alert-n3 {
+  border-color: #540000 !important;
+}
+
+.br_alert-n4 {
+  border-color: #3d0000 !important;
+}
+
+.br_alert-n5 {
+  border-color: #260000 !important;
+}
+
+.br_navigation {
+  border-color: #2b58c0 !important;
+}
+
+.br_navigation-0 {
+  border-color: #2b58c0 !important;
+}
+
+.br_navigation-1 {
+  border-color: #4b71c9 !important;
+}
+
+.br_navigation-2 {
+  border-color: #7996d7 !important;
+}
+
+.br_navigation-3 {
+  border-color: #aabce6 !important;
+}
+
+.br_navigation-4 {
+  border-color: #d0daf1 !important;
+}
+
+.br_navigation-5 {
+  border-color: #eaeef9 !important;
+}
+
+.br_navigation-n1 {
+  border-color: #274fad !important;
+}
+
+.br_navigation-n2 {
+  border-color: #204290 !important;
+}
+
+.br_navigation-n3 {
+  border-color: #18306a !important;
+}
+
+.br_navigation-n4 {
+  border-color: #11234d !important;
+}
+
+.br_navigation-n5 {
+  border-color: #0b1630 !important;
+}
+
+.br_accent {
+  border-color: #e87d1e !important;
+}
+
+.br_accent-0 {
+  border-color: #e87d1e !important;
+}
+
+.br_accent-1 {
+  border-color: #eb9140 !important;
+}
+
+.br_accent-2 {
+  border-color: #f1ad71 !important;
+}
+
+.br_accent-3 {
+  border-color: #f6cba5 !important;
+}
+
+.br_accent-4 {
+  border-color: #fae2ce !important;
+}
+
+.br_accent-5 {
+  border-color: #fdf2e9 !important;
+}
+
+.br_accent-n1 {
+  border-color: #d1711b !important;
+}
+
+.br_accent-n2 {
+  border-color: #ae5e17 !important;
+}
+
+.br_accent-n3 {
+  border-color: #804511 !important;
+}
+
+.br_accent-n4 {
+  border-color: #5d320c !important;
+}
+
+.br_accent-n5 {
+  border-color: #3a1f08 !important;
+}
+
+.br_info {
+  border-color: #a3988c !important;
+}
+
+.br_info-0 {
+  border-color: #a3988c !important;
+}
+
+.br_info-1 {
+  border-color: #b1a79d !important;
+}
+
+.br_info-2 {
+  border-color: #c5beb7 !important;
+}
+
+.br_info-3 {
+  border-color: #dad6d1 !important;
+}
+
+.br_info-4 {
+  border-color: #ebe8e6 !important;
+}
+
+.br_info-5 {
+  border-color: #f6f5f4 !important;
+}
+
+.br_info-n1 {
+  border-color: #93897e !important;
+}
+
+.br_info-n2 {
+  border-color: #7a7269 !important;
+}
+
+.br_info-n3 {
+  border-color: #5a544d !important;
+}
+
+.br_info-n4 {
+  border-color: #413d38 !important;
+}
+
+.br_info-n5 {
+  border-color: #292623 !important;
+}
+
+.br_highlight {
+  border-color: #05aee5 !important;
+}
+
+.br_highlight-0 {
+  border-color: #05aee5 !important;
+}
+
+.br_highlight-1 {
+  border-color: #2bbae9 !important;
+}
+
+.br_highlight-2 {
+  border-color: #62ccef !important;
+}
+
+.br_highlight-3 {
+  border-color: #9bdff5 !important;
+}
+
+.br_highlight-4 {
+  border-color: #c8edf9 !important;
+}
+
+.br_highlight-5 {
+  border-color: #e6f7fc !important;
+}
+
+.br_highlight-n1 {
+  border-color: #059dce !important;
+}
+
+.br_highlight-n2 {
+  border-color: #0483ac !important;
+}
+
+.br_highlight-n3 {
+  border-color: #03607e !important;
+}
+
+.br_highlight-n4 {
+  border-color: #02465c !important;
+}
+
+.br_highlight-n5 {
+  border-color: #012c39 !important;
+}
+
+.br_acc {
+  border-color: #004176 !important;
+}
+
+.br_acc-0 {
+  border-color: #004176 !important;
+}
+
+.br_acc-1 {
+  border-color: #265e8b !important;
+}
+
+.br_acc-2 {
+  border-color: #5e87a9 !important;
+}
+
+.br_acc-3 {
+  border-color: #99b3c8 !important;
+}
+
+.br_acc-4 {
+  border-color: #c7d5e1 !important;
+}
+
+.br_acc-5 {
+  border-color: #e6ecf1 !important;
+}
+
+.br_acc-n1 {
+  border-color: #003b6a !important;
+}
+
+.br_acc-n2 {
+  border-color: #003159 !important;
+}
+
+.br_acc-n3 {
+  border-color: #002441 !important;
+}
+
+.br_acc-n4 {
+  border-color: #001a2f !important;
+}
+
+.br_acc-n5 {
+  border-color: #00101e !important;
 }
 
 /*

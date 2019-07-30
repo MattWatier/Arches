@@ -5,6 +5,7 @@
  */
 /**  Pre Header - modular scale default break points utility    *********************************/
 /**  Version: 1.1.0    *********************************/
+// Consider using https://www.purgecss.com/ to remove styles not used in the project.
 $debug-trace: false !default;
 $name-mode: "SHORT" !default; // $name-mode: "SHORT","LONG","ALL"
 $ms-base: 1rem !default; // needs to be in rem's
@@ -59,6 +60,19 @@ $mix-orange_teal: #acbd65;
 .c_mix-orange-teal {
 	color: $mix-orange_teal !important;
 }
+.c_primary-alt {
+	color: $soft-blue !important;
+}
+.c_accent-alt {
+	color: $orange-light !important;
+}
+.h\:c_primary-alt:hover {
+	color: $soft-blue !important;
+}
+.h\:c_accent-alt:hover {
+	color: $orange-light !important;
+}
+
 .br_accent-alt {
 	border-color: $orange-light !important;
 }
@@ -67,6 +81,9 @@ $mix-orange_teal: #acbd65;
 }
 .br_mix-orange-teal {
 	border-color: $mix-orange_teal !important;
+}
+.br__primary-alt {
+	background-color: $mix-orange_teal !important;
 }
 .bg_primary-alt {
 	background-color: $soft-blue !important;
@@ -398,6 +415,7 @@ Styleguide  Recipes Bootstrap
 */
 @import "recipes/cvquality/_cvquality._footer";
 @import "recipes/cvquality/_cvquality._cards";
+@import "recipes/cvquality/_cvquality._lists";
 @import "recipes/cvquality/_cvquality._decorators";
 /**  Utility Classes    *********************************/
 @import "utility-css/utility-css";

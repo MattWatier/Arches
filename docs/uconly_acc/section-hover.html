@@ -141,20 +141,26 @@
                       </a>
                     </li>
                     <li class="kss-nav__item ">
-                      <a href="section-hover.html#kssref-hover-transition">
+                      <a href="section-hover.html#kssref-hover-borders">
                         <span class="kss-nav__ref">12.4</span>
+                        <span class="kss-nav__name">Hover:Border Color</span>
+                      </a>
+                    </li>
+                    <li class="kss-nav__item ">
+                      <a href="section-hover.html#kssref-hover-transition">
+                        <span class="kss-nav__ref">12.5</span>
                         <span class="kss-nav__name">Transition on Hover</span>
                       </a>
                     </li>
                     <li class="kss-nav__item ">
                       <a href="section-hover.html#kssref-hover-opacity">
-                        <span class="kss-nav__ref">12.5</span>
+                        <span class="kss-nav__ref">12.6</span>
                         <span class="kss-nav__name">Opacity: Hover to Full Opacity</span>
                       </a>
                     </li>
                     <li class="kss-nav__item kss-nav__item--grandchild">
                       <a href="section-hover.html#kssref-hover-opacity-whiteblack">
-                        <span class="kss-nav__ref">12.5.1</span>
+                        <span class="kss-nav__ref">12.6.1</span>
                         <span class="kss-nav__name">Hover: Background Black and White Opacity</span>
                       </a>
                     </li>
@@ -224,7 +230,7 @@
             <header class="kss-section kss-section--depth-1" id="kssref-hover">
 
             <article class="kss-section__content">
-                <p class="kss-section__source">Source: <span>uconly_acc.css</span>, line <span>11264</span></p>
+                <p class="kss-section__source">Source: <span>uconly_acc.css</span>, line <span>11254</span></p>
 
               <a class="kss-section__permalink" href="#kssref-hover">
                 <h1 class="kss-section__item kss-section__item--depth-1">
@@ -243,7 +249,7 @@
             <section class="kss-section kss-section--depth-2" id="kssref-hover-text">
 
             <article class="kss-section__content">
-                <p class="kss-section__source">Source: <span>uconly_acc.css</span>, line <span>12289</span></p>
+                <p class="kss-section__source">Source: <span>uconly_acc.css</span>, line <span>12759</span></p>
 
               <a class="kss-section__permalink" href="#kssref-hover-text">
                 <h2 class="kss-section__item kss-section__item--depth-2">
@@ -417,7 +423,7 @@
             <section class="kss-section kss-section--depth-2" id="kssref-hover-underlines">
 
             <article class="kss-section__content">
-                <p class="kss-section__source">Source: <span>uconly_acc.css</span>, line <span>12373</span></p>
+                <p class="kss-section__source">Source: <span>uconly_acc.css</span>, line <span>12843</span></p>
 
               <a class="kss-section__permalink" href="#kssref-hover-underlines">
                 <h2 class="kss-section__item kss-section__item--depth-2">
@@ -516,7 +522,7 @@
             <section class="kss-section kss-section--depth-2" id="kssref-hover-background">
 
             <article class="kss-section__content">
-                <p class="kss-section__source">Source: <span>uconly_acc.css</span>, line <span>11275</span></p>
+                <p class="kss-section__source">Source: <span>uconly_acc.css</span>, line <span>11265</span></p>
 
               <a class="kss-section__permalink" href="#kssref-hover-background">
                 <h2 class="kss-section__item kss-section__item--depth-2">
@@ -687,14 +693,86 @@
                 </article>
 
             </section>
+            <section class="kss-section kss-section--depth-2" id="kssref-hover-borders">
+
+            <article class="kss-section__content">
+                <p class="kss-section__source">Source: <span>uconly_acc.css</span>, line <span>13083</span></p>
+
+              <a class="kss-section__permalink" href="#kssref-hover-borders">
+                <h2 class="kss-section__item kss-section__item--depth-2">
+                  <span class="kss-section__ref">12.4</span>
+                  <span class="kss-section__name">Hover:Border Color</span>
+                </h2>
+              </a>
+
+                <div class="kss-section__description"><p>hovers can easily effect the border style to toggle between styles.  Very useful fo toggling from a border type to none or vice versa.</p>
+<table>
+<thead>
+<tr>
+<th>Class</th>
+<th>Effect</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>br_none</td>
+<td>Border is None on Hover</td>
+</tr>
+<tr>
+<td>br_dotted</td>
+<td>Border is Dotted on Hover</td>
+</tr>
+<tr>
+<td>br_dashed</td>
+<td>Border is Dashed on Hover</td>
+</tr>
+<tr>
+<td>br_solid</td>
+<td>Border is Solid on Hover</td>
+</tr>
+<tr>
+<td>br_transparent</td>
+<td>Sometimes shifting to transparent is better so as to not cause the UI to flicker and resize</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+            </article>
+
+              <article class="kss-section__modifiers">
+                <h1 class="kss-modifiers__heading">Example</h1>
+
+
+                <div class="kss-modifiers__example"><div class="">
+<div class="h:br_none br_3 br_solid br_primary-2 p_2 m_2 bg_secondary-5">None</div>
+<div class="h:br_transparent br_3 br_solid br_primary-2 p_2 m_2 bg_secondary-5">Transparent</div>
+<div class="h:br_solid br_3 br_dotted br_primary-2 p_2 m_2 bg_secondary-5">Solid</div>
+<div class="h:br_dashed br_3 br_solid br_primary-2 p_2 m_2 bg_secondary-5">Dashed</div>
+<div class="h:br_dotted br_3 br_solid br_primary-2 p_2 m_2 bg_secondary-5">Dotted</div>
+</div></div>
+
+              </article>
+
+                <article class="kss-section__markup">
+                  <pre><code class="language-markup">&lt;div class&#x3D;&quot;&quot;&gt;
+&lt;div class&#x3D;&quot;h:br_none br_3 br_solid br_primary-2 p_2 m_2 bg_secondary-5&quot;&gt;None&lt;/div&gt;
+&lt;div class&#x3D;&quot;h:br_transparent br_3 br_solid br_primary-2 p_2 m_2 bg_secondary-5&quot;&gt;Transparent&lt;/div&gt;
+&lt;div class&#x3D;&quot;h:br_solid br_3 br_dotted br_primary-2 p_2 m_2 bg_secondary-5&quot;&gt;Solid&lt;/div&gt;
+&lt;div class&#x3D;&quot;h:br_dashed br_3 br_solid br_primary-2 p_2 m_2 bg_secondary-5&quot;&gt;Dashed&lt;/div&gt;
+&lt;div class&#x3D;&quot;h:br_dotted br_3 br_solid br_primary-2 p_2 m_2 bg_secondary-5&quot;&gt;Dotted&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                </article>
+
+            </section>
             <section class="kss-section kss-section--depth-2" id="kssref-hover-transition">
 
             <article class="kss-section__content">
-                <p class="kss-section__source">Source: <span>uconly_acc.css</span>, line <span>12557</span></p>
+                <p class="kss-section__source">Source: <span>uconly_acc.css</span>, line <span>13027</span></p>
 
               <a class="kss-section__permalink" href="#kssref-hover-transition">
                 <h2 class="kss-section__item kss-section__item--depth-2">
-                  <span class="kss-section__ref">12.4</span>
+                  <span class="kss-section__ref">12.5</span>
                   <span class="kss-section__name">Transition on Hover</span>
                 </h2>
               </a>
@@ -847,11 +925,11 @@
             <section class="kss-section kss-section--depth-2" id="kssref-hover-opacity">
 
             <article class="kss-section__content">
-                <p class="kss-section__source">Source: <span>uconly_acc.css</span>, line <span>12526</span></p>
+                <p class="kss-section__source">Source: <span>uconly_acc.css</span>, line <span>12996</span></p>
 
               <a class="kss-section__permalink" href="#kssref-hover-opacity">
                 <h2 class="kss-section__item kss-section__item--depth-2">
-                  <span class="kss-section__ref">12.5</span>
+                  <span class="kss-section__ref">12.6</span>
                   <span class="kss-section__name">Opacity: Hover to Full Opacity</span>
                 </h2>
               </a>
@@ -899,11 +977,11 @@
             <section class="kss-section kss-section--depth-3" id="kssref-hover-opacity-whiteblack">
 
             <article class="kss-section__content">
-                <p class="kss-section__source">Source: <span>uconly_acc.css</span>, line <span>12498</span></p>
+                <p class="kss-section__source">Source: <span>uconly_acc.css</span>, line <span>12968</span></p>
 
               <a class="kss-section__permalink" href="#kssref-hover-opacity-whiteblack">
                 <h3 class="kss-section__item kss-section__item--depth-3">
-                  <span class="kss-section__ref">12.5.1</span>
+                  <span class="kss-section__ref">12.6.1</span>
                   <span class="kss-section__name">Hover: Background Black and White Opacity</span>
                 </h3>
               </a>

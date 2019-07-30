@@ -4732,6 +4732,32 @@
 
    */
   /*
+    Hover:Border Color
+
+    hovers can easily effect the border style to toggle between styles.  Very useful fo toggling from a border type to none or vice versa. 
+  | Class          | Effect                                                                                      |
+  | -------------- | ------------------------------------------------------------------------------------------- |
+  | br_none        | Border is None on Hover                                                                     |
+  | br_dotted      | Border is Dotted on Hover                                                                   |
+  | br_dashed      | Border is Dashed on Hover                                                                   |
+  | br_solid       | Border is Solid on Hover                                                                    |
+  | br_transparent | Sometimes shifting to transparent is better so as to not cause the UI to flicker and resize |
+
+  Markup:
+  <div class="">
+    <div class="h:br_none br_3 br_solid br_primary-2 p_2 m_2 bg_secondary-5">None</div>
+    <div class="h:br_transparent br_3 br_solid br_primary-2 p_2 m_2 bg_secondary-5">Transparent</div>
+    <div class="h:br_solid br_3 br_dotted br_primary-2 p_2 m_2 bg_secondary-5">Solid</div>
+    <div class="h:br_dashed br_3 br_solid br_primary-2 p_2 m_2 bg_secondary-5">Dashed</div>
+    <div class="h:br_dotted br_3 br_solid br_primary-2 p_2 m_2 bg_secondary-5">Dotted</div>
+  </div>
+
+  Weight: 40
+
+  Styleguide hover.borders
+
+  */
+  /*
   UC: Is-active 
 
   A common class name given to the parent container can effect the color, background and opacity of the children.  The active class is different depending if you are using Bootstrap or Foundation. <h1>This Variation of Arches uses <strong>"is-active"</strong></h1>  
@@ -10246,14 +10272,6 @@
 #acc_arches_override .texture-dynamic {
   background-image: url("../img/connectwork.png");
 }
-#acc_arches_override .br_dotted,
-#acc_arches_override .br_dashed,
-#acc_arches_override .br_solid {
-  border-width: 1px;
-}
-#acc_arches_override .br_none {
-  border-width: 0;
-}
 #acc_arches_override .br_none {
   border-style: none;
 }
@@ -11060,6 +11078,42 @@
 #acc_arches_override .h\:c_primary-n5:hover {
   color: #06232c !important;
 }
+#acc_arches_override .h\:br_primary:hover {
+  border-color: #198dae !important;
+}
+#acc_arches_override .h\:br_primary-0:hover {
+  border-color: #198dae !important;
+}
+#acc_arches_override .h\:br_primary-1:hover {
+  border-color: #3c9eba !important;
+}
+#acc_arches_override .h\:br_primary-2:hover {
+  border-color: #6eb7cc !important;
+}
+#acc_arches_override .h\:br_primary-3:hover {
+  border-color: #a3d1df !important;
+}
+#acc_arches_override .h\:br_primary-4:hover {
+  border-color: #cce6ed !important;
+}
+#acc_arches_override .h\:br_primary-5:hover {
+  border-color: #e8f4f7 !important;
+}
+#acc_arches_override .h\:br_primary-n1:hover {
+  border-color: #177f9d !important;
+}
+#acc_arches_override .h\:br_primary-n2:hover {
+  border-color: #136a83 !important;
+}
+#acc_arches_override .h\:br_primary-n3:hover {
+  border-color: #0e4e60 !important;
+}
+#acc_arches_override .h\:br_primary-n4:hover {
+  border-color: #0a3846 !important;
+}
+#acc_arches_override .h\:br_primary-n5:hover {
+  border-color: #06232c !important;
+}
 #acc_arches_override .h\:bg_secondary:hover {
   background-color: #676a72 !important;
 }
@@ -11131,6 +11185,42 @@
 }
 #acc_arches_override .h\:c_secondary-n5:hover {
   color: #1a1b1d !important;
+}
+#acc_arches_override .h\:br_secondary:hover {
+  border-color: #676a72 !important;
+}
+#acc_arches_override .h\:br_secondary-0:hover {
+  border-color: #676a72 !important;
+}
+#acc_arches_override .h\:br_secondary-1:hover {
+  border-color: #7e8087 !important;
+}
+#acc_arches_override .h\:br_secondary-2:hover {
+  border-color: #9fa1a6 !important;
+}
+#acc_arches_override .h\:br_secondary-3:hover {
+  border-color: #c2c3c7 !important;
+}
+#acc_arches_override .h\:br_secondary-4:hover {
+  border-color: #dedee0 !important;
+}
+#acc_arches_override .h\:br_secondary-5:hover {
+  border-color: #f0f0f1 !important;
+}
+#acc_arches_override .h\:br_secondary-n1:hover {
+  border-color: #5d5f67 !important;
+}
+#acc_arches_override .h\:br_secondary-n2:hover {
+  border-color: #4d5056 !important;
+}
+#acc_arches_override .h\:br_secondary-n3:hover {
+  border-color: #393a3f !important;
+}
+#acc_arches_override .h\:br_secondary-n4:hover {
+  border-color: #292a2e !important;
+}
+#acc_arches_override .h\:br_secondary-n5:hover {
+  border-color: #1a1b1d !important;
 }
 #acc_arches_override .h\:bg_success:hover {
   background-color: #078a2e !important;
@@ -11204,6 +11294,42 @@
 #acc_arches_override .h\:c_success-n5:hover {
   color: #02230c !important;
 }
+#acc_arches_override .h\:br_success:hover {
+  border-color: #078a2e !important;
+}
+#acc_arches_override .h\:br_success-0:hover {
+  border-color: #078a2e !important;
+}
+#acc_arches_override .h\:br_success-1:hover {
+  border-color: #2c9c4d !important;
+}
+#acc_arches_override .h\:br_success-2:hover {
+  border-color: #63b57b !important;
+}
+#acc_arches_override .h\:br_success-3:hover {
+  border-color: #9cd0ab !important;
+}
+#acc_arches_override .h\:br_success-4:hover {
+  border-color: #c8e5d1 !important;
+}
+#acc_arches_override .h\:br_success-5:hover {
+  border-color: #e6f3ea !important;
+}
+#acc_arches_override .h\:br_success-n1:hover {
+  border-color: #067c29 !important;
+}
+#acc_arches_override .h\:br_success-n2:hover {
+  border-color: #056823 !important;
+}
+#acc_arches_override .h\:br_success-n3:hover {
+  border-color: #044c19 !important;
+}
+#acc_arches_override .h\:br_success-n4:hover {
+  border-color: #033712 !important;
+}
+#acc_arches_override .h\:br_success-n5:hover {
+  border-color: #02230c !important;
+}
 #acc_arches_override .h\:bg_warning:hover {
   background-color: #da8210 !important;
 }
@@ -11275,6 +11401,42 @@
 }
 #acc_arches_override .h\:c_warning-n5:hover {
   color: #372104 !important;
+}
+#acc_arches_override .h\:br_warning:hover {
+  border-color: #da8210 !important;
+}
+#acc_arches_override .h\:br_warning-0:hover {
+  border-color: #da8210 !important;
+}
+#acc_arches_override .h\:br_warning-1:hover {
+  border-color: #e09534 !important;
+}
+#acc_arches_override .h\:br_warning-2:hover {
+  border-color: #e8b068 !important;
+}
+#acc_arches_override .h\:br_warning-3:hover {
+  border-color: #f0cd9f !important;
+}
+#acc_arches_override .h\:br_warning-4:hover {
+  border-color: #f7e4ca !important;
+}
+#acc_arches_override .h\:br_warning-5:hover {
+  border-color: #fbf3e7 !important;
+}
+#acc_arches_override .h\:br_warning-n1:hover {
+  border-color: #c4750e !important;
+}
+#acc_arches_override .h\:br_warning-n2:hover {
+  border-color: #a4620c !important;
+}
+#acc_arches_override .h\:br_warning-n3:hover {
+  border-color: #784809 !important;
+}
+#acc_arches_override .h\:br_warning-n4:hover {
+  border-color: #573406 !important;
+}
+#acc_arches_override .h\:br_warning-n5:hover {
+  border-color: #372104 !important;
 }
 #acc_arches_override .h\:bg_alert:hover {
   background-color: #dd1a1a !important;
@@ -11348,6 +11510,42 @@
 #acc_arches_override .h\:c_alert-n5:hover {
   color: #370707 !important;
 }
+#acc_arches_override .h\:br_alert:hover {
+  border-color: #dd1a1a !important;
+}
+#acc_arches_override .h\:br_alert-0:hover {
+  border-color: #dd1a1a !important;
+}
+#acc_arches_override .h\:br_alert-1:hover {
+  border-color: #e23c3c !important;
+}
+#acc_arches_override .h\:br_alert-2:hover {
+  border-color: #ea6f6f !important;
+}
+#acc_arches_override .h\:br_alert-3:hover {
+  border-color: #f1a3a3 !important;
+}
+#acc_arches_override .h\:br_alert-4:hover {
+  border-color: #f8cdcd !important;
+}
+#acc_arches_override .h\:br_alert-5:hover {
+  border-color: #fce8e8 !important;
+}
+#acc_arches_override .h\:br_alert-n1:hover {
+  border-color: #c71717 !important;
+}
+#acc_arches_override .h\:br_alert-n2:hover {
+  border-color: #a61414 !important;
+}
+#acc_arches_override .h\:br_alert-n3:hover {
+  border-color: #7a0e0e !important;
+}
+#acc_arches_override .h\:br_alert-n4:hover {
+  border-color: #580a0a !important;
+}
+#acc_arches_override .h\:br_alert-n5:hover {
+  border-color: #370707 !important;
+}
 #acc_arches_override .h\:bg_navigation:hover {
   background-color: #2b58c0 !important;
 }
@@ -11419,6 +11617,42 @@
 }
 #acc_arches_override .h\:c_navigation-n5:hover {
   color: #0b1630 !important;
+}
+#acc_arches_override .h\:br_navigation:hover {
+  border-color: #2b58c0 !important;
+}
+#acc_arches_override .h\:br_navigation-0:hover {
+  border-color: #2b58c0 !important;
+}
+#acc_arches_override .h\:br_navigation-1:hover {
+  border-color: #4b71c9 !important;
+}
+#acc_arches_override .h\:br_navigation-2:hover {
+  border-color: #7996d7 !important;
+}
+#acc_arches_override .h\:br_navigation-3:hover {
+  border-color: #aabce6 !important;
+}
+#acc_arches_override .h\:br_navigation-4:hover {
+  border-color: #d0daf1 !important;
+}
+#acc_arches_override .h\:br_navigation-5:hover {
+  border-color: #eaeef9 !important;
+}
+#acc_arches_override .h\:br_navigation-n1:hover {
+  border-color: #274fad !important;
+}
+#acc_arches_override .h\:br_navigation-n2:hover {
+  border-color: #204290 !important;
+}
+#acc_arches_override .h\:br_navigation-n3:hover {
+  border-color: #18306a !important;
+}
+#acc_arches_override .h\:br_navigation-n4:hover {
+  border-color: #11234d !important;
+}
+#acc_arches_override .h\:br_navigation-n5:hover {
+  border-color: #0b1630 !important;
 }
 #acc_arches_override .h\:bg_accent:hover {
   background-color: #16a385 !important;
@@ -11492,6 +11726,42 @@
 #acc_arches_override .h\:c_accent-n5:hover {
   color: #062921 !important;
 }
+#acc_arches_override .h\:br_accent:hover {
+  border-color: #16a385 !important;
+}
+#acc_arches_override .h\:br_accent-0:hover {
+  border-color: #16a385 !important;
+}
+#acc_arches_override .h\:br_accent-1:hover {
+  border-color: #39b197 !important;
+}
+#acc_arches_override .h\:br_accent-2:hover {
+  border-color: #6cc5b2 !important;
+}
+#acc_arches_override .h\:br_accent-3:hover {
+  border-color: #a2dace !important;
+}
+#acc_arches_override .h\:br_accent-4:hover {
+  border-color: #ccebe4 !important;
+}
+#acc_arches_override .h\:br_accent-5:hover {
+  border-color: #e8f6f3 !important;
+}
+#acc_arches_override .h\:br_accent-n1:hover {
+  border-color: #149378 !important;
+}
+#acc_arches_override .h\:br_accent-n2:hover {
+  border-color: #117a64 !important;
+}
+#acc_arches_override .h\:br_accent-n3:hover {
+  border-color: #0c5a49 !important;
+}
+#acc_arches_override .h\:br_accent-n4:hover {
+  border-color: #094135 !important;
+}
+#acc_arches_override .h\:br_accent-n5:hover {
+  border-color: #062921 !important;
+}
 #acc_arches_override .h\:bg_info:hover {
   background-color: #a3988c !important;
 }
@@ -11563,6 +11833,42 @@
 }
 #acc_arches_override .h\:c_info-n5:hover {
   color: #292623 !important;
+}
+#acc_arches_override .h\:br_info:hover {
+  border-color: #a3988c !important;
+}
+#acc_arches_override .h\:br_info-0:hover {
+  border-color: #a3988c !important;
+}
+#acc_arches_override .h\:br_info-1:hover {
+  border-color: #b1a79d !important;
+}
+#acc_arches_override .h\:br_info-2:hover {
+  border-color: #c5beb7 !important;
+}
+#acc_arches_override .h\:br_info-3:hover {
+  border-color: #dad6d1 !important;
+}
+#acc_arches_override .h\:br_info-4:hover {
+  border-color: #ebe8e6 !important;
+}
+#acc_arches_override .h\:br_info-5:hover {
+  border-color: #f6f5f4 !important;
+}
+#acc_arches_override .h\:br_info-n1:hover {
+  border-color: #93897e !important;
+}
+#acc_arches_override .h\:br_info-n2:hover {
+  border-color: #7a7269 !important;
+}
+#acc_arches_override .h\:br_info-n3:hover {
+  border-color: #5a544d !important;
+}
+#acc_arches_override .h\:br_info-n4:hover {
+  border-color: #413d38 !important;
+}
+#acc_arches_override .h\:br_info-n5:hover {
+  border-color: #292623 !important;
 }
 #acc_arches_override .h\:bg_highlight:hover {
   background-color: #7742bd !important;
@@ -11636,6 +11942,42 @@
 #acc_arches_override .h\:c_highlight-n5:hover {
   color: #1e112f !important;
 }
+#acc_arches_override .h\:br_highlight:hover {
+  border-color: #7742bd !important;
+}
+#acc_arches_override .h\:br_highlight-0:hover {
+  border-color: #7742bd !important;
+}
+#acc_arches_override .h\:br_highlight-1:hover {
+  border-color: #8b5ec7 !important;
+}
+#acc_arches_override .h\:br_highlight-2:hover {
+  border-color: #a988d5 !important;
+}
+#acc_arches_override .h\:br_highlight-3:hover {
+  border-color: #c9b3e5 !important;
+}
+#acc_arches_override .h\:br_highlight-4:hover {
+  border-color: #e1d5f0 !important;
+}
+#acc_arches_override .h\:br_highlight-5:hover {
+  border-color: #f1ecf8 !important;
+}
+#acc_arches_override .h\:br_highlight-n1:hover {
+  border-color: #6b3baa !important;
+}
+#acc_arches_override .h\:br_highlight-n2:hover {
+  border-color: #59328e !important;
+}
+#acc_arches_override .h\:br_highlight-n3:hover {
+  border-color: #412468 !important;
+}
+#acc_arches_override .h\:br_highlight-n4:hover {
+  border-color: #301a4c !important;
+}
+#acc_arches_override .h\:br_highlight-n5:hover {
+  border-color: #1e112f !important;
+}
 #acc_arches_override .h\:bg_acc:hover {
   background-color: #004176 !important;
 }
@@ -11707,6 +12049,42 @@
 }
 #acc_arches_override .h\:c_acc-n5:hover {
   color: #00101e !important;
+}
+#acc_arches_override .h\:br_acc:hover {
+  border-color: #004176 !important;
+}
+#acc_arches_override .h\:br_acc-0:hover {
+  border-color: #004176 !important;
+}
+#acc_arches_override .h\:br_acc-1:hover {
+  border-color: #265e8b !important;
+}
+#acc_arches_override .h\:br_acc-2:hover {
+  border-color: #5e87a9 !important;
+}
+#acc_arches_override .h\:br_acc-3:hover {
+  border-color: #99b3c8 !important;
+}
+#acc_arches_override .h\:br_acc-4:hover {
+  border-color: #c7d5e1 !important;
+}
+#acc_arches_override .h\:br_acc-5:hover {
+  border-color: #e6ecf1 !important;
+}
+#acc_arches_override .h\:br_acc-n1:hover {
+  border-color: #003b6a !important;
+}
+#acc_arches_override .h\:br_acc-n2:hover {
+  border-color: #003159 !important;
+}
+#acc_arches_override .h\:br_acc-n3:hover {
+  border-color: #002441 !important;
+}
+#acc_arches_override .h\:br_acc-n4:hover {
+  border-color: #001a2f !important;
+}
+#acc_arches_override .h\:br_acc-n5:hover {
+  border-color: #00101e !important;
 }
 #acc_arches_override .h\:c_white:hover,
 #acc_arches_override .is-active > .a\:c_white {
@@ -11848,6 +12226,381 @@
 }
 #acc_arches_override .transition_5 {
   transition: all 1s ease-in  !important;
+}
+#acc_arches_override .h\:br_dotted:hover {
+  border-style: dotted !important;
+}
+#acc_arches_override .h\:br_dashed:hover {
+  border-style: dashed !important;
+}
+#acc_arches_override .h\:br_solid:hover {
+  border-style: solid !important;
+}
+#acc_arches_override .h\:br_none:hover {
+  border-style: none !important;
+}
+#acc_arches_override .h\:br_transparent:hover {
+  border-color: transparent !important;
+}
+#acc_arches_override .br_primary {
+  border-color: #198dae !important;
+}
+#acc_arches_override .br_primary-0 {
+  border-color: #198dae !important;
+}
+#acc_arches_override .br_primary-1 {
+  border-color: #3c9eba !important;
+}
+#acc_arches_override .br_primary-2 {
+  border-color: #6eb7cc !important;
+}
+#acc_arches_override .br_primary-3 {
+  border-color: #a3d1df !important;
+}
+#acc_arches_override .br_primary-4 {
+  border-color: #cce6ed !important;
+}
+#acc_arches_override .br_primary-5 {
+  border-color: #e8f4f7 !important;
+}
+#acc_arches_override .br_primary-n1 {
+  border-color: #177f9d !important;
+}
+#acc_arches_override .br_primary-n2 {
+  border-color: #136a83 !important;
+}
+#acc_arches_override .br_primary-n3 {
+  border-color: #0e4e60 !important;
+}
+#acc_arches_override .br_primary-n4 {
+  border-color: #0a3846 !important;
+}
+#acc_arches_override .br_primary-n5 {
+  border-color: #06232c !important;
+}
+#acc_arches_override .br_secondary {
+  border-color: #676a72 !important;
+}
+#acc_arches_override .br_secondary-0 {
+  border-color: #676a72 !important;
+}
+#acc_arches_override .br_secondary-1 {
+  border-color: #7e8087 !important;
+}
+#acc_arches_override .br_secondary-2 {
+  border-color: #9fa1a6 !important;
+}
+#acc_arches_override .br_secondary-3 {
+  border-color: #c2c3c7 !important;
+}
+#acc_arches_override .br_secondary-4 {
+  border-color: #dedee0 !important;
+}
+#acc_arches_override .br_secondary-5 {
+  border-color: #f0f0f1 !important;
+}
+#acc_arches_override .br_secondary-n1 {
+  border-color: #5d5f67 !important;
+}
+#acc_arches_override .br_secondary-n2 {
+  border-color: #4d5056 !important;
+}
+#acc_arches_override .br_secondary-n3 {
+  border-color: #393a3f !important;
+}
+#acc_arches_override .br_secondary-n4 {
+  border-color: #292a2e !important;
+}
+#acc_arches_override .br_secondary-n5 {
+  border-color: #1a1b1d !important;
+}
+#acc_arches_override .br_success {
+  border-color: #078a2e !important;
+}
+#acc_arches_override .br_success-0 {
+  border-color: #078a2e !important;
+}
+#acc_arches_override .br_success-1 {
+  border-color: #2c9c4d !important;
+}
+#acc_arches_override .br_success-2 {
+  border-color: #63b57b !important;
+}
+#acc_arches_override .br_success-3 {
+  border-color: #9cd0ab !important;
+}
+#acc_arches_override .br_success-4 {
+  border-color: #c8e5d1 !important;
+}
+#acc_arches_override .br_success-5 {
+  border-color: #e6f3ea !important;
+}
+#acc_arches_override .br_success-n1 {
+  border-color: #067c29 !important;
+}
+#acc_arches_override .br_success-n2 {
+  border-color: #056823 !important;
+}
+#acc_arches_override .br_success-n3 {
+  border-color: #044c19 !important;
+}
+#acc_arches_override .br_success-n4 {
+  border-color: #033712 !important;
+}
+#acc_arches_override .br_success-n5 {
+  border-color: #02230c !important;
+}
+#acc_arches_override .br_warning {
+  border-color: #da8210 !important;
+}
+#acc_arches_override .br_warning-0 {
+  border-color: #da8210 !important;
+}
+#acc_arches_override .br_warning-1 {
+  border-color: #e09534 !important;
+}
+#acc_arches_override .br_warning-2 {
+  border-color: #e8b068 !important;
+}
+#acc_arches_override .br_warning-3 {
+  border-color: #f0cd9f !important;
+}
+#acc_arches_override .br_warning-4 {
+  border-color: #f7e4ca !important;
+}
+#acc_arches_override .br_warning-5 {
+  border-color: #fbf3e7 !important;
+}
+#acc_arches_override .br_warning-n1 {
+  border-color: #c4750e !important;
+}
+#acc_arches_override .br_warning-n2 {
+  border-color: #a4620c !important;
+}
+#acc_arches_override .br_warning-n3 {
+  border-color: #784809 !important;
+}
+#acc_arches_override .br_warning-n4 {
+  border-color: #573406 !important;
+}
+#acc_arches_override .br_warning-n5 {
+  border-color: #372104 !important;
+}
+#acc_arches_override .br_alert {
+  border-color: #dd1a1a !important;
+}
+#acc_arches_override .br_alert-0 {
+  border-color: #dd1a1a !important;
+}
+#acc_arches_override .br_alert-1 {
+  border-color: #e23c3c !important;
+}
+#acc_arches_override .br_alert-2 {
+  border-color: #ea6f6f !important;
+}
+#acc_arches_override .br_alert-3 {
+  border-color: #f1a3a3 !important;
+}
+#acc_arches_override .br_alert-4 {
+  border-color: #f8cdcd !important;
+}
+#acc_arches_override .br_alert-5 {
+  border-color: #fce8e8 !important;
+}
+#acc_arches_override .br_alert-n1 {
+  border-color: #c71717 !important;
+}
+#acc_arches_override .br_alert-n2 {
+  border-color: #a61414 !important;
+}
+#acc_arches_override .br_alert-n3 {
+  border-color: #7a0e0e !important;
+}
+#acc_arches_override .br_alert-n4 {
+  border-color: #580a0a !important;
+}
+#acc_arches_override .br_alert-n5 {
+  border-color: #370707 !important;
+}
+#acc_arches_override .br_navigation {
+  border-color: #2b58c0 !important;
+}
+#acc_arches_override .br_navigation-0 {
+  border-color: #2b58c0 !important;
+}
+#acc_arches_override .br_navigation-1 {
+  border-color: #4b71c9 !important;
+}
+#acc_arches_override .br_navigation-2 {
+  border-color: #7996d7 !important;
+}
+#acc_arches_override .br_navigation-3 {
+  border-color: #aabce6 !important;
+}
+#acc_arches_override .br_navigation-4 {
+  border-color: #d0daf1 !important;
+}
+#acc_arches_override .br_navigation-5 {
+  border-color: #eaeef9 !important;
+}
+#acc_arches_override .br_navigation-n1 {
+  border-color: #274fad !important;
+}
+#acc_arches_override .br_navigation-n2 {
+  border-color: #204290 !important;
+}
+#acc_arches_override .br_navigation-n3 {
+  border-color: #18306a !important;
+}
+#acc_arches_override .br_navigation-n4 {
+  border-color: #11234d !important;
+}
+#acc_arches_override .br_navigation-n5 {
+  border-color: #0b1630 !important;
+}
+#acc_arches_override .br_accent {
+  border-color: #16a385 !important;
+}
+#acc_arches_override .br_accent-0 {
+  border-color: #16a385 !important;
+}
+#acc_arches_override .br_accent-1 {
+  border-color: #39b197 !important;
+}
+#acc_arches_override .br_accent-2 {
+  border-color: #6cc5b2 !important;
+}
+#acc_arches_override .br_accent-3 {
+  border-color: #a2dace !important;
+}
+#acc_arches_override .br_accent-4 {
+  border-color: #ccebe4 !important;
+}
+#acc_arches_override .br_accent-5 {
+  border-color: #e8f6f3 !important;
+}
+#acc_arches_override .br_accent-n1 {
+  border-color: #149378 !important;
+}
+#acc_arches_override .br_accent-n2 {
+  border-color: #117a64 !important;
+}
+#acc_arches_override .br_accent-n3 {
+  border-color: #0c5a49 !important;
+}
+#acc_arches_override .br_accent-n4 {
+  border-color: #094135 !important;
+}
+#acc_arches_override .br_accent-n5 {
+  border-color: #062921 !important;
+}
+#acc_arches_override .br_info {
+  border-color: #a3988c !important;
+}
+#acc_arches_override .br_info-0 {
+  border-color: #a3988c !important;
+}
+#acc_arches_override .br_info-1 {
+  border-color: #b1a79d !important;
+}
+#acc_arches_override .br_info-2 {
+  border-color: #c5beb7 !important;
+}
+#acc_arches_override .br_info-3 {
+  border-color: #dad6d1 !important;
+}
+#acc_arches_override .br_info-4 {
+  border-color: #ebe8e6 !important;
+}
+#acc_arches_override .br_info-5 {
+  border-color: #f6f5f4 !important;
+}
+#acc_arches_override .br_info-n1 {
+  border-color: #93897e !important;
+}
+#acc_arches_override .br_info-n2 {
+  border-color: #7a7269 !important;
+}
+#acc_arches_override .br_info-n3 {
+  border-color: #5a544d !important;
+}
+#acc_arches_override .br_info-n4 {
+  border-color: #413d38 !important;
+}
+#acc_arches_override .br_info-n5 {
+  border-color: #292623 !important;
+}
+#acc_arches_override .br_highlight {
+  border-color: #7742bd !important;
+}
+#acc_arches_override .br_highlight-0 {
+  border-color: #7742bd !important;
+}
+#acc_arches_override .br_highlight-1 {
+  border-color: #8b5ec7 !important;
+}
+#acc_arches_override .br_highlight-2 {
+  border-color: #a988d5 !important;
+}
+#acc_arches_override .br_highlight-3 {
+  border-color: #c9b3e5 !important;
+}
+#acc_arches_override .br_highlight-4 {
+  border-color: #e1d5f0 !important;
+}
+#acc_arches_override .br_highlight-5 {
+  border-color: #f1ecf8 !important;
+}
+#acc_arches_override .br_highlight-n1 {
+  border-color: #6b3baa !important;
+}
+#acc_arches_override .br_highlight-n2 {
+  border-color: #59328e !important;
+}
+#acc_arches_override .br_highlight-n3 {
+  border-color: #412468 !important;
+}
+#acc_arches_override .br_highlight-n4 {
+  border-color: #301a4c !important;
+}
+#acc_arches_override .br_highlight-n5 {
+  border-color: #1e112f !important;
+}
+#acc_arches_override .br_acc {
+  border-color: #004176 !important;
+}
+#acc_arches_override .br_acc-0 {
+  border-color: #004176 !important;
+}
+#acc_arches_override .br_acc-1 {
+  border-color: #265e8b !important;
+}
+#acc_arches_override .br_acc-2 {
+  border-color: #5e87a9 !important;
+}
+#acc_arches_override .br_acc-3 {
+  border-color: #99b3c8 !important;
+}
+#acc_arches_override .br_acc-4 {
+  border-color: #c7d5e1 !important;
+}
+#acc_arches_override .br_acc-5 {
+  border-color: #e6ecf1 !important;
+}
+#acc_arches_override .br_acc-n1 {
+  border-color: #003b6a !important;
+}
+#acc_arches_override .br_acc-n2 {
+  border-color: #003159 !important;
+}
+#acc_arches_override .br_acc-n3 {
+  border-color: #002441 !important;
+}
+#acc_arches_override .br_acc-n4 {
+  border-color: #001a2f !important;
+}
+#acc_arches_override .br_acc-n5 {
+  border-color: #00101e !important;
 }
 #acc_arches_override .is-active.a\:bg_primary,
 #acc_arches_override .is-active > .a\:bg_primary {
